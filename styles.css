@@ -1,0 +1,377 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+	background-color: #f5f5f5;
+	display: flex;
+	min-height: 100vh;
+}
+
+.sidebar {
+	width: 280px;
+	background-color: #ffffff;
+	border-right: 1px solid #e0e0e0;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	height: 100vh;
+	left: 0;
+	top: 0;
+}
+
+.logo {
+	padding: 20px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.logo a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.logo h1 {
+	font-size: 24px;
+	color: #ffffff;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.logo-icon {
+	font-size: 32px;
+}
+
+.home-section {
+	padding: 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.home-link {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #2c3e50;
+	text-decoration: none;
+	font-weight: 600;
+	padding: 15px 20px;
+	transition: background-color 0.2s;
+}
+
+.home-link:hover {
+	background-color: #f8f9fa;
+}
+
+.favorites-section {
+	padding: 15px 20px;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #fffbf0;
+}
+
+.favorites-link {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #2c3e50;
+	text-decoration: none;
+	font-weight: 600;
+	padding: 10px;
+	border-radius: 6px;
+	transition: background-color 0.2s;
+	cursor: pointer;
+}
+
+.favorites-link:hover {
+	background-color: #fff4d6;
+}
+
+.favorites-link.active {
+	background-color: #ffd700;
+	color: #000;
+}
+
+.favorites-count {
+	margin-left: auto;
+	background-color: #ff6b35;
+	color: white;
+	padding: 2px 8px;
+	border-radius: 10px;
+	font-size: 12px;
+}
+
+.section-title {
+	padding: 10px 20px;
+	font-size: 14px;
+	color: #7f8c8d;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.sports-menu {
+	flex: 1;
+	overflow-y: auto;
+	padding-bottom: 20px;
+}
+
+.sports-menu::-webkit-scrollbar {
+	width: 6px;
+}
+
+.sports-menu::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+.sports-menu::-webkit-scrollbar-thumb {
+	background: #c0c0c0;
+	border-radius: 3px;
+}
+
+.menu-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 20px;
+	color: #2c3e50;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+	background-color: #f8f9fa;
+}
+
+.menu-item-left {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.sport-icon {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+}
+
+.sport-name {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.sport-count {
+	font-size: 13px;
+	color: #95a5a6;
+	font-weight: 500;
+}
+
+.main-content {
+	margin-left: 280px;
+	flex: 1;
+	padding: 20px;
+}
+
+.header {
+	background-color: #ffffff;
+	padding: 25px 30px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header h1 {
+	font-size: 28px;
+	color: #2c3e50;
+	margin-bottom: 15px;
+}
+
+.date-tabs {
+	display: flex;
+	gap: 10px;
+}
+
+.date-tab {
+	padding: 10px 20px;
+	background-color: #f8f9fa;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	color: #2c3e50;
+	transition: all 0.2s;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.date-tab:hover {
+	background-color: #e0e0e0;
+}
+
+.content-section {
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.sport-category {
+	margin-bottom: 30px;
+}
+
+.sport-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 20px;
+	background-color: #f8f9fa;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.sport-header:hover {
+	background-color: #e9ecef;
+}
+
+.sport-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #2c3e50;
+}
+
+.sport-count-badge {
+	color: white;
+	padding: 2px 10px;
+	border-radius: 12px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.accordion-arrow {
+	font-size: 16px;
+	color: #95a5a6;
+	transition: transform 0.3s;
+}
+
+.accordion-arrow.collapsed {
+	transform: rotate(-90deg);
+}
+
+.competition-group {
+	margin-bottom: 15px;
+	border-left: 3px solid #e0e0e0;
+	padding-left: 15px;
+}
+
+.competition-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #3498db;
+	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	padding: 8px 0;
+}
+
+.competition-name {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.league-favorite {
+	color: #ddd;
+	cursor: pointer;
+	font-size: 16px;
+	transition: color 0.2s;
+}
+
+.league-favorite:hover {
+	color: #ffd700;
+}
+
+.league-favorite.favorited {
+	color: #ffd700;
+}
+
+.game-item {
+	display: flex;
+	align-items: center;
+	padding: 12px 15px;
+	border-bottom: 1px solid #f0f0f0;
+	transition: background-color 0.2s;
+}
+
+.game-item:hover {
+	background-color: #fafafa;
+}
+
+.game-time {
+	font-size: 14px;
+	color: #ff6b35;
+	font-weight: 600;
+	min-width: 50px;
+}
+
+.game-teams {
+	flex: 1;
+	margin-left: 15px;
+}
+
+.team {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: 4px 0;
+	font-size: 14px;
+}
+
+.team-icon {
+	width: 16px;
+	height: 16px;
+	background-color: #ddd;
+	border-radius: 50%;
+}
+
+.favorite-star {
+	color: #ddd;
+	cursor: pointer;
+	font-size: 18px;
+	margin-left: 15px;
+	transition: color 0.2s;
+}
+
+.favorite-star:hover {
+	color: #ffd700;
+}
+
+.favorite-star.favorited {
+	color: #ffd700;
+}
+
+.no-games {
+	text-align: center;
+	padding: 40px;
+	color: #95a5a6;
+}
+
+@media (max-width: 768px) {
+	.sidebar {
+		width: 220px;
+	}
+	.main-content {
+		margin-left: 220px;
+	}
+}
