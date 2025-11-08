@@ -1,0 +1,127 @@
+========================================
+TROUBLESHOOTING GUIDE
+========================================
+
+ISSUE 1: Sport URLs showing ?sport=basketball instead of /live-basketball
+------------------------------------------------------------------------
+
+CAUSE: .htaccess file not working or mod_rewrite not enabled
+
+FIX:
+
+1. Upload .htaccess file to /streaming/ folder
+   - Make sure it's named exactly ".htaccess" (with the dot)
+   - File permissions should be 644
+
+2. Test if mod_rewrite is enabled:
+   - Upload test-rewrite.php to /streaming/
+   - Visit: yourdomain.com/test-rewrite.php
+   - Check if "mod_rewrite is enabled" shows ✓
+
+3. If mod_rewrite is disabled:
+   - Contact your hosting provider
+   - Ask them to enable "mod_rewrite" module
+   - Most shared hosting has this enabled by default
+
+4. Clear browser cache:
+   - Chrome: Ctrl+Shift+Delete (Cmd+Shift+Delete on Mac)
+   - Firefox: Ctrl+Shift+Delete
+   - Safari: Cmd+Option+E
+   - Or use Incognito/Private mode
+
+5. If still not working:
+   - Check ISPmanager settings
+   - Make sure .htaccess files are allowed
+   - Try adding this to .htaccess:
+     Options +FollowSymLinks
+
+
+ISSUE 2: Favorites badge shows 0 on favorites page
+---------------------------------------------------
+
+CAUSE: Timing issue with JavaScript loading
+
+FIX:
+
+1. Open browser console (F12)
+   - Look for any JavaScript errors
+   - Check console logs for "Favorites loaded:" message
+   - Should show games: X, leagues: Y, total: Z
+
+2. If count is correct in console but not displayed:
+   - Hard refresh the page (Ctrl+F5 or Cmd+Shift+R)
+   - Clear browser cache
+   - Check if localStorage is enabled in browser
+
+3. Debug steps:
+   - Go to homepage
+   - Add a favorite (click ⭐)
+   - Check if count badge updates
+   - Click "Favorites" in sidebar
+   - Open console (F12)
+   - Look for "Updating favorites count:" messages
+   - Should see multiple updates
+
+4. If localStorage is blocked:
+   - Check browser privacy settings
+   - Disable "Block third-party cookies"
+   - Try different browser
+
+
+ISSUE 3: Favorites URL not showing count
+-----------------------------------------
+
+EXPECTED URLs:
+- No favorites: /?favorites=1
+- 1 favorite: /?favorites=1
+- 2 favorites: /?favorites=2
+- 5 favorites: /?favorites=5
+
+The number in URL = total of favorited games + leagues
+
+
+TESTING CHECKLIST
+-----------------
+
+[ ] .htaccess file uploaded to /streaming/
+[ ] .htaccess file permissions set to 644
+[ ] mod_rewrite enabled on server
+[ ] Browser cache cleared
+[ ] JavaScript console shows no errors
+[ ] localStorage is enabled in browser
+[ ] Favorites count updates when clicking stars
+[ ] Sport links show /live-basketball format
+[ ] test-rewrite.php shows "mod_rewrite is enabled"
+
+
+COMMON ISSUES
+-------------
+
+ISSUE: Links still show ?sport=basketball
+FIX: Clear browser cache or use Incognito mode
+
+ISSUE: 404 error when clicking sport links
+FIX: .htaccess not working - check with test-rewrite.php
+
+ISSUE: Favorites count always 0
+FIX: Open console, check for errors, verify localStorage
+
+ISSUE: .htaccess not uploading
+FIX: Use FTP client, enable "Show hidden files"
+
+ISSUE: ISPmanager blocks .htaccess
+FIX: Contact hosting, ask to enable .htaccess
+
+
+CONTACT INFORMATION
+-------------------
+
+If issues persist:
+1. Check browser console (F12) for errors
+2. Visit test-rewrite.php to diagnose URL rewriting
+3. Take screenshots of any errors
+4. Check PHP error logs in ISPmanager
+
+========================================
+END OF TROUBLESHOOTING GUIDE
+========================================
