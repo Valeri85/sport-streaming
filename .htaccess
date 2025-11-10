@@ -1,46 +1,39 @@
 # Enable rewrite engine
-
 RewriteEngine On
 RewriteBase /
 
 # Redirect www to non-www (optional - comment out if not needed)
-
-# RewriteCond %{HTTP_HOST} ^www\.(.\*)$ [NC]
-
-# RewriteRule ^(.\*)$ https://%1/$1 [R=301,L]
+# RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+# RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 # Prevent rewriting for actual files and directories
-
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Live sport pages - must come before other rules
+# Favorites page
+RewriteRule ^favorites/?$ index.php [L,QSA]
 
+# Live sport pages
 RewriteRule ^live-([a-z-]+)/?$ index.php [L,QSA]
 
 # Prevent access to config and data files
-
 <FilesMatch "^(config|data\.json)">
 Order allow,deny
 Deny from all
 </FilesMatch>
 
 # Prevent access to hidden files
-
 <FilesMatch "^\.">
 Order allow,deny
 Deny from all
 </FilesMatch>
 
 # Prevent directory listing
-
 Options -Indexes
 
 # Force UTF-8 encoding
-
 AddDefaultCharset UTF-8
 
 # Enable error display for debugging (disable in production)
-
 php_flag display_errors On
 php_value error_reporting E_ALL
