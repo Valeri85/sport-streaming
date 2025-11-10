@@ -338,21 +338,26 @@ foreach ($gamesData as $game) {
                                             <?php foreach ($group['games'] as $game): 
                                                 $linkCount = getLinkCount($game['id'], $linksData);
                                             ?>
-                                                <div class="game-item" data-game-id="<?php echo $game['id']; ?>" data-league-id="<?php echo $leagueId; ?>">
-                                                    <div class="game-time">
-                                                        <?php echo formatGameTime($game['date']); ?>
-                                                    </div>
-                                                    <div class="game-teams">
-                                                        <div class="team">
-                                                            <span class="team-icon"></span>
-                                                            <?php echo htmlspecialchars($game['match']); ?>
+                                                <details class="game-item-details" data-game-id="<?php echo $game['id']; ?>" data-league-id="<?php echo $leagueId; ?>">
+                                                    <summary class="game-item-summary">
+                                                        <div class="game-time">
+                                                            <?php echo formatGameTime($game['date']); ?>
                                                         </div>
-                                                    </div>
-                                                    <?php if ($linkCount > 0): ?>
-                                                        <span class="link-count-badge"><?php echo $linkCount; ?></span>
-                                                    <?php endif; ?>
-                                                    <span class="favorite-star" data-game-id="<?php echo $game['id']; ?>">☆</span>
-                                                </div>
+                                                        <div class="game-teams">
+                                                            <div class="team">
+                                                                <span class="team-icon"></span>
+                                                                <?php echo htmlspecialchars($game['match']); ?>
+                                                            </div>
+                                                        </div>
+                                                        <div class="game-actions">
+                                                            <?php if ($linkCount > 0): ?>
+                                                                <span class="link-count-badge"><?php echo $linkCount; ?></span>
+                                                            <?php endif; ?>
+                                                            <span class="favorite-star" data-game-id="<?php echo $game['id']; ?>">☆</span>
+                                                        </div>
+                                                    </summary>
+                                                    <div class="game-links-container"></div>
+                                                </details>
                                             <?php endforeach; ?>
                                         </div>
                                     <?php endforeach; ?>
@@ -408,21 +413,26 @@ foreach ($gamesData as $game) {
                                             $displayedGames++;
                                             $linkCount = getLinkCount($game['id'], $linksData);
                                         ?>
-                                            <div class="game-item" data-game-id="<?php echo $game['id']; ?>" data-league-id="<?php echo $leagueId; ?>">
-                                                <div class="game-time">
-                                                    <?php echo formatGameTime($game['date']); ?>
-                                                </div>
-                                                <div class="game-teams">
-                                                    <div class="team">
-                                                        <span class="team-icon"></span>
-                                                        <?php echo htmlspecialchars($game['match']); ?>
+                                            <details class="game-item-details" data-game-id="<?php echo $game['id']; ?>" data-league-id="<?php echo $leagueId; ?>">
+                                                <summary class="game-item-summary">
+                                                    <div class="game-time">
+                                                        <?php echo formatGameTime($game['date']); ?>
                                                     </div>
-                                                </div>
-                                                <?php if ($linkCount > 0): ?>
-                                                    <span class="link-count-badge"><?php echo $linkCount; ?></span>
-                                                <?php endif; ?>
-                                                <span class="favorite-star" data-game-id="<?php echo $game['id']; ?>">☆</span>
-                                            </div>
+                                                    <div class="game-teams">
+                                                        <div class="team">
+                                                            <span class="team-icon"></span>
+                                                            <?php echo htmlspecialchars($game['match']); ?>
+                                                        </div>
+                                                    </div>
+                                                    <div class="game-actions">
+                                                        <?php if ($linkCount > 0): ?>
+                                                            <span class="link-count-badge"><?php echo $linkCount; ?></span>
+                                                        <?php endif; ?>
+                                                        <span class="favorite-star" data-game-id="<?php echo $game['id']; ?>">☆</span>
+                                                    </div>
+                                                </summary>
+                                                <div class="game-links-container"></div>
+                                            </details>
                                         <?php endforeach; ?>
                                     </div>
                                 <?php endforeach; ?>

@@ -176,7 +176,8 @@ foreach ($groupedBySport as $sportName => $sportGames) {
         foreach ($group['games'] as $game) {
             $linkCount = getLinkCount($game['id'], $linksData);
             
-            $html .= '<div class="game-item" data-game-id="' . $game['id'] . '" data-league-id="' . $leagueId . '">';
+            $html .= '<details class="game-item-details" data-game-id="' . $game['id'] . '" data-league-id="' . $leagueId . '">';
+            $html .= '<summary class="game-item-summary">';
             $html .= '<div class="game-time">' . formatGameTime($game['date']) . '</div>';
             $html .= '<div class="game-teams">';
             $html .= '<div class="team">';
@@ -184,6 +185,7 @@ foreach ($groupedBySport as $sportName => $sportGames) {
             $html .= htmlspecialchars($game['match']);
             $html .= '</div>';
             $html .= '</div>';
+            $html .= '<div class="game-actions">';
             
             if ($linkCount > 0) {
                 $html .= '<span class="link-count-badge">' . $linkCount . '</span>';
@@ -191,6 +193,9 @@ foreach ($groupedBySport as $sportName => $sportGames) {
             
             $html .= '<span class="favorite-star" data-game-id="' . $game['id'] . '">☆</span>';
             $html .= '</div>';
+            $html .= '</summary>';
+            $html .= '<div class="game-links-container"></div>';
+            $html .= '</details>';
         }
         
         $html .= '</div>';

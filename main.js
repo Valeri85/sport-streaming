@@ -92,7 +92,7 @@ function filterFavoritesView() {
 			const competition = compGroup.getAttribute('data-competition');
 			const country = compGroup.getAttribute('data-country');
 
-			const games = compGroup.querySelectorAll('.game-item');
+			const games = compGroup.querySelectorAll('.game-item-details');
 			games.forEach(game => {
 				const gameId = game.getAttribute('data-game-id');
 				const gameLeagueId = game.getAttribute('data-league-id');
@@ -188,8 +188,8 @@ function filterFavoritesView() {
 			star.addEventListener('click', handleLeagueFavorite);
 		});
 
-		container.querySelectorAll('.game-item').forEach(item => {
-			item.addEventListener('click', handleGameClick);
+		container.querySelectorAll('.game-item-details').forEach(details => {
+			details.addEventListener('toggle', handleGameToggle);
 		});
 	}
 
@@ -217,6 +217,7 @@ function loadFavorites() {
 }
 
 function handleGameFavorite(e) {
+	e.preventDefault();
 	e.stopPropagation();
 	const gameId = this.getAttribute('data-game-id');
 
@@ -260,48 +261,41 @@ function handleLeagueFavorite(e) {
 	}
 }
 
-function handleGameClick(e) {
-	if (e.target.classList.contains('favorite-star') || e.target.classList.contains('league-favorite')) {
-		return;
+function handleGameToggle(e) {
+	const details = e.target;
+	const gameId = details.getAttribute('data-game-id');
+	const linksContainer = details.querySelector('.game-links-container');
+
+	if (details.open) {
+		if (linksContainer.children.length > 0) {
+			return;
+		}
+
+		const links = linksData[gameId];
+		if (!links || links.length === 0) {
+			linksContainer.innerHTML = '<div class="no-games"><p>No streaming links available</p></div>';
+			return;
+		}
+
+		details.classList.add('loading');
+
+		setTimeout(() => {
+			details.classList.remove('loading');
+
+			let linksHTML = '<div class="game-links-title">Available Streams:</div>';
+
+			links.forEach(link => {
+				linksHTML += `
+                    <a href="${link.link}" target="_blank" class="link-item">
+                        <span class="link-badge">${link.type}</span>
+                        <span>Watch Stream</span>
+                    </a>
+                `;
+			});
+
+			linksContainer.innerHTML = linksHTML;
+		}, 300);
 	}
-
-	const gameItem = this;
-	const gameId = gameItem.getAttribute('data-game-id');
-
-	let linksContainer = gameItem.querySelector('.game-links');
-	if (linksContainer) {
-		linksContainer.classList.toggle('visible');
-		return;
-	}
-
-	const links = linksData[gameId];
-	if (!links || links.length === 0) {
-		alert('No streaming links available for this game');
-		return;
-	}
-
-	gameItem.classList.add('loading');
-
-	setTimeout(() => {
-		gameItem.classList.remove('loading');
-
-		linksContainer = document.createElement('div');
-		linksContainer.className = 'game-links visible';
-
-		let linksHTML = '<div class="game-links-title">Available Streams:</div>';
-
-		links.forEach(link => {
-			linksHTML += `
-                <a href="${link.link}" target="_blank" class="link-item">
-                    <span class="link-badge">${link.type}</span>
-                    <span>Watch Stream</span>
-                </a>
-            `;
-		});
-
-		linksContainer.innerHTML = linksHTML;
-		gameItem.querySelector('.game-teams').appendChild(linksContainer);
-	}, 300);
 }
 
 function loadMoreGames() {
@@ -379,10 +373,10 @@ function attachEventListeners() {
 		}
 	});
 
-	document.querySelectorAll('.game-item').forEach(item => {
-		if (!item.dataset.listenerAttached) {
-			item.addEventListener('click', handleGameClick);
-			item.dataset.listenerAttached = 'true';
+	document.querySelectorAll('.game-item-details').forEach(details => {
+		if (!details.dataset.listenerAttached) {
+			details.addEventListener('toggle', handleGameToggle);
+			details.dataset.listenerAttached = 'true';
 		}
 	});
 
