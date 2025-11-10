@@ -9,3 +9,5 @@ links in games accordion when opened they are listed as list can you make it gri
 also load indicator at near blue badge looks a little bad, Instead of an indicator, let's make the part of the accordion where it says play time, a blue badge and a star, glow with a dim light until the accordion opens.
 
 Error: Element div not allowed as child of element summary in this context.
+
+api endpoint is accessable for anyone? I mean can someone see that data is mine and its on my server?

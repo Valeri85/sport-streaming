@@ -17,7 +17,6 @@ if (!file_exists($jsonFile)) {
 $jsonContent = file_get_contents($jsonFile);
 $data = json_decode($jsonContent, true);
 $gamesData = $data['games'] ?? [];
-$linksData = $data['links'] ?? [];
 
 function getTimeCategory($dateString) {
     $gameTime = strtotime($dateString);
@@ -64,10 +63,6 @@ function getCountryName($countryFile) {
 function formatGameTime($dateString) {
     $timestamp = strtotime($dateString);
     return date('H:i', $timestamp);
-}
-
-function getLinkCount($gameId, $linksData) {
-    return isset($linksData[$gameId]) ? count($linksData[$gameId]) : 0;
 }
 
 $filteredGames = $gamesData;
@@ -144,14 +139,14 @@ foreach ($groupedBySport as $sportName => $sportGames) {
         $byCountryLeague[$key]['games'][] = $game;
     }
     
-    $html .= '<div class="sport-category" id="' . $sportId . '" data-sport="' . htmlspecialchars($sportName) . '">';
+    $html .= '<article class="sport-category" id="' . $sportId . '" data-sport="' . htmlspecialchars($sportName) . '">';
     $html .= '<details open>';
     $html .= '<summary class="sport-header">';
-    $html .= '<div class="sport-title">';
+    $html .= '<span class="sport-title">';
     $html .= '<span>' . $sportIcon . '</span>';
     $html .= '<span>' . htmlspecialchars($sportName) . '</span>';
     $html .= '<span class="sport-count-badge">' . count($sportGames) . '</span>';
-    $html .= '</div>';
+    $html .= '</span>';
     $html .= '</summary>';
     
     foreach ($byCountryLeague as $key => $group) {
@@ -159,50 +154,44 @@ foreach ($groupedBySport as $sportName => $sportGames) {
         $countryFlag = getCountryFlag($group['country']);
         $countryName = getCountryName($group['country']);
         
-        $html .= '<div class="competition-group" data-league-id="' . $leagueId . '" ';
+        $html .= '<section class="competition-group" data-league-id="' . $leagueId . '" ';
         $html .= 'data-country="' . htmlspecialchars($group['country']) . '" ';
         $html .= 'data-competition="' . htmlspecialchars($group['competition']) . '">';
         
         $html .= '<div class="competition-header">';
-        $html .= '<div class="competition-name">';
+        $html .= '<span class="competition-name">';
         $html .= '<span>' . $countryFlag . '</span>';
         $html .= '<span>' . htmlspecialchars($countryName) . '</span>';
         $html .= '<span>•</span>';
         $html .= '<span>' . htmlspecialchars($group['competition']) . '</span>';
-        $html .= '</div>';
-        $html .= '<span class="league-favorite" data-league-id="' . $leagueId . '">☆</span>';
+        $html .= '</span>';
+        $html .= '<span class="league-favorite" data-league-id="' . $leagueId . '" role="button" aria-label="Favorite league">☆</span>';
         $html .= '</div>';
         
         foreach ($group['games'] as $game) {
-            $linkCount = getLinkCount($game['id'], $linksData);
-            
             $html .= '<details class="game-item-details" data-game-id="' . $game['id'] . '" data-league-id="' . $leagueId . '">';
             $html .= '<summary class="game-item-summary">';
-            $html .= '<div class="game-time">' . formatGameTime($game['date']) . '</div>';
-            $html .= '<div class="game-teams">';
-            $html .= '<div class="team">';
+            $html .= '<time class="game-time" datetime="' . $game['date'] . '">' . formatGameTime($game['date']) . '</time>';
+            $html .= '<span class="game-teams">';
+            $html .= '<span class="team">';
             $html .= '<span class="team-icon"></span>';
             $html .= htmlspecialchars($game['match']);
-            $html .= '</div>';
-            $html .= '</div>';
-            $html .= '<div class="game-actions">';
-            
-            if ($linkCount > 0) {
-                $html .= '<span class="link-count-badge">' . $linkCount . '</span>';
-            }
-            
-            $html .= '<span class="favorite-star" data-game-id="' . $game['id'] . '">☆</span>';
-            $html .= '</div>';
+            $html .= '</span>';
+            $html .= '</span>';
+            $html .= '<span class="game-actions">';
+            $html .= '<span class="link-count-badge" data-game-id="' . $game['id'] . '">0</span>';
+            $html .= '<span class="favorite-star" data-game-id="' . $game['id'] . '" role="button" aria-label="Favorite game">☆</span>';
+            $html .= '</span>';
             $html .= '</summary>';
             $html .= '<div class="game-links-container"></div>';
             $html .= '</details>';
         }
         
-        $html .= '</div>';
+        $html .= '</section>';
     }
     
     $html .= '</details>';
-    $html .= '</div>';
+    $html .= '</article>';
 }
 
 echo json_encode([

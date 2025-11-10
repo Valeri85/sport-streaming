@@ -1,7 +1,6 @@
 let favoriteGames = JSON.parse(localStorage.getItem('favoriteGames') || '[]');
 let favoriteLeagues = JSON.parse(localStorage.getItem('favoriteLeagues') || '[]');
 const isViewingFavorites = document.body.dataset.viewingFavorites === 'true';
-const linksData = JSON.parse(document.body.dataset.links || '{}');
 
 let currentOffset = 30;
 let isLoading = false;
@@ -70,6 +69,39 @@ function updateFavoritesCount() {
 	}
 }
 
+async function fetchLinkCount(gameId) {
+	try {
+		const response = await fetch(`/api/get-links.php?game_id=${gameId}`);
+		const data = await response.json();
+		return data.count || 0;
+	} catch (error) {
+		console.error('Error fetching link count:', error);
+		return 0;
+	}
+}
+
+async function loadAllLinkCounts() {
+	const badges = document.querySelectorAll('.link-count-badge[data-game-id]');
+	badges.forEach(async badge => {
+		const gameId = badge.getAttribute('data-game-id');
+		const count = await fetchLinkCount(gameId);
+		badge.textContent = count;
+		if (count === 0) {
+			badge.style.display = 'none';
+		}
+	});
+}
+
+function createSkeletonLoader() {
+	return `
+		<div class="skeleton-loader">
+			<div class="skeleton-item"></div>
+			<div class="skeleton-item"></div>
+			<div class="skeleton-item"></div>
+		</div>
+	`;
+}
+
 function filterFavoritesView() {
 	if (!isViewingFavorites) return;
 
@@ -82,7 +114,7 @@ function filterFavoritesView() {
 	let favoritesHTML = '';
 	const allSportsData = {};
 
-	templateData.querySelectorAll('.sport-category').forEach(category => {
+	templateData.content.querySelectorAll('.sport-category').forEach(category => {
 		const sportName = category.getAttribute('data-sport');
 		const sportIcon = category.querySelector('.sport-title span:first-child')?.textContent || '⚽';
 
@@ -134,17 +166,17 @@ function filterFavoritesView() {
 			const isLeagueFavorited = favoriteLeagues.includes(comp.leagueId);
 
 			competitionsHTML += `
-                <div class="competition-group" data-league-id="${comp.leagueId}">
+                <section class="competition-group" data-league-id="${comp.leagueId}">
                     <div class="competition-header">
-                        <div class="competition-name">
+                        <span class="competition-name">
                             ${comp.countryDisplay}
-                        </div>
+                        </span>
                         <span class="league-favorite ${isLeagueFavorited ? 'favorited' : ''}" data-league-id="${
 				comp.leagueId
-			}">${isLeagueFavorited ? '★' : '☆'}</span>
+			}" role="button" aria-label="Favorite league">${isLeagueFavorited ? '★' : '☆'}</span>
                     </div>
                     ${comp.games.join('')}
-                </div>
+                </section>
             `;
 		}
 
@@ -154,18 +186,18 @@ function filterFavoritesView() {
 			const sportCountBadgeColor = document.body.dataset.primaryColor || '#FFA500';
 
 			favoritesHTML += `
-                <div class="sport-category">
+                <article class="sport-category">
                     <details open>
                         <summary class="sport-header">
-                            <div class="sport-title">
+                            <span class="sport-title">
                                 <span>${sport.icon}</span>
                                 <span>${sportName}</span>
                                 <span class="sport-count-badge" style="background-color: ${sportCountBadgeColor};">${sportGameCount}</span>
-                            </div>
+                            </span>
                         </summary>
                         ${competitionsHTML}
                     </details>
-                </div>
+                </article>
             `;
 		}
 	}
@@ -191,6 +223,8 @@ function filterFavoritesView() {
 		container.querySelectorAll('.game-item-details').forEach(details => {
 			details.addEventListener('toggle', handleGameToggle);
 		});
+
+		loadAllLinkCounts();
 	}
 
 	updateFavoritesCount();
@@ -261,7 +295,7 @@ function handleLeagueFavorite(e) {
 	}
 }
 
-function handleGameToggle(e) {
+async function handleGameToggle(e) {
 	const details = e.target;
 	const gameId = details.getAttribute('data-game-id');
 	const linksContainer = details.querySelector('.game-links-container');
@@ -271,30 +305,44 @@ function handleGameToggle(e) {
 			return;
 		}
 
-		const links = linksData[gameId];
-		if (!links || links.length === 0) {
-			linksContainer.innerHTML = '<div class="no-games"><p>No streaming links available</p></div>';
-			return;
-		}
-
 		details.classList.add('loading');
+		linksContainer.innerHTML = createSkeletonLoader();
 
-		setTimeout(() => {
+		try {
+			const response = await fetch(`/api/get-links.php?game_id=${gameId}`);
+			const data = await response.json();
+
+			setTimeout(() => {
+				details.classList.remove('loading');
+
+				if (!data.success || !data.links || data.links.length === 0) {
+					linksContainer.innerHTML = '<div class="no-games"><p>No streaming links available</p></div>';
+					return;
+				}
+
+				let linksHTML = '<div class="game-links-title">Available Streams:</div>';
+				linksHTML += '<div class="game-links-grid">';
+
+				data.links.forEach(link => {
+					linksHTML += `
+                        <a href="${link.link}" target="_blank" rel="noopener noreferrer" class="link-item">
+                            <span class="link-item-content">
+                                <span class="link-badge">${link.type}</span>
+                                <span>Watch Stream</span>
+                            </span>
+                            <span class="external-icon">↗</span>
+                        </a>
+                    `;
+				});
+
+				linksHTML += '</div>';
+				linksContainer.innerHTML = linksHTML;
+			}, 800);
+		} catch (error) {
 			details.classList.remove('loading');
-
-			let linksHTML = '<div class="game-links-title">Available Streams:</div>';
-
-			links.forEach(link => {
-				linksHTML += `
-                    <a href="${link.link}" target="_blank" class="link-item">
-                        <span class="link-badge">${link.type}</span>
-                        <span>Watch Stream</span>
-                    </a>
-                `;
-			});
-
-			linksContainer.innerHTML = linksHTML;
-		}, 300);
+			console.error('Error loading links:', error);
+			linksContainer.innerHTML = '<div class="no-games"><p>Error loading links</p></div>';
+		}
 	}
 }
 
@@ -320,11 +368,35 @@ function loadMoreGames() {
 				const tempDiv = document.createElement('div');
 				tempDiv.innerHTML = data.html;
 
-				if (loadingIndicator) {
-					mainContent.insertBefore(tempDiv.firstChild, loadingIndicator);
-				} else {
-					mainContent.appendChild(tempDiv.firstChild);
-				}
+				const newSportCategories = tempDiv.querySelectorAll('.sport-category');
+
+				newSportCategories.forEach(newCategory => {
+					const sportName = newCategory.getAttribute('data-sport');
+					const existingCategory = mainContent.querySelector(`.sport-category[data-sport="${sportName}"]`);
+
+					if (existingCategory) {
+						const newCompetitions = newCategory.querySelectorAll('.competition-group');
+						const existingSummary = existingCategory.querySelector('summary');
+
+						newCompetitions.forEach(newComp => {
+							existingSummary.insertAdjacentElement('afterend', newComp);
+						});
+
+						const existingBadge = existingCategory.querySelector('.sport-count-badge');
+						const newBadge = newCategory.querySelector('.sport-count-badge');
+						if (existingBadge && newBadge) {
+							const currentCount = parseInt(existingBadge.textContent) || 0;
+							const newCount = parseInt(newBadge.textContent) || 0;
+							existingBadge.textContent = currentCount + newCount;
+						}
+					} else {
+						if (loadingIndicator) {
+							mainContent.insertBefore(newCategory, loadingIndicator);
+						} else {
+							mainContent.appendChild(newCategory);
+						}
+					}
+				});
 
 				attachEventListeners();
 
@@ -381,6 +453,7 @@ function attachEventListeners() {
 	});
 
 	loadFavorites();
+	loadAllLinkCounts();
 }
 
 let observer = null;
