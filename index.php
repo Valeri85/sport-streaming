@@ -358,12 +358,7 @@ foreach ($gamesData as $game) {
                         <p>No games available for this time period</p>
                     </div>
                 <?php else: ?>
-                    <?php 
-                    $displayedGames = 0;
-                    $maxInitialGames = 15;
-                    foreach ($groupedBySport as $sportName => $sportGames): 
-                        if ($displayedGames >= $maxInitialGames && !$activeSport) break;
-                    ?>
+                    <?php foreach ($groupedBySport as $sportName => $sportGames): ?>
                         <article class="sport-category" id="<?php echo strtolower(str_replace(' ', '-', $sportName)); ?>" data-sport="<?php echo $sportName; ?>">
                             <details open>
                                 <summary class="sport-header">
@@ -377,8 +372,6 @@ foreach ($gamesData as $game) {
                                 <?php
                                 $byCountryLeague = groupByCountryAndLeague($sportGames);
                                 foreach ($byCountryLeague as $key => $group):
-                                    if ($displayedGames >= $maxInitialGames && !$activeSport) break;
-                                    
                                     $leagueId = 'league-' . md5($sportName . $group['country'] . $group['competition']);
                                     $countryFlag = getCountryFlag($group['country']);
                                     $countryName = getCountryName($group['country']);
@@ -422,13 +415,6 @@ foreach ($gamesData as $game) {
                             </details>
                         </article>
                     <?php endforeach; ?>
-                    
-                    <?php if ($displayedGames >= $maxInitialGames && !$activeSport): ?>
-                        <div id="loadMoreTrigger" style="height: 1px;"></div>
-                        <div id="loadingIndicator" style="display: none;">
-                            <p>Fetching more matches...</p>
-                        </div>
-                    <?php endif; ?>
                 <?php endif; ?>
             </section>
         </main>

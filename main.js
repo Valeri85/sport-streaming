@@ -469,7 +469,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		filterFavoritesView();
 	} else {
 		restoreScrollPosition();
-		setupIntersectionObserver();
 	}
 
 	updateFavoritesCount();
