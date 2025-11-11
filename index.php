@@ -425,8 +425,8 @@ foreach ($gamesData as $game) {
                     
                     <?php if ($displayedGames >= $maxInitialGames && !$activeSport): ?>
                         <div id="loadMoreTrigger" style="height: 1px;"></div>
-                        <div id="loadingIndicator" style="display: none; text-align: center; padding: 20px;">
-                            <p>Loading more games...</p>
+                        <div id="loadingIndicator" style="display: none;">
+                            <p>Fetching more matches...</p>
                         </div>
                     <?php endif; ?>
                 <?php endif; ?>

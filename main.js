@@ -381,8 +381,9 @@ function loadMoreGames() {
 
 				console.log('Loaded games:', data.loaded, '/', data.total, 'Has more:', hasMoreGames);
 
-				if (!hasMoreGames && trigger) {
-					trigger.remove();
+				if (!hasMoreGames) {
+					if (trigger) trigger.remove();
+					if (loadingIndicator) loadingIndicator.remove();
 				}
 			}
 
