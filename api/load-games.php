@@ -2,7 +2,7 @@
 
 header('Content-Type: application/json');
 
-$offset = isset($_GET['offset']) ? intval($_GET['offset']) : 0;
+;
 $limit = isset($_GET['limit']) ? intval($_GET['limit']) : 30;
 $sport = isset($_GET['sport']) ? $_GET['sport'] : null;
 $tab = isset($_GET['tab']) ? $_GET['tab'] : 'all';

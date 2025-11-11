@@ -2,7 +2,7 @@ let favoriteGames = JSON.parse(localStorage.getItem('favoriteGames') || '[]');
 let favoriteLeagues = JSON.parse(localStorage.getItem('favoriteLeagues') || '[]');
 const isViewingFavorites = document.body.dataset.viewingFavorites === 'true';
 
-let currentOffset = 30;
+let currentOffset = 15;
 let isLoading = false;
 let hasMoreGames = true;
 
@@ -65,7 +65,6 @@ function updateFavoritesCount() {
 
 	if (countElement) {
 		countElement.textContent = totalFavorites;
-		console.log('Count updated to:', totalFavorites);
 	}
 }
 
@@ -305,7 +304,6 @@ async function handleGameToggle(e) {
 			return;
 		}
 
-		details.classList.add('loading');
 		linksContainer.innerHTML = createSkeletonLoader();
 
 		try {
@@ -313,8 +311,6 @@ async function handleGameToggle(e) {
 			const data = await response.json();
 
 			setTimeout(() => {
-				details.classList.remove('loading');
-
 				if (!data.success || !data.links || data.links.length === 0) {
 					linksContainer.innerHTML = '<div class="no-games"><p>No streaming links available</p></div>';
 					return;
@@ -339,7 +335,6 @@ async function handleGameToggle(e) {
 				linksContainer.innerHTML = linksHTML;
 			}, 800);
 		} catch (error) {
-			details.classList.remove('loading');
 			console.error('Error loading links:', error);
 			linksContainer.innerHTML = '<div class="no-games"><p>Error loading links</p></div>';
 		}
@@ -347,7 +342,9 @@ async function handleGameToggle(e) {
 }
 
 function loadMoreGames() {
-	if (isLoading || !hasMoreGames) return;
+	if (isLoading || !hasMoreGames) {
+		return;
+	}
 
 	isLoading = true;
 	const loadingIndicator = document.getElementById('loadingIndicator');
@@ -358,61 +355,34 @@ function loadMoreGames() {
 	const sportParam = activeSport ? `&sport=${activeSport}` : '';
 	const tabParam = `&tab=${activeTab}`;
 
-	fetch(`/api/load-games.php?offset=${currentOffset}&limit=30${sportParam}${tabParam}`)
+	fetch(`/api/load-games.php?offset=${currentOffset}&limit=15${sportParam}${tabParam}`)
 		.then(response => response.json())
 		.then(data => {
 			if (data.success && data.html) {
 				const mainContent = document.getElementById('mainContent');
 				const loadingIndicator = document.getElementById('loadingIndicator');
+				const trigger = document.getElementById('loadMoreTrigger');
 
 				const tempDiv = document.createElement('div');
 				tempDiv.innerHTML = data.html;
 
-				const newSportCategories = tempDiv.querySelectorAll('.sport-category');
-
-				newSportCategories.forEach(newCategory => {
-					const sportName = newCategory.getAttribute('data-sport');
-					const existingCategory = mainContent.querySelector(`.sport-category[data-sport="${sportName}"]`);
-
-					if (existingCategory) {
-						const newCompetitions = newCategory.querySelectorAll('.competition-group');
-						const existingSummary = existingCategory.querySelector('summary');
-
-						newCompetitions.forEach(newComp => {
-							existingSummary.insertAdjacentElement('afterend', newComp);
-						});
-
-						const existingBadge = existingCategory.querySelector('.sport-count-badge');
-						const newBadge = newCategory.querySelector('.sport-count-badge');
-						if (existingBadge && newBadge) {
-							const currentCount = parseInt(existingBadge.textContent) || 0;
-							const newCount = parseInt(newBadge.textContent) || 0;
-							existingBadge.textContent = currentCount + newCount;
-						}
+				while (tempDiv.firstChild) {
+					if (loadingIndicator) {
+						mainContent.insertBefore(tempDiv.firstChild, loadingIndicator);
 					} else {
-						if (loadingIndicator) {
-							mainContent.insertBefore(newCategory, loadingIndicator);
-						} else {
-							mainContent.appendChild(newCategory);
-						}
+						mainContent.appendChild(tempDiv.firstChild);
 					}
-				});
+				}
 
 				attachEventListeners();
 
-				currentOffset += 30;
+				currentOffset += 15;
 				hasMoreGames = data.hasMore;
 
-				console.log('Loaded games:', data.loaded, '/', data.total);
+				console.log('Loaded games:', data.loaded, '/', data.total, 'Has more:', hasMoreGames);
 
-				if (!hasMoreGames) {
-					const trigger = document.getElementById('loadMoreTrigger');
-					if (trigger && observer) {
-						observer.unobserve(trigger);
-					}
-					if (loadingIndicator) {
-						loadingIndicator.style.display = 'none';
-					}
+				if (!hasMoreGames && trigger) {
+					trigger.remove();
 				}
 			}
 
@@ -460,22 +430,33 @@ let observer = null;
 
 function setupIntersectionObserver() {
 	const trigger = document.getElementById('loadMoreTrigger');
-	if (!trigger) return;
+	if (!trigger) {
+		console.log('No trigger found');
+		return;
+	}
+
+	if (observer) {
+		observer.disconnect();
+	}
 
 	observer = new IntersectionObserver(
 		entries => {
 			entries.forEach(entry => {
-				if (entry.isIntersecting) {
+				if (entry.isIntersecting && !isLoading && hasMoreGames) {
+					console.log('Trigger visible, loading more games');
 					loadMoreGames();
 				}
 			});
 		},
 		{
-			rootMargin: '200px',
+			root: null,
+			rootMargin: '100px',
+			threshold: 0.1,
 		}
 	);
 
 	observer.observe(trigger);
+	console.log('Observer attached to trigger');
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -492,7 +473,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	updateFavoritesCount();
 	setTimeout(updateFavoritesCount, 100);
-	setTimeout(updateFavoritesCount, 500);
 
 	console.log('Page initialization complete');
 });

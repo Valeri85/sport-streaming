@@ -360,7 +360,7 @@ foreach ($gamesData as $game) {
                 <?php else: ?>
                     <?php 
                     $displayedGames = 0;
-                    $maxInitialGames = 30;
+                    $maxInitialGames = 15;
                     foreach ($groupedBySport as $sportName => $sportGames): 
                         if ($displayedGames >= $maxInitialGames && !$activeSport) break;
                     ?>
