@@ -9,6 +9,12 @@ let hasMoreGames = true;
 const activeSport = document.body.dataset.activeSport || '';
 const activeTab = document.body.dataset.activeTab || 'all';
 
+console.log('Favorites loaded:', {
+	games: favoriteGames.length,
+	leagues: favoriteLeagues.length,
+	total: favoriteGames.length + favoriteLeagues.length,
+});
+
 function initDarkMode() {
 	const darkMode = localStorage.getItem('darkMode') === 'true';
 	if (darkMode) {
@@ -34,22 +40,6 @@ function updateThemeIcon() {
 	if (themeIcon) {
 		themeIcon.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 	}
-}
-
-function toggleMobileMenu() {
-	const sidebar = document.querySelector('.sidebar');
-	const overlay = document.querySelector('.mobile-overlay');
-	sidebar.classList.toggle('mobile-open');
-	overlay.classList.toggle('active');
-	document.body.style.overflow = sidebar.classList.contains('mobile-open') ? 'hidden' : '';
-}
-
-function closeMobileMenu() {
-	const sidebar = document.querySelector('.sidebar');
-	const overlay = document.querySelector('.mobile-overlay');
-	sidebar.classList.remove('mobile-open');
-	overlay.classList.remove('active');
-	document.body.style.overflow = '';
 }
 
 function saveScrollPosition(event) {
@@ -84,6 +74,7 @@ async function fetchLinkCount(gameId) {
 		const data = await response.json();
 		return data.count || 0;
 	} catch (error) {
+		console.error('Error fetching link count:', error);
 		return 0;
 	}
 }
@@ -344,6 +335,7 @@ async function handleGameToggle(e) {
 				linksContainer.innerHTML = linksHTML;
 			}, 800);
 		} catch (error) {
+			console.error('Error loading links:', error);
 			linksContainer.innerHTML = '<div class="no-games"><p>Error loading links</p></div>';
 		}
 	}
@@ -387,6 +379,8 @@ function loadMoreGames() {
 				currentOffset += 15;
 				hasMoreGames = data.hasMore;
 
+				console.log('Loaded games:', data.loaded, '/', data.total, 'Has more:', hasMoreGames);
+
 				if (!hasMoreGames) {
 					if (trigger) trigger.remove();
 					if (loadingIndicator) loadingIndicator.remove();
@@ -399,6 +393,7 @@ function loadMoreGames() {
 			}
 		})
 		.catch(error => {
+			console.error('Error loading more games:', error);
 			isLoading = false;
 			if (loadingIndicator) {
 				loadingIndicator.style.display = 'none';
@@ -437,6 +432,7 @@ let observer = null;
 function setupIntersectionObserver() {
 	const trigger = document.getElementById('loadMoreTrigger');
 	if (!trigger) {
+		console.log('No trigger found - all games loaded or sport-specific page');
 		return;
 	}
 
@@ -448,6 +444,7 @@ function setupIntersectionObserver() {
 		entries => {
 			entries.forEach(entry => {
 				if (entry.isIntersecting && !isLoading && hasMoreGames) {
+					console.log('Trigger visible, loading more games');
 					loadMoreGames();
 				}
 			});
@@ -460,37 +457,24 @@ function setupIntersectionObserver() {
 	);
 
 	observer.observe(trigger);
+	console.log('Observer attached to trigger');
 }
 
 document.addEventListener('DOMContentLoaded', function () {
 	initDarkMode();
+
 	attachEventListeners();
 
 	if (isViewingFavorites) {
 		filterFavoritesView();
 	} else {
 		restoreScrollPosition();
+		// Initialize infinite scroll observer for home page
+		setupIntersectionObserver();
 	}
 
 	updateFavoritesCount();
 	setTimeout(updateFavoritesCount, 100);
 
-	const menuToggle = document.getElementById('mobileMenuToggle');
-	const overlay = document.querySelector('.mobile-overlay');
-
-	if (menuToggle) {
-		menuToggle.addEventListener('click', toggleMobileMenu);
-	}
-
-	if (overlay) {
-		overlay.addEventListener('click', closeMobileMenu);
-	}
-
-	document.querySelectorAll('.sidebar .menu-item').forEach(item => {
-		item.addEventListener('click', () => {
-			if (window.innerWidth <= 768) {
-				closeMobileMenu();
-			}
-		});
-	});
+	console.log('Page initialization complete');
 });
