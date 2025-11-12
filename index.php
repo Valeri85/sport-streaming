@@ -67,9 +67,8 @@ if (strpos($_SERVER['REQUEST_URI'], '/favorites') !== false) {
     $viewFavorites = true;
 }
 
-// Define variables for pagination
+// Define variable for pagination
 $maxInitialGames = 15;
-$displayedGames = 0;
 
 function groupGamesBySport($games) {
     $grouped = [];
@@ -193,6 +192,14 @@ if ($viewFavorites) {
             return getTimeCategory($game['date']) === 'tomorrow';
         });
     }
+}
+
+// Store total count before slicing
+$totalFilteredGames = count($filteredGames);
+
+// Limit to first 15 games for initial load (only for home page, not sport-specific pages)
+if (!$activeSport && !$viewFavorites) {
+    $filteredGames = array_slice($filteredGames, 0, $maxInitialGames);
 }
 
 $groupedBySport = groupGamesBySport($filteredGames);
@@ -411,10 +418,7 @@ foreach ($gamesData as $game) {
                                             <span class="league-favorite" data-league-id="<?php echo $leagueId; ?>" role="button" aria-label="Favorite league">☆</span>
                                         </div>
                                         
-                                        <?php foreach ($group['games'] as $game): 
-                                            if ($displayedGames >= $maxInitialGames && !$activeSport) break;
-                                            $displayedGames++;
-                                        ?>
+                                        <?php foreach ($group['games'] as $game): ?>
                                             <details class="game-item-details" data-game-id="<?php echo $game['id']; ?>" data-league-id="<?php echo $leagueId; ?>">
                                                 <summary class="game-item-summary">
                                                     <time class="game-time" datetime="<?php echo $game['date']; ?>"><?php echo formatGameTime($game['date']); ?></time>
@@ -438,7 +442,7 @@ foreach ($gamesData as $game) {
                         </article>
                     <?php endforeach; ?>
                     
-                    <?php if (!$activeSport && $displayedGames < count($filteredGames)): ?>
+                    <?php if (!$activeSport && $maxInitialGames < $totalFilteredGames): ?>
                         <div id="loadMoreTrigger" style="height: 1px;"></div>
                         <div id="loadingIndicator" style="display: none;">
                             <p>Loading more games...</p>
