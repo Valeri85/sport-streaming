@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick API Test</title>
+  <style>
+    body {
+      font-family: monospace;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+
+    .result {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    .error {
+      background: #ffebee;
+      border-color: #f44336;
+    }
+
+    .success {
+      background: #e8f5e9;
+      border-color: #4CAF50;
+    }
+
+    pre {
+      overflow-x: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>API Test - Sport Loading</h1>
+
+  <button onclick="testAPI(0)">Test: sport_offset=0</button>
+  <button onclick="testAPI(1)">Test: sport_offset=1</button>
+  <button onclick="testAPI(2)">Test: sport_offset=2</button>
+
+  <div id="result"></div>
+
+  <script>
+    async function testAPI(sportOffset) {
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = '<p>Loading...</p>';
+      resultDiv.className = 'result';
+
+      const url = `/api/load-games.php?sport_offset=${sportOffset}&sports_per_load=2`;
+      console.log('Fetching:', url);
+
+      try {
+        const response = await fetch(url);
+        console.log('Response status:', response.status);
+        console.log('Response headers:', response.headers);
+
+        const text = await response.text();
+        console.log('Response text (first 500 chars):', text.substring(0, 500));
+
+        let data;
+        try {
+          data = JSON.parse(text);
+        } catch (e) {
+          resultDiv.className = 'result error';
+          resultDiv.innerHTML = `
+                        <h3>❌ JSON Parse Error</h3>
+                        <p><strong>Error:</strong> ${e.message}</p>
+                        <p><strong>Response (first 1000 chars):</strong></p>
+                        <pre>${text.substring(0, 1000)}</pre>
+                    `;
+          return;
+        }
+
+        if (data.error) {
+          resultDiv.className = 'result error';
+          resultDiv.innerHTML = `
+                        <h3>❌ API Error</h3>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `;
+          return;
+        }
+
+        if (data.success) {
+          resultDiv.className = 'result success';
+          const htmlLength = data.html ? data.html.length : 0;
+          resultDiv.innerHTML = `
+                        <h3>✅ Success</h3>
+                        <p><strong>Total Sports:</strong> ${data.totalSports}</p>
+                        <p><strong>Sports Loaded:</strong> ${data.sportsLoaded}</p>
+                        <p><strong>Has More:</strong> ${data.hasMore}</p>
+                        <p><strong>HTML Length:</strong> ${htmlLength} chars</p>
+                        <h4>Debug Info:</h4>
+                        <pre>${JSON.stringify(data.debug, null, 2)}</pre>
+                        <h4>Sport Names Returned:</h4>
+                        <pre>${JSON.stringify(data.debug.sport_names_returned, null, 2)}</pre>
+                        <h4>All Sport Names (first 10):</h4>
+                        <pre>${JSON.stringify(data.debug.all_sport_names.slice(0, 10), null, 2)}</pre>
+                    `;
+        } else {
+          resultDiv.className = 'result error';
+          resultDiv.innerHTML = `
+                        <h3>❌ Unexpected Response</h3>
+                        <pre>${JSON.stringify(data, null, 2)}</pre>
+                    `;
+        }
+      } catch (error) {
+        resultDiv.className = 'result error';
+        resultDiv.innerHTML = `
+                    <h3>❌ Fetch Error</h3>
+                    <p><strong>Error:</strong> ${error.message}</p>
+                    <p><strong>Stack:</strong></p>
+                    <pre>${error.stack}</pre>
+                `;
+      }
+    }
+  </script>
+</body>
+
+</html>

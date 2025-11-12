@@ -365,13 +365,24 @@ function loadMoreGames() {
 	console.log('Loading more games from sport offset:', currentSportOffset);
 
 	fetch(`/api/load-games.php?sport_offset=${currentSportOffset}&sports_per_load=2${sportParam}${tabParam}`)
-		.then(response => response.json())
+		.then(response => {
+			console.log('Response status:', response.status);
+			return response.json();
+		})
 		.then(data => {
 			console.log('=== API Response Debug ===');
+			console.log('Full API response:', data);
 			console.log('sport_offset sent:', currentSportOffset);
 			console.log('API returned debug:', data.debug);
 			console.log('sportsLoaded:', data.sportsLoaded);
 			console.log('hasMore:', data.hasMore);
+
+			if (data.error) {
+				console.error('API Error:', data.error);
+				isLoading = false;
+				if (loadingIndicator) loadingIndicator.style.display = 'none';
+				return;
+			}
 
 			if (data.success && data.html) {
 				const mainContent = document.getElementById('mainContent');
@@ -461,11 +472,17 @@ function loadMoreGames() {
 			}
 		})
 		.catch(error => {
+			console.error('=== FETCH ERROR ===');
 			console.error('Error loading more games:', error);
+			console.error('Error details:', {
+				message: error.message,
+				stack: error.stack,
+			});
 			isLoading = false;
 			if (loadingIndicator) {
 				loadingIndicator.style.display = 'none';
 			}
+			alert('Error loading games. Check console for details.');
 		});
 }
 
