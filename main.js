@@ -2,12 +2,14 @@ let favoriteGames = JSON.parse(localStorage.getItem('favoriteGames') || '[]');
 let favoriteLeagues = JSON.parse(localStorage.getItem('favoriteLeagues') || '[]');
 const isViewingFavorites = document.body.dataset.viewingFavorites === 'true';
 
-let currentSportOffset = 0;
+let currentSportOffset = 0; // Start at 0, will be read from trigger
 let isLoading = false;
 let hasMoreGames = true;
 
 const activeSport = document.body.dataset.activeSport || '';
 const activeTab = document.body.dataset.activeTab || 'all';
+
+console.log('Initialized with currentSportOffset:', currentSportOffset);
 
 console.log('Favorites loaded:', {
 	games: favoriteGames.length,
