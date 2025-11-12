@@ -5,3 +5,6 @@
 5. Do not write documentation after every your answer.
 6. CMS domain path: /var/www/u1852176/data/www/watchlivesport.online
 7. Streaming websites path: /var/www/u1852176/data/www/streaming
+
+prompt:
+we need to edit path for data.json, it is not on CMS domain, please update path to www/data/data.json

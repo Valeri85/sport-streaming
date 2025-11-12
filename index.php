@@ -40,8 +40,8 @@ $seoKeywords = $website['seo_keywords'];
 $language = $website['language'];
 $sidebarContent = $website['sidebar_content'];
 
-// Use data.json from CMS domain
-$jsonFile = '/var/www/u1852176/data/www/watchlivesport.online/data.json';
+// Use centralized data.json
+$jsonFile = '/var/www/u1852176/data/www/data/data.json';
 $gamesData = [];
 if (file_exists($jsonFile)) {
     $jsonContent = file_get_contents($jsonFile);

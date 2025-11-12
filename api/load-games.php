@@ -7,8 +7,8 @@ $limit = isset($_GET['limit']) ? intval($_GET['limit']) : 30;
 $sport = isset($_GET['sport']) ? $_GET['sport'] : null;
 $tab = isset($_GET['tab']) ? $_GET['tab'] : 'all';
 
-// Use data.json from CMS domain
-$jsonFile = '/var/www/u1852176/data/www/watchlivesport.online/data.json';
+// Use centralized data.json
+$jsonFile = '/var/www/u1852176/data/www/data/data.json';
 
 if (!file_exists($jsonFile)) {
     echo json_encode(['error' => 'Data file not found']);
