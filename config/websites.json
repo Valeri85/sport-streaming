@@ -1,0 +1,26 @@
+{
+	"websites": [
+		{
+			"id": 1,
+			"domain": "sportlemons.info",
+			"site_name": "SportLemons",
+			"logo": "🍋",
+			"primary_color": "#FFA500",
+			"secondary_color": "#FF8C00",
+			"seo_title": "SportLemons - Live Sports Streaming | Watch Games Online Free",
+			"seo_description": "Watch live sports streaming online free. Football, Basketball, Tennis and more. SportLemons offers the best live sports streams in HD quality.",
+			"seo_keywords": "live sports, sports streaming, watch sports online, free sports streams, football streaming, basketball live, SportLemons",
+			"language": "en",
+			"sidebar_content": "<h3>About SportLemons</h3><p>Your #1 destination for live sports streaming. Watch all major sports events for free!</p>",
+			"status": "active"
+		}
+	],
+	"admins": [
+		{
+			"id": 1,
+			"username": "admin",
+			"password": "$2y$10$CFev3njRQzlacX6nyJnUpeSxQF9NrFqnLH7Ek5NiprGAvT1TNENcm",
+			"email": "admin@example.com"
+		}
+	]
+}

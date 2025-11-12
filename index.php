@@ -6,22 +6,39 @@ ini_set('display_errors', 1);
 $domain = $_SERVER['HTTP_HOST'];
 $domain = str_replace('www.', '', $domain);
 
-$configFile = __DIR__ . '/config/' . $domain . '.php';
-
-if (file_exists($configFile)) {
-    $config = include($configFile);
-} else {
-    die("Configuration not found for domain: " . htmlspecialchars($domain));
+// Load websites configuration from JSON
+$websitesConfigFile = __DIR__ . '/config/websites.json';
+if (!file_exists($websitesConfigFile)) {
+    die("Websites configuration file not found");
 }
 
-$siteName = $config['site_name'];
-$logo = $config['logo'];
-$primaryColor = $config['theme']['primary_color'];
-$secondaryColor = $config['theme']['secondary_color'];
-$seoTitle = $config['seo']['title'];
-$seoDescription = $config['seo']['description'];
-$seoKeywords = $config['seo']['keywords'];
-$language = $config['language'];
+$configContent = file_get_contents($websitesConfigFile);
+$configData = json_decode($configContent, true);
+$websites = $configData['websites'] ?? [];
+
+// Find current website by domain
+$website = null;
+foreach ($websites as $site) {
+    if ($site['domain'] === $domain && $site['status'] === 'active') {
+        $website = $site;
+        break;
+    }
+}
+
+if (!$website) {
+    die("Website not found: " . htmlspecialchars($domain));
+}
+
+// Set configuration from JSON
+$siteName = $website['site_name'];
+$logo = $website['logo'];
+$primaryColor = $website['primary_color'];
+$secondaryColor = $website['secondary_color'];
+$seoTitle = $website['seo_title'];
+$seoDescription = $website['seo_description'];
+$seoKeywords = $website['seo_keywords'];
+$language = $website['language'];
+$sidebarContent = $website['sidebar_content'];
 
 $jsonFile = __DIR__ . '/data.json';
 $gamesData = [];
@@ -48,6 +65,10 @@ $viewFavorites = false;
 if (strpos($_SERVER['REQUEST_URI'], '/favorites') !== false) {
     $viewFavorites = true;
 }
+
+// Define variables for pagination
+$maxInitialGames = 15;
+$displayedGames = 0;
 
 function groupGamesBySport($games) {
     $grouped = [];
@@ -190,9 +211,9 @@ foreach ($gamesData as $game) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $seoTitle; ?></title>
-    <meta name="description" content="<?php echo $seoDescription; ?>">
-    <meta name="keywords" content="<?php echo $seoKeywords; ?>">
+    <title><?php echo htmlspecialchars($seoTitle); ?></title>
+    <meta name="description" content="<?php echo htmlspecialchars($seoDescription); ?>">
+    <meta name="keywords" content="<?php echo htmlspecialchars($seoKeywords); ?>">
     <link rel="stylesheet" href="/styles.css">
     <style>
         .logo {
@@ -224,7 +245,7 @@ foreach ($gamesData as $game) {
             <a href="/">
                 <h1>
                     <span class="logo-icon"><?php echo $logo; ?></span>
-                    <?php echo $siteName; ?>
+                    <?php echo htmlspecialchars($siteName); ?>
                 </h1>
             </a>
         </div>
@@ -415,14 +436,20 @@ foreach ($gamesData as $game) {
                             </details>
                         </article>
                     <?php endforeach; ?>
+                    
+                    <?php if (!$activeSport && $displayedGames < count($filteredGames)): ?>
+                        <div id="loadMoreTrigger" style="height: 1px;"></div>
+                        <div id="loadingIndicator" style="display: none;">
+                            <p>Loading more games...</p>
+                        </div>
+                    <?php endif; ?>
                 <?php endif; ?>
             </section>
         </main>
 
         <aside class="right-sidebar">
             <div class="sidebar-content">
-                <h3>About</h3>
-                <p>Add your content here...</p>
+                <?php echo $sidebarContent; ?>
             </div>
         </aside>
     </div>
