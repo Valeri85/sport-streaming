@@ -367,6 +367,12 @@ function loadMoreGames() {
 	fetch(`/api/load-games.php?sport_offset=${currentSportOffset}&sports_per_load=2${sportParam}${tabParam}`)
 		.then(response => response.json())
 		.then(data => {
+			console.log('=== API Response Debug ===');
+			console.log('sport_offset sent:', currentSportOffset);
+			console.log('API returned debug:', data.debug);
+			console.log('sportsLoaded:', data.sportsLoaded);
+			console.log('hasMore:', data.hasMore);
+
 			if (data.success && data.html) {
 				const mainContent = document.getElementById('mainContent');
 				const loadingIndicator = document.getElementById('loadingIndicator');
@@ -378,13 +384,17 @@ function loadMoreGames() {
 				// Process each sport category from the API response
 				const newSportCategories = tempDiv.querySelectorAll('.sport-category');
 
+				console.log('Processing', newSportCategories.length, 'sport categories from API');
+
 				newSportCategories.forEach(newCategory => {
 					const sportName = newCategory.getAttribute('data-sport');
+					console.log('Processing sport:', sportName);
 
 					// Check if this sport already exists on the page
 					const existingCategory = mainContent.querySelector(`.sport-category[data-sport="${sportName}"]`);
 
 					if (existingCategory) {
+						console.log('  → Sport exists, merging games');
 						// Sport exists - merge the competition groups into existing category
 						const newCompetitions = newCategory.querySelectorAll('.competition-group');
 						const existingDetails = existingCategory.querySelector('details');
@@ -412,6 +422,7 @@ function loadMoreGames() {
 							countBadge.textContent = sportCount;
 						}
 					} else {
+						console.log('  → New sport, adding to page');
 						// New sport - insert entire category before loading indicator
 						if (loadingIndicator) {
 							mainContent.insertBefore(newCategory, loadingIndicator);

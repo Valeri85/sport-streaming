@@ -262,9 +262,11 @@ echo json_encode([
         'sport_offset' => $sportOffset,
         'sports_per_load' => $sportsPerLoad,
         'sports_returned' => count($sportsToReturn),
+        'sport_names_returned' => $sportsToReturn,
         'games_returned' => count($gamesToReturn),
         'total_filtered' => $totalGames,
         'sport_filter' => $sport,
-        'tab_filter' => $tab
+        'tab_filter' => $tab,
+        'all_sport_names' => $sportNames
     ]
 ]);
