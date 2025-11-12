@@ -70,38 +70,6 @@ if (strpos($_SERVER['REQUEST_URI'], '/favorites') !== false) {
 // Define variable for pagination
 $maxInitialGames = 15;
 
-// Group all games by sport first
-$allGroupedBySport = groupGamesBySport($filteredGames);
-
-// Get sport names in order
-$sportNames = array_keys($allGroupedBySport);
-
-// Store total for checking if more to load
-$totalFilteredGames = count($filteredGames);
-
-// For initial load, accumulate games by complete sport categories until we have ~15 games
-$initialSportGames = [];
-$gamesAccumulated = 0;
-$sportsToShow = 0;
-
-if (!$activeSport && !$viewFavorites) {
-    foreach ($sportNames as $sportName) {
-        $sportGames = $allGroupedBySport[$sportName];
-        $gamesAccumulated += count($sportGames);
-        $sportsToShow++;
-        
-        // Stop after we've accumulated at least 15 games
-        if ($gamesAccumulated >= $maxInitialGames) {
-            break;
-        }
-    }
-    
-    // Take only the sports we want to show initially
-    $groupedBySport = array_slice($allGroupedBySport, 0, $sportsToShow, true);
-} else {
-    $groupedBySport = $allGroupedBySport;
-}
-
 function groupGamesBySport($games) {
     $grouped = [];
     foreach ($games as $game) {
