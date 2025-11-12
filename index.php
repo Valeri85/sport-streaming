@@ -70,6 +70,38 @@ if (strpos($_SERVER['REQUEST_URI'], '/favorites') !== false) {
 // Define variable for pagination
 $maxInitialGames = 15;
 
+// Group all games by sport first
+$allGroupedBySport = groupGamesBySport($filteredGames);
+
+// Get sport names in order
+$sportNames = array_keys($allGroupedBySport);
+
+// Store total for checking if more to load
+$totalFilteredGames = count($filteredGames);
+
+// For initial load, accumulate games by complete sport categories until we have ~15 games
+$initialSportGames = [];
+$gamesAccumulated = 0;
+$sportsToShow = 0;
+
+if (!$activeSport && !$viewFavorites) {
+    foreach ($sportNames as $sportName) {
+        $sportGames = $allGroupedBySport[$sportName];
+        $gamesAccumulated += count($sportGames);
+        $sportsToShow++;
+        
+        // Stop after we've accumulated at least 15 games
+        if ($gamesAccumulated >= $maxInitialGames) {
+            break;
+        }
+    }
+    
+    // Take only the sports we want to show initially
+    $groupedBySport = array_slice($allGroupedBySport, 0, $sportsToShow, true);
+} else {
+    $groupedBySport = $allGroupedBySport;
+}
+
 function groupGamesBySport($games) {
     $grouped = [];
     foreach ($games as $game) {
@@ -197,12 +229,31 @@ if ($viewFavorites) {
 // Store total count before slicing
 $totalFilteredGames = count($filteredGames);
 
-// Limit to first 15 games for initial load (only for home page, not sport-specific pages)
-if (!$activeSport && !$viewFavorites) {
-    $filteredGames = array_slice($filteredGames, 0, $maxInitialGames);
-}
+// Group all games by sport first (before slicing)
+$allGroupedBySport = groupGamesBySport($filteredGames);
 
-$groupedBySport = groupGamesBySport($filteredGames);
+// For initial load, load complete sport categories until we have ~15 games
+if (!$activeSport && !$viewFavorites) {
+    $sportNames = array_keys($allGroupedBySport);
+    $gamesAccumulated = 0;
+    $sportsLoaded = 0;
+    
+    foreach ($sportNames as $sportName) {
+        $sportGameCount = count($allGroupedBySport[$sportName]);
+        $gamesAccumulated += $sportGameCount;
+        $sportsLoaded++;
+        
+        // Stop after we've loaded at least 15 games
+        if ($gamesAccumulated >= $maxInitialGames) {
+            break;
+        }
+    }
+    
+    // Take only the sports we want to show initially
+    $groupedBySport = array_slice($allGroupedBySport, 0, $sportsLoaded, true);
+} else {
+    $groupedBySport = $allGroupedBySport;
+}
 
 $sportCounts = [];
 foreach ($gamesData as $game) {
@@ -442,8 +493,8 @@ foreach ($gamesData as $game) {
                         </article>
                     <?php endforeach; ?>
                     
-                    <?php if (!$activeSport && $maxInitialGames < $totalFilteredGames): ?>
-                        <div id="loadMoreTrigger" style="height: 1px;"></div>
+                    <?php if (!$activeSport && count($groupedBySport) < count($allGroupedBySport)): ?>
+                        <div id="loadMoreTrigger" style="height: 1px;" data-sports-loaded="<?php echo count($groupedBySport); ?>"></div>
                         <div id="loadingIndicator" style="display: none;">
                             <p>Loading more games...</p>
                         </div>

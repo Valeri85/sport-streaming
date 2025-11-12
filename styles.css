@@ -125,10 +125,12 @@ body.dark-mode .favorites-section {
 	background: rgba(255, 244, 214, 0.4);
 	transform: translateY(-2px);
 	box-shadow: 0 4px 12px var(--shadow-color);
+	color: var(--text-primary);
 }
 
 body.dark-mode .favorites-link:hover {
 	background: rgba(74, 74, 42, 0.4);
+	color: var(--text-primary);
 }
 
 .favorites-link.active {

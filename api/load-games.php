@@ -4,8 +4,8 @@ header('Content-Type: application/json');
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$offset = isset($_GET['offset']) ? intval($_GET['offset']) : 0;
-$limit = isset($_GET['limit']) ? intval($_GET['limit']) : 30;
+$sportOffset = isset($_GET['sport_offset']) ? intval($_GET['sport_offset']) : 0;
+$sportsPerLoad = isset($_GET['sports_per_load']) ? intval($_GET['sports_per_load']) : 2;
 $sport = isset($_GET['sport']) ? $_GET['sport'] : null;
 $tab = isset($_GET['tab']) ? $_GET['tab'] : 'all';
 
@@ -120,7 +120,29 @@ if ($tab === 'soon') {
 
 $filteredGames = array_values($filteredGames);
 $totalGames = count($filteredGames);
-$gamesToReturn = array_slice($filteredGames, $offset, $limit);
+
+// Group by sport first
+$allGroupedBySport = [];
+foreach ($filteredGames as $game) {
+    $sportName = $game['sport'];
+    if (!isset($allGroupedBySport[$sportName])) {
+        $allGroupedBySport[$sportName] = [];
+    }
+    $allGroupedBySport[$sportName][] = $game;
+}
+
+// Get sport names
+$sportNames = array_keys($allGroupedBySport);
+$totalSports = count($sportNames);
+
+// Get the sports to return based on offset
+$sportsToReturn = array_slice($sportNames, $sportOffset, $sportsPerLoad);
+
+// Build games array from selected sports
+$gamesToReturn = [];
+foreach ($sportsToReturn as $sportName) {
+    $gamesToReturn = array_merge($gamesToReturn, $allGroupedBySport[$sportName]);
+}
 
 $sportsIcons = [
     'Football' => '⚽',
@@ -233,11 +255,13 @@ echo json_encode([
     'success' => true,
     'html' => $html,
     'total' => $totalGames,
-    'loaded' => $offset + count($gamesToReturn),
-    'hasMore' => ($offset + count($gamesToReturn)) < $totalGames,
+    'totalSports' => $totalSports,
+    'sportsLoaded' => $sportOffset + count($sportsToReturn),
+    'hasMore' => ($sportOffset + count($sportsToReturn)) < $totalSports,
     'debug' => [
-        'offset' => $offset,
-        'limit' => $limit,
+        'sport_offset' => $sportOffset,
+        'sports_per_load' => $sportsPerLoad,
+        'sports_returned' => count($sportsToReturn),
         'games_returned' => count($gamesToReturn),
         'total_filtered' => $totalGames,
         'sport_filter' => $sport,

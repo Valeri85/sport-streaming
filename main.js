@@ -2,7 +2,7 @@ let favoriteGames = JSON.parse(localStorage.getItem('favoriteGames') || '[]');
 let favoriteLeagues = JSON.parse(localStorage.getItem('favoriteLeagues') || '[]');
 const isViewingFavorites = document.body.dataset.viewingFavorites === 'true';
 
-let currentOffset = 15;
+let currentSportOffset = 0;
 let isLoading = false;
 let hasMoreGames = true;
 
@@ -343,6 +343,7 @@ async function handleGameToggle(e) {
 
 function loadMoreGames() {
 	if (isLoading || !hasMoreGames) {
+		console.log('Load blocked: isLoading =', isLoading, 'hasMoreGames =', hasMoreGames);
 		return;
 	}
 
@@ -352,10 +353,18 @@ function loadMoreGames() {
 		loadingIndicator.style.display = 'block';
 	}
 
+	// Get current sport offset from trigger element
+	const trigger = document.getElementById('loadMoreTrigger');
+	if (trigger) {
+		currentSportOffset = parseInt(trigger.getAttribute('data-sports-loaded') || currentSportOffset);
+	}
+
 	const sportParam = activeSport ? `&sport=${activeSport}` : '';
 	const tabParam = `&tab=${activeTab}`;
 
-	fetch(`/api/load-games.php?offset=${currentOffset}&limit=15${sportParam}${tabParam}`)
+	console.log('Loading more games from sport offset:', currentSportOffset);
+
+	fetch(`/api/load-games.php?sport_offset=${currentSportOffset}&sports_per_load=2${sportParam}${tabParam}`)
 		.then(response => response.json())
 		.then(data => {
 			if (data.success && data.html) {
@@ -414,14 +423,24 @@ function loadMoreGames() {
 
 				attachEventListeners();
 
-				currentOffset += 15;
+				// Update offset and hasMore flag
+				currentSportOffset = data.sportsLoaded;
 				hasMoreGames = data.hasMore;
 
-				console.log('Loaded games:', data.loaded, '/', data.total, 'Has more:', hasMoreGames);
+				// Update trigger's data attribute
+				if (trigger) {
+					trigger.setAttribute('data-sports-loaded', currentSportOffset);
+				}
+
+				console.log('Loaded sports:', data.sportsLoaded, '/', data.totalSports, 'Has more:', hasMoreGames);
 
 				if (!hasMoreGames) {
 					if (trigger) trigger.remove();
 					if (loadingIndicator) loadingIndicator.remove();
+					if (observer) {
+						observer.disconnect();
+						observer = null;
+					}
 				}
 			}
 
@@ -470,12 +489,19 @@ let observer = null;
 function setupIntersectionObserver() {
 	const trigger = document.getElementById('loadMoreTrigger');
 	if (!trigger) {
-		console.log('No trigger found - all games loaded or sport-specific page');
+		console.log('No trigger found - all content loaded or sport-specific page');
 		return;
 	}
 
+	// Disconnect existing observer if any
 	if (observer) {
 		observer.disconnect();
+	}
+
+	// Initialize current sport offset from trigger
+	const sportsLoaded = trigger.getAttribute('data-sports-loaded');
+	if (sportsLoaded) {
+		currentSportOffset = parseInt(sportsLoaded);
 	}
 
 	observer = new IntersectionObserver(
@@ -489,13 +515,13 @@ function setupIntersectionObserver() {
 		},
 		{
 			root: null,
-			rootMargin: '100px',
+			rootMargin: '200px', // Increased from 100px for better triggering
 			threshold: 0.1,
 		}
 	);
 
 	observer.observe(trigger);
-	console.log('Observer attached to trigger');
+	console.log('Observer attached to trigger at sport offset:', currentSportOffset);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
