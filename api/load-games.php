@@ -1,6 +1,8 @@
 <?php
 
 header('Content-Type: application/json');
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 $offset = isset($_GET['offset']) ? intval($_GET['offset']) : 0;
 $limit = isset($_GET['limit']) ? intval($_GET['limit']) : 30;
@@ -10,14 +12,44 @@ $tab = isset($_GET['tab']) ? $_GET['tab'] : 'all';
 // Use centralized data.json
 $jsonFile = '/var/www/u1852176/data/www/data/data.json';
 
+// Check if file exists
 if (!file_exists($jsonFile)) {
-    echo json_encode(['error' => 'Data file not found']);
+    echo json_encode([
+        'error' => 'Data file not found',
+        'path' => $jsonFile,
+        'debug' => 'Please ensure data.json exists at the specified path'
+    ]);
     exit;
 }
 
-$jsonContent = file_get_contents($jsonFile);
+// Try to read and parse the file
+$jsonContent = @file_get_contents($jsonFile);
+if ($jsonContent === false) {
+    echo json_encode([
+        'error' => 'Could not read data file',
+        'path' => $jsonFile
+    ]);
+    exit;
+}
+
 $data = json_decode($jsonContent, true);
+if (json_last_error() !== JSON_ERROR_NONE) {
+    echo json_encode([
+        'error' => 'Invalid JSON in data file',
+        'json_error' => json_last_error_msg()
+    ]);
+    exit;
+}
+
 $gamesData = $data['games'] ?? [];
+
+if (empty($gamesData)) {
+    echo json_encode([
+        'error' => 'No games found in data file',
+        'games_count' => count($gamesData)
+    ]);
+    exit;
+}
 
 function getTimeCategory($dateString) {
     $gameTime = strtotime($dateString);
@@ -68,12 +100,14 @@ function formatGameTime($dateString) {
 
 $filteredGames = $gamesData;
 
+// Apply sport filter
 if ($sport) {
     $filteredGames = array_filter($filteredGames, function($game) use ($sport) {
         return strtolower($game['sport']) === strtolower(str_replace('-', ' ', $sport));
     });
 }
 
+// Apply time filter
 if ($tab === 'soon') {
     $filteredGames = array_filter($filteredGames, function($game) {
         return getTimeCategory($game['date']) === 'soon';
@@ -200,5 +234,13 @@ echo json_encode([
     'html' => $html,
     'total' => $totalGames,
     'loaded' => $offset + count($gamesToReturn),
-    'hasMore' => ($offset + count($gamesToReturn)) < $totalGames
+    'hasMore' => ($offset + count($gamesToReturn)) < $totalGames,
+    'debug' => [
+        'offset' => $offset,
+        'limit' => $limit,
+        'games_returned' => count($gamesToReturn),
+        'total_filtered' => $totalGames,
+        'sport_filter' => $sport,
+        'tab_filter' => $tab
+    ]
 ]);

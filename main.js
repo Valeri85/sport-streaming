@@ -366,13 +366,51 @@ function loadMoreGames() {
 				const tempDiv = document.createElement('div');
 				tempDiv.innerHTML = data.html;
 
-				while (tempDiv.firstChild) {
-					if (loadingIndicator) {
-						mainContent.insertBefore(tempDiv.firstChild, loadingIndicator);
+				// Process each sport category from the API response
+				const newSportCategories = tempDiv.querySelectorAll('.sport-category');
+
+				newSportCategories.forEach(newCategory => {
+					const sportName = newCategory.getAttribute('data-sport');
+
+					// Check if this sport already exists on the page
+					const existingCategory = mainContent.querySelector(`.sport-category[data-sport="${sportName}"]`);
+
+					if (existingCategory) {
+						// Sport exists - merge the competition groups into existing category
+						const newCompetitions = newCategory.querySelectorAll('.competition-group');
+						const existingDetails = existingCategory.querySelector('details');
+
+						newCompetitions.forEach(newComp => {
+							const leagueId = newComp.getAttribute('data-league-id');
+							const existingComp = existingCategory.querySelector(`.competition-group[data-league-id="${leagueId}"]`);
+
+							if (existingComp) {
+								// Competition exists - append new games to it
+								const newGames = newComp.querySelectorAll('.game-item-details');
+								newGames.forEach(game => {
+									existingComp.appendChild(game);
+								});
+							} else {
+								// New competition - add entire competition group before the closing tag
+								existingDetails.appendChild(newComp);
+							}
+						});
+
+						// Update sport count badge
+						const sportCount = existingCategory.querySelectorAll('.game-item-details').length;
+						const countBadge = existingCategory.querySelector('.sport-count-badge');
+						if (countBadge) {
+							countBadge.textContent = sportCount;
+						}
 					} else {
-						mainContent.appendChild(tempDiv.firstChild);
+						// New sport - insert entire category before loading indicator
+						if (loadingIndicator) {
+							mainContent.insertBefore(newCategory, loadingIndicator);
+						} else {
+							mainContent.appendChild(newCategory);
+						}
 					}
-				}
+				});
 
 				attachEventListeners();
 
