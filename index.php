@@ -240,6 +240,16 @@ foreach ($gamesData as $game) {
       data-active-sport="<?php echo $activeSport ?: ''; ?>"
       data-active-tab="<?php echo $activeTab; ?>">
     
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay"></div>
+    
     <aside class="sidebar">
         <div class="logo">
             <a href="/">
