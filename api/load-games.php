@@ -2,12 +2,13 @@
 
 header('Content-Type: application/json');
 
-;
+$offset = isset($_GET['offset']) ? intval($_GET['offset']) : 0;
 $limit = isset($_GET['limit']) ? intval($_GET['limit']) : 30;
 $sport = isset($_GET['sport']) ? $_GET['sport'] : null;
 $tab = isset($_GET['tab']) ? $_GET['tab'] : 'all';
 
-$jsonFile = __DIR__ . '/../data.json';
+// Use data.json from CMS domain
+$jsonFile = '/var/www/u1852176/data/www/watchlivesport.online/data.json';
 
 if (!file_exists($jsonFile)) {
     echo json_encode(['error' => 'Data file not found']);

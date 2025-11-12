@@ -9,7 +9,8 @@ if (!$gameId) {
     exit;
 }
 
-$jsonFile = __DIR__ . '/../data.json';
+// Use data.json from CMS domain
+$jsonFile = '/var/www/u1852176/data/www/watchlivesport.online/data.json';
 
 if (!file_exists($jsonFile)) {
     echo json_encode(['error' => 'Data file not found']);

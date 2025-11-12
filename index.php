@@ -40,7 +40,8 @@ $seoKeywords = $website['seo_keywords'];
 $language = $website['language'];
 $sidebarContent = $website['sidebar_content'];
 
-$jsonFile = __DIR__ . '/data.json';
+// Use data.json from CMS domain
+$jsonFile = '/var/www/u1852176/data/www/watchlivesport.online/data.json';
 $gamesData = [];
 if (file_exists($jsonFile)) {
     $jsonContent = file_get_contents($jsonFile);
@@ -239,16 +240,6 @@ foreach ($gamesData as $game) {
       data-primary-color="<?php echo $primaryColor; ?>"
       data-active-sport="<?php echo $activeSport ?: ''; ?>"
       data-active-tab="<?php echo $activeTab; ?>">
-    
-    <!-- Mobile Menu Toggle -->
-    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <!-- Mobile Overlay -->
-    <div class="mobile-overlay"></div>
     
     <aside class="sidebar">
         <div class="logo">
