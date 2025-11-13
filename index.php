@@ -207,7 +207,9 @@ foreach ($gamesData as $game) {
     <title><?php echo htmlspecialchars($seoTitle); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($seoDescription); ?>">
     <meta name="keywords" content="<?php echo htmlspecialchars($seoKeywords); ?>">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/styles.css"></noscript>
+    <script src="/main.js" defer></script>
     <style>
         .logo {
             background-color: <?php echo $primaryColor; ?>;
@@ -480,6 +482,5 @@ foreach ($gamesData as $game) {
         </div>
     </footer>
 
-    <script src="/main.js"></script>
 </body>
 </html>
