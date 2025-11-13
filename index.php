@@ -278,102 +278,41 @@ foreach ($gamesData as $game) {
         </nav>
     </aside>
 
-    <div class="main-wrapper">
-        <main class="main-content">
-            <header class="header">
-                <div class="header-left">
-                    <h1><?php echo $viewFavorites ? 'My Favorites' : ($activeSport ? ucwords(str_replace('-', ' ', $activeSport)) : 'Live Sports Streaming'); ?></h1>
-                </div>
-                <div class="header-right">
-                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
-                        <span class="theme-icon">🌙</span>
-                    </button>
-                </div>
-            </header>
+    <main class="main-content">
+        <header class="header">
+            <div class="header-left">
+                <h1><?php echo $viewFavorites ? 'My Favorites' : ($activeSport ? ucwords(str_replace('-', ' ', $activeSport)) : 'Live Sports Streaming'); ?></h1>
+            </div>
+            <div class="header-right">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </header>
 
-            <?php if (!$viewFavorites): ?>
-            <nav class="date-tabs-wrapper" aria-label="Time filter">
-                <div class="date-tabs">
-                    <a href="<?php echo $activeSport ? '/live-'.$activeSport : '/'; ?>" class="date-tab <?php echo $activeTab === 'all' ? 'active' : ''; ?>">All</a>
-                    <a href="<?php echo $activeSport ? '/live-'.$activeSport.'?tab=soon' : '/?tab=soon'; ?>" class="date-tab <?php echo $activeTab === 'soon' ? 'active' : ''; ?>">Soon</a>
-                    <a href="<?php echo $activeSport ? '/live-'.$activeSport.'?tab=tomorrow' : '/?tab=tomorrow'; ?>" class="date-tab <?php echo $activeTab === 'tomorrow' ? 'active' : ''; ?>">Tomorrow</a>
-                </div>
-            </nav>
-            <?php endif; ?>
+        <?php if (!$viewFavorites): ?>
+        <nav class="date-tabs-wrapper" aria-label="Time filter">
+            <div class="date-tabs">
+                <a href="<?php echo $activeSport ? '/live-'.$activeSport : '/'; ?>" class="date-tab <?php echo $activeTab === 'all' ? 'active' : ''; ?>">All</a>
+                <a href="<?php echo $activeSport ? '/live-'.$activeSport.'?tab=soon' : '/?tab=soon'; ?>" class="date-tab <?php echo $activeTab === 'soon' ? 'active' : ''; ?>">Soon</a>
+                <a href="<?php echo $activeSport ? '/live-'.$activeSport.'?tab=tomorrow' : '/?tab=tomorrow'; ?>" class="date-tab <?php echo $activeTab === 'tomorrow' ? 'active' : ''; ?>">Tomorrow</a>
+            </div>
+        </nav>
+        <?php endif; ?>
 
-            <section class="content-section" id="mainContent">
-                <?php if ($viewFavorites): ?>
-                    <div id="favoritesContainer">
-                        <div class="no-games">
-                            <p>Loading favorites...</p>
-                        </div>
-                    </div>
-                    <template id="templateData">
-                        <?php
-                        $allGroupedBySport = groupGamesBySport($gamesData);
-                        foreach ($allGroupedBySport as $sportName => $sportGames):
-                        ?>
-                            <article class="sport-category" data-sport="<?php echo $sportName; ?>">
-                                <details open>
-                                    <summary class="sport-header">
-                                        <span class="sport-title">
-                                            <span><?php echo $sportsIcons[$sportName] ?? '⚽'; ?></span>
-                                            <span><?php echo $sportName; ?></span>
-                                            <span class="sport-count-badge"><?php echo count($sportGames); ?></span>
-                                        </span>
-                                    </summary>
-                                    
-                                    <?php
-                                    $byCountryLeague = groupByCountryAndLeague($sportGames);
-                                    foreach ($byCountryLeague as $key => $group):
-                                        $leagueId = 'league-' . md5($sportName . $group['country'] . $group['competition']);
-                                        $countryFlag = getCountryFlag($group['country']);
-                                        $countryName = getCountryName($group['country']);
-                                    ?>
-                                        <section class="competition-group" data-league-id="<?php echo $leagueId; ?>" 
-                                             data-country="<?php echo htmlspecialchars($group['country']); ?>"
-                                             data-competition="<?php echo htmlspecialchars($group['competition']); ?>">
-                                            <div class="competition-header">
-                                                <span class="competition-name">
-                                                    <span><?php echo $countryFlag; ?></span>
-                                                    <span><?php echo htmlspecialchars($countryName); ?></span>
-                                                    <span>•</span>
-                                                    <span><?php echo htmlspecialchars($group['competition']); ?></span>
-                                                </span>
-                                                <span class="league-favorite" data-league-id="<?php echo $leagueId; ?>" role="button" aria-label="Favorite league">☆</span>
-                                            </div>
-                                            
-                                            <?php foreach ($group['games'] as $game): ?>
-                                                <details class="game-item-details" data-game-id="<?php echo $game['id']; ?>" data-league-id="<?php echo $leagueId; ?>">
-                                                    <summary class="game-item-summary">
-                                                        <time class="game-time"><?php echo formatGameTime($game['date']); ?></time>
-                                                        <span class="game-teams">
-                                                            <span class="team">
-                                                                <span class="team-icon"></span>
-                                                                <?php echo htmlspecialchars($game['match']); ?>
-                                                            </span>
-                                                        </span>
-                                                        <span class="game-actions">
-                                                            <span class="link-count-badge" data-game-id="<?php echo $game['id']; ?>">0</span>
-                                                            <span class="favorite-star" data-game-id="<?php echo $game['id']; ?>" role="button" aria-label="Favorite game">☆</span>
-                                                        </span>
-                                                    </summary>
-                                                    <div class="game-links-container"></div>
-                                                </details>
-                                            <?php endforeach; ?>
-                                        </section>
-                                    <?php endforeach; ?>
-                                </details>
-                            </article>
-                        <?php endforeach; ?>
-                    </template>
-                <?php elseif (empty($groupedBySport)): ?>
+        <section class="content-section" id="mainContent">
+            <?php if ($viewFavorites): ?>
+                <div id="favoritesContainer">
                     <div class="no-games">
-                        <p>No games available for this time period</p>
+                        <p>Loading favorites...</p>
                     </div>
-                <?php else: ?>
-                    <?php foreach ($groupedBySport as $sportName => $sportGames): ?>
-                        <article class="sport-category" id="<?php echo strtolower(str_replace(' ', '-', $sportName)); ?>" data-sport="<?php echo $sportName; ?>">
+                </div>
+                <template id="templateData">
+                    <?php
+                    $allGroupedBySport = groupGamesBySport($gamesData);
+                    foreach ($allGroupedBySport as $sportName => $sportGames):
+                    ?>
+                        <article class="sport-category" data-sport="<?php echo $sportName; ?>">
                             <details open>
                                 <summary class="sport-header">
                                     <span class="sport-title">
@@ -406,7 +345,7 @@ foreach ($gamesData as $game) {
                                         <?php foreach ($group['games'] as $game): ?>
                                             <details class="game-item-details" data-game-id="<?php echo $game['id']; ?>" data-league-id="<?php echo $leagueId; ?>">
                                                 <summary class="game-item-summary">
-                                                    <time class="game-time" datetime="<?php echo $game['date']; ?>"><?php echo formatGameTime($game['date']); ?></time>
+                                                    <time class="game-time"><?php echo formatGameTime($game['date']); ?></time>
                                                     <span class="game-teams">
                                                         <span class="team">
                                                             <span class="team-icon"></span>
@@ -426,16 +365,75 @@ foreach ($gamesData as $game) {
                             </details>
                         </article>
                     <?php endforeach; ?>
-                <?php endif; ?>
-            </section>
-        </main>
+                </template>
+            <?php elseif (empty($groupedBySport)): ?>
+                <div class="no-games">
+                    <p>No games available for this time period</p>
+                </div>
+            <?php else: ?>
+                <?php foreach ($groupedBySport as $sportName => $sportGames): ?>
+                    <article class="sport-category" id="<?php echo strtolower(str_replace(' ', '-', $sportName)); ?>" data-sport="<?php echo $sportName; ?>">
+                        <details open>
+                            <summary class="sport-header">
+                                <span class="sport-title">
+                                    <span><?php echo $sportsIcons[$sportName] ?? '⚽'; ?></span>
+                                    <span><?php echo $sportName; ?></span>
+                                    <span class="sport-count-badge"><?php echo count($sportGames); ?></span>
+                                </span>
+                            </summary>
+                            
+                            <?php
+                            $byCountryLeague = groupByCountryAndLeague($sportGames);
+                            foreach ($byCountryLeague as $key => $group):
+                                $leagueId = 'league-' . md5($sportName . $group['country'] . $group['competition']);
+                                $countryFlag = getCountryFlag($group['country']);
+                                $countryName = getCountryName($group['country']);
+                            ?>
+                                <section class="competition-group" data-league-id="<?php echo $leagueId; ?>" 
+                                     data-country="<?php echo htmlspecialchars($group['country']); ?>"
+                                     data-competition="<?php echo htmlspecialchars($group['competition']); ?>">
+                                    <div class="competition-header">
+                                        <span class="competition-name">
+                                            <span><?php echo $countryFlag; ?></span>
+                                            <span><?php echo htmlspecialchars($countryName); ?></span>
+                                            <span>•</span>
+                                            <span><?php echo htmlspecialchars($group['competition']); ?></span>
+                                        </span>
+                                        <span class="league-favorite" data-league-id="<?php echo $leagueId; ?>" role="button" aria-label="Favorite league">☆</span>
+                                    </div>
+                                    
+                                    <?php foreach ($group['games'] as $game): ?>
+                                        <details class="game-item-details" data-game-id="<?php echo $game['id']; ?>" data-league-id="<?php echo $leagueId; ?>">
+                                            <summary class="game-item-summary">
+                                                <time class="game-time" datetime="<?php echo $game['date']; ?>"><?php echo formatGameTime($game['date']); ?></time>
+                                                <span class="game-teams">
+                                                    <span class="team">
+                                                        <span class="team-icon"></span>
+                                                        <?php echo htmlspecialchars($game['match']); ?>
+                                                    </span>
+                                                </span>
+                                                <span class="game-actions">
+                                                    <span class="link-count-badge" data-game-id="<?php echo $game['id']; ?>">0</span>
+                                                    <span class="favorite-star" data-game-id="<?php echo $game['id']; ?>" role="button" aria-label="Favorite game">☆</span>
+                                                </span>
+                                            </summary>
+                                            <div class="game-links-container"></div>
+                                        </details>
+                                    <?php endforeach; ?>
+                                </section>
+                            <?php endforeach; ?>
+                        </details>
+                    </article>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </section>
+    </main>
 
-        <aside class="right-sidebar">
-            <div class="sidebar-content">
-                <?php echo $sidebarContent; ?>
-            </div>
-        </aside>
-    </div>
+    <aside class="right-sidebar">
+        <div class="sidebar-content">
+            <?php echo $sidebarContent; ?>
+        </div>
+    </aside>
 
     <script src="/main.js"></script>
 </body>
