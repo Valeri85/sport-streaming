@@ -206,8 +206,6 @@ function filterFavoritesView() {
 		if (sportGameCount > 0) {
 			hasAnyFavorites = true;
 
-			const sportCountBadgeColor = document.body.dataset.primaryColor || '#FFA500';
-
 			favoritesHTML += `
                 <article class="sport-category">
                     <details open>
@@ -215,7 +213,7 @@ function filterFavoritesView() {
                             <span class="sport-title">
                                 <span>${sport.icon}</span>
                                 <span>${sportName}</span>
-                                <span class="sport-count-badge" style="background-color: ${sportCountBadgeColor};">${sportGameCount}</span>
+                                <span class="sport-count-badge">${sportGameCount}</span>
                             </span>
                         </summary>
                         ${competitionsHTML}

@@ -219,10 +219,6 @@ foreach ($gamesData as $game) {
             border-left: 3px solid <?php echo $primaryColor; ?>;
         }
         
-        .sport-count-badge {
-            background-color: <?php echo $primaryColor; ?>;
-        }
-        
         .date-tab.active {
             background-color: <?php echo $secondaryColor; ?>;
         }

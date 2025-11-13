@@ -39,6 +39,7 @@ body.dark-mode {
 html {
 	scrollbar-gutter: stable;
 	scrollbar-color: rgba(192, 192, 192, 0.5) rgba(248, 249, 250, 0.3);
+	font-display: swap;
 }
 
 body.dark-mode {
@@ -299,6 +300,7 @@ body.dark-mode .sports-menu {
 	font-size: 28px;
 	color: var(--text-primary);
 	margin: 0;
+	contain: layout style paint;
 }
 
 .header-right {
@@ -454,14 +456,18 @@ body.dark-mode .theme-icon {
 }
 
 .sport-count-badge {
+	background-color: #1a1a1a !important;
 	color: white;
 	padding: 4px 12px;
 	border-radius: 12px;
 	font-size: 14px;
 	font-weight: 600;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-	/* Ensure sufficient contrast - darken any background color */
-	filter: brightness(0.7) saturate(1.2);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .sport-count-badge {
+	background-color: #3a3a3a !important;
+	color: white;
 }
 
 .sport-header::after {
