@@ -313,7 +313,6 @@ body.dark-mode .sports-menu {
 	font-size: 28px;
 	color: var(--text-primary);
 	margin: 0;
-	contain: layout style paint;
 }
 
 .header-right {
@@ -441,8 +440,8 @@ body.dark-mode .theme-icon {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 16px 20px;
-	min-height: 52px;
+	padding: 18px 20px;
+	min-height: 56px;
 	background: var(--glass-bg);
 	backdrop-filter: blur(5px);
 	border: 1px solid var(--glass-border);
@@ -567,8 +566,8 @@ details:not([open]) .sport-header::after {
 .game-item-summary {
 	display: flex;
 	align-items: center;
-	padding: 14px 15px;
-	min-height: 52px;
+	padding: 16px 15px;
+	min-height: 56px;
 	transition: all 0.3s ease;
 	cursor: pointer;
 	position: relative;

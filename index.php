@@ -1,5 +1,10 @@
 <?php
 
+// Enable output compression (works on any server)
+if (!ob_start('ob_gzhandler')) {
+    ob_start();
+}
+
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
