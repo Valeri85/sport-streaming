@@ -67,6 +67,8 @@ body.dark-mode {
 	gap: 20px;
 	flex: 1;
 	align-items: start;
+	width: 100%;
+	min-height: 100vh;
 }
 
 .sidebar {
@@ -809,6 +811,8 @@ body.dark-mode .game-time {
 	box-shadow: 0 8px 32px var(--shadow-color);
 	transition: all 0.3s;
 	width: 100%;
+	position: relative;
+	clear: both;
 }
 
 .footer-content {
@@ -843,6 +847,13 @@ body.dark-mode .game-time {
 
 .footer-section ul li a:hover {
 	color: var(--link-color);
+}
+
+.footer-section p {
+	color: var(--text-secondary);
+	font-size: 14px;
+	line-height: 1.6;
+	margin: 0;
 }
 
 .footer-bottom {

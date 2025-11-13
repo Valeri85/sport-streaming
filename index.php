@@ -472,9 +472,7 @@ foreach ($gamesData as $game) {
             </div>
             <div class="footer-section">
                 <h3><?php echo htmlspecialchars($siteName); ?></h3>
-                <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
-                    Watch live sports streaming online free. All major sports events in HD quality.
-                </p>
+                <p>Watch live sports streaming online free. All major sports events in HD quality.</p>
             </div>
         </div>
         <div class="footer-bottom">
