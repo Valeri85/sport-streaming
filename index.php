@@ -1,10 +1,5 @@
 <?php
 
-// Enable output compression (works on any server)
-if (!ob_start('ob_gzhandler')) {
-    ob_start();
-}
-
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -451,7 +446,7 @@ foreach ($gamesData as $game) {
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Sports</h3>
+                <h2>Sports</h2>
                 <ul>
                     <li><a href="/live-football">⚽ Football</a></li>
                     <li><a href="/live-basketball">🏀 Basketball</a></li>
@@ -460,7 +455,7 @@ foreach ($gamesData as $game) {
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Quick Links</h3>
+                <h2>Quick Links</h2>
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/favorites">⭐ Favorites</a></li>
@@ -469,7 +464,7 @@ foreach ($gamesData as $game) {
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>About</h3>
+                <h2>About</h2>
                 <ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
@@ -478,7 +473,7 @@ foreach ($gamesData as $game) {
                 </ul>
             </div>
             <div class="footer-section">
-                <h3><?php echo htmlspecialchars($siteName); ?></h3>
+                <h2><?php echo htmlspecialchars($siteName); ?></h2>
                 <p>Watch live sports streaming online free. All major sports events in HD quality.</p>
             </div>
         </div>

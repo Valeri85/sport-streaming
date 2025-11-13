@@ -136,6 +136,11 @@ body.dark-mode {
 	gap: 0.625em;
 }
 
+/* Fix for H1UserAgentFontSizeInSection deprecation warning */
+h1 {
+	font-size: 1.5rem;
+}
+
 .logo-icon {
 	font-size: 2rem; /* 32px */
 }
@@ -845,7 +850,7 @@ body.dark-mode .game-time {
 	margin-bottom: 1.25em;
 }
 
-.footer-section h3 {
+.footer-section h2 {
 	color: var(--text-primary);
 	font-size: 1.125rem;
 	margin-bottom: 0.9375em;
