@@ -233,7 +233,15 @@ foreach ($gamesData as $game) {
       data-active-sport="<?php echo $activeSport ?: ''; ?>"
       data-active-tab="<?php echo $activeTab; ?>">
     
-    <aside class="sidebar">
+    <button class="burger-menu" id="burgerMenu" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <aside class="sidebar" id="sidebar">
         <div class="logo">
             <a href="/">
                 <h1>
@@ -434,6 +442,47 @@ foreach ($gamesData as $game) {
             <?php echo $sidebarContent; ?>
         </div>
     </aside>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sports</h3>
+                <ul>
+                    <li><a href="/live-football">⚽ Football</a></li>
+                    <li><a href="/live-basketball">🏀 Basketball</a></li>
+                    <li><a href="/live-tennis">🎾 Tennis</a></li>
+                    <li><a href="/live-ice-hockey">🏒 Ice Hockey</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/favorites">⭐ Favorites</a></li>
+                    <li><a href="/?tab=soon">Soon</a></li>
+                    <li><a href="/?tab=tomorrow">Tomorrow</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3><?php echo htmlspecialchars($siteName); ?></h3>
+                <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                    Watch live sports streaming online free. All major sports events in HD quality.
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <?php echo date('Y'); ?> <?php echo htmlspecialchars($siteName); ?>. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="/main.js"></script>
 </body>

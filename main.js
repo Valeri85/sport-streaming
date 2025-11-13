@@ -394,6 +394,7 @@ function attachEventListeners() {
 document.addEventListener('DOMContentLoaded', function () {
 	initDarkMode();
 	attachEventListeners();
+	initBurgerMenu();
 
 	if (isViewingFavorites) {
 		filterFavoritesView();
@@ -404,3 +405,38 @@ document.addEventListener('DOMContentLoaded', function () {
 	updateFavoritesCount();
 	setTimeout(updateFavoritesCount, 100);
 });
+
+function initBurgerMenu() {
+	const burgerMenu = document.getElementById('burgerMenu');
+	const sidebar = document.getElementById('sidebar');
+	const overlay = document.getElementById('overlay');
+
+	if (!burgerMenu || !sidebar || !overlay) return;
+
+	burgerMenu.addEventListener('click', function () {
+		burgerMenu.classList.toggle('open');
+		sidebar.classList.toggle('open');
+		overlay.classList.toggle('active');
+		document.body.style.overflow = sidebar.classList.contains('open') ? 'hidden' : '';
+	});
+
+	overlay.addEventListener('click', function () {
+		burgerMenu.classList.remove('open');
+		sidebar.classList.remove('open');
+		overlay.classList.remove('active');
+		document.body.style.overflow = '';
+	});
+
+	// Close menu when clicking on a menu item
+	const menuItems = sidebar.querySelectorAll('.menu-item, .favorites-link');
+	menuItems.forEach(item => {
+		item.addEventListener('click', function () {
+			if (window.innerWidth <= 1200) {
+				burgerMenu.classList.remove('open');
+				sidebar.classList.remove('open');
+				overlay.classList.remove('active');
+				document.body.style.overflow = '';
+			}
+		});
+	});
+}
