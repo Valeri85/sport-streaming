@@ -2,6 +2,10 @@ let favoriteGames = JSON.parse(localStorage.getItem('favoriteGames') || '[]');
 let favoriteLeagues = JSON.parse(localStorage.getItem('favoriteLeagues') || '[]');
 const isViewingFavorites = document.body.dataset.viewingFavorites === 'true';
 
+// Cache for links data
+let linksDataCache = null;
+let linksDataPromise = null;
+
 function initDarkMode() {
 	const darkMode = localStorage.getItem('darkMode') === 'true';
 	if (darkMode) {
@@ -55,11 +59,45 @@ function updateFavoritesCount() {
 	}
 }
 
+// Fetch links data from external source
+async function fetchLinksData() {
+	// Return cached data if available
+	if (linksDataCache !== null) {
+		return linksDataCache;
+	}
+
+	// Return existing promise if fetch is already in progress
+	if (linksDataPromise !== null) {
+		return linksDataPromise;
+	}
+
+	// Start new fetch
+	linksDataPromise = fetch('https://watchlivesport.online/data.php')
+		.then(response => {
+			if (!response.ok) {
+				throw new Error('Failed to fetch links data');
+			}
+			return response.json();
+		})
+		.then(data => {
+			linksDataCache = data.links || {};
+			linksDataPromise = null;
+			return linksDataCache;
+		})
+		.catch(error => {
+			console.error('Error fetching links data:', error);
+			linksDataPromise = null;
+			return {};
+		});
+
+	return linksDataPromise;
+}
+
 async function fetchLinkCount(gameId) {
 	try {
-		const response = await fetch(`/api/get-links.php?game_id=${gameId}`);
-		const data = await response.json();
-		return data.count || 0;
+		const linksData = await fetchLinksData();
+		const links = linksData[gameId] || [];
+		return links.length;
 	} catch (error) {
 		return 0;
 	}
@@ -293,11 +331,12 @@ async function handleGameToggle(e) {
 		linksContainer.innerHTML = createSkeletonLoader();
 
 		try {
-			const response = await fetch(`/api/get-links.php?game_id=${gameId}`);
-			const data = await response.json();
+			// Fetch links data from external source
+			const linksData = await fetchLinksData();
+			const links = linksData[gameId] || [];
 
 			setTimeout(() => {
-				if (!data.success || !data.links || data.links.length === 0) {
+				if (!links || links.length === 0) {
 					linksContainer.innerHTML = '<div class="no-games"><p>No streaming links available</p></div>';
 					return;
 				}
@@ -305,7 +344,7 @@ async function handleGameToggle(e) {
 				let linksHTML = '<div class="game-links-title">Available Streams:</div>';
 				linksHTML += '<div class="game-links-grid">';
 
-				data.links.forEach(link => {
+				links.forEach(link => {
 					linksHTML += `
                         <a href="${link.link}" target="_blank" rel="noopener noreferrer" class="link-item">
                             <span class="link-item-content">
