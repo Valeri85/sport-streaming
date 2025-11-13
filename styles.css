@@ -76,6 +76,7 @@ body.dark-mode {
 	transition: all 0.3s;
 	box-shadow: 2px 0 10px var(--shadow-color);
 	border-radius: 12px;
+	z-index: 100;
 }
 
 .logo {
@@ -272,6 +273,7 @@ body.dark-mode .sports-menu {
 	max-height: calc(100vh - 40px);
 	overflow-y: auto;
 	transition: all 0.3s;
+	z-index: 100;
 }
 
 .sidebar-content h2 {
@@ -802,8 +804,6 @@ body.dark-mode .game-time {
 	box-shadow: 0 8px 32px var(--shadow-color);
 	transition: all 0.3s;
 	grid-column: 1 / -1;
-	position: relative;
-	z-index: 10;
 }
 
 .footer-content {
