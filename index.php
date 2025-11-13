@@ -237,7 +237,8 @@ foreach ($gamesData as $game) {
     
     <div class="overlay" id="overlay"></div>
     
-    <aside class="sidebar" id="sidebar">
+    <div class="content-wrapper">
+        <aside class="sidebar" id="sidebar">
         <div class="logo">
             <a href="/">
                 <h1>
@@ -438,6 +439,7 @@ foreach ($gamesData as $game) {
             <?php echo $sidebarContent; ?>
         </div>
     </aside>
+    </div>
 
     <footer class="footer">
         <div class="footer-content">
