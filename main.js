@@ -2,21 +2,6 @@ let favoriteGames = JSON.parse(localStorage.getItem('favoriteGames') || '[]');
 let favoriteLeagues = JSON.parse(localStorage.getItem('favoriteLeagues') || '[]');
 const isViewingFavorites = document.body.dataset.viewingFavorites === 'true';
 
-let currentSportOffset = 0; // Start at 0, will be read from trigger
-let isLoading = false;
-let hasMoreGames = true;
-
-const activeSport = document.body.dataset.activeSport || '';
-const activeTab = document.body.dataset.activeTab || 'all';
-
-console.log('Initialized with currentSportOffset:', currentSportOffset);
-
-console.log('Favorites loaded:', {
-	games: favoriteGames.length,
-	leagues: favoriteLeagues.length,
-	total: favoriteGames.length + favoriteLeagues.length,
-});
-
 function initDarkMode() {
 	const darkMode = localStorage.getItem('darkMode') === 'true';
 	if (darkMode) {
@@ -76,7 +61,6 @@ async function fetchLinkCount(gameId) {
 		const data = await response.json();
 		return data.count || 0;
 	} catch (error) {
-		console.error('Error fetching link count:', error);
 		return 0;
 	}
 }
@@ -337,155 +321,9 @@ async function handleGameToggle(e) {
 				linksContainer.innerHTML = linksHTML;
 			}, 800);
 		} catch (error) {
-			console.error('Error loading links:', error);
 			linksContainer.innerHTML = '<div class="no-games"><p>Error loading links</p></div>';
 		}
 	}
-}
-
-function loadMoreGames() {
-	if (isLoading || !hasMoreGames) {
-		console.log('Load blocked: isLoading =', isLoading, 'hasMoreGames =', hasMoreGames);
-		return;
-	}
-
-	isLoading = true;
-	const loadingIndicator = document.getElementById('loadingIndicator');
-	if (loadingIndicator) {
-		loadingIndicator.style.display = 'block';
-	}
-
-	// Get current sport offset from trigger element
-	const trigger = document.getElementById('loadMoreTrigger');
-	if (trigger) {
-		currentSportOffset = parseInt(trigger.getAttribute('data-sports-loaded') || currentSportOffset);
-	}
-
-	const sportParam = activeSport ? `&sport=${activeSport}` : '';
-	const tabParam = `&tab=${activeTab}`;
-
-	console.log('Loading more games from sport offset:', currentSportOffset);
-
-	fetch(`/api/load-games.php?sport_offset=${currentSportOffset}&sports_per_load=2${sportParam}${tabParam}`)
-		.then(response => {
-			console.log('Response status:', response.status);
-			return response.json();
-		})
-		.then(data => {
-			console.log('=== API Response Debug ===');
-			console.log('Full API response:', data);
-			console.log('sport_offset sent:', currentSportOffset);
-			console.log('API returned debug:', data.debug);
-			console.log('sportsLoaded:', data.sportsLoaded);
-			console.log('hasMore:', data.hasMore);
-
-			if (data.error) {
-				console.error('API Error:', data.error);
-				isLoading = false;
-				if (loadingIndicator) loadingIndicator.style.display = 'none';
-				return;
-			}
-
-			if (data.success && data.html) {
-				const mainContent = document.getElementById('mainContent');
-				const loadingIndicator = document.getElementById('loadingIndicator');
-				const trigger = document.getElementById('loadMoreTrigger');
-
-				const tempDiv = document.createElement('div');
-				tempDiv.innerHTML = data.html;
-
-				// Process each sport category from the API response
-				const newSportCategories = tempDiv.querySelectorAll('.sport-category');
-
-				console.log('Processing', newSportCategories.length, 'sport categories from API');
-
-				newSportCategories.forEach(newCategory => {
-					const sportName = newCategory.getAttribute('data-sport');
-					console.log('Processing sport:', sportName);
-
-					// Check if this sport already exists on the page
-					const existingCategory = mainContent.querySelector(`.sport-category[data-sport="${sportName}"]`);
-
-					if (existingCategory) {
-						console.log('  → Sport exists, merging games');
-						// Sport exists - merge the competition groups into existing category
-						const newCompetitions = newCategory.querySelectorAll('.competition-group');
-						const existingDetails = existingCategory.querySelector('details');
-
-						newCompetitions.forEach(newComp => {
-							const leagueId = newComp.getAttribute('data-league-id');
-							const existingComp = existingCategory.querySelector(`.competition-group[data-league-id="${leagueId}"]`);
-
-							if (existingComp) {
-								// Competition exists - append new games to it
-								const newGames = newComp.querySelectorAll('.game-item-details');
-								newGames.forEach(game => {
-									existingComp.appendChild(game);
-								});
-							} else {
-								// New competition - add entire competition group before the closing tag
-								existingDetails.appendChild(newComp);
-							}
-						});
-
-						// Update sport count badge
-						const sportCount = existingCategory.querySelectorAll('.game-item-details').length;
-						const countBadge = existingCategory.querySelector('.sport-count-badge');
-						if (countBadge) {
-							countBadge.textContent = sportCount;
-						}
-					} else {
-						console.log('  → New sport, adding to page');
-						// New sport - insert entire category before loading indicator
-						if (loadingIndicator) {
-							mainContent.insertBefore(newCategory, loadingIndicator);
-						} else {
-							mainContent.appendChild(newCategory);
-						}
-					}
-				});
-
-				attachEventListeners();
-
-				// Update offset and hasMore flag
-				currentSportOffset = data.sportsLoaded;
-				hasMoreGames = data.hasMore;
-
-				// Update trigger's data attribute
-				if (trigger) {
-					trigger.setAttribute('data-sports-loaded', currentSportOffset);
-				}
-
-				console.log('Loaded sports:', data.sportsLoaded, '/', data.totalSports, 'Has more:', hasMoreGames);
-
-				if (!hasMoreGames) {
-					if (trigger) trigger.remove();
-					if (loadingIndicator) loadingIndicator.remove();
-					if (observer) {
-						observer.disconnect();
-						observer = null;
-					}
-				}
-			}
-
-			isLoading = false;
-			if (loadingIndicator) {
-				loadingIndicator.style.display = 'none';
-			}
-		})
-		.catch(error => {
-			console.error('=== FETCH ERROR ===');
-			console.error('Error loading more games:', error);
-			console.error('Error details:', {
-				message: error.message,
-				stack: error.stack,
-			});
-			isLoading = false;
-			if (loadingIndicator) {
-				loadingIndicator.style.display = 'none';
-			}
-			alert('Error loading games. Check console for details.');
-		});
 }
 
 function attachEventListeners() {
@@ -514,61 +352,16 @@ function attachEventListeners() {
 	loadAllLinkCounts();
 }
 
-let observer = null;
-
-function setupIntersectionObserver() {
-	const trigger = document.getElementById('loadMoreTrigger');
-	if (!trigger) {
-		console.log('No trigger found - all content loaded or sport-specific page');
-		return;
-	}
-
-	// Disconnect existing observer if any
-	if (observer) {
-		observer.disconnect();
-	}
-
-	// Initialize current sport offset from trigger
-	const sportsLoaded = trigger.getAttribute('data-sports-loaded');
-	if (sportsLoaded) {
-		currentSportOffset = parseInt(sportsLoaded);
-	}
-
-	observer = new IntersectionObserver(
-		entries => {
-			entries.forEach(entry => {
-				if (entry.isIntersecting && !isLoading && hasMoreGames) {
-					console.log('Trigger visible, loading more games');
-					loadMoreGames();
-				}
-			});
-		},
-		{
-			root: null,
-			rootMargin: '200px', // Increased from 100px for better triggering
-			threshold: 0.1,
-		}
-	);
-
-	observer.observe(trigger);
-	console.log('Observer attached to trigger at sport offset:', currentSportOffset);
-}
-
 document.addEventListener('DOMContentLoaded', function () {
 	initDarkMode();
-
 	attachEventListeners();
 
 	if (isViewingFavorites) {
 		filterFavoritesView();
 	} else {
 		restoreScrollPosition();
-		// Initialize infinite scroll observer for home page
-		setupIntersectionObserver();
 	}
 
 	updateFavoritesCount();
 	setTimeout(updateFavoritesCount, 100);
-
-	console.log('Page initialization complete');
 });

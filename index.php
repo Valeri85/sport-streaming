@@ -6,7 +6,6 @@ ini_set('display_errors', 1);
 $domain = $_SERVER['HTTP_HOST'];
 $domain = str_replace('www.', '', $domain);
 
-// Load websites configuration from JSON
 $websitesConfigFile = __DIR__ . '/config/websites.json';
 if (!file_exists($websitesConfigFile)) {
     die("Websites configuration file not found");
@@ -16,7 +15,6 @@ $configContent = file_get_contents($websitesConfigFile);
 $configData = json_decode($configContent, true);
 $websites = $configData['websites'] ?? [];
 
-// Find current website by domain
 $website = null;
 foreach ($websites as $site) {
     if ($site['domain'] === $domain && $site['status'] === 'active') {
@@ -29,7 +27,6 @@ if (!$website) {
     die("Website not found: " . htmlspecialchars($domain));
 }
 
-// Set configuration from JSON
 $siteName = $website['site_name'];
 $logo = $website['logo'];
 $primaryColor = $website['primary_color'];
@@ -40,7 +37,6 @@ $seoKeywords = $website['seo_keywords'];
 $language = $website['language'];
 $sidebarContent = $website['sidebar_content'];
 
-// Use centralized data.json
 $jsonFile = '/var/www/u1852176/data/www/data/data.json';
 $gamesData = [];
 if (file_exists($jsonFile)) {
@@ -66,9 +62,6 @@ $viewFavorites = false;
 if (strpos($_SERVER['REQUEST_URI'], '/favorites') !== false) {
     $viewFavorites = true;
 }
-
-// Define variable for pagination
-$maxInitialGames = 15;
 
 function groupGamesBySport($games) {
     $grouped = [];
@@ -194,34 +187,7 @@ if ($viewFavorites) {
     }
 }
 
-// Store total count before slicing
-$totalFilteredGames = count($filteredGames);
-
-// Group all games by sport first (before slicing)
-$allGroupedBySport = groupGamesBySport($filteredGames);
-
-// For initial load, load complete sport categories until we have ~15 games
-if (!$activeSport && !$viewFavorites) {
-    $sportNames = array_keys($allGroupedBySport);
-    $gamesAccumulated = 0;
-    $sportsLoaded = 0;
-    
-    foreach ($sportNames as $sportName) {
-        $sportGameCount = count($allGroupedBySport[$sportName]);
-        $gamesAccumulated += $sportGameCount;
-        $sportsLoaded++;
-        
-        // Stop after we've loaded at least 15 games
-        if ($gamesAccumulated >= $maxInitialGames) {
-            break;
-        }
-    }
-    
-    // Take only the sports we want to show initially
-    $groupedBySport = array_slice($allGroupedBySport, 0, $sportsLoaded, true);
-} else {
-    $groupedBySport = $allGroupedBySport;
-}
+$groupedBySport = groupGamesBySport($filteredGames);
 
 $sportCounts = [];
 foreach ($gamesData as $game) {
@@ -460,13 +426,6 @@ foreach ($gamesData as $game) {
                             </details>
                         </article>
                     <?php endforeach; ?>
-                    
-                    <?php if (!$activeSport && count($groupedBySport) < count($allGroupedBySport)): ?>
-                        <div id="loadMoreTrigger" style="height: 1px;" data-sports-loaded="<?php echo count($groupedBySport); ?>"></div>
-                        <div id="loadingIndicator" style="display: none;">
-                            <p>Loading more games...</p>
-                        </div>
-                    <?php endif; ?>
                 <?php endif; ?>
             </section>
         </main>
