@@ -43,9 +43,10 @@ function restoreScrollPosition() {
 	if (scrollPos) {
 		const menu = document.querySelector('.sports-menu');
 		if (menu) {
-			setTimeout(() => {
+			// Use requestAnimationFrame to batch DOM operations and prevent forced reflow
+			requestAnimationFrame(() => {
 				menu.scrollTop = parseInt(scrollPos);
-			}, 50);
+			});
 		}
 	}
 }
@@ -228,24 +229,27 @@ function filterFavoritesView() {
 		: '<div class="no-games"><p>No favorite games yet. Click ⭐ to add favorites!</p></div>';
 
 	if (hasAnyFavorites) {
-		container.querySelectorAll('.favorite-star').forEach(star => {
-			const gameId = star.getAttribute('data-game-id');
-			if (favoriteGames.includes(gameId)) {
-				star.textContent = '★';
-				star.classList.add('favorited');
-			}
-			star.addEventListener('click', handleGameFavorite);
-		});
+		// Batch DOM operations using requestAnimationFrame to prevent forced reflows
+		requestAnimationFrame(() => {
+			container.querySelectorAll('.favorite-star').forEach(star => {
+				const gameId = star.getAttribute('data-game-id');
+				if (favoriteGames.includes(gameId)) {
+					star.textContent = '★';
+					star.classList.add('favorited');
+				}
+				star.addEventListener('click', handleGameFavorite);
+			});
 
-		container.querySelectorAll('.league-favorite').forEach(star => {
-			star.addEventListener('click', handleLeagueFavorite);
-		});
+			container.querySelectorAll('.league-favorite').forEach(star => {
+				star.addEventListener('click', handleLeagueFavorite);
+			});
 
-		container.querySelectorAll('.game-item-details').forEach(details => {
-			details.addEventListener('toggle', handleGameToggle);
-		});
+			container.querySelectorAll('.game-item-details').forEach(details => {
+				details.addEventListener('toggle', handleGameToggle);
+			});
 
-		loadAllLinkCounts();
+			loadAllLinkCounts();
+		});
 	}
 
 	updateFavoritesCount();

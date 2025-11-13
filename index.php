@@ -243,10 +243,10 @@ foreach ($gamesData as $game) {
         <aside class="sidebar" id="sidebar">
         <div class="logo">
             <a href="/">
-                <h1>
+                <div class="logo-title">
                     <span class="logo-icon"><?php echo $logo; ?></span>
-                    <?php echo htmlspecialchars($siteName); ?>
-                </h1>
+                    <span class="logo-text"><?php echo htmlspecialchars($siteName); ?></span>
+                </div>
             </a>
         </div>
 

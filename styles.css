@@ -88,6 +88,7 @@ body.dark-mode {
 	gap: 1.25rem; /* 20px */
 	flex: 1;
 	width: 100%;
+	min-height: 100vh; /* Prevent shifts by reserving space */
 }
 
 /* ============================================
@@ -127,18 +128,20 @@ body.dark-mode {
 	color: inherit;
 }
 
-.logo h1 {
+/* Fix for H1UserAgentFontSizeInSection deprecation warning */
+/* MDN recommended solution: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements */
+:where(h1) {
+	margin-block: 0.67em;
+	font-size: 2em;
+}
+
+.logo-title {
 	font-size: 1.5rem; /* 24px */
 	color: #ffffff;
 	font-weight: 600;
 	display: flex;
 	align-items: center;
 	gap: 0.625em;
-}
-
-/* Fix for H1UserAgentFontSizeInSection deprecation warning */
-h1 {
-	font-size: 1.5rem;
 }
 
 .logo-icon {
@@ -315,6 +318,8 @@ body.dark-mode .favorites-link:hover {
 	font-size: 1.5rem; /* 24px on mobile */
 	color: var(--text-primary);
 	margin: 0;
+	transform: translateZ(0); /* Create new layer to prevent repaints */
+	will-change: auto;
 }
 
 .header-right {
@@ -403,11 +408,15 @@ body.dark-mode .theme-icon {
 	border-radius: 12px;
 	box-shadow: 0 8px 32px var(--shadow-color);
 	transition: all 0.3s;
+	min-height: 400px; /* Reserve space to prevent layout shift */
+	contain: layout;
 }
 
 /* Sport categories */
 .sport-category {
 	margin-bottom: 1.875em;
+	content-visibility: auto;
+	contain-intrinsic-size: auto 500px;
 }
 
 .sport-category details {
