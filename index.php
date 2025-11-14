@@ -321,6 +321,7 @@ foreach ($gamesData as $game) {
                     foreach ($allGroupedBySport as $sportName => $sportGames):
                     ?>
                         <article class="sport-category" data-sport="<?php echo $sportName; ?>">
+                            <h2 class="sr-only"><?php echo $sportName; ?></h2>
                             <details open>
                                 <summary class="sport-header">
                                     <span class="sport-title">
@@ -382,6 +383,7 @@ foreach ($gamesData as $game) {
             <?php else: ?>
                 <?php foreach ($groupedBySport as $sportName => $sportGames): ?>
                     <article class="sport-category" id="<?php echo strtolower(str_replace(' ', '-', $sportName)); ?>" data-sport="<?php echo $sportName; ?>">
+                        <h2 class="sr-only"><?php echo $sportName; ?></h2>
                         <details open>
                             <summary class="sport-header">
                                 <span class="sport-title">

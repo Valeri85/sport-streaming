@@ -220,6 +220,7 @@ function filterFavoritesView() {
 
 			favoritesHTML += `
                 <article class="sport-category">
+                    <h2 class="sr-only">${sportName}</h2>
                     <details open>
                         <summary class="sport-header">
                             <span class="sport-title">
