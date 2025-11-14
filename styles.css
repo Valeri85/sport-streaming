@@ -105,7 +105,6 @@ body.dark-mode {
 	gap: 0.75rem; /* 12px - reduced from 20px */
 	flex: 1;
 	width: 100%;
-	min-height: 100vh; /* Prevent shifts by reserving space */
 	max-width: 100%; /* Prevent overflow */
 	overflow-x: hidden; /* Prevent horizontal scroll */
 }
@@ -445,7 +444,7 @@ body.dark-mode .theme-icon {
 
 /* Sport categories */
 .sport-category {
-	margin-bottom: 1.5em; /* Reduced from 2.5em */
+	margin-bottom: 1em; /* Further reduced from 1.5em */
 	content-visibility: auto;
 	contain-intrinsic-size: auto 500px;
 }
@@ -474,7 +473,7 @@ body.dark-mode .theme-icon {
 	backdrop-filter: blur(5px);
 	border: 1px solid var(--glass-border);
 	border-radius: 8px;
-	margin-bottom: 0.5em; /* Reduced from 0.625em */
+	margin-bottom: 0.375em; /* Further reduced */
 	cursor: pointer;
 	user-select: none;
 	transition: all 0.3s ease;
@@ -523,7 +522,7 @@ details:not([open]) .sport-header::after {
 
 /* Competition groups */
 .competition-group {
-	margin-bottom: 0.75em; /* Reduced from 0.9375em */
+	margin-bottom: 0.5em; /* Further reduced */
 	border-left: 3px solid var(--border-color);
 	padding-left: 0.75em; /* Reduced from 0.9375em */
 	transition: all 0.3s;
@@ -535,8 +534,8 @@ details:not([open]) .sport-header::after {
 	justify-content: space-between;
 	font-size: 0.875rem;
 	font-weight: 600;
-	margin-bottom: 0.5em; /* Reduced from 0.75em */
-	padding: 0.5em 0; /* Reduced from 0.75em */
+	margin-bottom: 0.375em; /* Further reduced */
+	padding: 0.375em 0; /* Further reduced */
 	min-height: 48px;
 	gap: 0.75em; /* Spacing between elements */
 }
@@ -595,14 +594,14 @@ details:not([open]) .sport-header::after {
 .game-item-summary {
 	display: flex;
 	align-items: center;
-	padding: 1em 0.875em; /* Reduced padding */
+	padding: 0.75em 0.75em; /* Further reduced padding */
 	min-height: 64px;
 	min-width: 100%;
 	transition: all 0.3s ease;
 	cursor: pointer;
 	background: var(--glass-bg);
 	backdrop-filter: blur(3px);
-	margin: 0.5em 0; /* Reduced from 0.75em */
+	margin: 0.375em 0; /* Further reduced margin */
 	border-radius: 6px;
 }
 
