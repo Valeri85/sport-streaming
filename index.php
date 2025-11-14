@@ -250,6 +250,7 @@ foreach ($gamesData as $game) {
         </div>
 
         <section class="favorites-section">
+            <h2 class="sr-only">Favorites</h2>
             <a href="/favorites" class="favorites-link <?php echo $viewFavorites ? 'active' : ''; ?>" id="favoritesLink">
                 <span>⭐</span>
                 <span>Favorites</span>
@@ -307,6 +308,7 @@ foreach ($gamesData as $game) {
         <?php endif; ?>
 
         <section class="content-section" id="mainContent">
+            <h2 class="sr-only">Live Games</h2>
             <?php if ($viewFavorites): ?>
                 <div id="favoritesContainer">
                     <div class="no-games">
@@ -338,6 +340,7 @@ foreach ($gamesData as $game) {
                                     <section class="competition-group" data-league-id="<?php echo $leagueId; ?>" 
                                          data-country="<?php echo htmlspecialchars($group['country']); ?>"
                                          data-competition="<?php echo htmlspecialchars($group['competition']); ?>">
+                                        <h3 class="sr-only"><?php echo htmlspecialchars($countryName . ' - ' . $group['competition']); ?></h3>
                                         <div class="competition-header">
                                             <span class="competition-name">
                                                 <span><?php echo $countryFlag; ?></span>
@@ -398,6 +401,7 @@ foreach ($gamesData as $game) {
                                 <section class="competition-group" data-league-id="<?php echo $leagueId; ?>" 
                                      data-country="<?php echo htmlspecialchars($group['country']); ?>"
                                      data-competition="<?php echo htmlspecialchars($group['competition']); ?>">
+                                    <h3 class="sr-only"><?php echo htmlspecialchars($countryName . ' - ' . $group['competition']); ?></h3>
                                     <div class="competition-header">
                                         <span class="competition-name">
                                             <span><?php echo $countryFlag; ?></span>

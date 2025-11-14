@@ -195,8 +195,13 @@ function filterFavoritesView() {
 
 			const isLeagueFavorited = favoriteLeagues.includes(comp.leagueId);
 
+			// Extract country and competition names for heading
+			const countryName = comp.country.replace('.png', '').replace('-', ' ');
+			const competitionName = comp.competition || 'Competition';
+
 			competitionsHTML += `
                 <section class="competition-group" data-league-id="${comp.leagueId}">
+                    <h3 class="sr-only">${countryName} - ${competitionName}</h3>
                     <div class="competition-header">
                         <span class="competition-name">
                             ${comp.countryDisplay}
