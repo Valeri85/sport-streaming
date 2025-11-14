@@ -207,8 +207,7 @@ foreach ($gamesData as $game) {
     <title><?php echo htmlspecialchars($seoTitle); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($seoDescription); ?>">
     <meta name="keywords" content="<?php echo htmlspecialchars($seoKeywords); ?>">
-    <link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/styles.css"></noscript>
+    <link rel="stylesheet" href="/styles.css">
     <script src="/main.js" defer></script>
     <style>
         .logo {

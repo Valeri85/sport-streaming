@@ -34,8 +34,14 @@ function updateThemeIcon() {
 }
 
 function saveScrollPosition(event) {
-	const scrollPos = document.querySelector('.sports-menu').scrollTop;
-	localStorage.setItem('menuScrollPosition', scrollPos);
+	// Use requestAnimationFrame to batch the DOM read operation
+	requestAnimationFrame(() => {
+		const menu = document.querySelector('.sports-menu');
+		if (menu) {
+			const scrollPos = menu.scrollTop;
+			localStorage.setItem('menuScrollPosition', scrollPos);
+		}
+	});
 }
 
 function restoreScrollPosition() {
@@ -330,14 +336,18 @@ async function handleGameToggle(e) {
 			return;
 		}
 
-		linksContainer.innerHTML = createSkeletonLoader();
+		// Batch DOM write in requestAnimationFrame
+		requestAnimationFrame(() => {
+			linksContainer.innerHTML = createSkeletonLoader();
+		});
 
 		try {
 			// Fetch links data from external source
 			const linksData = await fetchLinksData();
 			const links = linksData[gameId] || [];
 
-			setTimeout(() => {
+			// Batch DOM write in requestAnimationFrame to prevent layout thrashing
+			requestAnimationFrame(() => {
 				if (!links || links.length === 0) {
 					linksContainer.innerHTML = '<div class="no-games"><p>No streaming links available</p></div>';
 					return;
@@ -360,9 +370,11 @@ async function handleGameToggle(e) {
 
 				linksHTML += '</div>';
 				linksContainer.innerHTML = linksHTML;
-			}, 800);
+			});
 		} catch (error) {
-			linksContainer.innerHTML = '<div class="no-games"><p>Error loading links</p></div>';
+			requestAnimationFrame(() => {
+				linksContainer.innerHTML = '<div class="no-games"><p>Error loading links</p></div>';
+			});
 		}
 	}
 }

@@ -431,7 +431,7 @@ body.dark-mode .theme-icon {
 
 /* Sport categories */
 .sport-category {
-	margin-bottom: 1.875em;
+	margin-bottom: 2.5em; /* Increased spacing between sports */
 	content-visibility: auto;
 	contain-intrinsic-size: auto 500px;
 }
@@ -453,8 +453,9 @@ body.dark-mode .theme-icon {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1em 1.25em;
-	min-height: 56px;
+	padding: 1.25em 1.5em;
+	min-height: 64px;
+	min-width: 100%;
 	background: var(--glass-bg);
 	backdrop-filter: blur(5px);
 	border: 1px solid var(--glass-border);
@@ -580,13 +581,14 @@ details:not([open]) .sport-header::after {
 .game-item-summary {
 	display: flex;
 	align-items: center;
-	padding: 1em 0.9375em;
-	min-height: 56px;
+	padding: 1.25em 1em;
+	min-height: 64px;
+	min-width: 100%;
 	transition: all 0.3s ease;
 	cursor: pointer;
 	background: var(--glass-bg);
 	backdrop-filter: blur(3px);
-	margin: 0.375em 0;
+	margin: 0.75em 0; /* Increased spacing */
 	border-radius: 6px;
 }
 
