@@ -467,7 +467,7 @@ body.dark-mode .theme-icon {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1em 1.25em; /* Reduced padding */
+	padding: 1em; /* Reduced padding */
 	min-height: 64px;
 	min-width: 100%;
 	background: var(--glass-bg);
@@ -595,7 +595,7 @@ details:not([open]) .sport-header::after {
 .game-item-summary {
 	display: flex;
 	align-items: center;
-	padding: 0.75em 0.75em; /* Further reduced padding */
+	padding-inline-start: 0.5em;
 	min-height: 64px;
 	min-width: 100%;
 	transition: all 0.3s ease;
@@ -678,7 +678,7 @@ body.dark-mode .game-time {
 	color: #888;
 	cursor: pointer;
 	font-size: 1.5rem;
-	padding: 0.625em;
+	padding: 0.5em;
 	min-width: 48px;
 	min-height: 48px;
 	display: flex;
@@ -985,7 +985,7 @@ body.dark-mode .game-time {
 	}
 
 	.content-section {
-		padding: 1.25em;
+		padding: 1em;
 	}
 
 	.date-tabs-wrapper {
@@ -1036,7 +1036,7 @@ body.dark-mode .game-time {
 
 	.main-content {
 		margin-top: 0;
-		padding: 1rem; /* Add padding for spacing */
+		padding-inline: 1rem; /* Add padding for spacing */
 	}
 
 	.game-links-grid {
