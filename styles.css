@@ -43,7 +43,7 @@
 	--shadow-color: rgba(0, 0, 0, 0.1);
 	--link-color: #0052a3;
 	--link-hover: #003d7a;
-	
+
 	/* Base font size - 16px default */
 	font-size: 16px;
 }
@@ -91,6 +91,7 @@ body {
 	line-height: 1.5;
 	overflow-x: hidden; /* Prevent horizontal scroll */
 	max-width: 100vw; /* Ensure body doesn't exceed viewport */
+	gap: 0; /* No gap - spacing handled by elements */
 }
 
 body.dark-mode {
@@ -702,8 +703,13 @@ body.dark-mode .game-time {
 }
 
 @keyframes starPulse {
-	0%, 100% { transform: scale(1); }
-	50% { transform: scale(1.1); }
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
 }
 
 /* Game links container */
@@ -731,8 +737,12 @@ body.dark-mode .game-time {
 }
 
 @keyframes skeleton-loading {
-	0% { background-position: 200% 0; }
-	100% { background-position: -200% 0; }
+	0% {
+		background-position: 200% 0;
+	}
+	100% {
+		background-position: -200% 0;
+	}
 }
 
 .game-links-title {
@@ -886,13 +896,14 @@ body.dark-mode .game-time {
 	border: 1px solid var(--glass-border);
 	border-radius: 12px;
 	padding: 1.5em; /* Reduced from 1.875em */
-	margin-top: 2em; /* Reduced from 2.5em */
+	margin-top: 1em; /* Reduced - footer is now outside grid */
 	box-shadow: 0 8px 32px var(--shadow-color);
 	transition: all 0.3s;
 	width: 100%;
 	max-width: 100%; /* Prevent overflow */
 	overflow: hidden; /* Prevent content overflow */
 	box-sizing: border-box; /* Include padding in width calculation */
+	grid-column: 1 / -1; /* Span all columns when inside grid (desktop) */
 }
 
 .footer-content {
@@ -957,34 +968,34 @@ body.dark-mode .game-time {
 	body {
 		padding: 1.25rem; /* 20px */
 	}
-	
+
 	.header {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 		padding: 1.5625em 1.875em;
 	}
-	
+
 	.header-left h1 {
 		font-size: 1.75rem; /* 28px */
 	}
-	
+
 	.sport-title {
 		font-size: 1.25rem; /* 20px */
 	}
-	
+
 	.content-section {
 		padding: 1.25em;
 	}
-	
+
 	.date-tabs-wrapper {
 		padding: 0.9375em 1.875em;
 	}
-	
+
 	.game-links-grid {
 		grid-template-columns: repeat(2, 1fr);
 	}
-	
+
 	.footer-content {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -999,17 +1010,17 @@ body.dark-mode .game-time {
 	.burger-menu {
 		display: none;
 	}
-	
+
 	.overlay {
 		display: none !important;
 	}
-	
+
 	.content-wrapper {
 		display: grid;
 		grid-template-columns: 280px 1fr;
 		gap: 1.25rem;
 	}
-	
+
 	.sidebar {
 		position: sticky;
 		left: 0;
@@ -1020,15 +1031,15 @@ body.dark-mode .game-time {
 		border-radius: 12px;
 		align-self: flex-start;
 	}
-	
+
 	.main-content {
 		margin-top: 0;
 	}
-	
+
 	.game-links-grid {
 		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	}
-	
+
 	.footer-content {
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -1042,7 +1053,7 @@ body.dark-mode .game-time {
 	.content-wrapper {
 		grid-template-columns: 280px 1fr 350px;
 	}
-	
+
 	/* Show right sidebar */
 	.right-sidebar {
 		display: block;
@@ -1060,18 +1071,18 @@ body.dark-mode .game-time {
 		max-height: calc(100vh - 2.5rem);
 		overflow-y: auto;
 	}
-	
+
 	.sidebar-content h2 {
 		margin-bottom: 0.9375em;
 		color: var(--text-primary);
 		font-size: 1.25rem;
 	}
-	
+
 	.sidebar-content p {
 		color: var(--text-secondary);
 		line-height: 1.6;
 	}
-	
+
 	.footer-content {
 		grid-template-columns: repeat(4, 1fr);
 	}

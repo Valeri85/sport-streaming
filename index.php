@@ -446,46 +446,46 @@ foreach ($gamesData as $game) {
             <?php echo $sidebarContent; ?>
         </div>
     </aside>
-    </div>
+</div>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h2>Sports</h2>
-                <ul>
-                    <li><a href="/live-football">⚽ Football</a></li>
-                    <li><a href="/live-basketball">🏀 Basketball</a></li>
-                    <li><a href="/live-tennis">🎾 Tennis</a></li>
-                    <li><a href="/live-ice-hockey">🏒 Ice Hockey</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/favorites">⭐ Favorites</a></li>
-                    <li><a href="/?tab=soon">Soon</a></li>
-                    <li><a href="/?tab=tomorrow">Tomorrow</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h2>About</h2>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h2><?php echo htmlspecialchars($siteName); ?></h2>
-                <p>Watch live sports streaming online free. All major sports events in HD quality.</p>
-            </div>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h2>Sports</h2>
+            <ul>
+                <li><a href="/live-football">⚽ Football</a></li>
+                <li><a href="/live-basketball">🏀 Basketball</a></li>
+                <li><a href="/live-tennis">🎾 Tennis</a></li>
+                <li><a href="/live-ice-hockey">🏒 Ice Hockey</a></li>
+            </ul>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; <?php echo date('Y'); ?> <?php echo htmlspecialchars($siteName); ?>. All rights reserved.</p>
+        <div class="footer-section">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/favorites">⭐ Favorites</a></li>
+                <li><a href="/?tab=soon">Soon</a></li>
+                <li><a href="/?tab=tomorrow">Tomorrow</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="footer-section">
+            <h2>About</h2>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2><?php echo htmlspecialchars($siteName); ?></h2>
+            <p>Watch live sports streaming online free. All major sports events in HD quality.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <?php echo date('Y'); ?> <?php echo htmlspecialchars($siteName); ?>. All rights reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html>
