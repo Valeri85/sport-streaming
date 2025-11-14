@@ -31,9 +31,6 @@ $siteName = $website['site_name'];
 $logo = $website['logo'];
 $primaryColor = $website['primary_color'];
 $secondaryColor = $website['secondary_color'];
-$seoTitle = $website['seo_title'];
-$seoDescription = $website['seo_description'];
-$seoKeywords = $website['seo_keywords'];
 $language = $website['language'];
 $sidebarContent = $website['sidebar_content'];
 
@@ -61,6 +58,36 @@ if (!$activeSport) {
 $viewFavorites = false;
 if (strpos($_SERVER['REQUEST_URI'], '/favorites') !== false) {
     $viewFavorites = true;
+}
+
+// Get page-specific SEO or fallback to default
+$pagesSeo = $website['pages_seo'] ?? [];
+$seoTitle = $website['seo_title'];
+$seoDescription = $website['seo_description'];
+$seoKeywords = $website['seo_keywords'];
+
+// Determine current page and load appropriate SEO
+if ($viewFavorites) {
+    // Favorites page
+    if (isset($pagesSeo['favorites'])) {
+        $seoTitle = $pagesSeo['favorites']['title'] ?: $seoTitle;
+        $seoDescription = $pagesSeo['favorites']['description'] ?: $seoDescription;
+        $seoKeywords = $pagesSeo['favorites']['keywords'] ?: $seoKeywords;
+    }
+} elseif ($activeSport) {
+    // Sport-specific page
+    if (isset($pagesSeo['sports'][$activeSport])) {
+        $seoTitle = $pagesSeo['sports'][$activeSport]['title'] ?: $seoTitle;
+        $seoDescription = $pagesSeo['sports'][$activeSport]['description'] ?: $seoDescription;
+        $seoKeywords = $pagesSeo['sports'][$activeSport]['keywords'] ?: $seoKeywords;
+    }
+} else {
+    // Home page
+    if (isset($pagesSeo['home'])) {
+        $seoTitle = $pagesSeo['home']['title'] ?: $seoTitle;
+        $seoDescription = $pagesSeo['home']['description'] ?: $seoDescription;
+        $seoKeywords = $pagesSeo['home']['keywords'] ?: $seoKeywords;
+    }
 }
 
 function groupGamesBySport($games) {
