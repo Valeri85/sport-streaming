@@ -96,6 +96,27 @@ function sendNewSportsNotification($newSports, $siteName) {
 
 // NEW: Check for new sports in data.json
 function checkForNewSports($gamesData, $configuredSports, $siteName, $websiteId) {
+    // Helper function to check if a sport from data.json is covered by CMS config
+    $isSportConfigured = function($dataSport, $configuredSports) {
+        $dataSportLower = strtolower($dataSport);
+        
+        foreach ($configuredSports as $configSport) {
+            $configSportLower = strtolower($configSport);
+            
+            // Exact match
+            if ($dataSportLower === $configSportLower) {
+                return true;
+            }
+            
+            // ONLY Rugby variations: "Rugby Union", "Rugby League" etc. -> covered by "Rugby"
+            if (strpos($dataSportLower, 'rugby') !== false && $configSportLower === 'rugby') {
+                return true;
+            }
+        }
+        
+        return false;
+    };
+    
     // Get unique sports from games data
     $dataSports = [];
     foreach ($gamesData as $game) {
@@ -105,10 +126,10 @@ function checkForNewSports($gamesData, $configuredSports, $siteName, $websiteId)
         }
     }
     
-    // Find sports that are in data.json but NOT in CMS config
+    // Find sports that are in data.json but NOT covered by CMS config
     $newSports = [];
     foreach ($dataSports as $sport) {
-        if (!in_array($sport, $configuredSports)) {
+        if (!$isSportConfigured($sport, $configuredSports)) {
             $newSports[] = $sport;
         }
     }
