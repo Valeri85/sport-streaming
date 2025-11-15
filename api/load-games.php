@@ -98,12 +98,26 @@ function formatGameTime($dateString) {
     return date('H:i', $timestamp);
 }
 
+// NEW: Function to check if a sport should be grouped with another
+function shouldGroupSports($gameSport, $filterSlug) {
+    $gameSportLower = strtolower($gameSport);
+    $filterLower = strtolower($filterSlug);
+    
+    // Special case: Rugby - group all rugby variations together
+    if ($filterLower === 'rugby') {
+        return strpos($gameSportLower, 'rugby') !== false;
+    }
+    
+    // Default: exact match
+    return $gameSportLower === str_replace('-', ' ', $filterLower);
+}
+
 $filteredGames = $gamesData;
 
-// Apply sport filter
+// Apply sport filter with grouping
 if ($sport) {
     $filteredGames = array_filter($filteredGames, function($game) use ($sport) {
-        return strtolower($game['sport']) === strtolower(str_replace('-', ' ', $sport));
+        return shouldGroupSports($game['sport'], $sport);
     });
 }
 
@@ -165,7 +179,8 @@ $sportsIcons = [
     'Golf' => '⛳',
     'Racing' => '🏎️',
     'Boxing' => '🥊',
-    'Chess' => '♟️'
+    'Chess' => '♟️',
+    'Rugby' => '🏉'
 ];
 
 $groupedBySport = [];

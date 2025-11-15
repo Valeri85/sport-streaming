@@ -296,17 +296,32 @@ $sportsIcons = [
     'Golf' => '⛳',
     'Racing' => '🏎️',
     'Boxing' => '🥊',
-    'Chess' => '♟️'
+    'Chess' => '♟️',
+    'Rugby' => '🏉'
 ];
 
 $filteredGames = $gamesData;
+
+// NEW: Function to check if a sport should be grouped with another
+function shouldGroupSports($gameSport, $filterSlug) {
+    $gameSportLower = strtolower($gameSport);
+    $filterLower = strtolower($filterSlug);
+    
+    // Special case: Rugby - group all rugby variations together
+    if ($filterLower === 'rugby') {
+        return strpos($gameSportLower, 'rugby') !== false;
+    }
+    
+    // Default: exact match
+    return $gameSportLower === str_replace('-', ' ', $filterLower);
+}
 
 if ($viewFavorites) {
     $filteredGames = $gamesData;
 } else {
     if ($activeSport) {
         $filteredGames = array_filter($filteredGames, function($game) use ($activeSport) {
-            return strtolower($game['sport']) === strtolower(str_replace('-', ' ', $activeSport));
+            return shouldGroupSports($game['sport'], $activeSport);
         });
     }
     
@@ -332,10 +347,18 @@ foreach ($sportCategoriesFromConfig as $sportName) {
     $sportCounts[$sportName] = 0;
 }
 
-// Count games for each sport
+// Count games for each sport - with rugby grouping
 foreach ($gamesData as $game) {
     $sport = $game['sport'];
-    if (isset($sportCounts[$sport])) {
+    
+    // Special handling for Rugby variations
+    if (stripos($sport, 'rugby') !== false) {
+        // Group all rugby types under "Rugby"
+        if (!isset($sportCounts['Rugby'])) {
+            $sportCounts['Rugby'] = 0;
+        }
+        $sportCounts['Rugby']++;
+    } elseif (isset($sportCounts[$sport])) {
         $sportCounts[$sport]++;
     } else {
         // If sport is not in config, add it at the end
