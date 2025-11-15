@@ -68,7 +68,7 @@ html {
 	scrollbar-gutter: stable;
 	scrollbar-color: rgba(192, 192, 192, 0.5) rgba(248, 249, 250, 0.3);
 	font-display: swap;
-	overflow-x: hidden; /* Prevent horizontal scroll */
+	overflow-x: hidden;
 }
 
 body.dark-mode {
@@ -85,29 +85,28 @@ body {
 	color: var(--text-primary);
 	display: flex;
 	flex-direction: column;
-	padding: 0; /* Removed padding to help sticky work */
+	padding: 0;
 	min-height: 100vh;
 	transition: background 0.3s, color 0.3s;
 	line-height: 1.5;
-	overflow-x: hidden; /* Prevent horizontal scroll */
-	max-width: 100vw; /* Ensure body doesn't exceed viewport */
-	gap: 0; /* No gap - spacing handled by elements */
+	overflow-x: hidden;
+	max-width: 100vw;
+	gap: 0;
 }
 
 body.dark-mode {
 	background: linear-gradient(135deg, #0f1419 0%, #1a2634 100%);
 }
 
-/* Content wrapper - mobile single column */
 .content-wrapper {
 	display: flex;
 	flex-direction: column;
-	gap: 0.75rem; /* 12px - reduced from 20px */
+	gap: 0.75rem;
 	flex: 1;
 	width: 100%;
-	max-width: 100%; /* Prevent overflow */
-	overflow-x: hidden; /* Prevent horizontal scroll */
-	padding: 0.5rem; /* Add padding here instead of body */
+	max-width: 100%;
+	overflow-x: hidden;
+	padding: 0.5rem;
 }
 
 /* ============================================
@@ -138,7 +137,7 @@ body.dark-mode {
 }
 
 .logo {
-	padding: 1em; /* Reduced from 1.25em */
+	padding: 1em;
 	border-bottom: 1px solid var(--glass-border);
 }
 
@@ -147,15 +146,13 @@ body.dark-mode {
 	color: inherit;
 }
 
-/* Fix for H1UserAgentFontSizeInSection deprecation warning */
-/* MDN recommended solution: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements */
 :where(h1) {
 	margin-block: 0.67em;
 	font-size: 2em;
 }
 
 .logo-title {
-	font-size: 1.5rem; /* 24px */
+	font-size: 1.5rem;
 	color: #ffffff;
 	font-weight: 600;
 	display: flex;
@@ -164,12 +161,11 @@ body.dark-mode {
 }
 
 .logo-icon {
-	font-size: 2rem; /* 32px */
+	font-size: 2rem;
 }
 
-/* Favorites section */
 .favorites-section {
-	padding: 0.75em 1em; /* Reduced padding */
+	padding: 0.75em 1em;
 	border-bottom: 1px solid var(--glass-border);
 	background: rgba(255, 251, 240, 0.3);
 	backdrop-filter: blur(5px);
@@ -183,11 +179,11 @@ body.dark-mode .favorites-section {
 .favorites-link {
 	display: flex;
 	align-items: center;
-	gap: 0.5em; /* Reduced from 0.625em */
+	gap: 0.5em;
 	color: var(--text-primary);
 	text-decoration: none;
 	font-weight: 600;
-	padding: 0.625em; /* Reduced from 0.75em */
+	padding: 0.625em;
 	min-height: 48px;
 	border-radius: 6px;
 	transition: all 0.3s;
@@ -220,7 +216,7 @@ body.dark-mode .favorites-link:hover {
 	color: white;
 	padding: 0.25em 0.625em;
 	border-radius: 12px;
-	font-size: 0.75rem; /* 12px */
+	font-size: 0.75rem;
 	font-weight: 600;
 	transition: all 0.3s;
 	box-shadow: 0 2px 4px rgba(214, 54, 0, 0.3);
@@ -228,20 +224,18 @@ body.dark-mode .favorites-link:hover {
 	text-align: center;
 }
 
-/* Section title */
 .section-title {
-	padding: 0.5em 1em; /* Reduced padding */
-	font-size: 0.875rem; /* 14px */
+	padding: 0.5em 1em;
+	font-size: 0.875rem;
 	color: var(--text-secondary);
 	font-weight: 600;
 	text-transform: uppercase;
 }
 
-/* Sports menu */
 .sports-menu {
 	flex: 1;
 	overflow-y: auto;
-	padding-bottom: 1em; /* Reduced from 1.25em */
+	padding-bottom: 1em;
 	scrollbar-gutter: stable;
 }
 
@@ -262,13 +256,13 @@ body.dark-mode .favorites-link:hover {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0.75em 1em; /* Reduced padding */
+	padding: 0.75em 1em;
 	min-height: 48px;
 	color: var(--text-primary);
 	text-decoration: none;
 	cursor: pointer;
 	transition: all 0.3s;
-	margin: 0.25em 0.375em; /* Reduced margin */
+	margin: 0.25em 0.375em;
 	border-radius: 6px;
 	font-size: 1rem;
 }
@@ -291,11 +285,12 @@ body.dark-mode .favorites-link:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 1.125rem; /* 18px */
+	font-size: 1.125rem;
+	flex-shrink: 0;
 }
 
 .sport-name {
-	font-size: 0.9375rem; /* 15px */
+	font-size: 0.9375rem;
 	font-weight: 500;
 }
 
@@ -314,36 +309,35 @@ body.dark-mode .favorites-link:hover {
 
 .main-content {
 	width: 100%;
-	margin-top: 3rem; /* Adjust for burger menu at top */
-	max-width: 100%; /* Prevent overflow */
-	overflow-x: hidden; /* Prevent horizontal scroll */
+	margin-top: 3rem;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
-/* Header */
 .header {
 	background: var(--glass-bg);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	border: 1px solid var(--glass-border);
-	padding: 0.875em 1em; /* Reduced padding */
+	padding: 0.875em 1em;
 	border-radius: 12px;
-	margin-bottom: 1em; /* Reduced from 1.25em */
+	margin-bottom: 1em;
 	box-shadow: 0 8px 32px var(--shadow-color);
 	display: flex;
 	flex-direction: column;
-	gap: 0.75em; /* Reduced from 1em */
+	gap: 0.75em;
 	transition: all 0.3s;
-	max-width: 100%; /* Prevent overflow */
-	overflow: hidden; /* Prevent content overflow */
+	max-width: 100%;
+	overflow: hidden;
 }
 
 .header-left h1 {
-	font-size: 1.5rem; /* 24px on mobile */
+	font-size: 1.5rem;
 	color: var(--text-primary);
 	margin: 0;
-	transform: translateZ(0); /* Create new layer to prevent repaints */
+	transform: translateZ(0);
 	will-change: auto;
-	word-wrap: break-word; /* Prevent long words from overflowing */
+	word-wrap: break-word;
 	overflow-wrap: break-word;
 	max-width: 100%;
 }
@@ -351,7 +345,7 @@ body.dark-mode .favorites-link:hover {
 .header-right {
 	display: flex;
 	align-items: center;
-	gap: 0.75em; /* Reduced from 0.9375em */
+	gap: 0.75em;
 }
 
 .theme-toggle {
@@ -365,7 +359,7 @@ body.dark-mode .favorites-link:hover {
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	font-size: 1.375rem; /* 22px */
+	font-size: 1.375rem;
 	transition: all 0.3s;
 	box-shadow: 0 4px 12px var(--shadow-color);
 }
@@ -383,27 +377,26 @@ body.dark-mode .theme-icon {
 	transform: rotate(180deg);
 }
 
-/* Date tabs */
 .date-tabs-wrapper {
 	background: var(--glass-bg);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	border: 1px solid var(--glass-border);
-	padding: 0.75em; /* Reduced from 0.9375em */
+	padding: 0.75em;
 	border-radius: 12px;
-	margin-bottom: 1em; /* Reduced from 1.25em */
+	margin-bottom: 1em;
 	box-shadow: 0 8px 32px var(--shadow-color);
 	transition: all 0.3s;
 }
 
 .date-tabs {
 	display: flex;
-	gap: 0.5em; /* Reduced from 0.75em */
+	gap: 0.5em;
 	flex-wrap: wrap;
 }
 
 .date-tab {
-	padding: 0.625em 1.25em; /* Reduced padding */
+	padding: 0.625em 1.25em;
 	min-height: 48px;
 	min-width: 80px;
 	background: var(--glass-bg);
@@ -427,25 +420,23 @@ body.dark-mode .theme-icon {
 	background: var(--hover-bg);
 }
 
-/* Content section */
 .content-section {
 	background: var(--glass-bg);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	border: 1px solid var(--glass-border);
-	padding: 0.75em; /* Reduced from 1em */
+	padding: 0.75em;
 	border-radius: 12px;
 	box-shadow: 0 8px 32px var(--shadow-color);
 	transition: all 0.3s;
-	min-height: 400px; /* Reserve space to prevent layout shift */
+	min-height: 400px;
 	contain: layout;
-	max-width: 100%; /* Prevent overflow */
-	overflow-x: hidden; /* Prevent horizontal scroll */
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
-/* Sport categories */
 .sport-category {
-	margin-bottom: 1em; /* Further reduced from 1.5em */
+	margin-bottom: 1em;
 	content-visibility: auto;
 	contain-intrinsic-size: auto 500px;
 }
@@ -467,14 +458,14 @@ body.dark-mode .theme-icon {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1em; /* Reduced padding */
+	padding: 1em;
 	min-height: 64px;
 	min-width: 100%;
 	background: var(--glass-bg);
 	backdrop-filter: blur(5px);
 	border: 1px solid var(--glass-border);
 	border-radius: 8px;
-	margin-bottom: 0.375em; /* Further reduced */
+	margin-bottom: 0.375em;
 	cursor: pointer;
 	user-select: none;
 	transition: all 0.3s ease;
@@ -489,8 +480,8 @@ body.dark-mode .theme-icon {
 .sport-title {
 	display: flex;
 	align-items: center;
-	gap: 0.625em; /* Reduced from 0.75em */
-	font-size: 1.125rem; /* 18px on mobile */
+	gap: 0.625em;
+	font-size: 1.125rem;
 	font-weight: 600;
 	color: var(--text-primary);
 }
@@ -521,11 +512,10 @@ details:not([open]) .sport-header::after {
 	transform: rotate(-90deg);
 }
 
-/* Competition groups */
 .competition-group {
-	margin-bottom: 0.5em; /* Further reduced */
+	margin-bottom: 0.5em;
 	border-left: 3px solid var(--border-color);
-	padding-left: 0.75em; /* Reduced from 0.9375em */
+	padding-left: 0.75em;
 	transition: all 0.3s;
 }
 
@@ -535,10 +525,10 @@ details:not([open]) .sport-header::after {
 	justify-content: space-between;
 	font-size: 0.875rem;
 	font-weight: 600;
-	margin-bottom: 0.375em; /* Further reduced */
-	padding: 0.375em 0; /* Further reduced */
+	margin-bottom: 0.375em;
+	padding: 0.375em 0;
 	min-height: 48px;
-	gap: 0.75em; /* Spacing between elements */
+	gap: 0.75em;
 }
 
 .competition-name {
@@ -565,7 +555,7 @@ details:not([open]) .sport-header::after {
 	justify-content: center;
 	transition: all 0.3s ease;
 	flex-shrink: 0;
-	margin-left: 0.5em; /* Spacing from adjacent elements */
+	margin-left: 0.5em;
 }
 
 .league-favorite:hover {
@@ -579,7 +569,6 @@ details:not([open]) .sport-header::after {
 	filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
 }
 
-/* Game items */
 .game-item-details {
 	border-bottom: 1px solid var(--border-color);
 }
@@ -602,7 +591,7 @@ details:not([open]) .sport-header::after {
 	cursor: pointer;
 	background: var(--glass-bg);
 	backdrop-filter: blur(3px);
-	margin: 0.375em 0; /* Further reduced margin */
+	margin: 0.375em 0;
 	border-radius: 6px;
 }
 
@@ -625,7 +614,7 @@ body.dark-mode .game-time {
 
 .game-teams {
 	flex: 1;
-	margin-left: 0.75em; /* Reduced from 0.9375em */
+	margin-left: 0.75em;
 }
 
 .team {
@@ -652,7 +641,7 @@ body.dark-mode .game-time {
 .game-actions {
 	display: flex;
 	align-items: center;
-	gap: 0.5em; /* Reduced from 0.75em */
+	gap: 0.5em;
 	margin-left: auto;
 	flex-shrink: 0;
 }
@@ -687,7 +676,7 @@ body.dark-mode .game-time {
 	transition: all 0.4s ease;
 	filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 	flex-shrink: 0;
-	margin-left: 0.5em; /* Spacing from adjacent elements */
+	margin-left: 0.5em;
 }
 
 .favorite-star:hover {
@@ -712,9 +701,8 @@ body.dark-mode .game-time {
 	}
 }
 
-/* Game links container */
 .game-links-container {
-	padding: 0.75em; /* Reduced from 0.9375em */
+	padding: 0.75em;
 	background: var(--bg-tertiary);
 	backdrop-filter: blur(5px);
 	border-top: 1px solid var(--border-color);
@@ -724,8 +712,8 @@ body.dark-mode .game-time {
 .skeleton-loader {
 	display: flex;
 	flex-direction: column;
-	gap: 0.5em; /* Reduced from 0.625em */
-	padding: 0.5em 0; /* Reduced from 0.625em */
+	gap: 0.5em;
+	padding: 0.5em 0;
 }
 
 .skeleton-item {
@@ -736,25 +724,12 @@ body.dark-mode .game-time {
 	animation: skeleton-loading 1.5s infinite;
 }
 
-/* (keeping all existing CSS, just adding new styles at the end) */
-
 .sport-icon-img {
 	width: 24px;
 	height: 24px;
 	object-fit: contain;
 	display: inline-block;
 	vertical-align: middle;
-}
-
-/* Ensure sport icon container can hold both emoji and images */
-.sport-icon {
-	width: 24px;
-	height: 24px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 1.125rem; /* 18px for emojis */
-	flex-shrink: 0;
 }
 
 @keyframes skeleton-loading {
@@ -770,21 +745,21 @@ body.dark-mode .game-time {
 	font-size: 0.875rem;
 	font-weight: 600;
 	color: var(--text-secondary);
-	margin-bottom: 0.625em; /* Reduced from 0.75em */
+	margin-bottom: 0.625em;
 }
 
 .game-links-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 0.5em; /* Reduced from 0.625em */
+	gap: 0.5em;
 }
 
 .link-item {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 0.375em; /* Reduced from 0.5em */
-	padding: 0.625em 0.75em; /* Reduced padding */
+	gap: 0.375em;
+	padding: 0.625em 0.75em;
 	min-height: 48px;
 	background: var(--glass-bg);
 	backdrop-filter: blur(5px);
@@ -816,7 +791,7 @@ body.dark-mode .game-time {
 	color: white;
 	padding: 0.1875em 0.5em;
 	border-radius: 4px;
-	font-size: 0.6875rem; /* 11px */
+	font-size: 0.6875rem;
 	font-weight: 600;
 	box-shadow: 0 2px 4px rgba(30, 107, 184, 0.3);
 }
@@ -854,8 +829,8 @@ body.dark-mode .game-time {
 .burger-menu {
 	display: flex;
 	position: fixed;
-	top: 0.5rem; /* Adjust since body has no padding */
-	left: 0.5rem; /* Adjust since body has no padding */
+	top: 0.5rem;
+	left: 0.5rem;
 	z-index: 999;
 	background: var(--glass-bg);
 	backdrop-filter: blur(10px);
@@ -916,28 +891,28 @@ body.dark-mode .game-time {
 	-webkit-backdrop-filter: blur(10px);
 	border: 1px solid var(--glass-border);
 	border-radius: 12px;
-	padding: 1.5em; /* Reduced from 1.875em */
-	margin: 1em 0.5rem 0.5rem 0.5rem; /* Add horizontal margins for spacing */
+	padding: 1.5em;
+	margin: 1em 0.5rem 0.5rem 0.5rem;
 	box-shadow: 0 8px 32px var(--shadow-color);
 	transition: all 0.3s;
-	width: calc(100% - 1rem); /* Account for horizontal margins */
-	max-width: 100%; /* Prevent overflow */
-	overflow: hidden; /* Prevent content overflow */
-	box-sizing: border-box; /* Include padding in width calculation */
-	grid-column: 1 / -1; /* Span all columns when inside grid (desktop) */
+	width: calc(100% - 1rem);
+	max-width: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+	grid-column: 1 / -1;
 }
 
 .footer-content {
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 1.5em; /* Reduced from 1.875em */
-	margin-bottom: 1em; /* Reduced from 1.25em */
+	gap: 1.5em;
+	margin-bottom: 1em;
 }
 
 .footer-section h2 {
 	color: var(--text-primary);
 	font-size: 1.125rem;
-	margin-bottom: 0.75em; /* Reduced from 0.9375em */
+	margin-bottom: 0.75em;
 	font-weight: 600;
 }
 
@@ -947,7 +922,7 @@ body.dark-mode .game-time {
 }
 
 .footer-section ul li {
-	margin-bottom: 0; /* Removed bottom margin */
+	margin-bottom: 0;
 }
 
 .footer-section ul li a {
@@ -975,7 +950,7 @@ body.dark-mode .game-time {
 
 .footer-bottom {
 	border-top: 1px solid var(--glass-border);
-	padding-top: 1em; /* Reduced from 1.25em */
+	padding-top: 1em;
 	text-align: center;
 	color: var(--text-muted);
 	font-size: 0.875rem;
@@ -987,7 +962,7 @@ body.dark-mode .game-time {
 
 @media (min-width: 768px) {
 	body {
-		padding: 1.25rem; /* 20px */
+		padding: 1.25rem;
 	}
 
 	.header {
@@ -998,11 +973,11 @@ body.dark-mode .game-time {
 	}
 
 	.header-left h1 {
-		font-size: 1.75rem; /* 28px */
+		font-size: 1.75rem;
 	}
 
 	.sport-title {
-		font-size: 1.25rem; /* 20px */
+		font-size: 1.25rem;
 	}
 
 	.content-section {
@@ -1027,7 +1002,6 @@ body.dark-mode .game-time {
    ============================================ */
 
 @media (min-width: 1024px) {
-	/* Hide burger menu, show sidebar */
 	.burger-menu {
 		display: none;
 	}
@@ -1039,25 +1013,26 @@ body.dark-mode .game-time {
 	.content-wrapper {
 		display: grid;
 		grid-template-columns: 280px 1fr;
-		gap: 0; /* Remove gap - sidebars handle their own spacing */
-		padding: 0; /* Remove padding at desktop */
+		gap: 0;
+		padding: 0;
 	}
 
+	/* FIXED: Sticky sidebar for desktop */
 	.sidebar {
 		position: sticky;
 		left: 0;
-		top: 0; /* Changed from 1.25rem to 0 */
-		height: 100vh; /* Changed to full viewport height */
+		top: 1.25rem; /* Stick 20px from top of viewport */
+		height: calc(100vh - 2.5rem); /* Full height minus top/bottom spacing */
 		width: 100%;
 		max-width: none;
 		border-radius: 12px;
 		align-self: flex-start;
-		overflow-y: auto; /* Allow scrolling if content is tall */
+		overflow-y: auto; /* Allow internal scrolling */
 	}
 
 	.main-content {
 		margin-top: 0;
-		padding-inline: 1rem; /* Add padding for spacing */
+		padding-inline: 1rem;
 	}
 
 	.game-links-grid {
@@ -1069,8 +1044,8 @@ body.dark-mode .game-time {
 	}
 
 	.footer {
-		margin: 1rem; /* Consistent margin at desktop */
-		width: calc(100% - 2rem); /* Account for margins */
+		margin: 1rem;
+		width: calc(100% - 2rem);
 	}
 }
 
@@ -1081,10 +1056,10 @@ body.dark-mode .game-time {
 @media (min-width: 1280px) {
 	.content-wrapper {
 		grid-template-columns: 280px 1fr 350px;
-		gap: 0; /* Remove gap */
+		gap: 0;
 	}
 
-	/* Show right sidebar */
+	/* FIXED: Sticky right sidebar */
 	.right-sidebar {
 		display: block;
 		background: var(--glass-bg);
@@ -1095,11 +1070,11 @@ body.dark-mode .game-time {
 		padding: 1.25em;
 		box-shadow: 0 8px 32px var(--shadow-color);
 		position: sticky;
-		top: 0; /* Changed from 1.25rem to 0 */
+		top: 1.25rem; /* Stick 20px from top of viewport */
 		align-self: flex-start;
-		height: fit-content;
-		max-height: 100vh; /* Changed to full viewport height */
-		overflow-y: auto;
+		height: fit-content; /* Changed from max-height to fit-content */
+		max-height: calc(100vh - 2.5rem); /* Maximum height with spacing */
+		overflow-y: auto; /* Allow internal scrolling if content is tall */
 	}
 
 	.sidebar-content h2 {
