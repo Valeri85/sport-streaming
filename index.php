@@ -42,6 +42,117 @@ if (file_exists($jsonFile)) {
     $gamesData = $data['games'] ?? [];
 }
 
+// NEW: Function to send Slack notification about new sports
+function sendNewSportsNotification($newSports, $siteName) {
+    // Load Slack config
+    $slackConfigFile = '/var/www/u1852176/data/www/streaming/config/slack-config.json';
+    if (!file_exists($slackConfigFile)) {
+        return false; // Slack not configured
+    }
+    
+    $slackConfig = json_decode(file_get_contents($slackConfigFile), true);
+    $slackWebhookUrl = $slackConfig['webhook_url'] ?? '';
+    
+    if (empty($slackWebhookUrl)) {
+        return false;
+    }
+    
+    // Build sports list for message
+    $sportsList = implode("\n", array_map(function($sport) {
+        return "• " . $sport;
+    }, $newSports));
+    
+    $message = [
+        'text' => "🆕 *New Sport Categories Detected*",
+        'blocks' => [
+            [
+                'type' => 'section',
+                'text' => [
+                    'type' => 'mrkdwn',
+                    'text' => "*Website:* " . $siteName . "\n*New Sports Found in data.json:*\n" . $sportsList . "\n\n⚠️ Please add these sports to CMS and configure SEO."
+                ]
+            ],
+            [
+                'type' => 'section',
+                'text' => [
+                    'type' => 'mrkdwn',
+                    'text' => "*Action Required:*\n1. Go to CMS > Manage Sports\n2. Add the new sport categories\n3. Configure SEO for new sport pages"
+                ]
+            ]
+        ]
+    ];
+    
+    $ch = curl_init($slackWebhookUrl);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($message));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+    
+    $result = curl_exec($ch);
+    curl_close($ch);
+    
+    return $result;
+}
+
+// NEW: Check for new sports in data.json
+function checkForNewSports($gamesData, $configuredSports, $siteName, $websiteId) {
+    // Get unique sports from games data
+    $dataSports = [];
+    foreach ($gamesData as $game) {
+        $sport = $game['sport'] ?? '';
+        if ($sport && !in_array($sport, $dataSports)) {
+            $dataSports[] = $sport;
+        }
+    }
+    
+    // Find sports that are in data.json but NOT in CMS config
+    $newSports = [];
+    foreach ($dataSports as $sport) {
+        if (!in_array($sport, $configuredSports)) {
+            $newSports[] = $sport;
+        }
+    }
+    
+    // If new sports found, check if we already notified about them
+    if (!empty($newSports)) {
+        // Store file to track notified sports per website
+        $notifiedFile = __DIR__ . '/config/notified-sports.json';
+        $notifiedData = [];
+        
+        if (file_exists($notifiedFile)) {
+            $notifiedData = json_decode(file_get_contents($notifiedFile), true) ?: [];
+        }
+        
+        // Initialize array for this website if not exists
+        if (!isset($notifiedData[$websiteId])) {
+            $notifiedData[$websiteId] = [];
+        }
+        
+        // Filter out already notified sports
+        $sportsToNotify = [];
+        foreach ($newSports as $sport) {
+            if (!in_array($sport, $notifiedData[$websiteId])) {
+                $sportsToNotify[] = $sport;
+            }
+        }
+        
+        // Send notification if there are new sports we haven't notified about
+        if (!empty($sportsToNotify)) {
+            $notificationSent = sendNewSportsNotification($sportsToNotify, $siteName);
+            
+            if ($notificationSent !== false) {
+                // Mark these sports as notified
+                $notifiedData[$websiteId] = array_merge($notifiedData[$websiteId], $sportsToNotify);
+                file_put_contents($notifiedFile, json_encode($notifiedData, JSON_PRETTY_PRINT));
+            }
+        }
+    }
+}
+
+// NEW: Run the check
+$configuredSports = $website['sports_categories'] ?? [];
+checkForNewSports($gamesData, $configuredSports, $siteName, $website['id']);
+
 $activeTab = isset($_GET['tab']) ? $_GET['tab'] : 'all';
 $activeSport = isset($_GET['sport']) ? $_GET['sport'] : null;
 
