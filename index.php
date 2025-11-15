@@ -108,8 +108,23 @@ function checkForNewSports($gamesData, $configuredSports, $siteName, $websiteId)
                 return true;
             }
             
-            // ONLY Rugby variations: "Rugby Union", "Rugby League" etc. -> covered by "Rugby"
+            // Rugby variations: any sport containing "rugby" matches "Rugby"
             if (strpos($dataSportLower, 'rugby') !== false && $configSportLower === 'rugby') {
+                return true;
+            }
+            
+            // Combat variations: any sport containing "combat" matches "Combat"
+            if (strpos($dataSportLower, 'combat') !== false && $configSportLower === 'combat') {
+                return true;
+            }
+            
+            // Water Sports variations: any sport containing "water" matches "Water Sports"
+            if (strpos($dataSportLower, 'water') !== false && $configSportLower === 'water sports') {
+                return true;
+            }
+            
+            // Winter Sports variations: any sport containing "winter" matches "Winter Sports"
+            if (strpos($dataSportLower, 'winter') !== false && $configSportLower === 'winter sports') {
                 return true;
             }
         }
@@ -309,16 +324,17 @@ $sportsIcons = [
     'Badminton' => '🏸',
     'Darts' => '🎯',
     'Billiard' => '🎱',
-    'Winter Sport' => '⛷️',
+    'Winter Sports' => '⛷️',
     'Netball' => '🏐',
     'Futsal' => '⚽',
     'Bowling' => '🎳',
-    'Water Polo' => '🤽',
+    'Water Sports' => '🤽',
     'Golf' => '⛳',
     'Racing' => '🏎️',
     'Boxing' => '🥊',
     'Chess' => '♟️',
-    'Rugby' => '🏉'
+    'Rugby' => '🏉',
+    'Combat' => '🥊'
 ];
 
 $filteredGames = $gamesData;
@@ -333,12 +349,64 @@ function shouldGroupSports($gameSport, $filterSlug) {
         return strpos($gameSportLower, 'rugby') !== false;
     }
     
+    // Special case: Combat - group all combat variations together
+    if ($filterLower === 'combat') {
+        return strpos($gameSportLower, 'combat') !== false;
+    }
+    
+    // Special case: Water Sports - group all water sport variations together
+    if ($filterLower === 'water-sports') {
+        return strpos($gameSportLower, 'water') !== false;
+    }
+    
+    // Special case: Winter Sports - group all winter sport variations together
+    if ($filterLower === 'winter-sports') {
+        return strpos($gameSportLower, 'winter') !== false;
+    }
+    
     // Default: exact match
     return $gameSportLower === str_replace('-', ' ', $filterLower);
 }
 
 if ($viewFavorites) {
     $filteredGames = $gamesData;
+} else {
+    if ($activeSport) {
+        $filteredGames = array_filter($filteredGames, function($game) use ($activeSport) {
+            return shouldGroupSports($game['sport'], $activeSport);
+        });
+    }
+    
+    if ($activeTab === 'soon') {
+        $filteredGames = array_filter($filteredGames, function($game) {
+            return getTimeCategory($game['date']) === 'soon';
+        });
+    } elseif ($activeTab === 'tomorrow') {
+        $filteredGames = array_filter($filteredGames, function($game) {
+            return getTimeCategory($game['date']) === 'tomorrow';
+        });
+    }
+}
+
+if ($viewFavorites) {
+    $filteredGames = $gamesData;
+} else {
+    if ($activeSport) {
+        $filteredGames = array_filter($filteredGames, function($game) use ($activeSport) {
+            return shouldGroupSports($game['sport'], $activeSport);
+        });
+    }
+    
+    if ($activeTab === 'soon') {
+        $filteredGames = array_filter($filteredGames, function($game) {
+            return getTimeCategory($game['date']) === 'soon';
+        });
+    } elseif ($activeTab === 'tomorrow') {
+        $filteredGames = array_filter($filteredGames, function($game) {
+            return getTimeCategory($game['date']) === 'tomorrow';
+        });
+    }
+}eredGames = $gamesData;
 } else {
     if ($activeSport) {
         $filteredGames = array_filter($filteredGames, function($game) use ($activeSport) {
@@ -368,22 +436,32 @@ foreach ($sportCategoriesFromConfig as $sportName) {
     $sportCounts[$sportName] = 0;
 }
 
-// Count games for each sport - with rugby grouping
+// Count games for each sport - with intelligent grouping
 foreach ($gamesData as $game) {
     $sport = $game['sport'];
+    $sportLower = strtolower($sport);
+    $matched = false;
     
-    // Special handling for Rugby variations
-    if (stripos($sport, 'rugby') !== false) {
-        // Group all rugby types under "Rugby"
-        if (!isset($sportCounts['Rugby'])) {
-            $sportCounts['Rugby'] = 0;
+    // Try to match with configured sports using grouping logic
+    foreach ($sportCategoriesFromConfig as $configSport) {
+        $configSlug = strtolower(str_replace(' ', '-', $configSport));
+        
+        if (shouldGroupSports($sport, $configSlug)) {
+            if (!isset($sportCounts[$configSport])) {
+                $sportCounts[$configSport] = 0;
+            }
+            $sportCounts[$configSport]++;
+            $matched = true;
+            break;
         }
-        $sportCounts['Rugby']++;
-    } elseif (isset($sportCounts[$sport])) {
+    }
+    
+    // If no match found, add as new sport
+    if (!$matched) {
+        if (!isset($sportCounts[$sport])) {
+            $sportCounts[$sport] = 0;
+        }
         $sportCounts[$sport]++;
-    } else {
-        // If sport is not in config, add it at the end
-        $sportCounts[$sport] = 1;
     }
 }
 

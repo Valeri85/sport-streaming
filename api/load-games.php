@@ -108,6 +108,21 @@ function shouldGroupSports($gameSport, $filterSlug) {
         return strpos($gameSportLower, 'rugby') !== false;
     }
     
+    // Special case: Combat - group all combat variations together
+    if ($filterLower === 'combat') {
+        return strpos($gameSportLower, 'combat') !== false;
+    }
+    
+    // Special case: Water Sports - group all water sport variations together
+    if ($filterLower === 'water-sports') {
+        return strpos($gameSportLower, 'water') !== false;
+    }
+    
+    // Special case: Winter Sports - group all winter sport variations together
+    if ($filterLower === 'winter-sports') {
+        return strpos($gameSportLower, 'winter') !== false;
+    }
+    
     // Default: exact match
     return $gameSportLower === str_replace('-', ' ', $filterLower);
 }
