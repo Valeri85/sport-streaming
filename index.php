@@ -64,7 +64,6 @@ if (strpos($_SERVER['REQUEST_URI'], '/favorites') !== false) {
 $pagesSeo = $website['pages_seo'] ?? [];
 $seoTitle = $website['seo_title'];
 $seoDescription = $website['seo_description'];
-$seoKeywords = $website['seo_keywords'];
 
 // Determine current page and load appropriate SEO
 if ($viewFavorites) {
@@ -72,21 +71,18 @@ if ($viewFavorites) {
     if (isset($pagesSeo['favorites'])) {
         $seoTitle = $pagesSeo['favorites']['title'] ?: $seoTitle;
         $seoDescription = $pagesSeo['favorites']['description'] ?: $seoDescription;
-        $seoKeywords = $pagesSeo['favorites']['keywords'] ?: $seoKeywords;
     }
 } elseif ($activeSport) {
     // Sport-specific page
     if (isset($pagesSeo['sports'][$activeSport])) {
         $seoTitle = $pagesSeo['sports'][$activeSport]['title'] ?: $seoTitle;
         $seoDescription = $pagesSeo['sports'][$activeSport]['description'] ?: $seoDescription;
-        $seoKeywords = $pagesSeo['sports'][$activeSport]['keywords'] ?: $seoKeywords;
     }
 } else {
     // Home page
     if (isset($pagesSeo['home'])) {
         $seoTitle = $pagesSeo['home']['title'] ?: $seoTitle;
         $seoDescription = $pagesSeo['home']['description'] ?: $seoDescription;
-        $seoKeywords = $pagesSeo['home']['keywords'] ?: $seoKeywords;
     }
 }
 
@@ -216,14 +212,30 @@ if ($viewFavorites) {
 
 $groupedBySport = groupGamesBySport($filteredGames);
 
+// Get sport categories from website config (this maintains order from CMS)
+$sportCategoriesFromConfig = $website['sports_categories'] ?? [];
+
+// Build sportCounts following the order from CMS
 $sportCounts = [];
+foreach ($sportCategoriesFromConfig as $sportName) {
+    $sportCounts[$sportName] = 0;
+}
+
+// Count games for each sport
 foreach ($gamesData as $game) {
     $sport = $game['sport'];
-    if (!isset($sportCounts[$sport])) {
-        $sportCounts[$sport] = 0;
+    if (isset($sportCounts[$sport])) {
+        $sportCounts[$sport]++;
+    } else {
+        // If sport is not in config, add it at the end
+        $sportCounts[$sport] = 1;
     }
-    $sportCounts[$sport]++;
 }
+
+// Remove sports with 0 games
+$sportCounts = array_filter($sportCounts, function($count) {
+    return $count > 0;
+});
 
 ?>
 <!DOCTYPE html>
@@ -233,7 +245,6 @@ foreach ($gamesData as $game) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($seoTitle); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($seoDescription); ?>">
-    <meta name="keywords" content="<?php echo htmlspecialchars($seoKeywords); ?>">
     <link rel="stylesheet" href="/styles.css">
     <script src="/main.js" defer></script>
     <style>
