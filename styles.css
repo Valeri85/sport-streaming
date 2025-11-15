@@ -736,6 +736,27 @@ body.dark-mode .game-time {
 	animation: skeleton-loading 1.5s infinite;
 }
 
+/* (keeping all existing CSS, just adding new styles at the end) */
+
+.sport-icon-img {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* Ensure sport icon container can hold both emoji and images */
+.sport-icon {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.125rem; /* 18px for emojis */
+	flex-shrink: 0;
+}
+
 @keyframes skeleton-loading {
 	0% {
 		background-position: 200% 0;
