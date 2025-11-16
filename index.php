@@ -330,6 +330,19 @@ function getSportIcon($sportName, $customIcons, $defaultIcons) {
     return $defaultIcons[$sportName] ?? '⚽';
 }
 
+// NEW: Function to render logo (image or emoji)
+function renderLogo($logo) {
+    // Check if logo contains file extension (is a file)
+    if (preg_match('/\.(png|jpg|jpeg|webp|svg|avif)$/i', $logo)) {
+        // It's an image file
+        $logoFile = htmlspecialchars($logo);
+        return '<img src="/images/logos/' . $logoFile . '" alt="Logo" class="logo-image" style="width: 48px; height: 48px; object-fit: contain;">';
+    } else {
+        // It's an emoji or text
+        return $logo;
+    }
+}
+
 function shouldGroupSports($gameSport, $filterSlug) {
     $gameSportLower = strtolower($gameSport);
     $filterLower = strtolower($filterSlug);
@@ -409,11 +422,6 @@ foreach ($gamesData as $game) {
     }
 }
 
-// CHANGED: Don't filter out sports with 0 games - show all sports from CMS
-// $sportCounts = array_filter($sportCounts, function($count) {
-//     return $count > 0;
-// });
-
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $language; ?>">
@@ -438,6 +446,11 @@ foreach ($gamesData as $game) {
         .date-tab.active {
             background-color: <?php echo $secondaryColor; ?>;
         }
+        
+        /* Logo image styling */
+        .logo-image {
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body data-viewing-favorites="<?php echo $viewFavorites ? 'true' : 'false'; ?>" 
@@ -458,7 +471,7 @@ foreach ($gamesData as $game) {
             <div class="logo">
                 <a href="/">
                     <div class="logo-title">
-                        <span class="logo-icon"><?php echo $logo; ?></span>
+                        <span class="logo-icon"><?php echo renderLogo($logo); ?></span>
                         <span class="logo-text"><?php echo htmlspecialchars($siteName); ?></span>
                     </div>
                 </a>
