@@ -7,4 +7,4 @@
 7. Streaming websites path: /var/www/u1852176/data/www/streaming
 
 prompt:
-there is no problem with infinite scroll I think but in section .competition-group there is only .competition-header and no details summer html tags, so on initial load there are games but if I scroll down there are no games shown
+I need to update 2 times in seo section sport category seo, click first time to save seo down to page, than fields are emty for current sport, than I fill them second time and that save second time and than updates fields and status. we need to fix it, so that on first save must work

@@ -318,19 +318,20 @@ $sportsIcons = [
 // Get custom sport icons from website config
 $customSportsIcons = $website['sports_icons'] ?? [];
 
-// Function to get sport icon (image or emoji fallback)
-function getSportIcon($sportName, $customIcons, $defaultIcons) {
+// UPDATED: Function to get sport icon (image or emoji fallback) - NOW WITH DOMAIN PARAMETER
+function getSportIcon($sportName, $customIcons, $defaultIcons, $domain) {
     // Check if custom image icon exists
     if (isset($customIcons[$sportName]) && !empty($customIcons[$sportName])) {
         $iconFile = htmlspecialchars($customIcons[$sportName]);
-        return '<img src="/images/sports/' . $iconFile . '" alt="' . htmlspecialchars($sportName) . '" class="sport-icon-img">';
+        // Use absolute URL with domain to ensure icon loads properly
+        return '<img src="https://' . htmlspecialchars($domain) . '/images/sports/' . $iconFile . '" alt="' . htmlspecialchars($sportName) . '" class="sport-icon-img" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'' . ($defaultIcons[$sportName] ?? '⚽') . '\'">';
     }
     
     // Fallback to emoji
     return $defaultIcons[$sportName] ?? '⚽';
 }
 
-// NEW: Function to render logo (image or emoji)
+// Function to render logo (image or emoji)
 function renderLogo($logo) {
     // Check if logo contains file extension (is a file)
     if (preg_match('/\.(png|jpg|jpeg|webp|svg|avif)$/i', $logo)) {
@@ -497,14 +498,15 @@ foreach ($gamesData as $game) {
                 </a>
                 
                 <?php foreach ($sportCounts as $sportName => $count): 
-                    $icon = getSportIcon($sportName, $customSportsIcons, $sportsIcons);
+                    // UPDATED: Pass $domain parameter to getSportIcon
+                    $icon = getSportIcon($sportName, $customSportsIcons, $sportsIcons, $domain);
                     $sportSlug = strtolower(str_replace(' ', '-', $sportName));
                     $isActive = ($activeSport === $sportSlug && !$viewFavorites);
                 ?>
                     <a href="/live-<?php echo $sportSlug; ?>" class="menu-item <?php echo $isActive ? 'active' : ''; ?>" onclick="saveScrollPosition(event)">
                         <span class="menu-item-left">
                             <span class="sport-icon"><?php echo $icon; ?></span>
-                            <span class="sport-name"><?php echo $sportName; ?></span>
+                            <span class="sport-name"><?php echo htmlspecialchars($sportName); ?></span>
                         </span>
                         <span class="sport-count"><?php echo $count; ?></span>
                     </a>
@@ -546,14 +548,16 @@ foreach ($gamesData as $game) {
                         <?php
                         $allGroupedBySport = groupGamesBySport($gamesData);
                         foreach ($allGroupedBySport as $sportName => $sportGames):
+                            // UPDATED: Pass $domain parameter
+                            $sportIconDisplay = getSportIcon($sportName, $customSportsIcons, $sportsIcons, $domain);
                         ?>
-                            <article class="sport-category" data-sport="<?php echo $sportName; ?>">
-                                <h2 class="sr-only"><?php echo $sportName; ?></h2>
+                            <article class="sport-category" data-sport="<?php echo htmlspecialchars($sportName); ?>">
+                                <h2 class="sr-only"><?php echo htmlspecialchars($sportName); ?></h2>
                                 <details open>
                                     <summary class="sport-header">
                                         <span class="sport-title">
-                                            <span><?php echo $sportsIcons[$sportName] ?? '⚽'; ?></span>
-                                            <span><?php echo $sportName; ?></span>
+                                            <span><?php echo $sportIconDisplay; ?></span>
+                                            <span><?php echo htmlspecialchars($sportName); ?></span>
                                             <span class="sport-count-badge"><?php echo count($sportGames); ?></span>
                                         </span>
                                     </summary>
@@ -608,14 +612,18 @@ foreach ($gamesData as $game) {
                         <p>No games available for this time period</p>
                     </div>
                 <?php else: ?>
-                    <?php foreach ($groupedBySport as $sportName => $sportGames): ?>
-                        <article class="sport-category" id="<?php echo strtolower(str_replace(' ', '-', $sportName)); ?>" data-sport="<?php echo $sportName; ?>">
-                            <h2 class="sr-only"><?php echo $sportName; ?></h2>
+                    <?php foreach ($groupedBySport as $sportName => $sportGames): 
+                        // UPDATED: Pass $domain parameter
+                        $sportIconDisplay = getSportIcon($sportName, $customSportsIcons, $sportsIcons, $domain);
+                        $sportId = strtolower(str_replace(' ', '-', $sportName));
+                    ?>
+                        <article class="sport-category" id="<?php echo $sportId; ?>" data-sport="<?php echo htmlspecialchars($sportName); ?>">
+                            <h2 class="sr-only"><?php echo htmlspecialchars($sportName); ?></h2>
                             <details open>
                                 <summary class="sport-header">
                                     <span class="sport-title">
-                                        <span><?php echo $sportsIcons[$sportName] ?? '⚽'; ?></span>
-                                        <span><?php echo $sportName; ?></span>
+                                        <span><?php echo $sportIconDisplay; ?></span>
+                                        <span><?php echo htmlspecialchars($sportName); ?></span>
                                         <span class="sport-count-badge"><?php echo count($sportGames); ?></span>
                                     </span>
                                 </summary>
