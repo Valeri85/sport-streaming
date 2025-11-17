@@ -7,4 +7,3 @@
 7. Streaming websites path: /var/www/u1852176/data/www/streaming
 
 prompt:
-I need to update 2 times in seo section sport category seo, click first time to save seo down to page, than fields are emty for current sport, than I fill them second time and that save second time and than updates fields and status. we need to fix it, so that on first save must work
