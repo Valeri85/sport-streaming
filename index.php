@@ -289,46 +289,22 @@ function getCountryName($countryFile) {
     return str_replace('-', ' ', ucwords($country));
 }
 
-$sportsIcons = [
-    'Football' => '⚽',
-    'Basketball' => '🏀',
-    'Ice Hockey' => '🏒',
-    'Baseball' => '⚾',
-    'Tennis' => '🎾',
-    'Volleyball' => '🏐',
-    'Handball' => '🤾',
-    'Cricket' => '🏏',
-    'Table Tennis' => '🏓',
-    'Badminton' => '🏸',
-    'Darts' => '🎯',
-    'Billiard' => '🎱',
-    'Winter Sports' => '⛷️',
-    'Netball' => '🏐',
-    'Futsal' => '⚽',
-    'Bowling' => '🎳',
-    'Water Sports' => '🤽',
-    'Golf' => '⛳',
-    'Racing' => '🏎️',
-    'Boxing' => '🥊',
-    'Chess' => '♟️',
-    'Rugby' => '🏉',
-    'Combat' => '🥊'
-];
-
-// Get custom sport icons from website config
+// UPDATED: Get custom sport icons from website config - ONLY use uploaded icons
 $customSportsIcons = $website['sports_icons'] ?? [];
 
-// UPDATED: Function to get sport icon (image or emoji fallback) - NOW WITH DOMAIN PARAMETER
-function getSportIcon($sportName, $customIcons, $defaultIcons, $domain) {
+// UPDATED: Function to get sport icon - ONLY from CMS uploads, no hardcoded fallback
+function getSportIcon($sportName, $customIcons, $domain) {
     // Check if custom image icon exists
     if (isset($customIcons[$sportName]) && !empty($customIcons[$sportName])) {
         $iconFile = htmlspecialchars($customIcons[$sportName]);
         // Use absolute URL with domain to ensure icon loads properly
-        return '<img src="https://' . htmlspecialchars($domain) . '/images/sports/' . $iconFile . '" alt="' . htmlspecialchars($sportName) . '" class="sport-icon-img" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'' . ($defaultIcons[$sportName] ?? '⚽') . '\'">';
+        $iconUrl = 'https://' . htmlspecialchars($domain) . '/images/sports/' . $iconFile;
+        
+        return '<img src="' . $iconUrl . '" alt="' . htmlspecialchars($sportName) . '" class="sport-icon-img" onerror="this.parentElement.innerHTML=\'⚽\'">';
     }
     
-    // Fallback to emoji
-    return $defaultIcons[$sportName] ?? '⚽';
+    // If no custom icon uploaded, show default generic sports icon
+    return '⚽';
 }
 
 // Function to render logo (image or emoji)
@@ -498,8 +474,8 @@ foreach ($gamesData as $game) {
                 </a>
                 
                 <?php foreach ($sportCounts as $sportName => $count): 
-                    // UPDATED: Pass $domain parameter to getSportIcon
-                    $icon = getSportIcon($sportName, $customSportsIcons, $sportsIcons, $domain);
+                    // UPDATED: Only use CMS uploaded icons, no fallback array
+                    $icon = getSportIcon($sportName, $customSportsIcons, $domain);
                     $sportSlug = strtolower(str_replace(' ', '-', $sportName));
                     $isActive = ($activeSport === $sportSlug && !$viewFavorites);
                 ?>
@@ -548,8 +524,8 @@ foreach ($gamesData as $game) {
                         <?php
                         $allGroupedBySport = groupGamesBySport($gamesData);
                         foreach ($allGroupedBySport as $sportName => $sportGames):
-                            // UPDATED: Pass $domain parameter
-                            $sportIconDisplay = getSportIcon($sportName, $customSportsIcons, $sportsIcons, $domain);
+                            // UPDATED: Only use CMS uploaded icons
+                            $sportIconDisplay = getSportIcon($sportName, $customSportsIcons, $domain);
                         ?>
                             <article class="sport-category" data-sport="<?php echo htmlspecialchars($sportName); ?>">
                                 <h2 class="sr-only"><?php echo htmlspecialchars($sportName); ?></h2>
@@ -613,8 +589,8 @@ foreach ($gamesData as $game) {
                     </div>
                 <?php else: ?>
                     <?php foreach ($groupedBySport as $sportName => $sportGames): 
-                        // UPDATED: Pass $domain parameter
-                        $sportIconDisplay = getSportIcon($sportName, $customSportsIcons, $sportsIcons, $domain);
+                        // UPDATED: Only use CMS uploaded icons
+                        $sportIconDisplay = getSportIcon($sportName, $customSportsIcons, $domain);
                         $sportId = strtolower(str_replace(' ', '-', $sportName));
                     ?>
                         <article class="sport-category" id="<?php echo $sportId; ?>" data-sport="<?php echo htmlspecialchars($sportName); ?>">
