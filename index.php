@@ -94,36 +94,6 @@ function sendNewSportsNotification($newSports, $siteName) {
 
 // Check for new sports in data.json
 function checkForNewSports($gamesData, $configuredSports, $siteName, $websiteId) {
-    $isSportConfigured = function($dataSport, $configuredSports) {
-        $dataSportLower = strtolower($dataSport);
-        
-        foreach ($configuredSports as $configSport) {
-            $configSportLower = strtolower($configSport);
-            
-            if ($dataSportLower === $configSportLower) {
-                return true;
-            }
-            
-            if (strpos($dataSportLower, 'rugby') !== false && $configSportLower === 'rugby') {
-                return true;
-            }
-            
-            if (strpos($dataSportLower, 'combat') !== false && $configSportLower === 'combat') {
-                return true;
-            }
-            
-            if (strpos($dataSportLower, 'water') !== false && $configSportLower === 'water sports') {
-                return true;
-            }
-            
-            if (strpos($dataSportLower, 'winter') !== false && $configSportLower === 'winter sports') {
-                return true;
-            }
-        }
-        
-        return false;
-    };
-    
     $dataSports = [];
     foreach ($gamesData as $game) {
         $sport = $game['sport'] ?? '';
@@ -134,7 +104,8 @@ function checkForNewSports($gamesData, $configuredSports, $siteName, $websiteId)
     
     $newSports = [];
     foreach ($dataSports as $sport) {
-        if (!$isSportConfigured($sport, $configuredSports)) {
+        // Exact match only - no grouping logic
+        if (!in_array($sport, $configuredSports)) {
             $newSports[] = $sport;
         }
     }
@@ -292,12 +263,11 @@ function getCountryName($countryFile) {
 // Get custom sport icons from website config
 $customSportsIcons = $website['sports_icons'] ?? [];
 
-// REFACTORED: Function to get sport icon with RELATIVE path
+// Function to get sport icon with RELATIVE path
 function getSportIcon($sportName, $customIcons) {
     // Check if custom image icon exists
     if (isset($customIcons[$sportName]) && !empty($customIcons[$sportName])) {
         $iconFile = htmlspecialchars($customIcons[$sportName]);
-        // RELATIVE PATH - browser resolves full URL automatically
         $iconPath = '/images/sports/' . $iconFile;
         
         return '<img src="' . $iconPath . '" alt="' . htmlspecialchars($sportName) . '" class="sport-icon-img" onerror="this.parentElement.innerHTML=\'⚽\'">';
@@ -307,41 +277,16 @@ function getSportIcon($sportName, $customIcons) {
     return '⚽';
 }
 
-// REFACTORED: Function to render logo with RELATIVE path
+// Function to render logo with RELATIVE path
 function renderLogo($logo) {
     // Check if logo contains file extension (is a file)
     if (preg_match('/\.(png|jpg|jpeg|webp|svg|avif)$/i', $logo)) {
-        // It's an image file - RELATIVE PATH
         $logoFile = htmlspecialchars($logo);
         $logoPath = '/images/logos/' . $logoFile;
         return '<img src="' . $logoPath . '" alt="Logo" class="logo-image" style="width: 48px; height: 48px; object-fit: contain;">';
     } else {
-        // It's an emoji or text
         return $logo;
     }
-}
-
-function shouldGroupSports($gameSport, $filterSlug) {
-    $gameSportLower = strtolower($gameSport);
-    $filterLower = strtolower($filterSlug);
-    
-    if ($filterLower === 'rugby') {
-        return strpos($gameSportLower, 'rugby') !== false;
-    }
-    
-    if ($filterLower === 'combat') {
-        return strpos($gameSportLower, 'combat') !== false;
-    }
-    
-    if ($filterLower === 'water-sports') {
-        return strpos($gameSportLower, 'water') !== false;
-    }
-    
-    if ($filterLower === 'winter-sports') {
-        return strpos($gameSportLower, 'winter') !== false;
-    }
-    
-    return $gameSportLower === str_replace('-', ' ', $filterLower);
 }
 
 $filteredGames = $gamesData;
@@ -350,8 +295,10 @@ if ($viewFavorites) {
     $filteredGames = $gamesData;
 } else {
     if ($activeSport) {
-        $filteredGames = array_filter($filteredGames, function($game) use ($activeSport) {
-            return shouldGroupSports($game['sport'], $activeSport);
+        // REMOVED GROUPING LOGIC - Now exact match only
+        $activeSportName = str_replace('-', ' ', $activeSport);
+        $filteredGames = array_filter($filteredGames, function($game) use ($activeSportName) {
+            return strtolower($game['sport']) === strtolower($activeSportName);
         });
     }
     
@@ -375,27 +322,12 @@ foreach ($sportCategoriesFromConfig as $sportName) {
     $sportCounts[$sportName] = 0;
 }
 
+// Count games for each configured sport - exact match only
 foreach ($gamesData as $game) {
     $sport = $game['sport'];
-    $matched = false;
     
-    foreach ($sportCategoriesFromConfig as $configSport) {
-        $configSlug = strtolower(str_replace(' ', '-', $configSport));
-        
-        if (shouldGroupSports($sport, $configSlug)) {
-            if (!isset($sportCounts[$configSport])) {
-                $sportCounts[$configSport] = 0;
-            }
-            $sportCounts[$configSport]++;
-            $matched = true;
-            break;
-        }
-    }
-    
-    if (!$matched) {
-        if (!isset($sportCounts[$sport])) {
-            $sportCounts[$sport] = 0;
-        }
+    // Exact match only - no grouping
+    if (in_array($sport, $sportCategoriesFromConfig)) {
         $sportCounts[$sport]++;
     }
 }
@@ -475,7 +407,6 @@ foreach ($gamesData as $game) {
                 </a>
                 
                 <?php foreach ($sportCounts as $sportName => $count): 
-                    // REFACTORED: No domain needed
                     $icon = getSportIcon($sportName, $customSportsIcons);
                     $sportSlug = strtolower(str_replace(' ', '-', $sportName));
                     $isActive = ($activeSport === $sportSlug && !$viewFavorites);
