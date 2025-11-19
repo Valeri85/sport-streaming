@@ -1,98 +1,47 @@
 # Master .htaccess for all streaming websites
-
-# Location: /var/www/u1852176/data/www/streaming/.htaccess
+# CloudFlare handles HTTPS, .htaccess handles WWW
 
 RewriteEngine On
 
-# ========================================
-
-# STEP 1: Force HTTPS (before anything else)
-
-# ========================================
-
-RewriteCond %{HTTPS} off
-RewriteRule ^(.\*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-
-# ========================================
-
-# STEP 2: Force WWW (after HTTPS is applied)
-
-# ========================================
-
+# ==========================================
+# 1. FORCE WWW (Only this redirect!)
+# ==========================================
 RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^(.\*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
-# ========================================
+# ==========================================
+# 2. SITEMAP & ROBOTS
+# ==========================================
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+RewriteRule ^robots\.txt$ robots.php [L]
 
-# STEP 3: SEO-Friendly URLs (BEFORE file check)
-
-# These must come first because the PHP files exist
-
-# ========================================
-
-# Sitemap: /sitemap.xml → sitemap.php
-
-RewriteRule ^sitemap\.xml$ sitemap.php [L,QSA]
-
-# Robots: /robots.txt → robots.php
-
-RewriteRule ^robots\.txt$ robots.php [L,QSA]
-
-# ========================================
-
-# STEP 4: Prevent rewriting for actual files and directories
-
-# (Now sitemap.php and robots.php won't be blocked)
-
-# ========================================
-
+# ==========================================
+# 3. PREVENT REWRITING FOR ACTUAL FILES
+# ==========================================
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# ========================================
-
-# STEP 5: Virtual URL rewrites
-
-# (Only applies to non-existent files due to conditions above)
-
-# ========================================
-
-# Favorites page: /favorites → index.php
-
+# ==========================================
+# 4. VIRTUAL ROUTES
+# ==========================================
 RewriteRule ^favorites/?$ index.php [L,QSA]
-
-# Live sport pages: /live-football → index.php
-
 RewriteRule ^live-([a-z-]+)/?$ index.php [L,QSA]
 
-# ========================================
-
-# SECURITY: Prevent access to config and sensitive files
-
-# ========================================
-
-<FilesMatch "^(config|data\.json|websites\.json|notified-sports\.json|slack-config\.json)">
+# ==========================================
+# 5. SECURITY
+# ==========================================
+<FilesMatch "^(config|data\.json|websites\.json)">
 Order allow,deny
 Deny from all
 </FilesMatch>
-
-# Prevent access to hidden files (like .htaccess, .git, etc.)
 
 <FilesMatch "^\.">
 Order allow,deny
 Deny from all
 </FilesMatch>
 
-# ========================================
-
-# GENERAL SETTINGS
-
-# ========================================
-
-# Prevent directory listing
-
+# ==========================================
+# 6. SETTINGS
+# ==========================================
 Options -Indexes
-
-# Force UTF-8 encoding
-
 AddDefaultCharset UTF-8

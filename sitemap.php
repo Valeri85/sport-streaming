@@ -51,40 +51,34 @@ $baseUrl = rtrim($baseUrl, '/'); // Remove trailing slash
 // Get sports categories for this website
 $sportsCategories = $website['sports_categories'] ?? [];
 
+// Get today's date for lastmod
+$today = date('Y-m-d');
+
 // Build URLs array
 $urls = [];
 
 // Add homepage
 $urls[] = [
     'loc' => $baseUrl . '/',
-    'lastmod' => date('Y-m-d'),
-    'changefreq' => 'daily',
+    'lastmod' => $today,
     'priority' => '1.0'
 ];
 
 // Add favorites page
 $urls[] = [
     'loc' => $baseUrl . '/favorites',
-    'lastmod' => date('Y-m-d'),
-    'changefreq' => 'weekly',
-    'priority' => '0.8'
+    'lastmod' => $today,
+    'priority' => '0.9'
 ];
 
-// Add sport pages
-// Popular sports get higher priority
-$popularSports = ['Football', 'Basketball', 'Tennis', 'Ice Hockey'];
-
+// Add sport pages - all get priority 0.9
 foreach ($sportsCategories as $sportName) {
     $sportSlug = strtolower(str_replace(' ', '-', $sportName));
     
-    // Determine priority based on popularity
-    $priority = in_array($sportName, $popularSports) ? '0.9' : '0.8';
-    
     $urls[] = [
         'loc' => $baseUrl . '/live-' . $sportSlug,
-        'lastmod' => date('Y-m-d'),
-        'changefreq' => 'daily',
-        'priority' => $priority
+        'lastmod' => $today,
+        'priority' => '0.9'
     ];
 }
 
@@ -103,7 +97,6 @@ foreach ($urls as $url) {
     echo '  <url>' . "\n";
     echo '    <loc>' . htmlspecialchars($url['loc'], ENT_XML1, 'UTF-8') . '</loc>' . "\n";
     echo '    <lastmod>' . $url['lastmod'] . '</lastmod>' . "\n";
-    echo '    <changefreq>' . $url['changefreq'] . '</changefreq>' . "\n";
     echo '    <priority>' . $url['priority'] . '</priority>' . "\n";
     echo '  </url>' . "\n";
 }
