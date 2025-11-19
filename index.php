@@ -348,6 +348,8 @@ foreach ($gamesData as $game) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($seoTitle); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($seoDescription); ?>">
+    <!-- Add this in the <head> section of index.php, after the meta description -->
+    <link rel="canonical" href="<?php echo htmlspecialchars($website['canonical_url'] ?? 'https://www.' . $website['domain']); ?>">
     <link rel="stylesheet" href="/styles.css">
     <script src="/main.js" defer></script>
     <style>

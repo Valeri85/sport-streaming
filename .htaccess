@@ -1,7 +1,20 @@
-# Enable rewrite engine
+# Master .htaccess for all streaming websites
+
+# Location: /var/www/u1852176/data/www/streaming/.htaccess
+
+# This file is STATIC - create it once manually, applies to ALL websites
 
 RewriteEngine On
-RewriteBase /
+
+# Force HTTPS
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.\*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Force WWW (if not present)
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.\*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 
 # Prevent rewriting for actual files and directories
 
@@ -18,7 +31,7 @@ RewriteRule ^live-([a-z-]+)/?$ index.php [L,QSA]
 
 # Prevent access to config and data files
 
-<FilesMatch "^(config|data\.json)">
+<FilesMatch "^(config|data\.json|websites\.json)">
 Order allow,deny
 Deny from all
 </FilesMatch>
