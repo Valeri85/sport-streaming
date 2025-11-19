@@ -28,9 +28,9 @@ RewriteRule ^(.\*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # ========================================
 
-# STEP 2: SEO-Friendly URLs (BEFORE file check)
+# STEP 2: SEO-Friendly URLs - Sitemap & Robots (NO conditions needed)
 
-# These must come first because the PHP files exist
+# These MUST come BEFORE the general file check
 
 # ========================================
 
@@ -44,29 +44,24 @@ RewriteRule ^robots\.txt$ robots.php [L,QSA]
 
 # ========================================
 
-# STEP 3: Prevent rewriting for actual files and directories
-
-# (Now sitemap.php and robots.php won't be blocked)
-
-# ========================================
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# ========================================
-
-# STEP 4: Virtual URL rewrites
-
-# (Only applies to non-existent files due to conditions above)
+# STEP 3: Virtual URL rewrites (WITH conditions to prevent rewriting real files)
 
 # ========================================
 
 # Favorites page: /favorites → index.php
 
+# Condition: Only if /favorites is NOT a real file or directory
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^favorites/?$ index.php [L,QSA]
 
 # Live sport pages: /live-football → index.php
 
+# Condition: Only if /live-\* is NOT a real file or directory
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^live-([a-z-]+)/?$ index.php [L,QSA]
 
 # ========================================
