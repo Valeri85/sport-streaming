@@ -3,8 +3,9 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+// ✅ FIX: Get domain and normalize it (remove www. prefix)
 $domain = $_SERVER['HTTP_HOST'];
-$domain = str_replace('www.', '', $domain);
+$domain = str_replace('www.', '', strtolower(trim($domain)));
 
 $websitesConfigFile = __DIR__ . '/config/websites.json';
 if (!file_exists($websitesConfigFile)) {
@@ -17,14 +18,21 @@ $websites = $configData['websites'] ?? [];
 
 $website = null;
 foreach ($websites as $site) {
-    if ($site['domain'] === $domain && $site['status'] === 'active') {
+    // ✅ FIX: Also normalize the domain from JSON before comparing
+    $siteDomain = str_replace('www.', '', strtolower(trim($site['domain'])));
+    
+    if ($siteDomain === $domain && $site['status'] === 'active') {
         $website = $site;
         break;
     }
 }
 
 if (!$website) {
-    die("Website not found: " . htmlspecialchars($domain));
+    // ✅ IMPROVED ERROR: Show what we're looking for vs what we have
+    die("Website not found. Looking for: '" . htmlspecialchars($domain) . "'. Available domains: " . 
+        implode(', ', array_map(function($s) { 
+            return "'" . str_replace('www.', '', strtolower(trim($s['domain']))) . "'";
+        }, $websites)));
 }
 
 $siteName = $website['site_name'];
