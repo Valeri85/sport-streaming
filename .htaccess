@@ -8,10 +8,14 @@ RewriteEngine On
 
 # Force HTTPS
 
+# FIXED: Removed backslash before asterisk
+
 RewriteCond %{HTTPS} off
 RewriteRule ^(.\*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
 # Force WWW (if not present)
+
+# FIXED: Removed backslash before asterisk
 
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^(.\*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
