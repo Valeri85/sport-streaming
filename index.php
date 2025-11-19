@@ -169,6 +169,46 @@ if (strpos($_SERVER['REQUEST_URI'], '/favorites') !== false) {
     $viewFavorites = true;
 }
 
+// ==========================================
+// NEW: CANONICAL URL & NOINDEX LOGIC
+// ==========================================
+
+// Get base canonical URL from website config
+$baseCanonicalUrl = $website['canonical_url'] ?? 'https://www.' . $domain;
+$baseCanonicalUrl = rtrim($baseCanonicalUrl, '/');
+
+// Determine the canonical URL and whether to index
+$canonicalUrl = $baseCanonicalUrl; // Default to homepage
+$shouldNoindex = false; // Default: allow indexing
+
+if ($viewFavorites) {
+    // Favorites page - don't index (user-specific)
+    $canonicalUrl = $baseCanonicalUrl . '/favorites';
+    $shouldNoindex = true; // Don't index favorites
+    
+} elseif ($activeSport) {
+    // Sport-specific page
+    $canonicalUrl = $baseCanonicalUrl . '/live-' . $activeSport;
+    
+    // If there's a tab filter (?tab=soon or ?tab=tomorrow), don't index
+    if ($activeTab !== 'all') {
+        $shouldNoindex = true; // Don't index filtered views
+    }
+    
+} else {
+    // Homepage
+    $canonicalUrl = $baseCanonicalUrl . '/';
+    
+    // If homepage has tab filter, don't index
+    if ($activeTab !== 'all') {
+        $shouldNoindex = true; // Don't index filtered views
+    }
+}
+
+// ==========================================
+// END: CANONICAL URL & NOINDEX LOGIC
+// ==========================================
+
 $pagesSeo = $website['pages_seo'] ?? [];
 $seoTitle = $website['seo_title'];
 $seoDescription = $website['seo_description'];
@@ -348,8 +388,18 @@ foreach ($gamesData as $game) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($seoTitle); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($seoDescription); ?>">
-    <!-- Add this in the <head> section of index.php, after the meta description -->
-    <link rel="canonical" href="<?php echo htmlspecialchars($website['canonical_url'] ?? 'https://www.' . $website['domain']); ?>">
+    
+    <!-- ==========================================
+         NEW: CANONICAL TAG & NOINDEX
+         ========================================== -->
+    <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl); ?>">
+    <?php if ($shouldNoindex): ?>
+    <meta name="robots" content="noindex, follow">
+    <?php endif; ?>
+    <!-- ==========================================
+         END: CANONICAL TAG & NOINDEX
+         ========================================== -->
+    
     <link rel="stylesheet" href="/styles.css">
     <script src="/main.js" defer></script>
     <style>
