@@ -2,12 +2,11 @@
 /**
  * Dynamic Sitemap Generator for Multi-Domain Streaming Websites
  * 
- * CLEAN LOGIC:
- * - <lastmod> updates ONLY when sport has games TODAY or FUTURE
- * - If no games today → KEEP old lastmod from JSON (don't change)
- * - If no old lastmod in JSON → page won't appear in sitemap
- * - NO data.json modification time (changes every 15 min)
- * - NO default dates
+ * UPDATED LOGIC:
+ * - ALL sport categories ALWAYS appear in sitemap (never removed)
+ * - If sport has games TODAY or FUTURE → update lastmod to today
+ * - If sport has NO games today → keep old lastmod from last game date
+ * - First time sport appears → set lastmod to today
  * - NO /favorites URL (user-specific, has noindex)
  * - Tracks lastmod per page in config/sitemap-lastmod.json
  * 
@@ -124,7 +123,7 @@ function hasAnyUpcomingGames($gamesData) {
 
 // ==========================================
 // FUNCTION: Get smart lastmod for a page
-// Returns null if page should not be in sitemap
+// ALWAYS returns a date (never null)
 // ==========================================
 function getSmartLastmod($pageKey, $sportName, $gamesData, &$lastmodData, $domain) {
     $today = date('Y-m-d');
@@ -136,11 +135,13 @@ function getSmartLastmod($pageKey, $sportName, $gamesData, &$lastmodData, $domai
         return $today;
     } else {
         // No games today → keep old lastmod from JSON
-        // If no old lastmod exists → return null (don't include in sitemap)
         if (isset($lastmodData[$domain][$pageKey])) {
+            // Keep old lastmod (don't update)
             return $lastmodData[$domain][$pageKey];
         } else {
-            return null;
+            // First time this sport appears → set lastmod to today
+            $lastmodData[$domain][$pageKey] = $today;
+            return $today;
         }
     }
 }
@@ -167,34 +168,36 @@ if (hasAnyUpcomingGames($gamesData)) {
     // No games today - check if we have old lastmod
     if (isset($lastmodData[$domain]['home'])) {
         $homeLastmod = $lastmodData[$domain]['home'];
-        
-        $urls[] = [
-            'loc' => $baseUrl . '/',
-            'lastmod' => $homeLastmod,
-            'priority' => '1.0'
-        ];
+    } else {
+        // First time - set to today
+        $homeLastmod = date('Y-m-d');
+        $lastmodData[$domain]['home'] = $homeLastmod;
     }
-    // If no old lastmod - don't include homepage in sitemap
+    
+    $urls[] = [
+        'loc' => $baseUrl . '/',
+        'lastmod' => $homeLastmod,
+        'priority' => '1.0'
+    ];
 }
 
 // ==========================================
 // SPORT PAGES
+// ALL sports ALWAYS included in sitemap
 // ==========================================
 foreach ($sportsCategories as $sportName) {
     $sportSlug = strtolower(str_replace(' ', '-', $sportName));
     $pageKey = 'live-' . $sportSlug;
     
-    // Get smart lastmod for this sport
+    // Get smart lastmod for this sport (ALWAYS returns a date)
     $sportLastmod = getSmartLastmod($pageKey, $sportName, $gamesData, $lastmodData, $domain);
     
-    // Only add to sitemap if lastmod is not null
-    if ($sportLastmod !== null) {
-        $urls[] = [
-            'loc' => $baseUrl . '/' . $pageKey,
-            'lastmod' => $sportLastmod,
-            'priority' => '0.9'
-        ];
-    }
+    // ALWAYS add to sitemap (never skip)
+    $urls[] = [
+        'loc' => $baseUrl . '/' . $pageKey,
+        'lastmod' => $sportLastmod,
+        'priority' => '0.9'
+    ];
 }
 
 // ==========================================
