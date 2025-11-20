@@ -2,9 +2,13 @@
 /**
  * Dynamic Sitemap Generator for Multi-Domain Streaming Websites
  * 
- * CORRECT LOGIC:
+ * CLEAN LOGIC:
  * - <lastmod> updates ONLY when sport has games TODAY or FUTURE
- * - If no games today → KEEP old lastmod (don't change)
+ * - If no games today → KEEP old lastmod from JSON (don't change)
+ * - If no old lastmod in JSON → page won't appear in sitemap
+ * - NO data.json modification time (changes every 15 min)
+ * - NO default dates
+ * - NO /favorites URL (user-specific, has noindex)
  * - Tracks lastmod per page in config/sitemap-lastmod.json
  * 
  * Location: /var/www/u1852176/data/www/streaming/sitemap.php
@@ -120,6 +124,7 @@ function hasAnyUpcomingGames($gamesData) {
 
 // ==========================================
 // FUNCTION: Get smart lastmod for a page
+// Returns null if page should not be in sitemap
 // ==========================================
 function getSmartLastmod($pageKey, $sportName, $gamesData, &$lastmodData, $domain) {
     $today = date('Y-m-d');
@@ -131,9 +136,12 @@ function getSmartLastmod($pageKey, $sportName, $gamesData, &$lastmodData, $domai
         return $today;
     } else {
         // No games today → keep old lastmod from JSON
-        // If no old lastmod exists, use a default old date
-        $oldLastmod = $lastmodData[$domain][$pageKey] ?? '2025-01-01';
-        return $oldLastmod;
+        // If no old lastmod exists → return null (don't include in sitemap)
+        if (isset($lastmodData[$domain][$pageKey])) {
+            return $lastmodData[$domain][$pageKey];
+        } else {
+            return null;
+        }
     }
 }
 
@@ -149,32 +157,25 @@ $urls = [];
 if (hasAnyUpcomingGames($gamesData)) {
     $homeLastmod = date('Y-m-d');
     $lastmodData[$domain]['home'] = $homeLastmod;
+    
+    $urls[] = [
+        'loc' => $baseUrl . '/',
+        'lastmod' => $homeLastmod,
+        'priority' => '1.0'
+    ];
 } else {
-    $homeLastmod = $lastmodData[$domain]['home'] ?? '2025-01-01';
+    // No games today - check if we have old lastmod
+    if (isset($lastmodData[$domain]['home'])) {
+        $homeLastmod = $lastmodData[$domain]['home'];
+        
+        $urls[] = [
+            'loc' => $baseUrl . '/',
+            'lastmod' => $homeLastmod,
+            'priority' => '1.0'
+        ];
+    }
+    // If no old lastmod - don't include homepage in sitemap
 }
-
-$urls[] = [
-    'loc' => $baseUrl . '/',
-    'lastmod' => $homeLastmod,
-    'priority' => '1.0'
-];
-
-// ==========================================
-// FAVORITES PAGE
-// ==========================================
-// Favorites depends on games data, so same logic as homepage
-if (hasAnyUpcomingGames($gamesData)) {
-    $favoritesLastmod = date('Y-m-d');
-    $lastmodData[$domain]['favorites'] = $favoritesLastmod;
-} else {
-    $favoritesLastmod = $lastmodData[$domain]['favorites'] ?? '2025-01-01';
-}
-
-$urls[] = [
-    'loc' => $baseUrl . '/favorites',
-    'lastmod' => $favoritesLastmod,
-    'priority' => '0.9'
-];
 
 // ==========================================
 // SPORT PAGES
@@ -186,11 +187,14 @@ foreach ($sportsCategories as $sportName) {
     // Get smart lastmod for this sport
     $sportLastmod = getSmartLastmod($pageKey, $sportName, $gamesData, $lastmodData, $domain);
     
-    $urls[] = [
-        'loc' => $baseUrl . '/' . $pageKey,
-        'lastmod' => $sportLastmod,
-        'priority' => '0.9'
-    ];
+    // Only add to sitemap if lastmod is not null
+    if ($sportLastmod !== null) {
+        $urls[] = [
+            'loc' => $baseUrl . '/' . $pageKey,
+            'lastmod' => $sportLastmod,
+            'priority' => '0.9'
+        ];
+    }
 }
 
 // ==========================================

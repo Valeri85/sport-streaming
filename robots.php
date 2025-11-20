@@ -80,7 +80,7 @@ echo "# Prevent crawling of API directory\n";
 echo "Disallow: /api/\n";
 echo "\n";
 
-// NEW: Disallow filtered views (tab parameters)
+// Disallow filtered views (tab parameters)
 echo "# Prevent crawling of filtered views\n";
 echo "Disallow: /*?tab=soon\n";
 echo "Disallow: /*?tab=tomorrow\n";
