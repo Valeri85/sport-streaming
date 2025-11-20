@@ -1,6 +1,7 @@
 /* ============================================
    MOBILE-FIRST RESPONSIVE DESIGN
-   Using CSS Custom Properties (Logical Properties)
+   Using CSS Logical Properties + Custom Properties
+   RTL (Arabic) Ready
    ============================================ */
 
 * {
@@ -12,8 +13,8 @@
 /* Screen reader only - visually hidden but accessible */
 .sr-only {
 	position: absolute;
-	width: 1px;
-	height: 1px;
+	inline-size: 1px;
+	block-size: 1px;
 	padding: 0;
 	margin: -1px;
 	overflow: hidden;
@@ -139,11 +140,11 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
 	background: linear-gradient(135deg, var(--bg-primary) 0%, #d4e4f3 100%);
 	color: var(--text-primary);
-	min-height: 100vh;
+	min-block-size: 100vh;
 	transition: background var(--transition-normal), color var(--transition-normal);
 	line-height: var(--leading-normal);
 	overflow-x: hidden;
-	max-width: 100vw;
+	max-inline-size: 100vw;
 	margin: 0;
 	padding: 0;
 }
@@ -158,14 +159,14 @@ body.dark-mode {
 
 .header {
 	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
+	inset-block-start: 0;
+	inset-inline-start: 0;
+	inset-inline-end: 0;
 	z-index: var(--z-header);
 	background: var(--glass-bg);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
-	border-bottom: 1px solid var(--glass-border);
+	border-block-end: 1px solid var(--glass-border);
 	padding: var(--space-md) var(--space-lg);
 	box-shadow: var(--shadow-sm);
 	display: flex;
@@ -173,9 +174,9 @@ body.dark-mode {
 	justify-content: space-between;
 	gap: var(--space-lg);
 	transition: all var(--transition-normal);
-	max-width: 100%;
+	max-inline-size: 100%;
 	overflow: hidden;
-	min-height: var(--header-height-mobile);
+	min-block-size: var(--header-height-mobile);
 }
 
 .logo {
@@ -208,8 +209,8 @@ body.dark-mode {
 }
 
 .logo-image {
-	width: 36px;
-	height: 36px;
+	inline-size: 36px;
+	block-size: 36px;
 	object-fit: contain;
 	border-radius: var(--radius-lg);
 }
@@ -217,7 +218,7 @@ body.dark-mode {
 .header-page-title {
 	flex: 1;
 	text-align: center;
-	min-width: 0;
+	min-inline-size: 0;
 }
 
 .header-page-title h1 {
@@ -241,8 +242,8 @@ body.dark-mode {
 	backdrop-filter: blur(5px);
 	border: 2px solid var(--glass-border);
 	border-radius: var(--radius-full);
-	width: var(--button-height);
-	height: var(--button-height);
+	inline-size: var(--button-height);
+	block-size: var(--button-height);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -271,30 +272,30 @@ body.dark-mode .theme-icon {
 
 .sidebar {
 	position: fixed;
-	left: -100%;
-	top: var(--header-height-mobile);
-	height: calc(100vh - var(--header-height-mobile));
-	width: 85%;
-	max-width: var(--sidebar-width);
+	inset-inline-start: -100%;
+	inset-block-start: var(--header-height-mobile);
+	block-size: calc(100vh - var(--header-height-mobile));
+	inline-size: 85%;
+	max-inline-size: var(--sidebar-width);
 	background: var(--glass-bg);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
-	border-right: 1px solid var(--glass-border);
+	border-inline-end: 1px solid var(--glass-border);
 	display: flex;
 	flex-direction: column;
 	z-index: var(--z-modal);
-	transition: left var(--transition-normal) ease;
+	transition: inset-inline-start var(--transition-normal) ease;
 	box-shadow: 2px 0 10px var(--shadow-color);
 	overflow-y: auto;
 }
 
 .sidebar.open {
-	left: 0;
+	inset-inline-start: 0;
 }
 
 .favorites-section {
 	padding: var(--space-md) var(--space-lg);
-	border-bottom: 1px solid var(--glass-border);
+	border-block-end: 1px solid var(--glass-border);
 	background: rgba(255, 251, 240, 0.3);
 	backdrop-filter: blur(5px);
 	transition: background var(--transition-normal);
@@ -312,7 +313,7 @@ body.dark-mode .favorites-section {
 	text-decoration: none;
 	font-weight: 600;
 	padding: var(--space-sm) var(--space-md);
-	min-height: var(--touch-target);
+	min-block-size: var(--touch-target);
 	border-radius: var(--radius-md);
 	transition: all var(--transition-normal);
 	cursor: pointer;
@@ -339,7 +340,7 @@ body.dark-mode .favorites-link:hover {
 }
 
 .favorites-count {
-	margin-left: auto;
+	margin-inline-start: auto;
 	background-color: #d63600;
 	color: white;
 	padding: var(--space-xs) var(--space-sm);
@@ -348,7 +349,7 @@ body.dark-mode .favorites-link:hover {
 	font-weight: 600;
 	transition: all var(--transition-normal);
 	box-shadow: 0 2px 4px rgba(214, 54, 0, 0.3);
-	min-width: 24px;
+	min-inline-size: 24px;
 	text-align: center;
 }
 
@@ -363,12 +364,12 @@ body.dark-mode .favorites-link:hover {
 .sports-menu {
 	flex: 1;
 	overflow-y: auto;
-	padding-bottom: var(--space-lg);
+	padding-block-end: var(--space-lg);
 	scrollbar-gutter: stable;
 }
 
 .sports-menu::-webkit-scrollbar {
-	width: 8px;
+	inline-size: 8px;
 }
 
 .sports-menu::-webkit-scrollbar-track {
@@ -385,7 +386,7 @@ body.dark-mode .favorites-link:hover {
 	align-items: center;
 	justify-content: space-between;
 	padding: var(--space-md) var(--space-lg);
-	min-height: var(--touch-target);
+	min-block-size: var(--touch-target);
 	color: var(--text-primary);
 	text-decoration: none;
 	cursor: pointer;
@@ -403,7 +404,7 @@ body.dark-mode .favorites-link:hover {
 
 .menu-item.active {
 	background-color: rgba(255, 165, 0, 0.2);
-	border-left: 3px solid var(--text-primary);
+	border-inline-start: 3px solid var(--text-primary);
 }
 
 .menu-item-left {
@@ -413,8 +414,8 @@ body.dark-mode .favorites-link:hover {
 }
 
 .sport-icon {
-	width: 24px;
-	height: 24px;
+	inline-size: 24px;
+	block-size: 24px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -441,10 +442,10 @@ body.dark-mode .favorites-link:hover {
    ============================================ */
 
 .main-content {
-	max-width: 100%;
+	max-inline-size: 100%;
 	overflow-x: hidden;
 	padding: var(--space-sm);
-	margin-top: var(--header-height-mobile);
+	margin-block-start: var(--header-height-mobile);
 }
 
 .date-tabs-wrapper {
@@ -454,7 +455,7 @@ body.dark-mode .favorites-link:hover {
 	border: 1px solid var(--glass-border);
 	padding: var(--space-md);
 	border-radius: var(--radius-xl);
-	margin-bottom: var(--space-lg);
+	margin-block-end: var(--space-lg);
 	box-shadow: var(--shadow-lg);
 	transition: all var(--transition-normal);
 }
@@ -467,8 +468,8 @@ body.dark-mode .favorites-link:hover {
 
 .date-tab {
 	padding: var(--space-sm) var(--space-lg);
-	min-height: var(--touch-target);
-	min-width: 80px;
+	min-block-size: var(--touch-target);
+	min-inline-size: 80px;
 	background: var(--glass-bg);
 	backdrop-filter: blur(5px);
 	border: 1px solid var(--glass-border);
@@ -499,14 +500,14 @@ body.dark-mode .favorites-link:hover {
 	border-radius: var(--radius-xl);
 	box-shadow: var(--shadow-lg);
 	transition: all var(--transition-normal);
-	min-height: 400px;
+	min-block-size: 400px;
 	contain: layout;
-	max-width: 100%;
+	max-inline-size: 100%;
 	overflow-x: hidden;
 }
 
 .sport-category {
-	margin-bottom: var(--space-lg);
+	margin-block-end: var(--space-lg);
 	content-visibility: auto;
 	contain-intrinsic-size: auto 500px;
 }
@@ -529,13 +530,13 @@ body.dark-mode .favorites-link:hover {
 	align-items: center;
 	justify-content: space-between;
 	padding: var(--space-lg);
-	min-height: 64px;
-	min-width: 100%;
+	min-block-size: 64px;
+	min-inline-size: 100%;
 	background: var(--glass-bg);
 	backdrop-filter: blur(5px);
 	border: 1px solid var(--glass-border);
 	border-radius: var(--radius-lg);
-	margin-bottom: var(--space-sm);
+	margin-block-end: var(--space-sm);
 	cursor: pointer;
 	user-select: none;
 	transition: all var(--transition-normal) ease;
@@ -575,7 +576,7 @@ body.dark-mode .sport-count-badge {
 	font-size: var(--text-base);
 	color: var(--text-muted);
 	transition: transform var(--transition-normal) ease;
-	margin-left: var(--space-sm);
+	margin-inline-start: var(--space-sm);
 }
 
 details:not([open]) .sport-header::after {
@@ -583,9 +584,9 @@ details:not([open]) .sport-header::after {
 }
 
 .competition-group {
-	margin-bottom: var(--space-sm);
-	border-left: 3px solid var(--border-color);
-	padding-left: var(--space-md);
+	margin-block-end: var(--space-sm);
+	border-inline-start: 3px solid var(--border-color);
+	padding-inline-start: var(--space-md);
 	transition: all var(--transition-normal);
 }
 
@@ -595,9 +596,9 @@ details:not([open]) .sport-header::after {
 	justify-content: space-between;
 	font-size: var(--text-sm);
 	font-weight: 600;
-	margin-bottom: var(--space-sm);
-	padding: var(--space-sm) 0;
-	min-height: var(--touch-target);
+	margin-block-end: var(--space-sm);
+	padding-block: var(--space-sm);
+	min-block-size: var(--touch-target);
 	gap: var(--space-md);
 }
 
@@ -610,7 +611,7 @@ details:not([open]) .sport-header::after {
 	font-size: var(--text-sm);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	max-width: 100%;
+	max-inline-size: 100%;
 }
 
 .league-favorite {
@@ -618,14 +619,14 @@ details:not([open]) .sport-header::after {
 	cursor: pointer;
 	font-size: var(--text-2xl);
 	padding: var(--space-sm);
-	min-width: var(--touch-target);
-	min-height: var(--touch-target);
+	min-inline-size: var(--touch-target);
+	min-block-size: var(--touch-target);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	transition: all var(--transition-normal) ease;
 	flex-shrink: 0;
-	margin-left: var(--space-sm);
+	margin-inline-start: var(--space-sm);
 }
 
 .league-favorite:hover {
@@ -640,7 +641,7 @@ details:not([open]) .sport-header::after {
 }
 
 .game-item-details {
-	border-bottom: 1px solid var(--border-color);
+	border-block-end: 1px solid var(--border-color);
 }
 
 .game-item-details > summary {
@@ -655,13 +656,13 @@ details:not([open]) .sport-header::after {
 	display: flex;
 	align-items: center;
 	padding-inline-start: var(--space-sm);
-	min-height: 64px;
-	min-width: 100%;
+	min-block-size: 64px;
+	min-inline-size: 100%;
 	transition: all var(--transition-normal) ease;
 	cursor: pointer;
 	background: var(--glass-bg);
 	backdrop-filter: blur(3px);
-	margin: var(--space-sm) 0;
+	margin-block: var(--space-sm);
 	border-radius: var(--radius-md);
 }
 
@@ -675,7 +676,7 @@ details:not([open]) .sport-header::after {
 	font-size: var(--text-base);
 	color: #c94300;
 	font-weight: 700;
-	min-width: 50px;
+	min-inline-size: 50px;
 }
 
 body.dark-mode .game-time {
@@ -684,25 +685,25 @@ body.dark-mode .game-time {
 
 .game-teams {
 	flex: 1;
-	margin-left: var(--space-md);
+	margin-inline-start: var(--space-md);
 }
 
 .team {
 	display: flex;
 	align-items: center;
 	gap: var(--space-sm);
-	margin: var(--space-xs) 0;
+	margin-block: var(--space-xs);
 	font-size: var(--text-base);
 	font-weight: 500;
 	color: var(--text-primary);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	max-width: 100%;
+	max-inline-size: 100%;
 }
 
 .team-icon {
-	width: 24px;
-	height: 24px;
+	inline-size: 24px;
+	block-size: 24px;
 	background: linear-gradient(135deg, #ddd 0%, #bbb 100%);
 	border-radius: var(--radius-full);
 	flex-shrink: 0;
@@ -712,7 +713,7 @@ body.dark-mode .game-time {
 	display: flex;
 	align-items: center;
 	gap: var(--space-sm);
-	margin-left: auto;
+	margin-inline-start: auto;
 	flex-shrink: 0;
 }
 
@@ -723,8 +724,8 @@ body.dark-mode .game-time {
 	border-radius: 14px;
 	font-size: var(--text-sm);
 	font-weight: 700;
-	min-width: 32px;
-	min-height: 28px;
+	min-inline-size: 32px;
+	min-block-size: 28px;
 	text-align: center;
 	transition: all var(--transition-normal) ease;
 	box-shadow: 0 2px 8px rgba(30, 107, 184, 0.3);
@@ -738,15 +739,15 @@ body.dark-mode .game-time {
 	cursor: pointer;
 	font-size: var(--text-2xl);
 	padding: var(--space-sm);
-	min-width: var(--touch-target);
-	min-height: var(--touch-target);
+	min-inline-size: var(--touch-target);
+	min-block-size: var(--touch-target);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	transition: all 0.4s ease;
 	filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 	flex-shrink: 0;
-	margin-left: var(--space-sm);
+	margin-inline-start: var(--space-sm);
 }
 
 .favorite-star:hover {
@@ -775,7 +776,7 @@ body.dark-mode .game-time {
 	padding: var(--space-md);
 	background: var(--bg-tertiary);
 	backdrop-filter: blur(5px);
-	border-top: 1px solid var(--border-color);
+	border-block-start: 1px solid var(--border-color);
 	transition: all var(--transition-normal);
 }
 
@@ -783,11 +784,11 @@ body.dark-mode .game-time {
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-sm);
-	padding: var(--space-sm) 0;
+	padding-block: var(--space-sm);
 }
 
 .skeleton-item {
-	height: var(--touch-target);
+	block-size: var(--touch-target);
 	background: linear-gradient(90deg, var(--bg-tertiary) 0%, var(--hover-bg) 50%, var(--bg-tertiary) 100%);
 	background-size: 200% 100%;
 	border-radius: var(--radius-md);
@@ -795,8 +796,8 @@ body.dark-mode .game-time {
 }
 
 .sport-icon-img {
-	width: 24px;
-	height: 24px;
+	inline-size: 24px;
+	block-size: 24px;
 	object-fit: contain;
 	display: inline-block;
 	vertical-align: middle;
@@ -815,7 +816,7 @@ body.dark-mode .game-time {
 	font-size: var(--text-sm);
 	font-weight: 600;
 	color: var(--text-secondary);
-	margin-bottom: var(--space-sm);
+	margin-block-end: var(--space-sm);
 }
 
 .game-links-grid {
@@ -830,7 +831,7 @@ body.dark-mode .game-time {
 	justify-content: space-between;
 	gap: var(--space-sm);
 	padding: var(--space-sm) var(--space-md);
-	min-height: var(--touch-target);
+	min-block-size: var(--touch-target);
 	background: var(--glass-bg);
 	backdrop-filter: blur(5px);
 	border-radius: var(--radius-md);
@@ -899,15 +900,15 @@ body.dark-mode .game-time {
 .burger-menu {
 	display: flex;
 	position: fixed;
-	top: 10px;
-	left: var(--space-sm);
+	inset-block-start: 10px;
+	inset-inline-start: var(--space-sm);
 	z-index: var(--z-burger);
 	background: var(--glass-bg);
 	backdrop-filter: blur(10px);
 	border: 2px solid var(--glass-border);
 	border-radius: var(--radius-lg);
-	width: var(--button-height);
-	height: var(--button-height);
+	inline-size: var(--button-height);
+	block-size: var(--button-height);
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -917,8 +918,8 @@ body.dark-mode .game-time {
 }
 
 .burger-menu span {
-	width: 20px;
-	height: 2px;
+	inline-size: 20px;
+	block-size: 2px;
 	background: var(--text-primary);
 	border-radius: 2px;
 	transition: all var(--transition-normal) ease;
@@ -939,10 +940,7 @@ body.dark-mode .game-time {
 .overlay {
 	display: none;
 	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	inset: 0;
 	background: rgba(0, 0, 0, 0.5);
 	z-index: var(--z-overlay);
 }
@@ -965,8 +963,8 @@ body.dark-mode .game-time {
 	margin: var(--space-lg) var(--space-sm) var(--space-sm) var(--space-sm);
 	box-shadow: var(--shadow-lg);
 	transition: all var(--transition-normal);
-	width: calc(100% - var(--space-lg));
-	max-width: 100%;
+	inline-size: calc(100% - var(--space-lg));
+	max-inline-size: 100%;
 	overflow: hidden;
 	box-sizing: border-box;
 }
@@ -975,13 +973,13 @@ body.dark-mode .game-time {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: var(--space-xl);
-	margin-bottom: var(--space-lg);
+	margin-block-end: var(--space-lg);
 }
 
 .footer-section h2 {
 	color: var(--text-primary);
 	font-size: var(--text-lg);
-	margin-bottom: var(--space-md);
+	margin-block-end: var(--space-md);
 	font-weight: 600;
 }
 
@@ -991,7 +989,7 @@ body.dark-mode .game-time {
 }
 
 .footer-section ul li {
-	margin-bottom: 0;
+	margin-block-end: 0;
 }
 
 .footer-section ul li a {
@@ -1000,8 +998,8 @@ body.dark-mode .game-time {
 	font-size: var(--text-sm);
 	transition: color var(--transition-normal);
 	display: inline-block;
-	min-height: var(--touch-target);
-	min-width: var(--touch-target);
+	min-block-size: var(--touch-target);
+	min-inline-size: var(--touch-target);
 	padding: var(--space-md) var(--space-sm);
 	line-height: var(--leading-normal);
 }
@@ -1018,8 +1016,8 @@ body.dark-mode .game-time {
 }
 
 .footer-bottom {
-	border-top: 1px solid var(--glass-border);
-	padding-top: var(--space-lg);
+	border-block-start: 1px solid var(--glass-border);
+	padding-block-start: var(--space-lg);
 	text-align: center;
 	color: var(--text-muted);
 	font-size: var(--text-sm);
@@ -1032,7 +1030,7 @@ body.dark-mode .game-time {
 @media (min-width: 768px) {
 	.header {
 		padding: var(--space-lg) var(--space-xl);
-		min-height: var(--header-height-tablet);
+		min-block-size: var(--header-height-tablet);
 	}
 
 	.logo-text {
@@ -1040,8 +1038,8 @@ body.dark-mode .game-time {
 	}
 
 	.logo-image {
-		width: 42px;
-		height: 42px;
+		inline-size: 42px;
+		block-size: 42px;
 	}
 
 	.header-page-title h1 {
@@ -1049,19 +1047,19 @@ body.dark-mode .game-time {
 	}
 
 	.theme-toggle {
-		width: 44px;
-		height: 44px;
+		inline-size: 44px;
+		block-size: 44px;
 		font-size: var(--text-xl);
 	}
 
 	.main-content {
-		margin-top: var(--header-height-tablet);
+		margin-block-start: var(--header-height-tablet);
 		padding: var(--space-lg);
 	}
 
 	.sidebar {
-		top: var(--header-height-tablet);
-		height: calc(100vh - var(--header-height-tablet));
+		inset-block-start: var(--header-height-tablet);
+		block-size: calc(100vh - var(--header-height-tablet));
 	}
 
 	.sport-title {
@@ -1100,12 +1098,12 @@ body.dark-mode .game-time {
 
 	.header {
 		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
+		inset-block-start: 0;
+		inset-inline-start: 0;
+		inset-inline-end: 0;
 		z-index: var(--z-header);
 		padding: var(--space-lg) var(--space-2xl);
-		min-height: var(--header-height-desktop);
+		min-block-size: var(--header-height-desktop);
 	}
 
 	.logo-title {
@@ -1113,8 +1111,8 @@ body.dark-mode .game-time {
 	}
 
 	.logo-image {
-		width: var(--touch-target);
-		height: var(--touch-target);
+		inline-size: var(--touch-target);
+		block-size: var(--touch-target);
 	}
 
 	.header-page-title h1 {
@@ -1122,20 +1120,20 @@ body.dark-mode .game-time {
 	}
 
 	.theme-toggle {
-		width: var(--touch-target);
-		height: var(--touch-target);
+		inline-size: var(--touch-target);
+		block-size: var(--touch-target);
 		font-size: var(--text-2xl);
 	}
 
 	/* LEFT SIDEBAR - Fixed, always visible */
 	.sidebar {
 		position: fixed;
-		top: var(--header-height-desktop);
-		left: 0;
-		width: var(--sidebar-width);
-		height: calc(100vh - var(--header-height-desktop));
+		inset-block-start: var(--header-height-desktop);
+		inset-inline-start: 0;
+		inline-size: var(--sidebar-width);
+		block-size: calc(100vh - var(--header-height-desktop));
 		border-radius: 0;
-		border-right: 1px solid var(--glass-border);
+		border-inline-end: 1px solid var(--glass-border);
 		overflow-y: auto;
 		overflow-x: hidden;
 		z-index: var(--z-sidebar);
@@ -1143,10 +1141,10 @@ body.dark-mode .game-time {
 
 	/* MAIN CONTENT - Center, scrollable */
 	.main-content {
-		margin-left: var(--sidebar-width);
-		margin-top: var(--header-height-desktop);
+		margin-inline-start: var(--sidebar-width);
+		margin-block-start: var(--header-height-desktop);
 		padding: var(--space-lg) var(--space-xl);
-		min-height: calc(100vh - var(--header-height-desktop));
+		min-block-size: calc(100vh - var(--header-height-desktop));
 		overflow-x: hidden;
 	}
 
@@ -1160,9 +1158,9 @@ body.dark-mode .game-time {
 
 	/* FOOTER - Below main content */
 	.footer {
-		margin-left: var(--sidebar-width);
-		margin-top: 0;
-		width: calc(100% - var(--sidebar-width));
+		margin-inline-start: var(--sidebar-width);
+		margin-block-start: 0;
+		inline-size: calc(100% - var(--sidebar-width));
 		border-radius: 0;
 	}
 
@@ -1180,21 +1178,21 @@ body.dark-mode .game-time {
 	/* HEADER - Fixed at top */
 	.header {
 		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
+		inset-block-start: 0;
+		inset-inline-start: 0;
+		inset-inline-end: 0;
 		z-index: var(--z-header);
 	}
 
 	/* LEFT SIDEBAR - Fixed, always visible */
 	.sidebar {
 		position: fixed;
-		top: var(--header-height-desktop);
-		left: 0;
-		width: var(--sidebar-width);
-		height: calc(100vh - var(--header-height-desktop));
+		inset-block-start: var(--header-height-desktop);
+		inset-inline-start: 0;
+		inline-size: var(--sidebar-width);
+		block-size: calc(100vh - var(--header-height-desktop));
 		border-radius: 0;
-		border-right: 1px solid var(--glass-border);
+		border-inline-end: 1px solid var(--glass-border);
 		overflow-y: auto;
 		overflow-x: hidden;
 		z-index: var(--z-sidebar);
@@ -1202,11 +1200,11 @@ body.dark-mode .game-time {
 
 	/* MAIN CONTENT - Center, margins for BOTH sidebars */
 	.main-content {
-		margin-left: var(--sidebar-width);
-		margin-right: var(--right-sidebar-width);
-		margin-top: var(--header-height-desktop);
+		margin-inline-start: var(--sidebar-width);
+		margin-inline-end: var(--right-sidebar-width);
+		margin-block-start: var(--header-height-desktop);
 		padding: var(--space-lg) var(--space-xl);
-		min-height: calc(100vh - var(--header-height-desktop));
+		min-block-size: calc(100vh - var(--header-height-desktop));
 		overflow-x: hidden;
 	}
 
@@ -1214,14 +1212,14 @@ body.dark-mode .game-time {
 	.right-sidebar {
 		display: block;
 		position: fixed;
-		top: var(--header-height-desktop);
-		right: 0;
-		width: var(--right-sidebar-width);
-		height: calc(100vh - var(--header-height-desktop));
+		inset-block-start: var(--header-height-desktop);
+		inset-inline-end: 0;
+		inline-size: var(--right-sidebar-width);
+		block-size: calc(100vh - var(--header-height-desktop));
 		background: var(--glass-bg);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
-		border-left: 1px solid var(--glass-border);
+		border-inline-start: 1px solid var(--glass-border);
 		border-radius: 0;
 		padding: var(--space-xl);
 		box-shadow: -2px 0 8px var(--shadow-color);
@@ -1231,7 +1229,7 @@ body.dark-mode .game-time {
 	}
 
 	.sidebar-content h2 {
-		margin-bottom: var(--space-lg);
+		margin-block-end: var(--space-lg);
 		color: var(--text-primary);
 		font-size: var(--text-xl);
 	}
@@ -1247,10 +1245,10 @@ body.dark-mode .game-time {
 
 	/* FOOTER - Margins for BOTH sidebars */
 	.footer {
-		margin-left: var(--sidebar-width);
-		margin-right: var(--right-sidebar-width);
-		margin-top: 0;
-		width: calc(100% - var(--sidebar-width) - var(--right-sidebar-width));
+		margin-inline-start: var(--sidebar-width);
+		margin-inline-end: var(--right-sidebar-width);
+		margin-block-start: 0;
+		inline-size: calc(100% - var(--sidebar-width) - var(--right-sidebar-width));
 		border-radius: 0;
 	}
 }
