@@ -403,16 +403,6 @@ foreach ($gamesData as $game) {
     <link rel="stylesheet" href="/styles.css">
     <script src="/main.js" defer></script>
     <style>
-        .logo {
-            background-color: <?php echo $primaryColor; ?>;
-        }
-        
-        .home-link.active,
-        .menu-item.active {
-            background-color: <?php echo $primaryColor; ?>22;
-            border-left: 3px solid <?php echo $primaryColor; ?>;
-        }
-        
         .date-tab.active {
             background-color: <?php echo $secondaryColor; ?>;
         }
@@ -436,17 +426,33 @@ foreach ($gamesData as $game) {
     
     <div class="overlay" id="overlay"></div>
     
+    <!-- ==========================================
+         REFACTORED: Header moved after body tag
+         Logo is now first child in header
+         ========================================== -->
+    <header class="header">
+        <div class="logo">
+            <a href="/">
+                <div class="logo-title">
+                    <span class="logo-icon"><?php echo renderLogo($logo); ?></span>
+                    <span class="logo-text"><?php echo htmlspecialchars($siteName); ?></span>
+                </div>
+            </a>
+        </div>
+        
+        <div class="header-page-title">
+            <h1><?php echo $viewFavorites ? 'My Favorites' : ($activeSport ? ucwords(str_replace('-', ' ', $activeSport)) : 'Live Sports Streaming'); ?></h1>
+        </div>
+        
+        <div class="header-right">
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+    
     <div class="content-wrapper">
         <aside class="sidebar" id="sidebar">
-            <div class="logo">
-                <a href="/">
-                    <div class="logo-title">
-                        <span class="logo-icon"><?php echo renderLogo($logo); ?></span>
-                        <span class="logo-text"><?php echo htmlspecialchars($siteName); ?></span>
-                    </div>
-                </a>
-            </div>
-
             <section class="favorites-section">
                 <h2 class="sr-only">Favorites</h2>
                 <a href="/favorites" class="favorites-link <?php echo $viewFavorites ? 'active' : ''; ?>" id="favoritesLink">
@@ -483,17 +489,6 @@ foreach ($gamesData as $game) {
         </aside>
 
         <main class="main-content">
-            <header class="header">
-                <div class="header-left">
-                    <h1><?php echo $viewFavorites ? 'My Favorites' : ($activeSport ? ucwords(str_replace('-', ' ', $activeSport)) : 'Live Sports Streaming'); ?></h1>
-                </div>
-                <div class="header-right">
-                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
-                        <span class="theme-icon">🌙</span>
-                    </button>
-                </div>
-            </header>
-
             <?php if (!$viewFavorites): ?>
             <nav class="date-tabs-wrapper" aria-label="Time filter">
                 <div class="date-tabs">
@@ -553,7 +548,7 @@ foreach ($gamesData as $game) {
                                             <?php foreach ($group['games'] as $game): ?>
                                                 <details class="game-item-details" data-game-id="<?php echo $game['id']; ?>" data-league-id="<?php echo $leagueId; ?>">
                                                     <summary class="game-item-summary">
-                                                        <time class="game-time"><?php echo formatGameTime($game['date']); ?></time>
+                                                        <time class="game-time" datetime="<?php echo $game['date']; ?>"><?php echo formatGameTime($game['date']); ?></time>
                                                         <span class="game-teams">
                                                             <span class="team">
                                                                 <span class="team-icon"></span>
