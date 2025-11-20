@@ -80,6 +80,12 @@ echo "# Prevent crawling of API directory\n";
 echo "Disallow: /api/\n";
 echo "\n";
 
+// NEW: Disallow filtered views (tab parameters)
+echo "# Prevent crawling of filtered views\n";
+echo "Disallow: /*?tab=soon\n";
+echo "Disallow: /*?tab=tomorrow\n";
+echo "\n";
+
 // Point to sitemap
 echo "# Sitemap location\n";
 echo "Sitemap: " . $baseUrl . "/sitemap.xml\n";
