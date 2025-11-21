@@ -11,8 +11,10 @@
    - OKLCH color space
    - Dynamic viewport units (dvh)
    - CSS Logical Properties (RTL-ready)
+   - HTML Popover API for mobile sidebar
+   - isolation: isolate (no z-index wars)
    
-   Browser Support: Modern browsers (Chrome 105+, Firefox 121+, Safari 16.4+)
+   Browser Support: Modern browsers (Chrome 114+, Firefox 125+, Safari 17+)
    ============================================ */
 
 /* ============================================
@@ -194,17 +196,6 @@
 		--transition-slow: 500ms ease;
 
 		/* ==========================================
-       Z-INDEX SCALE
-       ========================================== */
-		--z-base: 1;
-		--z-dropdown: 50;
-		--z-sidebar: 100;
-		--z-header: 900;
-		--z-overlay: 998;
-		--z-burger: 999;
-		--z-modal: 1000;
-
-		/* ==========================================
        SHADOWS
        ========================================== */
 		--shadow-sm: 0 2px 4px var(--clr-shadow);
@@ -253,6 +244,12 @@
 		min-block-size: 100dvh;
 		transition: background var(--transition-normal), color var(--transition-normal);
 
+		/* ==========================================
+       ISOLATION: Creates new stacking context
+       All z-indexes inside body are isolated
+       ========================================== */
+		isolation: isolate;
+
 		&.dark-mode {
 			background: linear-gradient(135deg, oklch(10% 0.02 250) 0%, oklch(15% 0.03 250) 100%);
 		}
@@ -290,7 +287,7 @@
 		grid-area: header;
 		position: sticky;
 		inset-block-start: 0;
-		z-index: var(--z-header);
+		z-index: 1; /* Only z-index needed - for sticky behavior */
 
 		display: flex;
 		align-items: center;
@@ -409,15 +406,10 @@
 	}
 
 	/* ==========================================
-     SIDEBAR (Mobile: Off-canvas)
+     SIDEBAR - Mobile: Popover API
      ========================================== */
 	.sidebar {
-		position: fixed;
-		inset-inline-start: -100%;
-		inset-block-start: var(--header-block-size);
-		block-size: calc(100dvh - var(--header-block-size));
-		inline-size: min(85%, 300px);
-
+		/* Base styles for sidebar content */
 		background: var(--clr-glass-bg);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
@@ -425,16 +417,66 @@
 
 		display: flex;
 		flex-direction: column;
-		z-index: var(--z-modal);
-		transition: inset-inline-start var(--transition-normal) ease;
-		box-shadow: 2px 0 10px var(--clr-shadow);
 		overflow-y: auto;
 
 		container-type: inline-size;
 		container-name: sidebar;
 
-		&.open {
+		/* ==========================================
+       POPOVER STYLES (Mobile Default)
+       Popover renders in "top layer" - no z-index needed!
+       ========================================== */
+		&[popover] {
+			/* Reset popover default styles */
+			padding: 0;
+			border: none;
+
+			/* Position as left sidebar */
+			position: fixed;
+			inset-block-start: var(--header-block-size);
 			inset-inline-start: 0;
+			inset-block-end: 0;
+			inline-size: min(85%, 300px);
+			max-inline-size: none;
+			max-block-size: none;
+
+			/* Closed state */
+			opacity: 0;
+			transform: translateX(-100%);
+			transition: opacity var(--transition-normal), transform var(--transition-normal),
+				display var(--transition-normal) allow-discrete;
+		}
+
+		/* Popover open state */
+		&[popover]:popover-open {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		/* Starting style for enter animation */
+		@starting-style {
+			&[popover]:popover-open {
+				opacity: 0;
+				transform: translateX(-100%);
+			}
+		}
+	}
+
+	/* ==========================================
+     POPOVER BACKDROP (replaces overlay div)
+     ========================================== */
+	.sidebar[popover]::backdrop {
+		background: oklch(0% 0 0 / 0);
+		transition: background var(--transition-normal) allow-discrete;
+	}
+
+	.sidebar[popover]:popover-open::backdrop {
+		background: oklch(0% 0 0 / 0.5);
+	}
+
+	@starting-style {
+		.sidebar[popover]:popover-open::backdrop {
+			background: oklch(0% 0 0 / 0);
 		}
 	}
 
@@ -478,15 +520,13 @@
 	}
 
 	/* ==========================================
-     BURGER MENU (Mobile)
+     BURGER MENU - Inside header as flex item
+     No z-index needed - it's a sibling of other header elements
      ========================================== */
 	.burger-menu {
 		display: flex;
-		position: fixed;
-		inset-block-start: calc((var(--header-block-size) - 40px) / 2);
-		inset-inline-start: var(--space-sm);
-		z-index: var(--z-burger);
 
+		/* No position: fixed - it's inside header now */
 		background: var(--clr-glass-bg);
 		backdrop-filter: blur(10px);
 		border: 2px solid var(--clr-glass-border);
@@ -499,6 +539,7 @@
 		gap: 4px;
 		cursor: pointer;
 		box-shadow: var(--shadow-sm);
+		flex-shrink: 0;
 
 		span {
 			inline-size: 20px;
@@ -508,7 +549,8 @@
 			transition: all var(--transition-normal) ease;
 		}
 
-		&.open {
+		/* Animate to X when sidebar is open */
+		&[aria-expanded='true'] {
 			span:nth-child(1) {
 				transform: rotate(45deg) translate(5px, 5px);
 			}
@@ -518,18 +560,6 @@
 			span:nth-child(3) {
 				transform: rotate(-45deg) translate(5px, -5px);
 			}
-		}
-	}
-
-	.overlay {
-		display: none;
-		position: fixed;
-		inset: 0;
-		background: oklch(0% 0 0 / 0.5);
-		z-index: var(--z-overlay);
-
-		&.active {
-			display: block;
 		}
 	}
 
@@ -570,30 +600,44 @@
 			grid-column: 1 / -1;
 		}
 
-		/* CRITICAL FIX: Reset mobile positioning for desktop */
-		.sidebar {
-			position: sticky;
-			inset-inline-start: 0;
-			inset-block-start: var(--header-block-size);
-
+		/* ==========================================
+       SIDEBAR - Desktop: Override Popover Behavior
+       CSS forces sidebar visible regardless of popover state
+       ========================================== */
+		.sidebar,
+		.sidebar[popover],
+		.sidebar[popover]:not(:popover-open) {
+			/* Place in grid */
 			grid-area: sidebar;
+
+			/* Override popover positioning */
+			position: sticky;
+			inset-block-start: var(--header-block-size);
+			inset-inline-start: unset;
+			inset-block-end: unset;
+
+			/* Full height sticky sidebar */
 			block-size: calc(100dvh - var(--header-block-size));
 			inline-size: 100%;
+
+			/* Force visible */
+			display: flex;
+			opacity: 1;
+			transform: none;
+
+			/* Reset popover styles */
 			border-radius: 0;
 			box-shadow: none;
-			z-index: var(--z-sidebar);
-
-			/* Reset mobile off-canvas styles */
-			transform: none;
-			visibility: visible;
 		}
 
+		/* Hide backdrop on desktop */
+		.sidebar[popover]::backdrop {
+			display: none;
+		}
+
+		/* Burger menu - hidden on desktop */
 		.burger-menu {
-			display: none !important;
-		}
-
-		.overlay {
-			display: none !important;
+			display: none;
 		}
 
 		.main-content {

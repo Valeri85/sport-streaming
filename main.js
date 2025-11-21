@@ -426,36 +426,36 @@ document.addEventListener('DOMContentLoaded', function () {
 	setTimeout(updateFavoritesCount, 100);
 });
 
+/* ==========================================
+   BURGER MENU - Popover API Integration
+   
+   The sidebar now uses the HTML Popover API.
+   This function handles:
+   1. Syncing burger button aria-expanded with popover state
+   2. Closing popover when menu items are clicked (mobile UX)
+   ========================================== */
 function initBurgerMenu() {
 	const burgerMenu = document.getElementById('burgerMenu');
 	const sidebar = document.getElementById('sidebar');
-	const overlay = document.getElementById('overlay');
 
-	if (!burgerMenu || !sidebar || !overlay) return;
+	if (!burgerMenu || !sidebar) return;
 
-	burgerMenu.addEventListener('click', function () {
-		burgerMenu.classList.toggle('open');
-		sidebar.classList.toggle('open');
-		overlay.classList.toggle('active');
-		document.body.style.overflow = sidebar.classList.contains('open') ? 'hidden' : '';
+	// Update burger button aria-expanded when popover toggles
+	sidebar.addEventListener('toggle', event => {
+		const isOpen = event.newState === 'open';
+		burgerMenu.setAttribute('aria-expanded', isOpen);
+
+		// Prevent body scroll when sidebar is open (mobile)
+		document.body.style.overflow = isOpen ? 'hidden' : '';
 	});
 
-	overlay.addEventListener('click', function () {
-		burgerMenu.classList.remove('open');
-		sidebar.classList.remove('open');
-		overlay.classList.remove('active');
-		document.body.style.overflow = '';
-	});
-
-	// Close menu when clicking on a menu item
+	// Close popover when clicking menu items (better mobile UX)
 	const menuItems = sidebar.querySelectorAll('.menu-item, .favorites-link');
 	menuItems.forEach(item => {
 		item.addEventListener('click', function () {
-			if (window.innerWidth <= 1200) {
-				burgerMenu.classList.remove('open');
-				sidebar.classList.remove('open');
-				overlay.classList.remove('active');
-				document.body.style.overflow = '';
+			// Only close if popover is actually open (mobile view)
+			if (sidebar.matches(':popover-open')) {
+				sidebar.hidePopover();
 			}
 		});
 	});

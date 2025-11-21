@@ -418,14 +418,6 @@ foreach ($gamesData as $game) {
       data-active-sport="<?php echo $activeSport ?: ''; ?>"
       data-active-tab="<?php echo $activeTab; ?>">
     
-    <button class="burger-menu" id="burgerMenu" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    
-    <div class="overlay" id="overlay"></div>
-    
     <!-- ==========================================
          HEADER
          ========================================== -->
@@ -447,13 +439,30 @@ foreach ($gamesData as $game) {
             <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
                 <span class="theme-icon">🌙</span>
             </button>
+            
+            <!-- ==========================================
+                 BURGER MENU - Inside header, no z-index needed
+                 Uses popovertarget to trigger sidebar popover
+                 ========================================== -->
+            <button class="burger-menu" 
+                    id="burgerMenu" 
+                    popovertarget="sidebar"
+                    aria-label="Toggle menu"
+                    aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
     
     <!-- ==========================================
-         LEFT SIDEBAR
+         LEFT SIDEBAR - Uses popover attribute
+         - Mobile: Hidden by default, shown via popover
+         - Desktop: CSS overrides to always show
+         - No overlay div needed - uses ::backdrop
          ========================================== -->
-    <aside class="sidebar" id="sidebar">
+    <aside class="sidebar" id="sidebar" popover>
         <section class="favorites-section">
             <h2 class="sr-only">Favorites</h2>
             <a href="/favorites" class="favorites-link <?php echo $viewFavorites ? 'active' : ''; ?>" id="favoritesLink">
