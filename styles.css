@@ -1,32 +1,5 @@
-/* ============================================
-   MODERN CSS - 100% CONTAINER QUERIES
-   
-   Features Used:
-   - CSS Grid with fr units & grid shorthand
-   - Container Queries ONLY (no media queries!)
-   - Fluid Typography & Spacing with clamp()
-   - :has() pseudo-class (parent selector)
-   - Cascade Layers (@layer)
-   - Native CSS Nesting
-   - OKLCH color space
-   - Dynamic viewport units (dvh)
-   - CSS Logical Properties (RTL-ready)
-   - HTML Popover API for mobile sidebar
-   - isolation: isolate (no z-index wars)
-   
-   Browser Support: Modern browsers (Chrome 114+, Firefox 125+, Safari 17+)
-   ============================================ */
-
-/* ============================================
-   LAYER ORDER DECLARATION
-   Later layers have higher priority
-   ============================================ */
 @layer reset, base, layout, components, utilities;
 
-/* ============================================
-   LAYER: RESET
-   Minimal reset for consistent baseline
-   ============================================ */
 @layer reset {
 	*,
 	*::before,
@@ -70,15 +43,7 @@
 	}
 }
 
-/* ============================================
-   LAYER: BASE
-   CSS Custom Properties & Base Styles
-   ============================================ */
 @layer base {
-	/* ==========================================
-     HTML AS VIEWPORT CONTAINER
-     This enables container queries for layout!
-     ========================================== */
 	html {
 		container-type: inline-size;
 		container-name: viewport;
@@ -90,11 +55,6 @@
 	}
 
 	:root {
-		/* ==========================================
-       OKLCH COLOR SYSTEM
-       Format: oklch(Lightness% Chroma Hue)
-       ========================================== */
-
 		/* Primary Background Colors */
 		--clr-bg-primary: oklch(94% 0.02 240);
 		--clr-bg-secondary: oklch(99% 0.005 240 / 0.95);
@@ -240,11 +200,6 @@
 		line-height: var(--leading-normal);
 		min-block-size: 100dvh;
 		transition: background var(--transition-normal), color var(--transition-normal);
-
-		/* ==========================================
-       ISOLATION: Creates new stacking context
-       All z-indexes inside body are isolated
-       ========================================== */
 		isolation: isolate;
 
 		&.dark-mode {
@@ -253,17 +208,7 @@
 	}
 }
 
-/* ============================================
-   LAYER: LAYOUT
-   Grid System & Major Layout Components
-   ALL RESPONSIVE CHANGES USE CONTAINER QUERIES
-   ============================================ */
 @layer layout {
-	/* ==========================================
-     MOBILE LAYOUT (Default - Single Column)
-     Grid: header / main / right-sidebar / footer
-     Left sidebar uses popover (overlay)
-     ========================================== */
 	body {
 		display: grid;
 		grid:
@@ -275,9 +220,6 @@
 		min-block-size: 100dvh;
 	}
 
-	/* ==========================================
-     GRID AREA ASSIGNMENTS
-     ========================================== */
 	.header {
 		grid-area: header;
 	}
@@ -294,28 +236,20 @@
 		grid-area: footer;
 	}
 
-	/* Left sidebar NOT assigned to grid on mobile/tablet - uses popover */
-
-	/* ==========================================
-     HEADER
-     ========================================== */
 	.header {
 		position: sticky;
 		inset-block-start: 0;
-		z-index: 1; /* Only z-index needed - for sticky behavior */
-
+		z-index: 1;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: var(--space-lg);
-
 		background: var(--clr-glass-bg);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
 		border-block-end: 1px solid var(--clr-glass-border);
 		padding: var(--space-md) var(--space-lg);
 		box-shadow: var(--shadow-sm);
-
 		container-type: inline-size;
 		container-name: header;
 	}
@@ -345,7 +279,6 @@
 		justify-content: center;
 	}
 
-	/* Logo text - hidden on small, shown on larger */
 	.logo-text {
 		display: none;
 	}
@@ -420,12 +353,7 @@
 		}
 	}
 
-	/* ==========================================
-     SIDEBAR (LEFT) - Mobile: Popover API
-     NOT in grid on mobile/tablet - overlays
-     ========================================== */
 	.sidebar {
-		/* Base styles for sidebar content */
 		background: var(--clr-glass-bg);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
@@ -438,16 +366,9 @@
 		container-type: inline-size;
 		container-name: sidebar;
 
-		/* ==========================================
-       POPOVER STYLES (Mobile Default)
-       Popover renders in "top layer" - no z-index needed!
-       ========================================== */
 		&[popover] {
-			/* Reset popover default styles */
 			padding: 0;
 			border: none;
-
-			/* Position as left sidebar */
 			position: fixed;
 			inset-block-start: var(--header-block-size);
 			inset-inline-start: 0;
@@ -455,21 +376,17 @@
 			inline-size: min(85%, 300px);
 			max-inline-size: none;
 			max-block-size: none;
-
-			/* Closed state */
 			opacity: 0;
 			transform: translateX(-100%);
 			transition: opacity var(--transition-normal), transform var(--transition-normal),
 				display var(--transition-normal) allow-discrete;
 		}
 
-		/* Popover open state */
 		&[popover]:popover-open {
 			opacity: 1;
 			transform: translateX(0);
 		}
 
-		/* Starting style for enter animation */
 		@starting-style {
 			&[popover]:popover-open {
 				opacity: 0;
@@ -478,9 +395,6 @@
 		}
 	}
 
-	/* ==========================================
-     POPOVER BACKDROP (replaces overlay div)
-     ========================================== */
 	.sidebar[popover]::backdrop {
 		background: oklch(0% 0 0 / 0);
 		transition: background var(--transition-normal) allow-discrete;
@@ -496,9 +410,6 @@
 		}
 	}
 
-	/* ==========================================
-     MAIN CONTENT
-     ========================================== */
 	.main-content {
 		padding: var(--space-sm);
 		min-block-size: 0;
@@ -508,10 +419,6 @@
 		container-name: main-content;
 	}
 
-	/* ==========================================
-     RIGHT SIDEBAR
-     Now visible on mobile (part of grid)
-     ========================================== */
 	.right-sidebar {
 		background: var(--clr-glass-bg);
 		backdrop-filter: blur(10px);
@@ -524,9 +431,6 @@
 		container-name: rightbar;
 	}
 
-	/* ==========================================
-     FOOTER
-     ========================================== */
 	.footer {
 		background: var(--clr-glass-bg);
 		backdrop-filter: blur(10px);
@@ -541,10 +445,6 @@
 		container-name: footer;
 	}
 
-	/* ==========================================
-     BURGER MENU - Inside header as flex item
-     No z-index needed - it's a sibling of other header elements
-     ========================================== */
 	.burger-menu {
 		display: flex;
 
@@ -570,7 +470,6 @@
 			transition: all var(--transition-normal) ease;
 		}
 
-		/* Animate to X when sidebar is open */
 		&[aria-expanded='true'] {
 			span:nth-child(1) {
 				transform: rotate(45deg) translate(5px, 5px);
@@ -584,11 +483,6 @@
 		}
 	}
 
-	/* ==========================================
-     TABLET LAYOUT (768px+) - Container Query
-     2 columns: main | right-sidebar
-     Left sidebar STILL popover overlay
-     ========================================== */
 	@container viewport (min-width: 768px) {
 		body {
 			grid:
@@ -609,15 +503,8 @@
 		.footer {
 			padding: var(--space-xl) var(--space-2xl);
 		}
-
-		/* Left sidebar STILL uses popover on tablet */
 	}
 
-	/* ==========================================
-     DESKTOP LAYOUT (1024px+) - Container Query
-     3 columns: left-sidebar | main | right-sidebar
-     Left sidebar NOW enters the grid
-     ========================================== */
 	@container viewport (min-width: 1024px) {
 		body {
 			grid:
@@ -627,45 +514,33 @@
 				/ var(--grid-sidebar) var(--grid-main) var(--grid-rightbar);
 		}
 
-		/* ==========================================
-       LEFT SIDEBAR - Now assigned to grid area
-       ========================================== */
 		.sidebar {
 			grid-area: left-sidebar;
 		}
 
-		/* ==========================================
-       SIDEBAR - Desktop: Override Popover Behavior
-       Size comes from grid parent (var(--grid-sidebar))
-       ========================================== */
 		.sidebar,
 		.sidebar[popover],
 		.sidebar[popover]:not(:popover-open) {
-			/* Override popover positioning */
 			position: sticky;
 			inset-block-start: var(--header-block-size);
 			inset-inline-start: unset;
 			inset-block-end: unset;
-
-			/* Full height sticky sidebar */
-			block-size: calc(100dvh - var(--header-block-size));
-
-			/* Force visible */
+			inline-size: auto;
+			max-inline-size: none;
 			display: flex;
 			opacity: 1;
 			transform: none;
-
-			/* Reset popover styles */
-			border-radius: 0;
-			box-shadow: none;
+			margin: var(--space-md);
+			border-radius: var(--radius-xl);
+			border: 1px solid var(--clr-glass-border);
+			box-shadow: var(--shadow-lg);
+			block-size: calc(100dvh - var(--header-block-size) - (var(--space-md) * 2));
 		}
 
-		/* Hide backdrop on desktop */
 		.sidebar[popover]::backdrop {
 			display: none;
 		}
 
-		/* Burger menu - hidden on desktop */
 		.burger-menu {
 			display: none;
 		}
@@ -677,25 +552,22 @@
 		.right-sidebar {
 			position: sticky;
 			inset-block-start: var(--header-block-size);
-			block-size: calc(100dvh - var(--header-block-size));
 			padding: var(--space-xl);
+			margin: var(--space-md);
+			border-radius: var(--radius-xl);
+			border: 1px solid var(--clr-glass-border);
+			box-shadow: var(--shadow-lg);
+			block-size: calc(100dvh - var(--header-block-size) - (var(--space-md) * 2));
 		}
 
 		.footer {
-			margin: 0;
-			border-radius: 0;
+			margin: 0 var(--space-md) var(--space-md) var(--space-md);
+			border-radius: var(--radius-xl);
 		}
 	}
 }
 
-/* ============================================
-   LAYER: COMPONENTS
-   All UI Components with Container Queries
-   ============================================ */
 @layer components {
-	/* ==========================================
-     FAVORITES SECTION
-     ========================================== */
 	.favorites-section {
 		padding: var(--space-md) var(--space-lg);
 		border-block-end: 1px solid var(--clr-glass-border);
@@ -753,9 +625,6 @@
 		text-align: center;
 	}
 
-	/* ==========================================
-     SPORTS MENU
-     ========================================== */
 	.section-title {
 		padding: var(--space-sm) var(--space-lg);
 		font-size: var(--text-sm);
@@ -847,9 +716,6 @@
 		border-radius: var(--radius-xl);
 	}
 
-	/* ==========================================
-     DATE TABS
-     ========================================== */
 	.date-tabs-wrapper {
 		background: var(--clr-glass-bg);
 		backdrop-filter: blur(10px);
@@ -905,9 +771,6 @@
 		}
 	}
 
-	/* ==========================================
-     CONTENT SECTION
-     ========================================== */
 	.content-section {
 		background: var(--clr-glass-bg);
 		backdrop-filter: blur(10px);
@@ -929,9 +792,6 @@
 		}
 	}
 
-	/* ==========================================
-     SPORT CATEGORY
-     ========================================== */
 	.sport-category {
 		margin-block-end: var(--space-lg);
 		content-visibility: auto;
@@ -1008,9 +868,6 @@
 		}
 	}
 
-	/* ==========================================
-     COMPETITION GROUP
-     ========================================== */
 	.competition-group {
 		margin-block-end: var(--space-sm);
 		border-inline-start: 3px solid var(--clr-border);
@@ -1044,9 +901,6 @@
 		overflow-wrap: break-word;
 	}
 
-	/* ==========================================
-     LEAGUE FAVORITE - with :has() enhancement
-     ========================================== */
 	.league-favorite {
 		color: oklch(60% 0.01 250);
 		cursor: pointer;
@@ -1073,16 +927,12 @@
 		}
 	}
 
-	/* :has() - Highlight competition when league is favorited */
 	.competition-group:has(.league-favorite.favorited) {
 		border-inline-start-color: var(--clr-favorite);
 		background: oklch(87% 0.18 90 / 0.05);
 		border-radius: 0 var(--radius-md) var(--radius-md) 0;
 	}
 
-	/* ==========================================
-     GAME ITEM
-     ========================================== */
 	.game-item-details {
 		border-block-end: 1px solid var(--clr-border);
 
@@ -1149,9 +999,6 @@
 		flex-shrink: 0;
 	}
 
-	/* ==========================================
-     LINK COUNT BADGE
-     ========================================== */
 	.link-count-badge {
 		background: linear-gradient(135deg, var(--clr-link-badge) 0%, oklch(45% 0.18 250) 100%);
 		color: white;
@@ -1169,9 +1016,6 @@
 		justify-content: center;
 	}
 
-	/* ==========================================
-     FAVORITE STAR - with :has() enhancement
-     ========================================== */
 	.favorite-star {
 		color: oklch(60% 0.01 250);
 		cursor: pointer;
@@ -1200,7 +1044,6 @@
 		}
 	}
 
-	/* :has() - Highlight game when favorited */
 	.game-item-details:has(.favorite-star.favorited) {
 		.game-item-summary {
 			background: oklch(87% 0.18 90 / 0.08);
@@ -1222,9 +1065,6 @@
 		}
 	}
 
-	/* ==========================================
-     GAME LINKS CONTAINER
-     ========================================== */
 	.game-links-container {
 		padding: var(--space-md);
 		background: var(--clr-bg-tertiary);
@@ -1318,9 +1158,6 @@
 		}
 	}
 
-	/* ==========================================
-     SKELETON LOADER
-     ========================================== */
 	.skeleton-loader {
 		display: flex;
 		flex-direction: column;
@@ -1345,9 +1182,6 @@
 		}
 	}
 
-	/* ==========================================
-     NO GAMES MESSAGE
-     ========================================== */
 	.no-games {
 		text-align: center;
 		padding: var(--space-2xl);
@@ -1355,9 +1189,6 @@
 		font-size: var(--text-base);
 	}
 
-	/* ==========================================
-     FOOTER CONTENT
-     ========================================== */
 	.footer-content {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -1421,9 +1252,6 @@
 		font-size: var(--text-sm);
 	}
 
-	/* ==========================================
-     RIGHT SIDEBAR CONTENT
-     ========================================== */
 	.sidebar-content {
 		h2 {
 			margin-block-end: var(--space-lg);
@@ -1438,12 +1266,7 @@
 	}
 }
 
-/* ============================================
-   LAYER: UTILITIES
-   Utility classes (highest specificity)
-   ============================================ */
 @layer utilities {
-	/* Screen reader only */
 	.sr-only {
 		position: absolute;
 		inline-size: 1px;
@@ -1456,7 +1279,6 @@
 		border-width: 0;
 	}
 
-	/* Visibility utilities using container queries on viewport */
 	.desktop-only {
 		display: none;
 	}
