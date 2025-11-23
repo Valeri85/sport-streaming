@@ -209,9 +209,8 @@ file_put_contents($lastmodFile, $jsonContent);
 // Clear output buffer
 ob_end_clean();
 
-// Set XML headers
+// Set XML headers (REMOVED noindex - sitemaps should be indexable!)
 header('Content-Type: application/xml; charset=utf-8');
-header('X-Robots-Tag: noindex');
 
 // Generate XML sitemap
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
