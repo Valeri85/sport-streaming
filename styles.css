@@ -163,14 +163,11 @@
 
 		/* ==========================================
        LAYOUT GRID FRACTIONS
+       Parent grid controls all column sizes
        ========================================== */
-		--grid-sidebar: 0.22fr;
+		--grid-sidebar: 0.35fr;
 		--grid-main: 1fr;
-		--grid-rightbar: 0.28fr;
-
-		/* Minimum widths for sidebars */
-		--sidebar-min: 220px;
-		--rightbar-min: 280px;
+		--grid-rightbar: 0.5fr;
 
 		/* ==========================================
        HEADER HEIGHT (fluid)
@@ -407,6 +404,7 @@
 
 	/* ==========================================
      SIDEBAR - Mobile: Popover API
+     Size controlled by grid parent on desktop
      ========================================== */
 	.sidebar {
 		/* Base styles for sidebar content */
@@ -579,11 +577,12 @@
 	/* ==========================================
      DESKTOP LAYOUT (1024px+) - Container Query
      Two columns: Sidebar | Main
+     Grid parent controls all sizes with fr units
      ========================================== */
 	@container viewport (min-width: 1024px) {
 		body {
 			grid-template-columns:
-				[sidebar-start] minmax(var(--sidebar-min), var(--grid-sidebar))
+				[sidebar-start] var(--grid-sidebar)
 				[sidebar-end main-start] var(--grid-main)
 				[main-end];
 			grid-template-rows:
@@ -602,7 +601,7 @@
 
 		/* ==========================================
        SIDEBAR - Desktop: Override Popover Behavior
-       CSS forces sidebar visible regardless of popover state
+       Size comes from grid parent (var(--grid-sidebar))
        ========================================== */
 		.sidebar,
 		.sidebar[popover],
@@ -618,7 +617,6 @@
 
 			/* Full height sticky sidebar */
 			block-size: calc(100dvh - var(--header-block-size));
-			inline-size: 100%;
 
 			/* Force visible */
 			display: flex;
@@ -653,13 +651,14 @@
 	/* ==========================================
      DESKTOP LARGE LAYOUT (1280px+) - Container Query
      Three columns: Sidebar | Main | Right Sidebar
+     All sizes controlled by grid parent with fr units
      ========================================== */
 	@container viewport (min-width: 1280px) {
 		body {
 			grid-template-columns:
-				[sidebar-start] minmax(var(--sidebar-min), var(--grid-sidebar))
+				[sidebar-start] var(--grid-sidebar)
 				[sidebar-end main-start] var(--grid-main)
-				[main-end rightbar-start] minmax(var(--rightbar-min), var(--grid-rightbar))
+				[main-end rightbar-start] var(--grid-rightbar)
 				[rightbar-end];
 			grid-template-areas:
 				'header header header'
