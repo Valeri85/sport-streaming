@@ -2,7 +2,7 @@
    MODERN CSS - 100% CONTAINER QUERIES
    
    Features Used:
-   - CSS Grid with fr units & named lines
+   - CSS Grid with fr units & grid shorthand
    - Container Queries ONLY (no media queries!)
    - Fluid Typography & Spacing with clamp()
    - :has() pseudo-class (parent selector)
@@ -261,27 +261,45 @@
 @layer layout {
 	/* ==========================================
      MOBILE LAYOUT (Default - Single Column)
+     Grid: header / main / right-sidebar / footer
+     Left sidebar uses popover (overlay)
      ========================================== */
 	body {
 		display: grid;
-		grid-template-columns: [full-start] 1fr [full-end];
-		grid-template-rows:
-			[header-start] var(--header-block-size)
-			[header-end content-start] 1fr
-			[content-end footer-start] auto
-			[footer-end];
-		grid-template-areas:
+		grid:
 			'header'
 			'main'
-			'footer';
+			'right-sidebar'
+			'footer'
+			/ 1fr;
 		min-block-size: 100dvh;
 	}
+
+	/* ==========================================
+     GRID AREA ASSIGNMENTS
+     ========================================== */
+	.header {
+		grid-area: header;
+	}
+
+	.main-content {
+		grid-area: main;
+	}
+
+	.right-sidebar {
+		grid-area: right-sidebar;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
+
+	/* Left sidebar NOT assigned to grid on mobile/tablet - uses popover */
 
 	/* ==========================================
      HEADER
      ========================================== */
 	.header {
-		grid-area: header;
 		position: sticky;
 		inset-block-start: 0;
 		z-index: 1; /* Only z-index needed - for sticky behavior */
@@ -403,8 +421,8 @@
 	}
 
 	/* ==========================================
-     SIDEBAR - Mobile: Popover API
-     Size controlled by grid parent on desktop
+     SIDEBAR (LEFT) - Mobile: Popover API
+     NOT in grid on mobile/tablet - overlays
      ========================================== */
 	.sidebar {
 		/* Base styles for sidebar content */
@@ -482,7 +500,6 @@
      MAIN CONTENT
      ========================================== */
 	.main-content {
-		grid-area: main;
 		padding: var(--space-sm);
 		min-block-size: 0;
 		overflow-x: hidden;
@@ -492,18 +509,25 @@
 	}
 
 	/* ==========================================
-     RIGHT SIDEBAR (Hidden by default)
+     RIGHT SIDEBAR
+     Now visible on mobile (part of grid)
      ========================================== */
 	.right-sidebar {
-		display: none;
+		background: var(--clr-glass-bg);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		border-inline-start: 1px solid var(--clr-glass-border);
+		padding: var(--space-md);
+		overflow-y: auto;
+
+		container-type: inline-size;
+		container-name: rightbar;
 	}
 
 	/* ==========================================
      FOOTER
      ========================================== */
 	.footer {
-		grid-area: footer;
-
 		background: var(--clr-glass-bg);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
@@ -524,7 +548,6 @@
 	.burger-menu {
 		display: flex;
 
-		/* No position: fixed - it's inside header now */
 		background: var(--clr-glass-bg);
 		backdrop-filter: blur(10px);
 		border: 2px solid var(--clr-glass-border);
@@ -563,40 +586,52 @@
 
 	/* ==========================================
      TABLET LAYOUT (768px+) - Container Query
+     2 columns: main | right-sidebar
+     Left sidebar STILL popover overlay
      ========================================== */
 	@container viewport (min-width: 768px) {
+		body {
+			grid:
+				'header header'
+				'main right-sidebar'
+				'footer footer'
+				/ var(--grid-main) var(--grid-rightbar);
+		}
+
 		.main-content {
+			padding: var(--space-lg);
+		}
+
+		.right-sidebar {
 			padding: var(--space-lg);
 		}
 
 		.footer {
 			padding: var(--space-xl) var(--space-2xl);
 		}
+
+		/* Left sidebar STILL uses popover on tablet */
 	}
 
 	/* ==========================================
      DESKTOP LAYOUT (1024px+) - Container Query
-     Two columns: Sidebar | Main
-     Grid parent controls all sizes with fr units
+     3 columns: left-sidebar | main | right-sidebar
+     Left sidebar NOW enters the grid
      ========================================== */
 	@container viewport (min-width: 1024px) {
 		body {
-			grid-template-columns:
-				[sidebar-start] var(--grid-sidebar)
-				[sidebar-end main-start] var(--grid-main)
-				[main-end];
-			grid-template-rows:
-				[header-start] var(--header-block-size)
-				[header-end content-start] 1fr
-				[content-end];
-			grid-template-areas:
-				'header header'
-				'sidebar main'
-				'sidebar footer';
+			grid:
+				'header header header'
+				'left-sidebar main right-sidebar'
+				'footer footer footer'
+				/ var(--grid-sidebar) var(--grid-main) var(--grid-rightbar);
 		}
 
-		.header {
-			grid-column: 1 / -1;
+		/* ==========================================
+       LEFT SIDEBAR - Now assigned to grid area
+       ========================================== */
+		.sidebar {
+			grid-area: left-sidebar;
 		}
 
 		/* ==========================================
@@ -606,9 +641,6 @@
 		.sidebar,
 		.sidebar[popover],
 		.sidebar[popover]:not(:popover-open) {
-			/* Place in grid */
-			grid-area: sidebar;
-
 			/* Override popover positioning */
 			position: sticky;
 			inset-block-start: var(--header-block-size);
@@ -642,50 +674,16 @@
 			padding: var(--space-lg) var(--space-xl);
 		}
 
-		.footer {
-			margin: 0;
-			border-radius: 0;
-		}
-	}
-
-	/* ==========================================
-     DESKTOP LARGE LAYOUT (1280px+) - Container Query
-     Three columns: Sidebar | Main | Right Sidebar
-     All sizes controlled by grid parent with fr units
-     ========================================== */
-	@container viewport (min-width: 1280px) {
-		body {
-			grid-template-columns:
-				[sidebar-start] var(--grid-sidebar)
-				[sidebar-end main-start] var(--grid-main)
-				[main-end rightbar-start] var(--grid-rightbar)
-				[rightbar-end];
-			grid-template-areas:
-				'header header header'
-				'sidebar main rightbar'
-				'sidebar footer rightbar';
-		}
-
-		.header {
-			grid-column: 1 / -1;
-		}
-
 		.right-sidebar {
-			display: block;
-			grid-area: rightbar;
 			position: sticky;
 			inset-block-start: var(--header-block-size);
 			block-size: calc(100dvh - var(--header-block-size));
-
-			background: var(--clr-glass-bg);
-			backdrop-filter: blur(10px);
-			-webkit-backdrop-filter: blur(10px);
-			border-inline-start: 1px solid var(--clr-glass-border);
 			padding: var(--space-xl);
-			overflow-y: auto;
+		}
 
-			container-type: inline-size;
-			container-name: rightbar;
+		.footer {
+			margin: 0;
+			border-radius: 0;
 		}
 	}
 }
