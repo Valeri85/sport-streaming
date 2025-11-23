@@ -426,7 +426,6 @@
 		border-inline-start: 1px solid var(--clr-glass-border);
 		padding: var(--space-md);
 		overflow-y: auto;
-
 		container-type: inline-size;
 		container-name: rightbar;
 	}
@@ -530,7 +529,6 @@
 			display: flex;
 			opacity: 1;
 			transform: none;
-			margin: var(--space-md);
 			border-radius: var(--radius-xl);
 			border: 1px solid var(--clr-glass-border);
 			box-shadow: var(--shadow-lg);
@@ -553,7 +551,6 @@
 			position: sticky;
 			inset-block-start: var(--header-block-size);
 			padding: var(--space-xl);
-			margin: var(--space-md);
 			border-radius: var(--radius-xl);
 			border: 1px solid var(--clr-glass-border);
 			box-shadow: var(--shadow-lg);
