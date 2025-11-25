@@ -14,3 +14,7 @@ AI instructions:
 7. Root path for all streaming websites (for example 20 websites): /var/www/u1852176/data/www/streaming
 
 prompt:
+
+ADD NEW WEBSITE:
+
+1. reg.ru-ზე უნდა შეიქმნას ახალი საიტი, წაიშლოს ძველი. რადგან უკვე არსებულს რუთს ვერ უცვლი, ახალ საიტში რუთად უნდა გაეწეროს streaming
