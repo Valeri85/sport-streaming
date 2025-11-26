@@ -1,3 +1,14 @@
+// ==========================================
+// TRANSLATIONS HELPER
+// ==========================================
+function t(key, section = 'messages') {
+	if (window.TRANSLATIONS && window.TRANSLATIONS[section] && window.TRANSLATIONS[section][key]) {
+		return window.TRANSLATIONS[section][key];
+	}
+	// Fallback: return key formatted nicely
+	return key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+}
+
 let favoriteGames = JSON.parse(localStorage.getItem('favoriteGames') || '[]');
 let favoriteLeagues = JSON.parse(localStorage.getItem('favoriteLeagues') || '[]');
 const isViewingFavorites = document.body.dataset.viewingFavorites === 'true';
@@ -208,7 +219,7 @@ function filterFavoritesView() {
                         </span>
                         <span class="league-favorite ${isLeagueFavorited ? 'favorited' : ''}" data-league-id="${
 				comp.leagueId
-			}" role="button" aria-label="Favorite league">${isLeagueFavorited ? '★' : '☆'}</span>
+			}" role="button" aria-label="${t('favorite_league', 'accessibility')}">${isLeagueFavorited ? '★' : '☆'}</span>
                     </div>
                     ${comp.games.join('')}
                 </section>
@@ -236,9 +247,7 @@ function filterFavoritesView() {
 		}
 	}
 
-	container.innerHTML = hasAnyFavorites
-		? favoritesHTML
-		: '<div class="no-games"><p>No favorite games yet. Click ⭐ to add favorites!</p></div>';
+	container.innerHTML = hasAnyFavorites ? favoritesHTML : `<div class="no-games"><p>${t('no_favorites')}</p></div>`;
 
 	if (hasAnyFavorites) {
 		// Batch DOM operations using requestAnimationFrame to prevent forced reflows
@@ -355,11 +364,11 @@ async function handleGameToggle(e) {
 			// Batch DOM write in requestAnimationFrame to prevent layout thrashing
 			requestAnimationFrame(() => {
 				if (!links || links.length === 0) {
-					linksContainer.innerHTML = '<div class="no-games"><p>No streaming links available</p></div>';
+					linksContainer.innerHTML = `<div class="no-games"><p>${t('no_streams')}</p></div>`;
 					return;
 				}
 
-				let linksHTML = '<div class="game-links-title">Available Streams:</div>';
+				let linksHTML = `<div class="game-links-title">${t('available_streams')}:</div>`;
 				linksHTML += '<div class="game-links-grid">';
 
 				links.forEach(link => {
@@ -367,7 +376,7 @@ async function handleGameToggle(e) {
                         <a href="${link.link}" target="_blank" rel="noopener noreferrer" class="link-item">
                             <span class="link-item-content">
                                 <span class="link-badge">${link.type}</span>
-                                <span>Watch Stream</span>
+                                <span>${t('watch_stream')}</span>
                             </span>
                             <span class="external-icon">↗</span>
                         </a>
@@ -379,7 +388,7 @@ async function handleGameToggle(e) {
 			});
 		} catch (error) {
 			requestAnimationFrame(() => {
-				linksContainer.innerHTML = '<div class="no-games"><p>Error loading links</p></div>';
+				linksContainer.innerHTML = `<div class="no-games"><p>${t('error_loading_links')}</p></div>`;
 			});
 		}
 	}
@@ -415,6 +424,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	initDarkMode();
 	attachEventListeners();
 	initBurgerMenu();
+	initLanguageSwitcher();
 
 	if (isViewingFavorites) {
 		filterFavoritesView();
@@ -425,6 +435,40 @@ document.addEventListener('DOMContentLoaded', function () {
 	updateFavoritesCount();
 	setTimeout(updateFavoritesCount, 100);
 });
+
+/* ==========================================
+   LANGUAGE SWITCHER
+   ========================================== */
+function initLanguageSwitcher() {
+	const languageToggle = document.getElementById('languageToggle');
+	const languageDropdown = document.getElementById('languageDropdown');
+
+	if (!languageToggle || !languageDropdown) return;
+
+	// Toggle dropdown on click
+	languageToggle.addEventListener('click', function (e) {
+		e.stopPropagation();
+		const isOpen = languageDropdown.classList.toggle('open');
+		languageToggle.setAttribute('aria-expanded', isOpen);
+	});
+
+	// Close dropdown when clicking outside
+	document.addEventListener('click', function (e) {
+		if (!e.target.closest('.language-switcher')) {
+			languageDropdown.classList.remove('open');
+			languageToggle.setAttribute('aria-expanded', 'false');
+		}
+	});
+
+	// Close dropdown on escape key
+	document.addEventListener('keydown', function (e) {
+		if (e.key === 'Escape' && languageDropdown.classList.contains('open')) {
+			languageDropdown.classList.remove('open');
+			languageToggle.setAttribute('aria-expanded', 'false');
+			languageToggle.focus();
+		}
+	});
+}
 
 /* ==========================================
    BURGER MENU - Popover API Integration

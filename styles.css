@@ -1262,6 +1262,119 @@
 			line-height: var(--leading-relaxed);
 		}
 	}
+
+	/* ==========================================
+	   LANGUAGE SWITCHER
+	   ========================================== */
+	.language-switcher {
+		position: relative;
+	}
+
+	.language-toggle {
+		display: flex;
+		align-items: center;
+		gap: var(--space-xs);
+		background: var(--clr-glass-bg);
+		backdrop-filter: blur(5px);
+		border: 2px solid var(--clr-glass-border);
+		border-radius: var(--radius-lg);
+		padding: var(--space-sm) var(--space-md);
+		cursor: pointer;
+		font-size: var(--text-lg);
+		transition: all var(--transition-normal);
+		box-shadow: var(--shadow-sm);
+		min-block-size: 40px;
+
+		&:hover {
+			transform: translateY(-2px);
+			box-shadow: var(--shadow-md);
+			background: var(--clr-hover-bg);
+		}
+
+		&[aria-expanded='true'] {
+			border-color: var(--clr-link);
+		}
+	}
+
+	.current-flag {
+		font-size: var(--text-xl);
+		line-height: 1;
+	}
+
+	.language-arrow {
+		font-size: var(--text-xs);
+		color: var(--clr-text-muted);
+		transition: transform var(--transition-normal);
+
+		.language-toggle[aria-expanded='true'] & {
+			transform: rotate(180deg);
+		}
+	}
+
+	.language-dropdown {
+		position: absolute;
+		top: calc(100% + var(--space-sm));
+		right: 0;
+		min-inline-size: 180px;
+		background: var(--clr-glass-bg);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		border: 1px solid var(--clr-glass-border);
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-lg);
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-10px);
+		transition: all var(--transition-normal);
+		z-index: 100;
+		overflow: hidden;
+
+		&.open {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+	}
+
+	.language-option {
+		display: flex;
+		align-items: center;
+		gap: var(--space-sm);
+		padding: var(--space-md) var(--space-lg);
+		color: var(--clr-text-primary);
+		font-size: var(--text-sm);
+		font-weight: 500;
+		transition: all var(--transition-normal);
+		text-decoration: none;
+		border-block-end: 1px solid var(--clr-border);
+
+		&:last-child {
+			border-block-end: none;
+		}
+
+		&:hover {
+			background: var(--clr-hover-bg);
+		}
+
+		&.active {
+			background: oklch(70% 0.18 70 / 0.15);
+			color: var(--clr-link);
+		}
+	}
+
+	.lang-flag {
+		font-size: var(--text-xl);
+		line-height: 1;
+	}
+
+	.lang-name {
+		flex: 1;
+	}
+
+	.lang-check {
+		color: var(--clr-success);
+		font-weight: 700;
+	}
 }
 
 @layer utilities {
