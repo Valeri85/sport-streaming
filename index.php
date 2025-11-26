@@ -60,20 +60,103 @@ if (is_dir($langDir)) {
 
 // ==========================================
 // DETERMINE ACTIVE LANGUAGE
-// Priority: 1. URL param (?lang=es) 2. Cookie 3. Admin default
+// Priority: 1. URL path (/es) 2. Cookie 3. Admin default
 // ==========================================
 $defaultLanguage = $website['language'] ?? 'en';
 $websiteLanguage = $defaultLanguage;
 
-// Check URL parameter (for language switch)
-if (isset($_GET['lang']) && array_key_exists($_GET['lang'], $availableLanguages)) {
-    $websiteLanguage = $_GET['lang'];
-    // Set cookie for 30 days
+// ==========================================
+// NEW: Clean URL Language Detection
+// Check if language code is in URL (from .htaccess rewrite)
+// .htaccess passes ?url_lang=xx when URL is /xx or /xx/...
+// ==========================================
+$urlLang = $_GET['url_lang'] ?? null;
+
+if ($urlLang && array_key_exists($urlLang, $availableLanguages)) {
+    // Check if this language is the DEFAULT language
+    if ($urlLang === $defaultLanguage) {
+        // Redirect to remove the language prefix (clean URL for default)
+        $redirectPath = '/';
+        
+        // Preserve other routes (favorites, sport pages)
+        if (isset($_GET['view']) && $_GET['view'] === 'favorites') {
+            $redirectPath = '/favorites';
+        } elseif (isset($_GET['sport'])) {
+            $redirectPath = '/live-' . $_GET['sport'];
+        }
+        
+        // Preserve query string (except internal params)
+        $queryParams = $_GET;
+        unset($queryParams['url_lang'], $queryParams['view'], $queryParams['sport']);
+        if (!empty($queryParams)) {
+            $redirectPath .= '?' . http_build_query($queryParams);
+        }
+        
+        // 301 redirect to remove default language from URL
+        header('Location: ' . $redirectPath, true, 301);
+        exit;
+    }
+    
+    // Non-default language in URL - use it and set cookie
+    $websiteLanguage = $urlLang;
     setcookie('user_language', $websiteLanguage, time() + (30 * 24 * 60 * 60), '/');
 }
-// Check cookie (user preference)
+// No language in URL - check cookie
 elseif (isset($_COOKIE['user_language']) && array_key_exists($_COOKIE['user_language'], $availableLanguages)) {
     $websiteLanguage = $_COOKIE['user_language'];
+}
+// Fallback to default language (already set above)
+
+// Store default language for template use
+$siteDefaultLanguage = $defaultLanguage;
+
+// ==========================================
+// HELPER: Build language URL
+// Returns clean URL for language switcher links
+// ==========================================
+function buildLanguageUrl($langCode, $defaultLang, $activeSport = null, $viewFavorites = false, $activeTab = 'all') {
+    // Build the path
+    if ($langCode === $defaultLang) {
+        // Default language = no prefix
+        $path = '/';
+        if ($viewFavorites) {
+            $path = '/favorites';
+        } elseif ($activeSport) {
+            $path = '/live-' . $activeSport;
+        }
+    } else {
+        // Non-default language = add prefix
+        $path = '/' . $langCode;
+        if ($viewFavorites) {
+            $path .= '/favorites';
+        } elseif ($activeSport) {
+            $path .= '/live-' . $activeSport;
+        }
+    }
+    
+    // Add tab parameter if not 'all'
+    if ($activeTab !== 'all' && !$viewFavorites) {
+        $path .= '?tab=' . $activeTab;
+    }
+    
+    return $path;
+}
+
+// ==========================================
+// HELPER: Build internal link with language prefix
+// ==========================================
+function langUrl($path, $websiteLanguage, $defaultLanguage) {
+    // If current language is NOT the default, add prefix
+    if ($websiteLanguage !== $defaultLanguage) {
+        // Handle root path
+        if ($path === '/') {
+            return '/' . $websiteLanguage;
+        }
+        // Handle other paths
+        return '/' . $websiteLanguage . $path;
+    }
+    // Default language - no prefix
+    return $path;
 }
 
 // ==========================================
@@ -244,21 +327,34 @@ function checkForNewSports($gamesData, $configuredSports, $siteName, $websiteId)
 $configuredSports = $website['sports_categories'] ?? [];
 checkForNewSports($gamesData, $configuredSports, $siteName, $website['id']);
 
+// ==========================================
+// ROUTE DETECTION (updated for .htaccess params)
+// ==========================================
 $activeTab = isset($_GET['tab']) ? $_GET['tab'] : 'all';
-$activeSport = isset($_GET['sport']) ? $_GET['sport'] : null;
+
+// Check for sport from .htaccess rewrite first, then fallback to old method
+$activeSport = $_GET['sport'] ?? null;
 
 if (!$activeSport) {
     $requestUri = $_SERVER['REQUEST_URI'];
     $path = parse_url($requestUri, PHP_URL_PATH);
     $path = trim($path, '/');
     
+    // Remove language prefix if present for route detection
+    if ($urlLang && strpos($path, $urlLang) === 0) {
+        $path = ltrim(substr($path, strlen($urlLang)), '/');
+    }
+    
     if (preg_match('/^live-(.+)$/', $path, $matches)) {
         $activeSport = $matches[1];
     }
 }
 
+// Check for favorites from .htaccess rewrite first
 $viewFavorites = false;
-if (strpos($_SERVER['REQUEST_URI'], '/favorites') !== false) {
+if (isset($_GET['view']) && $_GET['view'] === 'favorites') {
+    $viewFavorites = true;
+} elseif (strpos($_SERVER['REQUEST_URI'], '/favorites') !== false) {
     $viewFavorites = true;
 }
 
@@ -274,14 +370,17 @@ $baseCanonicalUrl = rtrim($baseCanonicalUrl, '/');
 $canonicalUrl = $baseCanonicalUrl; // Default to homepage
 $shouldNoindex = false; // Default: allow indexing
 
+// Build language prefix for canonical URL
+$langPrefix = ($websiteLanguage !== $siteDefaultLanguage) ? '/' . $websiteLanguage : '';
+
 if ($viewFavorites) {
     // Favorites page - don't index (user-specific)
-    $canonicalUrl = $baseCanonicalUrl . '/favorites';
+    $canonicalUrl = $baseCanonicalUrl . $langPrefix . '/favorites';
     $shouldNoindex = true; // Don't index favorites
     
 } elseif ($activeSport) {
     // Sport-specific page
-    $canonicalUrl = $baseCanonicalUrl . '/live-' . $activeSport;
+    $canonicalUrl = $baseCanonicalUrl . $langPrefix . '/live-' . $activeSport;
     
     // If there's a tab filter (?tab=soon or ?tab=tomorrow), don't index
     if ($activeTab !== 'all') {
@@ -290,7 +389,11 @@ if ($viewFavorites) {
     
 } else {
     // Homepage
-    $canonicalUrl = $baseCanonicalUrl . '/';
+    if ($langPrefix) {
+        $canonicalUrl = $baseCanonicalUrl . $langPrefix;
+    } else {
+        $canonicalUrl = $baseCanonicalUrl . '/';
+    }
     
     // If homepage has tab filter, don't index
     if ($activeTab !== 'all') {
@@ -482,6 +585,12 @@ $jsTranslations = [
     'accessibility' => $lang['accessibility'] ?? []
 ];
 
+// ==========================================
+// PRE-BUILD URLS FOR TEMPLATES
+// ==========================================
+$homeUrl = langUrl('/', $websiteLanguage, $siteDefaultLanguage);
+$favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
+
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo htmlspecialchars($websiteLanguage); ?>">
@@ -522,7 +631,7 @@ $jsTranslations = [
     <!-- HEADER -->
     <header class="header">
         <div class="logo">
-            <a href="/">
+            <a href="<?php echo $homeUrl; ?>">
                 <div class="logo-title">
                     <span class="logo-icon"><?php echo renderLogo($logo); ?></span>
                     <span class="logo-text"><?php echo htmlspecialchars($siteName); ?></span>
@@ -550,7 +659,7 @@ $jsTranslations = [
             </button>
             
             <?php if (count($availableLanguages) > 1): ?>
-            <!-- LANGUAGE SWITCHER -->
+            <!-- LANGUAGE SWITCHER - Clean URLs -->
             <div class="language-switcher" id="languageSwitcher">
                 <button class="language-toggle" id="languageToggle" aria-label="<?php echo htmlspecialchars(t('change_language', 'accessibility')); ?>" aria-expanded="false">
                     <span class="current-flag"><?php echo $availableLanguages[$websiteLanguage]['flag'] ?? '🌐'; ?></span>
@@ -559,13 +668,10 @@ $jsTranslations = [
                 <div class="language-dropdown" id="languageDropdown">
                     <?php foreach ($availableLanguages as $code => $langInfo): 
                         $isActive = ($code === $websiteLanguage);
-                        // Build URL with lang parameter
-                        $currentUrl = strtok($_SERVER['REQUEST_URI'], '?');
-                        $queryParams = $_GET;
-                        $queryParams['lang'] = $code;
-                        $langUrl = $currentUrl . '?' . http_build_query($queryParams);
+                        // Build clean URL for this language
+                        $langSwitchUrl = buildLanguageUrl($code, $siteDefaultLanguage, $activeSport, $viewFavorites, $activeTab);
                     ?>
-                        <a href="<?php echo htmlspecialchars($langUrl); ?>" 
+                        <a href="<?php echo htmlspecialchars($langSwitchUrl); ?>" 
                            class="language-option <?php echo $isActive ? 'active' : ''; ?>"
                            data-lang="<?php echo htmlspecialchars($code); ?>">
                             <span class="lang-flag"><?php echo $langInfo['flag']; ?></span>
@@ -594,7 +700,7 @@ $jsTranslations = [
     <aside class="sidebar" id="sidebar" popover>
         <section class="favorites-section">
             <h2 class="sr-only"><?php echo htmlspecialchars(t('favorites')); ?></h2>
-            <a href="/favorites" class="favorites-link <?php echo $viewFavorites ? 'active' : ''; ?>" id="favoritesLink">
+            <a href="<?php echo $favoritesUrl; ?>" class="favorites-link <?php echo $viewFavorites ? 'active' : ''; ?>" id="favoritesLink">
                 <span>⭐</span>
                 <span><?php echo htmlspecialchars(t('favorites')); ?></span>
                 <span class="favorites-count" id="favoritesCount">0</span>
@@ -604,7 +710,7 @@ $jsTranslations = [
         <div class="section-title"><?php echo htmlspecialchars(t('sports')); ?></div>
 
         <nav class="sports-menu">
-            <a href="/" class="menu-item <?php echo (!$viewFavorites && !$activeSport) ? 'active' : ''; ?>">
+            <a href="<?php echo $homeUrl; ?>" class="menu-item <?php echo (!$viewFavorites && !$activeSport) ? 'active' : ''; ?>">
                 <span class="menu-item-left">
                     <span class="sport-icon">🏠</span>
                     <span class="sport-name"><?php echo htmlspecialchars(t('home')); ?></span>
@@ -616,8 +722,9 @@ $jsTranslations = [
                 $sportSlug = strtolower(str_replace(' ', '-', $sportName));
                 $isActive = ($activeSport === $sportSlug && !$viewFavorites);
                 $translatedSportName = tSport($sportName);
+                $sportUrl = langUrl('/live-' . $sportSlug, $websiteLanguage, $siteDefaultLanguage);
             ?>
-                <a href="/live-<?php echo $sportSlug; ?>" class="menu-item <?php echo $isActive ? 'active' : ''; ?>" onclick="saveScrollPosition(event)">
+                <a href="<?php echo $sportUrl; ?>" class="menu-item <?php echo $isActive ? 'active' : ''; ?>" onclick="saveScrollPosition(event)">
                     <span class="menu-item-left">
                         <span class="sport-icon"><?php echo $icon; ?></span>
                         <span class="sport-name"><?php echo htmlspecialchars($translatedSportName); ?></span>
@@ -633,9 +740,13 @@ $jsTranslations = [
         <?php if (!$viewFavorites): ?>
         <nav class="date-tabs-wrapper" aria-label="<?php echo htmlspecialchars(t('time_filter', 'accessibility')); ?>">
             <div class="date-tabs">
-                <a href="<?php echo $activeSport ? '/live-'.$activeSport : '/'; ?>" class="date-tab <?php echo $activeTab === 'all' ? 'active' : ''; ?>"><?php echo htmlspecialchars(t('all')); ?></a>
-                <a href="<?php echo $activeSport ? '/live-'.$activeSport.'?tab=soon' : '/?tab=soon'; ?>" class="date-tab <?php echo $activeTab === 'soon' ? 'active' : ''; ?>"><?php echo htmlspecialchars(t('soon')); ?></a>
-                <a href="<?php echo $activeSport ? '/live-'.$activeSport.'?tab=tomorrow' : '/?tab=tomorrow'; ?>" class="date-tab <?php echo $activeTab === 'tomorrow' ? 'active' : ''; ?>"><?php echo htmlspecialchars(t('tomorrow')); ?></a>
+                <?php 
+                // Build tab URLs with language prefix
+                $tabBaseUrl = $activeSport ? langUrl('/live-' . $activeSport, $websiteLanguage, $siteDefaultLanguage) : $homeUrl;
+                ?>
+                <a href="<?php echo $tabBaseUrl; ?>" class="date-tab <?php echo $activeTab === 'all' ? 'active' : ''; ?>"><?php echo htmlspecialchars(t('all')); ?></a>
+                <a href="<?php echo $tabBaseUrl . '?tab=soon'; ?>" class="date-tab <?php echo $activeTab === 'soon' ? 'active' : ''; ?>"><?php echo htmlspecialchars(t('soon')); ?></a>
+                <a href="<?php echo $tabBaseUrl . '?tab=tomorrow'; ?>" class="date-tab <?php echo $activeTab === 'tomorrow' ? 'active' : ''; ?>"><?php echo htmlspecialchars(t('tomorrow')); ?></a>
             </div>
         </nav>
         <?php endif; ?>
@@ -793,19 +904,19 @@ $jsTranslations = [
             <div class="footer-section">
                 <h2><?php echo htmlspecialchars(t('sports', 'footer')); ?></h2>
                 <ul>
-                    <li><a href="/live-football">⚽ <?php echo htmlspecialchars(tSport('Football')); ?></a></li>
-                    <li><a href="/live-basketball">🏀 <?php echo htmlspecialchars(tSport('Basketball')); ?></a></li>
-                    <li><a href="/live-tennis">🎾 <?php echo htmlspecialchars(tSport('Tennis')); ?></a></li>
-                    <li><a href="/live-ice-hockey">🏒 <?php echo htmlspecialchars(tSport('Ice Hockey')); ?></a></li>
+                    <li><a href="<?php echo langUrl('/live-football', $websiteLanguage, $siteDefaultLanguage); ?>">⚽ <?php echo htmlspecialchars(tSport('Football')); ?></a></li>
+                    <li><a href="<?php echo langUrl('/live-basketball', $websiteLanguage, $siteDefaultLanguage); ?>">🏀 <?php echo htmlspecialchars(tSport('Basketball')); ?></a></li>
+                    <li><a href="<?php echo langUrl('/live-tennis', $websiteLanguage, $siteDefaultLanguage); ?>">🎾 <?php echo htmlspecialchars(tSport('Tennis')); ?></a></li>
+                    <li><a href="<?php echo langUrl('/live-ice-hockey', $websiteLanguage, $siteDefaultLanguage); ?>">🏒 <?php echo htmlspecialchars(tSport('Ice Hockey')); ?></a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h2><?php echo htmlspecialchars(t('quick_links', 'footer')); ?></h2>
                 <ul>
-                    <li><a href="/"><?php echo htmlspecialchars(t('home')); ?></a></li>
-                    <li><a href="/favorites">⭐ <?php echo htmlspecialchars(t('favorites')); ?></a></li>
-                    <li><a href="/?tab=soon"><?php echo htmlspecialchars(t('soon')); ?></a></li>
-                    <li><a href="/?tab=tomorrow"><?php echo htmlspecialchars(t('tomorrow')); ?></a></li>
+                    <li><a href="<?php echo $homeUrl; ?>"><?php echo htmlspecialchars(t('home')); ?></a></li>
+                    <li><a href="<?php echo $favoritesUrl; ?>">⭐ <?php echo htmlspecialchars(t('favorites')); ?></a></li>
+                    <li><a href="<?php echo $homeUrl . '?tab=soon'; ?>"><?php echo htmlspecialchars(t('soon')); ?></a></li>
+                    <li><a href="<?php echo $homeUrl . '?tab=tomorrow'; ?>"><?php echo htmlspecialchars(t('tomorrow')); ?></a></li>
                 </ul>
             </div>
             <div class="footer-section">

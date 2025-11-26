@@ -1,35 +1,82 @@
 # Master .htaccess for all streaming websites
-# CloudFlare handles HTTPS, .htaccess handles WWW
+
+# CloudFlare handles HTTPS, .htaccess handles WWW and Language URLs
 
 RewriteEngine On
 
 # ==========================================
+
 # 1. FORCE WWW (Only this redirect!)
-# ==========================================
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # ==========================================
-# 2. SITEMAP & ROBOTS
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.\*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 # ==========================================
+
+# 2. SITEMAP & ROBOTS
+
+# ==========================================
+
 RewriteRule ^sitemap\.xml$ sitemap.php [L]
 RewriteRule ^robots\.txt$ robots.php [L]
 
 # ==========================================
+
 # 3. PREVENT REWRITING FOR ACTUAL FILES
-# ==========================================
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
 
 # ==========================================
-# 4. VIRTUAL ROUTES
-# ==========================================
-RewriteRule ^favorites/?$ index.php [L,QSA]
-RewriteRule ^live-([a-z-]+)/?$ index.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
 
 # ==========================================
-# 5. SECURITY
+
+# 4. LANGUAGE URL ROUTING
+
+# Route /xx (2-letter language code) to index.php
+
+# Examples:
+
+# /es → index.php?url_lang=es
+
+# /es/ → index.php?url_lang=es
+
+# /es/favorites → index.php?url_lang=es (favorites route)
+
+# /es/live-football → index.php?url_lang=es (sport route)
+
 # ==========================================
+
+# Language + Favorites: /xx/favorites
+
+RewriteRule ^([a-z]{2})/favorites/?$ index.php?url_lang=$1&view=favorites [L,QSA]
+
+# Language + Sport: /xx/live-sport-name
+
+RewriteRule ^([a-z]{2})/live-([a-z-]+)/?$ index.php?url_lang=$1&sport=$2 [L,QSA]
+
+# Language only: /xx or /xx/
+
+RewriteRule ^([a-z]{2})/?$ index.php?url_lang=$1 [L,QSA]
+
+# ==========================================
+
+# 5. VIRTUAL ROUTES (without language prefix)
+
+# ==========================================
+
+RewriteRule ^favorites/?$ index.php?view=favorites [L,QSA]
+RewriteRule ^live-([a-z-]+)/?$ index.php?sport=$1 [L,QSA]
+
+# ==========================================
+
+# 6. SECURITY
+
+# ==========================================
+
 <FilesMatch "^(config|data\.json|websites\.json)">
 Order allow,deny
 Deny from all
@@ -41,7 +88,10 @@ Deny from all
 </FilesMatch>
 
 # ==========================================
-# 6. SETTINGS
+
+# 7. SETTINGS
+
 # ==========================================
+
 Options -Indexes
 AddDefaultCharset UTF-8
