@@ -66,33 +66,31 @@ $defaultLanguage = $website['language'] ?? 'en';
 $websiteLanguage = $defaultLanguage;
 
 // ==========================================
-// NEW: Clean URL Language Detection
+// Clean URL Language Detection
 // Check if language code is in URL (from .htaccess rewrite)
 // .htaccess passes ?url_lang=xx when URL is /xx or /xx/...
 // ==========================================
 $urlLang = $_GET['url_lang'] ?? null;
 
 if ($urlLang && array_key_exists($urlLang, $availableLanguages)) {
-    // Check if this language is the DEFAULT language
+    // Language code in URL
     if ($urlLang === $defaultLanguage) {
-        // Redirect to remove the language prefix (clean URL for default)
-        $redirectPath = '/';
+        // Default language in URL - redirect to clean URL (only one redirect, SEO friendly)
+        // Delete cookie first
+        setcookie('user_language', '', time() - 3600, '/');
         
-        // Preserve other routes (favorites, sport pages)
+        $redirectPath = '/';
         if (isset($_GET['view']) && $_GET['view'] === 'favorites') {
             $redirectPath = '/favorites';
         } elseif (isset($_GET['sport'])) {
             $redirectPath = '/live-' . $_GET['sport'];
         }
         
-        // Preserve query string (except internal params)
-        $queryParams = $_GET;
-        unset($queryParams['url_lang'], $queryParams['view'], $queryParams['sport']);
-        if (!empty($queryParams)) {
-            $redirectPath .= '?' . http_build_query($queryParams);
+        // Preserve tab parameter
+        if (isset($_GET['tab'])) {
+            $redirectPath .= '?tab=' . $_GET['tab'];
         }
         
-        // 301 redirect to remove default language from URL
         header('Location: ' . $redirectPath, true, 301);
         exit;
     }
@@ -101,9 +99,37 @@ if ($urlLang && array_key_exists($urlLang, $availableLanguages)) {
     $websiteLanguage = $urlLang;
     setcookie('user_language', $websiteLanguage, time() + (30 * 24 * 60 * 60), '/');
 }
-// No language in URL - check cookie
-elseif (isset($_COOKIE['user_language']) && array_key_exists($_COOKIE['user_language'], $availableLanguages)) {
-    $websiteLanguage = $_COOKIE['user_language'];
+// No language in URL - this means default language OR user navigating within site
+elseif (!$urlLang) {
+    // ✅ KEY FIX: Check if user explicitly clicked default language link
+    // We detect this by checking HTTP_REFERER - if they came from a language URL
+    // and now on clean URL, they switched to default
+    $referer = $_SERVER['HTTP_REFERER'] ?? '';
+    $currentHost = $_SERVER['HTTP_HOST'] ?? '';
+    
+    // Check if referer is from same site with a language prefix
+    $cameFromLanguageUrl = false;
+    if (!empty($referer) && strpos($referer, $currentHost) !== false) {
+        // Check if referer had a language code like /es, /fr, etc.
+        foreach ($availableLanguages as $code => $langInfo) {
+            if ($code !== $defaultLanguage && preg_match('#/' . $code . '(/|$|\?)#', $referer)) {
+                $cameFromLanguageUrl = true;
+                break;
+            }
+        }
+    }
+    
+    if ($cameFromLanguageUrl) {
+        // User came from a language URL to clean URL = they switched to default
+        // Delete the cookie
+        setcookie('user_language', '', time() - 3600, '/');
+        $websiteLanguage = $defaultLanguage;
+    }
+    // Check cookie for returning visitors (not switching)
+    elseif (isset($_COOKIE['user_language']) && array_key_exists($_COOKIE['user_language'], $availableLanguages)) {
+        $websiteLanguage = $_COOKIE['user_language'];
+    }
+    // Fallback to default language (already set above)
 }
 // Fallback to default language (already set above)
 
@@ -117,7 +143,7 @@ $siteDefaultLanguage = $defaultLanguage;
 function buildLanguageUrl($langCode, $defaultLang, $activeSport = null, $viewFavorites = false, $activeTab = 'all') {
     // Build the path
     if ($langCode === $defaultLang) {
-        // Default language = no prefix
+        // Default language = no prefix, clean URL
         $path = '/';
         if ($viewFavorites) {
             $path = '/favorites';
@@ -670,10 +696,13 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
                         $isActive = ($code === $websiteLanguage);
                         // Build clean URL for this language
                         $langSwitchUrl = buildLanguageUrl($code, $siteDefaultLanguage, $activeSport, $viewFavorites, $activeTab);
+                        // Add onclick to delete cookie when switching to default language
+                        $onclickAttr = ($code === $siteDefaultLanguage) ? 'onclick="document.cookie=\'user_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;\';"' : '';
                     ?>
                         <a href="<?php echo htmlspecialchars($langSwitchUrl); ?>" 
                            class="language-option <?php echo $isActive ? 'active' : ''; ?>"
-                           data-lang="<?php echo htmlspecialchars($code); ?>">
+                           data-lang="<?php echo htmlspecialchars($code); ?>"
+                           <?php echo $onclickAttr; ?>>
                             <span class="lang-flag"><?php echo $langInfo['flag']; ?></span>
                             <span class="lang-name"><?php echo htmlspecialchars($langInfo['name']); ?></span>
                             <?php if ($isActive): ?><span class="lang-check">✓</span><?php endif; ?>
@@ -785,8 +814,8 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
                                     $countryName = getCountryName($group['country']);
                                 ?>
                                     <section class="competition-group" data-league-id="<?php echo $leagueId; ?>" 
-                                         data-country="<?php echo htmlspecialchars($group['country']); ?>"
-                                         data-competition="<?php echo htmlspecialchars($group['competition']); ?>">
+                                             data-country="<?php echo htmlspecialchars($group['country']); ?>"
+                                             data-competition="<?php echo htmlspecialchars($group['competition']); ?>">
                                         <h3 class="sr-only"><?php echo htmlspecialchars($countryName . ' - ' . $group['competition']); ?></h3>
                                         <div class="competition-header">
                                             <span class="competition-name">
@@ -851,8 +880,8 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
                                 $countryName = getCountryName($group['country']);
                             ?>
                                 <section class="competition-group" data-league-id="<?php echo $leagueId; ?>" 
-                                     data-country="<?php echo htmlspecialchars($group['country']); ?>"
-                                     data-competition="<?php echo htmlspecialchars($group['competition']); ?>">
+                                         data-country="<?php echo htmlspecialchars($group['country']); ?>"
+                                         data-competition="<?php echo htmlspecialchars($group['competition']); ?>">
                                     <h3 class="sr-only"><?php echo htmlspecialchars($countryName . ' - ' . $group['competition']); ?></h3>
                                     <div class="competition-header">
                                         <span class="competition-name">
