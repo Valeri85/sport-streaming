@@ -9,7 +9,7 @@ Act as a professional SEO specialist. Generate one Google-optimized Title and on
 
 Follow these rules strictly:
 
-Keyword Format: "BrandName SportName" (e.g., "Eplsite Football")
+Keyword Format: "BrandName SportName" (e.g., "P2p4u Football")
 
 Title Rules:
 
@@ -24,11 +24,60 @@ Description Rules:
 - Must describe the core offering and key benefits (e.g., "watch for free," "no sign-up," "high-quality streams").
 - Must include a subtle call-to-action.
 
-My Keyword is: "Eplsite bowling"
+My Keyword is: "P2p4u Football"
 
-Instead of hyphen use symbol "|" for example: "Eplsite Climbing |",
+Instead of hyphen use symbol "|" for example: "P2p4u Climbing |",
 also if sport name is in lower case or with hyphen. give me response without hyphen and in capitalize firs letters.
-more sport names are listed here and do same with them also: darts, chess, e-sports, others.
+more sport names are listed here and do same with them also: "Football",
+"Basketball",
+"Tennis",
+"Ice Hockey",
+"Baseball",
+"Rugby Union",
+"Rugby League",
+"Cricket",
+"American Football",
+"Volleyball",
+"Beach Volleyball",
+"Handball",
+"Beach Handball",
+"Beach Soccer",
+"Aussie Rules",
+"Futsal",
+"Badminton",
+"Netball",
+"Floorball",
+"Combat Sports",
+"Boxing",
+"MMA",
+"Snooker",
+"Billiard",
+"Table Tennis",
+"Padel Tennis",
+"Squash",
+"Motorsport",
+"Racing",
+"Cycling",
+"Equestrianism",
+"Golf",
+"Field Hockey",
+"Lacrosse",
+"Athletics",
+"Gymnastics",
+"Weightlifting",
+"Climbing",
+"Winter Sports",
+"Bandy",
+"Curling",
+"Triathlon",
+"Water Sports",
+"Water Polo",
+"Sailing",
+"Bowling",
+"Darts",
+"Chess",
+"E-sports",
+"Others".
 Now, generate the output.
 
 ---
