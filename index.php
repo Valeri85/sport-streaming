@@ -3,9 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// ==========================================
-// DOMAIN DETECTION & WEBSITE LOADING
-// ==========================================
+// ✅ FIX: Get domain and normalize it (remove www. prefix)
 $domain = $_SERVER['HTTP_HOST'];
 $domain = str_replace('www.', '', strtolower(trim($domain)));
 
@@ -20,6 +18,7 @@ $websites = $configData['websites'] ?? [];
 
 $website = null;
 foreach ($websites as $site) {
+    // ✅ FIX: Also normalize the domain from JSON before comparing
     $siteDomain = str_replace('www.', '', strtolower(trim($site['domain'])));
     
     if ($siteDomain === $domain && $site['status'] === 'active') {
@@ -29,6 +28,7 @@ foreach ($websites as $site) {
 }
 
 if (!$website) {
+    // ✅ IMPROVED ERROR: Show what we're looking for vs what we have
     die("Website not found. Looking for: '" . htmlspecialchars($domain) . "'. Available domains: " . 
         implode(', ', array_map(function($s) { 
             return "'" . str_replace('www.', '', strtolower(trim($s['domain']))) . "'";
@@ -47,6 +47,7 @@ if (is_dir($langDir)) {
         $langCode = basename($file, '.json');
         $langData = json_decode(file_get_contents($file), true);
         
+        // Only include active languages
         if (isset($langData['language_info']) && ($langData['language_info']['active'] ?? false)) {
             $availableLanguages[$langCode] = [
                 'code' => $langCode,
@@ -59,14 +60,23 @@ if (is_dir($langDir)) {
 
 // ==========================================
 // DETERMINE ACTIVE LANGUAGE
+// Priority: 1. URL path (/es) 2. Cookie 3. Admin default
 // ==========================================
 $defaultLanguage = $website['language'] ?? 'en';
 $websiteLanguage = $defaultLanguage;
 
+// ==========================================
+// Clean URL Language Detection
+// Check if language code is in URL (from .htaccess rewrite)
+// .htaccess passes ?url_lang=xx when URL is /xx or /xx/...
+// ==========================================
 $urlLang = $_GET['url_lang'] ?? null;
 
 if ($urlLang && array_key_exists($urlLang, $availableLanguages)) {
+    // Language code in URL
     if ($urlLang === $defaultLanguage) {
+        // Default language in URL - redirect to clean URL (only one redirect, SEO friendly)
+        // Delete cookie first
         setcookie('user_language', '', time() - 3600, '/');
         
         $redirectPath = '/';
@@ -76,6 +86,7 @@ if ($urlLang && array_key_exists($urlLang, $availableLanguages)) {
             $redirectPath = '/live-' . $_GET['sport'];
         }
         
+        // Preserve tab parameter
         if (isset($_GET['tab'])) {
             $redirectPath .= '?tab=' . $_GET['tab'];
         }
@@ -84,15 +95,22 @@ if ($urlLang && array_key_exists($urlLang, $availableLanguages)) {
         exit;
     }
     
+    // Non-default language in URL - use it and set cookie
     $websiteLanguage = $urlLang;
     setcookie('user_language', $websiteLanguage, time() + (30 * 24 * 60 * 60), '/');
 }
+// No language in URL - this means default language OR user navigating within site
 elseif (!$urlLang) {
+    // ✅ KEY FIX: Check if user explicitly clicked default language link
+    // We detect this by checking HTTP_REFERER - if they came from a language URL
+    // and now on clean URL, they switched to default
     $referer = $_SERVER['HTTP_REFERER'] ?? '';
     $currentHost = $_SERVER['HTTP_HOST'] ?? '';
     
+    // Check if referer is from same site with a language prefix
     $cameFromLanguageUrl = false;
     if (!empty($referer) && strpos($referer, $currentHost) !== false) {
+        // Check if referer had a language code like /es, /fr, etc.
         foreach ($availableLanguages as $code => $langInfo) {
             if ($code !== $defaultLanguage && preg_match('#/' . $code . '(/|$|\?)#', $referer)) {
                 $cameFromLanguageUrl = true;
@@ -102,21 +120,30 @@ elseif (!$urlLang) {
     }
     
     if ($cameFromLanguageUrl) {
+        // User came from a language URL to clean URL = they switched to default
+        // Delete the cookie
         setcookie('user_language', '', time() - 3600, '/');
         $websiteLanguage = $defaultLanguage;
     }
+    // Check cookie for returning visitors (not switching)
     elseif (isset($_COOKIE['user_language']) && array_key_exists($_COOKIE['user_language'], $availableLanguages)) {
         $websiteLanguage = $_COOKIE['user_language'];
     }
+    // Fallback to default language (already set above)
 }
+// Fallback to default language (already set above)
 
+// Store default language for template use
 $siteDefaultLanguage = $defaultLanguage;
 
 // ==========================================
 // HELPER: Build language URL
+// Returns clean URL for language switcher links
 // ==========================================
 function buildLanguageUrl($langCode, $defaultLang, $activeSport = null, $viewFavorites = false, $activeTab = 'all') {
+    // Build the path
     if ($langCode === $defaultLang) {
+        // Default language = no prefix, clean URL
         $path = '/';
         if ($viewFavorites) {
             $path = '/favorites';
@@ -124,6 +151,7 @@ function buildLanguageUrl($langCode, $defaultLang, $activeSport = null, $viewFav
             $path = '/live-' . $activeSport;
         }
     } else {
+        // Non-default language = add prefix
         $path = '/' . $langCode;
         if ($viewFavorites) {
             $path .= '/favorites';
@@ -132,6 +160,7 @@ function buildLanguageUrl($langCode, $defaultLang, $activeSport = null, $viewFav
         }
     }
     
+    // Add tab parameter if not 'all'
     if ($activeTab !== 'all' && !$viewFavorites) {
         $path .= '?tab=' . $activeTab;
     }
@@ -143,12 +172,16 @@ function buildLanguageUrl($langCode, $defaultLang, $activeSport = null, $viewFav
 // HELPER: Build internal link with language prefix
 // ==========================================
 function langUrl($path, $websiteLanguage, $defaultLanguage) {
+    // If current language is NOT the default, add prefix
     if ($websiteLanguage !== $defaultLanguage) {
+        // Handle root path
         if ($path === '/') {
             return '/' . $websiteLanguage;
         }
+        // Handle other paths
         return '/' . $websiteLanguage . $path;
     }
+    // Default language - no prefix
     return $path;
 }
 
@@ -157,6 +190,7 @@ function langUrl($path, $websiteLanguage, $defaultLanguage) {
 // ==========================================
 $langFile = __DIR__ . '/config/lang/' . $websiteLanguage . '.json';
 
+// Fallback to English if language file not found
 if (!file_exists($langFile)) {
     $langFile = __DIR__ . '/config/lang/en.json';
     $websiteLanguage = 'en';
@@ -169,37 +203,40 @@ if (file_exists($langFile)) {
 }
 
 // ==========================================
-// TRANSLATION HELPER FUNCTIONS
+// TRANSLATION HELPER FUNCTION
 // ==========================================
 function t($key, $section = 'ui') {
     global $lang;
     
+    // Handle nested keys like 'footer.sports'
     if (strpos($key, '.') !== false) {
         $parts = explode('.', $key);
         $section = $parts[0];
         $key = $parts[1];
     }
     
+    // Return translated text or key as fallback
     if (isset($lang[$section][$key])) {
         return $lang[$section][$key];
     }
     
+    // Fallback: return key formatted nicely
     return ucfirst(str_replace('_', ' ', $key));
 }
 
+// Function to translate sport name
 function tSport($sportName) {
     global $lang;
     
+    // Look up in sports translations
     if (isset($lang['sports'][$sportName])) {
         return $lang['sports'][$sportName];
     }
     
+    // Fallback: return original name
     return $sportName;
 }
 
-// ==========================================
-// WEBSITE CONFIG VARIABLES
-// ==========================================
 $siteName = $website['site_name'];
 $logo = $website['logo'];
 $primaryColor = $website['primary_color'];
@@ -207,9 +244,6 @@ $secondaryColor = $website['secondary_color'];
 $language = $website['language'];
 $sidebarContent = $website['sidebar_content'];
 
-// ==========================================
-// LOAD GAMES DATA
-// ==========================================
 $jsonFile = '/var/www/u1852176/data/www/data/data.json';
 $gamesData = [];
 if (file_exists($jsonFile)) {
@@ -218,9 +252,7 @@ if (file_exists($jsonFile)) {
     $gamesData = $data['games'] ?? [];
 }
 
-// ==========================================
-// SLACK NOTIFICATION FOR NEW SPORTS
-// ==========================================
+// Function to send Slack notification about new sports
 function sendNewSportsNotification($newSports, $siteName) {
     $slackConfigFile = '/var/www/u1852176/data/www/streaming/config/slack-config.json';
     if (!file_exists($slackConfigFile)) {
@@ -247,6 +279,13 @@ function sendNewSportsNotification($newSports, $siteName) {
                     'type' => 'mrkdwn',
                     'text' => "*Website:* " . $siteName . "\n*New Sports Found in data.json:*\n" . $sportsList . "\n\n⚠️ Please add these sports to CMS and configure SEO."
                 ]
+            ],
+            [
+                'type' => 'section',
+                'text' => [
+                    'type' => 'mrkdwn',
+                    'text' => "*Action Required:*\n1. Go to CMS > Manage Sports\n2. Add the new sport categories\n3. Configure SEO for new sport pages"
+                ]
             ]
         ]
     ];
@@ -263,6 +302,7 @@ function sendNewSportsNotification($newSports, $siteName) {
     return $result;
 }
 
+// Check for new sports in data.json
 function checkForNewSports($gamesData, $configuredSports, $siteName, $websiteId) {
     $dataSports = [];
     foreach ($gamesData as $game) {
@@ -274,6 +314,7 @@ function checkForNewSports($gamesData, $configuredSports, $siteName, $websiteId)
     
     $newSports = [];
     foreach ($dataSports as $sport) {
+        // Exact match only - no grouping logic
         if (!in_array($sport, $configuredSports)) {
             $newSports[] = $sport;
         }
@@ -313,10 +354,11 @@ $configuredSports = $website['sports_categories'] ?? [];
 checkForNewSports($gamesData, $configuredSports, $siteName, $website['id']);
 
 // ==========================================
-// ROUTE DETECTION
+// ROUTE DETECTION (updated for .htaccess params)
 // ==========================================
 $activeTab = isset($_GET['tab']) ? $_GET['tab'] : 'all';
 
+// Check for sport from .htaccess rewrite first, then fallback to old method
 $activeSport = $_GET['sport'] ?? null;
 
 if (!$activeSport) {
@@ -324,6 +366,7 @@ if (!$activeSport) {
     $path = parse_url($requestUri, PHP_URL_PATH);
     $path = trim($path, '/');
     
+    // Remove language prefix if present for route detection
     if ($urlLang && strpos($path, $urlLang) === 0) {
         $path = ltrim(substr($path, strlen($urlLang)), '/');
     }
@@ -333,6 +376,7 @@ if (!$activeSport) {
     }
 }
 
+// Check for favorites from .htaccess rewrite first
 $viewFavorites = false;
 if (isset($_GET['view']) && $_GET['view'] === 'favorites') {
     $viewFavorites = true;
@@ -343,40 +387,50 @@ if (isset($_GET['view']) && $_GET['view'] === 'favorites') {
 // ==========================================
 // CANONICAL URL & NOINDEX LOGIC
 // ==========================================
+
+// Get base canonical URL from website config
 $baseCanonicalUrl = $website['canonical_url'] ?? 'https://www.' . $domain;
 $baseCanonicalUrl = rtrim($baseCanonicalUrl, '/');
 
-$canonicalUrl = $baseCanonicalUrl;
-$shouldNoindex = false;
+// Determine the canonical URL and whether to index
+$canonicalUrl = $baseCanonicalUrl; // Default to homepage
+$shouldNoindex = false; // Default: allow indexing
 
+// Build language prefix for canonical URL
 $langPrefix = ($websiteLanguage !== $siteDefaultLanguage) ? '/' . $websiteLanguage : '';
 
 if ($viewFavorites) {
+    // Favorites page - don't index (user-specific)
     $canonicalUrl = $baseCanonicalUrl . $langPrefix . '/favorites';
-    $shouldNoindex = true;
+    $shouldNoindex = true; // Don't index favorites
     
 } elseif ($activeSport) {
+    // Sport-specific page
     $canonicalUrl = $baseCanonicalUrl . $langPrefix . '/live-' . $activeSport;
     
+    // If there's a tab filter (?tab=soon or ?tab=tomorrow), don't index
     if ($activeTab !== 'all') {
-        $shouldNoindex = true;
+        $shouldNoindex = true; // Don't index filtered views
     }
     
 } else {
+    // Homepage
     if ($langPrefix) {
         $canonicalUrl = $baseCanonicalUrl . $langPrefix;
     } else {
         $canonicalUrl = $baseCanonicalUrl . '/';
     }
     
+    // If homepage has tab filter, don't index
     if ($activeTab !== 'all') {
-        $shouldNoindex = true;
+        $shouldNoindex = true; // Don't index filtered views
     }
 }
 
 // ==========================================
-// SEO TITLE & DESCRIPTION
+// END: CANONICAL URL & NOINDEX LOGIC
 // ==========================================
+
 $pagesSeo = $website['pages_seo'] ?? [];
 $seoTitle = $website['seo_title'];
 $seoDescription = $website['seo_description'];
@@ -398,9 +452,6 @@ if ($viewFavorites) {
     }
 }
 
-// ==========================================
-// HELPER FUNCTIONS
-// ==========================================
 function groupGamesBySport($games) {
     $grouped = [];
     foreach ($games as $game) {
@@ -479,10 +530,13 @@ function getCountryName($countryFile) {
     return str_replace('-', ' ', ucwords($country));
 }
 
-// ==========================================
-// MASTER SPORT ICON FUNCTION
-// Icons are stored in /shared/icons/sports/ and shared across all websites
-// ==========================================
+/**
+ * Get sport icon from master icons folder
+ * Icons are stored in /shared/icons/sports/ and shared across all websites
+ * 
+ * @param string $sportName The sport name (e.g., "Ice Hockey", "Football")
+ * @return string HTML img tag or emoji fallback
+ */
 function getSportIcon($sportName) {
     // Convert sport name to filename: "Ice Hockey" -> "ice-hockey"
     $filename = strtolower($sportName);
@@ -509,6 +563,7 @@ function getSportIcon($sportName) {
 
 // Function to render logo with RELATIVE path
 function renderLogo($logo) {
+    // Check if logo contains file extension (is a file)
     if (preg_match('/\.(png|jpg|jpeg|webp|svg|avif)$/i', $logo)) {
         $logoFile = htmlspecialchars($logo);
         $logoPath = '/images/logos/' . $logoFile;
@@ -518,15 +573,13 @@ function renderLogo($logo) {
     }
 }
 
-// ==========================================
-// FILTER GAMES
-// ==========================================
 $filteredGames = $gamesData;
 
 if ($viewFavorites) {
     $filteredGames = $gamesData;
 } else {
     if ($activeSport) {
+        // REMOVED GROUPING LOGIC - Now exact match only
         $activeSportName = str_replace('-', ' ', $activeSport);
         $filteredGames = array_filter($filteredGames, function($game) use ($activeSportName) {
             return strtolower($game['sport']) === strtolower($activeSportName);
@@ -553,9 +606,11 @@ foreach ($sportCategoriesFromConfig as $sportName) {
     $sportCounts[$sportName] = 0;
 }
 
+// Count games for each configured sport - exact match only
 foreach ($gamesData as $game) {
     $sport = $game['sport'];
     
+    // Exact match only - no grouping
     if (in_array($sport, $sportCategoriesFromConfig)) {
         $sportCounts[$sport]++;
     }
@@ -593,6 +648,7 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
     
     <link rel="stylesheet" href="/styles.css">
     <script>
+        // Pass translations to JavaScript
         window.TRANSLATIONS = <?php echo json_encode($jsTranslations, JSON_UNESCAPED_UNICODE); ?>;
     </script>
     <script src="/main.js" defer></script>
@@ -600,6 +656,8 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
         .date-tab.active {
             background-color: <?php echo $secondaryColor; ?>;
         }
+        
+        /* Logo image styling */
         .logo-image {
             border-radius: 8px;
         }
@@ -626,6 +684,7 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
                 if ($viewFavorites) {
                     echo htmlspecialchars(t('my_favorites'));
                 } elseif ($activeSport) {
+                    // Show translated sport name in title
                     $activeSportName = ucwords(str_replace('-', ' ', $activeSport));
                     echo htmlspecialchars(tSport($activeSportName));
                 } else {
@@ -640,6 +699,7 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
             </button>
             
             <?php if (count($availableLanguages) > 1): ?>
+            <!-- LANGUAGE SWITCHER - Clean URLs -->
             <div class="language-switcher" id="languageSwitcher">
                 <button class="language-toggle" id="languageToggle" aria-label="<?php echo htmlspecialchars(t('change_language', 'accessibility')); ?>" aria-expanded="false">
                     <span class="current-flag"><?php echo $availableLanguages[$websiteLanguage]['flag'] ?? '🌐'; ?></span>
@@ -648,7 +708,9 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
                 <div class="language-dropdown" id="languageDropdown">
                     <?php foreach ($availableLanguages as $code => $langInfo): 
                         $isActive = ($code === $websiteLanguage);
+                        // Build clean URL for this language
                         $langSwitchUrl = buildLanguageUrl($code, $siteDefaultLanguage, $activeSport, $viewFavorites, $activeTab);
+                        // Add onclick to delete cookie when switching to default language
                         $onclickAttr = ($code === $siteDefaultLanguage) ? 'onclick="document.cookie=\'user_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;\';"' : '';
                     ?>
                         <a href="<?php echo htmlspecialchars($langSwitchUrl); ?>" 
@@ -664,6 +726,7 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
             </div>
             <?php endif; ?>
             
+            <!-- BURGER MENU -->
             <button class="burger-menu" 
                     id="burgerMenu" 
                     popovertarget="sidebar"
@@ -704,14 +767,12 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
                 $translatedSportName = tSport($sportName);
                 $sportUrl = langUrl('/live-' . $sportSlug, $websiteLanguage, $siteDefaultLanguage);
             ?>
-                <a href="<?php echo $sportUrl; ?>" class="menu-item <?php echo $isActive ? 'active' : ''; ?>">
+                <a href="<?php echo $sportUrl; ?>" class="menu-item <?php echo $isActive ? 'active' : ''; ?>" onclick="saveScrollPosition(event)">
                     <span class="menu-item-left">
                         <span class="sport-icon"><?php echo $icon; ?></span>
                         <span class="sport-name"><?php echo htmlspecialchars($translatedSportName); ?></span>
                     </span>
-                    <?php if ($count > 0): ?>
-                        <span class="sport-count"><?php echo $count; ?></span>
-                    <?php endif; ?>
+                    <span class="sport-count"><?php echo $count; ?></span>
                 </a>
             <?php endforeach; ?>
         </nav>
@@ -720,10 +781,11 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
     <!-- MAIN CONTENT -->
     <main class="main-content">
         <?php if (!$viewFavorites): ?>
-        <nav class="date-tabs-wrapper" aria-label="<?php echo htmlspecialchars(t('filter_by_time', 'accessibility')); ?>">
+        <nav class="date-tabs-wrapper" aria-label="<?php echo htmlspecialchars(t('time_filter', 'accessibility')); ?>">
             <div class="date-tabs">
                 <?php 
-                    $tabBaseUrl = $activeSport ? langUrl('/live-' . $activeSport, $websiteLanguage, $siteDefaultLanguage) : $homeUrl;
+                // Build tab URLs with language prefix
+                $tabBaseUrl = $activeSport ? langUrl('/live-' . $activeSport, $websiteLanguage, $siteDefaultLanguage) : $homeUrl;
                 ?>
                 <a href="<?php echo $tabBaseUrl; ?>" class="date-tab <?php echo $activeTab === 'all' ? 'active' : ''; ?>"><?php echo htmlspecialchars(t('all')); ?></a>
                 <a href="<?php echo $tabBaseUrl . '?tab=soon'; ?>" class="date-tab <?php echo $activeTab === 'soon' ? 'active' : ''; ?>"><?php echo htmlspecialchars(t('soon')); ?></a>
@@ -762,118 +824,119 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
                                 $byCountryLeague = groupByCountryAndLeague($sportGames);
                                 foreach ($byCountryLeague as $key => $group):
                                     $leagueId = 'league-' . md5($sportName . $group['country'] . $group['competition']);
+                                    $countryFlag = getCountryFlag($group['country']);
+                                    $countryName = getCountryName($group['country']);
                                 ?>
-                                    <section class="country-section">
-                                        <details open>
-                                            <summary class="country-header">
-                                                <span class="country-info">
-                                                    <span class="country-flag"><?php echo getCountryFlag($group['country']); ?></span>
-                                                    <span><?php echo htmlspecialchars($group['competition']); ?></span>
-                                                </span>
-                                                <span class="games-count"><?php echo count($group['games']); ?></span>
-                                            </summary>
-                                            
-                                            <ul class="games-list" role="list">
-                                                <?php foreach ($group['games'] as $game): 
-                                                    $gameId = $game['id'];
-                                                    $timeCategory = getTimeCategory($game['date']);
-                                                ?>
-                                                    <li class="game-card" 
-                                                        data-game-id="<?php echo htmlspecialchars($gameId); ?>"
-                                                        data-time-category="<?php echo $timeCategory; ?>">
-                                                        <div class="game-time"><?php echo formatGameTime($game['date']); ?></div>
-                                                        <div class="game-teams">
-                                                            <span class="team"><?php echo htmlspecialchars($game['home']); ?></span>
-                                                            <span class="vs">vs</span>
-                                                            <span class="team"><?php echo htmlspecialchars($game['away']); ?></span>
-                                                        </div>
-                                                        <button class="favorite-btn" 
-                                                                data-game-id="<?php echo htmlspecialchars($gameId); ?>"
-                                                                aria-label="<?php echo htmlspecialchars(t('add_to_favorites', 'accessibility')); ?>">
-                                                            ☆
-                                                        </button>
-                                                    </li>
-                                                <?php endforeach; ?>
-                                            </ul>
-                                        </details>
+                                    <section class="competition-group" data-league-id="<?php echo $leagueId; ?>" 
+                                             data-country="<?php echo htmlspecialchars($group['country']); ?>"
+                                             data-competition="<?php echo htmlspecialchars($group['competition']); ?>">
+                                        <h3 class="sr-only"><?php echo htmlspecialchars($countryName . ' - ' . $group['competition']); ?></h3>
+                                        <div class="competition-header">
+                                            <span class="competition-name">
+                                                <span><?php echo $countryFlag; ?></span>
+                                                <span><?php echo htmlspecialchars($countryName); ?></span>
+                                                <span>•</span>
+                                                <span><?php echo htmlspecialchars($group['competition']); ?></span>
+                                            </span>
+                                            <span class="league-favorite" data-league-id="<?php echo $leagueId; ?>" role="button" aria-label="<?php echo htmlspecialchars(t('favorite_league', 'accessibility')); ?>">☆</span>
+                                        </div>
+                                        
+                                        <?php foreach ($group['games'] as $game): ?>
+                                            <details class="game-item-details" data-game-id="<?php echo $game['id']; ?>" data-league-id="<?php echo $leagueId; ?>">
+                                                <summary class="game-item-summary">
+                                                    <time class="game-time" datetime="<?php echo $game['date']; ?>"><?php echo formatGameTime($game['date']); ?></time>
+                                                    <span class="game-teams">
+                                                        <span class="team">
+                                                            <span class="team-icon"></span>
+                                                            <?php echo htmlspecialchars($game['match']); ?>
+                                                        </span>
+                                                    </span>
+                                                    <span class="game-actions">
+                                                        <span class="link-count-badge" data-game-id="<?php echo $game['id']; ?>">0</span>
+                                                        <span class="favorite-star" data-game-id="<?php echo $game['id']; ?>" role="button" aria-label="<?php echo htmlspecialchars(t('favorite_game', 'accessibility')); ?>">☆</span>
+                                                    </span>
+                                                </summary>
+                                                <div class="game-links-container"></div>
+                                            </details>
+                                        <?php endforeach; ?>
                                     </section>
                                 <?php endforeach; ?>
                             </details>
                         </article>
                     <?php endforeach; ?>
                 </template>
+            <?php elseif (empty($groupedBySport)): ?>
+                <div class="no-games">
+                    <p><?php echo htmlspecialchars(t('no_games', 'messages')); ?></p>
+                </div>
             <?php else: ?>
-                <?php if (empty($groupedBySport)): ?>
-                    <div class="no-games">
-                        <p><?php echo htmlspecialchars(t('no_games_found', 'messages')); ?></p>
-                    </div>
-                <?php else: ?>
-                    <?php foreach ($groupedBySport as $sportName => $sportGames):
-                        $sportIconDisplay = getSportIcon($sportName);
-                        $translatedSportName = tSport($sportName);
-                    ?>
-                        <article class="sport-category">
-                            <h2 class="sr-only"><?php echo htmlspecialchars($translatedSportName); ?></h2>
-                            <details open>
-                                <summary class="sport-header">
-                                    <span class="sport-title">
-                                        <span><?php echo $sportIconDisplay; ?></span>
-                                        <span><?php echo htmlspecialchars($translatedSportName); ?></span>
-                                        <span class="sport-count-badge"><?php echo count($sportGames); ?></span>
-                                    </span>
-                                </summary>
-                                
-                                <?php
-                                $byCountryLeague = groupByCountryAndLeague($sportGames);
-                                foreach ($byCountryLeague as $key => $group):
-                                    $leagueId = 'league-' . md5($sportName . $group['country'] . $group['competition']);
-                                ?>
-                                    <section class="country-section">
-                                        <details open>
-                                            <summary class="country-header">
-                                                <span class="country-info">
-                                                    <span class="country-flag"><?php echo getCountryFlag($group['country']); ?></span>
-                                                    <span><?php echo htmlspecialchars($group['competition']); ?></span>
+                <?php foreach ($groupedBySport as $sportName => $sportGames): 
+                    $sportIconDisplay = getSportIcon($sportName);
+                    $sportId = strtolower(str_replace(' ', '-', $sportName));
+                    $translatedSportName = tSport($sportName);
+                ?>
+                    <article class="sport-category" id="<?php echo $sportId; ?>" data-sport="<?php echo htmlspecialchars($sportName); ?>">
+                        <h2 class="sr-only"><?php echo htmlspecialchars($translatedSportName); ?></h2>
+                        <details open>
+                            <summary class="sport-header">
+                                <span class="sport-title">
+                                    <span><?php echo $sportIconDisplay; ?></span>
+                                    <span><?php echo htmlspecialchars($translatedSportName); ?></span>
+                                    <span class="sport-count-badge"><?php echo count($sportGames); ?></span>
+                                </span>
+                            </summary>
+                            
+                            <?php
+                            $byCountryLeague = groupByCountryAndLeague($sportGames);
+                            foreach ($byCountryLeague as $key => $group):
+                                $leagueId = 'league-' . md5($sportName . $group['country'] . $group['competition']);
+                                $countryFlag = getCountryFlag($group['country']);
+                                $countryName = getCountryName($group['country']);
+                            ?>
+                                <section class="competition-group" data-league-id="<?php echo $leagueId; ?>" 
+                                         data-country="<?php echo htmlspecialchars($group['country']); ?>"
+                                         data-competition="<?php echo htmlspecialchars($group['competition']); ?>">
+                                    <h3 class="sr-only"><?php echo htmlspecialchars($countryName . ' - ' . $group['competition']); ?></h3>
+                                    <div class="competition-header">
+                                        <span class="competition-name">
+                                            <span><?php echo $countryFlag; ?></span>
+                                            <span><?php echo htmlspecialchars($countryName); ?></span>
+                                            <span>•</span>
+                                            <span><?php echo htmlspecialchars($group['competition']); ?></span>
+                                        </span>
+                                        <span class="league-favorite" data-league-id="<?php echo $leagueId; ?>" role="button" aria-label="<?php echo htmlspecialchars(t('favorite_league', 'accessibility')); ?>">☆</span>
+                                    </div>
+                                    
+                                    <?php foreach ($group['games'] as $game): ?>
+                                        <details class="game-item-details" data-game-id="<?php echo $game['id']; ?>" data-league-id="<?php echo $leagueId; ?>">
+                                            <summary class="game-item-summary">
+                                                <time class="game-time" datetime="<?php echo $game['date']; ?>"><?php echo formatGameTime($game['date']); ?></time>
+                                                <span class="game-teams">
+                                                    <span class="team">
+                                                        <span class="team-icon"></span>
+                                                        <?php echo htmlspecialchars($game['match']); ?>
+                                                    </span>
                                                 </span>
-                                                <span class="games-count"><?php echo count($group['games']); ?></span>
+                                                <span class="game-actions">
+                                                    <span class="link-count-badge" data-game-id="<?php echo $game['id']; ?>">0</span>
+                                                    <span class="favorite-star" data-game-id="<?php echo $game['id']; ?>" role="button" aria-label="<?php echo htmlspecialchars(t('favorite_game', 'accessibility')); ?>">☆</span>
+                                                </span>
                                             </summary>
-                                            
-                                            <ul class="games-list" role="list">
-                                                <?php foreach ($group['games'] as $game): 
-                                                    $gameId = $game['id'];
-                                                    $timeCategory = getTimeCategory($game['date']);
-                                                ?>
-                                                    <li class="game-card" 
-                                                        data-game-id="<?php echo htmlspecialchars($gameId); ?>"
-                                                        data-time-category="<?php echo $timeCategory; ?>">
-                                                        <div class="game-time"><?php echo formatGameTime($game['date']); ?></div>
-                                                        <div class="game-teams">
-                                                            <span class="team"><?php echo htmlspecialchars($game['home']); ?></span>
-                                                            <span class="vs">vs</span>
-                                                            <span class="team"><?php echo htmlspecialchars($game['away']); ?></span>
-                                                        </div>
-                                                        <button class="favorite-btn" 
-                                                                data-game-id="<?php echo htmlspecialchars($gameId); ?>"
-                                                                aria-label="<?php echo htmlspecialchars(t('add_to_favorites', 'accessibility')); ?>">
-                                                            ☆
-                                                        </button>
-                                                    </li>
-                                                <?php endforeach; ?>
-                                            </ul>
+                                            <div class="game-links-container"></div>
                                         </details>
-                                    </section>
-                                <?php endforeach; ?>
-                            </details>
-                        </article>
-                    <?php endforeach; ?>
-                <?php endif; ?>
+                                    <?php endforeach; ?>
+                                </section>
+                            <?php endforeach; ?>
+                        </details>
+                    </article>
+                <?php endforeach; ?>
             <?php endif; ?>
         </section>
     </main>
 
     <!-- RIGHT SIDEBAR -->
     <aside class="right-sidebar">
-        <div class="sidebar-widget">
+        <div class="sidebar-content">
             <?php echo $sidebarContent; ?>
         </div>
     </aside>
