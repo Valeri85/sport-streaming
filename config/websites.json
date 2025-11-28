@@ -6,6 +6,7 @@
 			"site_name": "SportLemons",
 			"logo": "sportlemons-logo.webp",
 			"primary_color": "#ffa500",
+			"secondary_color": "#FF8C00",
 			"language": "en",
 			"sidebar_content": "<h2>About SportLemons</h2><p>Your #1 destination for live sports streaming. Watch all major sports events for free!</p>",
 			"status": "active",

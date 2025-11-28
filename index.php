@@ -52,7 +52,8 @@ if (is_dir($langDir)) {
             $availableLanguages[$langCode] = [
                 'code' => $langCode,
                 'name' => $langData['language_info']['name'] ?? $langCode,
-                'flag' => $langData['language_info']['flag'] ?? '🌐'
+                'flag' => $langData['language_info']['flag'] ?? '🌐',
+                'flag_code' => $langData['language_info']['flag_code'] ?? strtoupper($langCode)
             ];
         }
     }
@@ -432,8 +433,8 @@ if ($viewFavorites) {
 // ==========================================
 
 $pagesSeo = $website['pages_seo'] ?? [];
-$seoTitle = $website['seo_title'];
-$seoDescription = $website['seo_description'];
+$seoTitle = $website['pages_seo']['home']['title'];
+$seoDescription = $website['pages_seo']['home']['description'];
 
 if ($viewFavorites) {
     if (isset($pagesSeo['favorites'])) {
@@ -699,25 +700,26 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
             </button>
             
             <?php if (count($availableLanguages) > 1): ?>
-            <!-- LANGUAGE SWITCHER - Clean URLs -->
+            <!-- LANGUAGE SWITCHER - Clean URLs with Image Flags -->
             <div class="language-switcher" id="languageSwitcher">
                 <button class="language-toggle" id="languageToggle" aria-label="<?php echo htmlspecialchars(t('change_language', 'accessibility')); ?>" aria-expanded="false">
-                    <span class="current-flag"><?php echo $availableLanguages[$websiteLanguage]['flag'] ?? '🌐'; ?></span>
-                    <span class="language-arrow">▼</span>
+                    <img src="/shared/icons/flags/<?php echo htmlspecialchars($availableLanguages[$websiteLanguage]['flag_code'] ?? 'GB'); ?>.svg" 
+                        alt="<?php echo htmlspecialchars($availableLanguages[$websiteLanguage]['name'] ?? 'Language'); ?>" 
+                        class="current-flag">
+                    <spsan class="language-arrow">▼</spsan>
                 </button>
                 <div class="language-dropdown" id="languageDropdown">
                     <?php foreach ($availableLanguages as $code => $langInfo): 
                         $isActive = ($code === $websiteLanguage);
-                        // Build clean URL for this language
                         $langSwitchUrl = buildLanguageUrl($code, $siteDefaultLanguage, $activeSport, $viewFavorites, $activeTab);
-                        // Add onclick to delete cookie when switching to default language
                         $onclickAttr = ($code === $siteDefaultLanguage) ? 'onclick="document.cookie=\'user_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;\';"' : '';
                     ?>
                         <a href="<?php echo htmlspecialchars($langSwitchUrl); ?>" 
-                           class="language-option <?php echo $isActive ? 'active' : ''; ?>"
-                           data-lang="<?php echo htmlspecialchars($code); ?>"
-                           <?php echo $onclickAttr; ?>>
-                            <span class="lang-flag"><?php echo $langInfo['flag']; ?></span>
+                        class="language-option <?php echo $isActive ? 'active' : ''; ?>"
+                        <?php echo $onclickAttr; ?>>
+                            <img src="/shared/icons/flags/<?php echo htmlspecialchars($langInfo['flag_code'] ?? 'GB'); ?>.svg" 
+                                alt="<?php echo htmlspecialchars($langInfo['name']); ?>" 
+                                class="lang-flag">
                             <span class="lang-name"><?php echo htmlspecialchars($langInfo['name']); ?></span>
                             <?php if ($isActive): ?><span class="lang-check">✓</span><?php endif; ?>
                         </a>
