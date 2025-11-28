@@ -191,6 +191,19 @@ function langUrl($path, $websiteLanguage, $defaultLanguage) {
 // ==========================================
 $langFile = __DIR__ . '/config/lang/' . $websiteLanguage . '.json';
 
+// ==========================================
+// RTL LANGUAGE DETECTION
+// ==========================================
+$rtlLanguages = ['ar', 'he', 'fa', 'ur']; // Arabic, Hebrew, Persian, Urdu
+$isRTL = in_array($websiteLanguage, $rtlLanguages);
+
+// Also check language_info from loaded language file if available
+if (isset($lang['language_info']['direction'])) {
+    $isRTL = ($lang['language_info']['direction'] === 'rtl');
+}
+
+$textDirection = $isRTL ? 'rtl' : 'ltr';
+
 // Fallback to English if language file not found
 if (!file_exists($langFile)) {
     $langFile = __DIR__ . '/config/lang/en.json';
@@ -634,7 +647,7 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
 
 ?>
 <!DOCTYPE html>
-<html lang="<?php echo htmlspecialchars($websiteLanguage); ?>">
+<html lang="<?php echo htmlspecialchars($websiteLanguage); ?>" dir="<?php echo $textDirection; ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -664,10 +677,12 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
         }
     </style>
 </head>
-<body data-viewing-favorites="<?php echo $viewFavorites ? 'true' : 'false'; ?>" 
-      data-primary-color="<?php echo $primaryColor; ?>"
-      data-active-sport="<?php echo $activeSport ?: ''; ?>"
-      data-active-tab="<?php echo $activeTab; ?>">
+<body class="<?php echo $isRTL ? 'rtl' : 'ltr'; ?>"
+        data-viewing-favorites="<?php echo $viewFavorites ? 'true' : 'false'; ?>" 
+        data-primary-color="<?php echo $primaryColor; ?>"
+        data-active-sport="<?php echo $activeSport ?: ''; ?>"
+        data-active-tab="<?php echo $activeTab; ?>"
+        data-direction="<?php echo $textDirection; ?>">
     
     <!-- HEADER -->
     <header class="header">
@@ -700,13 +715,13 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
             </button>
             
             <?php if (count($availableLanguages) > 1): ?>
-            <!-- LANGUAGE SWITCHER - Clean URLs with Image Flags -->
+            <!-- LANGUAGE SWITCHER - Compact Grid with Flags Only -->
             <div class="language-switcher" id="languageSwitcher">
                 <button class="language-toggle" id="languageToggle" aria-label="<?php echo htmlspecialchars(t('change_language', 'accessibility')); ?>" aria-expanded="false">
                     <img src="/shared/icons/flags/<?php echo htmlspecialchars($availableLanguages[$websiteLanguage]['flag_code'] ?? 'GB'); ?>.svg" 
                         alt="<?php echo htmlspecialchars($availableLanguages[$websiteLanguage]['name'] ?? 'Language'); ?>" 
                         class="current-flag">
-                    <spsan class="language-arrow">▼</spsan>
+                    <span class="language-arrow">▼</span>
                 </button>
                 <div class="language-dropdown" id="languageDropdown">
                     <?php foreach ($availableLanguages as $code => $langInfo): 
@@ -716,12 +731,12 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
                     ?>
                         <a href="<?php echo htmlspecialchars($langSwitchUrl); ?>" 
                         class="language-option <?php echo $isActive ? 'active' : ''; ?>"
+                        data-lang-name="<?php echo htmlspecialchars($langInfo['name'] ?? $code); ?>"
+                        title="<?php echo htmlspecialchars($langInfo['name'] ?? $code); ?>"
                         <?php echo $onclickAttr; ?>>
                             <img src="/shared/icons/flags/<?php echo htmlspecialchars($langInfo['flag_code'] ?? 'GB'); ?>.svg" 
-                                alt="<?php echo htmlspecialchars($langInfo['name']); ?>" 
+                                alt="<?php echo htmlspecialchars($langInfo['name'] ?? $code); ?>" 
                                 class="lang-flag">
-                            <span class="lang-name"><?php echo htmlspecialchars($langInfo['name']); ?></span>
-                            <?php if ($isActive): ?><span class="lang-check">✓</span><?php endif; ?>
                         </a>
                     <?php endforeach; ?>
                 </div>

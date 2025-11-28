@@ -1264,8 +1264,9 @@
 	}
 
 	/* ==========================================
-	   LANGUAGE SWITCHER
-	   ========================================== */
+    LANGUAGE SWITCHER - GRID LAYOUT
+    ==========================================*/
+
 	.language-switcher {
 		position: relative;
 	}
@@ -1318,7 +1319,6 @@
 		position: absolute;
 		top: calc(100% + var(--space-sm));
 		right: 0;
-		min-inline-size: 180px;
 		background: var(--clr-glass-bg);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
@@ -1330,90 +1330,399 @@
 		transform: translateY(-10px);
 		transition: all var(--transition-normal);
 		z-index: 100;
-		overflow: hidden;
+
+		/* Grid layout for flags */
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
+		gap: var(--space-xs);
+		padding: var(--space-sm);
+
+		/* Responsive sizing - Option B: prevents horizontal overflow */
+		min-inline-size: 200px;
+		max-inline-size: min(450px, 90vw);
+		max-block-size: clamp(280px, 60vh, 420px);
+		overflow-y: auto;
 
 		&.open {
 			opacity: 1;
 			visibility: visible;
 			transform: translateY(0);
 		}
+
+		/* Custom scrollbar */
+		&::-webkit-scrollbar {
+			width: 6px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: var(--clr-text-muted);
+			border-radius: 3px;
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background: var(--clr-text-secondary);
+		}
 	}
 
+	/* Compact flag-only option */
 	.language-option {
 		display: flex;
 		align-items: center;
-		gap: var(--space-sm);
-		padding: var(--space-md) var(--space-lg);
-		color: var(--clr-text-primary);
-		font-size: var(--text-sm);
-		font-weight: 500;
+		justify-content: center;
+		padding: var(--space-sm);
+		border-radius: var(--radius-md);
 		transition: all var(--transition-normal);
 		text-decoration: none;
-		border-block-end: 1px solid var(--clr-border);
-
-		&:last-child {
-			border-block-end: none;
-		}
+		position: relative;
+		aspect-ratio: 1;
+		min-width: 44px;
+		min-height: 44px;
 
 		&:hover {
 			background: var(--clr-hover-bg);
+			transform: scale(1.1);
 		}
 
 		&.active {
 			background: oklch(70% 0.18 70 / 0.15);
-			color: var(--clr-link);
+			box-shadow: 0 0 0 2px var(--clr-link);
+		}
+
+		/* Tooltip on hover - shows language name */
+		&::after {
+			content: attr(data-lang-name);
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			background: var(--clr-bg-primary);
+			color: var(--clr-text-primary);
+			padding: var(--space-xs) var(--space-sm);
+			border-radius: var(--radius-sm);
+			font-size: var(--text-xs);
+			white-space: nowrap;
+			opacity: 0;
+			visibility: hidden;
+			transition: all var(--transition-fast);
+			pointer-events: none;
+			box-shadow: var(--shadow-md);
+			border: 1px solid var(--clr-glass-border);
+			z-index: 10;
+		}
+
+		&:hover::after {
+			opacity: 1;
+			visibility: visible;
+			bottom: calc(100% + 5px);
 		}
 	}
 
 	.lang-flag {
-		width: 24px;
-		height: 18px;
+		width: 28px;
+		height: 21px;
 		object-fit: cover;
 		border-radius: 3px;
-		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-		flex-shrink: 0;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 	}
 
-	.lang-name {
-		flex: 1;
-	}
-
+	/* Hide text elements in compact mode */
+	.lang-name,
 	.lang-check {
-		color: var(--clr-success);
-		font-weight: 700;
-	}
-}
-
-@layer utilities {
-	.sr-only {
-		position: absolute;
-		inline-size: 1px;
-		block-size: 1px;
-		padding: 0;
-		margin: -1px;
-		overflow: hidden;
-		clip: rect(0, 0, 0, 0);
-		white-space: nowrap;
-		border-width: 0;
-	}
-
-	.desktop-only {
 		display: none;
 	}
 
-	@container viewport (min-width: 1024px) {
-		.desktop-only {
-			display: block;
+	/* ==========================================
+   RTL SUPPORT FOR LANGUAGE DROPDOWN
+   ========================================== */
+
+	[dir='rtl'] .language-dropdown {
+		right: auto;
+		left: 0;
+	}
+
+	[dir='rtl'] .language-toggle {
+		flex-direction: row-reverse;
+	}
+
+	[dir='rtl'] .language-option::after {
+		left: auto;
+		right: 50%;
+		transform: translateX(50%);
+	}
+
+	[dir='rtl'] .language-option:hover::after {
+		transform: translateX(50%);
+	}
+
+	@layer utilities {
+		.sr-only {
+			position: absolute;
+			inline-size: 1px;
+			block-size: 1px;
+			padding: 0;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0, 0, 0, 0);
+			white-space: nowrap;
+			border-width: 0;
 		}
-	}
 
-	.mobile-only {
-		display: block;
-	}
-
-	@container viewport (min-width: 1024px) {
-		.mobile-only {
+		.desktop-only {
 			display: none;
 		}
+
+		@container viewport (min-width: 1024px) {
+			.desktop-only {
+				display: block;
+			}
+		}
+
+		.mobile-only {
+			display: block;
+		}
+
+		@container viewport (min-width: 1024px) {
+			.mobile-only {
+				display: none;
+			}
+		}
 	}
+}
+
+/* ==========================================
+   RTL BASE OVERRIDES
+   ========================================== */
+
+/* Flip text alignment */
+[dir='rtl'] {
+	text-align: right;
+}
+
+[dir='rtl'] .header-page-title {
+	text-align: center; /* Keep centered */
+}
+
+/* ==========================================
+   RTL LAYOUT GRID
+   ========================================== */
+
+/* Flip the grid columns for desktop */
+@container viewport (min-width: 1024px) {
+	[dir='rtl'] body {
+		grid:
+			'header header header' auto
+			'right-sidebar main left-sidebar' 1fr
+			'footer footer footer' auto
+			/ var(--grid-rightbar) var(--grid-main) var(--grid-sidebar);
+	}
+}
+
+@container viewport (min-width: 768px) {
+	[dir='rtl'] body {
+		grid:
+			'header header' auto
+			'right-sidebar main' 1fr
+			'footer footer' auto
+			/ var(--grid-rightbar) var(--grid-main);
+	}
+}
+
+/* ==========================================
+   RTL HEADER
+   ========================================== */
+
+[dir='rtl'] .header {
+	flex-direction: row-reverse;
+}
+
+[dir='rtl'] .header-right {
+	flex-direction: row-reverse;
+}
+
+[dir='rtl'] .logo-title {
+	flex-direction: row-reverse;
+}
+
+/* ==========================================
+   RTL LANGUAGE DROPDOWN
+   ========================================== */
+
+[dir='rtl'] .language-dropdown {
+	right: auto;
+	left: 0;
+}
+
+[dir='rtl'] .language-toggle {
+	flex-direction: row-reverse;
+}
+
+/* Tooltip position adjustment for RTL */
+[dir='rtl'] .language-option::after {
+	left: auto;
+	right: 50%;
+	transform: translateX(50%);
+}
+
+/* ==========================================
+   RTL SIDEBAR & NAVIGATION
+   ========================================== */
+
+[dir='rtl'] .sidebar {
+	inset-inline-start: auto;
+	inset-inline-end: 0;
+}
+
+[dir='rtl'] .menu-item {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+[dir='rtl'] .favorites-link {
+	flex-direction: row-reverse;
+}
+
+/* ==========================================
+   RTL SPORT SECTIONS
+   ========================================== */
+
+[dir='rtl'] .sport-header {
+	flex-direction: row-reverse;
+}
+
+[dir='rtl'] .sport-header::after {
+	margin-inline-start: 0;
+	margin-inline-end: var(--space-sm);
+}
+
+[dir='rtl'] .sport-title {
+	flex-direction: row-reverse;
+}
+
+[dir='rtl'] .competition-group {
+	border-inline-start: none;
+	border-inline-end: 3px solid var(--clr-border);
+	padding-inline-start: 0;
+	padding-inline-end: var(--space-md);
+}
+
+[dir='rtl'] .competition-header {
+	flex-direction: row-reverse;
+}
+
+[dir='rtl'] .competition-name {
+	flex-direction: row-reverse;
+}
+
+/* ==========================================
+   RTL GAME CARDS
+   ========================================== */
+
+[dir='rtl'] .game-card {
+	flex-direction: row-reverse;
+}
+
+[dir='rtl'] .game-teams {
+	text-align: right;
+}
+
+[dir='rtl'] .game-actions {
+	flex-direction: row-reverse;
+}
+
+[dir='rtl'] .game-favorite {
+	margin-inline-start: 0;
+	margin-inline-end: var(--space-sm);
+}
+
+/* ==========================================
+   RTL LINKS PANEL
+   ========================================== */
+
+[dir='rtl'] .link-item {
+	flex-direction: row-reverse;
+}
+
+[dir='rtl'] .link-arrow {
+	transform: rotate(180deg);
+}
+
+[dir='rtl'] .link-item:hover .link-arrow {
+	transform: rotate(180deg) translate(-2px, -2px);
+}
+
+/* ==========================================
+   RTL TABS / FILTERS
+   ========================================== */
+
+[dir='rtl'] .date-tabs {
+	flex-direction: row-reverse;
+}
+
+[dir='rtl'] .filter-tabs {
+	flex-direction: row-reverse;
+}
+
+/* ==========================================
+   RTL FOOTER
+   ========================================== */
+
+[dir='rtl'] .footer-content {
+	direction: rtl;
+}
+
+[dir='rtl'] .footer-section {
+	text-align: right;
+}
+
+[dir='rtl'] .footer-section ul {
+	padding-right: 0;
+}
+
+/* ==========================================
+   RTL BURGER MENU
+   ========================================== */
+
+[dir='rtl'] .burger-menu {
+	order: -1; /* Move to left side in RTL */
+}
+
+/* ==========================================
+   RTL ANIMATIONS
+   ========================================== */
+
+/* Flip transform animations */
+[dir='rtl'] details:not([open]) .sport-header::after {
+	transform: rotate(90deg); /* Opposite direction */
+}
+
+/* ==========================================
+   RTL FORM ELEMENTS (if any)
+   ========================================== */
+
+[dir='rtl'] input,
+[dir='rtl'] select,
+[dir='rtl'] textarea {
+	text-align: right;
+}
+
+/* ==========================================
+   RTL UTILITY CLASSES
+   ========================================== */
+
+/* Force LTR for specific elements (numbers, codes, etc.) */
+[dir='rtl'] .force-ltr {
+	direction: ltr;
+	unicode-bidi: isolate;
+}
+
+/* Keep numbers LTR */
+[dir='rtl'] .game-time,
+[dir='rtl'] .sport-count-badge,
+[dir='rtl'] time {
+	direction: ltr;
+	unicode-bidi: isolate;
 }

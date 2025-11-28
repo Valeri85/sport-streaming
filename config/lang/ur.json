@@ -3,7 +3,8 @@
 		"code": "ur",
 		"name": "اردو",
 		"flag": "🇵🇰",
-		"active": true
+		"active": true,
+		"direction": "rtl"
 	},
 	"ui": {
 		"home": "ہوم",

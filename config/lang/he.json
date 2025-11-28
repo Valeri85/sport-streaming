@@ -3,7 +3,8 @@
 		"code": "he",
 		"name": "עברית",
 		"flag": "🇮🇱",
-		"active": true
+		"active": true,
+		"direction": "rtl"
 	},
 	"ui": {
 		"home": "בית",

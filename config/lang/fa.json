@@ -3,7 +3,8 @@
 		"code": "fa",
 		"name": "فارسی",
 		"flag": "🇮🇷",
-		"active": true
+		"active": true,
+		"direction": "rtl"
 	},
 	"ui": {
 		"home": "خانه",

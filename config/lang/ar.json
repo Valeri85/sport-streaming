@@ -3,7 +3,8 @@
 		"code": "ar",
 		"name": "العربية",
 		"flag": "🇸🇦",
-		"active": true
+		"active": true,
+		"direction": "rtl"
 	},
 	"ui": {
 		"home": "الرئيسية",
