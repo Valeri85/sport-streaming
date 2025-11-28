@@ -1,411 +1,1058 @@
 {
-    "websites": [
-        {
-            "id": 1,
-            "domain": "sportlemons.info",
-            "site_name": "SportLemons",
-            "logo": "sportlemons-logo.webp",
-            "primary_color": "#ffa500",
-            "secondary_color": "#ff8c00",
-            "seo_title": "SportLemons - Live Sports Streaming | Watch Games Online Free",
-            "seo_description": "Watch live sports streaming online free. Football, Basketball, Tennis and more. SportLemons offers the best live sports streams in HD quality.",
-            "seo_keywords": "live sports, sports streaming, watch sports online, free sports streams, football streaming, basketball live, SportLemons",
-            "language": "en",
-            "sidebar_content": "<h2>About SportLemons</h2><p>Your #1 destination for live sports streaming. Watch all major sports events for free!</p>",
-            "status": "active",
-            "pages_seo": {
-                "home": {
-                    "title": "SportLemon | Live Sports & Today’s Match Listings",
-                    "description": "SportLemon gives you live sports streams plus today’s upcoming and current matches across all sports. Free access, no sign-up—start watching now."
-                },
-                "favorites": {
-                    "title": "SportLemon Favorites | Watch Live Your Favorite Sport Events",
-                    "description": "Favorite Sport Matches - SportLemon offers free, high-quality sports streams with no sign-up. Enjoy smooth playback across devices—start watching now."
-                },
-                "sports": {
-                    "football": {
-                        "title": "SportLemon Football | Free Live Football Streams HD",
-                        "description": "Watch free live football streams in HD on SportLemon. Champions League, Premier League & more. Never miss a match!"
-                    },
-                    "basketball": {
-                        "title": "SportLemon Basketball | Free Live NBA & Basketball Streams",
-                        "description": "Stream live basketball games for free. Watch NBA, EuroLeague & more in HD on SportLemon. No sign-up required."
-                    },
-                    "tennis": {
-                        "title": "SportLemon Tennis | Free Live Tennis Streams HD",
-                        "description": "Watch live tennis streams for free. Grand Slams, ATP, WTA tours in HD on SportLemon. Join now!"
-                    },
-                    "ice-hockey": {
-                        "title": "SportLemon Ice Hockey | Free Live NHL Streams HD",
-                        "description": "Free live ice hockey streams in HD. Watch NHL, KHL, and world championships on SportLemon. Never miss a puck drop."
-                    },
-                    "baseball": {
-                        "title": "SportLemon Baseball | Free Live MLB Streams Online",
-                        "description": "Stream live baseball games for free. Watch MLB, NPB, and more in HD on SportLemon. Easy and free access."
-                    },
-                    "rugby": {
-                        "title": "SportLemon Rugby | Free Live Rugby Union & League",
-                        "description": "Watch free live rugby streams. Rugby Union, Rugby League, Six Nations & more in HD on SportLemon."
-                    },
-                    "cricket": {
-                        "title": "SportLemon Cricket | Free Live Cricket Streams HD",
-                        "description": "Free live cricket streams on SportLemon. Watch IPL, T20, Test Matches & more in high definition. Tune in now!"
-                    },
-                    "american-football": {
-                        "title": "SportLemon American Football | Free Live NFL Streams",
-                        "description": "Watch free live American Football streams. Enjoy NFL, college games & more in HD on SportLemon. No subscriptions."
-                    },
-                    "volleyball": {
-                        "title": "SportLemon Volleyball | Free Live Volleyball Streams",
-                        "description": "Stream live volleyball matches for free. Watch FIVB, CEV & major leagues in HD on SportLemon. Join the action!"
-                    },
-                    "beach-volleyball": {
-                        "title": "SportLemon Beach Volleyball | Free Live Streams",
-                        "description": "Watch free live beach volleyball streams. FIVB World Tour & major tournaments in HD on SportLemon."
-                    },
-                    "handball": {
-                        "title": "SportLemon Handball | Free Live Handball Streams",
-                        "description": "Free live handball streams on SportLemon. Watch EHF, IHF events & major leagues in high definition."
-                    },
-                    "beach-handball": {
-                        "title": "SportLemon Beach Handball | Free Live Streams",
-                        "description": "Watch free live beach handball streams. IHF World Tour & championships in HD on SportLemon."
-                    },
-                    "beach-soccer": {
-                        "title": "SportLemon Beach Soccer | Free Live Streams HD",
-                        "description": "Stream live beach soccer for free. FIFA Beach Soccer World Cup & leagues in HD on SportLemon."
-                    },
-                    "aussie-rules": {
-                        "title": "SportLemon Aussie Rules | Free Live AFL Streams",
-                        "description": "Watch free live Aussie Rules football. Stream AFL matches & tournaments in HD on SportLemon."
-                    },
-                    "futsal": {
-                        "title": "SportLemon Futsal | Free Live Futsal Streams HD",
-                        "description": "Free live futsal streams on SportLemon. Watch UEFA Futsal, FIFA events & more in high definition."
-                    },
-                    "badminton": {
-                        "title": "SportLemon Badminton | Free Live Badminton Streams",
-                        "description": "Watch free live badminton streams. BWF World Tour, Thomas Cup & more in HD on SportLemon."
-                    },
-                    "netball": {
-                        "title": "SportLemon Netball | Free Live Netball Streams",
-                        "description": "Stream live netball for free. Watch Vitality Netball Superleague, Worlds & more on SportLemon."
-                    },
-                    "floorball": {
-                        "title": "SportLemon Floorball | Free Live Floorball Streams",
-                        "description": "Watch free live floorball streams. IFF World Championships & major leagues in HD on SportLemon."
-                    },
-                    "combat": {
-                        "title": "SportLemon Combat | Free Live Combat Sports Streams",
-                        "description": "Free live combat sports streams on SportLemon. Watch MMA, boxing, wrestling & more in HD."
-                    },
-                    "boxing": {
-                        "title": "SportLemon Boxing | Free Live Boxing Streams HD",
-                        "description": "Watch free live boxing streams. World title fights, undercards & more in high definition on SportLemon."
-                    },
-                    "mma": {
-                        "title": "SportLemon MMA | Free Live UFC & MMA Streams",
-                        "description": "Stream live MMA fights for free. Watch UFC, Bellator, PFL & more in HD on SportLemon."
-                    },
-                    "snooker": {
-                        "title": "SportLemon Snooker | Free Live Snooker Streams",
-                        "description": "Watch free live snooker streams. World Championship, UK Championship & more in HD on SportLemon."
-                    },
-                    "billiard": {
-                        "title": "SportLemon Billiard | Free Live Pool Streams HD",
-                        "description": "Free live billiard and pool streams on SportLemon. Watch world tournaments & matches in high definition."
-                    },
-                    "table-tennis": {
-                        "title": "SportLemon Table Tennis | Free Live Streams HD",
-                        "description": "Watch free live table tennis streams. ITTF World Tours & championships in HD on SportLemon."
-                    },
-                    "padel-tennis": {
-                        "title": "SportLemon Padel Tennis | Free Live Streams",
-                        "description": "Stream live Padel Tennis for free. Watch World Padel Tour & major matches in HD on SportLemon."
-                    },
-                    "squash": {
-                        "title": "SportLemon Squash | Free Live Squash Streams",
-                        "description": "Watch free live squash streams. PSA World Tour & championships in high definition on SportLemon."
-                    },
-                    "motorsport": {
-                        "title": "SportLemon Motorsport | Free Live Racing Streams",
-                        "description": "Free live motorsport streams on SportLemon. Watch F1, MotoGP, WRC & more in HD. Start your engine!"
-                    },
-                    "racing": {
-                        "title": "SportLemon Racing | Free Live Horse Racing Streams",
-                        "description": "Watch free live racing streams. Major derbies, cups & events in HD on SportLemon."
-                    },
-                    "cycling": {
-                        "title": "SportLemon Cycling | Free Live Cycling Streams",
-                        "description": "Stream live cycling for free. Watch Tour de France, Giro, Vuelta & more in HD on SportLemon."
-                    },
-                    "equestrianism": {
-                        "title": "SportLemon Equestrianism | Free Live Streams",
-                        "description": "Watch free live equestrian streams. Show jumping, dressage & eventing in HD on SportLemon."
-                    },
-                    "golf": {
-                        "title": "SportLemon Golf | Free Live Golf Streams HD",
-                        "description": "Free live golf streams on SportLemon. Watch Masters, PGA Tour, Ryder Cup & more in high definition."
-                    },
-                    "field-hockey": {
-                        "title": "SportLemon Field Hockey | Free Live Streams HD",
-                        "description": "Watch free live field hockey streams. FIH Pro League, World Cup & more in HD on SportLemon."
-                    },
-                    "lacrosse": {
-                        "title": "SportLemon Lacrosse | Free Live Lacrosse Streams",
-                        "description": "Stream live lacrosse for free. Watch NLL, PLL, world championships & more on SportLemon."
-                    },
-                    "athletics": {
-                        "title": "SportLemon Athletics | Free Live Track & Field",
-                        "description": "Watch free live athletics streams. Diamond League, World Championships & more in HD on SportLemon."
-                    },
-                    "gymnastics": {
-                        "title": "SportLemon Gymnastics | Free Live Streams HD",
-                        "description": "Free live gymnastics streams on SportLemon. Watch artistic, rhythmic events & world cups in HD."
-                    },
-                    "weightlifting": {
-                        "title": "SportLemon Weightlifting | Free Live Streams",
-                        "description": "Watch free live weightlifting streams. IWF World Championships & events in HD on SportLemon."
-                    },
-                    "climbing": {
-                        "title": "SportLemon Climbing | Free Live Climbing Streams",
-                        "description": "Stream live climbing for free. Watch IFSC World Cups & championships in HD on SportLemon."
-                    },
-                    "winter-sports": {
-                        "title": "SportLemon Winter Sports | Free Live Streams",
-                        "description": "Watch free live winter sports streams. Skiing, snowboarding & more in HD on SportLemon."
-                    },
-                    "bandy": {
-                        "title": "SportLemon Bandy | Free Live Bandy Streams",
-                        "description": "Free live bandy streams on SportLemon. Watch World Championships & major leagues in high definition."
-                    },
-                    "curling": {
-                        "title": "SportLemon Curling | Free Live Curling Streams",
-                        "description": "Watch free live curling streams. World Curling Championships, Brier & more in HD on SportLemon."
-                    },
-                    "water-sports": {
-                        "title": "SportLemon Water Sports | Free Live Streams",
-                        "description": "Stream live water sports for free. Watch rowing, canoeing, swimming & more on SportLemon."
-                    },
-                    "water-polo": {
-                        "title": "SportLemon Water Polo | Free Live Streams HD",
-                        "description": "Watch free live water polo streams. LEN Champions League, World League & more on SportLemon."
-                    },
-                    "sailing": {
-                        "title": "SportLemon Sailing | Free Live Sailing Streams",
-                        "description": "Free live sailing streams on SportLemon. Watch America's Cup, World Series & regattas in HD."
-                    },
-                    "bowling": {
-                        "title": "SportLemon Bowling | Free Live Bowling Streams",
-                        "description": "Watch free live bowling streams. PBA Tour, World Championships & more in HD on SportLemon."
-                    },
-                    "darts": {
-                        "title": "SportLemon Darts | Free Live Darts Streams HD",
-                        "description": "Stream live darts for free. Watch PDC, Premier League, World Cup & more on SportLemon."
-                    },
-                    "chess": {
-                        "title": "SportLemon Chess | Free Live Chess Streams",
-                        "description": "Watch free live chess streams. World Championship, Candidates & top tournaments on SportLemon."
-                    },
-                    "e-sports": {
-                        "title": "SportLemon E-sports | Free Live Gaming Streams",
-                        "description": "Free live E-sports streams on SportLemon. Watch LoL, CS:GO, Dota 2 & more in HD. Game on!"
-                    },
-                    "others": {
-                        "title": "SportLemon Others | Free Live Sports Streams HD",
-                        "description": "Watch free live streams for all other sports. Niche, emerging & unique sports in HD on SportLemon."
-                    },
-                    "triathlon": {
-                        "title": "SportLemon Triathlon | Watch Live Triathlon Streams Free",
-                        "description": "SportLemon Triathlon lets you watch high-quality triathlon streams for free with no sign-up. Easy access, smooth playback—start watching now."
-                    },
-                    "rugby-union": {
-                        "title": "SportLemon Rugby Union | Free HD Live Streams Online",
-                        "description": "SportLemon Rugby Union offers free, no sign-up, high-quality live streams. Enjoy fast access to every match in HD. Start watching now."
-                    },
-                    "rugby-league": {
-                        "title": "SportLemon Rugby League | Watch Free Live HD Streams",
-                        "description": "SportLemon Rugby League brings you free, no sign-up, high-quality live streams of every match. Enjoy fast, reliable access in HD—start watching today."
-                    }
-                }
-            },
-            "sports_categories": [
-                "Football",
-                "Basketball",
-                "Tennis",
-                "Ice Hockey",
-                "Baseball",
-                "Rugby Union",
-                "Rugby League",
-                "Cricket",
-                "American Football",
-                "Volleyball",
-                "Beach Volleyball",
-                "Handball",
-                "Beach Handball",
-                "Beach Soccer",
-                "Aussie Rules",
-                "Futsal",
-                "Badminton",
-                "Netball",
-                "Floorball",
-                "Combat",
-                "Boxing",
-                "MMA",
-                "Snooker",
-                "Billiard",
-                "Table Tennis",
-                "Padel Tennis",
-                "Squash",
-                "Motorsport",
-                "Racing",
-                "Cycling",
-                "Equestrianism",
-                "Golf",
-                "Field Hockey",
-                "Lacrosse",
-                "Athletics",
-                "Gymnastics",
-                "Weightlifting",
-                "Climbing",
-                "Winter Sports",
-                "Bandy",
-                "Curling",
-                "Triathlon",
-                "Water Sports",
-                "Water Polo",
-                "Sailing",
-                "Bowling",
-                "Darts",
-                "Chess",
-                "E-sports",
-                "Others"
-            ],
-            "sports_icons": {
-                "Football": "football.webp",
-                "Basketball": "basketball.webp",
-                "Tennis": "tennis.webp",
-                "Ice Hockey": "ice-hockey.webp",
-                "Baseball": "baseball.webp",
-                "Cricket": "cricket.webp",
-                "American Football": "american-football.webp",
-                "Rugby Union": "rugby-union.webp",
-                "Rugby League": "rugby-league.webp",
-                "Volleyball": "volleyball.webp",
-                "Beach Volleyball": "beach-volleyball.webp",
-                "Handball": "handball.webp",
-                "Beach Soccer": "beach-soccer.webp",
-                "Aussie Rules": "aussie-rules.webp",
-                "Futsal": "futsal.webp",
-                "Badminton": "badminton.webp",
-                "Netball": "netball.webp",
-                "Floorball": "floorball.webp",
-                "Combat": "combat.webp",
-                "Boxing": "boxing.webp",
-                "MMA": "mma.webp",
-                "Snooker": "snooker.webp",
-                "Billiard": "billiard.webp",
-                "Table Tennis": "table-tennis.webp",
-                "Padel Tennis": "padel-tennis.webp",
-                "Squash": "squash.webp",
-                "Motorsport": "motorsport.webp",
-                "Racing": "racing.webp",
-                "Cycling": "cycling.webp",
-                "Equestrianism": "equestrianism.webp",
-                "Golf": "golf.webp",
-                "Field Hockey": "field-hockey.webp",
-                "Lacrosse": "lacrosse.webp",
-                "Athletics": "athletics.webp",
-                "Gymnastics": "gymnastics.webp",
-                "Weightlifting": "weightlifting.webp",
-                "Climbing": "climbing.webp",
-                "Winter Sports": "winter-sports.webp",
-                "Bandy": "bandy.webp",
-                "Curling": "curling.webp",
-                "Water Sports": "water-sports.webp",
-                "Water Polo": "water-polo.webp",
-                "Sailing": "sailing.webp",
-                "Bowling": "bowling.webp",
-                "Darts": "darts.webp",
-                "Chess": "chess.webp",
-                "E-sports": "e-sports.webp",
-                "Others": "others.webp"
-            },
-            "canonical_url": "https://www.sportlemons.info"
-        },
-        {
-            "id": 2,
-            "domain": "eplsite.us",
-            "canonical_url": "https://www.eplsite.us",
-            "site_name": "Eplsite",
-            "logo": "",
-            "primary_color": "#ff4d00",
-            "secondary_color": "#ff1100",
-            "seo_title": "",
-            "seo_description": "",
-            "language": "en",
-            "sidebar_content": "",
-            "status": "active",
-            "sports_categories": [
-                "Football",
-                "Basketball",
-                "Tennis",
-                "Ice Hockey",
-                "Baseball",
-                "Rugby",
-                "Cricket",
-                "American Football",
-                "Volleyball",
-                "Beach Volleyball",
-                "Handball",
-                "Beach Handball",
-                "Beach Soccer",
-                "Aussie Rules",
-                "Futsal",
-                "Badminton",
-                "Netball",
-                "Floorball",
-                "Combat",
-                "Boxing",
-                "MMA",
-                "Snooker",
-                "Billiard",
-                "Table Tennis",
-                "Padel Tennis",
-                "Squash",
-                "Motorsport",
-                "Racing",
-                "Cycling",
-                "Equestrianism",
-                "Golf",
-                "Field Hockey",
-                "Lacrosse",
-                "Athletics",
-                "Gymnastics",
-                "Weightlifting",
-                "Climbing",
-                "Winter Sports",
-                "Bandy",
-                "Curling",
-                "Triathlon",
-                "Water Sports",
-                "Water Polo",
-                "Sailing",
-                "Bowling",
-                "Darts",
-                "Chess",
-                "E-sports",
-                "Others"
-            ],
-            "sports_icons": []
-        }
-    ],
-    "admins": [
-        {
-            "id": 1,
-            "username": "admin",
-            "password": "$2y$10$CFev3njRQzlacX6nyJnUpeSxQF9NrFqnLH7Ek5NiprGAvT1TNENcm",
-            "email": "admin@example.com"
-        }
-    ]
+	"websites": [
+		{
+			"id": 1,
+			"domain": "sportlemons.info",
+			"site_name": "SportLemons",
+			"logo": "sportlemons-logo.webp",
+			"primary_color": "#ffa500",
+			"language": "en",
+			"sidebar_content": "<h2>About SportLemons</h2><p>Your #1 destination for live sports streaming. Watch all major sports events for free!</p>",
+			"status": "active",
+			"pages_seo": {
+				"home": {
+					"title": "SportLemon | Live Sports & Today’s Match Listings",
+					"description": "SportLemon gives you live sports streams plus today’s upcoming and current matches across all sports. Free access, no sign-up—start watching now."
+				},
+				"favorites": {
+					"title": "SportLemon Favorites | Watch Live Your Favorite Sport Events",
+					"description": "Favorite Sport Matches - SportLemon offers free, high-quality sports streams with no sign-up. Enjoy smooth playback across devices—start watching now."
+				},
+				"sports": {
+					"football": {
+						"title": "SportLemon Football | Free Live Football Streams HD",
+						"description": "Watch free live football streams in HD on SportLemon. Champions League, Premier League & more. Never miss a match!"
+					},
+					"basketball": {
+						"title": "SportLemon Basketball | Free Live NBA & Basketball Streams",
+						"description": "Stream live basketball games for free. Watch NBA, EuroLeague & more in HD on SportLemon. No sign-up required."
+					},
+					"tennis": {
+						"title": "SportLemon Tennis | Free Live Tennis Streams HD",
+						"description": "Watch live tennis streams for free. Grand Slams, ATP, WTA tours in HD on SportLemon. Join now!"
+					},
+					"ice-hockey": {
+						"title": "SportLemon Ice Hockey | Free Live NHL Streams HD",
+						"description": "Free live ice hockey streams in HD. Watch NHL, KHL, and world championships on SportLemon. Never miss a puck drop."
+					},
+					"baseball": {
+						"title": "SportLemon Baseball | Free Live MLB Streams Online",
+						"description": "Stream live baseball games for free. Watch MLB, NPB, and more in HD on SportLemon. Easy and free access."
+					},
+					"rugby": {
+						"title": "SportLemon Rugby | Free Live Rugby Union & League",
+						"description": "Watch free live rugby streams. Rugby Union, Rugby League, Six Nations & more in HD on SportLemon."
+					},
+					"cricket": {
+						"title": "SportLemon Cricket | Free Live Cricket Streams HD",
+						"description": "Free live cricket streams on SportLemon. Watch IPL, T20, Test Matches & more in high definition. Tune in now!"
+					},
+					"american-football": {
+						"title": "SportLemon American Football | Free Live NFL Streams",
+						"description": "Watch free live American Football streams. Enjoy NFL, college games & more in HD on SportLemon. No subscriptions."
+					},
+					"volleyball": {
+						"title": "SportLemon Volleyball | Free Live Volleyball Streams",
+						"description": "Stream live volleyball matches for free. Watch FIVB, CEV & major leagues in HD on SportLemon. Join the action!"
+					},
+					"beach-volleyball": {
+						"title": "SportLemon Beach Volleyball | Free Live Streams",
+						"description": "Watch free live beach volleyball streams. FIVB World Tour & major tournaments in HD on SportLemon."
+					},
+					"handball": {
+						"title": "SportLemon Handball | Free Live Handball Streams",
+						"description": "Free live handball streams on SportLemon. Watch EHF, IHF events & major leagues in high definition."
+					},
+					"beach-handball": {
+						"title": "SportLemon Beach Handball | Free Live Streams",
+						"description": "Watch free live beach handball streams. IHF World Tour & championships in HD on SportLemon."
+					},
+					"beach-soccer": {
+						"title": "SportLemon Beach Soccer | Free Live Streams HD",
+						"description": "Stream live beach soccer for free. FIFA Beach Soccer World Cup & leagues in HD on SportLemon."
+					},
+					"aussie-rules": {
+						"title": "SportLemon Aussie Rules | Free Live AFL Streams",
+						"description": "Watch free live Aussie Rules football. Stream AFL matches & tournaments in HD on SportLemon."
+					},
+					"futsal": {
+						"title": "SportLemon Futsal | Free Live Futsal Streams HD",
+						"description": "Free live futsal streams on SportLemon. Watch UEFA Futsal, FIFA events & more in high definition."
+					},
+					"badminton": {
+						"title": "SportLemon Badminton | Free Live Badminton Streams",
+						"description": "Watch free live badminton streams. BWF World Tour, Thomas Cup & more in HD on SportLemon."
+					},
+					"netball": {
+						"title": "SportLemon Netball | Free Live Netball Streams",
+						"description": "Stream live netball for free. Watch Vitality Netball Superleague, Worlds & more on SportLemon."
+					},
+					"floorball": {
+						"title": "SportLemon Floorball | Free Live Floorball Streams",
+						"description": "Watch free live floorball streams. IFF World Championships & major leagues in HD on SportLemon."
+					},
+					"boxing": {
+						"title": "SportLemon Boxing | Free Live Boxing Streams HD",
+						"description": "Watch free live boxing streams. World title fights, undercards & more in high definition on SportLemon."
+					},
+					"mma": {
+						"title": "SportLemon MMA | Free Live UFC & MMA Streams",
+						"description": "Stream live MMA fights for free. Watch UFC, Bellator, PFL & more in HD on SportLemon."
+					},
+					"snooker": {
+						"title": "SportLemon Snooker | Free Live Snooker Streams",
+						"description": "Watch free live snooker streams. World Championship, UK Championship & more in HD on SportLemon."
+					},
+					"billiard": {
+						"title": "SportLemon Billiard | Free Live Pool Streams HD",
+						"description": "Free live billiard and pool streams on SportLemon. Watch world tournaments & matches in high definition."
+					},
+					"table-tennis": {
+						"title": "SportLemon Table Tennis | Free Live Streams HD",
+						"description": "Watch free live table tennis streams. ITTF World Tours & championships in HD on SportLemon."
+					},
+					"padel-tennis": {
+						"title": "SportLemon Padel Tennis | Free Live Streams",
+						"description": "Stream live Padel Tennis for free. Watch World Padel Tour & major matches in HD on SportLemon."
+					},
+					"squash": {
+						"title": "SportLemon Squash | Free Live Squash Streams",
+						"description": "Watch free live squash streams. PSA World Tour & championships in high definition on SportLemon."
+					},
+					"motorsport": {
+						"title": "SportLemon Motorsport | Free Live Racing Streams",
+						"description": "Free live motorsport streams on SportLemon. Watch F1, MotoGP, WRC & more in HD. Start your engine!"
+					},
+					"racing": {
+						"title": "SportLemon Racing | Free Live Horse Racing Streams",
+						"description": "Watch free live racing streams. Major derbies, cups & events in HD on SportLemon."
+					},
+					"cycling": {
+						"title": "SportLemon Cycling | Free Live Cycling Streams",
+						"description": "Stream live cycling for free. Watch Tour de France, Giro, Vuelta & more in HD on SportLemon."
+					},
+					"equestrianism": {
+						"title": "SportLemon Equestrianism | Free Live Streams",
+						"description": "Watch free live equestrian streams. Show jumping, dressage & eventing in HD on SportLemon."
+					},
+					"golf": {
+						"title": "SportLemon Golf | Free Live Golf Streams HD",
+						"description": "Free live golf streams on SportLemon. Watch Masters, PGA Tour, Ryder Cup & more in high definition."
+					},
+					"field-hockey": {
+						"title": "SportLemon Field Hockey | Free Live Streams HD",
+						"description": "Watch free live field hockey streams. FIH Pro League, World Cup & more in HD on SportLemon."
+					},
+					"lacrosse": {
+						"title": "SportLemon Lacrosse | Free Live Lacrosse Streams",
+						"description": "Stream live lacrosse for free. Watch NLL, PLL, world championships & more on SportLemon."
+					},
+					"athletics": {
+						"title": "SportLemon Athletics | Free Live Track & Field",
+						"description": "Watch free live athletics streams. Diamond League, World Championships & more in HD on SportLemon."
+					},
+					"gymnastics": {
+						"title": "SportLemon Gymnastics | Free Live Streams HD",
+						"description": "Free live gymnastics streams on SportLemon. Watch artistic, rhythmic events & world cups in HD."
+					},
+					"weightlifting": {
+						"title": "SportLemon Weightlifting | Free Live Streams",
+						"description": "Watch free live weightlifting streams. IWF World Championships & events in HD on SportLemon."
+					},
+					"climbing": {
+						"title": "SportLemon Climbing | Free Live Climbing Streams",
+						"description": "Stream live climbing for free. Watch IFSC World Cups & championships in HD on SportLemon."
+					},
+					"winter-sports": {
+						"title": "SportLemon Winter Sports | Free Live Streams",
+						"description": "Watch free live winter sports streams. Skiing, snowboarding & more in HD on SportLemon."
+					},
+					"bandy": {
+						"title": "SportLemon Bandy | Free Live Bandy Streams",
+						"description": "Free live bandy streams on SportLemon. Watch World Championships & major leagues in high definition."
+					},
+					"curling": {
+						"title": "SportLemon Curling | Free Live Curling Streams",
+						"description": "Watch free live curling streams. World Curling Championships, Brier & more in HD on SportLemon."
+					},
+					"water-sports": {
+						"title": "SportLemon Water Sports | Free Live Streams",
+						"description": "Stream live water sports for free. Watch rowing, canoeing, swimming & more on SportLemon."
+					},
+					"water-polo": {
+						"title": "SportLemon Water Polo | Free Live Streams HD",
+						"description": "Watch free live water polo streams. LEN Champions League, World League & more on SportLemon."
+					},
+					"sailing": {
+						"title": "SportLemon Sailing | Free Live Sailing Streams",
+						"description": "Free live sailing streams on SportLemon. Watch America's Cup, World Series & regattas in HD."
+					},
+					"bowling": {
+						"title": "SportLemon Bowling | Free Live Bowling Streams",
+						"description": "Watch free live bowling streams. PBA Tour, World Championships & more in HD on SportLemon."
+					},
+					"darts": {
+						"title": "SportLemon Darts | Free Live Darts Streams HD",
+						"description": "Stream live darts for free. Watch PDC, Premier League, World Cup & more on SportLemon."
+					},
+					"chess": {
+						"title": "SportLemon Chess | Free Live Chess Streams",
+						"description": "Watch free live chess streams. World Championship, Candidates & top tournaments on SportLemon."
+					},
+					"e-sports": {
+						"title": "SportLemon E-sports | Free Live Gaming Streams",
+						"description": "Free live E-sports streams on SportLemon. Watch LoL, CS:GO, Dota 2 & more in HD. Game on!"
+					},
+					"others": {
+						"title": "SportLemon Others | Free Live Sports Streams HD",
+						"description": "Watch free live streams for all other sports. Niche, emerging & unique sports in HD on SportLemon."
+					},
+					"triathlon": {
+						"title": "SportLemon Triathlon | Watch Live Triathlon Streams Free",
+						"description": "SportLemon Triathlon lets you watch high-quality triathlon streams for free with no sign-up. Easy access, smooth playback—start watching now."
+					},
+					"rugby-union": {
+						"title": "SportLemon Rugby Union | Free HD Live Streams Online",
+						"description": "SportLemon Rugby Union offers free, no sign-up, high-quality live streams. Enjoy fast access to every match in HD. Start watching now."
+					},
+					"rugby-league": {
+						"title": "SportLemon Rugby League | Watch Free Live HD Streams",
+						"description": "SportLemon Rugby League brings you free, no sign-up, high-quality live streams of every match. Enjoy fast, reliable access in HD—start watching today."
+					},
+					"combat-sports": {
+						"title": "SportLemon Combat | Free Live Combat Sports Streams",
+						"description": "Free live combat sports streams on SportLemon. Watch MMA, boxing, wrestling & more in HD."
+					}
+				}
+			},
+			"sports_categories": [
+				"Football",
+				"Basketball",
+				"Tennis",
+				"Ice Hockey",
+				"Baseball",
+				"Rugby Union",
+				"Rugby League",
+				"Cricket",
+				"American Football",
+				"Volleyball",
+				"Beach Volleyball",
+				"Handball",
+				"Beach Handball",
+				"Beach Soccer",
+				"Aussie Rules",
+				"Futsal",
+				"Badminton",
+				"Netball",
+				"Floorball",
+				"Combat Sports",
+				"Boxing",
+				"MMA",
+				"Snooker",
+				"Billiard",
+				"Table Tennis",
+				"Padel Tennis",
+				"Squash",
+				"Motorsport",
+				"Racing",
+				"Cycling",
+				"Equestrianism",
+				"Golf",
+				"Field Hockey",
+				"Lacrosse",
+				"Athletics",
+				"Gymnastics",
+				"Weightlifting",
+				"Climbing",
+				"Winter Sports",
+				"Bandy",
+				"Curling",
+				"Triathlon",
+				"Water Sports",
+				"Water Polo",
+				"Sailing",
+				"Bowling",
+				"Darts",
+				"Chess",
+				"E-sports",
+				"Others"
+			],
+			"sports_icons": {
+				"Football": "football.webp",
+				"Basketball": "basketball.webp",
+				"Tennis": "tennis.webp",
+				"Ice Hockey": "ice-hockey.webp",
+				"Baseball": "baseball.webp",
+				"Cricket": "cricket.webp",
+				"American Football": "american-football.webp",
+				"Rugby Union": "rugby-union.webp",
+				"Rugby League": "rugby-league.webp",
+				"Volleyball": "volleyball.webp",
+				"Beach Volleyball": "beach-volleyball.webp",
+				"Handball": "handball.webp",
+				"Beach Soccer": "beach-soccer.webp",
+				"Aussie Rules": "aussie-rules.webp",
+				"Futsal": "futsal.webp",
+				"Badminton": "badminton.webp",
+				"Netball": "netball.webp",
+				"Floorball": "floorball.webp",
+				"Boxing": "boxing.webp",
+				"MMA": "mma.webp",
+				"Snooker": "snooker.webp",
+				"Billiard": "billiard.webp",
+				"Table Tennis": "table-tennis.webp",
+				"Padel Tennis": "padel-tennis.webp",
+				"Squash": "squash.webp",
+				"Motorsport": "motorsport.webp",
+				"Racing": "racing.webp",
+				"Cycling": "cycling.webp",
+				"Equestrianism": "equestrianism.webp",
+				"Golf": "golf.webp",
+				"Field Hockey": "field-hockey.webp",
+				"Lacrosse": "lacrosse.webp",
+				"Athletics": "athletics.webp",
+				"Gymnastics": "gymnastics.webp",
+				"Weightlifting": "weightlifting.webp",
+				"Climbing": "climbing.webp",
+				"Winter Sports": "winter-sports.webp",
+				"Bandy": "bandy.webp",
+				"Curling": "curling.webp",
+				"Water Sports": "water-sports.webp",
+				"Water Polo": "water-polo.webp",
+				"Sailing": "sailing.webp",
+				"Bowling": "bowling.webp",
+				"Darts": "darts.webp",
+				"Chess": "chess.webp",
+				"E-sports": "e-sports.webp",
+				"Others": "others.webp",
+				"Combat Sports": "combat-sports.webp"
+			},
+			"canonical_url": "https://www.sportlemons.info",
+			"home_icon": "home.webp"
+		},
+		{
+			"id": 2,
+			"domain": "eplsite.us",
+			"canonical_url": "https://www.eplsite.us",
+			"site_name": "Eplsite",
+			"logo": "",
+			"primary_color": "#ff4d00",
+			"secondary_color": "#ff1100",
+			"seo_title": "",
+			"seo_description": "",
+			"language": "en",
+			"sidebar_content": "",
+			"status": "active",
+			"sports_categories": [
+				"Football",
+				"Basketball",
+				"Tennis",
+				"Ice Hockey",
+				"Baseball",
+				"Rugby Union",
+				"Rugby League",
+				"Cricket",
+				"American Football",
+				"Volleyball",
+				"Beach Volleyball",
+				"Handball",
+				"Beach Handball",
+				"Beach Soccer",
+				"Aussie Rules",
+				"Futsal",
+				"Badminton",
+				"Netball",
+				"Floorball",
+				"Combat Sports",
+				"Boxing",
+				"MMA",
+				"Snooker",
+				"Billiard",
+				"Table Tennis",
+				"Padel Tennis",
+				"Squash",
+				"Motorsport",
+				"Racing",
+				"Cycling",
+				"Equestrianism",
+				"Golf",
+				"Field Hockey",
+				"Lacrosse",
+				"Athletics",
+				"Gymnastics",
+				"Weightlifting",
+				"Climbing",
+				"Winter Sports",
+				"Bandy",
+				"Curling",
+				"Triathlon",
+				"Water Sports",
+				"Water Polo",
+				"Sailing",
+				"Bowling",
+				"Darts",
+				"Chess",
+				"E-sports",
+				"Others"
+			],
+			"sports_icons": {
+				"Football": "football.webp",
+				"Basketball": "basketball.webp",
+				"Tennis": "tennis.webp",
+				"Ice Hockey": "ice-hockey.webp",
+				"Baseball": "baseball.webp",
+				"Rugby League": "rugby-league.webp",
+				"Rugby Union": "rugby-union.webp",
+				"Cricket": "cricket.webp",
+				"American Football": "american-football.webp",
+				"Volleyball": "volleyball.webp",
+				"Beach Volleyball": "beach-volleyball.webp",
+				"Handball": "handball.webp",
+				"Beach Soccer": "beach-soccer.webp",
+				"Aussie Rules": "aussie-rules.webp",
+				"Futsal": "futsal.webp",
+				"Badminton": "badminton.webp",
+				"Netball": "netball.webp",
+				"Floorball": "floorball.webp",
+				"Combat Sports": "combat-sports.webp",
+				"Boxing": "boxing.webp",
+				"MMA": "mma.webp",
+				"Snooker": "snooker.webp",
+				"Billiard": "billiard.webp",
+				"Table Tennis": "table-tennis.webp",
+				"Padel Tennis": "padel-tennis.webp",
+				"Squash": "squash.webp",
+				"Motorsport": "motorsport.webp",
+				"Racing": "racing.webp",
+				"Cycling": "cycling.webp",
+				"Equestrianism": "equestrianism.webp",
+				"Golf": "golf.webp",
+				"Field Hockey": "field-hockey.webp",
+				"Lacrosse": "lacrosse.webp",
+				"Athletics": "athletics.webp",
+				"Gymnastics": "gymnastics.webp",
+				"Weightlifting": "weightlifting.webp",
+				"Climbing": "climbing.webp",
+				"Winter Sports": "winter-sports.webp",
+				"Bandy": "bandy.webp",
+				"Curling": "curling.webp",
+				"Water Sports": "water-sports.webp",
+				"Water Polo": "water-polo.webp",
+				"Sailing": "sailing.webp",
+				"Bowling": "bowling.webp",
+				"Darts": "darts.webp",
+				"Chess": "chess.webp",
+				"E-sports": "e-sports.webp",
+				"Others": "others.webp"
+			},
+			"pages_seo": {
+				"sports": {
+					"football": {
+						"title": "Eplsite Football | Live Matches & Free HD Streaming",
+						"description": "Watch top games on Eplsite Football with free, high-quality streams and no sign-up. Enjoy fast, reliable access to live football action—start watching now."
+					},
+					"basketball": {
+						"title": "Eplsite Basketball | Live Games & HD Streams Free",
+						"description": "Watch high-quality games on Eplsite Basketball with free, no sign-up streaming. Enjoy fast, reliable HD action anytime. Start watching now."
+					},
+					"tennis": {
+						"title": "Eplsite Tennis | Live Matches & Free HD Streams",
+						"description": "Stream high-quality matches on Eplsite Tennis with free, no sign-up access and fast HD viewing. Enjoy smooth live action—start watching today."
+					},
+					"ice-hockey": {
+						"title": "Eplsite Ice Hockey | Live HD Streams & Free Matches",
+						"description": "Enjoy fast, high-quality action on Eplsite Ice Hockey with free, no sign-up streams and smooth HD playback. Catch every match—start watching now."
+					},
+					"baseball": {
+						"title": "Eplsite Baseball | Live HD Streams & Free Games",
+						"description": "Watch high-quality games on Eplsite Baseball with free, no sign-up streaming and fast HD playback. Enjoy every matchup—start watching now."
+					},
+					"rugby-union": {
+						"title": "Eplsite Rugby Union | Live HD Streams & Free Matches",
+						"description": "Stream top games on Eplsite Rugby Union with free, no sign-up access and smooth HD playback. Enjoy fast, reliable action—start watching today."
+					},
+					"rugby-league": {
+						"title": "Eplsite Rugby League | Live HD Streams & Free Games",
+						"description": "Watch fast, high-quality matches on Eplsite Rugby League with free, no sign-up streaming and smooth HD action. Enjoy every game—start watching now."
+					},
+					"cricket": {
+						"title": "Eplsite Cricket | Live HD Streams & Free Matches",
+						"description": "Watch high-quality action on Eplsite Cricket with free, no sign-up streams and smooth HD playback. Enjoy every match—start watching now."
+					},
+					"american-football": {
+						"title": "Eplsite American Football | Live NFL & HD Streams",
+						"description": "Stream top NFL and American Football games on Eplsite American Football with free, no sign-up access and smooth HD playback. Watch every touchdown now."
+					},
+					"volleyball": {
+						"title": "Eplsite Volleyball – Live FIVB & HD Streams",
+						"description": "Stream top FIVB volleyball matches on Eplsite Volleyball with free, no sign-up HD access. Watch every set and spike live—don’t miss the action."
+					},
+					"beach-volleyball": {
+						"title": "Eplsite Beach Volleyball | Live Matches & Highlights",
+						"description": "Watch Eplsite Beach Volleyball in HD with free, no-signup streams of top beach volley events. Enjoy smooth playback and fast access. Start watching now."
+					},
+					"handball": {
+						"title": "Eplsite Handballl | Live Matches & Highlights",
+						"description": "Watch Eplsite Handballl games in HD for free with no signup. Enjoy smooth streams of top team handball action. Access fast and start watching now."
+					},
+					"beach-handball": {
+						"title": "Eplsite Beach Handballl | Live Matches & Highlights",
+						"description": "Stream Eplsite Beach Handballl in HD for free with no signup. Enjoy smooth, high-quality beach handball action anytime. Start watching now."
+					},
+					"beach-soccer": {
+						"title": "Eplsite Beach Soccer | Live Matches & Highlights",
+						"description": "Watch Eplsite Beach Soccer in HD for free with no signup. Enjoy smooth streams of top beach football action anytime. Start watching now."
+					},
+					"aussie-rules": {
+						"title": "Eplsite Aussie Rules | Live AFL & Australian Football",
+						"description": "Watch Eplsite Aussie Rules games in HD for free, including top AFL Australian Football action with no signup. Enjoy smooth streams and start watching now."
+					},
+					"futsal": {
+						"title": "Eplsite Futsal | Live Matches & Fast-Paced Action",
+						"description": "Watch Eplsite Futsal games in HD for free with no signup. Enjoy high-quality streams of top indoor football action. Start watching now."
+					},
+					"badminton": {
+						"title": "Eplsite Badminton | Live Matches & Tournament Streams",
+						"description": "Watch Eplsite Badminton in HD for free with no signup. Enjoy smooth, high-quality streams of top shuttle badminton events. Start watching now."
+					},
+					"netball": {
+						"title": "Eplsite Netball | Live Matches & Top League Streams",
+						"description": "Watch Eplsite Netball in HD for free with no signup. Enjoy smooth streams of top netball leagues and fast action. Start watching now."
+					},
+					"floorball": {
+						"title": "Eplsite Floorball | Live Matches & Fast League Action",
+						"description": "Watch Eplsite Floorball in HD for free with no signup. Enjoy smooth, high-quality streams of top floorball leagues. Start watching now."
+					},
+					"combat-sports": {
+						"title": "Eplsite Combat Sports | MMA, Boxing & Live Fights",
+						"description": "Watch Eplsite Combat Sports live in HD for free with no signup. Enjoy top MMA, boxing, and martial arts streams. Catch the action now."
+					},
+					"boxing": {
+						"title": "Eplsite Boxing | Live Fights & Championship Streams",
+						"description": "Watch Eplsite Boxing in HD for free with no signup. Enjoy top professional boxing matches and fast, high-quality fight streams. Start watching now."
+					},
+					"mma": {
+						"title": "Eplsite MMA | Live Fights & Ultimate Combat Streams",
+						"description": "Watch Eplsite MMA in HD for free with no signup. Stream top mixed martial arts fights, UFC, and combat action instantly. Start watching now."
+					},
+					"snooker": {
+						"title": "Eplsite Snooker | Live Matches & Tournament Highlights",
+						"description": "Watch Eplsite Snooker in HD for free with no signup. Enjoy smooth streams of top snooker tournaments and cue sports action. Start watching now."
+					},
+					"billiard": {
+						"title": "Eplsite Billiard | Live Matches & Cue Sports Action",
+						"description": "Watch Eplsite Billiard in HD for free with no signup. Enjoy smooth streams of top pool, snooker, and cue sports tournaments. Start watching now."
+					},
+					"table-tennis": {
+						"title": "Eplsite Table Tennis | Live Matches & Top Tournaments",
+						"description": "Watch Eplsite Table Tennis in HD for free with no signup. Enjoy smooth streams of top ping pong events and fast action. Start watching now."
+					},
+					"padel-tennis": {
+						"title": "Eplsite Padel Tennis | Live Matches & Top Tournaments",
+						"description": "Watch Eplsite Padel Tennis in HD for free with no signup. Enjoy fast, high-quality streams of top padel and tennis action. Start watching now."
+					},
+					"squash": {
+						"title": "Eplsite Squash | Live Matches & Top Tournament Action",
+						"description": "Watch Eplsite Squash in HD for free with no signup. Enjoy fast, high-quality streams of top squash tournaments. Start watching the action now."
+					},
+					"motorsport": {
+						"title": "Eplsite Motorsport | Live Racing & F1, MotoGP Streams",
+						"description": "Watch Eplsite Motorsport live for free with no signup. Enjoy high-quality streams of F1, MotoGP, and top motorsport events. Start watching now."
+					},
+					"racing": {
+						"title": "Eplsite Racing | Live Motorsports & Track Action",
+						"description": "Watch Eplsite Racing in HD for free with no signup. Enjoy high-speed motorsport action, top races, and smooth streams. Start watching now."
+					},
+					"cycling": {
+						"title": "Eplsite Cycling | Live Races & Tour Highlights",
+						"description": "Watch Eplsite Cycling in HD for free with no signup. Enjoy top road races, tours, and pro cycling streams. Start following the action now."
+					},
+					"equestrianism": {
+						"title": "Eplsite Equestrianism | Live Horse Riding Events",
+						"description": "Watch Eplsite Equestrianism in HD for free with no signup. Enjoy smooth streams of top horse riding and equestrian competitions. Start watching now."
+					},
+					"golf": {
+						"title": "Eplsite Golf | Live Tournaments & Highlights",
+						"description": "Watch Eplsite Golf in HD for free with no signup. Enjoy smooth streams of top PGA and professional golf events. Tee off and start watching now."
+					},
+					"field-hockey": {
+						"title": "Eplsite Field Hockey | Live Matches & Top Tournaments",
+						"description": "Watch Eplsite Field Hockey in HD for free with no signup. Enjoy smooth streams of top field hockey leagues and fast-paced action. Start watching now."
+					},
+					"lacrosse": {
+						"title": "Eplsite Lacrosse | Live Matches & Pro League Action",
+						"description": "Watch Eplsite Lacrosse in HD for free with no signup. Enjoy fast, high-quality streams of top lacrosse games and leagues. Start watching now."
+					},
+					"athletics": {
+						"title": "Eplsite Athletics | Live Track & Field Events",
+						"description": "Watch Eplsite Athletics in HD for free with no signup. Enjoy top track and field events, smooth streams, and instant access. Start watching now."
+					},
+					"gymnastics": {
+						"title": "Eplsite Gymnastics | Live Routines & Competition Streams",
+						"description": "Watch Eplsite Gymnastics in HD for free with no signup. Enjoy top artistic and rhythmic gymnastics events with smooth, high-quality streams. Start watching now."
+					},
+					"weightlifting": {
+						"title": "Eplsite Weightlifting | Live Lifts & Competition Streams",
+						"description": "Watch Eplsite Weightlifting in HD for free with no signup. Enjoy smooth, high-quality streams of top weightlifting events. Start watching now."
+					},
+					"climbing": {
+						"title": "Eplsite Climbing | Live Competitions & Climbing Events",
+						"description": "Watch Eplsite Climbing in HD for free with no signup. Enjoy top sport climbing and bouldering competitions with smooth, high-quality streams. Start watching now."
+					},
+					"winter-sports": {
+						"title": "Eplsite Winter Sports | Live Skiing & Snowboarding",
+						"description": "Watch Eplsite Winter Sports in HD for free with no signup. Enjoy top skiing, snowboarding, and other winter events with smooth, high-quality streams. Start now."
+					},
+					"bandy": {
+						"title": "Eplsite Bandy | Live Matches & League Action",
+						"description": "Watch Eplsite Bandy in HD for free with no signup. Enjoy top bandy leagues and fast-paced ice hockey action. Start watching now."
+					},
+					"curling": {
+						"title": "Eplsite Curling | Live Matches & Championship Streams",
+						"description": "Watch Eplsite Curling in HD for free with no signup. Enjoy top curling tournaments and smooth, high-quality streams. Start watching now."
+					},
+					"triathlon": {
+						"title": "Eplsite Triathlon | Live Races & Event Streams",
+						"description": "Watch Eplsite Triathlon in HD for free with no signup. Enjoy top swimming, cycling, and running action with smooth, high-quality streams. Start watching now."
+					},
+					"water-sports": {
+						"title": "Eplsite Water Sports | Live Events & Action Streams",
+						"description": "Watch Eplsite Water Sports in HD for free with no signup. Enjoy top swimming, surfing, and watersport events with smooth, high-quality streams. Start now."
+					},
+					"water-polo": {
+						"title": "Eplsite Water Polo | Live Matches & Top League Action",
+						"description": "Watch Eplsite Water Polo in HD for free with no signup. Enjoy smooth, high-quality streams of top water polo leagues and matches. Start watching now."
+					},
+					"sailing": {
+						"title": "Eplsite Sailing | Live Races & Regatta Streams",
+						"description": "Watch Eplsite Sailing in HD for free with no signup. Enjoy top sailing regattas and yacht races with smooth, high-quality streams. Start watching now."
+					},
+					"bowling": {
+						"title": "Eplsite Bowling | Live Matches & Tournament Streams",
+						"description": "Watch Eplsite Bowling in HD for free with no signup. Enjoy top bowling leagues and high-quality streams. Catch every strike and start watching now."
+					},
+					"darts": {
+						"title": "Eplsite Darts | Live Matches & Championship Streams",
+						"description": "Watch Eplsite Darts in HD for free with no signup. Enjoy top professional darts events with smooth, high-quality streams. Start watching now."
+					},
+					"chess": {
+						"title": "Eplsite Chess | Live Tournaments & Grandmaster Games",
+						"description": "Watch Eplsite Chess in HD for free with no signup. Follow top chess tournaments, grandmaster games, and enjoy fast, high-quality streams."
+					},
+					"e-sports": {
+						"title": "Eplsite E-sports | Live Matches & Pro Gaming Streams",
+						"description": "Watch Eplsite E-sports in HD for free with no signup. Stream top pro gaming tournaments and enjoy smooth, high-quality gameplay live."
+					},
+					"others": {
+						"title": "Eplsite Others | Live Sports & Event Streams",
+						"description": "Watch Eplsite Others in HD for free with no signup. Enjoy high-quality streams of various sports and unique events. Start watching now."
+					}
+				},
+				"home": {
+					"title": "Eplsite | Live Sports, Upcoming & Current Matches",
+					"description": "Discover live streams, schedules, and updates for all sports on Eplsite. Watch free HD matches, track upcoming games, and never miss any action."
+				}
+			},
+			"home_icon": "home.webp"
+		},
+		{
+			"id": 3,
+			"domain": "p2p4u.us",
+			"canonical_url": "https://www.p2p4u.us",
+			"site_name": "p2p4u",
+			"logo": "",
+			"primary_color": "#00ffaa",
+			"secondary_color": "#007bff",
+			"seo_title": "",
+			"seo_description": "",
+			"language": "en",
+			"sidebar_content": "",
+			"status": "active",
+			"sports_categories": [
+				"Football",
+				"Basketball",
+				"Tennis",
+				"Ice Hockey",
+				"Baseball",
+				"Rugby Union",
+				"Rugby League",
+				"Cricket",
+				"American Football",
+				"Volleyball",
+				"Beach Volleyball",
+				"Handball",
+				"Beach Handball",
+				"Beach Soccer",
+				"Aussie Rules",
+				"Futsal",
+				"Badminton",
+				"Netball",
+				"Floorball",
+				"Combat",
+				"Boxing",
+				"MMA",
+				"Snooker",
+				"Billiard",
+				"Table Tennis",
+				"Padel Tennis",
+				"Squash",
+				"Motorsport",
+				"Racing",
+				"Cycling",
+				"Equestrianism",
+				"Golf",
+				"Field Hockey",
+				"Lacrosse",
+				"Athletics",
+				"Gymnastics",
+				"Weightlifting",
+				"Climbing",
+				"Winter Sports",
+				"Bandy",
+				"Curling",
+				"Triathlon",
+				"Water Sports",
+				"Water Polo",
+				"Sailing",
+				"Bowling",
+				"Darts",
+				"Chess",
+				"E-sports",
+				"Others"
+			],
+			"sports_icons": {
+				"Football": "football.webp",
+				"Basketball": "basketball.webp",
+				"Tennis": "tennis.webp",
+				"Ice Hockey": "ice-hockey.webp",
+				"Baseball": "baseball.webp",
+				"Rugby Union": "rugby-union.webp",
+				"Rugby League": "rugby-league.webp",
+				"Cricket": "cricket.webp",
+				"American Football": "american-football.webp",
+				"Volleyball": "volleyball.webp",
+				"Handball": "handball.webp",
+				"Beach Volleyball": "beach-volleyball.webp",
+				"Beach Soccer": "beach-soccer.webp",
+				"Aussie Rules": "aussie-rules.webp",
+				"Futsal": "futsal.webp",
+				"Badminton": "badminton.webp",
+				"Netball": "netball.webp",
+				"Floorball": "floorball.webp",
+				"Combat": "combat.webp",
+				"Boxing": "boxing.webp",
+				"MMA": "mma.webp",
+				"Snooker": "snooker.webp",
+				"Billiard": "billiard.webp",
+				"Table Tennis": "table-tennis.webp",
+				"Padel Tennis": "padel-tennis.webp",
+				"Squash": "squash.webp",
+				"Motorsport": "motorsport.webp",
+				"Racing": "racing.webp",
+				"Cycling": "cycling.webp",
+				"Equestrianism": "equestrianism.webp",
+				"Golf": "golf.webp",
+				"Field Hockey": "field-hockey.webp",
+				"Lacrosse": "lacrosse.webp",
+				"Athletics": "athletics.webp",
+				"Gymnastics": "gymnastics.webp",
+				"Weightlifting": "weightlifting.webp",
+				"Climbing": "climbing.webp",
+				"Winter Sports": "winter-sports.webp",
+				"Bandy": "bandy.webp",
+				"Curling": "curling.webp",
+				"Water Sports": "water-sports.webp",
+				"Water Polo": "water-polo.webp",
+				"Sailing": "sailing.webp",
+				"Bowling": "bowling.webp",
+				"Darts": "darts.webp",
+				"Chess": "chess.webp",
+				"E-sports": "e-sports.webp",
+				"Others": "others.webp"
+			},
+			"pages_seo": {
+				"sports": {
+					"football": {
+						"title": "P2p4u Football | Live Soccer Streams Online",
+						"description": "Watch P2p4u Football free in HD with fast, no sign-up soccer streams. Enjoy smooth access to top leagues and matches. Start watching now."
+					},
+					"basketball": {
+						"title": "P2p4u Basketball | Live NBA Streams",
+						"description": "Watch P2p4u Basketball free in HD with fast NBA and hoops streams. No sign-up, smooth access, and top-quality coverage. Start watching live games now."
+					},
+					"tennis": {
+						"title": "P2p4u Tennis | Live Grand Slam Streams",
+						"description": "Catch P2p4u Tennis in HD with free, fast streams of ATP and WTA events. No sign-up required. Watch live matches now."
+					},
+					"ice-hockey": {
+						"title": "P2p4u Ice Hockey | Live NHL Hockey Streams",
+						"description": "Stream P2p4u Ice Hockey free in HD with smooth NHL hockey action. No sign-up, fast access, and top-quality streams. Watch live games now."
+					},
+					"baseball": {
+						"title": "P2p4u Baseball | Live MLB Streams",
+						"description": "Enjoy P2p4u Baseball with free HD streams of MLB games. Fast loading, no sign-up, easy access. Watch live now."
+					},
+					"rugby-union": {
+						"title": "P2p4u Rugby Union | Live Rugby Streams",
+						"description": "Watch P2p4u Rugby Union free in HD with smooth live rugby coverage. No login needed—jump into the action now."
+					},
+					"rugby-league": {
+						"title": "P2p4u Rugby League | Live Rugby Streams",
+						"description": "Stream P2p4u Rugby League with free, high-quality rugby action. No sign-up and fast access. Start watching today."
+					},
+					"cricket": {
+						"title": "P2p4u Cricket | Live Match Streams",
+						"description": "Enjoy P2p4u Cricket with free HD streams from global tournaments. No registration required. Watch live matches now."
+					},
+					"american-football": {
+						"title": "P2p4u American Football | NFL Live Streams",
+						"description": "Watch P2p4u American Football in HD with free NFL streams. No sign-up, fast access, top-quality coverage. Start streaming now."
+					},
+					"volleyball": {
+						"title": "P2p4u Volleyball | Live Match Streams",
+						"description": "Stream P2p4u Volleyball free with smooth HD action from top leagues. No account needed—watch instantly."
+					},
+					"beach-volleyball": {
+						"title": "P2p4u Beach Volleyball | Live Sand Court Streams",
+						"description": "Watch P2p4u Beach Volleyball free in HD with top beach tournaments. No sign-up required. Start viewing now."
+					},
+					"handball": {
+						"title": "P2p4u Handball | Live Match Streams",
+						"description": "Stream P2p4u Handball free with fast, quality HD coverage. No sign-up needed—start watching live games."
+					},
+					"beach-handball": {
+						"title": "P2p4u Beach Handball | Live Match Streams",
+						"description": "Enjoy P2p4u Beach Handball in HD with free, smooth streams. No registration required. Watch live now."
+					},
+					"beach-soccer": {
+						"title": "P2p4u Beach Soccer | Live Sand Football Streams",
+						"description": "Watch P2p4u Beach Soccer free with HD beach football streams. No sign-up required. Join live matches now."
+					},
+					"aussie-rules": {
+						"title": "P2p4u Aussie Rules | AFL Live Streams",
+						"description": "Stream P2p4u Aussie Rules free with HD AFL action. No registration—watch games live now."
+					},
+					"futsal": {
+						"title": "P2p4u Futsal | Live Indoor Football Streams",
+						"description": "Enjoy P2p4u Futsal free with fast, HD indoor football action. No sign-up required. Watch now."
+					},
+					"badminton": {
+						"title": "P2p4u Badminton | Live Match Streams",
+						"description": "Watch P2p4u Badminton with free HD streams of top tournaments. No login needed—stream live now."
+					},
+					"netball": {
+						"title": "P2p4u Netball | Live Match Streams",
+						"description": "Stream P2p4u Netball free in HD with fast, smooth access. No sign-up required. Start watching now."
+					},
+					"floorball": {
+						"title": "P2p4u Floorball | Live Match Streams",
+						"description": "Enjoy P2p4u Floorball free with clean HD streams. No registration needed. Watch matches instantly."
+					},
+					"combat": {
+						"title": "P2p4u Combat Sports | Live Fight Streams",
+						"description": "Watch P2p4u Combat Sports free with HD fight action across top events. No account needed—start streaming now."
+					},
+					"boxing": {
+						"title": "P2p4u Boxing | Live Fight Night Streams",
+						"description": "Stream P2p4u Boxing free in HD with major fight nights. No sign-up required. Watch live now."
+					},
+					"mma": {
+						"title": "P2p4u MMA | Live Fight Streams",
+						"description": "Watch P2p4u MMA with free HD UFC-style fight coverage. No registration needed. Stream live today."
+					},
+					"snooker": {
+						"title": "P2p4u Snooker | Live Table Streams",
+						"description": "Enjoy P2p4u Snooker with smooth HD streams. No sign-up—watch tournaments live now."
+					},
+					"billiard": {
+						"title": "P2p4u Billiard | Live Cue Sports Streams",
+						"description": "Stream P2p4u Billiard free with HD cue sports action. No registration required. Start watching now."
+					},
+					"table-tennis": {
+						"title": "P2p4u Table Tennis | Live Ping Pong Streams",
+						"description": "Watch P2p4u Table Tennis with free HD ping pong streams. No sign-up needed. Watch live now."
+					},
+					"padel-tennis": {
+						"title": "P2p4u Padel Tennis | Live Padel Streams",
+						"description": "Stream P2p4u Padel Tennis free with HD matches. Quick access, no sign-up. Watch live games instantly."
+					},
+					"squash": {
+						"title": "P2p4u Squash | Live Match Streams",
+						"description": "Enjoy P2p4u Squash with high-quality HD streams. No registration required—start watching now."
+					},
+					"motorsport": {
+						"title": "P2p4u Motorsport | Live Motor Racing Streams",
+						"description": "Stream P2p4u Motorsport free in HD with top motor racing events. No sign-up required. Watch live."
+					},
+					"racing": {
+						"title": "P2p4u Racing | Live Speed Streams",
+						"description": "Watch P2p4u Racing with free HD coverage of major racing events. No login needed. Start streaming now."
+					},
+					"cycling": {
+						"title": "P2p4u Cycling | Live Race Streams",
+						"description": "Stream P2p4u Cycling free with high-quality HD tours. No sign-up—watch live action now."
+					},
+					"equestrianism": {
+						"title": "P2p4u Equestrianism | Live Horse Sport Streams",
+						"description": "Watch P2p4u Equestrianism free with HD riding competitions. No registration needed. Start now."
+					},
+					"golf": {
+						"title": "P2p4u Golf | Live PGA Streams",
+						"description": "Stream P2p4u Golf free with HD PGA and global events. No sign-up—watch live rounds now."
+					},
+					"field-hockey": {
+						"title": "P2p4u Field Hockey | Live Match Streams",
+						"description": "Enjoy P2p4u Field Hockey in HD with free, fast streams. No account required. Watch now."
+					},
+					"lacrosse": {
+						"title": "P2p4u Lacrosse | Live Match Streams",
+						"description": "Stream P2p4u Lacrosse free with smooth HD coverage. No sign-up needed—watch instantly."
+					},
+					"athletics": {
+						"title": "P2p4u Athletics | Live Track Streams",
+						"description": "Watch P2p4u Athletics free in HD with top track and field events. No login required. Start streaming now."
+					},
+					"gymnastics": {
+						"title": "P2p4u Gymnastics | Live Artistic Streams",
+						"description": "Enjoy P2p4u Gymnastics with free HD coverage of top competitions. No sign-up needed. Watch now."
+					},
+					"weightlifting": {
+						"title": "P2p4u Weightlifting | Live Strength Streams",
+						"description": "Stream P2p4u Weightlifting free with HD lifts and competitions. No registration needed. Watch live now."
+					},
+					"climbing": {
+						"title": "P2p4u Climbing | Live Rock Sports Streams",
+						"description": "Watch P2p4u Climbing with free HD sport climbing coverage. No sign-up—start watching now."
+					},
+					"winter-sports": {
+						"title": "P2p4u Winter Sports | Live Snow Action Streams",
+						"description": "Stream P2p4u Winter Sports free with HD snow and ice events. No account required. Watch now."
+					},
+					"bandy": {
+						"title": "P2p4u Bandy | Live Ice Football Streams",
+						"description": "Watch P2p4u Bandy with fast, free HD streams. No registration needed. Enjoy live games now."
+					},
+					"curling": {
+						"title": "P2p4u Curling | Live Ice Match Streams",
+						"description": "Stream P2p4u Curling free in HD with smooth access. No sign-up needed. Watch live now."
+					},
+					"triathlon": {
+						"title": "P2p4u Triathlon | Live Race Streams",
+						"description": "Watch P2p4u Triathlon free with HD multisport coverage. No login required—start streaming now."
+					},
+					"water-sports": {
+						"title": "P2p4u Water Sports | Live Aquatic Streams",
+						"description": "Stream P2p4u Water Sports free in HD. No sign-up—watch aquatic action live now."
+					},
+					"water-polo": {
+						"title": "P2p4u Water Polo | Live Match Streams",
+						"description": "Enjoy P2p4u Water Polo with free HD streams. No registration required. Watch live games now."
+					},
+					"sailing": {
+						"title": "P2p4u Sailing | Live Regatta Streams",
+						"description": "Watch P2p4u Sailing free with smooth HD race streams. No sign-up—start viewing now."
+					},
+					"bowling": {
+						"title": "P2p4u Bowling | Live Lane Streams",
+						"description": "Enjoy P2p4u Bowling with free HD alley action. No login required—watch live now."
+					},
+					"darts": {
+						"title": "P2p4u Darts | Live Tournament Streams",
+						"description": "Stream P2p4u Darts free in HD with top events. No sign-up needed. Watch now."
+					},
+					"chess": {
+						"title": "P2p4u Chess | Live Tournament Streams",
+						"description": "Watch P2p4u Chess free with HD coverage of major matches. No registration needed. Start watching."
+					},
+					"e-sports": {
+						"title": "P2p4u E Sports | Live Gaming Streams",
+						"description": "Stream P2p4u E Sports free with high-quality esports tournaments. No sign-up required. Watch instantly."
+					},
+					"others": {
+						"title": "P2p4u Others | Live Sports Streams",
+						"description": "Explore P2p4u Others for free HD streams across many sports. No account needed. Start watching now."
+					}
+				},
+				"home": {
+					"title": "P2p4u | Live Sports Streams and Upcoming Matches",
+					"description": "Explore P2p4u for free HD streams of all live and upcoming sports matches. Fast access and no sign-up—start watching your favorite events now."
+				}
+			},
+			"home_icon": "home.webp"
+		},
+		{
+			"id": 4,
+			"domain": "streamhunter.info",
+			"canonical_url": "https://www.streamhunter.info",
+			"site_name": "Streamhunter",
+			"logo": "",
+			"primary_color": "#d400ff",
+			"secondary_color": "#8c00ff",
+			"seo_title": "",
+			"seo_description": "",
+			"language": "en",
+			"sidebar_content": "",
+			"status": "active",
+			"sports_categories": [
+				"Football",
+				"Basketball",
+				"Tennis",
+				"Ice Hockey",
+				"Baseball",
+				"Rugby Union",
+				"Rugby League",
+				"Cricket",
+				"American Football",
+				"Volleyball",
+				"Beach Volleyball",
+				"Handball",
+				"Beach Handball",
+				"Beach Soccer",
+				"Aussie Rules",
+				"Futsal",
+				"Badminton",
+				"Netball",
+				"Floorball",
+				"Combat",
+				"Boxing",
+				"MMA",
+				"Snooker",
+				"Billiard",
+				"Table Tennis",
+				"Padel Tennis",
+				"Squash",
+				"Motorsport",
+				"Racing",
+				"Cycling",
+				"Equestrianism",
+				"Golf",
+				"Field Hockey",
+				"Lacrosse",
+				"Athletics",
+				"Gymnastics",
+				"Weightlifting",
+				"Climbing",
+				"Winter Sports",
+				"Bandy",
+				"Curling",
+				"Triathlon",
+				"Water Sports",
+				"Water Polo",
+				"Sailing",
+				"Bowling",
+				"Darts",
+				"Chess",
+				"E-sports",
+				"Others"
+			]
+		}
+	],
+	"admins": [
+		{
+			"id": 1,
+			"username": "admin",
+			"password": "$2y$10$CFev3njRQzlacX6nyJnUpeSxQF9NrFqnLH7Ek5NiprGAvT1TNENcm",
+			"email": "admin@example.com"
+		}
+	]
 }
