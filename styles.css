@@ -489,6 +489,18 @@
 				/ var(--grid-main) var(--grid-rightbar);
 		}
 
+		body:dir(rtl) {
+			grid:
+				'header header' auto
+				'left-sidebar main' 1fr
+				'footer footer' auto
+				/ var(--grid-sidebar) var(--grid-main);
+		}
+
+		body:dir(rtl) .right-sidebar {
+			grid-area: left-sidebar;
+		}
+
 		.main-content {
 			padding: var(--space-lg);
 		}
@@ -510,6 +522,24 @@
 				'left-sidebar main right-sidebar' 1fr
 				'footer footer footer' auto
 				/ var(--grid-sidebar) var(--grid-main) var(--grid-rightbar);
+		}
+
+		body:dir(rtl) {
+			grid:
+				'header header header' auto
+				'right-sidebar main left-sidebar' 1fr
+				'footer footer footer' auto
+				/ var(--grid-rightbar) var(--grid-main) var(--grid-sidebar);
+		}
+
+		body:dir(rtl) .sidebar,
+		body:dir(rtl) .sidebar[popover],
+		body:dir(rtl) .sidebar[popover]:not(:popover-open) {
+			grid-area: right-sidebar;
+		}
+
+		body:dir(rtl) .right-sidebar {
+			grid-area: left-sidebar;
 		}
 
 		.sidebar {
@@ -1494,53 +1524,42 @@
 }
 
 /* ==========================================
-   RTL BASE OVERRIDES
+   RTL (RIGHT-TO-LEFT) SUPPORT
    ========================================== */
 
-/* Flip text alignment */
+/* Base RTL direction */
+
 [dir='rtl'] {
 	text-align: right;
 }
 
 [dir='rtl'] .header-page-title {
-	text-align: center; /* Keep centered */
+	text-align: center;
 }
 
 /* ==========================================
-   RTL LAYOUT GRID
-   ========================================== */
-
-/* Flip the grid columns for desktop */
-@container viewport (min-width: 1024px) {
-	[dir='rtl'] body {
-		grid:
-			'header header header' auto
-			'right-sidebar main left-sidebar' 1fr
-			'footer footer footer' auto
-			/ var(--grid-rightbar) var(--grid-main) var(--grid-sidebar);
-	}
-}
-
-@container viewport (min-width: 768px) {
-	[dir='rtl'] body {
-		grid:
-			'header header' auto
-			'right-sidebar main' 1fr
-			'footer footer' auto
-			/ var(--grid-rightbar) var(--grid-main);
-	}
-}
-
-/* ==========================================
-   RTL HEADER
+   RTL HEADER - FULL MIRROR
    ========================================== */
 
 [dir='rtl'] .header {
 	flex-direction: row-reverse;
 }
 
+[dir='rtl'] .logo {
+	order: 1;
+}
+
+[dir='rtl'] .header-page-title {
+	order: 0;
+}
+
 [dir='rtl'] .header-right {
+	order: -1;
 	flex-direction: row-reverse;
+}
+
+[dir='rtl'] .burger-menu {
+	order: -2;
 }
 
 [dir='rtl'] .logo-title {
@@ -1560,10 +1579,13 @@
 	flex-direction: row-reverse;
 }
 
-/* Tooltip position adjustment for RTL */
 [dir='rtl'] .language-option::after {
 	left: auto;
 	right: 50%;
+	transform: translateX(50%);
+}
+
+[dir='rtl'] .language-option:hover::after {
 	transform: translateX(50%);
 }
 
@@ -1571,7 +1593,7 @@
    RTL SIDEBAR & NAVIGATION
    ========================================== */
 
-[dir='rtl'] .sidebar {
+[dir='rtl'] .sidebar[popover] {
 	inset-inline-start: auto;
 	inset-inline-end: 0;
 }
@@ -1583,6 +1605,10 @@
 
 [dir='rtl'] .favorites-link {
 	flex-direction: row-reverse;
+}
+
+[dir='rtl'] .sidebar-content {
+	text-align: right;
 }
 
 /* ==========================================
@@ -1683,24 +1709,15 @@
 }
 
 /* ==========================================
-   RTL BURGER MENU
-   ========================================== */
-
-[dir='rtl'] .burger-menu {
-	order: -1; /* Move to left side in RTL */
-}
-
-/* ==========================================
    RTL ANIMATIONS
    ========================================== */
 
-/* Flip transform animations */
 [dir='rtl'] details:not([open]) .sport-header::after {
-	transform: rotate(90deg); /* Opposite direction */
+	transform: rotate(90deg);
 }
 
 /* ==========================================
-   RTL FORM ELEMENTS (if any)
+   RTL FORM ELEMENTS
    ========================================== */
 
 [dir='rtl'] input,
@@ -1710,19 +1727,61 @@
 }
 
 /* ==========================================
-   RTL UTILITY CLASSES
+   RTL UTILITY - Keep Numbers LTR
    ========================================== */
 
-/* Force LTR for specific elements (numbers, codes, etc.) */
-[dir='rtl'] .force-ltr {
-	direction: ltr;
-	unicode-bidi: isolate;
-}
-
-/* Keep numbers LTR */
 [dir='rtl'] .game-time,
 [dir='rtl'] .sport-count-badge,
 [dir='rtl'] time {
 	direction: ltr;
 	unicode-bidi: isolate;
+}
+
+[dir='rtl'] .force-ltr {
+	direction: ltr;
+	unicode-bidi: isolate;
+}
+
+/* ==========================================
+   RTL FAVORITES LINK
+   ========================================== */
+
+[dir='rtl'] .favorites-link {
+	flex-direction: row-reverse;
+}
+
+[dir='rtl'] .favorites-count {
+	margin-inline-start: 0;
+	margin-inline-end: auto;
+	order: -1;
+}
+
+/* ==========================================
+   RTL MENU ITEMS (Sports list)
+   ========================================== */
+
+[dir='rtl'] .menu-item {
+	flex-direction: row-reverse;
+}
+
+[dir='rtl'] .menu-item-left {
+	flex-direction: row; /* Keep icon on right of name */
+}
+
+[dir='rtl'] .sport-count {
+	margin-inline-start: 0;
+	margin-inline-end: auto;
+}
+
+/* Fix hover transform direction */
+[dir='rtl'] .menu-item:hover {
+	transform: translateX(-5px);
+}
+
+/* ==========================================
+   RTL SECTION TITLE
+   ========================================== */
+
+[dir='rtl'] .section-title {
+	text-align: right;
 }

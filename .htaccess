@@ -60,7 +60,7 @@ RewriteRule ^([a-z]{2})/live-([a-z-]+)/?$ index.php?url_lang=$1&sport=$2 [L,QSA]
 
 # Language only: /xx or /xx/
 
-RewriteRule ^([a-z]{2})/?$ index.php?url_lang=$1 [L,QSA]
+RewriteRule ^([a-z]{2}(-[a-z]{2})?)/?$ index.php?url_lang=$1 [L,QSA]
 
 # ==========================================
 
