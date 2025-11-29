@@ -3,13 +3,68 @@
 		{
 			"id": 1,
 			"domain": "sportlemons.info",
+			"canonical_url": "https://www.sportlemons.info",
 			"site_name": "SportLemons",
 			"logo": "sportlemons-logo.webp",
 			"primary_color": "#ffa500",
 			"secondary_color": "#FF8C00",
 			"language": "en",
-			"sidebar_content": "<h2>About SportLemons</h2><p>Your #1 destination for live sports streaming. Watch all major sports events for free!</p>",
+			"sidebar_content": "",
 			"status": "active",
+			"sports_categories": [
+				"Football",
+				"Basketball",
+				"Tennis",
+				"Ice Hockey",
+				"Baseball",
+				"Rugby Union",
+				"Rugby League",
+				"Rugby Sevens",
+				"Cricket",
+				"American Football",
+				"Volleyball",
+				"Beach Volleyball",
+				"Handball",
+				"Beach Handball",
+				"Beach Soccer",
+				"Aussie Rules",
+				"Futsal",
+				"Badminton",
+				"Netball",
+				"Floorball",
+				"Combat Sport",
+				"Boxing",
+				"MMA",
+				"Snooker",
+				"Billiard",
+				"Table Tennis",
+				"Padel Tennis",
+				"Squash",
+				"Motorsport",
+				"Racing",
+				"Cycling",
+				"Equestrianism",
+				"Golf",
+				"Field Hockey",
+				"Lacrosse",
+				"Athletics",
+				"Gymnastics",
+				"Weightlifting",
+				"Climbing",
+				"Winter Sport",
+				"Bandy",
+				"Curling",
+				"Triathlon",
+				"Water Sports",
+				"Water Polo",
+				"Sailing",
+				"Bowling",
+				"Darts",
+				"Chess",
+				"E-sports",
+				"Extreme Sport",
+				"Others"
+			],
 			"pages_seo": {
 				"home": {
 					"title": "SportLemon | Live Sports & Today’s Match Listings",
@@ -164,10 +219,6 @@
 						"title": "SportLemon Climbing | Free Live Climbing Streams",
 						"description": "Stream live climbing for free. Watch IFSC World Cups & championships in HD on SportLemon."
 					},
-					"winter-sports": {
-						"title": "SportLemon Winter Sports | Free Live Streams",
-						"description": "Watch free live winter sports streams. Skiing, snowboarding & more in HD on SportLemon."
-					},
 					"bandy": {
 						"title": "SportLemon Bandy | Free Live Bandy Streams",
 						"description": "Free live bandy streams on SportLemon. Watch World Championships & major leagues in high definition."
@@ -220,115 +271,24 @@
 						"title": "SportLemon Rugby League | Watch Free Live HD Streams",
 						"description": "SportLemon Rugby League brings you free, no sign-up, high-quality live streams of every match. Enjoy fast, reliable access in HD—start watching today."
 					},
-					"combat-sports": {
+					"combat-sport": {
 						"title": "SportLemon Combat | Free Live Combat Sports Streams",
 						"description": "Free live combat sports streams on SportLemon. Watch MMA, boxing, wrestling & more in HD."
+					},
+					"winter-sport": {
+						"title": "SportLemon Winter Sports | Free Live Streams",
+						"description": "Watch free live winter sports streams. Skiing, snowboarding & more in HD on SportLemon."
+					},
+					"rugby-sevens": {
+						"title": "SportLemons Rugby Sevens | Live Rugby Sevens Streams",
+						"description": "SportLemons Rugby Sevens delivers free HD sevens tournaments with smooth playback and no sign-up. Watch fast-paced rugby sevens action live now."
+					},
+					"extreme-sport": {
+						"title": "SportLemons Extreme Sport | Live Extreme Sport Streams",
+						"description": "SportLemons Extreme Sport offers free HD coverage of top extreme competitions. No registration required. Stream thrilling extreme sport events today."
 					}
 				}
 			},
-			"sports_categories": [
-				"Football",
-				"Basketball",
-				"Tennis",
-				"Ice Hockey",
-				"Baseball",
-				"Rugby Union",
-				"Rugby League",
-				"Cricket",
-				"American Football",
-				"Volleyball",
-				"Beach Volleyball",
-				"Handball",
-				"Beach Handball",
-				"Beach Soccer",
-				"Aussie Rules",
-				"Futsal",
-				"Badminton",
-				"Netball",
-				"Floorball",
-				"Combat Sports",
-				"Boxing",
-				"MMA",
-				"Snooker",
-				"Billiard",
-				"Table Tennis",
-				"Padel Tennis",
-				"Squash",
-				"Motorsport",
-				"Racing",
-				"Cycling",
-				"Equestrianism",
-				"Golf",
-				"Field Hockey",
-				"Lacrosse",
-				"Athletics",
-				"Gymnastics",
-				"Weightlifting",
-				"Climbing",
-				"Winter Sports",
-				"Bandy",
-				"Curling",
-				"Triathlon",
-				"Water Sports",
-				"Water Polo",
-				"Sailing",
-				"Bowling",
-				"Darts",
-				"Chess",
-				"E-sports",
-				"Others"
-			],
-			"sports_icons": {
-				"Football": "football.webp",
-				"Basketball": "basketball.webp",
-				"Tennis": "tennis.webp",
-				"Ice Hockey": "ice-hockey.webp",
-				"Baseball": "baseball.webp",
-				"Cricket": "cricket.webp",
-				"American Football": "american-football.webp",
-				"Rugby Union": "rugby-union.webp",
-				"Rugby League": "rugby-league.webp",
-				"Volleyball": "volleyball.webp",
-				"Beach Volleyball": "beach-volleyball.webp",
-				"Handball": "handball.webp",
-				"Beach Soccer": "beach-soccer.webp",
-				"Aussie Rules": "aussie-rules.webp",
-				"Futsal": "futsal.webp",
-				"Badminton": "badminton.webp",
-				"Netball": "netball.webp",
-				"Floorball": "floorball.webp",
-				"Boxing": "boxing.webp",
-				"MMA": "mma.webp",
-				"Snooker": "snooker.webp",
-				"Billiard": "billiard.webp",
-				"Table Tennis": "table-tennis.webp",
-				"Padel Tennis": "padel-tennis.webp",
-				"Squash": "squash.webp",
-				"Motorsport": "motorsport.webp",
-				"Racing": "racing.webp",
-				"Cycling": "cycling.webp",
-				"Equestrianism": "equestrianism.webp",
-				"Golf": "golf.webp",
-				"Field Hockey": "field-hockey.webp",
-				"Lacrosse": "lacrosse.webp",
-				"Athletics": "athletics.webp",
-				"Gymnastics": "gymnastics.webp",
-				"Weightlifting": "weightlifting.webp",
-				"Climbing": "climbing.webp",
-				"Winter Sports": "winter-sports.webp",
-				"Bandy": "bandy.webp",
-				"Curling": "curling.webp",
-				"Water Sports": "water-sports.webp",
-				"Water Polo": "water-polo.webp",
-				"Sailing": "sailing.webp",
-				"Bowling": "bowling.webp",
-				"Darts": "darts.webp",
-				"Chess": "chess.webp",
-				"E-sports": "e-sports.webp",
-				"Others": "others.webp",
-				"Combat Sports": "combat-sports.webp"
-			},
-			"canonical_url": "https://www.sportlemons.info",
 			"home_icon": "home.webp"
 		},
 		{
@@ -339,8 +299,6 @@
 			"logo": "",
 			"primary_color": "#ff4d00",
 			"secondary_color": "#ff1100",
-			"seo_title": "",
-			"seo_description": "",
 			"language": "en",
 			"sidebar_content": "",
 			"status": "active",
@@ -352,6 +310,7 @@
 				"Baseball",
 				"Rugby Union",
 				"Rugby League",
+				"Rugby Sevens",
 				"Cricket",
 				"American Football",
 				"Volleyball",
@@ -364,7 +323,7 @@
 				"Badminton",
 				"Netball",
 				"Floorball",
-				"Combat Sports",
+				"Combat Sport",
 				"Boxing",
 				"MMA",
 				"Snooker",
@@ -383,7 +342,7 @@
 				"Gymnastics",
 				"Weightlifting",
 				"Climbing",
-				"Winter Sports",
+				"Winter Sport",
 				"Bandy",
 				"Curling",
 				"Triathlon",
@@ -394,58 +353,9 @@
 				"Darts",
 				"Chess",
 				"E-sports",
+				"Extreme Sport",
 				"Others"
 			],
-			"sports_icons": {
-				"Football": "football.webp",
-				"Basketball": "basketball.webp",
-				"Tennis": "tennis.webp",
-				"Ice Hockey": "ice-hockey.webp",
-				"Baseball": "baseball.webp",
-				"Rugby League": "rugby-league.webp",
-				"Rugby Union": "rugby-union.webp",
-				"Cricket": "cricket.webp",
-				"American Football": "american-football.webp",
-				"Volleyball": "volleyball.webp",
-				"Beach Volleyball": "beach-volleyball.webp",
-				"Handball": "handball.webp",
-				"Beach Soccer": "beach-soccer.webp",
-				"Aussie Rules": "aussie-rules.webp",
-				"Futsal": "futsal.webp",
-				"Badminton": "badminton.webp",
-				"Netball": "netball.webp",
-				"Floorball": "floorball.webp",
-				"Combat Sports": "combat-sports.webp",
-				"Boxing": "boxing.webp",
-				"MMA": "mma.webp",
-				"Snooker": "snooker.webp",
-				"Billiard": "billiard.webp",
-				"Table Tennis": "table-tennis.webp",
-				"Padel Tennis": "padel-tennis.webp",
-				"Squash": "squash.webp",
-				"Motorsport": "motorsport.webp",
-				"Racing": "racing.webp",
-				"Cycling": "cycling.webp",
-				"Equestrianism": "equestrianism.webp",
-				"Golf": "golf.webp",
-				"Field Hockey": "field-hockey.webp",
-				"Lacrosse": "lacrosse.webp",
-				"Athletics": "athletics.webp",
-				"Gymnastics": "gymnastics.webp",
-				"Weightlifting": "weightlifting.webp",
-				"Climbing": "climbing.webp",
-				"Winter Sports": "winter-sports.webp",
-				"Bandy": "bandy.webp",
-				"Curling": "curling.webp",
-				"Water Sports": "water-sports.webp",
-				"Water Polo": "water-polo.webp",
-				"Sailing": "sailing.webp",
-				"Bowling": "bowling.webp",
-				"Darts": "darts.webp",
-				"Chess": "chess.webp",
-				"E-sports": "e-sports.webp",
-				"Others": "others.webp"
-			},
 			"pages_seo": {
 				"sports": {
 					"football": {
@@ -524,10 +434,6 @@
 						"title": "Eplsite Floorball | Live Matches & Fast League Action",
 						"description": "Watch Eplsite Floorball in HD for free with no signup. Enjoy smooth, high-quality streams of top floorball leagues. Start watching now."
 					},
-					"combat-sports": {
-						"title": "Eplsite Combat Sports | MMA, Boxing & Live Fights",
-						"description": "Watch Eplsite Combat Sports live in HD for free with no signup. Enjoy top MMA, boxing, and martial arts streams. Catch the action now."
-					},
 					"boxing": {
 						"title": "Eplsite Boxing | Live Fights & Championship Streams",
 						"description": "Watch Eplsite Boxing in HD for free with no signup. Enjoy top professional boxing matches and fast, high-quality fight streams. Start watching now."
@@ -600,10 +506,6 @@
 						"title": "Eplsite Climbing | Live Competitions & Climbing Events",
 						"description": "Watch Eplsite Climbing in HD for free with no signup. Enjoy top sport climbing and bouldering competitions with smooth, high-quality streams. Start watching now."
 					},
-					"winter-sports": {
-						"title": "Eplsite Winter Sports | Live Skiing & Snowboarding",
-						"description": "Watch Eplsite Winter Sports in HD for free with no signup. Enjoy top skiing, snowboarding, and other winter events with smooth, high-quality streams. Start now."
-					},
 					"bandy": {
 						"title": "Eplsite Bandy | Live Matches & League Action",
 						"description": "Watch Eplsite Bandy in HD for free with no signup. Enjoy top bandy leagues and fast-paced ice hockey action. Start watching now."
@@ -647,6 +549,22 @@
 					"others": {
 						"title": "Eplsite Others | Live Sports & Event Streams",
 						"description": "Watch Eplsite Others in HD for free with no signup. Enjoy high-quality streams of various sports and unique events. Start watching now."
+					},
+					"combat-sport": {
+						"title": "Eplsite Combat Sports | MMA, Boxing & Live Fights",
+						"description": "Watch Eplsite Combat Sports live in HD for free with no signup. Enjoy top MMA, boxing, and martial arts streams. Catch the action now."
+					},
+					"winter-sport": {
+						"title": "Eplsite Winter Sports | Live Skiing & Snowboarding",
+						"description": "Watch Eplsite Winter Sports in HD for free with no signup. Enjoy top skiing, snowboarding, and other winter events with smooth, high-quality streams. Start now."
+					},
+					"rugby-sevens": {
+						"title": "Eplsite Rugby Sevens | Live Rugby Sevens Streams",
+						"description": "Eplsite Rugby Sevens offers free HD sevens tournaments with smooth playback and no sign-up needed. Watch high-speed rugby sevens action live today."
+					},
+					"extreme-sport": {
+						"title": "Eplsite Extreme Sport | Live Extreme Sport Streams",
+						"description": "Eplsite Extreme Sport brings free HD coverage of top extreme competitions. No registration required. Stream thrilling extreme sport events now."
 					}
 				},
 				"home": {
@@ -664,8 +582,6 @@
 			"logo": "",
 			"primary_color": "#00ffaa",
 			"secondary_color": "#007bff",
-			"seo_title": "",
-			"seo_description": "",
 			"language": "en",
 			"sidebar_content": "",
 			"status": "active",
@@ -689,7 +605,7 @@
 				"Badminton",
 				"Netball",
 				"Floorball",
-				"Combat",
+				"Combat Sports",
 				"Boxing",
 				"MMA",
 				"Snooker",
@@ -721,56 +637,6 @@
 				"E-sports",
 				"Others"
 			],
-			"sports_icons": {
-				"Football": "football.webp",
-				"Basketball": "basketball.webp",
-				"Tennis": "tennis.webp",
-				"Ice Hockey": "ice-hockey.webp",
-				"Baseball": "baseball.webp",
-				"Rugby Union": "rugby-union.webp",
-				"Rugby League": "rugby-league.webp",
-				"Cricket": "cricket.webp",
-				"American Football": "american-football.webp",
-				"Volleyball": "volleyball.webp",
-				"Handball": "handball.webp",
-				"Beach Volleyball": "beach-volleyball.webp",
-				"Beach Soccer": "beach-soccer.webp",
-				"Aussie Rules": "aussie-rules.webp",
-				"Futsal": "futsal.webp",
-				"Badminton": "badminton.webp",
-				"Netball": "netball.webp",
-				"Floorball": "floorball.webp",
-				"Combat": "combat.webp",
-				"Boxing": "boxing.webp",
-				"MMA": "mma.webp",
-				"Snooker": "snooker.webp",
-				"Billiard": "billiard.webp",
-				"Table Tennis": "table-tennis.webp",
-				"Padel Tennis": "padel-tennis.webp",
-				"Squash": "squash.webp",
-				"Motorsport": "motorsport.webp",
-				"Racing": "racing.webp",
-				"Cycling": "cycling.webp",
-				"Equestrianism": "equestrianism.webp",
-				"Golf": "golf.webp",
-				"Field Hockey": "field-hockey.webp",
-				"Lacrosse": "lacrosse.webp",
-				"Athletics": "athletics.webp",
-				"Gymnastics": "gymnastics.webp",
-				"Weightlifting": "weightlifting.webp",
-				"Climbing": "climbing.webp",
-				"Winter Sports": "winter-sports.webp",
-				"Bandy": "bandy.webp",
-				"Curling": "curling.webp",
-				"Water Sports": "water-sports.webp",
-				"Water Polo": "water-polo.webp",
-				"Sailing": "sailing.webp",
-				"Bowling": "bowling.webp",
-				"Darts": "darts.webp",
-				"Chess": "chess.webp",
-				"E-sports": "e-sports.webp",
-				"Others": "others.webp"
-			},
 			"pages_seo": {
 				"sports": {
 					"football": {
@@ -848,10 +714,6 @@
 					"floorball": {
 						"title": "P2p4u Floorball | Live Match Streams",
 						"description": "Enjoy P2p4u Floorball free with clean HD streams. No registration needed. Watch matches instantly."
-					},
-					"combat": {
-						"title": "P2p4u Combat Sports | Live Fight Streams",
-						"description": "Watch P2p4u Combat Sports free with HD fight action across top events. No account needed—start streaming now."
 					},
 					"boxing": {
 						"title": "P2p4u Boxing | Live Fight Night Streams",
@@ -972,6 +834,10 @@
 					"others": {
 						"title": "P2p4u Others | Live Sports Streams",
 						"description": "Explore P2p4u Others for free HD streams across many sports. No account needed. Start watching now."
+					},
+					"combat-sports": {
+						"title": "P2p4u Combat Sports | Live Fight Streams",
+						"description": "Watch P2p4u Combat Sports free with HD fight action across top events. No account needed—start streaming now."
 					}
 				},
 				"home": {
@@ -989,8 +855,6 @@
 			"logo": "",
 			"primary_color": "#d400ff",
 			"secondary_color": "#8c00ff",
-			"seo_title": "",
-			"seo_description": "",
 			"language": "en",
 			"sidebar_content": "",
 			"status": "active",
@@ -1014,7 +878,7 @@
 				"Badminton",
 				"Netball",
 				"Floorball",
-				"Combat",
+				"Combat Sports",
 				"Boxing",
 				"MMA",
 				"Snooker",
@@ -1045,7 +909,759 @@
 				"Chess",
 				"E-sports",
 				"Others"
-			]
+			],
+			"pages_seo": {
+				"sports": {
+					"football": {
+						"title": "Streamhunter Football | Live Matches Online",
+						"description": "Streamhunter Football delivers free HD streams of soccer games worldwide. Enjoy fast access and no sign-up. Start watching now."
+					},
+					"basketball": {
+						"title": "Streamhunter Basketball | Live NBA Action",
+						"description": "Streamhunter Basketball offers free HD streams from NBA and global leagues. Easy access and no registration. Watch live games now."
+					},
+					"tennis": {
+						"title": "Streamhunter Tennis | Live Grand Slam Streams",
+						"description": "Streamhunter Tennis lets you watch ATP and WTA matches in HD for free. No sign-up required. Stream live tennis now."
+					},
+					"ice-hockey": {
+						"title": "Streamhunter Ice Hockey | Live NHL Streams",
+						"description": "Streamhunter Ice Hockey brings free HD action from NHL and global leagues. Smooth streaming with no sign-up. Watch now."
+					},
+					"baseball": {
+						"title": "Streamhunter Baseball | Live MLB Streams",
+						"description": "Streamhunter Baseball offers HD MLB and international league streams for free. No registration needed. Watch live baseball now."
+					},
+					"rugby-union": {
+						"title": "Streamhunter Rugby Union | Live Rugby Streams",
+						"description": "Streamhunter Rugby Union gives free HD streams from top leagues and internationals. No sign-up needed. Watch rugby live now."
+					},
+					"rugby-league": {
+						"title": "Streamhunter Rugby League | Live Rugby Events",
+						"description": "Streamhunter Rugby League delivers free HD streams from NRL, Super League, and more. No registration. Watch live now."
+					},
+					"cricket": {
+						"title": "Streamhunter Cricket | Live Match Streams",
+						"description": "Streamhunter Cricket streams Tests, ODI, and T20 in HD for free. Fast loading with no sign-up. Start watching live cricket now."
+					},
+					"american-football": {
+						"title": "Streamhunter American Football | NFL Live Streams",
+						"description": "Streamhunter American Football offers free HD NFL and NCAA streams with no sign-up. Fast, high-quality viewing. Watch live now."
+					},
+					"volleyball": {
+						"title": "Streamhunter Volleyball | Live Volleyball Streams",
+						"description": "Streamhunter Volleyball provides free HD matches from global leagues. No sign-up required. Watch live volleyball now."
+					},
+					"beach-volleyball": {
+						"title": "Streamhunter Beach Volleyball | Live Beach Action",
+						"description": "Streamhunter Beach Volleyball streams top FIVB and pro tours in HD. Free access with no registration. Watch now."
+					},
+					"handball": {
+						"title": "Streamhunter Handball | Live Handball Streams",
+						"description": "Streamhunter Handball offers free HD matches from top leagues and tournaments. No sign-up needed. Watch now."
+					},
+					"beach-handball": {
+						"title": "Streamhunter Beach Handball | Live Beach Matches",
+						"description": "Streamhunter Beach Handball brings free HD action from global events. No registration required. Watch live now."
+					},
+					"beach-soccer": {
+						"title": "Streamhunter Beach Soccer | Live Beach Games",
+						"description": "Streamhunter Beach Soccer offers free HD beach football streams with no sign-up. Enjoy fast, high-quality viewing now."
+					},
+					"aussie-rules": {
+						"title": "Streamhunter Aussie Rules | Live AFL Streams",
+						"description": "Streamhunter Aussie Rules provides free HD AFL action with no registration. Fast, smooth streaming. Watch now."
+					},
+					"futsal": {
+						"title": "Streamhunter Futsal | Live Futsal Streams",
+						"description": "Streamhunter Futsal delivers free HD futsal matches worldwide. No sign-up needed. Watch live games now."
+					},
+					"badminton": {
+						"title": "Streamhunter Badminton | Live Badminton Streams",
+						"description": "Streamhunter Badminton streams BWF tournaments in HD for free. No registration required. Watch now."
+					},
+					"netball": {
+						"title": "Streamhunter Netball | Live Netball Streams",
+						"description": "Streamhunter Netball gives free HD access to top leagues and tournaments. No sign-up required. Watch live now."
+					},
+					"floorball": {
+						"title": "Streamhunter Floorball | Live Floorball Streams",
+						"description": "Streamhunter Floorball provides free HD matches from top leagues. No registration. Watch live action now."
+					},
+					"combat-sports": {
+						"title": "Streamhunter Combat Sports | Live Fight Streams",
+						"description": "Streamhunter Combat Sports offers free HD action from major fight events. No sign-up. Watch live bouts now."
+					},
+					"boxing": {
+						"title": "Streamhunter Boxing | Live Fight Night Streams",
+						"description": "Streamhunter Boxing delivers free HD streams of major fights. No registration needed. Watch boxing live now."
+					},
+					"mma": {
+						"title": "Streamhunter MMA | Live MMA Fight Streams",
+						"description": "Streamhunter MMA offers free HD action from top promotions. No sign-up required. Watch live fights now."
+					},
+					"snooker": {
+						"title": "Streamhunter Snooker | Live Snooker Streams",
+						"description": "Streamhunter Snooker streams professional tournaments in HD for free. No registration. Watch live now."
+					},
+					"billiard": {
+						"title": "Streamhunter Billiard | Live Billiard Streams",
+						"description": "Streamhunter Billiard provides free HD matches and tournaments with no sign-up. Start watching now."
+					},
+					"table-tennis": {
+						"title": "Streamhunter Table Tennis | Live Ping Pong Streams",
+						"description": "Streamhunter Table Tennis gives free HD ITTF matches. No registration required. Watch live action now."
+					},
+					"padel-tennis": {
+						"title": "Streamhunter Padel Tennis | Live Padel Streams",
+						"description": "Streamhunter Padel Tennis offers free HD matches from major tours. No sign-up. Watch live padel now."
+					},
+					"squash": {
+						"title": "Streamhunter Squash | Live Squash Streams",
+						"description": "Streamhunter Squash streams PSA matches in HD for free. No registration. Watch squash live now."
+					},
+					"motorsport": {
+						"title": "Streamhunter Motorsport | Live Motor Racing",
+						"description": "Streamhunter Motorsport provides free HD racing streams from major series. No sign-up. Watch motorsport live now."
+					},
+					"racing": {
+						"title": "Streamhunter Racing | Live Race Streams",
+						"description": "Streamhunter Racing offers free HD motorsport streams with no registration. Enjoy fast live action now."
+					},
+					"cycling": {
+						"title": "Streamhunter Cycling | Live Cycling Streams",
+						"description": "Streamhunter Cycling streams major tours and events in HD for free. No sign-up. Watch live cycling now."
+					},
+					"equestrianism": {
+						"title": "Streamhunter Equestrianism | Live Horse Events",
+						"description": "Streamhunter Equestrianism delivers free HD streams of global horse competitions. No registration. Watch live now."
+					},
+					"golf": {
+						"title": "Streamhunter Golf | Live Golf Streams",
+						"description": "Streamhunter Golf offers free HD PGA and global tour streams. No sign-up. Watch golf live now."
+					},
+					"field-hockey": {
+						"title": "Streamhunter Field Hockey | Live Hockey Streams",
+						"description": "Streamhunter Field Hockey streams global matches in HD for free. No sign-up required. Watch live now."
+					},
+					"lacrosse": {
+						"title": "Streamhunter Lacrosse | Live Lacrosse Streams",
+						"description": "Streamhunter Lacrosse provides free HD matches from major leagues. No registration. Watch now."
+					},
+					"athletics": {
+						"title": "Streamhunter Athletics | Live Athletics Streams",
+						"description": "Streamhunter Athletics streams global events in HD for free. No sign-up required. Watch athletics live now."
+					},
+					"gymnastics": {
+						"title": "Streamhunter Gymnastics | Live Gymnastics Streams",
+						"description": "Streamhunter Gymnastics offers free HD competition streams with no registration. Watch live now."
+					},
+					"weightlifting": {
+						"title": "Streamhunter Weightlifting | Live Weightlifting Streams",
+						"description": "Streamhunter Weightlifting offers free HD competitions with no sign-up required. Enjoy fast access to live weightlifting events now."
+					},
+					"climbing": {
+						"title": "Streamhunter Climbing | Live Climbing Streams",
+						"description": "Streamhunter Climbing streams lead, boulder, and speed events in HD for free. No sign-up. Watch live now."
+					},
+					"winter-sports": {
+						"title": "Streamhunter Winter Sports | Live Winter Sport Events",
+						"description": "Streamhunter Winter Sports provides free HD skiing, skating, and more. No registration. Watch live now."
+					},
+					"bandy": {
+						"title": "Streamhunter Bandy | Live Bandy Streams",
+						"description": "Streamhunter Bandy offers free HD matches with no sign-up. Watch bandy live now."
+					},
+					"curling": {
+						"title": "Streamhunter Curling | Live Curling Streams",
+						"description": "Streamhunter Curling gives free HD tournament coverage with no registration. Watch live curling now."
+					},
+					"triathlon": {
+						"title": "Streamhunter Triathlon | Live Race Streams",
+						"description": "Streamhunter Triathlon streams global triathlon events in HD for free. No sign-up. Watch live now."
+					},
+					"water-sports": {
+						"title": "Streamhunter Water Sports | Live Aquatic Streams",
+						"description": "Streamhunter Water Sports offers free HD streams of top aquatic events. No registration. Watch live now."
+					},
+					"water-polo": {
+						"title": "Streamhunter Water Polo | Live Polo Streams",
+						"description": "Streamhunter Water Polo gives free HD matches with no sign-up. Watch live water polo now."
+					},
+					"sailing": {
+						"title": "Streamhunter Sailing | Live Sailing Streams",
+						"description": "Streamhunter Sailing streams global regattas in HD for free. No registration. Watch live sailing now."
+					},
+					"bowling": {
+						"title": "Streamhunter Bowling | Live Bowling Streams",
+						"description": "Streamhunter Bowling provides free HD tournaments with no sign-up. Watch live bowling now."
+					},
+					"darts": {
+						"title": "Streamhunter Darts | Live Darts Streams",
+						"description": "Streamhunter Darts offers free HD PDC and global darts streams. No registration. Watch live darts now."
+					},
+					"chess": {
+						"title": "Streamhunter Chess | Live Chess Matches",
+						"description": "Streamhunter Chess streams top tournaments in HD for free. No sign-up. Watch chess live now."
+					},
+					"e-sports": {
+						"title": "Streamhunter E Sports | Live Esports Streams",
+						"description": "Streamhunter E Sports provides free HD esports tournaments. No registration required. Watch live now."
+					},
+					"others": {
+						"title": "Streamhunter Others | Live Sports Streams",
+						"description": "Streamhunter Others offers free HD coverage of niche and emerging sports. No sign-up. Watch live action now."
+					}
+				},
+				"home": {
+					"title": "Streamhunter | Live Sports Streams & Upcoming Matches",
+					"description": "Streamhunter offers free HD streams for all sports with upcoming and live matches updated daily. Fast access, no sign-up required. Start watching now."
+				}
+			}
+		},
+		{
+			"id": 5,
+			"domain": "methstreams.org.uk",
+			"canonical_url": "https://www.methstreams.org.uk",
+			"site_name": "Methstreams",
+			"logo": "",
+			"primary_color": "#ff0066",
+			"secondary_color": "#ff00f7",
+			"language": "en",
+			"sidebar_content": "",
+			"status": "active",
+			"sports_categories": [
+				"Football",
+				"Basketball",
+				"Tennis",
+				"Ice Hockey",
+				"Baseball",
+				"Rugby Union",
+				"Rugby League",
+				"Cricket",
+				"American Football",
+				"Volleyball",
+				"Beach Volleyball",
+				"Handball",
+				"Beach Handball",
+				"Beach Soccer",
+				"Aussie Rules",
+				"Futsal",
+				"Badminton",
+				"Netball",
+				"Floorball",
+				"Combat Sports",
+				"Boxing",
+				"MMA",
+				"Snooker",
+				"Billiard",
+				"Table Tennis",
+				"Padel Tennis",
+				"Squash",
+				"Motorsport",
+				"Racing",
+				"Cycling",
+				"Equestrianism",
+				"Golf",
+				"Field Hockey",
+				"Lacrosse",
+				"Athletics",
+				"Gymnastics",
+				"Weightlifting",
+				"Climbing",
+				"Winter Sports",
+				"Bandy",
+				"Curling",
+				"Triathlon",
+				"Water Sports",
+				"Water Polo",
+				"Sailing",
+				"Bowling",
+				"Darts",
+				"Chess",
+				"E-sports",
+				"Others"
+			],
+			"pages_seo": {
+				"sports": {
+					"football": {
+						"title": "Methstreams Football | Live Matches Online",
+						"description": "Methstreams Football offers free HD soccer streams with no sign-up. Fast, reliable access to live matches. Watch now."
+					},
+					"basketball": {
+						"title": "Methstreams Basketball | Live NBA Streams",
+						"description": "Methstreams Basketball brings free HD NBA and global league streams. No registration required. Watch live hoops now."
+					},
+					"tennis": {
+						"title": "Methstreams Tennis | Live Tennis Streams",
+						"description": "Methstreams Tennis delivers ATP and WTA streams in HD for free. Instant access with no sign-up. Watch now."
+					},
+					"ice-hockey": {
+						"title": "Methstreams Ice Hockey | Live NHL Streams",
+						"description": "Methstreams Ice Hockey offers free HD NHL and international streams. No registration needed. Watch live hockey now."
+					},
+					"baseball": {
+						"title": "Methstreams Baseball | Live MLB Streams",
+						"description": "Methstreams Baseball provides HD MLB and global baseball streams for free. No sign-up required. Watch live now."
+					},
+					"rugby-union": {
+						"title": "Methstreams Rugby Union | Live Rugby Streams",
+						"description": "Methstreams Rugby Union streams top leagues and internationals in HD for free. No sign-up. Watch rugby live now."
+					},
+					"rugby-league": {
+						"title": "Methstreams Rugby League | Live Rugby Matches",
+						"description": "Methstreams Rugby League delivers free HD NRL and Super League streams. Quick access with no registration. Watch now."
+					},
+					"cricket": {
+						"title": "Methstreams Cricket | Live Cricket Streams",
+						"description": "Methstreams Cricket provides HD T20, ODI, and Test streams for free. No sign-up required. Start watching now."
+					},
+					"american-football": {
+						"title": "Methstreams American Football | NFL Live Streams",
+						"description": "Methstreams American Football streams NFL and NCAA games in HD for free. No registration. Watch live now."
+					},
+					"volleyball": {
+						"title": "Methstreams Volleyball | Live Volleyball Streams",
+						"description": "Methstreams Volleyball offers free HD global volleyball matches with no sign-up. Watch live volleyball now."
+					},
+					"beach-volleyball": {
+						"title": "Methstreams Beach Volleyball | Live Beach Streams",
+						"description": "Methstreams Beach Volleyball gives free HD FIVB and pro tour streams. No registration required. Watch now."
+					},
+					"handball": {
+						"title": "Methstreams Handball | Live Handball Streams",
+						"description": "Methstreams Handball provides free HD streams from global leagues. No sign-up needed. Watch handball live now."
+					},
+					"beach-handball": {
+						"title": "Methstreams Beach Handball | Live Beach Matches",
+						"description": "Methstreams Beach Handball streams global events in HD with no registration. Watch live now."
+					},
+					"beach-soccer": {
+						"title": "Methstreams Beach Soccer | Live Beach Soccer",
+						"description": "Methstreams Beach Soccer offers free HD matches with no sign-up. Enjoy fast beach soccer streams now."
+					},
+					"aussie-rules": {
+						"title": "Methstreams Aussie Rules | Live AFL Streams",
+						"description": "Methstreams Aussie Rules streams AFL action free in HD. No registration required. Watch now."
+					},
+					"futsal": {
+						"title": "Methstreams Futsal | Live Futsal Streams",
+						"description": "Methstreams Futsal delivers free HD futsal matches worldwide. No sign-up. Watch live now."
+					},
+					"badminton": {
+						"title": "Methstreams Badminton | Live Badminton Streams",
+						"description": "Methstreams Badminton streams BWF tournaments in HD for free. No registration. Watch now."
+					},
+					"netball": {
+						"title": "Methstreams Netball | Live Netball Streams",
+						"description": "Methstreams Netball provides free HD matches from top leagues. No sign-up needed. Watch live netball now."
+					},
+					"floorball": {
+						"title": "Methstreams Floorball | Live Floorball Streams",
+						"description": "Methstreams Floorball streams global matches in HD for free. No registration. Watch now."
+					},
+					"combat-sports": {
+						"title": "Methstreams Combat Sports | Live Fight Streams",
+						"description": "Methstreams Combat Sports offers free HD fight events with no sign-up. Watch live action now."
+					},
+					"boxing": {
+						"title": "Methstreams Boxing | Live Fight Night",
+						"description": "Methstreams Boxing delivers free HD boxing streams with no registration. Watch live fights now."
+					},
+					"mma": {
+						"title": "Methstreams MMA | Live MMA Streams",
+						"description": "Methstreams MMA streams top fight promotions in HD for free. No sign-up required. Watch now."
+					},
+					"snooker": {
+						"title": "Methstreams Snooker | Live Snooker Streams",
+						"description": "Methstreams Snooker provides free HD professional snooker coverage. No registration. Watch live now."
+					},
+					"billiard": {
+						"title": "Methstreams Billiard | Live Billiard Streams",
+						"description": "Methstreams Billiard streams global billiard events in HD for free. No sign-up. Watch now."
+					},
+					"table-tennis": {
+						"title": "Methstreams Table Tennis | Live Ping Pong",
+						"description": "Methstreams Table Tennis offers free HD ITTF streams. No registration required. Watch live ping pong now."
+					},
+					"padel-tennis": {
+						"title": "Methstreams Padel Tennis | Live Padel Streams",
+						"description": "Methstreams Padel Tennis gives free HD padel action with no sign-up. Watch live now."
+					},
+					"squash": {
+						"title": "Methstreams Squash | Live Squash Streams",
+						"description": "Methstreams Squash streams PSA tournaments in HD for free. No registration. Watch squash live now."
+					},
+					"motorsport": {
+						"title": "Methstreams Motorsport | Live Motor Racing",
+						"description": "Methstreams Motorsport offers free HD racing streams with no sign-up. Watch motorsport live now."
+					},
+					"racing": {
+						"title": "Methstreams Racing | Live Race Streams",
+						"description": "Methstreams Racing provides free HD motorsport streams. No registration required. Watch races now."
+					},
+					"cycling": {
+						"title": "Methstreams Cycling | Live Cycling Streams",
+						"description": "Methstreams Cycling streams major tours and events in HD for free. No sign-up. Watch cycling live now."
+					},
+					"equestrianism": {
+						"title": "Methstreams Equestrianism | Live Horse Events",
+						"description": "Methstreams Equestrianism gives free HD horse competition streams. No registration needed. Watch now."
+					},
+					"golf": {
+						"title": "Methstreams Golf | Live Golf Streams",
+						"description": "Methstreams Golf provides free HD PGA and global tour streams. No sign-up required. Watch live golf now."
+					},
+					"field-hockey": {
+						"title": "Methstreams Field Hockey | Live Hockey Streams",
+						"description": "Methstreams Field Hockey streams international matches in HD for free. No registration. Watch now."
+					},
+					"lacrosse": {
+						"title": "Methstreams Lacrosse | Live Lacrosse Streams",
+						"description": "Methstreams Lacrosse delivers free HD pro and college lacrosse streams. No sign-up. Watch now."
+					},
+					"athletics": {
+						"title": "Methstreams Athletics | Live Athletics Streams",
+						"description": "Methstreams Athletics streams major athletics events in HD for free. No registration. Watch live now."
+					},
+					"gymnastics": {
+						"title": "Methstreams Gymnastics | Live Gymnastics Streams",
+						"description": "Methstreams Gymnastics offers free HD competition streams with no sign-up. Watch gymnastics live now."
+					},
+					"weightlifting": {
+						"title": "Methstreams Weightlifting | Live Weightlifting",
+						"description": "Methstreams Weightlifting provides free HD lifting competitions. No registration. Watch live weightlifting now."
+					},
+					"climbing": {
+						"title": "Methstreams Climbing | Live Climbing Streams",
+						"description": "Methstreams Climbing streams bouldering, lead, and speed events in HD with no sign-up. Watch now."
+					},
+					"winter-sports": {
+						"title": "Methstreams Winter Sports | Live Snow Action",
+						"description": "Methstreams Winter Sports offers free HD skiing, skating, and winter events. No registration. Watch live now."
+					},
+					"bandy": {
+						"title": "Methstreams Bandy | Live Bandy Streams",
+						"description": "Methstreams Bandy streams global matches in HD for free. No sign-up. Watch now."
+					},
+					"curling": {
+						"title": "Methstreams Curling | Live Curling Streams",
+						"description": "Methstreams Curling provides free HD tournaments with no registration required. Watch curling live now."
+					},
+					"triathlon": {
+						"title": "Methstreams Triathlon | Live Triathlon Streams",
+						"description": "Methstreams Triathlon offers free HD global triathlon coverage. No sign-up needed. Watch live now."
+					},
+					"water-sports": {
+						"title": "Methstreams Water Sports | Live Aquatic Streams",
+						"description": "Methstreams Water Sports streams aquatic competitions in HD for free. No registration. Watch now."
+					},
+					"water-polo": {
+						"title": "Methstreams Water Polo | Live Polo Streams",
+						"description": "Methstreams Water Polo gives free HD streams with no sign-up. Watch live water polo now."
+					},
+					"sailing": {
+						"title": "Methstreams Sailing | Live Sailing Streams",
+						"description": "Methstreams Sailing streams global regattas in HD for free. No registration. Watch sailing live now."
+					},
+					"bowling": {
+						"title": "Methstreams Bowling | Live Bowling Streams",
+						"description": "Methstreams Bowling offers free HD tournaments with no sign-up. Watch bowling live now."
+					},
+					"darts": {
+						"title": "Methstreams Darts | Live Darts Streams",
+						"description": "Methstreams Darts streams PDC and global events in HD for free. No registration. Watch darts now."
+					},
+					"chess": {
+						"title": "Methstreams Chess | Live Chess Matches",
+						"description": "Methstreams Chess offers free HD streams of top tournaments. No sign-up. Watch chess live now."
+					},
+					"e-sports": {
+						"title": "Methstreams E Sports | Live Esports Streams",
+						"description": "Methstreams E Sports provides free HD esports tournaments. No registration required. Watch live now."
+					},
+					"others": {
+						"title": "Methstreams Others | Live Sports Streams",
+						"description": "Methstreams Others streams niche and emerging sports in HD for free. No sign-up. Watch live now."
+					}
+				},
+				"home": {
+					"title": "Methstreams | Live Sports Streams & Upcoming Matches",
+					"description": "Methstreams delivers free HD streams for all sports with live and upcoming matches updated daily. No sign-up required. Start watching instantly."
+				}
+			}
+		},
+		{
+			"id": 6,
+			"domain": "wiziwig.online",
+			"canonical_url": "https://www.wiziwig.online",
+			"site_name": "Wiziwig",
+			"logo": "",
+			"primary_color": "#d4ff00",
+			"secondary_color": "#fff700",
+			"language": "en",
+			"sidebar_content": "",
+			"status": "active",
+			"sports_categories": [
+				"Football",
+				"Basketball",
+				"Tennis",
+				"Ice Hockey",
+				"Baseball",
+				"Rugby Union",
+				"Rugby League",
+				"Cricket",
+				"American Football",
+				"Volleyball",
+				"Beach Volleyball",
+				"Handball",
+				"Beach Handball",
+				"Beach Soccer",
+				"Aussie Rules",
+				"Futsal",
+				"Badminton",
+				"Netball",
+				"Floorball",
+				"Combat Sports",
+				"Boxing",
+				"MMA",
+				"Snooker",
+				"Billiard",
+				"Table Tennis",
+				"Padel Tennis",
+				"Squash",
+				"Motorsport",
+				"Racing",
+				"Cycling",
+				"Equestrianism",
+				"Golf",
+				"Field Hockey",
+				"Lacrosse",
+				"Athletics",
+				"Gymnastics",
+				"Weightlifting",
+				"Climbing",
+				"Winter Sports",
+				"Bandy",
+				"Curling",
+				"Triathlon",
+				"Water Sports",
+				"Water Polo",
+				"Sailing",
+				"Bowling",
+				"Darts",
+				"Chess",
+				"E-sports",
+				"Others"
+			],
+			"pages_seo": {
+				"home": {
+					"title": "Wiziwig | Live Sports Streams & Upcoming Matches",
+					"description": "Wiziwig provides fast, free HD streams for all sports with live and upcoming matches updated daily. No sign-up needed — start watching now."
+				},
+				"sports": {
+					"football": {
+						"title": "Wiziwig Football | Live Football Streams",
+						"description": "Wiziwig Football gives you smooth HD soccer streams with zero sign-up barriers. Enjoy live matches instantly."
+					},
+					"basketball": {
+						"title": "Wiziwig Basketball | Watch NBA Live",
+						"description": "Wiziwig Basketball provides HD NBA and worldwide hoops action with fast loading. Start watching live now."
+					},
+					"tennis": {
+						"title": "Wiziwig Tennis | Live Tennis Coverage",
+						"description": "Wiziwig Tennis lets you access ATP and WTA matches in HD for free. Stream live tennis instantly."
+					},
+					"ice-hockey": {
+						"title": "Wiziwig Ice Hockey | Live NHL Streams",
+						"description": "Wiziwig Ice Hockey brings you NHL and global matches in clear HD with no registration. Watch live now."
+					},
+					"baseball": {
+						"title": "Wiziwig Baseball | Live Baseball Online",
+						"description": "Wiziwig Baseball streams MLB and international games in HD with no sign-up. Enjoy live baseball now."
+					},
+					"rugby-union": {
+						"title": "Wiziwig Rugby Union | Watch Rugby Live",
+						"description": "Wiziwig Rugby Union gives HD access to top leagues and test matches. Join live rugby action now."
+					},
+					"rugby-league": {
+						"title": "Wiziwig Rugby League | Live Rugby HD Streams",
+						"description": "Wiziwig Rugby League offers free HD NRL and Super League streaming. Watch live action now."
+					},
+					"cricket": {
+						"title": "Wiziwig Cricket | Live Cricket Streams",
+						"description": "Wiziwig Cricket delivers T20, ODI, and Test matches in HD. No sign-up required. Watch cricket live."
+					},
+					"american-football": {
+						"title": "Wiziwig American Football | NFL Streams Live",
+						"description": "Wiziwig American Football streams NFL and college games in smooth HD. Jump into live action now."
+					},
+					"volleyball": {
+						"title": "Wiziwig Volleyball | Live Volleyball Online",
+						"description": "Wiziwig Volleyball offers global volleyball matches in HD with no registration. Watch live now."
+					},
+					"beach-volleyball": {
+						"title": "Wiziwig Beach Volleyball | Watch Beach Live",
+						"description": "Wiziwig Beach Volleyball brings HD sand-court events for free. Stream live beach volleyball instantly."
+					},
+					"handball": {
+						"title": "Wiziwig Handball | Live Handball Matches",
+						"description": "Wiziwig Handball provides HD streams from major leagues and tournaments. Watch handball live."
+					},
+					"beach-handball": {
+						"title": "Wiziwig Beach Handball | Live Beach Action",
+						"description": "Wiziwig Beach Handball streams global events in HD without registration. Watch now."
+					},
+					"beach-soccer": {
+						"title": "Wiziwig Beach Soccer | Live Matches Online",
+						"description": "Wiziwig Beach Soccer offers fast HD streams of pro and international events. Watch beach soccer live."
+					},
+					"aussie-rules": {
+						"title": "Wiziwig Aussie Rules | Live AFL Streams",
+						"description": "Wiziwig Aussie Rules delivers HD AFL action for free. Stream live footy now."
+					},
+					"futsal": {
+						"title": "Wiziwig Futsal | Live Futsal Streams",
+						"description": "Wiziwig Futsal gives HD access to global futsal leagues and tournaments. Watch live now."
+					},
+					"badminton": {
+						"title": "Wiziwig Badminton | Live Badminton Online",
+						"description": "Wiziwig Badminton streams BWF events in HD with instant loading. Watch badminton live."
+					},
+					"netball": {
+						"title": "Wiziwig Netball | Live Netball Streams",
+						"description": "Wiziwig Netball provides HD league and international coverage. Stream netball live now."
+					},
+					"floorball": {
+						"title": "Wiziwig Floorball | Live Floorball Action",
+						"description": "Wiziwig Floorball offers smooth HD streams from major competitions. Watch live floorball now."
+					},
+					"combat-sports": {
+						"title": "Wiziwig Combat Sports | Live Fight Streams",
+						"description": "Wiziwig Combat Sports covers major fight nights in HD with no registration. Watch live fights now."
+					},
+					"boxing": {
+						"title": "Wiziwig Boxing | Watch Boxing Live",
+						"description": "Wiziwig Boxing gives HD access to worldwide fight cards for free. Join live boxing now."
+					},
+					"mma": {
+						"title": "Wiziwig MMA | Live MMA Streams",
+						"description": "Wiziwig MMA streams top organizations in clean HD with no sign-up. Watch MMA live now."
+					},
+					"snooker": {
+						"title": "Wiziwig Snooker | Live Snooker Coverage",
+						"description": "Wiziwig Snooker offers HD tournaments and matches with instant access. Watch live snooker now."
+					},
+					"billiard": {
+						"title": "Wiziwig Billiard | Live Billiard Streams",
+						"description": "Wiziwig Billiard provides HD global billiards streaming with no registration. Watch live now."
+					},
+					"table-tennis": {
+						"title": "Wiziwig Table Tennis | Live Ping Pong",
+						"description": "Wiziwig Table Tennis streams professional ping pong in HD. Watch live matches instantly."
+					},
+					"padel-tennis": {
+						"title": "Wiziwig Padel Tennis | Live Padel Streams",
+						"description": "Wiziwig Padel Tennis offers HD padel events with no sign-up. Watch padel live."
+					},
+					"squash": {
+						"title": "Wiziwig Squash | Live Squash Events",
+						"description": "Wiziwig Squash streams pro squash in HD with quick loading. Watch live matches now."
+					},
+					"motorsport": {
+						"title": "Wiziwig Motorsport | Live Motorsports",
+						"description": "Wiziwig Motorsport gives HD access to racing events worldwide. Stream motorsport live."
+					},
+					"racing": {
+						"title": "Wiziwig Racing | Live Race Streams",
+						"description": "Wiziwig Racing offers HD coverage of motorsport races with no sign-up. Watch live racing now."
+					},
+					"cycling": {
+						"title": "Wiziwig Cycling | Live Cycling Streams",
+						"description": "Wiziwig Cycling delivers HD access to major tours and races. Watch cycling live now."
+					},
+					"equestrianism": {
+						"title": "Wiziwig Equestrianism | Live Horse Sports",
+						"description": "Wiziwig Equestrianism streams global horse competitions in HD. Watch live now."
+					},
+					"golf": {
+						"title": "Wiziwig Golf | Live Golf Streams",
+						"description": "Wiziwig Golf provides HD PGA and world tour action with no registration. Watch live golf today."
+					},
+					"field-hockey": {
+						"title": "Wiziwig Field Hockey | Live Hockey Matches",
+						"description": "Wiziwig Field Hockey streams top international hockey in HD. Watch live now."
+					},
+					"lacrosse": {
+						"title": "Wiziwig Lacrosse | Live Lacrosse Streams",
+						"description": "Wiziwig Lacrosse offers HD pro and college streams with easy access. Watch lacrosse live."
+					},
+					"athletics": {
+						"title": "Wiziwig Athletics | Live Athletics Streams",
+						"description": "Wiziwig Athletics covers major track and field events in HD. Watch live athletics now."
+					},
+					"gymnastics": {
+						"title": "Wiziwig Gymnastics | Live Gymnastics Events",
+						"description": "Wiziwig Gymnastics streams world-class competitions free in HD. Watch live now."
+					},
+					"weightlifting": {
+						"title": "Wiziwig Weightlifting | Live Weightlifting",
+						"description": "Wiziwig Weightlifting brings HD lifting competitions with no sign-up. Watch weightlifting live now."
+					},
+					"climbing": {
+						"title": "Wiziwig Climbing | Live Climbing Streams",
+						"description": "Wiziwig Climbing streams bouldering, lead, and speed events in HD. Watch climbing live."
+					},
+					"winter-sports": {
+						"title": "Wiziwig Winter Sports | Live Snow Sports",
+						"description": "Wiziwig Winter Sports provides HD skiing, skating, and winter events. Watch live snow action now."
+					},
+					"bandy": {
+						"title": "Wiziwig Bandy | Live Bandy Streams",
+						"description": "Wiziwig Bandy streams global bandy leagues in HD with no sign-up. Watch bandy live now."
+					},
+					"curling": {
+						"title": "Wiziwig Curling | Live Curling Matches",
+						"description": "Wiziwig Curling delivers HD tournaments with fast access. Watch curling live now."
+					},
+					"triathlon": {
+						"title": "Wiziwig Triathlon | Live Triathlon Streams",
+						"description": "Wiziwig Triathlon gives HD coverage of world triathlon events. Watch live now."
+					},
+					"water-sports": {
+						"title": "Wiziwig Water Sports | Live Aquatic Events",
+						"description": "Wiziwig Water Sports streams swimming, diving, and more in HD. Watch aquatic sports live."
+					},
+					"water-polo": {
+						"title": "Wiziwig Water Polo | Live Polo Streams",
+						"description": "Wiziwig Water Polo offers HD global matches with quick access. Watch live water polo now."
+					},
+					"sailing": {
+						"title": "Wiziwig Sailing | Live Sailing Streams",
+						"description": "Wiziwig Sailing streams regattas and major sailing events in HD. Watch live sailing now."
+					},
+					"bowling": {
+						"title": "Wiziwig Bowling | Live Bowling Streams",
+						"description": "Wiziwig Bowling provides HD bowling events with no registration. Watch bowling live now."
+					},
+					"darts": {
+						"title": "Wiziwig Darts | Live Darts Coverage",
+						"description": "Wiziwig Darts streams global tournaments in HD. Watch live darts now."
+					},
+					"chess": {
+						"title": "Wiziwig Chess | Live Chess Matches",
+						"description": "Wiziwig Chess streams elite tournaments in HD for free. Watch chess live now."
+					},
+					"e-sports": {
+						"title": "Wiziwig E-Sports | Live Esports Streams",
+						"description": "Wiziwig E Sports offers HD tournament coverage with instant access. Watch esports live."
+					},
+					"others": {
+						"title": "Wiziwig Others | Live Sports Streams",
+						"description": "Wiziwig Others covers niche and emerging sports in HD. Watch live now."
+					}
+				}
+			}
 		}
 	],
 	"admins": [

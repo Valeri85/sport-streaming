@@ -65,6 +65,14 @@ echo "User-agent: *\n";
 echo "Allow: /\n";
 echo "\n";
 
+// Disallow specific sport pages
+echo "# Prevent indexing of specific sport pages\n";
+echo "Disallow: /live-winter-sports\n";
+echo "Disallow: /*/live-winter-sports\n";
+echo "Disallow: /live-combat-sports\n";
+echo "Disallow: /*/live-combat-sports\n";
+echo "\n";
+
 // Disallow CMS directory (if you want to hide it from search engines)
 echo "# Prevent crawling of CMS admin area\n";
 echo "Disallow: /cms/\n";

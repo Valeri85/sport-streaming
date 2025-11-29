@@ -7,6 +7,7 @@
 		"Baseball",
 		"Rugby Union",
 		"Rugby League",
+		"Rugby Sevens",
 		"Cricket",
 		"American Football",
 		"Volleyball",
@@ -19,7 +20,7 @@
 		"Badminton",
 		"Netball",
 		"Floorball",
-		"Combat Sports",
+		"Combat Sport",
 		"Boxing",
 		"MMA",
 		"Snooker",
@@ -38,7 +39,7 @@
 		"Gymnastics",
 		"Weightlifting",
 		"Climbing",
-		"Winter Sports",
+		"Winter Sport",
 		"Bandy",
 		"Curling",
 		"Triathlon",
@@ -49,6 +50,7 @@
 		"Darts",
 		"Chess",
 		"E-sports",
+		"Extreme Sport",
 		"Others"
 	]
 }
