@@ -567,7 +567,7 @@ function getSportIcon($sportName) {
         $fullPath = $basePath . $filename . '.' . $ext;
         if (file_exists($fullPath)) {
             $iconPath = '/shared/icons/sports/' . $filename . '.' . $ext;
-            return '<img src="' . $iconPath . '" alt="' . htmlspecialchars($sportName) . '" class="sport-icon-img" onerror="this.parentElement.innerHTML=\'⚽\'">';
+            return '<img src="' . $iconPath . '" alt="' . htmlspecialchars($sportName) . '" class="sport-icon-img" width="24" height="24" onerror="this.parentElement.innerHTML=\'⚽\'">';
         }
     }
     
@@ -581,7 +581,7 @@ function renderLogo($logo) {
     if (preg_match('/\.(png|jpg|jpeg|webp|svg|avif)$/i', $logo)) {
         $logoFile = htmlspecialchars($logo);
         $logoPath = '/images/logos/' . $logoFile;
-        return '<img src="' . $logoPath . '" alt="Logo" class="logo-image" style="width: 48px; height: 48px; object-fit: contain;">';
+        return '<img src="' . $logoPath . '" alt="Logo" class="logo-image" width="48" height="48" style="object-fit: contain;">';
     } else {
         return $logo;
     }
