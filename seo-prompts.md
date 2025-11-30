@@ -87,12 +87,4 @@ Now, generate the output.
 
 --------------------------- SEO: TITLES AND DESCRIPTIONS
 
-I want you to translate, for all websites from page_seo: seo title and description.
-Act as a professional SEO specialist, translation should be:
-Google-optimized,
-Natural, Human-Like Language,
-SEO Optimization,
-Brand Consistency (for example: sportlemon should not be translated, other brands also, FIFA, NHL and so on),
-Action-Oriented,
-Grammar Checked: All translations reviewed for proper grammar and spelling.
-let's do for the first website first. after continues for second and so on... structure should be as in af.json attached file
+I want you to translate, for all websites from page_seo: seo title and description. Act as a professional SEO specialist, translation should be: Google-optimized, Natural, Human-Like Language, SEO Optimization, Brand Consistency (for example: sportlemon should not be translated, other brands also, FIFA, NHL and so on), Action-Oriented, Grammar Checked: All translations reviewed for proper grammar and spelling. let's do from ----------- website and than so on, others before already done. structure should be as in af.json attached file. we need to add translated versions of "Rugby Sevens" and "Extreme Sport" to the "sports" field if they missed. work on -----.json, take an example from af.json
