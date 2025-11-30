@@ -53,6 +53,7 @@
 		"Baseball": "Bofbal",
 		"Rugby Union": "Rugby Union",
 		"Rugby League": "Rugby League",
+		"Rugby Sevens": "Rugby Sewens",
 		"Cricket": "Krieket",
 		"American Football": "Amerikaanse Sokker",
 		"Volleyball": "Vlugbal",
@@ -96,6 +97,7 @@
 		"Darts": "Pyl",
 		"Chess": "Skaak",
 		"E-sports": "E-sport",
+		"Extreme Sport": "Ekstreme Sport",
 		"Others": "Ander"
 	},
 	"seo": {
@@ -740,6 +742,14 @@
 				"combat-sport": {
 					"title": "P2p4u Vegsport | Lewendige Geveg Strome",
 					"description": "Kyk P2p4u Vegsport gratis met HD geveg aksie regoor top geleenthede. Geen rekening nodig nie—begin stroom nou."
+				},
+				"rugby-sevens": {
+					"title": "P2p4u Rugby Sewens | Lewendige Rugby Sewens Strome",
+					"description": "P2p4u Rugby Sewens bied vinnige, gratis HD sewens toernooie sonder registrasie. Kyk hoëspoed rugby sewens aksie lewendig en geniet gladde stroming nou."
+				},
+				"extreme-sport": {
+					"title": "P2p4u Ekstreme Sport | Lewendige Ekstreme Sport Strome",
+					"description": "P2p4u Ekstreme Sport lewer gratis HD dekking van top ekstreme kompetisies. Geen registrasie nodig nie. Stroom opwindende ekstreme sport geleenthede vandag."
 				}
 			}
 		},
@@ -948,6 +958,14 @@
 				"others": {
 					"title": "Streamhunter Ander | Lewendige Sport Strome",
 					"description": "Streamhunter Ander bied gratis HD dekking van nis en opkomende sportsoorte. Geen registrasie. Kyk lewendige aksie nou."
+				},
+				"rugby-sevens": {
+					"title": "Streamhunter Rugby Sewens | Lewendige Rugby Sewens Strome",
+					"description": "Streamhunter Rugby Sewens lewer gratis HD sewens toernooie sonder registrasie. Kyk vinnige rugby sewens aksie lewendig en geniet gladde, betroubare stroming nou."
+				},
+				"extreme-sport": {
+					"title": "Streamhunter Ekstreme Sport | Lewendige Ekstreme Sport Strome",
+					"description": "Streamhunter Ekstreme Sport bied gratis HD aksie van top ekstreme kompetisies. Geen registrasie nodig nie. Stroom opwindende ekstreme sport geleenthede vandag."
 				}
 			}
 		},
@@ -1156,6 +1174,14 @@
 				"others": {
 					"title": "Methstreams Ander | Lewendige Sport Strome",
 					"description": "Methstreams Ander stroom nis en opkomende sportsoorte in HD gratis. Geen registrasie. Kyk lewendig nou."
+				},
+				"rugby-sevens": {
+					"title": "Methstreams Rugby Sewens | Lewendige Rugby Sewens Strome",
+					"description": "Methstreams Rugby Sewens bring gratis HD sewens toernooie sonder registrasie. Kyk vinnige rugby sewens aksie lewendig en geniet gladde stroming vandag."
+				},
+				"extreme-sport": {
+					"title": "Methstreams Ekstreme Sport | Lewendige Ekstreme Sport Strome",
+					"description": "Methstreams Ekstreme Sport bied gratis HD dekking van top ekstreme kompetisies. Geen registrasie nodig nie. Stroom opwindende ekstreme sport geleenthede nou."
 				}
 			}
 		},
@@ -1364,6 +1390,14 @@
 				"others": {
 					"title": "Wiziwig Ander | Lewendige Sport Strome",
 					"description": "Wiziwig Ander dek nis en opkomende sportsoorte in HD. Kyk lewendig nou."
+				},
+				"rugby-sevens": {
+					"title": "Wiziwig Rugby Sewens | Lewendige Rugby Sewens Strome",
+					"description": "Wiziwig Rugby Sewens lewer vinnige, gratis HD sewens toernooie sonder registrasie. Kyk hoëspoed rugby sewens aksie lewendig en geniet gladde, betroubare stroming nou."
+				},
+				"extreme-sport": {
+					"title": "Wiziwig Ekstreme Sport | Lewendige Ekstreme Sport Strome",
+					"description": "Wiziwig Ekstreme Sport bied gratis HD dekking van top ekstreme kompetisies. Geen registrasie nodig nie. Stroom opwindende ekstreme sport geleenthede vandag."
 				}
 			}
 		}
