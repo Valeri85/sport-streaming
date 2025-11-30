@@ -70,10 +70,6 @@
 					"title": "SportLemon | Live Sports & Today’s Match Listings",
 					"description": "SportLemon gives you live sports streams plus today’s upcoming and current matches across all sports. Free access, no sign-up—start watching now."
 				},
-				"favorites": {
-					"title": "SportLemon Favorites | Watch Live Your Favorite Sport Events",
-					"description": "Favorite Sport Matches - SportLemon offers free, high-quality sports streams with no sign-up. Enjoy smooth playback across devices—start watching now."
-				},
 				"sports": {
 					"football": {
 						"title": "SportLemon Football | Free Live Football Streams HD",
@@ -280,12 +276,12 @@
 						"description": "Watch free live winter sports streams. Skiing, snowboarding & more in HD on SportLemon."
 					},
 					"rugby-sevens": {
-						"title": "SportLemons Rugby Sevens | Live Rugby Sevens Streams",
-						"description": "SportLemons Rugby Sevens delivers free HD sevens tournaments with smooth playback and no sign-up. Watch fast-paced rugby sevens action live now."
+						"title": "SportLemon Rugby Sevens | Live Rugby Sevens Streams",
+						"description": "SportLemon Rugby Sevens delivers free HD sevens tournaments with smooth playback and no sign-up. Watch fast-paced rugby sevens action live now."
 					},
 					"extreme-sport": {
-						"title": "SportLemons Extreme Sport | Live Extreme Sport Streams",
-						"description": "SportLemons Extreme Sport offers free HD coverage of top extreme competitions. No registration required. Stream thrilling extreme sport events today."
+						"title": "SportLemon Extreme Sport | Live Extreme Sport Streams",
+						"description": "SportLemon Extreme Sport offers free HD coverage of top extreme competitions. No registration required. Stream thrilling extreme sport events today."
 					}
 				}
 			},

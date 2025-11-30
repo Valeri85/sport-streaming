@@ -1,9 +1,10 @@
-SEO: HOME PAGE
+------------------------- SEO: HOME PAGE
+
 also generate Home page title and description too, where Main keyword is EPLSITE and on this page I am publishing upcoming and current matches from all sports
 
 ---
 
-SEO: SPORTS TITLE & DESCRIPTIONS
+------------------------ SEO: SPORTS TITLE & DESCRIPTIONS
 
 Act as a professional SEO specialist. Generate one Google-optimized Title and one Meta Description for the following keyword. title should not be repited in descripshion. you have to name actual recognized synonyms or commonly used alternative names for the sport if there is such, it must be very famouse, no need to try implement if second name is not very famouse, for example if American Football, you should name also NFL.
 
@@ -83,3 +84,15 @@ more sport names are listed here and do same with them also: "Football",
 Now, generate the output.
 
 ---
+
+--------------------------- SEO: TITLES AND DESCRIPTIONS
+
+I want you to translate, for all websites from page_seo: seo title and description.
+Act as a professional SEO specialist, translation should be:
+Google-optimized,
+Natural, Human-Like Language,
+SEO Optimization,
+Brand Consistency (for example: sportlemon should not be translated, other brands also),
+Action-Oriented,
+Grammar Checked: All translations reviewed for proper grammar and spelling.
+let's do for the first website first. after continues for second and so on...

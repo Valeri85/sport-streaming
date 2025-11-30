@@ -2,7 +2,9 @@
 	"language_info": {
 		"code": "af",
 		"name": "Afrikaans",
+		"native_name": "Afrikaans",
 		"flag": "🇿🇦",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -96,5 +98,1279 @@
 		"Chess": "Skaak",
 		"E-sports": "E-sport",
 		"Others": "Ander"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | Lewendige Sport & Vandag se Wedstryde",
+				"description": "SportLemon bied jou lewendige sportstrome plus vandag se komende en huidige wedstryde regoor alle sportsoorte. Gratis toegang, geen registrasie—begin nou kyk."
+			},
+			"favorites": {
+				"title": "SportLemon Gunstelinge | Kyk Lewendig na Jou Gunsteling Sportgebeurtenisse",
+				"description": "Gunsteling Sportwedstryde - SportLemon bied gratis, hoëkwaliteit sportstrome sonder registrasie. Geniet gladde terugspeel op alle toestelle—begin nou kyk."
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon Sokker | Gratis Lewendige Sokker Strome HD",
+					"description": "Kyk gratis na lewendige sokker strome in HD op SportLemon. Champions League, Premier League & meer. Moenie 'n wedstryd misloop nie!"
+				},
+				"basketball": {
+					"title": "SportLemon Basketbal | Gratis Lewendige NBA & Basketbal Strome",
+					"description": "Stroom lewendige basketbal wedstryde gratis. Kyk NBA, EuroLeague & meer in HD op SportLemon. Geen registrasie nodig nie."
+				},
+				"tennis": {
+					"title": "SportLemon Tennis | Gratis Lewendige Tennis Strome HD",
+					"description": "Kyk gratis na lewendige tennis strome. Grand Slams, ATP, WTA toere in HD op SportLemon. Sluit nou aan!"
+				},
+				"ice-hockey": {
+					"title": "SportLemon Yshokkie | Gratis Lewendige NHL Strome HD",
+					"description": "Gratis lewendige yshokkie strome in HD. Kyk NHL, KHL, en wêreldkampioenskappe op SportLemon. Moenie 'n skoot misloop nie."
+				},
+				"baseball": {
+					"title": "SportLemon Bofbal | Gratis Lewendige MLB Strome Aanlyn",
+					"description": "Stroom lewendige bofbal wedstryde gratis. Kyk MLB, NPB, en meer in HD op SportLemon. Maklike en gratis toegang."
+				},
+				"rugby": {
+					"title": "SportLemon Rugby | Gratis Lewendige Rugby Union & League",
+					"description": "Kyk gratis na lewendige rugby strome. Rugby Union, Rugby League, Six Nations & meer in HD op SportLemon."
+				},
+				"cricket": {
+					"title": "SportLemon Krieket | Gratis Lewendige Krieket Strome HD",
+					"description": "Gratis lewendige krieket strome op SportLemon. Kyk IPL, T20, Toetswedstryde & meer in hoë definisie. Skakel nou in!"
+				},
+				"american-football": {
+					"title": "SportLemon Amerikaanse Sokker | Gratis Lewendige NFL Strome",
+					"description": "Kyk gratis na lewendige Amerikaanse Sokker strome. Geniet NFL, kollege wedstryde & meer in HD op SportLemon. Geen intekengeld nie."
+				},
+				"volleyball": {
+					"title": "SportLemon Vlugbal | Gratis Lewendige Vlugbal Strome",
+					"description": "Stroom lewendige vlugbal wedstryde gratis. Kyk FIVB, CEV & groot ligas in HD op SportLemon. Sluit aan by die aksie!"
+				},
+				"beach-volleyball": {
+					"title": "SportLemon Strandvlugbal | Gratis Lewendige Strome",
+					"description": "Kyk gratis na lewendige strandvlugbal strome. FIVB Wêreldtoer & groot toernooie in HD op SportLemon."
+				},
+				"handball": {
+					"title": "SportLemon Handbal | Gratis Lewendige Handbal Strome",
+					"description": "Gratis lewendige handbal strome op SportLemon. Kyk EHF, IHF geleenthede & groot ligas in hoë definisie."
+				},
+				"beach-handball": {
+					"title": "SportLemon Strandhandbal | Gratis Lewendige Strome",
+					"description": "Kyk gratis na lewendige strandhandbal strome. IHF Wêreldtoer & kampioenskappe in HD op SportLemon."
+				},
+				"beach-soccer": {
+					"title": "SportLemon Strandsokker | Gratis Lewendige Strome HD",
+					"description": "Stroom lewendige strandsokker gratis. FIFA Strandsokker Wêreldbeker & ligas in HD op SportLemon."
+				},
+				"aussie-rules": {
+					"title": "SportLemon Aussie Rules | Gratis Lewendige AFL Strome",
+					"description": "Kyk gratis na lewendige Aussie Rules sokker. Stroom AFL wedstryde & toernooie in HD op SportLemon."
+				},
+				"futsal": {
+					"title": "SportLemon Futsal | Gratis Lewendige Futsal Strome HD",
+					"description": "Gratis lewendige futsal strome op SportLemon. Kyk UEFA Futsal, FIFA geleenthede & meer in hoë definisie."
+				},
+				"badminton": {
+					"title": "SportLemon Pluimbal | Gratis Lewendige Pluimbal Strome",
+					"description": "Kyk gratis na lewendige pluimbal strome. BWF Wêreldtoer, Thomas Beker & meer in HD op SportLemon."
+				},
+				"netball": {
+					"title": "SportLemon Netbal | Gratis Lewendige Netbal Strome",
+					"description": "Stroom lewendige netbal gratis. Kyk Vitality Netbal Superliga, Wêrelde & meer op SportLemon."
+				},
+				"floorball": {
+					"title": "SportLemon Vloerbal | Gratis Lewendige Vloerbal Strome",
+					"description": "Kyk gratis na lewendige vloerbal strome. IFF Wêreldkampioenskappe & groot ligas in HD op SportLemon."
+				},
+				"boxing": {
+					"title": "SportLemon Boks | Gratis Lewendige Boks Strome HD",
+					"description": "Kyk gratis na lewendige boks strome. Wêreldtitel gevegte, ondersteuningsgevegte & meer in hoë definisie op SportLemon."
+				},
+				"mma": {
+					"title": "SportLemon MMA | Gratis Lewendige UFC & MMA Strome",
+					"description": "Stroom lewendige MMA gevegte gratis. Kyk UFC, Bellator, PFL & meer in HD op SportLemon."
+				},
+				"snooker": {
+					"title": "SportLemon Snooker | Gratis Lewendige Snooker Strome",
+					"description": "Kyk gratis na lewendige snooker strome. Wêreldkampioenskap, VK Kampioenskap & meer in HD op SportLemon."
+				},
+				"billiard": {
+					"title": "SportLemon Biljart | Gratis Lewendige Poelstrome HD",
+					"description": "Gratis lewendige biljart en poel strome op SportLemon. Kyk wêreldtoernooie & wedstryde in hoë definisie."
+				},
+				"table-tennis": {
+					"title": "SportLemon Tafeltennis | Gratis Lewendige Strome HD",
+					"description": "Kyk gratis na lewendige tafeltennis strome. ITTF Wêreldtoere & kampioenskappe in HD op SportLemon."
+				},
+				"padel-tennis": {
+					"title": "SportLemon Padel | Gratis Lewendige Strome",
+					"description": "Stroom lewendige Padel Tennis gratis. Kyk Wêreld Padel Toer & groot wedstryde in HD op SportLemon."
+				},
+				"squash": {
+					"title": "SportLemon Muurbal | Gratis Lewendige Muurbal Strome",
+					"description": "Kyk gratis na lewendige muurbal strome. PSA Wêreldtoer & kampioenskappe in hoë definisie op SportLemon."
+				},
+				"motorsport": {
+					"title": "SportLemon Motorsport | Gratis Lewendige Resie Strome",
+					"description": "Gratis lewendige motorsport strome op SportLemon. Kyk F1, MotoGP, WRC & meer in HD. Start jou enjin!"
+				},
+				"racing": {
+					"title": "SportLemon Resies | Gratis Lewendige Perde Resie Strome",
+					"description": "Kyk gratis na lewendige resie strome. Groot derby's, bekers & geleenthede in HD op SportLemon."
+				},
+				"cycling": {
+					"title": "SportLemon Fietsry | Gratis Lewendige Fietsry Strome",
+					"description": "Stroom lewendige fietsry gratis. Kyk Tour de France, Giro, Vuelta & meer in HD op SportLemon."
+				},
+				"equestrianism": {
+					"title": "SportLemon Perdry | Gratis Lewendige Strome",
+					"description": "Kyk gratis na lewendige perdry strome. Spring, dressuur & eventing in HD op SportLemon."
+				},
+				"golf": {
+					"title": "SportLemon Gholf | Gratis Lewendige Gholf Strome HD",
+					"description": "Gratis lewendige gholf strome op SportLemon. Kyk Masters, PGA Toer, Ryder Beker & meer in hoë definisie."
+				},
+				"field-hockey": {
+					"title": "SportLemon Veldhokkie | Gratis Lewendige Strome HD",
+					"description": "Kyk gratis na lewendige veldhokkie strome. FIH Pro Liga, Wêreldbeker & meer in HD op SportLemon."
+				},
+				"lacrosse": {
+					"title": "SportLemon Lacrosse | Gratis Lewendige Lacrosse Strome",
+					"description": "Stroom lewendige lacrosse gratis. Kyk NLL, PLL, wêreldkampioenskappe & meer op SportLemon."
+				},
+				"athletics": {
+					"title": "SportLemon Atletiek | Gratis Lewendige Baan & Veld",
+					"description": "Kyk gratis na lewendige atletiek strome. Diamant Liga, Wêreldkampioenskappe & meer in HD op SportLemon."
+				},
+				"gymnastics": {
+					"title": "SportLemon Gimnastiek | Gratis Lewendige Strome HD",
+					"description": "Gratis lewendige gimnastiek strome op SportLemon. Kyk artistieke, ritmiese geleenthede & wêreldbekers in HD."
+				},
+				"weightlifting": {
+					"title": "SportLemon Gewigoptel | Gratis Lewendige Strome",
+					"description": "Kyk gratis na lewendige gewigoptel strome. IWF Wêreldkampioenskappe & geleenthede in HD op SportLemon."
+				},
+				"climbing": {
+					"title": "SportLemon Klim | Gratis Lewendige Klim Strome",
+					"description": "Stroom lewendige klim gratis. Kyk IFSC Wêreldbekers & kampioenskappe in HD op SportLemon."
+				},
+				"bandy": {
+					"title": "SportLemon Bandy | Gratis Lewendige Bandy Strome",
+					"description": "Gratis lewendige bandy strome op SportLemon. Kyk Wêreldkampioenskappe & groot ligas in hoë definisie."
+				},
+				"curling": {
+					"title": "SportLemon Krulbal | Gratis Lewendige Krulbal Strome",
+					"description": "Kyk gratis na lewendige krulbal strome. Wêreld Krulbal Kampioenskappe, Brier & meer in HD op SportLemon."
+				},
+				"water-sports": {
+					"title": "SportLemon Watersport | Gratis Lewendige Strome",
+					"description": "Stroom lewendige watersport gratis. Kyk roei, kano, swem & meer op SportLemon."
+				},
+				"water-polo": {
+					"title": "SportLemon Waterpolo | Gratis Lewendige Strome HD",
+					"description": "Kyk gratis na lewendige waterpolo strome. LEN Champions League, Wêreld Liga & meer op SportLemon."
+				},
+				"sailing": {
+					"title": "SportLemon Seil | Gratis Lewendige Seil Strome",
+					"description": "Gratis lewendige seil strome op SportLemon. Kyk America's Cup, Wêreldreeks & regatta's in HD."
+				},
+				"bowling": {
+					"title": "SportLemon Kegelspel | Gratis Lewendige Kegelspel Strome",
+					"description": "Kyk gratis na lewendige kegelspel strome. PBA Toer, Wêreldkampioenskappe & meer in HD op SportLemon."
+				},
+				"darts": {
+					"title": "SportLemon Pyl | Gratis Lewendige Pyl Strome HD",
+					"description": "Stroom lewendige pyl gratis. Kyk PDC, Premier League, Wêreldbeker & meer op SportLemon."
+				},
+				"chess": {
+					"title": "SportLemon Skaak | Gratis Lewendige Skaak Strome",
+					"description": "Kyk gratis na lewendige skaak strome. Wêreldkampioenskap, Kandidate & top toernooie op SportLemon."
+				},
+				"e-sports": {
+					"title": "SportLemon E-sport | Gratis Lewendige Speletjies Strome",
+					"description": "Gratis lewendige E-sport strome op SportLemon. Kyk LoL, CS:GO, Dota 2 & meer in HD. Speel aan!"
+				},
+				"others": {
+					"title": "SportLemon Ander | Gratis Lewendige Sport Strome HD",
+					"description": "Kyk gratis na lewendige strome vir alle ander sportsoorte. Nis, opkomende & unieke sportsoorte in HD op SportLemon."
+				},
+				"triathlon": {
+					"title": "SportLemon Drietal | Kyk Gratis Lewendige Drietal Strome",
+					"description": "SportLemon Drietal laat jou toe om hoëkwaliteit drietal strome gratis te kyk sonder registrasie. Maklike toegang, gladde terugspeel—begin nou kyk."
+				},
+				"rugby-union": {
+					"title": "SportLemon Rugby Union | Gratis HD Lewendige Strome Aanlyn",
+					"description": "SportLemon Rugby Union bied gratis, geen registrasie, hoëkwaliteit lewendige strome. Geniet vinnige toegang tot elke wedstryd in HD. Begin nou kyk."
+				},
+				"rugby-league": {
+					"title": "SportLemon Rugby League | Kyk Gratis Lewendige HD Strome",
+					"description": "SportLemon Rugby League bring jou gratis, geen registrasie, hoëkwaliteit lewendige strome van elke wedstryd. Geniet vinnige, betroubare toegang in HD—begin vandag kyk."
+				},
+				"combat-sport": {
+					"title": "SportLemon Geveg | Gratis Lewendige Vegsport Strome",
+					"description": "Gratis lewendige vegsport strome op SportLemon. Kyk MMA, boks, stoei & meer in HD."
+				},
+				"winter-sport": {
+					"title": "SportLemon Wintersport | Gratis Lewendige Strome",
+					"description": "Kyk gratis na lewendige wintersport strome. Ski, snowboard & meer in HD op SportLemon."
+				},
+				"rugby-sevens": {
+					"title": "SportLemons Rugby Sewens | Lewendige Rugby Sewens Strome",
+					"description": "SportLemons Rugby Sewens lewer gratis HD sewens toernooie met gladde terugspeel en geen registrasie. Kyk vinnige rugby sewens aksie lewendig nou."
+				},
+				"extreme-sport": {
+					"title": "SportLemons Ekstreme Sport | Lewendige Ekstreme Sport Strome",
+					"description": "SportLemons Ekstreme Sport bied gratis HD dekking van top ekstreme kompetisies. Geen registrasie nodig nie. Stroom opwindende ekstreme sport geleenthede vandag."
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "Eplsite | Lewendige Sport, Komende & Huidige Wedstryde",
+				"description": "Ontdek lewendige strome, skedules en opdaterings vir alle sportsoorte op Eplsite. Kyk gratis HD wedstryde, volg komende games en mis nooit weer aksie nie."
+			},
+			"sports": {
+				"football": {
+					"title": "Eplsite Sokker | Lewendige Wedstryde & Gratis HD Stroming",
+					"description": "Kyk top games op Eplsite Sokker met gratis, hoëkwaliteit strome en geen registrasie. Geniet vinnige, betroubare toegang tot lewendige sokker aksie—begin nou kyk."
+				},
+				"basketball": {
+					"title": "Eplsite Basketbal | Lewendige Games & HD Strome Gratis",
+					"description": "Kyk hoëkwaliteit games op Eplsite Basketbal met gratis, geen registrasie stroming. Geniet vinnige, betroubare HD aksie enige tyd. Begin nou kyk."
+				},
+				"tennis": {
+					"title": "Eplsite Tennis | Lewendige Wedstryde & Gratis HD Strome",
+					"description": "Stroom hoëkwaliteit wedstryde op Eplsite Tennis met gratis, geen registrasie toegang en vinnige HD besigtiging. Geniet gladde lewendige aksie—begin vandag kyk."
+				},
+				"ice-hockey": {
+					"title": "Eplsite Yshokkie | Lewendige HD Strome & Gratis Wedstryde",
+					"description": "Geniet vinnige, hoëkwaliteit aksie op Eplsite Yshokkie met gratis, geen registrasie strome en gladde HD terugspeel. Vang elke wedstryd—begin nou kyk."
+				},
+				"baseball": {
+					"title": "Eplsite Bofbal | Lewendige HD Strome & Gratis Games",
+					"description": "Kyk hoëkwaliteit games op Eplsite Bofbal met gratis, geen registrasie stroming en vinnige HD terugspeel. Geniet elke wedstryd—begin nou kyk."
+				},
+				"rugby-union": {
+					"title": "Eplsite Rugby Union | Lewendige HD Strome & Gratis Wedstryde",
+					"description": "Stroom top games op Eplsite Rugby Union met gratis, geen registrasie toegang en gladde HD terugspeel. Geniet vinnige, betroubare aksie—begin vandag kyk."
+				},
+				"rugby-league": {
+					"title": "Eplsite Rugby League | Lewendige HD Strome & Gratis Games",
+					"description": "Kyk vinnige, hoëkwaliteit wedstryde op Eplsite Rugby League met gratis, geen registrasie stroming en gladde HD aksie. Geniet elke game—begin nou kyk."
+				},
+				"cricket": {
+					"title": "Eplsite Krieket | Lewendige HD Strome & Gratis Wedstryde",
+					"description": "Kyk hoëkwaliteit aksie op Eplsite Krieket met gratis, geen registrasie strome en gladde HD terugspeel. Geniet elke wedstryd—begin nou kyk."
+				},
+				"american-football": {
+					"title": "Eplsite Amerikaanse Sokker | Lewendige NFL & HD Strome",
+					"description": "Stroom top NFL en Amerikaanse Sokker games op Eplsite Amerikaanse Sokker met gratis, geen registrasie toegang en gladde HD terugspeel. Kyk elke touchdown nou."
+				},
+				"volleyball": {
+					"title": "Eplsite Vlugbal – Lewendige FIVB & HD Strome",
+					"description": "Stroom top FIVB vlugbal wedstryde op Eplsite Vlugbal met gratis, geen registrasie HD toegang. Kyk elke stel en smash lewendig—moenie die aksie misloop nie."
+				},
+				"beach-volleyball": {
+					"title": "Eplsite Strandvlugbal | Lewendige Wedstryde & Hoogtepunte",
+					"description": "Kyk Eplsite Strandvlugbal in HD met gratis, geen registrasie strome van top strandvlugbal geleenthede. Geniet gladde terugspeel en vinnige toegang. Begin nou kyk."
+				},
+				"handball": {
+					"title": "Eplsite Handbal | Lewendige Wedstryde & Hoogtepunte",
+					"description": "Kyk Eplsite Handbal games in HD gratis sonder registrasie. Geniet gladde strome van top span handbal aksie. Toegang vinnig en begin nou kyk."
+				},
+				"beach-handball": {
+					"title": "Eplsite Strandhandbal | Lewendige Wedstryde & Hoogtepunte",
+					"description": "Stroom Eplsite Strandhandbal in HD gratis sonder registrasie. Geniet gladde, hoëkwaliteit strandhandbal aksie enige tyd. Begin nou kyk."
+				},
+				"beach-soccer": {
+					"title": "Eplsite Strandsokker | Lewendige Wedstryde & Hoogtepunte",
+					"description": "Kyk Eplsite Strandsokker in HD gratis sonder registrasie. Geniet gladde strome van top strandsokker aksie enige tyd. Begin nou kyk."
+				},
+				"aussie-rules": {
+					"title": "Eplsite Aussie Rules | Lewendige AFL & Australiese Sokker",
+					"description": "Kyk Eplsite Aussie Rules games in HD gratis, insluitend top AFL Australiese Sokker aksie sonder registrasie. Geniet gladde strome en begin nou kyk."
+				},
+				"futsal": {
+					"title": "Eplsite Futsal | Lewendige Wedstryde & Vinnige Aksie",
+					"description": "Kyk Eplsite Futsal games in HD gratis sonder registrasie. Geniet hoëkwaliteit strome van top binnensokker aksie. Begin nou kyk."
+				},
+				"badminton": {
+					"title": "Eplsite Pluimbal | Lewendige Wedstryde & Toernooi Strome",
+					"description": "Kyk Eplsite Pluimbal in HD gratis sonder registrasie. Geniet gladde, hoëkwaliteit strome van top pluimbal geleenthede. Begin nou kyk."
+				},
+				"netball": {
+					"title": "Eplsite Netbal | Lewendige Wedstryde & Top Liga Strome",
+					"description": "Kyk Eplsite Netbal in HD gratis sonder registrasie. Geniet gladde strome van top netbal ligas en vinnige aksie. Begin nou kyk."
+				},
+				"floorball": {
+					"title": "Eplsite Vloerbal | Lewendige Wedstryde & Vinnige Liga Aksie",
+					"description": "Kyk Eplsite Vloerbal in HD gratis sonder registrasie. Geniet gladde, hoëkwaliteit strome van top vloerbal ligas. Begin nou kyk."
+				},
+				"boxing": {
+					"title": "Eplsite Boks | Lewendige Gevegte & Kampioenskap Strome",
+					"description": "Kyk Eplsite Boks in HD gratis sonder registrasie. Geniet top professionele boks wedstryde en vinnige, hoëkwaliteit geveg strome. Begin nou kyk."
+				},
+				"mma": {
+					"title": "Eplsite MMA | Lewendige Gevegte & Uiterste Geveg Strome",
+					"description": "Kyk Eplsite MMA in HD gratis sonder registrasie. Stroom top gemengde vegkuns gevegte, UFC, en geveg aksie dadelik. Begin nou kyk."
+				},
+				"snooker": {
+					"title": "Eplsite Snooker | Lewendige Wedstryde & Toernooi Hoogtepunte",
+					"description": "Kyk Eplsite Snooker in HD gratis sonder registrasie. Geniet gladde strome van top snooker toernooie en keusport aksie. Begin nou kyk."
+				},
+				"billiard": {
+					"title": "Eplsite Biljart | Lewendige Wedstryde & Keusport Aksie",
+					"description": "Kyk Eplsite Biljart in HD gratis sonder registrasie. Geniet gladde strome van top poel, snooker, en keusport toernooie. Begin nou kyk."
+				},
+				"table-tennis": {
+					"title": "Eplsite Tafeltennis | Lewendige Wedstryde & Top Toernooie",
+					"description": "Kyk Eplsite Tafeltennis in HD gratis sonder registrasie. Geniet gladde strome van top pingpong geleenthede en vinnige aksie. Begin nou kyk."
+				},
+				"padel-tennis": {
+					"title": "Eplsite Padel | Lewendige Wedstryde & Top Toernooie",
+					"description": "Kyk Eplsite Padel in HD gratis sonder registrasie. Geniet vinnige, hoëkwaliteit strome van top padel en tennis aksie. Begin nou kyk."
+				},
+				"squash": {
+					"title": "Eplsite Muurbal | Lewendige Wedstryde & Top Toernooi Aksie",
+					"description": "Kyk Eplsite Muurbal in HD gratis sonder registrasie. Geniet vinnige, hoëkwaliteit strome van top muurbal toernooie. Begin kyk die aksie nou."
+				},
+				"motorsport": {
+					"title": "Eplsite Motorsport | Lewendige Resies & F1, MotoGP Strome",
+					"description": "Kyk Eplsite Motorsport lewendig gratis sonder registrasie. Geniet hoëkwaliteit strome van F1, MotoGP, en top motorsport geleenthede. Begin nou kyk."
+				},
+				"racing": {
+					"title": "Eplsite Resies | Lewendige Motorsport & Baan Aksie",
+					"description": "Kyk Eplsite Resies in HD gratis sonder registrasie. Geniet hoëspoed motorsport aksie, top resies, en gladde strome. Begin nou kyk."
+				},
+				"cycling": {
+					"title": "Eplsite Fietsry | Lewendige Resies & Toer Hoogtepunte",
+					"description": "Kyk Eplsite Fietsry in HD gratis sonder registrasie. Geniet top padresies, toere, en professionele fietsry strome. Begin volg die aksie nou."
+				},
+				"equestrianism": {
+					"title": "Eplsite Perdry | Lewendige Perdry Geleenthede",
+					"description": "Kyk Eplsite Perdry in HD gratis sonder registrasie. Geniet gladde strome van top perdry en perdryding kompetisies. Begin nou kyk."
+				},
+				"golf": {
+					"title": "Eplsite Gholf | Lewendige Toernooie & Hoogtepunte",
+					"description": "Kyk Eplsite Gholf in HD gratis sonder registrasie. Geniet gladde strome van top PGA en professionele gholf geleenthede. Tee af en begin nou kyk."
+				},
+				"field-hockey": {
+					"title": "Eplsite Veldhokkie | Lewendige Wedstryde & Top Toernooie",
+					"description": "Kyk Eplsite Veldhokkie in HD gratis sonder registrasie. Geniet gladde strome van top veldhokkie ligas en vinnige aksie. Begin nou kyk."
+				},
+				"lacrosse": {
+					"title": "Eplsite Lacrosse | Lewendige Wedstryde & Pro Liga Aksie",
+					"description": "Kyk Eplsite Lacrosse in HD gratis sonder registrasie. Geniet vinnige, hoëkwaliteit strome van top lacrosse games en ligas. Begin nou kyk."
+				},
+				"athletics": {
+					"title": "Eplsite Atletiek | Lewendige Baan & Veld Geleenthede",
+					"description": "Kyk Eplsite Atletiek in HD gratis sonder registrasie. Geniet top baan en veld geleenthede, gladde strome, en kitskoerier toegang. Begin nou kyk."
+				},
+				"gymnastics": {
+					"title": "Eplsite Gimnastiek | Lewendige Roetines & Kompetisie Strome",
+					"description": "Kyk Eplsite Gimnastiek in HD gratis sonder registrasie. Geniet top artistieke en ritmiese gimnastiek geleenthede met gladde, hoëkwaliteit strome. Begin nou kyk."
+				},
+				"weightlifting": {
+					"title": "Eplsite Gewigoptel | Lewendige Optellinge & Kompetisie Strome",
+					"description": "Kyk Eplsite Gewigoptel in HD gratis sonder registrasie. Geniet gladde, hoëkwaliteit strome van top gewigoptel geleenthede. Begin nou kyk."
+				},
+				"climbing": {
+					"title": "Eplsite Klim | Lewendige Kompetisies & Klim Geleenthede",
+					"description": "Kyk Eplsite Klim in HD gratis sonder registrasie. Geniet top sportklim en boulder kompetisies met gladde, hoëkwaliteit strome. Begin nou kyk."
+				},
+				"bandy": {
+					"title": "Eplsite Bandy | Lewendige Wedstryde & Liga Aksie",
+					"description": "Kyk Eplsite Bandy in HD gratis sonder registrasie. Geniet top bandy ligas en vinnige yshokkie aksie. Begin nou kyk."
+				},
+				"curling": {
+					"title": "Eplsite Krulbal | Lewendige Wedstryde & Kampioenskap Strome",
+					"description": "Kyk Eplsite Krulbal in HD gratis sonder registrasie. Geniet top krulbal toernooie en gladde, hoëkwaliteit strome. Begin nou kyk."
+				},
+				"triathlon": {
+					"title": "Eplsite Drietal | Lewendige Resies & Geleentheid Strome",
+					"description": "Kyk Eplsite Drietal in HD gratis sonder registrasie. Geniet top swem, fietsry, en hardloop aksie met gladde, hoëkwaliteit strome. Begin nou kyk."
+				},
+				"water-sports": {
+					"title": "Eplsite Watersport | Lewendige Geleenthede & Aksie Strome",
+					"description": "Kyk Eplsite Watersport in HD gratis sonder registrasie. Geniet top swem, brandery, en watersport geleenthede met gladde, hoëkwaliteit strome. Begin nou."
+				},
+				"water-polo": {
+					"title": "Eplsite Waterpolo | Lewendige Wedstryde & Top Liga Aksie",
+					"description": "Kyk Eplsite Waterpolo in HD gratis sonder registrasie. Geniet gladde, hoëkwaliteit strome van top waterpolo ligas en wedstryde. Begin nou kyk."
+				},
+				"sailing": {
+					"title": "Eplsite Seil | Lewendige Resies & Regatta Strome",
+					"description": "Kyk Eplsite Seil in HD gratis sonder registrasie. Geniet top seil regatta's en jagreise met gladde, hoëkwaliteit strome. Begin nou kyk."
+				},
+				"bowling": {
+					"title": "Eplsite Kegelspel | Lewendige Wedstryde & Toernooi Strome",
+					"description": "Kyk Eplsite Kegelspel in HD gratis sonder registrasie. Geniet top kegelspel ligas en hoëkwaliteit strome. Vang elke strike en begin nou kyk."
+				},
+				"darts": {
+					"title": "Eplsite Pyl | Lewendige Wedstryde & Kampioenskap Strome",
+					"description": "Kyk Eplsite Pyl in HD gratis sonder registrasie. Geniet top professionele pyl geleenthede met gladde, hoëkwaliteit strome. Begin nou kyk."
+				},
+				"chess": {
+					"title": "Eplsite Skaak | Lewendige Toernooie & Grootmeester Games",
+					"description": "Kyk Eplsite Skaak in HD gratis sonder registrasie. Volg top skaak toernooie, grootmeester games, en geniet vinnige, hoëkwaliteit strome."
+				},
+				"e-sports": {
+					"title": "Eplsite E-sport | Lewendige Wedstryde & Pro Speletjies Strome",
+					"description": "Kyk Eplsite E-sport in HD gratis sonder registrasie. Stroom top professionele speletjies toernooie en geniet gladde, hoëkwaliteit gameplay lewendig."
+				},
+				"others": {
+					"title": "Eplsite Ander | Lewendige Sport & Geleentheid Strome",
+					"description": "Kyk Eplsite Ander in HD gratis sonder registrasie. Geniet hoëkwaliteit strome van verskeie sportsoorte en unieke geleenthede. Begin nou kyk."
+				},
+				"combat-sport": {
+					"title": "Eplsite Vegsport | MMA, Boks & Lewendige Gevegte",
+					"description": "Kyk Eplsite Vegsport lewendig in HD gratis sonder registrasie. Geniet top MMA, boks, en vegkuns strome. Vang die aksie nou."
+				},
+				"winter-sport": {
+					"title": "Eplsite Wintersport | Lewendige Ski & Snowboard",
+					"description": "Kyk Eplsite Wintersport in HD gratis sonder registrasie. Geniet top ski, snowboard, en ander winter geleenthede met gladde, hoëkwaliteit strome. Begin nou."
+				},
+				"rugby-sevens": {
+					"title": "Eplsite Rugby Sewens | Lewendige Rugby Sewens Strome",
+					"description": "Eplsite Rugby Sewens bied gratis HD sewens toernooie met gladde terugspeel en geen registrasie nodig. Kyk hoëspoed rugby sewens aksie lewendig vandag."
+				},
+				"extreme-sport": {
+					"title": "Eplsite Ekstreme Sport | Lewendige Ekstreme Sport Strome",
+					"description": "Eplsite Ekstreme Sport bring gratis HD dekking van top ekstreme kompetisies. Geen registrasie nodig nie. Stroom opwindende ekstreme sport geleenthede nou."
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2p4u | Lewendige Sport Strome en Komende Wedstryde",
+				"description": "Verken P2p4u vir gratis HD strome van alle lewendige en komende sport wedstryde. Vinnige toegang en geen registrasie—begin kyk jou gunsteling geleenthede nou."
+			},
+			"sports": {
+				"football": {
+					"title": "P2p4u Sokker | Lewendige Sokker Strome Aanlyn",
+					"description": "Kyk P2p4u Sokker gratis in HD met vinnige, geen registrasie sokker strome. Geniet gladde toegang tot top ligas en wedstryde. Begin nou kyk."
+				},
+				"basketball": {
+					"title": "P2p4u Basketbal | Lewendige NBA Strome",
+					"description": "Kyk P2p4u Basketbal gratis in HD met vinnige NBA en hoepel strome. Geen registrasie, gladde toegang, en topkwaliteit dekking. Begin kyk lewendige games nou."
+				},
+				"tennis": {
+					"title": "P2p4u Tennis | Lewendige Grand Slam Strome",
+					"description": "Vang P2p4u Tennis in HD met gratis, vinnige strome van ATP en WTA geleenthede. Geen registrasie nodig nie. Kyk lewendige wedstryde nou."
+				},
+				"ice-hockey": {
+					"title": "P2p4u Yshokkie | Lewendige NHL Hokkie Strome",
+					"description": "Stroom P2p4u Yshokkie gratis in HD met gladde NHL hokkie aksie. Geen registrasie, vinnige toegang, en topkwaliteit strome. Kyk lewendige games nou."
+				},
+				"baseball": {
+					"title": "P2p4u Bofbal | Lewendige MLB Strome",
+					"description": "Geniet P2p4u Bofbal met gratis HD strome van MLB games. Vinnige laai, geen registrasie, maklike toegang. Kyk lewendig nou."
+				},
+				"rugby-union": {
+					"title": "P2p4u Rugby Union | Lewendige Rugby Strome",
+					"description": "Kyk P2p4u Rugby Union gratis in HD met gladde lewendige rugby dekking. Geen inteken nodig nie—spring in die aksie nou."
+				},
+				"rugby-league": {
+					"title": "P2p4u Rugby League | Lewendige Rugby Strome",
+					"description": "Stroom P2p4u Rugby League met gratis, hoëkwaliteit rugby aksie. Geen registrasie en vinnige toegang. Begin kyk vandag."
+				},
+				"cricket": {
+					"title": "P2p4u Krieket | Lewendige Wedstryd Strome",
+					"description": "Geniet P2p4u Krieket met gratis HD strome van globale toernooie. Geen registrasie nodig nie. Kyk lewendige wedstryde nou."
+				},
+				"american-football": {
+					"title": "P2p4u Amerikaanse Sokker | NFL Lewendige Strome",
+					"description": "Kyk P2p4u Amerikaanse Sokker in HD met gratis NFL strome. Geen registrasie, vinnige toegang, topkwaliteit dekking. Begin stroom nou."
+				},
+				"volleyball": {
+					"title": "P2p4u Vlugbal | Lewendige Wedstryd Strome",
+					"description": "Stroom P2p4u Vlugbal gratis met gladde HD aksie van top ligas. Geen rekening nodig nie—kyk dadelik."
+				},
+				"beach-volleyball": {
+					"title": "P2p4u Strandvlugbal | Lewendige Sandbaan Strome",
+					"description": "Kyk P2p4u Strandvlugbal gratis in HD met top strand toernooie. Geen registrasie nodig nie. Begin kyk nou."
+				},
+				"handball": {
+					"title": "P2p4u Handbal | Lewendige Wedstryd Strome",
+					"description": "Stroom P2p4u Handbal gratis met vinnige, kwaliteit HD dekking. Geen registrasie nodig nie—begin kyk lewendige games."
+				},
+				"beach-handball": {
+					"title": "P2p4u Strandhandbal | Lewendige Wedstryd Strome",
+					"description": "Geniet P2p4u Strandhandbal in HD met gratis, gladde strome. Geen registrasie nodig nie. Kyk lewendig nou."
+				},
+				"beach-soccer": {
+					"title": "P2p4u Strandsokker | Lewendige Sand Sokker Strome",
+					"description": "Kyk P2p4u Strandsokker gratis met HD strandsokker strome. Geen registrasie nodig nie. Sluit aan by lewendige wedstryde nou."
+				},
+				"aussie-rules": {
+					"title": "P2p4u Aussie Rules | AFL Lewendige Strome",
+					"description": "Stroom P2p4u Aussie Rules gratis met HD AFL aksie. Geen registrasie nie—kyk games lewendig nou."
+				},
+				"futsal": {
+					"title": "P2p4u Futsal | Lewendige Binnensokker Strome",
+					"description": "Geniet P2p4u Futsal gratis met vinnige, HD binnensokker aksie. Geen registrasie nodig nie. Kyk nou."
+				},
+				"badminton": {
+					"title": "P2p4u Pluimbal | Lewendige Wedstryd Strome",
+					"description": "Kyk P2p4u Pluimbal met gratis HD strome van top toernooie. Geen inteken nodig nie—stroom lewendig nou."
+				},
+				"netball": {
+					"title": "P2p4u Netbal | Lewendige Wedstryd Strome",
+					"description": "Stroom P2p4u Netbal gratis in HD met vinnige, gladde toegang. Geen registrasie nodig nie. Begin kyk nou."
+				},
+				"floorball": {
+					"title": "P2p4u Vloerbal | Lewendige Wedstryd Strome",
+					"description": "Geniet P2p4u Vloerbal gratis met skoon HD strome. Geen registrasie nodig nie. Kyk wedstryde dadelik."
+				},
+				"boxing": {
+					"title": "P2p4u Boks | Lewendige Geveg Aand Strome",
+					"description": "Stroom P2p4u Boks gratis in HD met groot geveg aanде. Geen registrasie nodig nie. Kyk lewendig nou."
+				},
+				"mma": {
+					"title": "P2p4u MMA | Lewendige Geveg Strome",
+					"description": "Kyk P2p4u MMA met gratis HD UFC-styl geveg dekking. Geen registrasie nodig nie. Stroom lewendig vandag."
+				},
+				"snooker": {
+					"title": "P2p4u Snooker | Lewendige Tafel Strome",
+					"description": "Geniet P2p4u Snooker met gladde HD strome. Geen registrasie nie—kyk toernooie lewendig nou."
+				},
+				"billiard": {
+					"title": "P2p4u Biljart | Lewendige Keusport Strome",
+					"description": "Stroom P2p4u Biljart gratis met HD keusport aksie. Geen registrasie nodig nie. Begin kyk nou."
+				},
+				"table-tennis": {
+					"title": "P2p4u Tafeltennis | Lewendige Pingpong Strome",
+					"description": "Kyk P2p4u Tafeltennis met gratis HD pingpong strome. Geen registrasie nodig nie. Kyk lewendig nou."
+				},
+				"padel-tennis": {
+					"title": "P2p4u Padel | Lewendige Padel Strome",
+					"description": "Stroom P2p4u Padel gratis met HD wedstryde. Vinnige toegang, geen registrasie. Kyk lewendige games dadelik."
+				},
+				"squash": {
+					"title": "P2p4u Muurbal | Lewendige Wedstryd Strome",
+					"description": "Geniet P2p4u Muurbal met hoëkwaliteit HD strome. Geen registrasie nodig nie—begin kyk nou."
+				},
+				"motorsport": {
+					"title": "P2p4u Motorsport | Lewendige Motor Resie Strome",
+					"description": "Stroom P2p4u Motorsport gratis in HD met top motor resie geleenthede. Geen registrasie nodig nie. Kyk lewendig."
+				},
+				"racing": {
+					"title": "P2p4u Resies | Lewendige Spoed Strome",
+					"description": "Kyk P2p4u Resies met gratis HD dekking van groot resie geleenthede. Geen inteken nodig nie. Begin stroom nou."
+				},
+				"cycling": {
+					"title": "P2p4u Fietsry | Lewendige Resie Strome",
+					"description": "Stroom P2p4u Fietsry gratis met hoëkwaliteit HD toere. Geen registrasie nie—kyk lewendige aksie nou."
+				},
+				"equestrianism": {
+					"title": "P2p4u Perdry | Lewendige Perdsport Strome",
+					"description": "Kyk P2p4u Perdry gratis met HD ry kompetisies. Geen registrasie nodig nie. Begin nou."
+				},
+				"golf": {
+					"title": "P2p4u Gholf | Lewendige PGA Strome",
+					"description": "Stroom P2p4u Gholf gratis met HD PGA en globale geleenthede. Geen registrasie nie—kyk lewendige rondtes nou."
+				},
+				"field-hockey": {
+					"title": "P2p4u Veldhokkie | Lewendige Wedstryd Strome",
+					"description": "Geniet P2p4u Veldhokkie in HD met gratis, vinnige strome. Geen rekening nodig nie. Kyk nou."
+				},
+				"lacrosse": {
+					"title": "P2p4u Lacrosse | Lewendige Wedstryd Strome",
+					"description": "Stroom P2p4u Lacrosse gratis met gladde HD dekking. Geen registrasie nodig nie—kyk dadelik."
+				},
+				"athletics": {
+					"title": "P2p4u Atletiek | Lewendige Baan Strome",
+					"description": "Kyk P2p4u Atletiek gratis in HD met top baan en veld geleenthede. Geen inteken nodig nie. Begin stroom nou."
+				},
+				"gymnastics": {
+					"title": "P2p4u Gimnastiek | Lewendige Artistieke Strome",
+					"description": "Geniet P2p4u Gimnastiek met gratis HD dekking van top kompetisies. Geen registrasie nodig nie. Kyk nou."
+				},
+				"weightlifting": {
+					"title": "P2p4u Gewigoptel | Lewendige Krag Strome",
+					"description": "Stroom P2p4u Gewigoptel gratis met HD optellinge en kompetisies. Geen registrasie nodig nie. Kyk lewendig nou."
+				},
+				"climbing": {
+					"title": "P2p4u Klim | Lewendige Rotssport Strome",
+					"description": "Kyk P2p4u Klim met gratis HD sportklim dekking. Geen registrasie nie—begin kyk nou."
+				},
+				"winter-sports": {
+					"title": "P2p4u Wintersport | Lewendige Sneeu Aksie Strome",
+					"description": "Stroom P2p4u Wintersport gratis met HD sneeu en ys geleenthede. Geen rekening nodig nie. Kyk nou."
+				},
+				"bandy": {
+					"title": "P2p4u Bandy | Lewendige Yssokker Strome",
+					"description": "Kyk P2p4u Bandy met vinnige, gratis HD strome. Geen registrasie nodig nie. Geniet lewendige games nou."
+				},
+				"curling": {
+					"title": "P2p4u Krulbal | Lewendige Ys Wedstryd Strome",
+					"description": "Stroom P2p4u Krulbal gratis in HD met gladde toegang. Geen registrasie nodig nie. Kyk lewendig nou."
+				},
+				"triathlon": {
+					"title": "P2p4u Drietal | Lewendige Resie Strome",
+					"description": "Kyk P2p4u Drietal gratis met HD multisport dekking. Geen inteken nodig nie—begin stroom nou."
+				},
+				"water-sports": {
+					"title": "P2p4u Watersport | Lewendige Akwatiese Strome",
+					"description": "Stroom P2p4u Watersport gratis in HD. Geen registrasie nie—kyk akwatiese aksie lewendig nou."
+				},
+				"water-polo": {
+					"title": "P2p4u Waterpolo | Lewendige Wedstryd Strome",
+					"description": "Geniet P2p4u Waterpolo met gratis HD strome. Geen registrasie nodig nie. Kyk lewendige games nou."
+				},
+				"sailing": {
+					"title": "P2p4u Seil | Lewendige Regatta Strome",
+					"description": "Kyk P2p4u Seil gratis met gladde HD resie strome. Geen registrasie nie—begin kyk nou."
+				},
+				"bowling": {
+					"title": "P2p4u Kegelspel | Lewendige Baan Strome",
+					"description": "Geniet P2p4u Kegelspel met gratis HD baan aksie. Geen inteken nodig nie—kyk lewendig nou."
+				},
+				"darts": {
+					"title": "P2p4u Pyl | Lewendige Toernooi Strome",
+					"description": "Stroom P2p4u Pyl gratis in HD met top geleenthede. Geen registrasie nodig nie. Kyk nou."
+				},
+				"chess": {
+					"title": "P2p4u Skaak | Lewendige Toernooi Strome",
+					"description": "Kyk P2p4u Skaak gratis met HD dekking van groot wedstryde. Geen registrasie nodig nie. Begin kyk."
+				},
+				"e-sports": {
+					"title": "P2p4u E-sport | Lewendige Speletjies Strome",
+					"description": "Stroom P2p4u E-sport gratis met hoëkwaliteit e-sport toernooie. Geen registrasie nodig nie. Kyk dadelik."
+				},
+				"others": {
+					"title": "P2p4u Ander | Lewendige Sport Strome",
+					"description": "Verken P2p4u Ander vir gratis HD strome regoor baie sportsoorte. Geen rekening nodig nie. Begin kyk nou."
+				},
+				"combat-sports": {
+					"title": "P2p4u Vegsport | Lewendige Geveg Strome",
+					"description": "Kyk P2p4u Vegsport gratis met HD geveg aksie regoor top geleenthede. Geen rekening nodig nie—begin stroom nou."
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "Streamhunter | Lewendige Sport Strome & Komende Wedstryde",
+				"description": "Streamhunter bied gratis HD strome vir alle sportsoorte met komende en lewendige wedstryde opdateer daagliks. Vinnige toegang, geen registrasie nodig. Begin nou kyk."
+			},
+			"sports": {
+				"football": {
+					"title": "Streamhunter Sokker | Lewendige Wedstryde Aanlyn",
+					"description": "Streamhunter Sokker lewer gratis HD strome van sokker games wêreldwyd. Geniet vinnige toegang en geen registrasie. Begin nou kyk."
+				},
+				"basketball": {
+					"title": "Streamhunter Basketbal | Lewendige NBA Aksie",
+					"description": "Streamhunter Basketbal bied gratis HD strome van NBA en globale ligas. Maklike toegang en geen registrasie. Kyk lewendige games nou."
+				},
+				"tennis": {
+					"title": "Streamhunter Tennis | Lewendige Grand Slam Strome",
+					"description": "Streamhunter Tennis laat jou ATP en WTA wedstryde in HD gratis kyk. Geen registrasie nodig nie. Stroom lewendige tennis nou."
+				},
+				"ice-hockey": {
+					"title": "Streamhunter Yshokkie | Lewendige NHL Strome",
+					"description": "Streamhunter Yshokkie bring gratis HD aksie van NHL en globale ligas. Gladde stroming sonder registrasie. Kyk nou."
+				},
+				"baseball": {
+					"title": "Streamhunter Bofbal | Lewendige MLB Strome",
+					"description": "Streamhunter Bofbal bied HD MLB en internasionale liga strome gratis. Geen registrasie nodig nie. Kyk lewendige bofbal nou."
+				},
+				"rugby-union": {
+					"title": "Streamhunter Rugby Union | Lewendige Rugby Strome",
+					"description": "Streamhunter Rugby Union gee gratis HD strome van top ligas en internasionale wedstryde. Geen registrasie nodig nie. Kyk rugby lewendig nou."
+				},
+				"rugby-league": {
+					"title": "Streamhunter Rugby League | Lewendige Rugby Geleenthede",
+					"description": "Streamhunter Rugby League lewer gratis HD strome van NRL, Super League, en meer. Geen registrasie. Kyk lewendig nou."
+				},
+				"cricket": {
+					"title": "Streamhunter Krieket | Lewendige Wedstryd Strome",
+					"description": "Streamhunter Krieket stroom Toetse, ODI, en T20 in HD gratis. Vinnige laai sonder registrasie. Begin kyk lewendige krieket nou."
+				},
+				"american-football": {
+					"title": "Streamhunter Amerikaanse Sokker | NFL Lewendige Strome",
+					"description": "Streamhunter Amerikaanse Sokker bied gratis HD NFL en NCAA strome sonder registrasie. Vinnige, hoëkwaliteit besigtiging. Kyk lewendig nou."
+				},
+				"volleyball": {
+					"title": "Streamhunter Vlugbal | Lewendige Vlugbal Strome",
+					"description": "Streamhunter Vlugbal verskaf gratis HD wedstryde van globale ligas. Geen registrasie nodig nie. Kyk lewendige vlugbal nou."
+				},
+				"beach-volleyball": {
+					"title": "Streamhunter Strandvlugbal | Lewendige Strand Aksie",
+					"description": "Streamhunter Strandvlugbal stroom top FIVB en pro toere in HD. Gratis toegang sonder registrasie. Kyk nou."
+				},
+				"handball": {
+					"title": "Streamhunter Handbal | Lewendige Handbal Strome",
+					"description": "Streamhunter Handbal bied gratis HD wedstryde van top ligas en toernooie. Geen registrasie nodig nie. Kyk nou."
+				},
+				"beach-handball": {
+					"title": "Streamhunter Strandhandbal | Lewendige Strand Wedstryde",
+					"description": "Streamhunter Strandhandbal bring gratis HD aksie van globale geleenthede. Geen registrasie nodig nie. Kyk lewendig nou."
+				},
+				"beach-soccer": {
+					"title": "Streamhunter Strandsokker | Lewendige Strand Games",
+					"description": "Streamhunter Strandsokker bied gratis HD strandsokker strome sonder registrasie. Geniet vinnige, hoëkwaliteit besigtiging nou."
+				},
+				"aussie-rules": {
+					"title": "Streamhunter Aussie Rules | Lewendige AFL Strome",
+					"description": "Streamhunter Aussie Rules verskaf gratis HD AFL aksie sonder registrasie. Vinnige, gladde stroming. Kyk nou."
+				},
+				"futsal": {
+					"title": "Streamhunter Futsal | Lewendige Futsal Strome",
+					"description": "Streamhunter Futsal lewer gratis HD futsal wedstryde wêreldwyd. Geen registrasie nodig nie. Kyk lewendige games nou."
+				},
+				"badminton": {
+					"title": "Streamhunter Pluimbal | Lewendige Pluimbal Strome",
+					"description": "Streamhunter Pluimbal stroom BWF toernooie in HD gratis. Geen registrasie nodig nie. Kyk nou."
+				},
+				"netball": {
+					"title": "Streamhunter Netbal | Lewendige Netbal Strome",
+					"description": "Streamhunter Netbal gee gratis HD toegang tot top ligas en toernooie. Geen registrasie nodig nie. Kyk lewendig nou."
+				},
+				"floorball": {
+					"title": "Streamhunter Vloerbal | Lewendige Vloerbal Strome",
+					"description": "Streamhunter Vloerbal verskaf gratis HD wedstryde van top ligas. Geen registrasie. Kyk lewendige aksie nou."
+				},
+				"combat-sports": {
+					"title": "Streamhunter Vegsport | Lewendige Geveg Strome",
+					"description": "Streamhunter Vegsport bied gratis HD aksie van groot geveg geleenthede. Geen registrasie. Kyk lewendige gevegte nou."
+				},
+				"boxing": {
+					"title": "Streamhunter Boks | Lewendige Geveg Aand Strome",
+					"description": "Streamhunter Boks lewer gratis HD strome van groot gevegte. Geen registrasie nodig nie. Kyk boks lewendig nou."
+				},
+				"mma": {
+					"title": "Streamhunter MMA | Lewendige MMA Geveg Strome",
+					"description": "Streamhunter MMA bied gratis HD aksie van top promosies. Geen registrasie nodig nie. Kyk lewendige gevegte nou."
+				},
+				"snooker": {
+					"title": "Streamhunter Snooker | Lewendige Snooker Strome",
+					"description": "Streamhunter Snooker stroom professionele toernooie in HD gratis. Geen registrasie. Kyk lewendig nou."
+				},
+				"billiard": {
+					"title": "Streamhunter Biljart | Lewendige Biljart Strome",
+					"description": "Streamhunter Biljart verskaf gratis HD wedstryde en toernooie sonder registrasie. Begin kyk nou."
+				},
+				"table-tennis": {
+					"title": "Streamhunter Tafeltennis | Lewendige Pingpong Strome",
+					"description": "Streamhunter Tafeltennis gee gratis HD ITTF wedstryde. Geen registrasie nodig nie. Kyk lewendige aksie nou."
+				},
+				"padel-tennis": {
+					"title": "Streamhunter Padel | Lewendige Padel Strome",
+					"description": "Streamhunter Padel bied gratis HD wedstryde van groot toere. Geen registrasie. Kyk lewendige padel nou."
+				},
+				"squash": {
+					"title": "Streamhunter Muurbal | Lewendige Muurbal Strome",
+					"description": "Streamhunter Muurbal stroom PSA wedstryde in HD gratis. Geen registrasie. Kyk muurbal lewendig nou."
+				},
+				"motorsport": {
+					"title": "Streamhunter Motorsport | Lewendige Motor Resies",
+					"description": "Streamhunter Motorsport verskaf gratis HD resie strome van groot reekse. Geen registrasie. Kyk motorsport lewendig nou."
+				},
+				"racing": {
+					"title": "Streamhunter Resies | Lewendige Resie Strome",
+					"description": "Streamhunter Resies bied gratis HD motorsport strome sonder registrasie. Geniet vinnige lewendige aksie nou."
+				},
+				"cycling": {
+					"title": "Streamhunter Fietsry | Lewendige Fietsry Strome",
+					"description": "Streamhunter Fietsry stroom groot toere en geleenthede in HD gratis. Geen registrasie. Kyk lewendige fietsry nou."
+				},
+				"equestrianism": {
+					"title": "Streamhunter Perdry | Lewendige Perd Geleenthede",
+					"description": "Streamhunter Perdry lewer gratis HD strome van globale perdkompetisies. Geen registrasie. Kyk lewendig nou."
+				},
+				"golf": {
+					"title": "Streamhunter Gholf | Lewendige Gholf Strome",
+					"description": "Streamhunter Gholf bied gratis HD PGA en globale toer strome. Geen registrasie. Kyk gholf lewendig nou."
+				},
+				"field-hockey": {
+					"title": "Streamhunter Veldhokkie | Lewendige Hokkie Strome",
+					"description": "Streamhunter Veldhokkie stroom globale wedstryde in HD gratis. Geen registrasie nodig nie. Kyk lewendig nou."
+				},
+				"lacrosse": {
+					"title": "Streamhunter Lacrosse | Lewendige Lacrosse Strome",
+					"description": "Streamhunter Lacrosse verskaf gratis HD wedstryde van groot ligas. Geen registrasie. Kyk nou."
+				},
+				"athletics": {
+					"title": "Streamhunter Atletiek | Lewendige Atletiek Strome",
+					"description": "Streamhunter Atletiek stroom globale geleenthede in HD gratis. Geen registrasie nodig nie. Kyk atletiek lewendig nou."
+				},
+				"gymnastics": {
+					"title": "Streamhunter Gimnastiek | Lewendige Gimnastiek Strome",
+					"description": "Streamhunter Gimnastiek bied gratis HD kompetisie strome sonder registrasie. Kyk lewendig nou."
+				},
+				"weightlifting": {
+					"title": "Streamhunter Gewigoptel | Lewendige Gewigoptel Strome",
+					"description": "Streamhunter Gewigoptel bied gratis HD kompetisies sonder registrasie. Geniet vinnige toegang tot lewendige gewigoptel geleenthede nou."
+				},
+				"climbing": {
+					"title": "Streamhunter Klim | Lewendige Klim Strome",
+					"description": "Streamhunter Klim stroom lei, boulder, en spoed geleenthede in HD gratis. Geen registrasie. Kyk lewendig nou."
+				},
+				"winter-sports": {
+					"title": "Streamhunter Wintersport | Lewendige Wintersport Geleenthede",
+					"description": "Streamhunter Wintersport verskaf gratis HD ski, skaats, en meer. Geen registrasie. Kyk lewendig nou."
+				},
+				"bandy": {
+					"title": "Streamhunter Bandy | Lewendige Bandy Strome",
+					"description": "Streamhunter Bandy bied gratis HD wedstryde sonder registrasie. Kyk bandy lewendig nou."
+				},
+				"curling": {
+					"title": "Streamhunter Krulbal | Lewendige Krulbal Strome",
+					"description": "Streamhunter Krulbal gee gratis HD toernooi dekking sonder registrasie. Kyk lewendige krulbal nou."
+				},
+				"triathlon": {
+					"title": "Streamhunter Drietal | Lewendige Resie Strome",
+					"description": "Streamhunter Drietal stroom globale drietal geleenthede in HD gratis. Geen registrasie. Kyk lewendig nou."
+				},
+				"water-sports": {
+					"title": "Streamhunter Watersport | Lewendige Akwatiese Strome",
+					"description": "Streamhunter Watersport bied gratis HD strome van top akwatiese geleenthede. Geen registrasie. Kyk lewendig nou."
+				},
+				"water-polo": {
+					"title": "Streamhunter Waterpolo | Lewendige Polo Strome",
+					"description": "Streamhunter Waterpolo gee gratis HD wedstryde sonder registrasie. Kyk lewendige waterpolo nou."
+				},
+				"sailing": {
+					"title": "Streamhunter Seil | Lewendige Seil Strome",
+					"description": "Streamhunter Seil stroom globale regatta's in HD gratis. Geen registrasie. Kyk lewendige seil nou."
+				},
+				"bowling": {
+					"title": "Streamhunter Kegelspel | Lewendige Kegelspel Strome",
+					"description": "Streamhunter Kegelspel verskaf gratis HD toernooie sonder registrasie. Kyk lewendige kegelspel nou."
+				},
+				"darts": {
+					"title": "Streamhunter Pyl | Lewendige Pyl Strome",
+					"description": "Streamhunter Pyl bied gratis HD PDC en globale pyl strome. Geen registrasie. Kyk lewendige pyl nou."
+				},
+				"chess": {
+					"title": "Streamhunter Skaak | Lewendige Skaak Wedstryde",
+					"description": "Streamhunter Skaak stroom top toernooie in HD gratis. Geen registrasie. Kyk skaak lewendig nou."
+				},
+				"e-sports": {
+					"title": "Streamhunter E-sport | Lewendige E-sport Strome",
+					"description": "Streamhunter E-sport verskaf gratis HD e-sport toernooie. Geen registrasie nodig nie. Kyk lewendig nou."
+				},
+				"others": {
+					"title": "Streamhunter Ander | Lewendige Sport Strome",
+					"description": "Streamhunter Ander bied gratis HD dekking van nis en opkomende sportsoorte. Geen registrasie. Kyk lewendige aksie nou."
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "Methstreams | Lewendige Sport Strome & Komende Wedstryde",
+				"description": "Methstreams lewer gratis HD strome vir alle sportsoorte met lewendige en komende wedstryde opdateer daagliks. Geen registrasie nodig nie. Begin kyk dadelik."
+			},
+			"sports": {
+				"football": {
+					"title": "Methstreams Sokker | Lewendige Wedstryde Aanlyn",
+					"description": "Methstreams Sokker bied gratis HD sokker strome sonder registrasie. Vinnige, betroubare toegang tot lewendige wedstryde. Kyk nou."
+				},
+				"basketball": {
+					"title": "Methstreams Basketbal | Lewendige NBA Strome",
+					"description": "Methstreams Basketbal bring gratis HD NBA en globale liga strome. Geen registrasie nodig nie. Kyk lewendige hoepel nou."
+				},
+				"tennis": {
+					"title": "Methstreams Tennis | Lewendige Tennis Strome",
+					"description": "Methstreams Tennis lewer ATP en WTA strome in HD gratis. Kitskoerier toegang sonder registrasie. Kyk nou."
+				},
+				"ice-hockey": {
+					"title": "Methstreams Yshokkie | Lewendige NHL Strome",
+					"description": "Methstreams Yshokkie bied gratis HD NHL en internasionale strome. Geen registrasie nodig nie. Kyk lewendige hokkie nou."
+				},
+				"baseball": {
+					"title": "Methstreams Bofbal | Lewendige MLB Strome",
+					"description": "Methstreams Bofbal verskaf HD MLB en globale bofbal strome gratis. Geen registrasie nodig nie. Kyk lewendig nou."
+				},
+				"rugby-union": {
+					"title": "Methstreams Rugby Union | Lewendige Rugby Strome",
+					"description": "Methstreams Rugby Union stroom top ligas en internasionale wedstryde in HD gratis. Geen registrasie. Kyk rugby lewendig nou."
+				},
+				"rugby-league": {
+					"title": "Methstreams Rugby League | Lewendige Rugby Wedstryde",
+					"description": "Methstreams Rugby League lewer gratis HD NRL en Super League strome. Vinnige toegang sonder registrasie. Kyk nou."
+				},
+				"cricket": {
+					"title": "Methstreams Krieket | Lewendige Krieket Strome",
+					"description": "Methstreams Krieket verskaf HD T20, ODI, en Toets strome gratis. Geen registrasie nodig nie. Begin kyk nou."
+				},
+				"american-football": {
+					"title": "Methstreams Amerikaanse Sokker | NFL Lewendige Strome",
+					"description": "Methstreams Amerikaanse Sokker stroom NFL en NCAA games in HD gratis. Geen registrasie. Kyk lewendig nou."
+				},
+				"volleyball": {
+					"title": "Methstreams Vlugbal | Lewendige Vlugbal Strome",
+					"description": "Methstreams Vlugbal bied gratis HD globale vlugbal wedstryde sonder registrasie. Kyk lewendige vlugbal nou."
+				},
+				"beach-volleyball": {
+					"title": "Methstreams Strandvlugbal | Lewendige Strand Strome",
+					"description": "Methstreams Strandvlugbal gee gratis HD FIVB en pro toer strome. Geen registrasie nodig nie. Kyk nou."
+				},
+				"handball": {
+					"title": "Methstreams Handbal | Lewendige Handbal Strome",
+					"description": "Methstreams Handbal verskaf gratis HD strome van globale ligas. Geen registrasie nodig nie. Kyk handbal lewendig nou."
+				},
+				"beach-handball": {
+					"title": "Methstreams Strandhandbal | Lewendige Strand Wedstryde",
+					"description": "Methstreams Strandhandbal stroom globale geleenthede in HD sonder registrasie. Kyk lewendig nou."
+				},
+				"beach-soccer": {
+					"title": "Methstreams Strandsokker | Lewendige Strandsokker",
+					"description": "Methstreams Strandsokker bied gratis HD wedstryde sonder registrasie. Geniet vinnige strandsokker strome nou."
+				},
+				"aussie-rules": {
+					"title": "Methstreams Aussie Rules | Lewendige AFL Strome",
+					"description": "Methstreams Aussie Rules stroom AFL aksie gratis in HD. Geen registrasie nodig nie. Kyk nou."
+				},
+				"futsal": {
+					"title": "Methstreams Futsal | Lewendige Futsal Strome",
+					"description": "Methstreams Futsal lewer gratis HD futsal wedstryde wêreldwyd. Geen registrasie. Kyk lewendig nou."
+				},
+				"badminton": {
+					"title": "Methstreams Pluimbal | Lewendige Pluimbal Strome",
+					"description": "Methstreams Pluimbal stroom BWF toernooie in HD gratis. Geen registrasie. Kyk nou."
+				},
+				"netball": {
+					"title": "Methstreams Netbal | Lewendige Netbal Strome",
+					"description": "Methstreams Netbal verskaf gratis HD wedstryde van top ligas. Geen registrasie nodig nie. Kyk lewendige netbal nou."
+				},
+				"floorball": {
+					"title": "Methstreams Vloerbal | Lewendige Vloerbal Strome",
+					"description": "Methstreams Vloerbal stroom globale wedstryde in HD gratis. Geen registrasie. Kyk nou."
+				},
+				"combat-sports": {
+					"title": "Methstreams Vegsport | Lewendige Geveg Strome",
+					"description": "Methstreams Vegsport bied gratis HD geveg geleenthede sonder registrasie. Kyk lewendige aksie nou."
+				},
+				"boxing": {
+					"title": "Methstreams Boks | Lewendige Geveg Aand",
+					"description": "Methstreams Boks lewer gratis HD boks strome sonder registrasie. Kyk lewendige gevegte nou."
+				},
+				"mma": {
+					"title": "Methstreams MMA | Lewendige MMA Strome",
+					"description": "Methstreams MMA stroom top geveg promosies in HD gratis. Geen registrasie nodig nie. Kyk nou."
+				},
+				"snooker": {
+					"title": "Methstreams Snooker | Lewendige Snooker Strome",
+					"description": "Methstreams Snooker verskaf gratis HD professionele snooker dekking. Geen registrasie. Kyk lewendig nou."
+				},
+				"billiard": {
+					"title": "Methstreams Biljart | Lewendige Biljart Strome",
+					"description": "Methstreams Biljart stroom globale biljart geleenthede in HD gratis. Geen registrasie. Kyk nou."
+				},
+				"table-tennis": {
+					"title": "Methstreams Tafeltennis | Lewendige Pingpong",
+					"description": "Methstreams Tafeltennis bied gratis HD ITTF strome. Geen registrasie nodig nie. Kyk lewendige pingpong nou."
+				},
+				"padel-tennis": {
+					"title": "Methstreams Padel | Lewendige Padel Strome",
+					"description": "Methstreams Padel gee gratis HD padel aksie sonder registrasie. Kyk lewendig nou."
+				},
+				"squash": {
+					"title": "Methstreams Muurbal | Lewendige Muurbal Strome",
+					"description": "Methstreams Muurbal stroom PSA toernooie in HD gratis. Geen registrasie. Kyk muurbal lewendig nou."
+				},
+				"motorsport": {
+					"title": "Methstreams Motorsport | Lewendige Motor Resies",
+					"description": "Methstreams Motorsport bied gratis HD resie strome sonder registrasie. Kyk motorsport lewendig nou."
+				},
+				"racing": {
+					"title": "Methstreams Resies | Lewendige Resie Strome",
+					"description": "Methstreams Resies verskaf gratis HD motorsport strome. Geen registrasie nodig nie. Kyk resies nou."
+				},
+				"cycling": {
+					"title": "Methstreams Fietsry | Lewendige Fietsry Strome",
+					"description": "Methstreams Fietsry stroom groot toere en geleenthede in HD gratis. Geen registrasie. Kyk lewendige fietsry nou."
+				},
+				"equestrianism": {
+					"title": "Methstreams Perdry | Lewendige Perd Geleenthede",
+					"description": "Methstreams Perdry gee gratis HD perdkompetisie strome. Geen registrasie nodig nie. Kyk nou."
+				},
+				"golf": {
+					"title": "Methstreams Gholf | Lewendige Gholf Strome",
+					"description": "Methstreams Gholf verskaf gratis HD PGA en globale toer strome. Geen registrasie nodig nie. Kyk lewendige gholf nou."
+				},
+				"field-hockey": {
+					"title": "Methstreams Veldhokkie | Lewendige Hokkie Strome",
+					"description": "Methstreams Veldhokkie stroom internasionale wedstryde in HD gratis. Geen registrasie. Kyk nou."
+				},
+				"lacrosse": {
+					"title": "Methstreams Lacrosse | Lewendige Lacrosse Strome",
+					"description": "Methstreams Lacrosse lewer gratis HD pro en kollege lacrosse strome. Geen registrasie. Kyk nou."
+				},
+				"athletics": {
+					"title": "Methstreams Atletiek | Lewendige Atletiek Strome",
+					"description": "Methstreams Atletiek stroom groot atletiek geleenthede in HD gratis. Geen registrasie. Kyk lewendig nou."
+				},
+				"gymnastics": {
+					"title": "Methstreams Gimnastiek | Lewendige Gimnastiek Strome",
+					"description": "Methstreams Gimnastiek bied gratis HD kompetisie strome sonder registrasie. Kyk gimnastiek lewendig nou."
+				},
+				"weightlifting": {
+					"title": "Methstreams Gewigoptel | Lewendige Gewigoptel",
+					"description": "Methstreams Gewigoptel verskaf gratis HD optel kompetisies. Geen registrasie. Kyk lewendige gewigoptel nou."
+				},
+				"climbing": {
+					"title": "Methstreams Klim | Lewendige Klim Strome",
+					"description": "Methstreams Klim stroom boulder, lei, en spoed geleenthede in HD sonder registrasie. Kyk nou."
+				},
+				"winter-sports": {
+					"title": "Methstreams Wintersport | Lewendige Sneeu Aksie",
+					"description": "Methstreams Wintersport bied gratis HD ski, skaats, en winter geleenthede. Geen registrasie. Kyk lewendig nou."
+				},
+				"bandy": {
+					"title": "Methstreams Bandy | Lewendige Bandy Strome",
+					"description": "Methstreams Bandy stroom globale wedstryde in HD gratis. Geen registrasie. Kyk nou."
+				},
+				"curling": {
+					"title": "Methstreams Krulbal | Lewendige Krulbal Strome",
+					"description": "Methstreams Krulbal verskaf gratis HD toernooie sonder registrasie. Kyk krulbal lewendig nou."
+				},
+				"triathlon": {
+					"title": "Methstreams Drietal | Lewendige Drietal Strome",
+					"description": "Methstreams Drietal bied gratis HD globale drietal dekking. Geen registrasie nodig nie. Kyk lewendig nou."
+				},
+				"water-sports": {
+					"title": "Methstreams Watersport | Lewendige Akwatiese Strome",
+					"description": "Methstreams Watersport stroom akwatiese kompetisies in HD gratis. Geen registrasie. Kyk nou."
+				},
+				"water-polo": {
+					"title": "Methstreams Waterpolo | Lewendige Polo Strome",
+					"description": "Methstreams Waterpolo gee gratis HD strome sonder registrasie. Kyk lewendige waterpolo nou."
+				},
+				"sailing": {
+					"title": "Methstreams Seil | Lewendige Seil Strome",
+					"description": "Methstreams Seil stroom globale regatta's in HD gratis. Geen registrasie. Kyk seil lewendig nou."
+				},
+				"bowling": {
+					"title": "Methstreams Kegelspel | Lewendige Kegelspel Strome",
+					"description": "Methstreams Kegelspel bied gratis HD toernooie sonder registrasie. Kyk kegelspel lewendig nou."
+				},
+				"darts": {
+					"title": "Methstreams Pyl | Lewendige Pyl Strome",
+					"description": "Methstreams Pyl stroom PDC en globale geleenthede in HD gratis. Geen registrasie. Kyk pyl nou."
+				},
+				"chess": {
+					"title": "Methstreams Skaak | Lewendige Skaak Wedstryde",
+					"description": "Methstreams Skaak bied gratis HD strome van top toernooie. Geen registrasie. Kyk skaak lewendig nou."
+				},
+				"e-sports": {
+					"title": "Methstreams E-sport | Lewendige E-sport Strome",
+					"description": "Methstreams E-sport verskaf gratis HD e-sport toernooie. Geen registrasie nodig nie. Kyk lewendig nou."
+				},
+				"others": {
+					"title": "Methstreams Ander | Lewendige Sport Strome",
+					"description": "Methstreams Ander stroom nis en opkomende sportsoorte in HD gratis. Geen registrasie. Kyk lewendig nou."
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "Wiziwig | Lewendige Sport Strome & Komende Wedstryde",
+				"description": "Wiziwig verskaf vinnige, gratis HD strome vir alle sportsoorte met lewendige en komende wedstryde opdateer daagliks. Geen registrasie nodig—begin nou kyk."
+			},
+			"sports": {
+				"football": {
+					"title": "Wiziwig Sokker | Lewendige Sokker Strome",
+					"description": "Wiziwig Sokker gee jou gladde HD sokker strome met nul registrasie hindernisse. Geniet lewendige wedstryde dadelik."
+				},
+				"basketball": {
+					"title": "Wiziwig Basketbal | Kyk NBA Lewendig",
+					"description": "Wiziwig Basketbal verskaf HD NBA en wêreldwye hoepel aksie met vinnige laai. Begin kyk lewendig nou."
+				},
+				"tennis": {
+					"title": "Wiziwig Tennis | Lewendige Tennis Dekking",
+					"description": "Wiziwig Tennis laat jou ATP en WTA wedstryde in HD gratis toegang kry. Stroom lewendige tennis dadelik."
+				},
+				"ice-hockey": {
+					"title": "Wiziwig Yshokkie | Lewendige NHL Strome",
+					"description": "Wiziwig Yshokkie bring jou NHL en globale wedstryde in helder HD sonder registrasie. Kyk lewendig nou."
+				},
+				"baseball": {
+					"title": "Wiziwig Bofbal | Lewendige Bofbal Aanlyn",
+					"description": "Wiziwig Bofbal stroom MLB en internasionale games in HD sonder registrasie. Geniet lewendige bofbal nou."
+				},
+				"rugby-union": {
+					"title": "Wiziwig Rugby Union | Kyk Rugby Lewendig",
+					"description": "Wiziwig Rugby Union gee HD toegang tot top ligas en toets wedstryde. Sluit aan by lewendige rugby aksie nou."
+				},
+				"rugby-league": {
+					"title": "Wiziwig Rugby League | Lewendige Rugby HD Strome",
+					"description": "Wiziwig Rugby League bied gratis HD NRL en Super League stroming. Kyk lewendige aksie nou."
+				},
+				"cricket": {
+					"title": "Wiziwig Krieket | Lewendige Krieket Strome",
+					"description": "Wiziwig Krieket lewer T20, ODI, en Toets wedstryde in HD. Geen registrasie nodig nie. Kyk krieket lewendig."
+				},
+				"american-football": {
+					"title": "Wiziwig Amerikaanse Sokker | NFL Strome Lewendig",
+					"description": "Wiziwig Amerikaanse Sokker stroom NFL en kollege games in gladde HD. Spring in lewendige aksie nou."
+				},
+				"volleyball": {
+					"title": "Wiziwig Vlugbal | Lewendige Vlugbal Aanlyn",
+					"description": "Wiziwig Vlugbal bied globale vlugbal wedstryde in HD sonder registrasie. Kyk lewendig nou."
+				},
+				"beach-volleyball": {
+					"title": "Wiziwig Strandvlugbal | Kyk Strand Lewendig",
+					"description": "Wiziwig Strandvlugbal bring HD sandbaan geleenthede gratis. Stroom lewendige strandvlugbal dadelik."
+				},
+				"handball": {
+					"title": "Wiziwig Handbal | Lewendige Handbal Wedstryde",
+					"description": "Wiziwig Handbal verskaf HD strome van groot ligas en toernooie. Kyk handbal lewendig."
+				},
+				"beach-handball": {
+					"title": "Wiziwig Strandhandbal | Lewendige Strand Aksie",
+					"description": "Wiziwig Strandhandbal stroom globale geleenthede in HD sonder registrasie. Kyk nou."
+				},
+				"beach-soccer": {
+					"title": "Wiziwig Strandsokker | Lewendige Wedstryde Aanlyn",
+					"description": "Wiziwig Strandsokker bied vinnige HD strome van pro en internasionale geleenthede. Kyk strandsokker lewendig."
+				},
+				"aussie-rules": {
+					"title": "Wiziwig Aussie Rules | Lewendige AFL Strome",
+					"description": "Wiziwig Aussie Rules lewer HD AFL aksie gratis. Stroom lewendige footy nou."
+				},
+				"futsal": {
+					"title": "Wiziwig Futsal | Lewendige Futsal Strome",
+					"description": "Wiziwig Futsal gee HD toegang tot globale futsal ligas en toernooie. Kyk lewendig nou."
+				},
+				"badminton": {
+					"title": "Wiziwig Pluimbal | Lewendige Pluimbal Aanlyn",
+					"description": "Wiziwig Pluimbal stroom BWF geleenthede in HD met kitskoerier laai. Kyk pluimbal lewendig."
+				},
+				"netball": {
+					"title": "Wiziwig Netbal | Lewendige Netbal Strome",
+					"description": "Wiziwig Netbal verskaf HD liga en internasionale dekking. Stroom netbal lewendig nou."
+				},
+				"floorball": {
+					"title": "Wiziwig Vloerbal | Lewendige Vloerbal Aksie",
+					"description": "Wiziwig Vloerbal bied gladde HD strome van groot kompetisies. Kyk lewendige vloerbal nou."
+				},
+				"combat-sports": {
+					"title": "Wiziwig Vegsport | Lewendige Geveg Strome",
+					"description": "Wiziwig Vegsport dek groot geveg aanде in HD sonder registrasie. Kyk lewendige gevegte nou."
+				},
+				"boxing": {
+					"title": "Wiziwig Boks | Kyk Boks Lewendig",
+					"description": "Wiziwig Boks gee HD toegang tot wêreldwye geveg kaarte gratis. Sluit aan by lewendige boks nou."
+				},
+				"mma": {
+					"title": "Wiziwig MMA | Lewendige MMA Strome",
+					"description": "Wiziwig MMA stroom top organisasies in skoon HD sonder registrasie. Kyk MMA lewendig nou."
+				},
+				"snooker": {
+					"title": "Wiziwig Snooker | Lewendige Snooker Dekking",
+					"description": "Wiziwig Snooker bied HD toernooie en wedstryde met kitstogang. Kyk lewendige snooker nou."
+				},
+				"billiard": {
+					"title": "Wiziwig Biljart | Lewendige Biljart Strome",
+					"description": "Wiziwig Biljart verskaf HD globale biljart stroming sonder registrasie. Kyk lewendig nou."
+				},
+				"table-tennis": {
+					"title": "Wiziwig Tafeltennis | Lewendige Pingpong",
+					"description": "Wiziwig Tafeltennis stroom professionele pingpong in HD. Kyk lewendige wedstryde dadelik."
+				},
+				"padel-tennis": {
+					"title": "Wiziwig Padel | Lewendige Padel Strome",
+					"description": "Wiziwig Padel bied HD padel geleenthede sonder registrasie. Kyk padel lewendig."
+				},
+				"squash": {
+					"title": "Wiziwig Muurbal | Lewendige Muurbal Geleenthede",
+					"description": "Wiziwig Muurbal stroom pro muurbal in HD met vinnige laai. Kyk lewendige wedstryde nou."
+				},
+				"motorsport": {
+					"title": "Wiziwig Motorsport | Lewendige Motorsport",
+					"description": "Wiziwig Motorsport gee HD toegang tot resie geleenthede wêreldwyd. Stroom motorsport lewendig."
+				},
+				"racing": {
+					"title": "Wiziwig Resies | Lewendige Resie Strome",
+					"description": "Wiziwig Resies bied HD dekking van motorsport resies sonder registrasie. Kyk lewendige resies nou."
+				},
+				"cycling": {
+					"title": "Wiziwig Fietsry | Lewendige Fietsry Strome",
+					"description": "Wiziwig Fietsry lewer HD toegang tot groot toere en resies. Kyk fietsry lewendig nou."
+				},
+				"equestrianism": {
+					"title": "Wiziwig Perdry | Lewendige Perdsport",
+					"description": "Wiziwig Perdry stroom globale perdkompetisies in HD. Kyk lewendig nou."
+				},
+				"golf": {
+					"title": "Wiziwig Gholf | Lewendige Gholf Strome",
+					"description": "Wiziwig Gholf verskaf HD PGA en wêreld toer aksie sonder registrasie. Kyk lewendige gholf vandag."
+				},
+				"field-hockey": {
+					"title": "Wiziwig Veldhokkie | Lewendige Hokkie Wedstryde",
+					"description": "Wiziwig Veldhokkie stroom top internasionale hokkie in HD. Kyk lewendig nou."
+				},
+				"lacrosse": {
+					"title": "Wiziwig Lacrosse | Lewendige Lacrosse Strome",
+					"description": "Wiziwig Lacrosse bied HD pro en kollege strome met maklike toegang. Kyk lacrosse lewendig."
+				},
+				"athletics": {
+					"title": "Wiziwig Atletiek | Lewendige Atletiek Strome",
+					"description": "Wiziwig Atletiek dek groot baan en veld geleenthede in HD. Kyk lewendige atletiek nou."
+				},
+				"gymnastics": {
+					"title": "Wiziwig Gimnastiek | Lewendige Gimnastiek Geleenthede",
+					"description": "Wiziwig Gimnastiek stroom wêreldklas kompetisies gratis in HD. Kyk lewendig nou."
+				},
+				"weightlifting": {
+					"title": "Wiziwig Gewigoptel | Lewendige Gewigoptel",
+					"description": "Wiziwig Gewigoptel bring HD optel kompetisies sonder registrasie. Kyk gewigoptel lewendig nou."
+				},
+				"climbing": {
+					"title": "Wiziwig Klim | Lewendige Klim Strome",
+					"description": "Wiziwig Klim stroom boulder, lei, en spoed geleenthede in HD. Kyk klim lewendig."
+				},
+				"winter-sports": {
+					"title": "Wiziwig Wintersport | Lewendige Sneeu Sportsoorte",
+					"description": "Wiziwig Wintersport verskaf HD ski, skaats, en winter geleenthede. Kyk lewendige sneeu aksie nou."
+				},
+				"bandy": {
+					"title": "Wiziwig Bandy | Lewendige Bandy Strome",
+					"description": "Wiziwig Bandy stroom globale bandy ligas in HD sonder registrasie. Kyk bandy lewendig nou."
+				},
+				"curling": {
+					"title": "Wiziwig Krulbal | Lewendige Krulbal Wedstryde",
+					"description": "Wiziwig Krulbal lewer HD toernooie met vinnige toegang. Kyk krulbal lewendig nou."
+				},
+				"triathlon": {
+					"title": "Wiziwig Drietal | Lewendige Drietal Strome",
+					"description": "Wiziwig Drietal gee HD dekking van wêreld drietal geleenthede. Kyk lewendig nou."
+				},
+				"water-sports": {
+					"title": "Wiziwig Watersport | Lewendige Akwatiese Geleenthede",
+					"description": "Wiziwig Watersport stroom swem, duik, en meer in HD. Kyk akwatiese sportsoorte lewendig."
+				},
+				"water-polo": {
+					"title": "Wiziwig Waterpolo | Lewendige Polo Strome",
+					"description": "Wiziwig Waterpolo bied HD globale wedstryde met vinnige toegang. Kyk lewendige waterpolo nou."
+				},
+				"sailing": {
+					"title": "Wiziwig Seil | Lewendige Seil Strome",
+					"description": "Wiziwig Seil stroom regatta's en groot seil geleenthede in HD. Kyk lewendige seil nou."
+				},
+				"bowling": {
+					"title": "Wiziwig Kegelspel | Lewendige Kegelspel Strome",
+					"description": "Wiziwig Kegelspel verskaf HD kegelspel geleenthede sonder registrasie. Kyk kegelspel lewendig nou."
+				},
+				"darts": {
+					"title": "Wiziwig Pyl | Lewendige Pyl Dekking",
+					"description": "Wiziwig Pyl stroom globale toernooie in HD. Kyk lewendige pyl nou."
+				},
+				"chess": {
+					"title": "Wiziwig Skaak | Lewendige Skaak Wedstryde",
+					"description": "Wiziwig Skaak stroom elite toernooie in HD gratis. Kyk skaak lewendig nou."
+				},
+				"e-sports": {
+					"title": "Wiziwig E-sport | Lewendige E-sport Strome",
+					"description": "Wiziwig E-sport bied HD toernooi dekking met kitstogang. Kyk e-sport lewendig."
+				},
+				"others": {
+					"title": "Wiziwig Ander | Lewendige Sport Strome",
+					"description": "Wiziwig Ander dek nis en opkomende sportsoorte in HD. Kyk lewendig nou."
+				}
+			}
+		}
 	}
 }
