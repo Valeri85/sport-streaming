@@ -2,7 +2,6 @@
 	"language_info": {
 		"code": "af",
 		"name": "Afrikaans",
-		"native_name": "Afrikaans",
 		"flag": "🇿🇦",
 		"direction": "ltr",
 		"active": true
@@ -67,7 +66,7 @@
 		"Netball": "Netbal",
 		"Floorball": "Vloerbal",
 		"Combat": "Geveg",
-		"Combat Sports": "Vegsporte",
+		"combat sport": "Vegsporte",
 		"Boxing": "Boks",
 		"MMA": "MMA",
 		"Snooker": "Snooker",
@@ -86,7 +85,7 @@
 		"Gymnastics": "Gimnastiek",
 		"Weightlifting": "Gewigoptel",
 		"Climbing": "Klim",
-		"Winter Sports": "Wintersport",
+		"winter sport": "Wintersport",
 		"Bandy": "Bandy",
 		"Curling": "Krulbal",
 		"Triathlon": "Drietal",
@@ -104,10 +103,6 @@
 			"home": {
 				"title": "SportLemon | Lewendige Sport & Vandag se Wedstryde",
 				"description": "SportLemon bied jou lewendige sportstrome plus vandag se komende en huidige wedstryde regoor alle sportsoorte. Gratis toegang, geen registrasie—begin nou kyk."
-			},
-			"favorites": {
-				"title": "SportLemon Gunstelinge | Kyk Lewendig na Jou Gunsteling Sportgebeurtenisse",
-				"description": "Gunsteling Sportwedstryde - SportLemon bied gratis, hoëkwaliteit sportstrome sonder registrasie. Geniet gladde terugspeel op alle toestelle—begin nou kyk."
 			},
 			"sports": {
 				"football": {
@@ -694,7 +689,7 @@
 					"title": "P2p4u Klim | Lewendige Rotssport Strome",
 					"description": "Kyk P2p4u Klim met gratis HD sportklim dekking. Geen registrasie nie—begin kyk nou."
 				},
-				"winter-sports": {
+				"winter-sport": {
 					"title": "P2p4u Wintersport | Lewendige Sneeu Aksie Strome",
 					"description": "Stroom P2p4u Wintersport gratis met HD sneeu en ys geleenthede. Geen rekening nodig nie. Kyk nou."
 				},
@@ -742,7 +737,7 @@
 					"title": "P2p4u Ander | Lewendige Sport Strome",
 					"description": "Verken P2p4u Ander vir gratis HD strome regoor baie sportsoorte. Geen rekening nodig nie. Begin kyk nou."
 				},
-				"combat-sports": {
+				"combat-sport": {
 					"title": "P2p4u Vegsport | Lewendige Geveg Strome",
 					"description": "Kyk P2p4u Vegsport gratis met HD geveg aksie regoor top geleenthede. Geen rekening nodig nie—begin stroom nou."
 				}
@@ -830,7 +825,7 @@
 					"title": "Streamhunter Vloerbal | Lewendige Vloerbal Strome",
 					"description": "Streamhunter Vloerbal verskaf gratis HD wedstryde van top ligas. Geen registrasie. Kyk lewendige aksie nou."
 				},
-				"combat-sports": {
+				"combat-sport": {
 					"title": "Streamhunter Vegsport | Lewendige Geveg Strome",
 					"description": "Streamhunter Vegsport bied gratis HD aksie van groot geveg geleenthede. Geen registrasie. Kyk lewendige gevegte nou."
 				},
@@ -906,7 +901,7 @@
 					"title": "Streamhunter Klim | Lewendige Klim Strome",
 					"description": "Streamhunter Klim stroom lei, boulder, en spoed geleenthede in HD gratis. Geen registrasie. Kyk lewendig nou."
 				},
-				"winter-sports": {
+				"winter-sport": {
 					"title": "Streamhunter Wintersport | Lewendige Wintersport Geleenthede",
 					"description": "Streamhunter Wintersport verskaf gratis HD ski, skaats, en meer. Geen registrasie. Kyk lewendig nou."
 				},
@@ -1038,7 +1033,7 @@
 					"title": "Methstreams Vloerbal | Lewendige Vloerbal Strome",
 					"description": "Methstreams Vloerbal stroom globale wedstryde in HD gratis. Geen registrasie. Kyk nou."
 				},
-				"combat-sports": {
+				"combat-sport": {
 					"title": "Methstreams Vegsport | Lewendige Geveg Strome",
 					"description": "Methstreams Vegsport bied gratis HD geveg geleenthede sonder registrasie. Kyk lewendige aksie nou."
 				},
@@ -1114,7 +1109,7 @@
 					"title": "Methstreams Klim | Lewendige Klim Strome",
 					"description": "Methstreams Klim stroom boulder, lei, en spoed geleenthede in HD sonder registrasie. Kyk nou."
 				},
-				"winter-sports": {
+				"winter-sport": {
 					"title": "Methstreams Wintersport | Lewendige Sneeu Aksie",
 					"description": "Methstreams Wintersport bied gratis HD ski, skaats, en winter geleenthede. Geen registrasie. Kyk lewendig nou."
 				},
@@ -1246,7 +1241,7 @@
 					"title": "Wiziwig Vloerbal | Lewendige Vloerbal Aksie",
 					"description": "Wiziwig Vloerbal bied gladde HD strome van groot kompetisies. Kyk lewendige vloerbal nou."
 				},
-				"combat-sports": {
+				"combat-sport": {
 					"title": "Wiziwig Vegsport | Lewendige Geveg Strome",
 					"description": "Wiziwig Vegsport dek groot geveg aanде in HD sonder registrasie. Kyk lewendige gevegte nou."
 				},
@@ -1322,7 +1317,7 @@
 					"title": "Wiziwig Klim | Lewendige Klim Strome",
 					"description": "Wiziwig Klim stroom boulder, lei, en spoed geleenthede in HD. Kyk klim lewendig."
 				},
-				"winter-sports": {
+				"winter-sport": {
 					"title": "Wiziwig Wintersport | Lewendige Sneeu Sportsoorte",
 					"description": "Wiziwig Wintersport verskaf HD ski, skaats, en winter geleenthede. Kyk lewendige sneeu aksie nou."
 				},

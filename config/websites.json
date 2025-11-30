@@ -269,11 +269,11 @@
 					},
 					"combat-sport": {
 						"title": "SportLemon Combat | Free Live Combat Sports Streams",
-						"description": "Free live combat sports streams on SportLemon. Watch MMA, boxing, wrestling & more in HD."
+						"description": "Free live combat sport streams on SportLemon. Watch MMA, boxing, wrestling & more in HD."
 					},
 					"winter-sport": {
-						"title": "SportLemon Winter Sports | Free Live Streams",
-						"description": "Watch free live winter sports streams. Skiing, snowboarding & more in HD on SportLemon."
+						"title": "SportLemon Winter Sport | Free Live Streams",
+						"description": "Watch free live winter sport streams. Skiing, snowboarding & more in HD on SportLemon."
 					},
 					"rugby-sevens": {
 						"title": "SportLemon Rugby Sevens | Live Rugby Sevens Streams",
@@ -547,12 +547,12 @@
 						"description": "Watch Eplsite Others in HD for free with no signup. Enjoy high-quality streams of various sports and unique events. Start watching now."
 					},
 					"combat-sport": {
-						"title": "Eplsite Combat Sports | MMA, Boxing & Live Fights",
-						"description": "Watch Eplsite Combat Sports live in HD for free with no signup. Enjoy top MMA, boxing, and martial arts streams. Catch the action now."
+						"title": "Eplsite Combat Sport | MMA, Boxing & Live Fights",
+						"description": "Watch Eplsite Combat Sport live in HD for free with no signup. Enjoy top MMA, boxing, and martial arts streams. Catch the action now."
 					},
 					"winter-sport": {
-						"title": "Eplsite Winter Sports | Live Skiing & Snowboarding",
-						"description": "Watch Eplsite Winter Sports in HD for free with no signup. Enjoy top skiing, snowboarding, and other winter events with smooth, high-quality streams. Start now."
+						"title": "Eplsite Winter Sport | Live Skiing & Snowboarding",
+						"description": "Watch Eplsite Winter Sport in HD for free with no signup. Enjoy top skiing, snowboarding, and other winter events with smooth, high-quality streams. Start now."
 					},
 					"rugby-sevens": {
 						"title": "Eplsite Rugby Sevens | Live Rugby Sevens Streams",
@@ -589,6 +589,7 @@
 				"Baseball",
 				"Rugby Union",
 				"Rugby League",
+				"Rugby Sevens",
 				"Cricket",
 				"American Football",
 				"Volleyball",
@@ -601,7 +602,7 @@
 				"Badminton",
 				"Netball",
 				"Floorball",
-				"Combat Sports",
+				"Combat Sport",
 				"Boxing",
 				"MMA",
 				"Snooker",
@@ -620,7 +621,7 @@
 				"Gymnastics",
 				"Weightlifting",
 				"Climbing",
-				"Winter Sports",
+				"Winter Sport",
 				"Bandy",
 				"Curling",
 				"Triathlon",
@@ -631,6 +632,7 @@
 				"Darts",
 				"Chess",
 				"E-sports",
+				"Extreme Sport",
 				"Others"
 			],
 			"pages_seo": {
@@ -783,10 +785,6 @@
 						"title": "P2p4u Climbing | Live Rock Sports Streams",
 						"description": "Watch P2p4u Climbing with free HD sport climbing coverage. No sign-up—start watching now."
 					},
-					"winter-sports": {
-						"title": "P2p4u Winter Sports | Live Snow Action Streams",
-						"description": "Stream P2p4u Winter Sports free with HD snow and ice events. No account required. Watch now."
-					},
 					"bandy": {
 						"title": "P2p4u Bandy | Live Ice Football Streams",
 						"description": "Watch P2p4u Bandy with fast, free HD streams. No registration needed. Enjoy live games now."
@@ -831,9 +829,21 @@
 						"title": "P2p4u Others | Live Sports Streams",
 						"description": "Explore P2p4u Others for free HD streams across many sports. No account needed. Start watching now."
 					},
-					"combat-sports": {
-						"title": "P2p4u Combat Sports | Live Fight Streams",
-						"description": "Watch P2p4u Combat Sports free with HD fight action across top events. No account needed—start streaming now."
+					"combat-sport": {
+						"title": "P2p4u Combat Sport | Live Fight Streams",
+						"description": "Watch P2p4u Combat Sport free with HD fight action across top events. No account needed—start streaming now."
+					},
+					"winter-sport": {
+						"title": "P2p4u Winter Sport | Live Snow Action Streams",
+						"description": "Stream P2p4u Winter Sport free with HD snow and ice events. No account required. Watch now."
+					},
+					"rugby-sevens": {
+						"title": "P2p4u Rugby Sevens | Live Rugby Sevens Streams",
+						"description": "P2p4u Rugby Sevens offers fast, free HD sevens tournaments with no sign-up. Watch high-tempo rugby sevens action live and enjoy smooth streaming now."
+					},
+					"extreme-sport": {
+						"title": "P2p4u Extreme Sport | Live Extreme Sport Streams",
+						"description": "P2p4u Extreme Sport delivers free HD coverage of top extreme competitions. No registration needed. Stream thrilling extreme sport events today."
 					}
 				},
 				"home": {
@@ -862,6 +872,7 @@
 				"Baseball",
 				"Rugby Union",
 				"Rugby League",
+				"Rugby Sevens",
 				"Cricket",
 				"American Football",
 				"Volleyball",
@@ -874,7 +885,7 @@
 				"Badminton",
 				"Netball",
 				"Floorball",
-				"Combat Sports",
+				"Combat Sport",
 				"Boxing",
 				"MMA",
 				"Snooker",
@@ -893,7 +904,7 @@
 				"Gymnastics",
 				"Weightlifting",
 				"Climbing",
-				"Winter Sports",
+				"Winter Sport",
 				"Bandy",
 				"Curling",
 				"Triathlon",
@@ -904,6 +915,7 @@
 				"Darts",
 				"Chess",
 				"E-sports",
+				"Extreme Sport",
 				"Others"
 			],
 			"pages_seo": {
@@ -984,10 +996,6 @@
 						"title": "Streamhunter Floorball | Live Floorball Streams",
 						"description": "Streamhunter Floorball provides free HD matches from top leagues. No registration. Watch live action now."
 					},
-					"combat-sports": {
-						"title": "Streamhunter Combat Sports | Live Fight Streams",
-						"description": "Streamhunter Combat Sports offers free HD action from major fight events. No sign-up. Watch live bouts now."
-					},
 					"boxing": {
 						"title": "Streamhunter Boxing | Live Fight Night Streams",
 						"description": "Streamhunter Boxing delivers free HD streams of major fights. No registration needed. Watch boxing live now."
@@ -1060,10 +1068,6 @@
 						"title": "Streamhunter Climbing | Live Climbing Streams",
 						"description": "Streamhunter Climbing streams lead, boulder, and speed events in HD for free. No sign-up. Watch live now."
 					},
-					"winter-sports": {
-						"title": "Streamhunter Winter Sports | Live Winter Sport Events",
-						"description": "Streamhunter Winter Sports provides free HD skiing, skating, and more. No registration. Watch live now."
-					},
 					"bandy": {
 						"title": "Streamhunter Bandy | Live Bandy Streams",
 						"description": "Streamhunter Bandy offers free HD matches with no sign-up. Watch bandy live now."
@@ -1107,6 +1111,22 @@
 					"others": {
 						"title": "Streamhunter Others | Live Sports Streams",
 						"description": "Streamhunter Others offers free HD coverage of niche and emerging sports. No sign-up. Watch live action now."
+					},
+					"combat-sport": {
+						"title": "Streamhunter Combat Sport | Live Fight Streams",
+						"description": "Streamhunter Combat Sport offers free HD action from major fight events. No sign-up. Watch live bouts now."
+					},
+					"winter-sport": {
+						"title": "Streamhunter Winter Sport | Live Winter Sport Events",
+						"description": "Streamhunter Winter Sport provides free HD skiing, skating, and more. No registration. Watch live now."
+					},
+					"rugby-sevens": {
+						"title": "Streamhunter Rugby Sevens | Live Rugby Sevens Streams",
+						"description": "Streamhunter Rugby Sevens delivers free HD sevens tournaments with no sign-up. Watch fast-paced rugby sevens action live and enjoy smooth streaming now."
+					},
+					"extreme-sport": {
+						"title": "Streamhunter Extreme Sport | Live Extreme Sport Streams",
+						"description": "Streamhunter Extreme Sport offers free HD action from top extreme competitions. No registration required. Stream thrilling extreme sport events today."
 					}
 				},
 				"home": {
@@ -1134,6 +1154,7 @@
 				"Baseball",
 				"Rugby Union",
 				"Rugby League",
+				"Rugby Sevens",
 				"Cricket",
 				"American Football",
 				"Volleyball",
@@ -1146,7 +1167,7 @@
 				"Badminton",
 				"Netball",
 				"Floorball",
-				"Combat Sports",
+				"Combat Sport",
 				"Boxing",
 				"MMA",
 				"Snooker",
@@ -1165,7 +1186,7 @@
 				"Gymnastics",
 				"Weightlifting",
 				"Climbing",
-				"Winter Sports",
+				"Winter Sport",
 				"Bandy",
 				"Curling",
 				"Triathlon",
@@ -1176,6 +1197,7 @@
 				"Darts",
 				"Chess",
 				"E-sports",
+				"Extreme Sport",
 				"Others"
 			],
 			"pages_seo": {
@@ -1256,10 +1278,6 @@
 						"title": "Methstreams Floorball | Live Floorball Streams",
 						"description": "Methstreams Floorball streams global matches in HD for free. No registration. Watch now."
 					},
-					"combat-sports": {
-						"title": "Methstreams Combat Sports | Live Fight Streams",
-						"description": "Methstreams Combat Sports offers free HD fight events with no sign-up. Watch live action now."
-					},
 					"boxing": {
 						"title": "Methstreams Boxing | Live Fight Night",
 						"description": "Methstreams Boxing delivers free HD boxing streams with no registration. Watch live fights now."
@@ -1332,10 +1350,6 @@
 						"title": "Methstreams Climbing | Live Climbing Streams",
 						"description": "Methstreams Climbing streams bouldering, lead, and speed events in HD with no sign-up. Watch now."
 					},
-					"winter-sports": {
-						"title": "Methstreams Winter Sports | Live Snow Action",
-						"description": "Methstreams Winter Sports offers free HD skiing, skating, and winter events. No registration. Watch live now."
-					},
 					"bandy": {
 						"title": "Methstreams Bandy | Live Bandy Streams",
 						"description": "Methstreams Bandy streams global matches in HD for free. No sign-up. Watch now."
@@ -1379,6 +1393,22 @@
 					"others": {
 						"title": "Methstreams Others | Live Sports Streams",
 						"description": "Methstreams Others streams niche and emerging sports in HD for free. No sign-up. Watch live now."
+					},
+					"combat-sport": {
+						"title": "Methstreams Combat Sport | Live Fight Streams",
+						"description": "Methstreams Combat Sport offers free HD fight events with no sign-up. Watch live action now."
+					},
+					"winter-sport": {
+						"title": "Methstreams Winter Sport | Live Snow Action",
+						"description": "Methstreams Winter Sport offers free HD skiing, skating, and winter events. No registration. Watch live now."
+					},
+					"rugby-sevens": {
+						"title": "Methstreams Rugby Sevens | Live Rugby Sevens Streams",
+						"description": "Methstreams Rugby Sevens brings free HD sevens tournaments with no sign-up needed. Watch fast-paced rugby sevens action live and enjoy smooth streaming today."
+					},
+					"extreme-sport": {
+						"title": "Methstreams Extreme Sport | Live Extreme Sport Streams",
+						"description": "Methstreams Extreme Sport offers free HD coverage of top extreme competitions. No registration required. Stream thrilling extreme sport events now."
 					}
 				},
 				"home": {
@@ -1406,6 +1436,7 @@
 				"Baseball",
 				"Rugby Union",
 				"Rugby League",
+				"Rugby Sevens",
 				"Cricket",
 				"American Football",
 				"Volleyball",
@@ -1418,7 +1449,7 @@
 				"Badminton",
 				"Netball",
 				"Floorball",
-				"Combat Sports",
+				"Combat Sport",
 				"Boxing",
 				"MMA",
 				"Snooker",
@@ -1437,7 +1468,7 @@
 				"Gymnastics",
 				"Weightlifting",
 				"Climbing",
-				"Winter Sports",
+				"Winter Sport",
 				"Bandy",
 				"Curling",
 				"Triathlon",
@@ -1448,6 +1479,7 @@
 				"Darts",
 				"Chess",
 				"E-sports",
+				"Extreme Sport",
 				"Others"
 			],
 			"pages_seo": {
@@ -1532,10 +1564,6 @@
 						"title": "Wiziwig Floorball | Live Floorball Action",
 						"description": "Wiziwig Floorball offers smooth HD streams from major competitions. Watch live floorball now."
 					},
-					"combat-sports": {
-						"title": "Wiziwig Combat Sports | Live Fight Streams",
-						"description": "Wiziwig Combat Sports covers major fight nights in HD with no registration. Watch live fights now."
-					},
 					"boxing": {
 						"title": "Wiziwig Boxing | Watch Boxing Live",
 						"description": "Wiziwig Boxing gives HD access to worldwide fight cards for free. Join live boxing now."
@@ -1608,10 +1636,6 @@
 						"title": "Wiziwig Climbing | Live Climbing Streams",
 						"description": "Wiziwig Climbing streams bouldering, lead, and speed events in HD. Watch climbing live."
 					},
-					"winter-sports": {
-						"title": "Wiziwig Winter Sports | Live Snow Sports",
-						"description": "Wiziwig Winter Sports provides HD skiing, skating, and winter events. Watch live snow action now."
-					},
 					"bandy": {
 						"title": "Wiziwig Bandy | Live Bandy Streams",
 						"description": "Wiziwig Bandy streams global bandy leagues in HD with no sign-up. Watch bandy live now."
@@ -1655,6 +1679,22 @@
 					"others": {
 						"title": "Wiziwig Others | Live Sports Streams",
 						"description": "Wiziwig Others covers niche and emerging sports in HD. Watch live now."
+					},
+					"combat-sport": {
+						"title": "Wiziwig Combat Sport | Live Fight Streams",
+						"description": "Wiziwig Combat Sport covers major fight nights in HD with no registration. Watch live fights now."
+					},
+					"winter-sport": {
+						"title": "Wiziwig Winter Sport | Live Snow Sports",
+						"description": "Wiziwig Winter Sport provides HD skiing, skating, and winter events. Watch live snow action now."
+					},
+					"rugby-sevens": {
+						"title": "Wiziwig Rugby Sevens | Live Rugby Sevens Streams",
+						"description": "Wiziwig Rugby Sevens delivers free HD sevens tournaments without sign-up. Watch fast-paced rugby sevens action live and enjoy smooth, reliable streaming now."
+					},
+					"extreme-sport": {
+						"title": "Wiziwig Extreme Sport | Live Extreme Sport Streams",
+						"description": "Wiziwig Extreme Sport offers free HD coverage of top extreme competitions. No registration required. Stream thrilling extreme sport events today."
 					}
 				}
 			}

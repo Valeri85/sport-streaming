@@ -92,7 +92,7 @@ Act as a professional SEO specialist, translation should be:
 Google-optimized,
 Natural, Human-Like Language,
 SEO Optimization,
-Brand Consistency (for example: sportlemon should not be translated, other brands also),
+Brand Consistency (for example: sportlemon should not be translated, other brands also, FIFA, NHL and so on),
 Action-Oriented,
 Grammar Checked: All translations reviewed for proper grammar and spelling.
-let's do for the first website first. after continues for second and so on...
+let's do for the first website first. after continues for second and so on... structure should be as in af.json attached file
