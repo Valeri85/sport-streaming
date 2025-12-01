@@ -2,10 +2,10 @@
 	"websites": [
 		{
 			"id": 1,
-			"domain": "sportlemons.info",
-			"canonical_url": "https://www.sportlemons.info",
-			"site_name": "SportLemons",
-			"logo": "sportlemons-logo.webp",
+			"domain": "Sportlemons.info",
+			"canonical_url": "https://www.Sportlemons.info",
+			"site_name": "Sportlemons",
+			"logo": "Sportlemons-logo.webp",
 			"primary_color": "#ffa500",
 			"secondary_color": "#FF8C00",
 			"language": "en",
