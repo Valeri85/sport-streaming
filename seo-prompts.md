@@ -87,4 +87,18 @@ Now, generate the output.
 
 --------------------------- SEO: TITLES AND DESCRIPTIONS
 
-I want you to translate, for all websites from page_seo: seo title and description. Act as a professional SEO specialist, translation should be: Google-optimized, Natural, Human-Like Language, SEO Optimization, Brand Consistency (for example: sportlemon should not be translated, other brands also, FIFA, NHL and so on), Action-Oriented, Grammar Checked: All translations reviewed for proper grammar and spelling. let's do from ----------- website and than so on, others before already done. structure should be as in af.json attached file. we need to add translated versions of "Rugby Sevens" and "Extreme Sport" to the "sports" field if they missed. work on -----.json, take an example from af.json.if site you are working is first give me full json file with editions, but if not first site give me code in artifact only inside seo. for example: "domain.com": {...}. and give me code in artifact one by one, work on one website and that after my confirmation continue to another.
+1. I want you to translate, for all websites from page_seo: seo title and description.
+2. Act as a professional SEO specialist, translation should be:
+
+- Google-optimized,
+- Natural,
+- Human-Like Language,
+- SEO Optimization,
+- Brand Consistency (for example: sportlemon should not be translated, other brands also, FIFA, NHL and so on),
+- Action-Oriented,
+- Grammar Checked: All translations reviewed for proper grammar and spelling.
+
+3. start translating from ----------- website and than so on. structure should be as in af.json attached file. and in general json file you are working on should have all fields as sf.json.
+4. we need to add translated versions of "Rugby Sevens" and "Extreme Sport" to the "sports" field if they missed.
+5. work on --.json. if site you are working is first, give me full json file with editions like in af.json, but if not first site, give me code only inside "seo" json field. for example: "seo": {"domain.com": {...}}.
+6. give me code one by one (one site per prompt), work on one website and that after my confirmation continue to another.

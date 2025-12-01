@@ -3,6 +3,7 @@
 		"code": "ca",
 		"name": "Català",
 		"flag": "🇪🇸",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -52,6 +53,7 @@
 		"Baseball": "Beisbol",
 		"Rugby Union": "Rugby Union",
 		"Rugby League": "Rugby League",
+		"Rugby Sevens": "Rugby Seven",
 		"Cricket": "Criquet",
 		"American Football": "Futbol Americà",
 		"Volleyball": "Voleibol",
@@ -95,6 +97,1309 @@
 		"Darts": "Dards",
 		"Chess": "Escacs",
 		"E-sports": "E-sports",
+		"Extreme Sport": "Esport Extrem",
 		"Others": "Altres"
+	},
+	"seo": {
+		"Sportlemons.info": {
+			"home": {
+				"title": "SportLemon | Esports en Directe i Partits d’Aviu",
+				"description": "SportLemon t’ofereix retransmissions esportives en directe i tots els partits del dia. Accés gratuït, sense registre—comença a veure-ho ara."
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon Futbol | Retransmissions de Futbol en Directe en HD",
+					"description": "Mira futbol en directe i en HD gratuïtament a SportLemon. Champions League, Premier League i molt més. No et perdis cap partit!"
+				},
+				"basketball": {
+					"title": "SportLemon Bàsquet | Retransmissions Gratis de l’NBA i Bàsquet",
+					"description": "Retransmissió de bàsquet en directe gratis. Mira l’NBA, l’EuroLeague i molt més en HD a SportLemon. Sense necessitat de registre."
+				},
+				"tennis": {
+					"title": "SportLemon Tennis | Retransmissions de Tennis en Directe en HD",
+					"description": "Mira tennis en directe gratis. Grand Slams, ATP i WTA en qualitat HD a SportLemon. Comença ara!"
+				},
+				"ice-hockey": {
+					"title": "SportLemon Hoquei sobre Gel | Retransmissions NHL en HD",
+					"description": "Retransmissions gratuïtes d’hoquei sobre gel en HD. Mira la NHL, la KHL i els campionats mundials a SportLemon."
+				},
+				"baseball": {
+					"title": "SportLemon Beisbol | Retransmissions MLB Gratis en Directe",
+					"description": "Mira beisbol en directe gratis. MLB, NPB i molt més a SportLemon en HD. Accés fàcil i gratuït."
+				},
+				"rugby": {
+					"title": "SportLemon Rugby | Rugby Union i Rugby League en Directe",
+					"description": "Retransmissions gratuïtes de rugby en HD. Mira Rugby Union, Rugby League, Six Nations i molt més a SportLemon."
+				},
+				"cricket": {
+					"title": "SportLemon Criquet | Retransmissions de Criquet en HD",
+					"description": "Retransmissions de criquet gratis a SportLemon. Mira l’IPL, T20, Test Matches i molt més en alta qualitat."
+				},
+				"american-football": {
+					"title": "SportLemon Futbol Americà | Retransmissions NFL Gratis",
+					"description": "Mira futbol americà en directe gratis. Gaudeix de la NFL, partits universitaris i molt més en HD a SportLemon."
+				},
+				"volleyball": {
+					"title": "SportLemon Voleibol | Retransmissions de Voleibol en Directe",
+					"description": "Mira voleibol en directe gratis. FIVB, CEV i principals lligues en qualitat HD a SportLemon."
+				},
+				"beach-volleyball": {
+					"title": "SportLemon Volei Platja | Retransmissions Gratis en Directe",
+					"description": "Mira volei platja en directe i en HD gratis. FIVB World Tour i grans tornejos a SportLemon."
+				},
+				"handball": {
+					"title": "SportLemon Handbol | Retransmissions d’Handbol Gratis",
+					"description": "Retransmissions d’handbol en HD a SportLemon. Mira EHF, IHF i les principals competicions."
+				},
+				"beach-handball": {
+					"title": "SportLemon Handbol Platja | Retransmissions en Directe",
+					"description": "Mira handbol platja en directe gratis. Campionats IHF i World Tour en HD a SportLemon."
+				},
+				"beach-soccer": {
+					"title": "SportLemon Futbol Platja | Retransmissions en HD",
+					"description": "Mira futbol platja gratis. FIFA Beach Soccer World Cup i altres competicions en HD a SportLemon."
+				},
+				"aussie-rules": {
+					"title": "SportLemon Futbol Australià | Retransmissions AFL Gratis",
+					"description": "Mira futbol australià en directe. AFL i grans tornejos en HD gratis a SportLemon."
+				},
+				"futsal": {
+					"title": "SportLemon Futbol Sala | Retransmissions de Futsal HD",
+					"description": "Retransmissions de futbol sala gratuïtes en HD. Mira UEFA Futsal, esdeveniments FIFA i més a SportLemon."
+				},
+				"badminton": {
+					"title": "SportLemon Bàdminton | Retransmissions Gratis en Directe",
+					"description": "Mira bàdminton en directe gratis. BWF World Tour, Thomas Cup i molt més a SportLemon."
+				},
+				"netball": {
+					"title": "SportLemon Netball | Retransmissions de Netball en Directe",
+					"description": "Mira netball gratis en HD. Vitality Netball Superleague, Mundials i més a SportLemon."
+				},
+				"floorball": {
+					"title": "SportLemon Floorball | Retransmissions Gratis en Directe",
+					"description": "Retransmissions de floorball en HD. IFF World Championships i principals lligues a SportLemon."
+				},
+				"boxing": {
+					"title": "SportLemon Boxa | Retransmissions de Boxa en HD",
+					"description": "Mira boxa en directe gratis. Combats de títol mundial, undercards i més en alta qualitat a SportLemon."
+				},
+				"mma": {
+					"title": "SportLemon MMA | Retransmissions UFC i MMA Gratis",
+					"description": "Retransmissions MMA gratuïtes en HD. Mira UFC, Bellator, PFL i altres esdeveniments a SportLemon."
+				},
+				"snooker": {
+					"title": "SportLemon Snooker | Retransmissions de Snooker Gratis",
+					"description": "Mira snooker en directe. World Championship, UK Championship i més en HD a SportLemon."
+				},
+				"billiard": {
+					"title": "SportLemon Billar | Retransmissions de Billar en HD",
+					"description": "Retransmissions de billar i pool en qualitat HD gratis a SportLemon."
+				},
+				"table-tennis": {
+					"title": "SportLemon Tennis de Taula | Retransmissions en Directe",
+					"description": "Mira tennis de taula en directe gratis. ITTF World Tours i campionats en HD a SportLemon."
+				},
+				"padel-tennis": {
+					"title": "SportLemon Pàdel | Retransmissions de Pàdel Gratis",
+					"description": "Mira partits del World Padel Tour gratis i en HD a SportLemon."
+				},
+				"squash": {
+					"title": "SportLemon Squash | Retransmissions de Squash en Directe",
+					"description": "Retransmissions de squash en HD. PSA World Tour i campionats mundials a SportLemon."
+				},
+				"motorsport": {
+					"title": "SportLemon Motorsport | Retransmissions de Motor en Directe",
+					"description": "Mira F1, MotoGP, WRC i altres competicions de motor en HD gratis a SportLemon."
+				},
+				"racing": {
+					"title": "SportLemon Curses | Retransmissions de Curses en Directe",
+					"description": "Retransmissions de curses en directe. Derbis, cups i esdeveniments en HD gratis a SportLemon."
+				},
+				"cycling": {
+					"title": "SportLemon Ciclisme | Retransmissions de Ciclisme en Directe",
+					"description": "Tour de France, Giro, Vuelta i molt més en HD gratis a SportLemon."
+				},
+				"equestrianism": {
+					"title": "SportLemon Equitació | Retransmissions en Directe",
+					"description": "Mira equitació en HD. Salt d’obstacles, doma i concursos en directe a SportLemon."
+				},
+				"golf": {
+					"title": "SportLemon Golf | Retransmissions de Golf en HD",
+					"description": "Mira golf gratis en HD. Masters, PGA Tour, Ryder Cup i més a SportLemon."
+				},
+				"field-hockey": {
+					"title": "SportLemon Hoquei Herba | Retransmissions en Directe",
+					"description": "FIH Pro League, Copa del Món i grans lligues en HD a SportLemon."
+				},
+				"lacrosse": {
+					"title": "SportLemon Lacrosse | Retransmissions de Lacrosse",
+					"description": "Mira lacrosse en directe gratis. NLL, PLL i campionats internacionals en HD."
+				},
+				"athletics": {
+					"title": "SportLemon Atletisme | Retransmissions d’Atletisme",
+					"description": "Athletics Diamond League, campionats mundials i molt més gratis en HD."
+				},
+				"gymnastics": {
+					"title": "SportLemon Gimnàstica | Retransmissions de Gimnàstica en HD",
+					"description": "Mira gimnàstica artística i rítmica en HD gratis a SportLemon."
+				},
+				"weightlifting": {
+					"title": "SportLemon Halterofília | Retransmissions en Directe",
+					"description": "Mira halterofília en directe. Campionats IWF i esdeveniments en HD a SportLemon."
+				},
+				"climbing": {
+					"title": "SportLemon Escalada | Retransmissions d’Escalada",
+					"description": "Mira escalada esportiva en directe. IFSC World Cups i campionats en HD."
+				},
+				"bandy": {
+					"title": "SportLemon Bandy | Retransmissions de Bandy en Directe",
+					"description": "Retransmissions de bandy en HD. Campionats mundials i principals lligues."
+				},
+				"curling": {
+					"title": "SportLemon Curling | Retransmissions Gratis en Directe",
+					"description": "Mira curling en directe. World Curling Championships, Brier i més en HD."
+				},
+				"water-sports": {
+					"title": "SportLemon Esports Aquàtics | Retransmissions en Directe",
+					"description": "Rem, piragüisme, natació i més esports aquàtics en HD gratis."
+				},
+				"water-polo": {
+					"title": "SportLemon Waterpolo | Retransmissions de Waterpolo",
+					"description": "Mira waterpolo en directe gratis. LEN Champions League i competicions internacionals."
+				},
+				"sailing": {
+					"title": "SportLemon Vela | Retransmissions de Vela en Directe",
+					"description": "America’s Cup, World Series i regates en HD a SportLemon."
+				},
+				"bowling": {
+					"title": "SportLemon Bitlles | Retransmissions de Bitlles en HD",
+					"description": "Mira bowling en directe gratis. PBA Tour i campionats mundials en HD."
+				},
+				"darts": {
+					"title": "SportLemon Dards | Retransmissions de Dards en Directe",
+					"description": "PDC, Premier League i World Cup de dards en HD a SportLemon."
+				},
+				"chess": {
+					"title": "SportLemon Escacs | Retransmissions d’Escacs en Directe",
+					"description": "Mira escacs en directe. Campionat del Món, Candidates i tornejos d’elit."
+				},
+				"e-sports": {
+					"title": "SportLemon E-sports | Retransmissions de Gaming en HD",
+					"description": "Mira e-sports gratis. LoL, CS:GO, Dota 2 i molt més en HD a SportLemon."
+				},
+				"others": {
+					"title": "SportLemon Altres Esports | Retransmissions en HD",
+					"description": "Mira esports únics, emergents i de nínxol en HD a SportLemon."
+				},
+				"triathlon": {
+					"title": "SportLemon Triatló | Retransmissions de Triatló en Directe",
+					"description": "Mira triatló en HD gratis a SportLemon. Accés ràpid i sense registre."
+				},
+				"rugby-union": {
+					"title": "SportLemon Rugby Union | Retransmissions en Directe",
+					"description": "Mira Rugby Union en directe gratis i en HD sense registre."
+				},
+				"rugby-league": {
+					"title": "SportLemon Rugby League | Retransmissions en Directe HD",
+					"description": "Retransmissions de Rugby League en HD, gratis i sense complicacions."
+				},
+				"combat-sport": {
+					"title": "SportLemon Esports de Combat | Retransmissions en Directe",
+					"description": "MMA, boxa, lluita i més esports de combat en HD gratis a SportLemon."
+				},
+				"winter-sport": {
+					"title": "SportLemon Esports d’Hivern | Retransmissions en HD",
+					"description": "Esquí, snowboard i altres esports d’hivern gratis en HD."
+				},
+				"rugby-sevens": {
+					"title": "SportLemon Rugby Sevens | Retransmissions de Rugby 7",
+					"description": "Mira Rugby Sevens en directe gratis, tornejos en HD i sense registre."
+				},
+				"extreme-sport": {
+					"title": "SportLemon Esport Extrem | Retransmissions en Directe",
+					"description": "Esdeveniments d’esport extrem en HD gratis a SportLemon. Comença ara!"
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "Eplsite | Esports en Directe, Partits d’Aviu i en Joc",
+				"description": "Descobreix retransmissions en directe, calendaris i actualitzacions d’Eplsite. Mira partits en HD gratis, segueix els pròxims enfrontaments i no et perdis cap acció."
+			},
+			"sports": {
+				"football": {
+					"title": "Eplsite Futbol | Partits en Directe i Streaming HD Gratis",
+					"description": "Mira els millors partits d’Eplsite Futbol amb streaming gratuït en alta qualitat i sense registre. Accés ràpid i fiable—comença a veure-ho ara."
+				},
+				"basketball": {
+					"title": "Eplsite Bàsquet | Partits en Directe i Streams HD Gratuïts",
+					"description": "Gaudeix de partits d’elit a Eplsite Bàsquet amb retransmissions en HD i sense registre. Acció ràpida i fiable en qualsevol moment."
+				},
+				"tennis": {
+					"title": "Eplsite Tennis | Partits en Directe i Streams HD Gratuïts",
+					"description": "Retransmissions de tennis en HD a Eplsite Tennis amb accés gratuït i sense registre. Acció fluida i immediata—comença a veure-ho avui."
+				},
+				"ice-hockey": {
+					"title": "Eplsite Hoquei sobre Gel | Streaming HD en Directe",
+					"description": "Gaudeix d’acció ràpida en HD a Eplsite Hoquei sobre Gel amb streaming gratuït i sense registre. Mira tots els partits en directe ara."
+				},
+				"baseball": {
+					"title": "Eplsite Beisbol | Streams HD en Directe i Partits Gratuïts",
+					"description": "Mira beisbol en alta qualitat a Eplsite Beisbol amb accés gratuït i reproducció fluida en HD. No et perdis cap enfrontament."
+				},
+				"rugby-union": {
+					"title": "Eplsite Rugby Union | Streams HD en Directe Gratuïts",
+					"description": "Mira Rugby Union a Eplsite amb streaming gratuït, sense registre i reproducció en HD. Accés ràpid a tots els partits importants."
+				},
+				"rugby-league": {
+					"title": "Eplsite Rugby League | Partits en Directe i Streams HD",
+					"description": "Gaudeix de Rugby League en HD amb streaming gratuït i sense registre. Acció fluida i ràpida a Eplsite—mira-ho ara."
+				},
+				"cricket": {
+					"title": "Eplsite Criquet | Partits en Directe i Streams HD Gratuïts",
+					"description": "Mira criquet en HD a Eplsite amb transmissió ràpida, gratuïta i sense registre. No et perdis cap partit."
+				},
+				"american-football": {
+					"title": "Eplsite Futbol Americà | NFL en Directe i Streams HD",
+					"description": "Retransmissions NFL i Futbol Americà en HD, gratis i sense registre a Eplsite. Mira tots els touchdowns ara."
+				},
+				"volleyball": {
+					"title": "Eplsite Voleibol | FIVB en Directe i Streams en HD",
+					"description": "Mira voleibol FIVB a Eplsite amb streaming gratuït i de gran qualitat. No et perdis cap punt ni cap jugada decisiva."
+				},
+				"beach-volleyball": {
+					"title": "Eplsite Volei Platja | Partits en Directe i Moments Destacats",
+					"description": "Retransmissions gratuïtes de volei platja en HD a Eplsite. Accés ràpid i reproducció fluida—comença ara."
+				},
+				"handball": {
+					"title": "Eplsite Handbol | Partits en Directe i Destacats",
+					"description": "Mira handbol en HD a Eplsite amb streaming gratuït i sense registre. Acció fluida i immediata en qualsevol moment."
+				},
+				"beach-handball": {
+					"title": "Eplsite Handbol Platja | Partits en Directe i Destacats",
+					"description": "Retransmissions gratuïtes d’handbol platja en HD a Eplsite amb reproducció fluida i accés instantani."
+				},
+				"beach-soccer": {
+					"title": "Eplsite Futbol Platja | Partits en Directe i Destacats",
+					"description": "Mira futbol platja gratis en qualitat HD a Eplsite. Gaudeix de retransmissions ràpides i de gran qualitat."
+				},
+				"aussie-rules": {
+					"title": "Eplsite Futbol Australià | AFL en Directe i Streaming Gratuït",
+					"description": "Mira Futbol Australià i partits AFL en HD gratis a Eplsite. Reproducció fluida i accés instantani."
+				},
+				"futsal": {
+					"title": "Eplsite Futbol Sala | Partits en Directe i Acció Ràpida",
+					"description": "Retransmissions gratuïtes de futbol sala en HD a Eplsite. Acció intensa i accés immediat."
+				},
+				"badminton": {
+					"title": "Eplsite Bàdminton | Partits en Directe i Tornejos",
+					"description": "Mira bàdminton en HD a Eplsite gratis i sense registre. Reproducció fluida i accés instantani."
+				},
+				"netball": {
+					"title": "Eplsite Netball | Partits en Directe i Lligues Professionals",
+					"description": "Gaudeix de netball en HD amb streams gratuïts i sense registre a Eplsite."
+				},
+				"floorball": {
+					"title": "Eplsite Floorball | Lligues en Directe i Acció Ràpida",
+					"description": "Retransmissions de floorball en HD a Eplsite amb accés gratuït i reproducció fluida."
+				},
+				"boxing": {
+					"title": "Eplsite Boxa | Combat en Directe i Títols Mundials",
+					"description": "Mira combats de boxa en HD gratis a Eplsite. Acció professional i streams d’alta qualitat."
+				},
+				"mma": {
+					"title": "Eplsite MMA | Lluites en Directe i Acció de Combat",
+					"description": "Retransmissions de MMA en HD, incloent UFC i altres esdeveniments, gratis i sense registre."
+				},
+				"snooker": {
+					"title": "Eplsite Snooker | Partits en Directe i Tornejos",
+					"description": "Mira snooker en HD a Eplsite amb reproducció fluida i accés ràpid. Tots els tornejos importants en directe."
+				},
+				"billiard": {
+					"title": "Eplsite Billar | Pool, Snooker i Esports de Canya",
+					"description": "Retransmissions de billar en HD gratis i sense registre a Eplsite."
+				},
+				"table-tennis": {
+					"title": "Eplsite Tennis de Taula | Partits en Directe i Tornejos",
+					"description": "Mira tennis de taula en HD a Eplsite. Streams ràpids, gratuïts i d’alta qualitat."
+				},
+				"padel-tennis": {
+					"title": "Eplsite Pàdel | Partits i Tornejos en Directe",
+					"description": "Retransmissions en HD de pàdel i esdeveniments professionals a Eplsite."
+				},
+				"squash": {
+					"title": "Eplsite Squash | Tornejos i Acció en Directe",
+					"description": "Mira squash en HD gratis a Eplsite amb reproducció fluida."
+				},
+				"motorsport": {
+					"title": "Eplsite Motorsport | F1, MotoGP i curses en Directe",
+					"description": "Retransmissions de motorsport en HD gratis a Eplsite. Mira F1, MotoGP i molt més."
+				},
+				"racing": {
+					"title": "Eplsite Curses | Acció en Pista i Motorsports",
+					"description": "Mira curses en HD gratis amb streams d’alta qualitat i accés instantani."
+				},
+				"cycling": {
+					"title": "Eplsite Ciclisme | Curses en Directe i Grans Tours",
+					"description": "Retransmissions de ciclisme en HD a Eplsite. Mira Tours, clàssiques i grans esdeveniments."
+				},
+				"equestrianism": {
+					"title": "Eplsite Equitació | Competicions en Directe",
+					"description": "Mira esdeveniments eqüestres en HD gratis amb accés ràpid i reproducció fluida."
+				},
+				"golf": {
+					"title": "Eplsite Golf | Tornejos en Directe i Grans Esdeveniments",
+					"description": "Retransmissions de golf en alta qualitat a Eplsite. PGA, tornejos professionals i més."
+				},
+				"field-hockey": {
+					"title": "Eplsite Hoquei Herba | Partits en Directe i Tornejos",
+					"description": "Mira hoquei herba en HD a Eplsite amb streams ràpids i de qualitat."
+				},
+				"lacrosse": {
+					"title": "Eplsite Lacrosse | Partits en Directe i Lligues",
+					"description": "Retransmissions de lacrosse en HD gratis i sense registre."
+				},
+				"athletics": {
+					"title": "Eplsite Atletisme | Competicions en Directe",
+					"description": "Mira atletisme en HD a Eplsite amb accés ràpid i reproducció fluida."
+				},
+				"gymnastics": {
+					"title": "Eplsite Gimnàstica | Routines i Competicions",
+					"description": "Streams de gimnàstica artística i rítmica en HD gratis a Eplsite."
+				},
+				"weightlifting": {
+					"title": "Eplsite Halterofília | Esdeveniments en Directe",
+					"description": "Retransmissions en HD d’halterofília a Eplsite amb accés gratuït i reproducció fluida."
+				},
+				"climbing": {
+					"title": "Eplsite Escalada | Competicions i Bolder en Directe",
+					"description": "Mira escalada esportiva en HD gratis a Eplsite."
+				},
+				"bandy": {
+					"title": "Eplsite Bandy | Partits en Directe i Lligues",
+					"description": "Retransmissions de bandy en HD a Eplsite amb accés gratuït."
+				},
+				"curling": {
+					"title": "Eplsite Curling | Tornejos i Partits en Directe",
+					"description": "Mira curling en HD gratis a Eplsite. Streams de gran qualitat."
+				},
+				"triathlon": {
+					"title": "Eplsite Triatló | Curses i Esdeveniments en Directe",
+					"description": "Retransmissions de triatló en HD a Eplsite sense registre."
+				},
+				"water-sports": {
+					"title": "Eplsite Esports Aquàtics | Esdeveniments en Directe",
+					"description": "Mira natació, surf i més esports aquàtics en HD gratis a Eplsite."
+				},
+				"water-polo": {
+					"title": "Eplsite Waterpolo | Partits en Directe i Lligues",
+					"description": "Retransmissions de waterpolo en HD gratis a Eplsite."
+				},
+				"sailing": {
+					"title": "Eplsite Vela | Regates i Curses en Directe",
+					"description": "Mira vela en HD a Eplsite amb streams de qualitat."
+				},
+				"bowling": {
+					"title": "Eplsite Bitlles | Competicions i Tornejos en Directe",
+					"description": "Retransmissions de bitlles en HD gratis i sense registre."
+				},
+				"darts": {
+					"title": "Eplsite Dards | Campionats i Partits en Directe",
+					"description": "Mira dards en HD a Eplsite amb streams ràpids i estables."
+				},
+				"chess": {
+					"title": "Eplsite Escacs | Tornejos i Grans Mestres",
+					"description": "Streams d’escacs en HD gratis a Eplsite. Segueix tornejos i partides en directe."
+				},
+				"e-sports": {
+					"title": "Eplsite E-sports | Gaming Pro i Tornejos en Directe",
+					"description": "Retransmissions de gaming professional en HD a Eplsite."
+				},
+				"others": {
+					"title": "Eplsite Altres Esports | Streams i Esdeveniments",
+					"description": "Mira esports variats i esdeveniments únics en HD gratis a Eplsite."
+				},
+				"combat-sport": {
+					"title": "Eplsite Esports de Combat | MMA, Boxa i Lluites",
+					"description": "Mira MMA, boxa i arts marcials en HD gratis a Eplsite."
+				},
+				"winter-sport": {
+					"title": "Eplsite Esports d’Hivern | Esquí i Snowboard en Directe",
+					"description": "Retransmissions d’esquí, snowboard i més esports d’hivern en HD."
+				},
+				"rugby-sevens": {
+					"title": "Eplsite Rugby Sevens | Streams de Rugby 7 en Directe",
+					"description": "Retransmissions gratuïtes en HD de Rugby Seven amb reproducció fluida i sense registre."
+				},
+				"extreme-sport": {
+					"title": "Eplsite Esport Extrem | Competicions en Directe",
+					"description": "Mira esdeveniments d’esport extrem en HD gratis a Eplsite—comença ara!"
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2p4u | Esports en Directe & Partits Vinents",
+				"description": "P2p4u ofereix transmissions esportives gratuïtes en HD amb partits en directe i propers. Accés ràpid, sense registre—comença a veure els teus esports favorits ara."
+			},
+			"sports": {
+				"football": {
+					"title": "P2p4u Futbol | Partits de Futbol en Directe",
+					"description": "Mira futbol en directe a P2p4u amb transmissions HD gratuïtes. Champions League, lligues internacionals i més—sense registre."
+				},
+				"basketball": {
+					"title": "P2p4u Bàsquet | NBA en Directe",
+					"description": "Gaudeix de P2p4u Bàsquet amb transmissions NBA i lligues globals en HD. Accés ràpid i sense registre—mira partits en directe ara."
+				},
+				"tennis": {
+					"title": "P2p4u Tennis | Grand Slams en Directe",
+					"description": "Mira tennis en directe a P2p4u amb transmissions HD gratuïtes d’esdeveniments ATP i WTA. Cap registre requerit."
+				},
+				"ice-hockey": {
+					"title": "P2p4u Hoquei Gel | NHL en Directe",
+					"description": "P2p4u Hoquei Gel ofereix transmissió HD gratuïta de la NHL amb accés ràpid i fluït. Mira partits en directe sense registre."
+				},
+				"baseball": {
+					"title": "P2p4u Beisbol | MLB en Directe",
+					"description": "Gaudeix de beisbol en directe a P2p4u amb transmissions MLB gratuïtes en HD. Accés immediat sense necessitat de compte."
+				},
+				"rugby-union": {
+					"title": "P2p4u Rugby Union | Rugby en Directe",
+					"description": "Mira Rugby Union a P2p4u amb transmissió gratuïta en HD i cobertures fluïdes. Sense registre—entra a l’acció ara."
+				},
+				"rugby-league": {
+					"title": "P2p4u Rugby League | Partits de Rugby en Directe",
+					"description": "P2p4u Rugby League ofereix transmissió gratuïta en HD amb accés ràpid i sense registre. Mira rugby de qualitat ara."
+				},
+				"cricket": {
+					"title": "P2p4u Críquet | Partits en Directe",
+					"description": "Mira críquet en directe amb transmissions HD gratuïtes de tornejos internacionals. Cap registre necessari."
+				},
+				"american-football": {
+					"title": "P2p4u Futbol Americà | NFL en Directe",
+					"description": "Mira NFL en directe en HD a P2p4u amb accés ràpid i sense registre. Partits de futbol americà gratis ara."
+				},
+				"volleyball": {
+					"title": "P2p4u Voleibol | Partits en Directe",
+					"description": "Transmissions de voleibol en HD gratuïtes amb accés immediat. Sense registre—mira partits ara."
+				},
+				"beach-volleyball": {
+					"title": "P2p4u Vòlei Platja | Esdeveniments en Directe",
+					"description": "Mira vòlei platja en HD gratis amb tornejos de nivell mundial. Sense registre—comença ara."
+				},
+				"handball": {
+					"title": "P2p4u Handbol | Partits en Directe",
+					"description": "Gaudeix d’handbol en directe amb transmissió HD ràpida i gratuïta. Sense compte necessari."
+				},
+				"beach-handball": {
+					"title": "P2p4u Handbol Platja | Partits en Directe",
+					"description": "Transmissió fluïda i gratuïta en HD de handbol platja. Mira partits en directe sense registre."
+				},
+				"beach-soccer": {
+					"title": "P2p4u Futbol Platja | Partits en Directe",
+					"description": "Mira futbol platja en HD gratis a P2p4u. Partits en directe sense necessitat de registre."
+				},
+				"aussie-rules": {
+					"title": "P2p4u Aussie Rules | AFL en Directe",
+					"description": "Transmissions AFL gratuïtes en HD amb accés ràpid i fluït. Mira partits en directe ara."
+				},
+				"futsal": {
+					"title": "P2p4u Futbol Sala | Partits en Directe",
+					"description": "Mira futbol sala en HD gratis amb accés immediat. Sense registre requerit."
+				},
+				"badminton": {
+					"title": "P2p4u Bàdminton | Partits en Directe",
+					"description": "Gaudeix de bàdminton en HD amb transmissions gratuïtes de tornejos internacionals. Mira en directe ara."
+				},
+				"netball": {
+					"title": "P2p4u Netball | Partits en Directe",
+					"description": "Transmissions de netball en HD, ràpides i gratuïtes. Sense registre."
+				},
+				"floorball": {
+					"title": "P2p4u Floorball | Partits en Directe",
+					"description": "Mira floorball gratis en HD amb accés immediat. Sense necessitat de compte."
+				},
+				"boxing": {
+					"title": "P2p4u Boxa | Vetlles de Combat en Directe",
+					"description": "Gaudeix de vetlles de boxa en HD gratis. Transmissió fluïda i sense registre."
+				},
+				"mma": {
+					"title": "P2p4u MMA | Combats en Directe",
+					"description": "Mira MMA en HD a P2p4u amb cobertura d’estil UFC. Gratuït i sense registre."
+				},
+				"snooker": {
+					"title": "P2p4u Snooker | Tornejos en Directe",
+					"description": "Transmissions HD de snooker en directe amb accés instantani. Sense registre."
+				},
+				"billiard": {
+					"title": "P2p4u Billar | Esports de Tac en Directe",
+					"description": "Gaudeix de billar en directe amb transmissió HD gratuïta. Mira partits ara."
+				},
+				"table-tennis": {
+					"title": "P2p4u Tennis Taula | Partits en Directe",
+					"description": "Mira tennis taula en HD gratis. Accés immediat i sense registre."
+				},
+				"padel-tennis": {
+					"title": "P2p4u Padel | Partits de Padel en Directe",
+					"description": "Transmissions de padel en HD amb accés ràpid i sense registre. Mira partits en directe ara."
+				},
+				"squash": {
+					"title": "P2p4u Esquaix | Partits en Directe",
+					"description": "Gaudeix d’esquaix en HD amb transmissió gratuïta. Sense registre—mira ara."
+				},
+				"motorsport": {
+					"title": "P2p4u Motorsport | Curses en Directe",
+					"description": "Transmissions de curses de motorsport en HD gratis amb accés ràpid i fluït."
+				},
+				"racing": {
+					"title": "P2p4u Racing | Velocitat en Directe",
+					"description": "Mira curses de velocitat en HD gratuïtament. Sense registre."
+				},
+				"cycling": {
+					"title": "P2p4u Ciclisme | Curses en Directe",
+					"description": "Mira ciclisme en HD amb tours i curses internacionals. Accés ràpid i gratuït."
+				},
+				"equestrianism": {
+					"title": "P2p4u Hípica | Esdeveniments en Directe",
+					"description": "Transmissions d’hípica en HD, gratis i sense registre. Mira competicions ara."
+				},
+				"golf": {
+					"title": "P2p4u Golf | PGA en Directe",
+					"description": "Mira golf en HD gratuïtament amb esdeveniments PGA i tornejos globals. Sense registre."
+				},
+				"field-hockey": {
+					"title": "P2p4u Hoquei Herba | Partits en Directe",
+					"description": "Transmissió HD gratuïta amb accés ràpid a partits d'hoquei herba."
+				},
+				"lacrosse": {
+					"title": "P2p4u Lacrosse | Partits en Directe",
+					"description": "Gaudeix de lacrosse en HD amb transmissió fluïda i gratuïta."
+				},
+				"athletics": {
+					"title": "P2p4u Atletisme | Competicions en Directe",
+					"description": "Mira atletisme en HD amb cobertures de pista i camp. Gratis i sense registre."
+				},
+				"gymnastics": {
+					"title": "P2p4u Gimnàstica | Artística en Directe",
+					"description": "Transmissions en HD de gimnàstica artística amb accés immediat i gratuït."
+				},
+				"weightlifting": {
+					"title": "P2p4u Halterofília | Força en Directe",
+					"description": "Mira halterofília en HD amb competicions de força en directe. Gratis i sense registre."
+				},
+				"climbing": {
+					"title": "P2p4u Escalada | Esportiva en Directe",
+					"description": "Transmissió HD d'escalada esportiva amb accés ràpid i gratuït."
+				},
+				"winter-sport": {
+					"title": "P2p4u Esport d’Hivern | Neu i Gel en Directe",
+					"description": "Mira esports d’hivern en HD amb esdeveniments de neu i gel. Sense registre."
+				},
+				"bandy": {
+					"title": "P2p4u Bandy | Futbol Gel en Directe",
+					"description": "Transmissions HD gratuïtes de bandy amb accés immediat."
+				},
+				"curling": {
+					"title": "P2p4u Curling | Partits en Directe",
+					"description": "Mira curling en HD amb transmissió fluïda i sense registre."
+				},
+				"triathlon": {
+					"title": "P2p4u Triatló | Curses en Directe",
+					"description": "Transmissions gratuïtes en HD de triatló amb accés immediat."
+				},
+				"water-sports": {
+					"title": "P2p4u Esports Aquàtics | Acció en Directe",
+					"description": "Mira esports aquàtics en HD gratis amb transmissió fluïda. Sense registre."
+				},
+				"water-polo": {
+					"title": "P2p4u Waterpolo | Partits en Directe",
+					"description": "Transmissions HD gratuïtes de waterpolo amb accés ràpid i sense registre."
+				},
+				"sailing": {
+					"title": "P2p4u Vela | Regates en Directe",
+					"description": "Mira regates en HD gratis. Accés immediat i sense registre."
+				},
+				"bowling": {
+					"title": "P2p4u Bitlles | Pistes en Directe",
+					"description": "Transmissions de bitlles en HD gratuïtes. Mira acció en directe ara."
+				},
+				"darts": {
+					"title": "P2p4u Dards | Tornejos en Directe",
+					"description": "Gaudeix de tornejos de dards en HD amb accés instantani. Sense registre."
+				},
+				"chess": {
+					"title": "P2p4u Escacs | Tornejos en Directe",
+					"description": "Mira escacs en HD amb partides internacionals. Accés gratuït i immediat."
+				},
+				"e-sports": {
+					"title": "P2p4u E-sports | Gaming en Directe",
+					"description": "Transmissions d’esports electrònics en HD, gratis i sense registre. Mira tornejos ara."
+				},
+				"others": {
+					"title": "P2p4u Altres Esports | Directes HD",
+					"description": "Explora altres esports amb transmissions gratuïtes en HD i accés instantani."
+				},
+				"combat-sport": {
+					"title": "P2p4u Esports de Combat | Lluites en Directe",
+					"description": "Mira esports de combat en HD gratis. Accés ràpid i sense registre."
+				},
+				"rugby-sevens": {
+					"title": "P2p4u Rugby Sevens | Tornejos en Directe",
+					"description": "Mira Rugby Sevens en directe en HD amb tornejos de màxima intensitat. Sense registre—accés instantani."
+				},
+				"extreme-sport": {
+					"title": "P2p4u Esport Extrema | Acció en Directe",
+					"description": "Transmissió HD gratuïta d’esports extrems. Gaudeix d’acció intensa sense registre."
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "Streamhunter | Retransmissions Esportives en Directe i Partits Propers",
+				"description": "Streamhunter ofereix retransmissions HD gratuïtes per a tots els esports amb partits en directe i propers actualitzats diàriament. Accés ràpid, sense registre. Comença a veure ara."
+			},
+			"sports": {
+				"football": {
+					"title": "Streamhunter Futbol | Partits en Directe Online",
+					"description": "Streamhunter Futbol ofereix retransmissions HD gratuïtes de partits de futbol arreu del món. Gaudeix d'accés ràpid i sense registre. Comença a veure ara."
+				},
+				"basketball": {
+					"title": "Streamhunter Bàsquet | Acció NBA en Directe",
+					"description": "Streamhunter Bàsquet ofereix retransmissions HD gratuïtes de la NBA i lligues globals. Accés fàcil i sense registre. Veu partits en directe ara."
+				},
+				"tennis": {
+					"title": "Streamhunter Tennis | Retransmissions Grand Slam en Directe",
+					"description": "Streamhunter Tennis et permet veure partits ATP i WTA en HD gratis. Sense registre necessari. Retransmissió de tennis en directe ara."
+				},
+				"ice-hockey": {
+					"title": "Streamhunter Hoquei sobre Gel | Retransmissions NHL en Directe",
+					"description": "Streamhunter Hoquei sobre Gel porta acció HD gratuïta de la NHL i lligues globals. Retransmissió fluida sense registre. Veu ara."
+				},
+				"baseball": {
+					"title": "Streamhunter Beisbol | Retransmissions MLB en Directe",
+					"description": "Streamhunter Beisbol ofereix retransmissions HD de la MLB i lligues internacionals gratis. Sense registre necessari. Veu beisbol en directe ara."
+				},
+				"rugby-union": {
+					"title": "Streamhunter Rugby Union | Retransmissions Rugby en Directe",
+					"description": "Streamhunter Rugby Union ofereix retransmissions HD gratuïtes de les millors lligues i partits internacionals. Sense registre necessari. Veu rugby en directe ara."
+				},
+				"rugby-league": {
+					"title": "Streamhunter Rugby League | Esdeveniments Rugby en Directe",
+					"description": "Streamhunter Rugby League ofereix retransmissions HD gratuïtes de la NRL, Super League i més. Sense registre. Veu en directe ara."
+				},
+				"cricket": {
+					"title": "Streamhunter Criquet | Retransmissions Partits en Directe",
+					"description": "Streamhunter Criquet retransmet Tests, ODI i T20 en HD gratis. Càrrega ràpida sense registre. Comença a veure criquet en directe ara."
+				},
+				"american-football": {
+					"title": "Streamhunter Futbol Americà | Retransmissions NFL en Directe",
+					"description": "Streamhunter Futbol Americà ofereix retransmissions HD gratuïtes de la NFL i NCAA sense registre. Visualització ràpida i d'alta qualitat. Veu en directe ara."
+				},
+				"volleyball": {
+					"title": "Streamhunter Voleibol | Retransmissions Voleibol en Directe",
+					"description": "Streamhunter Voleibol proporciona partits HD gratuïts de lligues globals. Sense registre necessari. Veu voleibol en directe ara."
+				},
+				"beach-volleyball": {
+					"title": "Streamhunter Volei Platja | Acció Platja en Directe",
+					"description": "Streamhunter Volei Platja retransmet els millors tours FIVB i professionals en HD. Accés gratuït sense registre. Veu ara."
+				},
+				"handball": {
+					"title": "Streamhunter Handbol | Retransmissions Handbol en Directe",
+					"description": "Streamhunter Handbol ofereix partits HD gratuïts de les millors lligues i torneigs. Sense registre necessari. Veu ara."
+				},
+				"beach-handball": {
+					"title": "Streamhunter Handbol Platja | Partits Platja en Directe",
+					"description": "Streamhunter Handbol Platja porta acció HD gratuïta d'esdeveniments globals. Sense registre necessari. Veu en directe ara."
+				},
+				"beach-soccer": {
+					"title": "Streamhunter Futbol Platja | Partits Platja en Directe",
+					"description": "Streamhunter Futbol Platja ofereix retransmissions HD gratuïtes de futbol platja sense registre. Gaudeix de visualització ràpida i d'alta qualitat ara."
+				},
+				"aussie-rules": {
+					"title": "Streamhunter Futbol Australià | Retransmissions AFL en Directe",
+					"description": "Streamhunter Futbol Australià proporciona acció HD gratuïta de l'AFL sense registre. Retransmissió ràpida i fluida. Veu ara."
+				},
+				"futsal": {
+					"title": "Streamhunter Futbol Sala | Retransmissions Futbol Sala en Directe",
+					"description": "Streamhunter Futbol Sala ofereix partits HD gratuïts de futbol sala arreu del món. Sense registre necessari. Veu partits en directe ara."
+				},
+				"badminton": {
+					"title": "Streamhunter Bàdminton | Retransmissions Bàdminton en Directe",
+					"description": "Streamhunter Bàdminton retransmet torneigs BWF en HD gratis. Sense registre necessari. Veu ara."
+				},
+				"netball": {
+					"title": "Streamhunter Netball | Retransmissions Netball en Directe",
+					"description": "Streamhunter Netball ofereix accés HD gratuït a les millors lligues i torneigs. Sense registre necessari. Veu en directe ara."
+				},
+				"floorball": {
+					"title": "Streamhunter Floorball | Retransmissions Floorball en Directe",
+					"description": "Streamhunter Floorball proporciona partits HD gratuïts de les millors lligues. Sense registre. Veu acció en directe ara."
+				},
+				"combat-sport": {
+					"title": "Streamhunter Esports de Combat | Retransmissions Combat en Directe",
+					"description": "Streamhunter Esports de Combat ofereix acció HD gratuïta de grans esdeveniments de combat. Sense registre. Veu combats en directe ara."
+				},
+				"boxing": {
+					"title": "Streamhunter Boxa | Retransmissions Vetllades de Boxa en Directe",
+					"description": "Streamhunter Boxa ofereix retransmissions HD gratuïtes de grans combats. Sense registre necessari. Veu boxa en directe ara."
+				},
+				"mma": {
+					"title": "Streamhunter MMA | Retransmissions Combat MMA en Directe",
+					"description": "Streamhunter MMA ofereix acció HD gratuïta de les millors promocions. Sense registre necessari. Veu combats en directe ara."
+				},
+				"snooker": {
+					"title": "Streamhunter Snooker | Retransmissions Snooker en Directe",
+					"description": "Streamhunter Snooker retransmet torneigs professionals en HD gratis. Sense registre. Veu en directe ara."
+				},
+				"billiard": {
+					"title": "Streamhunter Billar | Retransmissions Billar en Directe",
+					"description": "Streamhunter Billar proporciona partits i torneigs HD gratuïts sense registre. Comença a veure ara."
+				},
+				"table-tennis": {
+					"title": "Streamhunter Tennis de Taula | Retransmissions Pim-Pam en Directe",
+					"description": "Streamhunter Tennis de Taula ofereix partits HD gratuïts de la ITTF. Sense registre necessari. Veu acció en directe ara."
+				},
+				"padel-tennis": {
+					"title": "Streamhunter Pàdel | Retransmissions Pàdel en Directe",
+					"description": "Streamhunter Pàdel ofereix partits HD gratuïts dels grans tours. Sense registre. Veu pàdel en directe ara."
+				},
+				"squash": {
+					"title": "Streamhunter Squash | Retransmissions Squash en Directe",
+					"description": "Streamhunter Squash retransmet partits PSA en HD gratis. Sense registre. Veu squash en directe ara."
+				},
+				"motorsport": {
+					"title": "Streamhunter Motorsport | Curses de Motor en Directe",
+					"description": "Streamhunter Motorsport proporciona retransmissions HD gratuïtes de curses de les grans sèries. Sense registre. Veu motorsport en directe ara."
+				},
+				"racing": {
+					"title": "Streamhunter Curses | Retransmissions Curses en Directe",
+					"description": "Streamhunter Curses ofereix retransmissions HD gratuïtes de motorsport sense registre. Gaudeix d'acció en directe ràpida ara."
+				},
+				"cycling": {
+					"title": "Streamhunter Ciclisme | Retransmissions Ciclisme en Directe",
+					"description": "Streamhunter Ciclisme retransmet grans tours i esdeveniments en HD gratis. Sense registre. Veu ciclisme en directe ara."
+				},
+				"equestrianism": {
+					"title": "Streamhunter Equitació | Esdeveniments Eqüestres en Directe",
+					"description": "Streamhunter Equitació ofereix retransmissions HD gratuïtes de competicions eqüestres globals. Sense registre. Veu en directe ara."
+				},
+				"golf": {
+					"title": "Streamhunter Golf | Retransmissions Golf en Directe",
+					"description": "Streamhunter Golf ofereix retransmissions HD gratuïtes del PGA i tours mundials. Sense registre. Veu golf en directe ara."
+				},
+				"field-hockey": {
+					"title": "Streamhunter Hoquei Herba | Retransmissions Hoquei en Directe",
+					"description": "Streamhunter Hoquei Herba retransmet partits globals en HD gratis. Sense registre necessari. Veu en directe ara."
+				},
+				"lacrosse": {
+					"title": "Streamhunter Lacrosse | Retransmissions Lacrosse en Directe",
+					"description": "Streamhunter Lacrosse proporciona partits HD gratuïts de les grans lligues. Sense registre. Veu ara."
+				},
+				"athletics": {
+					"title": "Streamhunter Atletisme | Retransmissions Atletisme en Directe",
+					"description": "Streamhunter Atletisme retransmet esdeveniments globals en HD gratis. Sense registre necessari. Veu atletisme en directe ara."
+				},
+				"gymnastics": {
+					"title": "Streamhunter Gimnàstica | Retransmissions Gimnàstica en Directe",
+					"description": "Streamhunter Gimnàstica ofereix retransmissions HD gratuïtes de competicions sense registre. Veu en directe ara."
+				},
+				"weightlifting": {
+					"title": "Streamhunter Halterofília | Retransmissions Halterofília en Directe",
+					"description": "Streamhunter Halterofília ofereix competicions HD gratuïtes sense registre. Gaudeix d'accés ràpid a esdeveniments d'halterofília en directe ara."
+				},
+				"climbing": {
+					"title": "Streamhunter Escalada | Retransmissions Escalada en Directe",
+					"description": "Streamhunter Escalada retransmet esdeveniments de dificultat, bloc i velocitat en HD gratis. Sense registre. Veu en directe ara."
+				},
+				"winter-sport": {
+					"title": "Streamhunter Esports d'Hivern | Esdeveniments d'Esports d'Hivern en Directe",
+					"description": "Streamhunter Esports d'Hivern proporciona esquí, patinatge i més en HD gratis. Sense registre. Veu en directe ara."
+				},
+				"bandy": {
+					"title": "Streamhunter Bandy | Retransmissions Bandy en Directe",
+					"description": "Streamhunter Bandy ofereix partits HD gratuïts sense registre. Veu bandy en directe ara."
+				},
+				"curling": {
+					"title": "Streamhunter Curling | Retransmissions Curling en Directe",
+					"description": "Streamhunter Curling ofereix cobertura HD gratuïta de torneigs sense registre. Veu curling en directe ara."
+				},
+				"triathlon": {
+					"title": "Streamhunter Triatló | Retransmissions Curses en Directe",
+					"description": "Streamhunter Triatló retransmet esdeveniments de triatló globals en HD gratis. Sense registre. Veu en directe ara."
+				},
+				"water-sports": {
+					"title": "Streamhunter Esports Aquàtics | Retransmissions Aquàtiques en Directe",
+					"description": "Streamhunter Esports Aquàtics ofereix retransmissions HD gratuïtes dels millors esdeveniments aquàtics. Sense registre. Veu en directe ara."
+				},
+				"water-polo": {
+					"title": "Streamhunter Waterpolo | Retransmissions Waterpolo en Directe",
+					"description": "Streamhunter Waterpolo ofereix partits HD gratuïts sense registre. Veu waterpolo en directe ara."
+				},
+				"sailing": {
+					"title": "Streamhunter Vela | Retransmissions Vela en Directe",
+					"description": "Streamhunter Vela retransmet regates globals en HD gratis. Sense registre. Veu vela en directe ara."
+				},
+				"bowling": {
+					"title": "Streamhunter Bitlles | Retransmissions Bitlles en Directe",
+					"description": "Streamhunter Bitlles proporciona torneigs HD gratuïts sense registre. Veu bitlles en directe ara."
+				},
+				"darts": {
+					"title": "Streamhunter Dards | Retransmissions Dards en Directe",
+					"description": "Streamhunter Dards ofereix retransmissions HD gratuïtes de la PDC i dards globals. Sense registre. Veu dards en directe ara."
+				},
+				"chess": {
+					"title": "Streamhunter Escacs | Partits Escacs en Directe",
+					"description": "Streamhunter Escacs retransmet els millors torneigs en HD gratis. Sense registre. Veu escacs en directe ara."
+				},
+				"e-sports": {
+					"title": "Streamhunter E-sports | Retransmissions E-sports en Directe",
+					"description": "Streamhunter E-sports proporciona torneigs HD gratuïts d'e-sports. Sense registre necessari. Veu en directe ara."
+				},
+				"others": {
+					"title": "Streamhunter Altres | Retransmissions Esportives en Directe",
+					"description": "Streamhunter Altres ofereix cobertura HD gratuïta d'esports de nínxol i emergents. Sense registre. Veu acció en directe ara."
+				},
+				"rugby-sevens": {
+					"title": "Streamhunter Rugby Set | Retransmissions Rugby Set en Directe",
+					"description": "Streamhunter Rugby Set ofereix torneigs HD gratuïts de rugby set sense registre. Veu acció ràpida de rugby set en directe i gaudeix de retransmissió fluida i fiable ara."
+				},
+				"extreme-sport": {
+					"title": "Streamhunter Esports Extrems | Retransmissions Esports Extrems en Directe",
+					"description": "Streamhunter Esports Extrems ofereix cobertura HD gratuïta de les millors competicions extremes. Sense registre necessari. Retransmet emocionants esdeveniments d'esports extrems avui."
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "Methstreams | Retransmissions Esportives en Directe i Partits Propers",
+				"description": "Methstreams ofereix retransmissions HD gratuïtes per a tots els esports amb partits en directe i propers actualitzats diàriament. Sense registre necessari. Comença a veure instantàniament."
+			},
+			"sports": {
+				"football": {
+					"title": "Methstreams Futbol | Partits en Directe Online",
+					"description": "Methstreams Futbol ofereix retransmissions HD gratuïtes de futbol sense registre. Accés ràpid i fiable a partits en directe. Veu ara."
+				},
+				"basketball": {
+					"title": "Methstreams Bàsquet | Retransmissions NBA en Directe",
+					"description": "Methstreams Bàsquet porta retransmissions HD gratuïtes de la NBA i lligues globals. Sense registre necessari. Veu bàsquet en directe ara."
+				},
+				"tennis": {
+					"title": "Methstreams Tennis | Retransmissions Tennis en Directe",
+					"description": "Methstreams Tennis ofereix retransmissions ATP i WTA en HD gratis. Accés instantani sense registre. Veu ara."
+				},
+				"ice-hockey": {
+					"title": "Methstreams Hoquei sobre Gel | Retransmissions NHL en Directe",
+					"description": "Methstreams Hoquei sobre Gel ofereix retransmissions HD gratuïtes de la NHL i internacionals. Sense registre necessari. Veu hoquei en directe ara."
+				},
+				"baseball": {
+					"title": "Methstreams Beisbol | Retransmissions MLB en Directe",
+					"description": "Methstreams Beisbol proporciona retransmissions HD de la MLB i beisbol global gratis. Sense registre necessari. Veu en directe ara."
+				},
+				"rugby-union": {
+					"title": "Methstreams Rugby Union | Retransmissions Rugby en Directe",
+					"description": "Methstreams Rugby Union retransmet les millors lligues i partits internacionals en HD gratis. Sense registre. Veu rugby en directe ara."
+				},
+				"rugby-league": {
+					"title": "Methstreams Rugby League | Partits Rugby en Directe",
+					"description": "Methstreams Rugby League ofereix retransmissions HD gratuïtes de la NRL i Super League. Accés ràpid sense registre. Veu ara."
+				},
+				"cricket": {
+					"title": "Methstreams Criquet | Retransmissions Criquet en Directe",
+					"description": "Methstreams Criquet proporciona retransmissions HD de T20, ODI i Tests gratis. Sense registre necessari. Comença a veure ara."
+				},
+				"american-football": {
+					"title": "Methstreams Futbol Americà | Retransmissions NFL en Directe",
+					"description": "Methstreams Futbol Americà retransmet partits de la NFL i NCAA en HD gratis. Sense registre. Veu en directe ara."
+				},
+				"volleyball": {
+					"title": "Methstreams Voleibol | Retransmissions Voleibol en Directe",
+					"description": "Methstreams Voleibol ofereix partits HD gratuïts de voleibol global sense registre. Veu voleibol en directe ara."
+				},
+				"beach-volleyball": {
+					"title": "Methstreams Volei Platja | Retransmissions Platja en Directe",
+					"description": "Methstreams Volei Platja ofereix retransmissions HD gratuïtes de la FIVB i tours professionals. Sense registre necessari. Veu ara."
+				},
+				"handball": {
+					"title": "Methstreams Handbol | Retransmissions Handbol en Directe",
+					"description": "Methstreams Handbol proporciona retransmissions HD gratuïtes de lligues globals. Sense registre necessari. Veu handbol en directe ara."
+				},
+				"beach-handball": {
+					"title": "Methstreams Handbol Platja | Partits Platja en Directe",
+					"description": "Methstreams Handbol Platja retransmet esdeveniments globals en HD sense registre. Veu en directe ara."
+				},
+				"beach-soccer": {
+					"title": "Methstreams Futbol Platja | Futbol Platja en Directe",
+					"description": "Methstreams Futbol Platja ofereix partits HD gratuïts sense registre. Gaudeix de retransmissions ràpides de futbol platja ara."
+				},
+				"aussie-rules": {
+					"title": "Methstreams Futbol Australià | Retransmissions AFL en Directe",
+					"description": "Methstreams Futbol Australià retransmet acció de l'AFL gratis en HD. Sense registre necessari. Veu ara."
+				},
+				"futsal": {
+					"title": "Methstreams Futbol Sala | Retransmissions Futbol Sala en Directe",
+					"description": "Methstreams Futbol Sala ofereix partits HD gratuïts de futbol sala arreu del món. Sense registre. Veu en directe ara."
+				},
+				"badminton": {
+					"title": "Methstreams Bàdminton | Retransmissions Bàdminton en Directe",
+					"description": "Methstreams Bàdminton retransmet torneigs BWF en HD gratis. Sense registre. Veu ara."
+				},
+				"netball": {
+					"title": "Methstreams Netball | Retransmissions Netball en Directe",
+					"description": "Methstreams Netball proporciona partits HD gratuïts de les millors lligues. Sense registre necessari. Veu netball en directe ara."
+				},
+				"floorball": {
+					"title": "Methstreams Floorball | Retransmissions Floorball en Directe",
+					"description": "Methstreams Floorball retransmet partits globals en HD gratis. Sense registre. Veu ara."
+				},
+				"combat-sport": {
+					"title": "Methstreams Esports de Combat | Retransmissions Combat en Directe",
+					"description": "Methstreams Esports de Combat ofereix esdeveniments HD gratuïts de combat sense registre. Veu acció en directe ara."
+				},
+				"boxing": {
+					"title": "Methstreams Boxa | Vetllada de Boxa en Directe",
+					"description": "Methstreams Boxa ofereix retransmissions HD gratuïtes de boxa sense registre. Veu combats en directe ara."
+				},
+				"mma": {
+					"title": "Methstreams MMA | Retransmissions MMA en Directe",
+					"description": "Methstreams MMA retransmet les millors promocions de combat en HD gratis. Sense registre necessari. Veu ara."
+				},
+				"snooker": {
+					"title": "Methstreams Snooker | Retransmissions Snooker en Directe",
+					"description": "Methstreams Snooker proporciona cobertura HD gratuïta de snooker professional. Sense registre. Veu en directe ara."
+				},
+				"billiard": {
+					"title": "Methstreams Billar | Retransmissions Billar en Directe",
+					"description": "Methstreams Billar retransmet esdeveniments globals de billar en HD gratis. Sense registre. Veu ara."
+				},
+				"table-tennis": {
+					"title": "Methstreams Tennis de Taula | Pim-Pam en Directe",
+					"description": "Methstreams Tennis de Taula ofereix retransmissions HD gratuïtes de la ITTF. Sense registre necessari. Veu pim-pam en directe ara."
+				},
+				"padel-tennis": {
+					"title": "Methstreams Pàdel | Retransmissions Pàdel en Directe",
+					"description": "Methstreams Pàdel ofereix acció HD gratuïta de pàdel sense registre. Veu en directe ara."
+				},
+				"squash": {
+					"title": "Methstreams Squash | Retransmissions Squash en Directe",
+					"description": "Methstreams Squash retransmet torneigs PSA en HD gratis. Sense registre. Veu squash en directe ara."
+				},
+				"motorsport": {
+					"title": "Methstreams Motorsport | Curses de Motor en Directe",
+					"description": "Methstreams Motorsport ofereix retransmissions HD gratuïtes de curses sense registre. Veu motorsport en directe ara."
+				},
+				"racing": {
+					"title": "Methstreams Curses | Retransmissions Curses en Directe",
+					"description": "Methstreams Curses proporciona retransmissions HD gratuïtes de motorsport. Sense registre necessari. Veu curses ara."
+				},
+				"cycling": {
+					"title": "Methstreams Ciclisme | Retransmissions Ciclisme en Directe",
+					"description": "Methstreams Ciclisme retransmet grans tours i esdeveniments en HD gratis. Sense registre. Veu ciclisme en directe ara."
+				},
+				"equestrianism": {
+					"title": "Methstreams Equitació | Esdeveniments Eqüestres en Directe",
+					"description": "Methstreams Equitació ofereix retransmissions HD gratuïtes de competicions eqüestres. Sense registre necessari. Veu ara."
+				},
+				"golf": {
+					"title": "Methstreams Golf | Retransmissions Golf en Directe",
+					"description": "Methstreams Golf proporciona retransmissions HD gratuïtes del PGA i tours mundials. Sense registre necessari. Veu golf en directe ara."
+				},
+				"field-hockey": {
+					"title": "Methstreams Hoquei Herba | Retransmissions Hoquei en Directe",
+					"description": "Methstreams Hoquei Herba retransmet partits internacionals en HD gratis. Sense registre. Veu ara."
+				},
+				"lacrosse": {
+					"title": "Methstreams Lacrosse | Retransmissions Lacrosse en Directe",
+					"description": "Methstreams Lacrosse ofereix retransmissions HD gratuïtes de lacrosse professional i universitari. Sense registre. Veu ara."
+				},
+				"athletics": {
+					"title": "Methstreams Atletisme | Retransmissions Atletisme en Directe",
+					"description": "Methstreams Atletisme retransmet grans esdeveniments d'atletisme en HD gratis. Sense registre. Veu en directe ara."
+				},
+				"gymnastics": {
+					"title": "Methstreams Gimnàstica | Retransmissions Gimnàstica en Directe",
+					"description": "Methstreams Gimnàstica ofereix retransmissions HD gratuïtes de competicions sense registre. Veu gimnàstica en directe ara."
+				},
+				"weightlifting": {
+					"title": "Methstreams Halterofília | Halterofília en Directe",
+					"description": "Methstreams Halterofília proporciona competicions HD gratuïtes. Sense registre. Veu halterofília en directe ara."
+				},
+				"climbing": {
+					"title": "Methstreams Escalada | Retransmissions Escalada en Directe",
+					"description": "Methstreams Escalada retransmet esdeveniments de bloc, dificultat i velocitat en HD sense registre. Veu ara."
+				},
+				"winter-sport": {
+					"title": "Methstreams Esports d'Hivern | Acció de Neu en Directe",
+					"description": "Methstreams Esports d'Hivern ofereix esquí, patinatge i esdeveniments d'hivern en HD gratis. Sense registre. Veu en directe ara."
+				},
+				"bandy": {
+					"title": "Methstreams Bandy | Retransmissions Bandy en Directe",
+					"description": "Methstreams Bandy retransmet partits globals en HD gratis. Sense registre. Veu ara."
+				},
+				"curling": {
+					"title": "Methstreams Curling | Retransmissions Curling en Directe",
+					"description": "Methstreams Curling proporciona torneigs HD gratuïts sense registre. Veu curling en directe ara."
+				},
+				"triathlon": {
+					"title": "Methstreams Triatló | Retransmissions Triatló en Directe",
+					"description": "Methstreams Triatló ofereix cobertura HD gratuïta de triatló global. Sense registre necessari. Veu en directe ara."
+				},
+				"water-sports": {
+					"title": "Methstreams Esports Aquàtics | Retransmissions Aquàtiques en Directe",
+					"description": "Methstreams Esports Aquàtics retransmet competicions aquàtiques en HD gratis. Sense registre. Veu ara."
+				},
+				"water-polo": {
+					"title": "Methstreams Waterpolo | Retransmissions Waterpolo en Directe",
+					"description": "Methstreams Waterpolo ofereix retransmissions HD gratuïtes sense registre. Veu waterpolo en directe ara."
+				},
+				"sailing": {
+					"title": "Methstreams Vela | Retransmissions Vela en Directe",
+					"description": "Methstreams Vela retransmet regates globals en HD gratis. Sense registre. Veu vela en directe ara."
+				},
+				"bowling": {
+					"title": "Methstreams Bitlles | Retransmissions Bitlles en Directe",
+					"description": "Methstreams Bitlles ofereix torneigs HD gratuïts sense registre. Veu bitlles en directe ara."
+				},
+				"darts": {
+					"title": "Methstreams Dards | Retransmissions Dards en Directe",
+					"description": "Methstreams Dards retransmet la PDC i esdeveniments globals en HD gratis. Sense registre. Veu dards ara."
+				},
+				"chess": {
+					"title": "Methstreams Escacs | Partits Escacs en Directe",
+					"description": "Methstreams Escacs ofereix retransmissions HD gratuïtes dels millors torneigs. Sense registre. Veu escacs en directe ara."
+				},
+				"e-sports": {
+					"title": "Methstreams E-sports | Retransmissions E-sports en Directe",
+					"description": "Methstreams E-sports proporciona torneigs HD gratuïts d'e-sports. Sense registre necessari. Veu en directe ara."
+				},
+				"others": {
+					"title": "Methstreams Altres | Retransmissions Esportives en Directe",
+					"description": "Methstreams Altres retransmet esports de nínxol i emergents en HD gratis. Sense registre. Veu en directe ara."
+				},
+				"rugby-sevens": {
+					"title": "Methstreams Rugby Set | Retransmissions Rugby Set en Directe",
+					"description": "Methstreams Rugby Set porta torneigs HD gratuïts de rugby set sense registre. Veu acció ràpida de rugby set en directe i gaudeix de retransmissió fluida avui."
+				},
+				"extreme-sport": {
+					"title": "Methstreams Esports Extrems | Retransmissions Esports Extrems en Directe",
+					"description": "Methstreams Esports Extrems ofereix cobertura HD gratuïta de les millors competicions extremes. Sense registre necessari. Retransmet emocionants esdeveniments d'esports extrems ara."
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "Wiziwig | Retransmissions Esportives en Directe i Partits Propers",
+				"description": "Wiziwig ofereix retransmissions HD gratuïtes i ràpides per a tots els esports amb partits en directe i propers actualitzats diàriament. Sense registre—comença a veure ara."
+			},
+			"sports": {
+				"football": {
+					"title": "Wiziwig Futbol | Retransmissions de Futbol en Directe",
+					"description": "Wiziwig Futbol et dóna retransmissions HD de futbol sense barreres de registre. Gaudeix de partits en directe a l'instant."
+				},
+				"basketball": {
+					"title": "Wiziwig Bàsquet | Veure NBA en Directe",
+					"description": "Wiziwig Bàsquet ofereix acció NBA i bàsquet mundial en HD amb càrrega ràpida. Comença a veure en directe ara."
+				},
+				"tennis": {
+					"title": "Wiziwig Tennis | Cobertura de Tennis en Directe",
+					"description": "Wiziwig Tennis et permet accedir a partits ATP i WTA en HD gratuïtament. Retransmissions de tennis en directe a l'instant."
+				},
+				"ice-hockey": {
+					"title": "Wiziwig Hoquei sobre Gel | Retransmissions NHL en Directe",
+					"description": "Wiziwig Hoquei sobre Gel et porta partits NHL i globals en HD nítid sense registre. Veure en directe ara."
+				},
+				"baseball": {
+					"title": "Wiziwig Beisbol | Beisbol en Directe Online",
+					"description": "Wiziwig Beisbol retransmet jocs MLB i internacionals en HD sense registre. Gaudeix de beisbol en directe ara."
+				},
+				"rugby-union": {
+					"title": "Wiziwig Rugby Union | Veure Rugby en Directe",
+					"description": "Wiziwig Rugby Union dóna accés HD a lligues principals i partits de test. Uneix-te a l'acció de rugby en directe ara."
+				},
+				"rugby-league": {
+					"title": "Wiziwig Rugby League | Retransmissions Rugby HD en Directe",
+					"description": "Wiziwig Rugby League ofereix retransmissions HD gratuïtes de NRL i Super League. Veure l'acció en directe ara."
+				},
+				"cricket": {
+					"title": "Wiziwig Criquet | Retransmissions de Criquet en Directe",
+					"description": "Wiziwig Criquet ofereix partits T20, ODI i Test en HD. Sense registre requerit. Veure criquet en directe."
+				},
+				"american-football": {
+					"title": "Wiziwig Futbol Americà | Retransmissions NFL en Directe",
+					"description": "Wiziwig Futbol Americà retransmet jocs NFL i universitaris en HD fluid. Salta a l'acció en directe ara."
+				},
+				"volleyball": {
+					"title": "Wiziwig Voleibol | Voleibol en Directe Online",
+					"description": "Wiziwig Voleibol ofereix partits de voleibol globals en HD sense registre. Veure en directe ara."
+				},
+				"beach-volleyball": {
+					"title": "Wiziwig Volei Platja | Veure Platja en Directe",
+					"description": "Wiziwig Volei Platja porta esdeveniments HD de pista de sorra gratuïtament. Retransmissions de volei platja en directe a l'instant."
+				},
+				"handball": {
+					"title": "Wiziwig Handbol | Partits d'Handbol en Directe",
+					"description": "Wiziwig Handbol proporciona retransmissions HD de lligues principals i tornejos. Veure handbol en directe."
+				},
+				"beach-handball": {
+					"title": "Wiziwig Handbol Platja | Acció de Platja en Directe",
+					"description": "Wiziwig Handbol Platja retransmet esdeveniments globals en HD sense registre. Veure ara."
+				},
+				"beach-soccer": {
+					"title": "Wiziwig Futbol Platja | Partits en Directe Online",
+					"description": "Wiziwig Futbol Platja ofereix retransmissions HD ràpides d'esdeveniments professionals i internacionals. Veure futbol platja en directe."
+				},
+				"aussie-rules": {
+					"title": "Wiziwig Aussie Rules | Retransmissions AFL en Directe",
+					"description": "Wiziwig Aussie Rules ofereix acció AFL HD gratuïtament. Retransmet footy en directe ara."
+				},
+				"futsal": {
+					"title": "Wiziwig Futbol Sala | Retransmissions de Futbol Sala en Directe",
+					"description": "Wiziwig Futbol Sala dóna accés HD a lligues i tornejos globals de futbol sala. Veure en directe ara."
+				},
+				"badminton": {
+					"title": "Wiziwig Bàdminton | Bàdminton en Directe Online",
+					"description": "Wiziwig Bàdminton retransmet esdeveniments BWF en HD amb càrrega instantània. Veure bàdminton en directe."
+				},
+				"netball": {
+					"title": "Wiziwig Netball | Retransmissions de Netball en Directe",
+					"description": "Wiziwig Netball proporciona cobertura HD de lliga i internacional. Retransmet netball en directe ara."
+				},
+				"floorball": {
+					"title": "Wiziwig Floorball | Acció de Floorball en Directe",
+					"description": "Wiziwig Floorball ofereix retransmissions HD fluides de competicions principals. Veure floorball en directe ara."
+				},
+				"boxing": {
+					"title": "Wiziwig Boxa | Veure Boxa en Directe",
+					"description": "Wiziwig Boxa dóna accés HD a carteleres de combat mundials gratuïtament. Uneix-te a la boxa en directe ara."
+				},
+				"mma": {
+					"title": "Wiziwig MMA | Retransmissions MMA en Directe",
+					"description": "Wiziwig MMA retransmet organitzacions principals en HD net sense registre. Veure MMA en directe ara."
+				},
+				"snooker": {
+					"title": "Wiziwig Snooker | Cobertura de Snooker en Directe",
+					"description": "Wiziwig Snooker ofereix tornejos i partits HD amb accés instant. Veure snooker en directe ara."
+				},
+				"billiard": {
+					"title": "Wiziwig Billar | Retransmissions de Billar en Directe",
+					"description": "Wiziwig Billar proporciona retransmissions HD globals de billar sense registre. Veure en directe ara."
+				},
+				"table-tennis": {
+					"title": "Wiziwig Tennis de Taula | Ping Pong en Directe",
+					"description": "Wiziwig Tennis de Taula retransmet ping pong professional en HD. Veure partits en directe a l'instant."
+				},
+				"padel-tennis": {
+					"title": "Wiziwig Pàdel | Retransmissions de Pàdel en Directe",
+					"description": "Wiziwig Pàdel ofereix esdeveniments HD de pàdel sense registre. Veure pàdel en directe."
+				},
+				"squash": {
+					"title": "Wiziwig Squash | Esdeveniments de Squash en Directe",
+					"description": "Wiziwig Squash retransmet squash professional en HD amb càrrega ràpida. Veure partits en directe ara."
+				},
+				"motorsport": {
+					"title": "Wiziwig Motorsport | Motorsport en Directe",
+					"description": "Wiziwig Motorsport dóna accés HD a esdeveniments de curses mundials. Retransmet motorsport en directe."
+				},
+				"racing": {
+					"title": "Wiziwig Curses | Retransmissions de Curses en Directe",
+					"description": "Wiziwig Curses ofereix cobertura HD de curses de motorsport sense registre. Veure curses en directe ara."
+				},
+				"cycling": {
+					"title": "Wiziwig Ciclisme | Retransmissions de Ciclisme en Directe",
+					"description": "Wiziwig Ciclisme ofereix accés HD a grans tours i curses. Veure ciclisme en directe ara."
+				},
+				"equestrianism": {
+					"title": "Wiziwig Equitació | Esports Eqüestres en Directe",
+					"description": "Wiziwig Equitació retransmet competicions eqüestres globals en HD. Veure en directe ara."
+				},
+				"golf": {
+					"title": "Wiziwig Golf | Retransmissions de Golf en Directe",
+					"description": "Wiziwig Golf proporciona acció HD del PGA i tour mundial sense registre. Veure golf en directe avui."
+				},
+				"field-hockey": {
+					"title": "Wiziwig Hoquei Herba | Partits d'Hoquei en Directe",
+					"description": "Wiziwig Hoquei Herba retransmet hoquei internacional principal en HD. Veure en directe ara."
+				},
+				"lacrosse": {
+					"title": "Wiziwig Lacrosse | Retransmissions de Lacrosse en Directe",
+					"description": "Wiziwig Lacrosse ofereix retransmissions HD professionals i universitàries amb accés fàcil. Veure lacrosse en directe."
+				},
+				"athletics": {
+					"title": "Wiziwig Atletisme | Retransmissions d'Atletisme en Directe",
+					"description": "Wiziwig Atletisme cobreix esdeveniments principals de pista i camp en HD. Veure atletisme en directe ara."
+				},
+				"gymnastics": {
+					"title": "Wiziwig Gimnàstica | Esdeveniments de Gimnàstica en Directe",
+					"description": "Wiziwig Gimnàstica retransmet competicions de classe mundial gratuïtament en HD. Veure en directe ara."
+				},
+				"weightlifting": {
+					"title": "Wiziwig Halterofília | Halterofília en Directe",
+					"description": "Wiziwig Halterofília porta competicions HD d'halterofília sense registre. Veure halterofília en directe ara."
+				},
+				"climbing": {
+					"title": "Wiziwig Escalada | Retransmissions d'Escalada en Directe",
+					"description": "Wiziwig Escalada retransmet esdeveniments de boulder, lead i velocitat en HD. Veure escalada en directe."
+				},
+				"bandy": {
+					"title": "Wiziwig Bandy | Retransmissions de Bandy en Directe",
+					"description": "Wiziwig Bandy retransmet lligues globals de bandy en HD sense registre. Veure bandy en directe ara."
+				},
+				"curling": {
+					"title": "Wiziwig Curling | Partits de Curling en Directe",
+					"description": "Wiziwig Curling ofereix tornejos HD amb accés ràpid. Veure curling en directe ara."
+				},
+				"triathlon": {
+					"title": "Wiziwig Triatló | Retransmissions de Triatló en Directe",
+					"description": "Wiziwig Triatló dóna cobertura HD d'esdeveniments mundials de triatló. Veure en directe ara."
+				},
+				"water-sports": {
+					"title": "Wiziwig Esports Aquàtics | Esdeveniments Aquàtics en Directe",
+					"description": "Wiziwig Esports Aquàtics retransmet natació, salts i més en HD. Veure esports aquàtics en directe."
+				},
+				"water-polo": {
+					"title": "Wiziwig Waterpolo | Retransmissions de Polo en Directe",
+					"description": "Wiziwig Waterpolo ofereix partits globals HD amb accés ràpid. Veure waterpolo en directe ara."
+				},
+				"sailing": {
+					"title": "Wiziwig Vela | Retransmissions de Vela en Directe",
+					"description": "Wiziwig Vela retransmet regates i esdeveniments principals de vela en HD. Veure vela en directe ara."
+				},
+				"bowling": {
+					"title": "Wiziwig Bitlles | Retransmissions de Bitlles en Directe",
+					"description": "Wiziwig Bitlles proporciona esdeveniments HD de bitlles sense registre. Veure bitlles en directe ara."
+				},
+				"darts": {
+					"title": "Wiziwig Dards | Cobertura de Dards en Directe",
+					"description": "Wiziwig Dards retransmet tornejos globals en HD. Veure dards en directe ara."
+				},
+				"chess": {
+					"title": "Wiziwig Escacs | Partits d'Escacs en Directe",
+					"description": "Wiziwig Escacs retransmet tornejos d'elit en HD gratuïtament. Veure escacs en directe ara."
+				},
+				"e-sports": {
+					"title": "Wiziwig E-sports | Retransmissions d'E-sports en Directe",
+					"description": "Wiziwig E-sports ofereix cobertura HD de tornejos amb accés instant. Veure e-sports en directe."
+				},
+				"others": {
+					"title": "Wiziwig Altres | Retransmissions Esportives en Directe",
+					"description": "Wiziwig Altres cobreix esports de nínxol i emergents en HD. Veure en directe ara."
+				},
+				"combat-sport": {
+					"title": "Wiziwig Esports de Combat | Retransmissions de Combat en Directe",
+					"description": "Wiziwig Esports de Combat cobreix grans nits de combat en HD sense registre. Veure combats en directe ara."
+				},
+				"winter-sport": {
+					"title": "Wiziwig Esports d'Hivern | Esports de Neu en Directe",
+					"description": "Wiziwig Esports d'Hivern proporciona esquí, patinatge i esdeveniments d'hivern en HD. Veure acció de neu en directe ara."
+				},
+				"rugby-sevens": {
+					"title": "Wiziwig Rugby Sevens | Retransmissions de Rugby Sevens en Directe",
+					"description": "Wiziwig Rugby Sevens ofereix tornejos HD gratuïts de sevens sense registre. Veure acció de rugby sevens de ritme ràpid en directe i gaudeix d'una retransmissió fluida i fiable ara."
+				},
+				"extreme-sport": {
+					"title": "Wiziwig Esports Extrems | Retransmissions d'Esports Extrems en Directe",
+					"description": "Wiziwig Esports Extrems ofereix cobertura HD gratuïta de competicions extremes principals. Sense registre requerit. Retransmet esdeveniments emocionants d'esports extrems avui."
+				}
+			}
+		}
 	}
 }
