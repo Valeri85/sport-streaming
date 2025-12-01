@@ -187,6 +187,117 @@ function langUrl($path, $websiteLanguage, $defaultLanguage) {
 }
 
 // ==========================================
+// HELPER: Get SEO data for specific language
+// Returns title and description for current page/language
+// ==========================================
+function getLanguageSeoData($langCode, $domain, $pageType, $sportSlug, $langDir, $defaultSeo) {
+    // For English (default), return the default SEO from websites.json
+    if ($langCode === 'en') {
+        return $defaultSeo;
+    }
+    
+    // Try to load language-specific SEO
+    $langFile = $langDir . $langCode . '.json';
+    if (!file_exists($langFile)) {
+        return $defaultSeo; // Fallback to English
+    }
+    
+    $langData = json_decode(file_get_contents($langFile), true);
+    if (!$langData || !isset($langData['seo'])) {
+        return $defaultSeo; // Fallback to English
+    }
+    
+    // Normalize domain for comparison (remove www., lowercase)
+    $normalizedDomain = strtolower(str_replace('www.', '', trim($domain)));
+    
+    // Find matching domain key (case-insensitive search)
+    $seoData = null;
+    foreach ($langData['seo'] as $key => $value) {
+        $normalizedKey = strtolower(str_replace('www.', '', trim($key)));
+        if ($normalizedKey === $normalizedDomain) {
+            $seoData = $value;
+            break;
+        }
+    }
+    
+    if (!$seoData) {
+        return $defaultSeo; // Fallback to English
+    }
+    
+    // Get SEO based on page type
+    if ($pageType === 'home') {
+        $title = $seoData['home']['title'] ?? '';
+        $description = $seoData['home']['description'] ?? '';
+    } elseif ($pageType === 'sport' && $sportSlug) {
+        // Check case-insensitive for sport slug
+        $title = '';
+        $description = '';
+        if (isset($seoData['sports'])) {
+            foreach ($seoData['sports'] as $sKey => $sValue) {
+                if (strtolower($sKey) === strtolower($sportSlug)) {
+                    $title = $sValue['title'] ?? '';
+                    $description = $sValue['description'] ?? '';
+                    break;
+                }
+            }
+        }
+    } else {
+        return $defaultSeo; // Unknown page type
+    }
+    
+    // If language-specific SEO exists, use it; otherwise fallback to English
+    return [
+        'title' => !empty($title) ? $title : $defaultSeo['title'],
+        'description' => !empty($description) ? $description : $defaultSeo['description']
+    ];
+}
+
+// ==========================================
+// HELPER: Generate hreflang tags for all active languages
+// ==========================================
+function generateHreflangTags($availableLanguages, $defaultLanguage, $baseCanonicalUrl, $activeSport, $viewFavorites) {
+    $tags = [];
+    
+    foreach ($availableLanguages as $code => $langInfo) {
+        // Build URL for this language
+        if ($code === $defaultLanguage) {
+            // Default language = no prefix
+            $url = $baseCanonicalUrl;
+            if ($viewFavorites) {
+                $url .= '/favorites';
+            } elseif ($activeSport) {
+                $url .= '/live-' . $activeSport;
+            } else {
+                $url .= '/';
+            }
+        } else {
+            // Non-default language = add prefix
+            $url = $baseCanonicalUrl . '/' . $code;
+            if ($viewFavorites) {
+                $url .= '/favorites';
+            } elseif ($activeSport) {
+                $url .= '/live-' . $activeSport;
+            }
+        }
+        
+        $tags[] = '<link rel="alternate" hreflang="' . htmlspecialchars($code) . '" href="' . htmlspecialchars($url) . '">';
+    }
+    
+    // Add x-default (points to default language version)
+    $xDefaultUrl = $baseCanonicalUrl;
+    if ($viewFavorites) {
+        $xDefaultUrl .= '/favorites';
+    } elseif ($activeSport) {
+        $xDefaultUrl .= '/live-' . $activeSport;
+    } else {
+        $xDefaultUrl .= '/';
+    }
+    $tags[] = '<link rel="alternate" hreflang="x-default" href="' . htmlspecialchars($xDefaultUrl) . '">';
+    
+    return implode("\n    ", $tags);
+}
+
+// ==========================================
 // LOAD LANGUAGE FILE
 // ==========================================
 $langFile = __DIR__ . '/config/lang/' . $websiteLanguage . '.json';
@@ -445,26 +556,52 @@ if ($viewFavorites) {
 // END: CANONICAL URL & NOINDEX LOGIC
 // ==========================================
 
+// ==========================================
+// SEO: Get language-specific title and description
+// ==========================================
 $pagesSeo = $website['pages_seo'] ?? [];
-$seoTitle = $website['pages_seo']['home']['title'];
-$seoDescription = $website['pages_seo']['home']['description'];
+
+// Step 1: Get default (English) SEO from websites.json
+$defaultSeoTitle = '';
+$defaultSeoDescription = '';
 
 if ($viewFavorites) {
-    if (isset($pagesSeo['favorites'])) {
-        $seoTitle = $pagesSeo['favorites']['title'] ?: $seoTitle;
-        $seoDescription = $pagesSeo['favorites']['description'] ?: $seoDescription;
-    }
+    $defaultSeoTitle = $pagesSeo['favorites']['title'] ?? $pagesSeo['home']['title'] ?? '';
+    $defaultSeoDescription = $pagesSeo['favorites']['description'] ?? $pagesSeo['home']['description'] ?? '';
 } elseif ($activeSport) {
-    if (isset($pagesSeo['sports'][$activeSport])) {
-        $seoTitle = $pagesSeo['sports'][$activeSport]['title'] ?: $seoTitle;
-        $seoDescription = $pagesSeo['sports'][$activeSport]['description'] ?: $seoDescription;
-    }
+    $defaultSeoTitle = $pagesSeo['sports'][$activeSport]['title'] ?? $pagesSeo['home']['title'] ?? '';
+    $defaultSeoDescription = $pagesSeo['sports'][$activeSport]['description'] ?? $pagesSeo['home']['description'] ?? '';
 } else {
-    if (isset($pagesSeo['home'])) {
-        $seoTitle = $pagesSeo['home']['title'] ?: $seoTitle;
-        $seoDescription = $pagesSeo['home']['description'] ?: $seoDescription;
-    }
+    $defaultSeoTitle = $pagesSeo['home']['title'] ?? '';
+    $defaultSeoDescription = $pagesSeo['home']['description'] ?? '';
 }
+
+// Step 2: Get language-specific SEO (or fallback to English)
+$defaultSeo = [
+    'title' => $defaultSeoTitle,
+    'description' => $defaultSeoDescription
+];
+
+// Determine page type for SEO lookup
+$seoPageType = 'home';
+$seoSportSlug = null;
+if ($viewFavorites) {
+    $seoPageType = 'favorites'; // Note: favorites may not have translations, will fallback
+} elseif ($activeSport) {
+    $seoPageType = 'sport';
+    $seoSportSlug = $activeSport;
+}
+
+// Get language-specific SEO
+$languageSeo = getLanguageSeoData($websiteLanguage, $domain, $seoPageType, $seoSportSlug, $langDir, $defaultSeo);
+
+$seoTitle = $languageSeo['title'];
+$seoDescription = $languageSeo['description'];
+
+// ==========================================
+// Generate hreflang tags
+// ==========================================
+$hreflangTags = generateHreflangTags($availableLanguages, $siteDefaultLanguage, $baseCanonicalUrl, $activeSport, $viewFavorites);
 
 function groupGamesBySport($games) {
     $grouped = [];
@@ -659,6 +796,9 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
     <?php if ($shouldNoindex): ?>
     <meta name="robots" content="noindex, follow">
     <?php endif; ?>
+    
+    <!-- HREFLANG TAGS FOR MULTILINGUAL SEO -->
+    <?php echo $hreflangTags; ?>
     
     <link rel="stylesheet" href="/styles.css">
     <script>
