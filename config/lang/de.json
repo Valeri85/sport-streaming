@@ -3,6 +3,7 @@
 		"code": "de",
 		"name": "Deutsch",
 		"flag": "🇩🇪",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -52,6 +53,7 @@
 		"Baseball": "Baseball",
 		"Rugby Union": "Rugby Union",
 		"Rugby League": "Rugby League",
+		"Rugby Sevens": "Rugby Sevens",
 		"Cricket": "Cricket",
 		"American Football": "American Football",
 		"Volleyball": "Volleyball",
@@ -95,6 +97,1309 @@
 		"Darts": "Darts",
 		"Chess": "Schach",
 		"E-sports": "E-Sport",
+		"Extreme Sport": "Extremsport",
 		"Others": "Andere"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | Live-Sport & Heutige Spiele",
+				"description": "SportLemon bietet Ihnen Live-Sport-Streams plus heutige kommende und aktuelle Spiele in allen Sportarten. Kostenloser Zugang, keine Anmeldung—jetzt ansehen."
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon Fußball | Kostenlose Live-Fußball-Streams HD",
+					"description": "Schauen Sie kostenlose Live-Fußball-Streams in HD auf SportLemon. Champions League, Premier League & mehr. Verpassen Sie kein Spiel!"
+				},
+				"basketball": {
+					"title": "SportLemon Basketball | Kostenlose Live NBA & Basketball-Streams",
+					"description": "Streamen Sie Live-Basketball-Spiele kostenlos. Schauen Sie NBA, EuroLeague & mehr in HD auf SportLemon. Keine Anmeldung erforderlich."
+				},
+				"tennis": {
+					"title": "SportLemon Tennis | Kostenlose Live-Tennis-Streams HD",
+					"description": "Schauen Sie kostenlose Live-Tennis-Streams. Grand Slams, ATP, WTA-Touren in HD auf SportLemon. Jetzt mitmachen!"
+				},
+				"ice-hockey": {
+					"title": "SportLemon Eishockey | Kostenlose Live NHL-Streams HD",
+					"description": "Kostenlose Live-Eishockey-Streams in HD. Schauen Sie NHL, KHL und Weltmeisterschaften auf SportLemon. Verpassen Sie keinen Schuss."
+				},
+				"baseball": {
+					"title": "SportLemon Baseball | Kostenlose Live MLB-Streams Online",
+					"description": "Streamen Sie Live-Baseball-Spiele kostenlos. Schauen Sie MLB, NPB und mehr in HD auf SportLemon. Einfacher und kostenloser Zugang."
+				},
+				"rugby": {
+					"title": "SportLemon Rugby | Kostenlose Live Rugby Union & League",
+					"description": "Schauen Sie kostenlose Live-Rugby-Streams. Rugby Union, Rugby League, Six Nations & mehr in HD auf SportLemon."
+				},
+				"cricket": {
+					"title": "SportLemon Cricket | Kostenlose Live-Cricket-Streams HD",
+					"description": "Kostenlose Live-Cricket-Streams auf SportLemon. Schauen Sie IPL, T20, Test-Matches & mehr in hoher Auflösung. Jetzt einschalten!"
+				},
+				"american-football": {
+					"title": "SportLemon American Football | Kostenlose Live NFL-Streams",
+					"description": "Schauen Sie kostenlose Live American Football-Streams. Genießen Sie NFL, College-Spiele & mehr in HD auf SportLemon. Keine Abonnements."
+				},
+				"volleyball": {
+					"title": "SportLemon Volleyball | Kostenlose Live-Volleyball-Streams",
+					"description": "Streamen Sie Live-Volleyball-Spiele kostenlos. Schauen Sie FIVB, CEV & große Ligen in HD auf SportLemon. Seien Sie dabei!"
+				},
+				"beach-volleyball": {
+					"title": "SportLemon Beachvolleyball | Kostenlose Live-Streams",
+					"description": "Schauen Sie kostenlose Live-Beachvolleyball-Streams. FIVB World Tour & große Turniere in HD auf SportLemon."
+				},
+				"handball": {
+					"title": "SportLemon Handball | Kostenlose Live-Handball-Streams",
+					"description": "Kostenlose Live-Handball-Streams auf SportLemon. Schauen Sie EHF, IHF-Events & große Ligen in hoher Auflösung."
+				},
+				"beach-handball": {
+					"title": "SportLemon Beachhandball | Kostenlose Live-Streams",
+					"description": "Schauen Sie kostenlose Live-Beachhandball-Streams. IHF World Tour & Meisterschaften in HD auf SportLemon."
+				},
+				"beach-soccer": {
+					"title": "SportLemon Strandfußball | Kostenlose Live-Streams HD",
+					"description": "Streamen Sie Live-Strandfußball kostenlos. FIFA Beach Soccer Weltmeisterschaft & Ligen in HD auf SportLemon."
+				},
+				"aussie-rules": {
+					"title": "SportLemon Australian Football | Kostenlose Live AFL-Streams",
+					"description": "Schauen Sie kostenlosen Live Australian Football. Streamen Sie AFL-Spiele & Turniere in HD auf SportLemon."
+				},
+				"futsal": {
+					"title": "SportLemon Futsal | Kostenlose Live-Futsal-Streams HD",
+					"description": "Kostenlose Live-Futsal-Streams auf SportLemon. Schauen Sie UEFA Futsal, FIFA-Events & mehr in hoher Auflösung."
+				},
+				"badminton": {
+					"title": "SportLemon Badminton | Kostenlose Live-Badminton-Streams",
+					"description": "Schauen Sie kostenlose Live-Badminton-Streams. BWF World Tour, Thomas Cup & mehr in HD auf SportLemon."
+				},
+				"netball": {
+					"title": "SportLemon Netball | Kostenlose Live-Netball-Streams",
+					"description": "Streamen Sie Live-Netball kostenlos. Schauen Sie Vitality Netball Superleague, Weltmeisterschaften & mehr auf SportLemon."
+				},
+				"floorball": {
+					"title": "SportLemon Floorball | Kostenlose Live-Floorball-Streams",
+					"description": "Schauen Sie kostenlose Live-Floorball-Streams. IFF-Weltmeisterschaften & große Ligen in HD auf SportLemon."
+				},
+				"boxing": {
+					"title": "SportLemon Boxen | Kostenlose Live-Box-Streams HD",
+					"description": "Schauen Sie kostenlose Live-Box-Streams. Weltmeisterschaftskämpfe, Vorkämpfe & mehr in hoher Auflösung auf SportLemon."
+				},
+				"mma": {
+					"title": "SportLemon MMA | Kostenlose Live UFC & MMA-Streams",
+					"description": "Streamen Sie Live-MMA-Kämpfe kostenlos. Schauen Sie UFC, Bellator, PFL & mehr in HD auf SportLemon."
+				},
+				"snooker": {
+					"title": "SportLemon Snooker | Kostenlose Live-Snooker-Streams",
+					"description": "Schauen Sie kostenlose Live-Snooker-Streams. Weltmeisterschaft, UK Championship & mehr in HD auf SportLemon."
+				},
+				"billiard": {
+					"title": "SportLemon Billard | Kostenlose Live-Pool-Streams HD",
+					"description": "Kostenlose Live-Billard und Pool-Streams auf SportLemon. Schauen Sie Weltturniere & Spiele in hoher Auflösung."
+				},
+				"table-tennis": {
+					"title": "SportLemon Tischtennis | Kostenlose Live-Streams HD",
+					"description": "Schauen Sie kostenlose Live-Tischtennis-Streams. ITTF World Tours & Meisterschaften in HD auf SportLemon."
+				},
+				"padel-tennis": {
+					"title": "SportLemon Padel | Kostenlose Live-Streams",
+					"description": "Streamen Sie Live-Padel kostenlos. Schauen Sie World Padel Tour & große Spiele in HD auf SportLemon."
+				},
+				"squash": {
+					"title": "SportLemon Squash | Kostenlose Live-Squash-Streams",
+					"description": "Schauen Sie kostenlose Live-Squash-Streams. PSA World Tour & Meisterschaften in hoher Auflösung auf SportLemon."
+				},
+				"motorsport": {
+					"title": "SportLemon Motorsport | Kostenlose Live-Rennstreams",
+					"description": "Kostenlose Live-Motorsport-Streams auf SportLemon. Schauen Sie F1, MotoGP, WRC & mehr in HD. Motor starten!"
+				},
+				"racing": {
+					"title": "SportLemon Rennsport | Kostenlose Live-Pferderennen-Streams",
+					"description": "Schauen Sie kostenlose Live-Rennstreams. Große Derbys, Cups & Events in HD auf SportLemon."
+				},
+				"cycling": {
+					"title": "SportLemon Radsport | Kostenlose Live-Radsport-Streams",
+					"description": "Streamen Sie Live-Radsport kostenlos. Schauen Sie Tour de France, Giro, Vuelta & mehr in HD auf SportLemon."
+				},
+				"equestrianism": {
+					"title": "SportLemon Reitsport | Kostenlose Live-Streams",
+					"description": "Schauen Sie kostenlose Live-Reitsport-Streams. Springreiten, Dressur & Vielseitigkeit in HD auf SportLemon."
+				},
+				"golf": {
+					"title": "SportLemon Golf | Kostenlose Live-Golf-Streams HD",
+					"description": "Kostenlose Live-Golf-Streams auf SportLemon. Schauen Sie Masters, PGA Tour, Ryder Cup & mehr in hoher Auflösung."
+				},
+				"field-hockey": {
+					"title": "SportLemon Feldhockey | Kostenlose Live-Streams HD",
+					"description": "Schauen Sie kostenlose Live-Feldhockey-Streams. FIH Pro League, Weltmeisterschaft & mehr in HD auf SportLemon."
+				},
+				"lacrosse": {
+					"title": "SportLemon Lacrosse | Kostenlose Live-Lacrosse-Streams",
+					"description": "Streamen Sie Live-Lacrosse kostenlos. Schauen Sie NLL, PLL, Weltmeisterschaften & mehr auf SportLemon."
+				},
+				"athletics": {
+					"title": "SportLemon Leichtathletik | Kostenlose Live-Leichtathletik",
+					"description": "Schauen Sie kostenlose Live-Leichtathletik-Streams. Diamond League, Weltmeisterschaften & mehr in HD auf SportLemon."
+				},
+				"gymnastics": {
+					"title": "SportLemon Turnen | Kostenlose Live-Streams HD",
+					"description": "Kostenlose Live-Turn-Streams auf SportLemon. Schauen Sie Kunstturnen, rhythmische Events & Weltcups in HD."
+				},
+				"weightlifting": {
+					"title": "SportLemon Gewichtheben | Kostenlose Live-Streams",
+					"description": "Schauen Sie kostenlose Live-Gewichtheben-Streams. IWF-Weltmeisterschaften & Events in HD auf SportLemon."
+				},
+				"climbing": {
+					"title": "SportLemon Klettern | Kostenlose Live-Kletter-Streams",
+					"description": "Streamen Sie Live-Klettern kostenlos. Schauen Sie IFSC-Weltcups & Meisterschaften in HD auf SportLemon."
+				},
+				"bandy": {
+					"title": "SportLemon Bandy | Kostenlose Live-Bandy-Streams",
+					"description": "Kostenlose Live-Bandy-Streams auf SportLemon. Schauen Sie Weltmeisterschaften & große Ligen in hoher Auflösung."
+				},
+				"curling": {
+					"title": "SportLemon Curling | Kostenlose Live-Curling-Streams",
+					"description": "Schauen Sie kostenlose Live-Curling-Streams. Curling-Weltmeisterschaften, Brier & mehr in HD auf SportLemon."
+				},
+				"water-sports": {
+					"title": "SportLemon Wassersport | Kostenlose Live-Streams",
+					"description": "Streamen Sie Live-Wassersport kostenlos. Schauen Sie Rudern, Kanufahren, Schwimmen & mehr auf SportLemon."
+				},
+				"water-polo": {
+					"title": "SportLemon Wasserball | Kostenlose Live-Streams HD",
+					"description": "Schauen Sie kostenlose Live-Wasserball-Streams. LEN Champions League, World League & mehr auf SportLemon."
+				},
+				"sailing": {
+					"title": "SportLemon Segeln | Kostenlose Live-Segel-Streams",
+					"description": "Kostenlose Live-Segel-Streams auf SportLemon. Schauen Sie America's Cup, World Series & Regattas in HD."
+				},
+				"bowling": {
+					"title": "SportLemon Bowling | Kostenlose Live-Bowling-Streams",
+					"description": "Schauen Sie kostenlose Live-Bowling-Streams. PBA Tour, Weltmeisterschaften & mehr in HD auf SportLemon."
+				},
+				"darts": {
+					"title": "SportLemon Darts | Kostenlose Live-Darts-Streams HD",
+					"description": "Streamen Sie Live-Darts kostenlos. Schauen Sie PDC, Premier League, Weltmeisterschaft & mehr auf SportLemon."
+				},
+				"chess": {
+					"title": "SportLemon Schach | Kostenlose Live-Schach-Streams",
+					"description": "Schauen Sie kostenlose Live-Schach-Streams. Weltmeisterschaft, Kandidatenturnier & Top-Turniere auf SportLemon."
+				},
+				"e-sports": {
+					"title": "SportLemon E-Sport | Kostenlose Live-Gaming-Streams",
+					"description": "Kostenlose Live-E-Sport-Streams auf SportLemon. Schauen Sie LoL, CS:GO, Dota 2 & mehr in HD. Game on!"
+				},
+				"others": {
+					"title": "SportLemon Andere | Kostenlose Live-Sport-Streams HD",
+					"description": "Schauen Sie kostenlose Live-Streams für alle anderen Sportarten. Nischen-, aufstrebende & einzigartige Sportarten in HD auf SportLemon."
+				},
+				"triathlon": {
+					"title": "SportLemon Triathlon | Kostenlose Live-Triathlon-Streams",
+					"description": "SportLemon Triathlon ermöglicht es Ihnen, hochwertige Triathlon-Streams kostenlos ohne Anmeldung anzusehen. Einfacher Zugang, reibungslose Wiedergabe—jetzt ansehen."
+				},
+				"rugby-union": {
+					"title": "SportLemon Rugby Union | Kostenlose HD Live-Streams Online",
+					"description": "SportLemon Rugby Union bietet kostenlose, keine Anmeldung, hochwertige Live-Streams. Genießen Sie schnellen Zugang zu jedem Spiel in HD. Jetzt ansehen."
+				},
+				"rugby-league": {
+					"title": "SportLemon Rugby League | Kostenlose Live HD-Streams",
+					"description": "SportLemon Rugby League bringt Ihnen kostenlose, keine Anmeldung, hochwertige Live-Streams jedes Spiels. Genießen Sie schnellen, zuverlässigen Zugang in HD—heute ansehen."
+				},
+				"combat-sport": {
+					"title": "SportLemon Kampfsport | Kostenlose Live-Kampfsport-Streams",
+					"description": "Kostenlose Live-Kampfsport-Streams auf SportLemon. Schauen Sie MMA, Boxen, Ringen & mehr in HD."
+				},
+				"winter-sport": {
+					"title": "SportLemon Wintersport | Kostenlose Live-Streams",
+					"description": "Schauen Sie kostenlose Live-Wintersport-Streams. Skifahren, Snowboarden & mehr in HD auf SportLemon."
+				},
+				"rugby-sevens": {
+					"title": "SportLemon Rugby Sevens | Live Rugby Sevens-Streams",
+					"description": "SportLemon Rugby Sevens bietet kostenlose HD-Sevens-Turniere mit reibungsloser Wiedergabe und ohne Anmeldung. Schauen Sie jetzt rasante Rugby Sevens-Action live."
+				},
+				"extreme-sport": {
+					"title": "SportLemon Extremsport | Live-Extremsport-Streams",
+					"description": "SportLemon Extremsport bietet kostenlose HD-Berichterstattung über Top-Extremsport-Wettbewerbe. Keine Anmeldung erforderlich. Streamen Sie heute aufregende Extremsport-Events."
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "Eplsite | Live-Sport, Kommende & Aktuelle Spiele",
+				"description": "Entdecken Sie Live-Streams, Spielpläne und Updates für alle Sportarten auf Eplsite. Schauen Sie kostenlose HD-Spiele, verfolgen Sie kommende Spiele und verpassen Sie keine Action."
+			},
+			"sports": {
+				"football": {
+					"title": "Eplsite Fußball | Live-Spiele & Kostenlose HD-Streaming",
+					"description": "Schauen Sie Top-Spiele auf Eplsite Fußball mit kostenlosen, hochwertigen Streams und ohne Anmeldung. Genießen Sie schnellen, zuverlässigen Zugang zu Live-Fußball-Action—jetzt ansehen."
+				},
+				"basketball": {
+					"title": "Eplsite Basketball | Live-Spiele & HD-Streams Kostenlos",
+					"description": "Schauen Sie hochwertige Spiele auf Eplsite Basketball mit kostenlosem, keine Anmeldung Streaming. Genießen Sie schnelle, zuverlässige HD-Action jederzeit. Jetzt ansehen."
+				},
+				"tennis": {
+					"title": "Eplsite Tennis | Live-Spiele & Kostenlose HD-Streams",
+					"description": "Streamen Sie hochwertige Spiele auf Eplsite Tennis mit kostenlosem, keine Anmeldung Zugang und schnellem HD-Ansehen. Genießen Sie reibungslose Live-Action—heute ansehen."
+				},
+				"ice-hockey": {
+					"title": "Eplsite Eishockey | Live HD-Streams & Kostenlose Spiele",
+					"description": "Genießen Sie schnelle, hochwertige Action auf Eplsite Eishockey mit kostenlosen, keine Anmeldung Streams und reibungsloser HD-Wiedergabe. Verpassen Sie kein Spiel—jetzt ansehen."
+				},
+				"baseball": {
+					"title": "Eplsite Baseball | Live HD-Streams & Kostenlose Spiele",
+					"description": "Schauen Sie hochwertige Spiele auf Eplsite Baseball mit kostenlosem, keine Anmeldung Streaming und schneller HD-Wiedergabe. Genießen Sie jedes Spiel—jetzt ansehen."
+				},
+				"rugby-union": {
+					"title": "Eplsite Rugby Union | Live HD-Streams & Kostenlose Spiele",
+					"description": "Streamen Sie Top-Spiele auf Eplsite Rugby Union mit kostenlosem, keine Anmeldung Zugang und reibungsloser HD-Wiedergabe. Genießen Sie schnelle, zuverlässige Action—heute ansehen."
+				},
+				"rugby-league": {
+					"title": "Eplsite Rugby League | Live HD-Streams & Kostenlose Spiele",
+					"description": "Schauen Sie schnelle, hochwertige Spiele auf Eplsite Rugby League mit kostenlosem, keine Anmeldung Streaming und reibungsloser HD-Action. Genießen Sie jedes Spiel—jetzt ansehen."
+				},
+				"cricket": {
+					"title": "Eplsite Cricket | Live HD-Streams & Kostenlose Spiele",
+					"description": "Schauen Sie hochwertige Action auf Eplsite Cricket mit kostenlosen, keine Anmeldung Streams und reibungsloser HD-Wiedergabe. Genießen Sie jedes Spiel—jetzt ansehen."
+				},
+				"american-football": {
+					"title": "Eplsite American Football | Live NFL & HD-Streams",
+					"description": "Streamen Sie Top NFL und American Football-Spiele auf Eplsite American Football mit kostenlosem, keine Anmeldung Zugang und reibungsloser HD-Wiedergabe. Schauen Sie jeden Touchdown jetzt."
+				},
+				"volleyball": {
+					"title": "Eplsite Volleyball – Live FIVB & HD-Streams",
+					"description": "Streamen Sie Top FIVB-Volleyballspiele auf Eplsite Volleyball mit kostenlosem, keine Anmeldung HD-Zugang. Schauen Sie jeden Satz und Spike live—verpassen Sie nicht die Action."
+				},
+				"beach-volleyball": {
+					"title": "Eplsite Beachvolleyball | Live-Spiele & Highlights",
+					"description": "Schauen Sie Eplsite Beachvolleyball in HD mit kostenlosen, keine Anmeldung Streams von Top-Beachvolleyball-Events. Genießen Sie reibungslose Wiedergabe und schnellen Zugang. Jetzt ansehen."
+				},
+				"handball": {
+					"title": "Eplsite Handball | Live-Spiele & Highlights",
+					"description": "Schauen Sie Eplsite Handball-Spiele in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose Streams von Top-Handball-Action. Schneller Zugang und jetzt ansehen."
+				},
+				"beach-handball": {
+					"title": "Eplsite Beachhandball | Live-Spiele & Highlights",
+					"description": "Streamen Sie Eplsite Beachhandball in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose, hochwertige Beachhandball-Action jederzeit. Jetzt ansehen."
+				},
+				"beach-soccer": {
+					"title": "Eplsite Strandfußball | Live-Spiele & Highlights",
+					"description": "Schauen Sie Eplsite Strandfußball in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose Streams von Top-Strandfußball-Action jederzeit. Jetzt ansehen."
+				},
+				"aussie-rules": {
+					"title": "Eplsite Australian Football | Live AFL & Australischer Fußball",
+					"description": "Schauen Sie Eplsite Australian Football-Spiele in HD kostenlos, einschließlich Top AFL Australian Football-Action ohne Anmeldung. Genießen Sie reibungslose Streams und jetzt ansehen."
+				},
+				"futsal": {
+					"title": "Eplsite Futsal | Live-Spiele & Rasante Action",
+					"description": "Schauen Sie Eplsite Futsal-Spiele in HD kostenlos ohne Anmeldung. Genießen Sie hochwertige Streams von Top-Hallenfußball-Action. Jetzt ansehen."
+				},
+				"badminton": {
+					"title": "Eplsite Badminton | Live-Spiele & Turnier-Streams",
+					"description": "Schauen Sie Eplsite Badminton in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose, hochwertige Streams von Top-Badminton-Events. Jetzt ansehen."
+				},
+				"netball": {
+					"title": "Eplsite Netball | Live-Spiele & Top-Liga-Streams",
+					"description": "Schauen Sie Eplsite Netball in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose Streams von Top-Netball-Ligen und schneller Action. Jetzt ansehen."
+				},
+				"floorball": {
+					"title": "Eplsite Floorball | Live-Spiele & Schnelle Liga-Action",
+					"description": "Schauen Sie Eplsite Floorball in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose, hochwertige Streams von Top-Floorball-Ligen. Jetzt ansehen."
+				},
+				"boxing": {
+					"title": "Eplsite Boxen | Live-Kämpfe & Meisterschafts-Streams",
+					"description": "Schauen Sie Eplsite Boxen in HD kostenlos ohne Anmeldung. Genießen Sie Top-Profi-Boxkämpfe und schnelle, hochwertige Kampf-Streams. Jetzt ansehen."
+				},
+				"mma": {
+					"title": "Eplsite MMA | Live-Kämpfe & Ultimate Combat-Streams",
+					"description": "Schauen Sie Eplsite MMA in HD kostenlos ohne Anmeldung. Streamen Sie Top-Mixed-Martial-Arts-Kämpfe, UFC und Kampf-Action sofort. Jetzt ansehen."
+				},
+				"snooker": {
+					"title": "Eplsite Snooker | Live-Spiele & Turnier-Highlights",
+					"description": "Schauen Sie Eplsite Snooker in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose Streams von Top-Snooker-Turnieren und Billard-Action. Jetzt ansehen."
+				},
+				"billiard": {
+					"title": "Eplsite Billard | Live-Spiele & Billard-Action",
+					"description": "Schauen Sie Eplsite Billard in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose Streams von Top-Pool, Snooker und Billard-Turnieren. Jetzt ansehen."
+				},
+				"table-tennis": {
+					"title": "Eplsite Tischtennis | Live-Spiele & Top-Turniere",
+					"description": "Schauen Sie Eplsite Tischtennis in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose Streams von Top-Tischtennis-Events und schneller Action. Jetzt ansehen."
+				},
+				"padel-tennis": {
+					"title": "Eplsite Padel | Live-Spiele & Top-Turniere",
+					"description": "Schauen Sie Eplsite Padel in HD kostenlos ohne Anmeldung. Genießen Sie schnelle, hochwertige Streams von Top-Padel und Tennis-Action. Jetzt ansehen."
+				},
+				"squash": {
+					"title": "Eplsite Squash | Live-Spiele & Top-Turnier-Action",
+					"description": "Schauen Sie Eplsite Squash in HD kostenlos ohne Anmeldung. Genießen Sie schnelle, hochwertige Streams von Top-Squash-Turnieren. Schauen Sie die Action jetzt."
+				},
+				"motorsport": {
+					"title": "Eplsite Motorsport | Live-Rennen & F1, MotoGP-Streams",
+					"description": "Schauen Sie Eplsite Motorsport live kostenlos ohne Anmeldung. Genießen Sie hochwertige Streams von F1, MotoGP und Top-Motorsport-Events. Jetzt ansehen."
+				},
+				"racing": {
+					"title": "Eplsite Rennsport | Live-Motorsport & Strecken-Action",
+					"description": "Schauen Sie Eplsite Rennsport in HD kostenlos ohne Anmeldung. Genießen Sie Hochgeschwindigkeits-Motorsport-Action, Top-Rennen und reibungslose Streams. Jetzt ansehen."
+				},
+				"cycling": {
+					"title": "Eplsite Radsport | Live-Rennen & Tour-Highlights",
+					"description": "Schauen Sie Eplsite Radsport in HD kostenlos ohne Anmeldung. Genießen Sie Top-Straßenrennen, Touren und Profi-Radsport-Streams. Folgen Sie der Action jetzt."
+				},
+				"equestrianism": {
+					"title": "Eplsite Reitsport | Live-Reitsport-Events",
+					"description": "Schauen Sie Eplsite Reitsport in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose Streams von Top-Reitsport und Pferdesport-Wettbewerben. Jetzt ansehen."
+				},
+				"golf": {
+					"title": "Eplsite Golf | Live-Turniere & Highlights",
+					"description": "Schauen Sie Eplsite Golf in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose Streams von Top-PGA und professionellen Golf-Events. Abschlagen und jetzt ansehen."
+				},
+				"field-hockey": {
+					"title": "Eplsite Feldhockey | Live-Spiele & Top-Turniere",
+					"description": "Schauen Sie Eplsite Feldhockey in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose Streams von Top-Feldhockey-Ligen und schneller Action. Jetzt ansehen."
+				},
+				"lacrosse": {
+					"title": "Eplsite Lacrosse | Live-Spiele & Pro-Liga-Action",
+					"description": "Schauen Sie Eplsite Lacrosse in HD kostenlos ohne Anmeldung. Genießen Sie schnelle, hochwertige Streams von Top-Lacrosse-Spielen und Ligen. Jetzt ansehen."
+				},
+				"athletics": {
+					"title": "Eplsite Leichtathletik | Live-Leichtathletik-Events",
+					"description": "Schauen Sie Eplsite Leichtathletik in HD kostenlos ohne Anmeldung. Genießen Sie Top-Leichtathletik-Events, reibungslose Streams und sofortigen Zugang. Jetzt ansehen."
+				},
+				"gymnastics": {
+					"title": "Eplsite Turnen | Live-Übungen & Wettbewerbs-Streams",
+					"description": "Schauen Sie Eplsite Turnen in HD kostenlos ohne Anmeldung. Genießen Sie Top-Kunstturnen und rhythmische Gymnastik-Events mit reibungslosen, hochwertigen Streams. Jetzt ansehen."
+				},
+				"weightlifting": {
+					"title": "Eplsite Gewichtheben | Live-Heben & Wettbewerbs-Streams",
+					"description": "Schauen Sie Eplsite Gewichtheben in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose, hochwertige Streams von Top-Gewichtheben-Events. Jetzt ansehen."
+				},
+				"climbing": {
+					"title": "Eplsite Klettern | Live-Wettbewerbe & Kletter-Events",
+					"description": "Schauen Sie Eplsite Klettern in HD kostenlos ohne Anmeldung. Genießen Sie Top-Sportklettern und Bouldern-Wettbewerbe mit reibungslosen, hochwertigen Streams. Jetzt ansehen."
+				},
+				"bandy": {
+					"title": "Eplsite Bandy | Live-Spiele & Liga-Action",
+					"description": "Schauen Sie Eplsite Bandy in HD kostenlos ohne Anmeldung. Genießen Sie Top-Bandy-Ligen und schnelle Eishockey-Action. Jetzt ansehen."
+				},
+				"curling": {
+					"title": "Eplsite Curling | Live-Spiele & Meisterschafts-Streams",
+					"description": "Schauen Sie Eplsite Curling in HD kostenlos ohne Anmeldung. Genießen Sie Top-Curling-Turniere und reibungslose, hochwertige Streams. Jetzt ansehen."
+				},
+				"triathlon": {
+					"title": "Eplsite Triathlon | Live-Rennen & Event-Streams",
+					"description": "Schauen Sie Eplsite Triathlon in HD kostenlos ohne Anmeldung. Genießen Sie Top-Schwimmen, Radfahren und Lauf-Action mit reibungslosen, hochwertigen Streams. Jetzt ansehen."
+				},
+				"water-sports": {
+					"title": "Eplsite Wassersport | Live-Events & Action-Streams",
+					"description": "Schauen Sie Eplsite Wassersport in HD kostenlos ohne Anmeldung. Genießen Sie Top-Schwimmen, Surfen und Wassersport-Events mit reibungslosen, hochwertigen Streams. Jetzt starten."
+				},
+				"water-polo": {
+					"title": "Eplsite Wasserball | Live-Spiele & Top-Liga-Action",
+					"description": "Schauen Sie Eplsite Wasserball in HD kostenlos ohne Anmeldung. Genießen Sie reibungslose, hochwertige Streams von Top-Wasserball-Ligen und Spielen. Jetzt ansehen."
+				},
+				"sailing": {
+					"title": "Eplsite Segeln | Live-Rennen & Regatta-Streams",
+					"description": "Schauen Sie Eplsite Segeln in HD kostenlos ohne Anmeldung. Genießen Sie Top-Segel-Regattas und Yacht-Rennen mit reibungslosen, hochwertigen Streams. Jetzt ansehen."
+				},
+				"bowling": {
+					"title": "Eplsite Bowling | Live-Spiele & Turnier-Streams",
+					"description": "Schauen Sie Eplsite Bowling in HD kostenlos ohne Anmeldung. Genießen Sie Top-Bowling-Ligen und hochwertige Streams. Verpassen Sie keinen Strike und jetzt ansehen."
+				},
+				"darts": {
+					"title": "Eplsite Darts | Live-Spiele & Meisterschafts-Streams",
+					"description": "Schauen Sie Eplsite Darts in HD kostenlos ohne Anmeldung. Genießen Sie Top-Profi-Darts-Events mit reibungslosen, hochwertigen Streams. Jetzt ansehen."
+				},
+				"chess": {
+					"title": "Eplsite Schach | Live-Turniere & Großmeister-Spiele",
+					"description": "Schauen Sie Eplsite Schach in HD kostenlos ohne Anmeldung. Folgen Sie Top-Schach-Turnieren, Großmeister-Spielen und genießen Sie schnelle, hochwertige Streams."
+				},
+				"e-sports": {
+					"title": "Eplsite E-Sport | Live-Spiele & Pro-Gaming-Streams",
+					"description": "Schauen Sie Eplsite E-Sport in HD kostenlos ohne Anmeldung. Streamen Sie Top-Profi-Gaming-Turniere und genießen Sie reibungsloses, hochwertiges Gameplay live."
+				},
+				"others": {
+					"title": "Eplsite Andere | Live-Sport & Event-Streams",
+					"description": "Schauen Sie Eplsite Andere in HD kostenlos ohne Anmeldung. Genießen Sie hochwertige Streams von verschiedenen Sportarten und einzigartigen Events. Jetzt ansehen."
+				},
+				"combat-sport": {
+					"title": "Eplsite Kampfsport | MMA, Boxen & Live-Kämpfe",
+					"description": "Schauen Sie Eplsite Kampfsport live in HD kostenlos ohne Anmeldung. Genießen Sie Top-MMA, Boxen und Kampfkunst-Streams. Verpassen Sie die Action jetzt nicht."
+				},
+				"winter-sport": {
+					"title": "Eplsite Wintersport | Live-Skifahren & Snowboarden",
+					"description": "Schauen Sie Eplsite Wintersport in HD kostenlos ohne Anmeldung. Genießen Sie Top-Skifahren, Snowboarden und andere Winter-Events mit reibungslosen, hochwertigen Streams. Jetzt starten."
+				},
+				"rugby-sevens": {
+					"title": "Eplsite Rugby Sevens | Live Rugby Sevens-Streams",
+					"description": "Eplsite Rugby Sevens bietet kostenlose HD-Sevens-Turniere mit reibungsloser Wiedergabe und ohne Anmeldung. Schauen Sie rasante Rugby Sevens-Action live heute."
+				},
+				"extreme-sport": {
+					"title": "Eplsite Extremsport | Live-Extremsport-Streams",
+					"description": "Eplsite Extremsport bringt kostenlose HD-Berichterstattung über Top-Extremsport-Wettbewerbe. Keine Anmeldung erforderlich. Streamen Sie aufregende Extremsport-Events jetzt."
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2p4u | Live-Sport-Streams und Kommende Spiele",
+				"description": "Entdecken Sie P2p4u für kostenlose HD-Streams aller Live- und kommenden Sportspiele. Schneller Zugriff ohne Anmeldung—sehen Sie jetzt Ihre Lieblings-Events."
+			},
+			"sports": {
+				"football": {
+					"title": "P2p4u Fußball | Live Fußball Streams Online",
+					"description": "Sehen Sie P2p4u Fußball kostenlos in HD mit schnellen Fußball-Streams ohne Anmeldung. Genießen Sie reibungslosen Zugriff auf Top-Ligen und Spiele. Jetzt live ansehen."
+				},
+				"basketball": {
+					"title": "P2p4u Basketball | Live NBA Streams",
+					"description": "Sehen Sie P2p4u Basketball kostenlos in HD mit schnellen NBA- und Basketball-Streams. Keine Anmeldung, reibungsloser Zugriff und Top-Qualität. Jetzt live ansehen."
+				},
+				"tennis": {
+					"title": "P2p4u Tennis | Live Grand Slam Streams",
+					"description": "Erleben Sie P2p4u Tennis in HD mit kostenlosen, schnellen Streams von ATP- und WTA-Events. Keine Anmeldung erforderlich. Jetzt live ansehen."
+				},
+				"ice-hockey": {
+					"title": "P2p4u Eishockey | Live NHL Hockey Streams",
+					"description": "Streamen Sie P2p4u Eishockey kostenlos in HD mit reibungsloser NHL-Hockey-Action. Keine Anmeldung, schneller Zugriff und Top-Qualität. Jetzt live ansehen."
+				},
+				"baseball": {
+					"title": "P2p4u Baseball | Live MLB Streams",
+					"description": "Genießen Sie P2p4u Baseball mit kostenlosen HD-Streams von MLB-Spielen. Schnelles Laden, keine Anmeldung, einfacher Zugriff. Jetzt live ansehen."
+				},
+				"rugby-union": {
+					"title": "P2p4u Rugby Union | Live Rugby Streams",
+					"description": "Sehen Sie P2p4u Rugby Union kostenlos in HD mit reibungsloser Live-Rugby-Übertragung. Keine Anmeldung nötig—direkt in die Action einsteigen."
+				},
+				"rugby-league": {
+					"title": "P2p4u Rugby League | Live Rugby Streams",
+					"description": "Streamen Sie P2p4u Rugby League mit kostenloser, hochwertiger Rugby-Action. Keine Anmeldung und schneller Zugriff. Jetzt ansehen."
+				},
+				"cricket": {
+					"title": "P2p4u Cricket | Live Spiel Streams",
+					"description": "Genießen Sie P2p4u Cricket mit kostenlosen HD-Streams von globalen Turnieren. Keine Registrierung erforderlich. Jetzt live ansehen."
+				},
+				"american-football": {
+					"title": "P2p4u American Football | NFL Live Streams",
+					"description": "Sehen Sie P2p4u American Football in HD mit kostenlosen NFL-Streams. Keine Anmeldung, schneller Zugriff, Top-Qualität. Jetzt streamen."
+				},
+				"volleyball": {
+					"title": "P2p4u Volleyball | Live Spiel Streams",
+					"description": "Streamen Sie P2p4u Volleyball kostenlos mit reibungsloser HD-Action von Top-Ligen. Kein Konto nötig—sofort ansehen."
+				},
+				"beach-volleyball": {
+					"title": "P2p4u Beachvolleyball | Live Sand Court Streams",
+					"description": "Sehen Sie P2p4u Beachvolleyball kostenlos in HD mit Top-Beach-Turnieren. Keine Anmeldung erforderlich. Jetzt ansehen."
+				},
+				"handball": {
+					"title": "P2p4u Handball | Live Spiel Streams",
+					"description": "Streamen Sie P2p4u Handball kostenlos mit schneller, qualitativ hochwertiger HD-Übertragung. Keine Anmeldung nötig—jetzt live ansehen."
+				},
+				"beach-handball": {
+					"title": "P2p4u Beachhandball | Live Spiel Streams",
+					"description": "Genießen Sie P2p4u Beachhandball in HD mit kostenlosen, reibungslosen Streams. Keine Registrierung erforderlich. Jetzt live ansehen."
+				},
+				"beach-soccer": {
+					"title": "P2p4u Strandfußball | Live Sand Fußball Streams",
+					"description": "Sehen Sie P2p4u Strandfußball kostenlos mit HD-Strandfußball-Streams. Keine Anmeldung erforderlich. Jetzt bei Live-Spielen dabei sein."
+				},
+				"aussie-rules": {
+					"title": "P2p4u Aussie Rules | AFL Live Streams",
+					"description": "Streamen Sie P2p4u Aussie Rules kostenlos mit HD-AFL-Action. Keine Registrierung—jetzt live ansehen."
+				},
+				"futsal": {
+					"title": "P2p4u Futsal | Live Indoor Fußball Streams",
+					"description": "Genießen Sie P2p4u Futsal kostenlos mit schneller, HD-Indoor-Fußball-Action. Keine Anmeldung erforderlich. Jetzt ansehen."
+				},
+				"badminton": {
+					"title": "P2p4u Badminton | Live Spiel Streams",
+					"description": "Sehen Sie P2p4u Badminton mit kostenlosen HD-Streams von Top-Turnieren. Keine Anmeldung nötig—jetzt live streamen."
+				},
+				"netball": {
+					"title": "P2p4u Netball | Live Spiel Streams",
+					"description": "Streamen Sie P2p4u Netball kostenlos in HD mit schnellem, reibungslosem Zugriff. Keine Anmeldung erforderlich. Jetzt ansehen."
+				},
+				"floorball": {
+					"title": "P2p4u Floorball | Live Spiel Streams",
+					"description": "Genießen Sie P2p4u Floorball kostenlos mit klaren HD-Streams. Keine Registrierung nötig. Sofort Spiele ansehen."
+				},
+				"boxing": {
+					"title": "P2p4u Boxen | Live Fight Night Streams",
+					"description": "Streamen Sie P2p4u Boxen kostenlos in HD mit großen Kampfabenden. Keine Anmeldung erforderlich. Jetzt live ansehen."
+				},
+				"mma": {
+					"title": "P2p4u MMA | Live Fight Streams",
+					"description": "Sehen Sie P2p4u MMA mit kostenloser HD-UFC-Kampfübertragung. Keine Registrierung nötig. Heute live streamen."
+				},
+				"snooker": {
+					"title": "P2p4u Snooker | Live Tisch Streams",
+					"description": "Genießen Sie P2p4u Snooker mit reibungslosen HD-Streams. Keine Anmeldung—jetzt Turniere live ansehen."
+				},
+				"billiard": {
+					"title": "P2p4u Billard | Live Cue Sports Streams",
+					"description": "Streamen Sie P2p4u Billard kostenlos mit HD-Billard-Action. Keine Registrierung erforderlich. Jetzt ansehen."
+				},
+				"table-tennis": {
+					"title": "P2p4u Tischtennis | Live Ping Pong Streams",
+					"description": "Sehen Sie P2p4u Tischtennis mit kostenlosen HD-Tischtennis-Streams. Keine Anmeldung nötig. Jetzt live ansehen."
+				},
+				"padel-tennis": {
+					"title": "P2p4u Padel Tennis | Live Padel Streams",
+					"description": "Streamen Sie P2p4u Padel Tennis kostenlos mit HD-Spielen. Schneller Zugriff, keine Anmeldung. Sofort live ansehen."
+				},
+				"squash": {
+					"title": "P2p4u Squash | Live Spiel Streams",
+					"description": "Genießen Sie P2p4u Squash mit hochwertigen HD-Streams. Keine Registrierung erforderlich—jetzt ansehen."
+				},
+				"motorsport": {
+					"title": "P2p4u Motorsport | Live Motor Racing Streams",
+					"description": "Streamen Sie P2p4u Motorsport kostenlos in HD mit Top-Motorsport-Events. Keine Anmeldung erforderlich. Live ansehen."
+				},
+				"racing": {
+					"title": "P2p4u Rennsport | Live Speed Streams",
+					"description": "Sehen Sie P2p4u Rennsport mit kostenloser HD-Übertragung großer Renn-Events. Keine Anmeldung nötig. Jetzt streamen."
+				},
+				"cycling": {
+					"title": "P2p4u Radsport | Live Rennen Streams",
+					"description": "Streamen Sie P2p4u Radsport kostenlos mit hochwertigen HD-Touren. Keine Anmeldung—jetzt live ansehen."
+				},
+				"equestrianism": {
+					"title": "P2p4u Reitsport | Live Pferdesport Streams",
+					"description": "Sehen Sie P2p4u Reitsport kostenlos mit HD-Reitwettbewerben. Keine Registrierung nötig. Jetzt starten."
+				},
+				"golf": {
+					"title": "P2p4u Golf | Live PGA Streams",
+					"description": "Streamen Sie P2p4u Golf kostenlos mit HD-PGA- und globalen Events. Keine Anmeldung—jetzt live Runden ansehen."
+				},
+				"field-hockey": {
+					"title": "P2p4u Feldhockey | Live Spiel Streams",
+					"description": "Genießen Sie P2p4u Feldhockey in HD mit kostenlosen, schnellen Streams. Kein Konto erforderlich. Jetzt ansehen."
+				},
+				"lacrosse": {
+					"title": "P2p4u Lacrosse | Live Spiel Streams",
+					"description": "Streamen Sie P2p4u Lacrosse kostenlos mit reibungsloser HD-Übertragung. Keine Anmeldung nötig—sofort ansehen."
+				},
+				"athletics": {
+					"title": "P2p4u Leichtathletik | Live Track Streams",
+					"description": "Sehen Sie P2p4u Leichtathletik kostenlos in HD mit Top-Leichtathletik-Events. Keine Anmeldung erforderlich. Jetzt streamen."
+				},
+				"gymnastics": {
+					"title": "P2p4u Turnen | Live Artistik Streams",
+					"description": "Genießen Sie P2p4u Turnen mit kostenloser HD-Übertragung von Top-Wettbewerben. Keine Anmeldung nötig. Jetzt ansehen."
+				},
+				"weightlifting": {
+					"title": "P2p4u Gewichtheben | Live Kraft Streams",
+					"description": "Streamen Sie P2p4u Gewichtheben kostenlos mit HD-Hebewettbewerben. Keine Registrierung nötig. Jetzt live ansehen."
+				},
+				"climbing": {
+					"title": "P2p4u Klettern | Live Felssport Streams",
+					"description": "Sehen Sie P2p4u Klettern mit kostenloser HD-Sportklettern-Übertragung. Keine Anmeldung—jetzt ansehen."
+				},
+				"bandy": {
+					"title": "P2p4u Bandy | Live Eis Fußball Streams",
+					"description": "Sehen Sie P2p4u Bandy mit schnellen, kostenlosen HD-Streams. Keine Registrierung nötig. Jetzt live ansehen."
+				},
+				"curling": {
+					"title": "P2p4u Curling | Live Eis Spiel Streams",
+					"description": "Streamen Sie P2p4u Curling kostenlos in HD mit reibungslosem Zugriff. Keine Anmeldung nötig. Jetzt live ansehen."
+				},
+				"triathlon": {
+					"title": "P2p4u Triathlon | Live Rennen Streams",
+					"description": "Sehen Sie P2p4u Triathlon kostenlos mit HD-Multisport-Übertragung. Keine Anmeldung erforderlich—jetzt streamen."
+				},
+				"water-sports": {
+					"title": "P2p4u Wassersport | Live Aquatik Streams",
+					"description": "Streamen Sie P2p4u Wassersport kostenlos in HD. Keine Anmeldung—jetzt Wassersport-Action live ansehen."
+				},
+				"water-polo": {
+					"title": "P2p4u Wasserball | Live Spiel Streams",
+					"description": "Genießen Sie P2p4u Wasserball mit kostenlosen HD-Streams. Keine Registrierung erforderlich. Jetzt live ansehen."
+				},
+				"sailing": {
+					"title": "P2p4u Segeln | Live Regatta Streams",
+					"description": "Sehen Sie P2p4u Segeln kostenlos mit reibungslosen HD-Renn-Streams. Keine Anmeldung—jetzt ansehen."
+				},
+				"bowling": {
+					"title": "P2p4u Bowling | Live Bahn Streams",
+					"description": "Genießen Sie P2p4u Bowling mit kostenloser HD-Bowling-Action. Keine Anmeldung erforderlich—jetzt live ansehen."
+				},
+				"darts": {
+					"title": "P2p4u Darts | Live Turnier Streams",
+					"description": "Streamen Sie P2p4u Darts kostenlos in HD mit Top-Events. Keine Anmeldung nötig. Jetzt ansehen."
+				},
+				"chess": {
+					"title": "P2p4u Schach | Live Turnier Streams",
+					"description": "Sehen Sie P2p4u Schach kostenlos mit HD-Übertragung großer Partien. Keine Registrierung nötig. Jetzt ansehen."
+				},
+				"e-sports": {
+					"title": "P2p4u E-Sport | Live Gaming Streams",
+					"description": "Streamen Sie P2p4u E-Sport kostenlos mit hochwertigen E-Sport-Turnieren. Keine Anmeldung erforderlich. Sofort ansehen."
+				},
+				"others": {
+					"title": "P2p4u Andere | Live Sport Streams",
+					"description": "Entdecken Sie P2p4u Andere für kostenlose HD-Streams verschiedener Sportarten. Kein Konto nötig. Jetzt ansehen."
+				},
+				"combat-sport": {
+					"title": "P2p4u Kampfsport | Live Fight Streams",
+					"description": "Sehen Sie P2p4u Kampfsport kostenlos mit HD-Kampf-Action von Top-Events. Kein Konto nötig—jetzt streamen."
+				},
+				"winter-sport": {
+					"title": "P2p4u Wintersport | Live Schnee Action Streams",
+					"description": "Streamen Sie P2p4u Wintersport kostenlos mit HD-Schnee- und Eis-Events. Kein Konto erforderlich. Jetzt ansehen."
+				},
+				"rugby-sevens": {
+					"title": "P2p4u Rugby Sevens | Live Rugby Sevens Streams",
+					"description": "P2p4u Rugby Sevens bietet schnelle, kostenlose HD-Sevens-Turniere ohne Anmeldung. Sehen Sie temporeiche Rugby-Sevens-Action live und genießen Sie reibungsloses Streaming jetzt."
+				},
+				"extreme-sport": {
+					"title": "P2p4u Extremsport | Live Extremsport Streams",
+					"description": "P2p4u Extremsport liefert kostenlose HD-Übertragung von Top-Extremwettbewerben. Keine Registrierung erforderlich. Streamen Sie aufregende Extremsport-Events heute."
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "Streamhunter | Live-Sport-Streams & Kommende Spiele",
+				"description": "Streamhunter bietet kostenlose HD-Streams für alle Sportarten mit kommenden und Live-Spielen, die täglich aktualisiert werden. Schneller Zugriff, keine Anmeldung erforderlich. Jetzt ansehen."
+			},
+			"sports": {
+				"football": {
+					"title": "Streamhunter Fußball | Live Spiele Online",
+					"description": "Streamhunter Fußball liefert kostenlose HD-Streams von Fußballspielen weltweit. Genießen Sie schnellen Zugriff ohne Anmeldung. Jetzt ansehen."
+				},
+				"basketball": {
+					"title": "Streamhunter Basketball | Live NBA Action",
+					"description": "Streamhunter Basketball bietet kostenlose HD-Streams von NBA und globalen Ligen. Einfacher Zugriff ohne Registrierung. Jetzt live ansehen."
+				},
+				"tennis": {
+					"title": "Streamhunter Tennis | Live Grand Slam Streams",
+					"description": "Streamhunter Tennis ermöglicht Ihnen ATP- und WTA-Spiele in HD kostenlos anzusehen. Keine Anmeldung erforderlich. Jetzt Tennis live streamen."
+				},
+				"ice-hockey": {
+					"title": "Streamhunter Eishockey | Live NHL Streams",
+					"description": "Streamhunter Eishockey bringt kostenlose HD-Action von NHL und globalen Ligen. Reibungsloses Streaming ohne Anmeldung. Jetzt ansehen."
+				},
+				"baseball": {
+					"title": "Streamhunter Baseball | Live MLB Streams",
+					"description": "Streamhunter Baseball bietet HD-MLB- und internationale Liga-Streams kostenlos. Keine Registrierung erforderlich. Jetzt live Baseball ansehen."
+				},
+				"rugby-union": {
+					"title": "Streamhunter Rugby Union | Live Rugby Streams",
+					"description": "Streamhunter Rugby Union bietet kostenlose HD-Streams von Top-Ligen und internationalen Spielen. Keine Anmeldung nötig. Jetzt Rugby live ansehen."
+				},
+				"rugby-league": {
+					"title": "Streamhunter Rugby League | Live Rugby Events",
+					"description": "Streamhunter Rugby League liefert kostenlose HD-Streams von NRL, Super League und mehr. Keine Registrierung. Jetzt live ansehen."
+				},
+				"cricket": {
+					"title": "Streamhunter Cricket | Live Spiel Streams",
+					"description": "Streamhunter Cricket streamt Tests, ODI und T20 in HD kostenlos. Schnelles Laden ohne Anmeldung. Jetzt live Cricket ansehen."
+				},
+				"american-football": {
+					"title": "Streamhunter American Football | NFL Live Streams",
+					"description": "Streamhunter American Football bietet kostenlose HD-NFL- und NCAA-Streams ohne Anmeldung. Schnelle, hochwertige Übertragung. Jetzt live ansehen."
+				},
+				"volleyball": {
+					"title": "Streamhunter Volleyball | Live Volleyball Streams",
+					"description": "Streamhunter Volleyball bietet kostenlose HD-Spiele von globalen Ligen. Keine Anmeldung erforderlich. Jetzt live Volleyball ansehen."
+				},
+				"beach-volleyball": {
+					"title": "Streamhunter Beachvolleyball | Live Beach Action",
+					"description": "Streamhunter Beachvolleyball streamt Top-FIVB- und Pro-Touren in HD. Kostenloser Zugriff ohne Registrierung. Jetzt ansehen."
+				},
+				"handball": {
+					"title": "Streamhunter Handball | Live Handball Streams",
+					"description": "Streamhunter Handball bietet kostenlose HD-Spiele von Top-Ligen und Turnieren. Keine Anmeldung nötig. Jetzt ansehen."
+				},
+				"beach-handball": {
+					"title": "Streamhunter Beachhandball | Live Beach Spiele",
+					"description": "Streamhunter Beachhandball bringt kostenlose HD-Action von globalen Events. Keine Registrierung erforderlich. Jetzt live ansehen."
+				},
+				"beach-soccer": {
+					"title": "Streamhunter Strandfußball | Live Beach Games",
+					"description": "Streamhunter Strandfußball bietet kostenlose HD-Strandfußball-Streams ohne Anmeldung. Genießen Sie schnelle, hochwertige Übertragung jetzt."
+				},
+				"aussie-rules": {
+					"title": "Streamhunter Aussie Rules | Live AFL Streams",
+					"description": "Streamhunter Aussie Rules bietet kostenlose HD-AFL-Action ohne Registrierung. Schnelles, reibungsloses Streaming. Jetzt ansehen."
+				},
+				"futsal": {
+					"title": "Streamhunter Futsal | Live Futsal Streams",
+					"description": "Streamhunter Futsal liefert kostenlose HD-Futsal-Spiele weltweit. Keine Anmeldung nötig. Jetzt live ansehen."
+				},
+				"badminton": {
+					"title": "Streamhunter Badminton | Live Badminton Streams",
+					"description": "Streamhunter Badminton streamt BWF-Turniere in HD kostenlos. Keine Registrierung erforderlich. Jetzt ansehen."
+				},
+				"netball": {
+					"title": "Streamhunter Netball | Live Netball Streams",
+					"description": "Streamhunter Netball bietet kostenlosen HD-Zugriff auf Top-Ligen und Turniere. Keine Anmeldung erforderlich. Jetzt live ansehen."
+				},
+				"floorball": {
+					"title": "Streamhunter Floorball | Live Floorball Streams",
+					"description": "Streamhunter Floorball bietet kostenlose HD-Spiele von Top-Ligen. Keine Registrierung. Jetzt live Action ansehen."
+				},
+				"boxing": {
+					"title": "Streamhunter Boxen | Live Fight Night Streams",
+					"description": "Streamhunter Boxen liefert kostenlose HD-Streams großer Kämpfe. Keine Registrierung nötig. Jetzt Boxen live ansehen."
+				},
+				"mma": {
+					"title": "Streamhunter MMA | Live MMA Fight Streams",
+					"description": "Streamhunter MMA bietet kostenlose HD-Action von Top-Promotionen. Keine Anmeldung erforderlich. Jetzt live Kämpfe ansehen."
+				},
+				"snooker": {
+					"title": "Streamhunter Snooker | Live Snooker Streams",
+					"description": "Streamhunter Snooker streamt professionelle Turniere in HD kostenlos. Keine Registrierung. Jetzt live ansehen."
+				},
+				"billiard": {
+					"title": "Streamhunter Billard | Live Billard Streams",
+					"description": "Streamhunter Billard bietet kostenlose HD-Spiele und Turniere ohne Anmeldung. Jetzt ansehen."
+				},
+				"table-tennis": {
+					"title": "Streamhunter Tischtennis | Live Ping Pong Streams",
+					"description": "Streamhunter Tischtennis bietet kostenlose HD-ITTF-Spiele. Keine Registrierung erforderlich. Jetzt live Action ansehen."
+				},
+				"padel-tennis": {
+					"title": "Streamhunter Padel Tennis | Live Padel Streams",
+					"description": "Streamhunter Padel Tennis bietet kostenlose HD-Spiele von großen Touren. Keine Anmeldung. Jetzt live Padel ansehen."
+				},
+				"squash": {
+					"title": "Streamhunter Squash | Live Squash Streams",
+					"description": "Streamhunter Squash streamt PSA-Spiele in HD kostenlos. Keine Registrierung. Jetzt Squash live ansehen."
+				},
+				"motorsport": {
+					"title": "Streamhunter Motorsport | Live Motor Racing",
+					"description": "Streamhunter Motorsport bietet kostenlose HD-Renn-Streams von großen Serien. Keine Anmeldung. Jetzt Motorsport live ansehen."
+				},
+				"racing": {
+					"title": "Streamhunter Rennsport | Live Rennen Streams",
+					"description": "Streamhunter Rennsport bietet kostenlose HD-Motorsport-Streams ohne Registrierung. Genießen Sie schnelle Live-Action jetzt."
+				},
+				"cycling": {
+					"title": "Streamhunter Radsport | Live Radsport Streams",
+					"description": "Streamhunter Radsport streamt große Touren und Events in HD kostenlos. Keine Anmeldung. Jetzt live Radsport ansehen."
+				},
+				"equestrianism": {
+					"title": "Streamhunter Reitsport | Live Pferde Events",
+					"description": "Streamhunter Reitsport liefert kostenlose HD-Streams von globalen Pferdewettbewerben. Keine Registrierung. Jetzt live ansehen."
+				},
+				"golf": {
+					"title": "Streamhunter Golf | Live Golf Streams",
+					"description": "Streamhunter Golf bietet kostenlose HD-PGA- und globale Tour-Streams. Keine Anmeldung. Jetzt Golf live ansehen."
+				},
+				"field-hockey": {
+					"title": "Streamhunter Feldhockey | Live Hockey Streams",
+					"description": "Streamhunter Feldhockey streamt globale Spiele in HD kostenlos. Keine Anmeldung erforderlich. Jetzt live ansehen."
+				},
+				"lacrosse": {
+					"title": "Streamhunter Lacrosse | Live Lacrosse Streams",
+					"description": "Streamhunter Lacrosse bietet kostenlose HD-Spiele von großen Ligen. Keine Registrierung. Jetzt ansehen."
+				},
+				"athletics": {
+					"title": "Streamhunter Leichtathletik | Live Leichtathletik Streams",
+					"description": "Streamhunter Leichtathletik streamt globale Events in HD kostenlos. Keine Anmeldung erforderlich. Jetzt Leichtathletik live ansehen."
+				},
+				"gymnastics": {
+					"title": "Streamhunter Turnen | Live Turnen Streams",
+					"description": "Streamhunter Turnen bietet kostenlose HD-Wettbewerbs-Streams ohne Registrierung. Jetzt live ansehen."
+				},
+				"weightlifting": {
+					"title": "Streamhunter Gewichtheben | Live Gewichtheben Streams",
+					"description": "Streamhunter Gewichtheben bietet kostenlose HD-Wettbewerbe ohne Anmeldung. Genießen Sie schnellen Zugriff auf Live-Gewichtheben-Events jetzt."
+				},
+				"climbing": {
+					"title": "Streamhunter Klettern | Live Klettern Streams",
+					"description": "Streamhunter Klettern streamt Lead-, Boulder- und Speed-Events in HD kostenlos. Keine Anmeldung. Jetzt live ansehen."
+				},
+				"bandy": {
+					"title": "Streamhunter Bandy | Live Bandy Streams",
+					"description": "Streamhunter Bandy bietet kostenlose HD-Spiele ohne Anmeldung. Jetzt Bandy live ansehen."
+				},
+				"curling": {
+					"title": "Streamhunter Curling | Live Curling Streams",
+					"description": "Streamhunter Curling bietet kostenlose HD-Turnier-Übertragung ohne Registrierung. Jetzt live Curling ansehen."
+				},
+				"triathlon": {
+					"title": "Streamhunter Triathlon | Live Rennen Streams",
+					"description": "Streamhunter Triathlon streamt globale Triathlon-Events in HD kostenlos. Keine Anmeldung. Jetzt live ansehen."
+				},
+				"water-sports": {
+					"title": "Streamhunter Wassersport | Live Aquatik Streams",
+					"description": "Streamhunter Wassersport bietet kostenlose HD-Streams von Top-Aquatik-Events. Keine Registrierung. Jetzt live ansehen."
+				},
+				"water-polo": {
+					"title": "Streamhunter Wasserball | Live Polo Streams",
+					"description": "Streamhunter Wasserball bietet kostenlose HD-Spiele ohne Anmeldung. Jetzt live Wasserball ansehen."
+				},
+				"sailing": {
+					"title": "Streamhunter Segeln | Live Segeln Streams",
+					"description": "Streamhunter Segeln streamt globale Regatten in HD kostenlos. Keine Registrierung. Jetzt live Segeln ansehen."
+				},
+				"bowling": {
+					"title": "Streamhunter Bowling | Live Bowling Streams",
+					"description": "Streamhunter Bowling bietet kostenlose HD-Turniere ohne Anmeldung. Jetzt live Bowling ansehen."
+				},
+				"darts": {
+					"title": "Streamhunter Darts | Live Darts Streams",
+					"description": "Streamhunter Darts bietet kostenlose HD-PDC- und globale Darts-Streams. Keine Registrierung. Jetzt live Darts ansehen."
+				},
+				"chess": {
+					"title": "Streamhunter Schach | Live Schach Partien",
+					"description": "Streamhunter Schach streamt Top-Turniere in HD kostenlos. Keine Anmeldung. Jetzt Schach live ansehen."
+				},
+				"e-sports": {
+					"title": "Streamhunter E-Sport | Live E-Sport Streams",
+					"description": "Streamhunter E-Sport bietet kostenlose HD-E-Sport-Turniere. Keine Registrierung erforderlich. Jetzt live ansehen."
+				},
+				"others": {
+					"title": "Streamhunter Andere | Live Sport Streams",
+					"description": "Streamhunter Andere bietet kostenlose HD-Übertragung von Nischen- und aufstrebenden Sportarten. Keine Anmeldung. Jetzt live Action ansehen."
+				},
+				"combat-sport": {
+					"title": "Streamhunter Kampfsport | Live Fight Streams",
+					"description": "Streamhunter Kampfsport bietet kostenlose HD-Action von großen Kampf-Events. Keine Anmeldung. Jetzt live Kämpfe ansehen."
+				},
+				"winter-sport": {
+					"title": "Streamhunter Wintersport | Live Wintersport Events",
+					"description": "Streamhunter Wintersport bietet kostenlose HD-Ski-, Eis- und mehr. Keine Registrierung. Jetzt live ansehen."
+				},
+				"rugby-sevens": {
+					"title": "Streamhunter Rugby Sevens | Live Rugby Sevens Streams",
+					"description": "Streamhunter Rugby Sevens liefert kostenlose HD-Sevens-Turniere ohne Anmeldung. Sehen Sie temporeiche Rugby-Sevens-Action live und genießen Sie reibungsloses, zuverlässiges Streaming jetzt."
+				},
+				"extreme-sport": {
+					"title": "Streamhunter Extremsport | Live Extremsport Streams",
+					"description": "Streamhunter Extremsport bietet kostenlose HD-Action von Top-Extremwettbewerben. Keine Registrierung erforderlich. Streamen Sie aufregende Extremsport-Events heute."
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "Methstreams | Live-Sport-Streams & Kommende Spiele",
+				"description": "Methstreams liefert kostenlose HD-Streams für alle Sportarten mit Live- und kommenden Spielen, die täglich aktualisiert werden. Keine Anmeldung erforderlich. Sofort ansehen."
+			},
+			"sports": {
+				"football": {
+					"title": "Methstreams Fußball | Live Spiele Online",
+					"description": "Methstreams Fußball bietet kostenlose HD-Fußball-Streams ohne Anmeldung. Schneller, zuverlässiger Zugriff auf Live-Spiele. Jetzt ansehen."
+				},
+				"basketball": {
+					"title": "Methstreams Basketball | Live NBA Streams",
+					"description": "Methstreams Basketball bringt kostenlose HD-NBA- und globale Liga-Streams. Keine Registrierung erforderlich. Jetzt live Basketball ansehen."
+				},
+				"tennis": {
+					"title": "Methstreams Tennis | Live Tennis Streams",
+					"description": "Methstreams Tennis liefert ATP- und WTA-Streams in HD kostenlos. Sofortiger Zugriff ohne Anmeldung. Jetzt ansehen."
+				},
+				"ice-hockey": {
+					"title": "Methstreams Eishockey | Live NHL Streams",
+					"description": "Methstreams Eishockey bietet kostenlose HD-NHL- und internationale Streams. Keine Registrierung erforderlich. Jetzt live Hockey ansehen."
+				},
+				"baseball": {
+					"title": "Methstreams Baseball | Live MLB Streams",
+					"description": "Methstreams Baseball bietet HD-MLB- und globale Baseball-Streams kostenlos. Keine Anmeldung erforderlich. Jetzt live ansehen."
+				},
+				"rugby-union": {
+					"title": "Methstreams Rugby Union | Live Rugby Streams",
+					"description": "Methstreams Rugby Union streamt Top-Ligen und internationale Spiele in HD kostenlos. Keine Anmeldung. Jetzt Rugby live ansehen."
+				},
+				"rugby-league": {
+					"title": "Methstreams Rugby League | Live Rugby Spiele",
+					"description": "Methstreams Rugby League liefert kostenlose HD-NRL- und Super-League-Streams. Schneller Zugriff ohne Registrierung. Jetzt ansehen."
+				},
+				"cricket": {
+					"title": "Methstreams Cricket | Live Cricket Streams",
+					"description": "Methstreams Cricket bietet HD-T20-, ODI- und Test-Streams kostenlos. Keine Anmeldung erforderlich. Jetzt ansehen."
+				},
+				"american-football": {
+					"title": "Methstreams American Football | NFL Live Streams",
+					"description": "Methstreams American Football streamt NFL- und NCAA-Spiele in HD kostenlos. Keine Registrierung. Jetzt live ansehen."
+				},
+				"volleyball": {
+					"title": "Methstreams Volleyball | Live Volleyball Streams",
+					"description": "Methstreams Volleyball bietet kostenlose HD-globale Volleyball-Spiele ohne Anmeldung. Jetzt live Volleyball ansehen."
+				},
+				"beach-volleyball": {
+					"title": "Methstreams Beachvolleyball | Live Beach Streams",
+					"description": "Methstreams Beachvolleyball bietet kostenlose HD-FIVB- und Pro-Tour-Streams. Keine Registrierung erforderlich. Jetzt ansehen."
+				},
+				"handball": {
+					"title": "Methstreams Handball | Live Handball Streams",
+					"description": "Methstreams Handball bietet kostenlose HD-Streams von globalen Ligen. Keine Anmeldung nötig. Jetzt Handball live ansehen."
+				},
+				"beach-handball": {
+					"title": "Methstreams Beachhandball | Live Beach Spiele",
+					"description": "Methstreams Beachhandball streamt globale Events in HD ohne Registrierung. Jetzt live ansehen."
+				},
+				"beach-soccer": {
+					"title": "Methstreams Strandfußball | Live Strandfußball",
+					"description": "Methstreams Strandfußball bietet kostenlose HD-Spiele ohne Anmeldung. Genießen Sie schnelle Strandfußball-Streams jetzt."
+				},
+				"aussie-rules": {
+					"title": "Methstreams Aussie Rules | Live AFL Streams",
+					"description": "Methstreams Aussie Rules streamt AFL-Action kostenlos in HD. Keine Registrierung erforderlich. Jetzt ansehen."
+				},
+				"futsal": {
+					"title": "Methstreams Futsal | Live Futsal Streams",
+					"description": "Methstreams Futsal liefert kostenlose HD-Futsal-Spiele weltweit. Keine Anmeldung. Jetzt live ansehen."
+				},
+				"badminton": {
+					"title": "Methstreams Badminton | Live Badminton Streams",
+					"description": "Methstreams Badminton streamt BWF-Turniere in HD kostenlos. Keine Registrierung. Jetzt ansehen."
+				},
+				"netball": {
+					"title": "Methstreams Netball | Live Netball Streams",
+					"description": "Methstreams Netball bietet kostenlose HD-Spiele von Top-Ligen. Keine Anmeldung nötig. Jetzt live Netball ansehen."
+				},
+				"floorball": {
+					"title": "Methstreams Floorball | Live Floorball Streams",
+					"description": "Methstreams Floorball streamt globale Spiele in HD kostenlos. Keine Registrierung. Jetzt ansehen."
+				},
+				"boxing": {
+					"title": "Methstreams Boxen | Live Fight Night",
+					"description": "Methstreams Boxen liefert kostenlose HD-Box-Streams ohne Registrierung. Jetzt live Kämpfe ansehen."
+				},
+				"mma": {
+					"title": "Methstreams MMA | Live MMA Streams",
+					"description": "Methstreams MMA streamt Top-Kampf-Promotionen in HD kostenlos. Keine Anmeldung erforderlich. Jetzt ansehen."
+				},
+				"snooker": {
+					"title": "Methstreams Snooker | Live Snooker Streams",
+					"description": "Methstreams Snooker bietet kostenlose HD-professionelle Snooker-Übertragung. Keine Registrierung. Jetzt live ansehen."
+				},
+				"billiard": {
+					"title": "Methstreams Billard | Live Billard Streams",
+					"description": "Methstreams Billard streamt globale Billard-Events in HD kostenlos. Keine Anmeldung. Jetzt ansehen."
+				},
+				"table-tennis": {
+					"title": "Methstreams Tischtennis | Live Ping Pong",
+					"description": "Methstreams Tischtennis bietet kostenlose HD-ITTF-Streams. Keine Registrierung erforderlich. Jetzt live Tischtennis ansehen."
+				},
+				"padel-tennis": {
+					"title": "Methstreams Padel Tennis | Live Padel Streams",
+					"description": "Methstreams Padel Tennis bietet kostenlose HD-Padel-Action ohne Anmeldung. Jetzt live ansehen."
+				},
+				"squash": {
+					"title": "Methstreams Squash | Live Squash Streams",
+					"description": "Methstreams Squash streamt PSA-Turniere in HD kostenlos. Keine Registrierung. Jetzt Squash live ansehen."
+				},
+				"motorsport": {
+					"title": "Methstreams Motorsport | Live Motor Racing",
+					"description": "Methstreams Motorsport bietet kostenlose HD-Renn-Streams ohne Anmeldung. Jetzt Motorsport live ansehen."
+				},
+				"racing": {
+					"title": "Methstreams Rennsport | Live Rennen Streams",
+					"description": "Methstreams Rennsport bietet kostenlose HD-Motorsport-Streams. Keine Registrierung erforderlich. Jetzt Rennen ansehen."
+				},
+				"cycling": {
+					"title": "Methstreams Radsport | Live Radsport Streams",
+					"description": "Methstreams Radsport streamt große Touren und Events in HD kostenlos. Keine Anmeldung. Jetzt live Radsport ansehen."
+				},
+				"equestrianism": {
+					"title": "Methstreams Reitsport | Live Pferde Events",
+					"description": "Methstreams Reitsport bietet kostenlose HD-Pferdewettbewerbs-Streams. Keine Registrierung nötig. Jetzt ansehen."
+				},
+				"golf": {
+					"title": "Methstreams Golf | Live Golf Streams",
+					"description": "Methstreams Golf bietet kostenlose HD-PGA- und globale Tour-Streams. Keine Anmeldung erforderlich. Jetzt live Golf ansehen."
+				},
+				"field-hockey": {
+					"title": "Methstreams Feldhockey | Live Hockey Streams",
+					"description": "Methstreams Feldhockey streamt internationale Spiele in HD kostenlos. Keine Registrierung. Jetzt ansehen."
+				},
+				"lacrosse": {
+					"title": "Methstreams Lacrosse | Live Lacrosse Streams",
+					"description": "Methstreams Lacrosse liefert kostenlose HD-Pro- und College-Lacrosse-Streams. Keine Anmeldung. Jetzt ansehen."
+				},
+				"athletics": {
+					"title": "Methstreams Leichtathletik | Live Leichtathletik Streams",
+					"description": "Methstreams Leichtathletik streamt große Leichtathletik-Events in HD kostenlos. Keine Registrierung. Jetzt live ansehen."
+				},
+				"gymnastics": {
+					"title": "Methstreams Turnen | Live Turnen Streams",
+					"description": "Methstreams Turnen bietet kostenlose HD-Wettbewerbs-Streams ohne Anmeldung. Jetzt Turnen live ansehen."
+				},
+				"weightlifting": {
+					"title": "Methstreams Gewichtheben | Live Gewichtheben",
+					"description": "Methstreams Gewichtheben bietet kostenlose HD-Hebe-Wettbewerbe. Keine Registrierung. Jetzt live Gewichtheben ansehen."
+				},
+				"climbing": {
+					"title": "Methstreams Klettern | Live Klettern Streams",
+					"description": "Methstreams Klettern streamt Boulder-, Lead- und Speed-Events in HD ohne Anmeldung. Jetzt ansehen."
+				},
+				"bandy": {
+					"title": "Methstreams Bandy | Live Bandy Streams",
+					"description": "Methstreams Bandy streamt globale Spiele in HD kostenlos. Keine Anmeldung. Jetzt ansehen."
+				},
+				"curling": {
+					"title": "Methstreams Curling | Live Curling Streams",
+					"description": "Methstreams Curling bietet kostenlose HD-Turniere ohne Registrierung. Jetzt Curling live ansehen."
+				},
+				"triathlon": {
+					"title": "Methstreams Triathlon | Live Triathlon Streams",
+					"description": "Methstreams Triathlon bietet kostenlose HD-globale Triathlon-Übertragung. Keine Anmeldung nötig. Jetzt live ansehen."
+				},
+				"water-sports": {
+					"title": "Methstreams Wassersport | Live Aquatik Streams",
+					"description": "Methstreams Wassersport streamt Aquatik-Wettbewerbe in HD kostenlos. Keine Registrierung. Jetzt ansehen."
+				},
+				"water-polo": {
+					"title": "Methstreams Wasserball | Live Polo Streams",
+					"description": "Methstreams Wasserball bietet kostenlose HD-Streams ohne Anmeldung. Jetzt live Wasserball ansehen."
+				},
+				"sailing": {
+					"title": "Methstreams Segeln | Live Segeln Streams",
+					"description": "Methstreams Segeln streamt globale Regatten in HD kostenlos. Keine Registrierung. Jetzt Segeln live ansehen."
+				},
+				"bowling": {
+					"title": "Methstreams Bowling | Live Bowling Streams",
+					"description": "Methstreams Bowling bietet kostenlose HD-Turniere ohne Anmeldung. Jetzt Bowling live ansehen."
+				},
+				"darts": {
+					"title": "Methstreams Darts | Live Darts Streams",
+					"description": "Methstreams Darts streamt PDC- und globale Events in HD kostenlos. Keine Registrierung. Jetzt Darts ansehen."
+				},
+				"chess": {
+					"title": "Methstreams Schach | Live Schach Partien",
+					"description": "Methstreams Schach bietet kostenlose HD-Streams von Top-Turnieren. Keine Anmeldung. Jetzt Schach live ansehen."
+				},
+				"e-sports": {
+					"title": "Methstreams E-Sport | Live E-Sport Streams",
+					"description": "Methstreams E-Sport bietet kostenlose HD-E-Sport-Turniere. Keine Registrierung erforderlich. Jetzt live ansehen."
+				},
+				"others": {
+					"title": "Methstreams Andere | Live Sport Streams",
+					"description": "Methstreams Andere streamt Nischen- und aufstrebende Sportarten in HD kostenlos. Keine Anmeldung. Jetzt live ansehen."
+				},
+				"combat-sport": {
+					"title": "Methstreams Kampfsport | Live Fight Streams",
+					"description": "Methstreams Kampfsport bietet kostenlose HD-Kampf-Events ohne Anmeldung. Jetzt live Action ansehen."
+				},
+				"winter-sport": {
+					"title": "Methstreams Wintersport | Live Schnee Action",
+					"description": "Methstreams Wintersport bietet kostenlose HD-Ski-, Eis- und Winter-Events. Keine Registrierung. Jetzt live ansehen."
+				},
+				"rugby-sevens": {
+					"title": "Methstreams Rugby Sevens | Live Rugby Sevens Streams",
+					"description": "Methstreams Rugby Sevens bringt kostenlose HD-Sevens-Turniere ohne Anmeldung. Sehen Sie temporeiche Rugby-Sevens-Action live und genießen Sie reibungsloses Streaming heute."
+				},
+				"extreme-sport": {
+					"title": "Methstreams Extremsport | Live Extremsport Streams",
+					"description": "Methstreams Extremsport bietet kostenlose HD-Übertragung von Top-Extremwettbewerben. Keine Registrierung erforderlich. Streamen Sie aufregende Extremsport-Events jetzt."
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "Wiziwig | Live-Sport-Streams & Kommende Spiele",
+				"description": "Wiziwig bietet schnelle, kostenlose HD-Streams für alle Sportarten mit täglich aktualisierten Live- und kommenden Spielen. Keine Anmeldung erforderlich – jetzt ansehen."
+			},
+			"sports": {
+				"football": {
+					"title": "Wiziwig Fußball | Live-Fußball-Streams",
+					"description": "Wiziwig Fußball bietet Ihnen reibungslose HD-Fußball-Streams ohne Anmeldebarrieren. Genießen Sie Live-Spiele sofort."
+				},
+				"basketball": {
+					"title": "Wiziwig Basketball | NBA Live ansehen",
+					"description": "Wiziwig Basketball bietet HD-NBA und weltweite Basketball-Action mit schnellem Laden. Jetzt Live-Spiele ansehen."
+				},
+				"tennis": {
+					"title": "Wiziwig Tennis | Live-Tennis-Übertragung",
+					"description": "Wiziwig Tennis ermöglicht Ihnen den Zugriff auf ATP- und WTA-Spiele in HD kostenlos. Tennis live streamen."
+				},
+				"ice-hockey": {
+					"title": "Wiziwig Eishockey | Live-NHL-Streams",
+					"description": "Wiziwig Eishockey bringt Ihnen NHL- und weltweite Spiele in klarem HD ohne Registrierung. Jetzt live ansehen."
+				},
+				"baseball": {
+					"title": "Wiziwig Baseball | Live-Baseball online",
+					"description": "Wiziwig Baseball streamt MLB- und internationale Spiele in HD ohne Anmeldung. Genießen Sie Baseball jetzt live."
+				},
+				"rugby-union": {
+					"title": "Wiziwig Rugby Union | Rugby live ansehen",
+					"description": "Wiziwig Rugby Union bietet HD-Zugang zu Top-Ligen und Testspielen. Jetzt live dabei sein."
+				},
+				"rugby-league": {
+					"title": "Wiziwig Rugby League | Live-Rugby-HD-Streams",
+					"description": "Wiziwig Rugby League bietet kostenlose HD-NRL- und Super-League-Streams. Jetzt Live-Action ansehen."
+				},
+				"rugby-sevens": {
+					"title": "Wiziwig Rugby Sevens | Live-Rugby-Sevens-Streams",
+					"description": "Wiziwig Rugby Sevens bietet kostenlose HD-Sevens-Turniere ohne Anmeldung. Sehen Sie sich temporeiche Rugby-Sevens-Action live an und genießen Sie jetzt reibungsloses, zuverlässiges Streaming."
+				},
+				"cricket": {
+					"title": "Wiziwig Cricket | Live-Cricket-Streams",
+					"description": "Wiziwig Cricket überträgt T20-, ODI- und Test-Spiele in HD. Keine Anmeldung erforderlich. Cricket live ansehen."
+				},
+				"american-football": {
+					"title": "Wiziwig American Football | NFL-Streams live",
+					"description": "Wiziwig American Football streamt NFL- und College-Spiele in reibungslosem HD. Jetzt live dabei sein."
+				},
+				"volleyball": {
+					"title": "Wiziwig Volleyball | Live-Volleyball online",
+					"description": "Wiziwig Volleyball bietet weltweite Volleyball-Spiele in HD ohne Registrierung. Jetzt live ansehen."
+				},
+				"beach-volleyball": {
+					"title": "Wiziwig Beachvolleyball | Beach live ansehen",
+					"description": "Wiziwig Beachvolleyball bringt kostenlose HD-Sandplatz-Events. Beachvolleyball sofort live streamen."
+				},
+				"handball": {
+					"title": "Wiziwig Handball | Live-Handball-Spiele",
+					"description": "Wiziwig Handball bietet HD-Streams von großen Ligen und Turnieren. Handball live ansehen."
+				},
+				"beach-handball": {
+					"title": "Wiziwig Beachhandball | Live-Beach-Action",
+					"description": "Wiziwig Beachhandball streamt weltweite Events in HD ohne Registrierung. Jetzt ansehen."
+				},
+				"beach-soccer": {
+					"title": "Wiziwig Strandfußball | Live-Spiele online",
+					"description": "Wiziwig Strandfußball bietet schnelle HD-Streams von Profi- und internationalen Events. Strandfußball live ansehen."
+				},
+				"aussie-rules": {
+					"title": "Wiziwig Aussie Rules | Live-AFL-Streams",
+					"description": "Wiziwig Aussie Rules liefert kostenlose HD-AFL-Action. Jetzt live Footy streamen."
+				},
+				"futsal": {
+					"title": "Wiziwig Futsal | Live-Futsal-Streams",
+					"description": "Wiziwig Futsal bietet HD-Zugang zu weltweiten Futsal-Ligen und Turnieren. Jetzt live ansehen."
+				},
+				"badminton": {
+					"title": "Wiziwig Badminton | Live-Badminton online",
+					"description": "Wiziwig Badminton streamt BWF-Events in HD mit sofortigem Laden. Badminton live ansehen."
+				},
+				"netball": {
+					"title": "Wiziwig Netball | Live-Netball-Streams",
+					"description": "Wiziwig Netball bietet HD-Liga- und internationale Übertragung. Netball jetzt live streamen."
+				},
+				"floorball": {
+					"title": "Wiziwig Floorball | Live-Floorball-Action",
+					"description": "Wiziwig Floorball bietet reibungslose HD-Streams von großen Wettbewerben. Floorball jetzt live ansehen."
+				},
+				"combat-sport": {
+					"title": "Wiziwig Kampfsport | Live-Kampf-Streams",
+					"description": "Wiziwig Kampfsport überträgt große Kampfabende in HD ohne Registrierung. Jetzt Live-Kämpfe ansehen."
+				},
+				"boxing": {
+					"title": "Wiziwig Boxen | Boxen live ansehen",
+					"description": "Wiziwig Boxen bietet kostenlosen HD-Zugang zu weltweiten Kampfkarten. Jetzt beim Live-Boxen dabei sein."
+				},
+				"mma": {
+					"title": "Wiziwig MMA | Live-MMA-Streams",
+					"description": "Wiziwig MMA streamt Top-Organisationen in klarem HD ohne Anmeldung. MMA jetzt live ansehen."
+				},
+				"snooker": {
+					"title": "Wiziwig Snooker | Live-Snooker-Übertragung",
+					"description": "Wiziwig Snooker bietet HD-Turniere und Spiele mit sofortigem Zugang. Snooker jetzt live ansehen."
+				},
+				"billiard": {
+					"title": "Wiziwig Billard | Live-Billard-Streams",
+					"description": "Wiziwig Billard bietet weltweites HD-Billard-Streaming ohne Registrierung. Jetzt live ansehen."
+				},
+				"table-tennis": {
+					"title": "Wiziwig Tischtennis | Live-Tischtennis",
+					"description": "Wiziwig Tischtennis streamt professionelles Tischtennis in HD. Live-Spiele sofort ansehen."
+				},
+				"padel-tennis": {
+					"title": "Wiziwig Padel | Live-Padel-Streams",
+					"description": "Wiziwig Padel bietet HD-Padel-Events ohne Anmeldung. Padel live ansehen."
+				},
+				"squash": {
+					"title": "Wiziwig Squash | Live-Squash-Events",
+					"description": "Wiziwig Squash streamt Profi-Squash in HD mit schnellem Laden. Jetzt Live-Spiele ansehen."
+				},
+				"motorsport": {
+					"title": "Wiziwig Motorsport | Live-Motorsport",
+					"description": "Wiziwig Motorsport bietet HD-Zugang zu Rennevents weltweit. Motorsport live streamen."
+				},
+				"racing": {
+					"title": "Wiziwig Rennsport | Live-Renn-Streams",
+					"description": "Wiziwig Rennsport bietet HD-Übertragung von Motorsport-Rennen ohne Anmeldung. Jetzt Live-Rennen ansehen."
+				},
+				"cycling": {
+					"title": "Wiziwig Radsport | Live-Radsport-Streams",
+					"description": "Wiziwig Radsport bietet HD-Zugang zu großen Touren und Rennen. Radsport jetzt live ansehen."
+				},
+				"equestrianism": {
+					"title": "Wiziwig Reitsport | Live-Pferdesport",
+					"description": "Wiziwig Reitsport streamt weltweite Pferdewettbewerbe in HD. Jetzt live ansehen."
+				},
+				"golf": {
+					"title": "Wiziwig Golf | Live-Golf-Streams",
+					"description": "Wiziwig Golf bietet HD-PGA- und Welttouren-Action ohne Registrierung. Golf heute live ansehen."
+				},
+				"field-hockey": {
+					"title": "Wiziwig Feldhockey | Live-Hockey-Spiele",
+					"description": "Wiziwig Feldhockey streamt internationales Top-Hockey in HD. Jetzt live ansehen."
+				},
+				"lacrosse": {
+					"title": "Wiziwig Lacrosse | Live-Lacrosse-Streams",
+					"description": "Wiziwig Lacrosse bietet HD-Profi- und College-Streams mit einfachem Zugang. Lacrosse live ansehen."
+				},
+				"athletics": {
+					"title": "Wiziwig Leichtathletik | Live-Leichtathletik-Streams",
+					"description": "Wiziwig Leichtathletik überträgt große Leichtathletik-Events in HD. Leichtathletik jetzt live ansehen."
+				},
+				"gymnastics": {
+					"title": "Wiziwig Turnen | Live-Turn-Events",
+					"description": "Wiziwig Turnen streamt Weltklasse-Wettbewerbe kostenlos in HD. Jetzt live ansehen."
+				},
+				"weightlifting": {
+					"title": "Wiziwig Gewichtheben | Live-Gewichtheben",
+					"description": "Wiziwig Gewichtheben bringt HD-Hebe-Wettbewerbe ohne Anmeldung. Gewichtheben jetzt live ansehen."
+				},
+				"climbing": {
+					"title": "Wiziwig Klettern | Live-Kletter-Streams",
+					"description": "Wiziwig Klettern streamt Bouldern, Lead- und Speed-Events in HD. Klettern live ansehen."
+				},
+				"winter-sport": {
+					"title": "Wiziwig Wintersport | Live-Schneesport",
+					"description": "Wiziwig Wintersport bietet HD-Ski-, Eislauf- und Winter-Events. Jetzt Live-Schnee-Action ansehen."
+				},
+				"bandy": {
+					"title": "Wiziwig Bandy | Live-Bandy-Streams",
+					"description": "Wiziwig Bandy streamt weltweite Bandy-Ligen in HD ohne Anmeldung. Bandy jetzt live ansehen."
+				},
+				"curling": {
+					"title": "Wiziwig Curling | Live-Curling-Spiele",
+					"description": "Wiziwig Curling liefert HD-Turniere mit schnellem Zugang. Curling jetzt live ansehen."
+				},
+				"triathlon": {
+					"title": "Wiziwig Triathlon | Live-Triathlon-Streams",
+					"description": "Wiziwig Triathlon bietet HD-Übertragung von Welt-Triathlon-Events. Jetzt live ansehen."
+				},
+				"water-sports": {
+					"title": "Wiziwig Wassersport | Live-Wassersport-Events",
+					"description": "Wiziwig Wassersport streamt Schwimmen, Tauchen und mehr in HD. Wassersport live ansehen."
+				},
+				"water-polo": {
+					"title": "Wiziwig Wasserball | Live-Wasserball-Streams",
+					"description": "Wiziwig Wasserball bietet weltweite HD-Spiele mit schnellem Zugang. Wasserball jetzt live ansehen."
+				},
+				"sailing": {
+					"title": "Wiziwig Segeln | Live-Segel-Streams",
+					"description": "Wiziwig Segeln streamt Regatten und große Segel-Events in HD. Segeln jetzt live ansehen."
+				},
+				"bowling": {
+					"title": "Wiziwig Bowling | Live-Bowling-Streams",
+					"description": "Wiziwig Bowling bietet HD-Bowling-Events ohne Registrierung. Bowling jetzt live ansehen."
+				},
+				"darts": {
+					"title": "Wiziwig Darts | Live-Darts-Übertragung",
+					"description": "Wiziwig Darts streamt weltweite Turniere in HD. Darts jetzt live ansehen."
+				},
+				"chess": {
+					"title": "Wiziwig Schach | Live-Schach-Spiele",
+					"description": "Wiziwig Schach streamt Elite-Turniere kostenlos in HD. Schach jetzt live ansehen."
+				},
+				"e-sports": {
+					"title": "Wiziwig E-Sport | Live-E-Sport-Streams",
+					"description": "Wiziwig E-Sport bietet HD-Turnier-Übertragung mit sofortigem Zugang. E-Sport live ansehen."
+				},
+				"extreme-sport": {
+					"title": "Wiziwig Extremsport | Live-Extremsport-Streams",
+					"description": "Wiziwig Extremsport bietet kostenlose HD-Übertragung von Top-Extremsport-Wettbewerben. Keine Registrierung erforderlich. Streamen Sie heute spannende Extremsport-Events."
+				},
+				"others": {
+					"title": "Wiziwig Andere | Live-Sport-Streams",
+					"description": "Wiziwig Andere überträgt Nischen- und aufstrebende Sportarten in HD. Jetzt live ansehen."
+				}
+			}
+		}
 	}
 }

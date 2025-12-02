@@ -3,6 +3,7 @@
 		"code": "da",
 		"name": "Dansk",
 		"flag": "🇩🇰",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -52,6 +53,7 @@
 		"Baseball": "Baseball",
 		"Rugby Union": "Rugby Union",
 		"Rugby League": "Rugby League",
+		"Rugby Sevens": "Rugby Sevens",
 		"Cricket": "Cricket",
 		"American Football": "Amerikansk Fodbold",
 		"Volleyball": "Volleyball",
@@ -95,6 +97,1309 @@
 		"Darts": "Dart",
 		"Chess": "Skak",
 		"E-sports": "E-sport",
+		"Extreme Sport": "Ekstrem Sport",
 		"Others": "Andre"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | Live Sport & Dagens Kampoversigt",
+				"description": "SportLemon giver dig live sportsstreams plus dagens kommende og aktuelle kampe på tværs af alle sportsgrene. Gratis adgang, ingen tilmelding—begynd at se nu."
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon Fodbold | Gratis Live Fodbold Streams HD",
+					"description": "Se gratis live fodbold streams i HD på SportLemon. Champions League, Premier League & mere. Gå aldrig glip af en kamp!"
+				},
+				"basketball": {
+					"title": "SportLemon Basketball | Gratis Live NBA & Basketball Streams",
+					"description": "Stream live basketball kampe gratis. Se NBA, EuroLeague & mere i HD på SportLemon. Ingen tilmelding påkrævet."
+				},
+				"tennis": {
+					"title": "SportLemon Tennis | Gratis Live Tennis Streams HD",
+					"description": "Se live tennis streams gratis. Grand Slams, ATP, WTA tours i HD på SportLemon. Deltag nu!"
+				},
+				"ice-hockey": {
+					"title": "SportLemon Ishockey | Gratis Live NHL Streams HD",
+					"description": "Gratis live ishockey streams i HD. Se NHL, KHL og verdensmesterskaber på SportLemon. Gå aldrig glip af en puck."
+				},
+				"baseball": {
+					"title": "SportLemon Baseball | Gratis Live MLB Streams Online",
+					"description": "Stream live baseball kampe gratis. Se MLB, NPB og mere i HD på SportLemon. Let og gratis adgang."
+				},
+				"rugby": {
+					"title": "SportLemon Rugby | Gratis Live Rugby Union & League",
+					"description": "Se gratis live rugby streams. Rugby Union, Rugby League, Six Nations & mere i HD på SportLemon."
+				},
+				"cricket": {
+					"title": "SportLemon Cricket | Gratis Live Cricket Streams HD",
+					"description": "Gratis live cricket streams på SportLemon. Se IPL, T20, Test Matches & mere i høj definition. Tune ind nu!"
+				},
+				"american-football": {
+					"title": "SportLemon Amerikansk Fodbold | Gratis Live NFL Streams",
+					"description": "Se gratis live Amerikansk Fodbold streams. Nyd NFL, college kampe & mere i HD på SportLemon. Ingen abonnementer."
+				},
+				"volleyball": {
+					"title": "SportLemon Volleyball | Gratis Live Volleyball Streams",
+					"description": "Stream live volleyball kampe gratis. Se FIVB, CEV & store ligaer i HD på SportLemon. Deltag i actionen!"
+				},
+				"beach-volleyball": {
+					"title": "SportLemon Beachvolley | Gratis Live Streams",
+					"description": "Se gratis live beachvolley streams. FIVB World Tour & store turneringer i HD på SportLemon."
+				},
+				"handball": {
+					"title": "SportLemon Håndbold | Gratis Live Håndbold Streams",
+					"description": "Gratis live håndbold streams på SportLemon. Se EHF, IHF begivenheder & store ligaer i høj definition."
+				},
+				"beach-handball": {
+					"title": "SportLemon Strandhåndbold | Gratis Live Streams",
+					"description": "Se gratis live strandhåndbold streams. IHF World Tour & mesterskaber i HD på SportLemon."
+				},
+				"beach-soccer": {
+					"title": "SportLemon Strandfodbold | Gratis Live Streams HD",
+					"description": "Stream live strandfodbold gratis. FIFA Beach Soccer World Cup & ligaer i HD på SportLemon."
+				},
+				"aussie-rules": {
+					"title": "SportLemon Australsk Fodbold | Gratis Live AFL Streams",
+					"description": "Se gratis live Australsk Fodbold. Stream AFL kampe & turneringer i HD på SportLemon."
+				},
+				"futsal": {
+					"title": "SportLemon Futsal | Gratis Live Futsal Streams HD",
+					"description": "Gratis live futsal streams på SportLemon. Se UEFA Futsal, FIFA begivenheder & mere i høj definition."
+				},
+				"badminton": {
+					"title": "SportLemon Badminton | Gratis Live Badminton Streams",
+					"description": "Se gratis live badminton streams. BWF World Tour, Thomas Cup & mere i HD på SportLemon."
+				},
+				"netball": {
+					"title": "SportLemon Netball | Gratis Live Netball Streams",
+					"description": "Stream live netball gratis. Se Vitality Netball Superleague, Worlds & mere på SportLemon."
+				},
+				"floorball": {
+					"title": "SportLemon Floorball | Gratis Live Floorball Streams",
+					"description": "Se gratis live floorball streams. IFF World Championships & store ligaer i HD på SportLemon."
+				},
+				"boxing": {
+					"title": "SportLemon Boksning | Gratis Live Boksning Streams HD",
+					"description": "Se gratis live boksning streams. Verdenstittelkampe, undercards & mere i høj definition på SportLemon."
+				},
+				"mma": {
+					"title": "SportLemon MMA | Gratis Live UFC & MMA Streams",
+					"description": "Stream live MMA kampe gratis. Se UFC, Bellator, PFL & mere i HD på SportLemon."
+				},
+				"snooker": {
+					"title": "SportLemon Snooker | Gratis Live Snooker Streams",
+					"description": "Se gratis live snooker streams. World Championship, UK Championship & mere i HD på SportLemon."
+				},
+				"billiard": {
+					"title": "SportLemon Billard | Gratis Live Pool Streams HD",
+					"description": "Gratis live billard og pool streams på SportLemon. Se verdensturneringer & kampe i høj definition."
+				},
+				"table-tennis": {
+					"title": "SportLemon Bordtennis | Gratis Live Streams HD",
+					"description": "Se gratis live bordtennis streams. ITTF World Tours & mesterskaber i HD på SportLemon."
+				},
+				"padel-tennis": {
+					"title": "SportLemon Padel | Gratis Live Streams",
+					"description": "Stream live Padel Tennis gratis. Se World Padel Tour & store kampe i HD på SportLemon."
+				},
+				"squash": {
+					"title": "SportLemon Squash | Gratis Live Squash Streams",
+					"description": "Se gratis live squash streams. PSA World Tour & mesterskaber i høj definition på SportLemon."
+				},
+				"motorsport": {
+					"title": "SportLemon Motorsport | Gratis Live Racing Streams",
+					"description": "Gratis live motorsport streams på SportLemon. Se F1, MotoGP, WRC & mere i HD. Start din motor!"
+				},
+				"racing": {
+					"title": "SportLemon Racing | Gratis Live Hestevæddeløb Streams",
+					"description": "Se gratis live racing streams. Store derbyer, cups & begivenheder i HD på SportLemon."
+				},
+				"cycling": {
+					"title": "SportLemon Cykling | Gratis Live Cykling Streams",
+					"description": "Stream live cykling gratis. Se Tour de France, Giro, Vuelta & mere i HD på SportLemon."
+				},
+				"equestrianism": {
+					"title": "SportLemon Ridesport | Gratis Live Streams",
+					"description": "Se gratis live ridesport streams. Springning, dressur & eventing i HD på SportLemon."
+				},
+				"golf": {
+					"title": "SportLemon Golf | Gratis Live Golf Streams HD",
+					"description": "Gratis live golf streams på SportLemon. Se Masters, PGA Tour, Ryder Cup & mere i høj definition."
+				},
+				"field-hockey": {
+					"title": "SportLemon Landhockey | Gratis Live Streams HD",
+					"description": "Se gratis live landhockey streams. FIH Pro League, World Cup & mere i HD på SportLemon."
+				},
+				"lacrosse": {
+					"title": "SportLemon Lacrosse | Gratis Live Lacrosse Streams",
+					"description": "Stream live lacrosse gratis. Se NLL, PLL, verdensmesterskaber & mere på SportLemon."
+				},
+				"athletics": {
+					"title": "SportLemon Atletik | Gratis Live Atletik & Løb",
+					"description": "Se gratis live atletik streams. Diamond League, World Championships & mere i HD på SportLemon."
+				},
+				"gymnastics": {
+					"title": "SportLemon Gymnastik | Gratis Live Streams HD",
+					"description": "Gratis live gymnastik streams på SportLemon. Se kunstnerisk, rytmisk begivenheder & verdenscups i HD."
+				},
+				"weightlifting": {
+					"title": "SportLemon Vægtløftning | Gratis Live Streams",
+					"description": "Se gratis live vægtløftning streams. IWF World Championships & begivenheder i HD på SportLemon."
+				},
+				"climbing": {
+					"title": "SportLemon Klatring | Gratis Live Klatring Streams",
+					"description": "Stream live klatring gratis. Se IFSC World Cups & mesterskaber i HD på SportLemon."
+				},
+				"bandy": {
+					"title": "SportLemon Bandy | Gratis Live Bandy Streams",
+					"description": "Gratis live bandy streams på SportLemon. Se World Championships & store ligaer i høj definition."
+				},
+				"curling": {
+					"title": "SportLemon Curling | Gratis Live Curling Streams",
+					"description": "Se gratis live curling streams. World Curling Championships, Brier & mere i HD på SportLemon."
+				},
+				"water-sports": {
+					"title": "SportLemon Vandsport | Gratis Live Streams",
+					"description": "Stream live vandsport gratis. Se roning, kano, svømning & mere på SportLemon."
+				},
+				"water-polo": {
+					"title": "SportLemon Vandpolo | Gratis Live Streams HD",
+					"description": "Se gratis live vandpolo streams. LEN Champions League, World League & mere på SportLemon."
+				},
+				"sailing": {
+					"title": "SportLemon Sejlsport | Gratis Live Sejlsport Streams",
+					"description": "Gratis live sejlsport streams på SportLemon. Se America's Cup, World Series & regattaer i HD."
+				},
+				"bowling": {
+					"title": "SportLemon Bowling | Gratis Live Bowling Streams",
+					"description": "Se gratis live bowling streams. PBA Tour, World Championships & mere i HD på SportLemon."
+				},
+				"darts": {
+					"title": "SportLemon Dart | Gratis Live Dart Streams HD",
+					"description": "Stream live dart gratis. Se PDC, Premier League, World Cup & mere på SportLemon."
+				},
+				"chess": {
+					"title": "SportLemon Skak | Gratis Live Skak Streams",
+					"description": "Se gratis live skak streams. World Championship, Candidates & topturneringer på SportLemon."
+				},
+				"e-sports": {
+					"title": "SportLemon E-sport | Gratis Live Gaming Streams",
+					"description": "Gratis live E-sport streams på SportLemon. Se LoL, CS:GO, Dota 2 & mere i HD. Game on!"
+				},
+				"others": {
+					"title": "SportLemon Andre | Gratis Live Sport Streams HD",
+					"description": "Se gratis live streams for alle andre sportsgrene. Niche, emerging & unikke sportsgrene i HD på SportLemon."
+				},
+				"triathlon": {
+					"title": "SportLemon Triatlon | Se Live Triatlon Streams Gratis",
+					"description": "SportLemon Triatlon lader dig se triatlon streams i høj kvalitet gratis uden tilmelding. Let adgang, jævn afspilning—begynd at se nu."
+				},
+				"rugby-union": {
+					"title": "SportLemon Rugby Union | Gratis HD Live Streams Online",
+					"description": "SportLemon Rugby Union tilbyder gratis, ingen tilmelding, live streams i høj kvalitet. Nyd hurtig adgang til hver kamp i HD. Begynd at se nu."
+				},
+				"rugby-league": {
+					"title": "SportLemon Rugby League | Se Gratis Live HD Streams",
+					"description": "SportLemon Rugby League bringer dig gratis, ingen tilmelding, live streams i høj kvalitet af hver kamp. Nyd hurtig, pålidelig adgang i HD—begynd at se i dag."
+				},
+				"combat-sport": {
+					"title": "SportLemon Kampsport | Gratis Live Kampsport Streams",
+					"description": "Gratis live kampsport streams på SportLemon. Se MMA, boksning, wrestling & mere i HD."
+				},
+				"winter-sport": {
+					"title": "SportLemon Vintersport | Gratis Live Streams",
+					"description": "Se gratis live vintersport streams. Skiløb, snowboarding & mere i HD på SportLemon."
+				},
+				"rugby-sevens": {
+					"title": "SportLemon Rugby Sevens | Live Rugby Sevens Streams",
+					"description": "SportLemon Rugby Sevens leverer gratis HD sevens turneringer med jævn afspilning og ingen tilmelding. Se hurtig rugby sevens action live nu."
+				},
+				"extreme-sport": {
+					"title": "SportLemon Ekstrem Sport | Live Ekstrem Sport Streams",
+					"description": "SportLemon Ekstrem Sport tilbyder gratis HD dækning af top ekstreme konkurrencer. Ingen registrering påkrævet. Stream spændende ekstrem sport begivenheder i dag."
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "Eplsite | Live Sport, Kommende & Aktuelle Kampe",
+				"description": "Opdag live streams, tidsplaner og opdateringer for alle sportsgrene på Eplsite. Se gratis HD kampe, følg kommende kampe og gå aldrig glip af action."
+			},
+			"sports": {
+				"football": {
+					"title": "Eplsite Fodbold | Live Kampe & Gratis HD Streaming",
+					"description": "Se topkampe på Eplsite Fodbold med gratis, streams i høj kvalitet og ingen tilmelding. Nyd hurtig, pålidelig adgang til live fodbold action—begynd at se nu."
+				},
+				"basketball": {
+					"title": "Eplsite Basketball | Live Kampe & HD Streams Gratis",
+					"description": "Se kampe i høj kvalitet på Eplsite Basketball med gratis, ingen tilmelding streaming. Nyd hurtig, pålidelig HD action når som helst. Begynd at se nu."
+				},
+				"tennis": {
+					"title": "Eplsite Tennis | Live Kampe & Gratis HD Streams",
+					"description": "Stream kampe i høj kvalitet på Eplsite Tennis med gratis, ingen tilmelding adgang og hurtig HD visning. Nyd jævn live action—begynd at se i dag."
+				},
+				"ice-hockey": {
+					"title": "Eplsite Ishockey | Live HD Streams & Gratis Kampe",
+					"description": "Nyd hurtig action i høj kvalitet på Eplsite Ishockey med gratis, ingen tilmelding streams og jævn HD afspilning. Fang hver kamp—begynd at se nu."
+				},
+				"baseball": {
+					"title": "Eplsite Baseball | Live HD Streams & Gratis Kampe",
+					"description": "Se kampe i høj kvalitet på Eplsite Baseball med gratis, ingen tilmelding streaming og hurtig HD afspilning. Nyd hver matchup—begynd at se nu."
+				},
+				"rugby-union": {
+					"title": "Eplsite Rugby Union | Live HD Streams & Gratis Kampe",
+					"description": "Stream topkampe på Eplsite Rugby Union med gratis, ingen tilmelding adgang og jævn HD afspilning. Nyd hurtig, pålidelig action—begynd at se i dag."
+				},
+				"rugby-league": {
+					"title": "Eplsite Rugby League | Live HD Streams & Gratis Kampe",
+					"description": "Se hurtige kampe i høj kvalitet på Eplsite Rugby League med gratis, ingen tilmelding streaming og jævn HD action. Nyd hver kamp—begynd at se nu."
+				},
+				"cricket": {
+					"title": "Eplsite Cricket | Live HD Streams & Gratis Kampe",
+					"description": "Se action i høj kvalitet på Eplsite Cricket med gratis, ingen tilmelding streams og jævn HD afspilning. Nyd hver kamp—begynd at se nu."
+				},
+				"american-football": {
+					"title": "Eplsite Amerikansk Fodbold | Live NFL & HD Streams",
+					"description": "Stream top NFL og Amerikansk Fodbold kampe på Eplsite Amerikansk Fodbold med gratis, ingen tilmelding adgang og jævn HD afspilning. Se hver touchdown nu."
+				},
+				"volleyball": {
+					"title": "Eplsite Volleyball – Live FIVB & HD Streams",
+					"description": "Stream top FIVB volleyball kampe på Eplsite Volleyball med gratis, ingen tilmelding HD adgang. Se hvert sæt og smash live—gå ikke glip af actionen."
+				},
+				"beach-volleyball": {
+					"title": "Eplsite Beachvolley | Live Kampe & Højdepunkter",
+					"description": "Se Eplsite Beachvolley i HD med gratis, ingen tilmelding streams af top beachvolley begivenheder. Nyd jævn afspilning og hurtig adgang. Begynd at se nu."
+				},
+				"handball": {
+					"title": "Eplsite Håndbold | Live Kampe & Højdepunkter",
+					"description": "Se Eplsite Håndbold kampe i HD gratis uden tilmelding. Nyd jævne streams af top håndbold action. Adgang hurtigt og begynd at se nu."
+				},
+				"beach-handball": {
+					"title": "Eplsite Strandhåndbold | Live Kampe & Højdepunkter",
+					"description": "Stream Eplsite Strandhåndbold i HD gratis uden tilmelding. Nyd jævn strandhåndbold action i høj kvalitet når som helst. Begynd at se nu."
+				},
+				"beach-soccer": {
+					"title": "Eplsite Strandfodbold | Live Kampe & Højdepunkter",
+					"description": "Se Eplsite Strandfodbold i HD gratis uden tilmelding. Nyd jævne streams af top strandfodbold action når som helst. Begynd at se nu."
+				},
+				"aussie-rules": {
+					"title": "Eplsite Australsk Fodbold | Live AFL & Australsk Fodbold",
+					"description": "Se Eplsite Australsk Fodbold kampe i HD gratis, inklusiv top AFL Australsk Fodbold action uden tilmelding. Nyd jævne streams og begynd at se nu."
+				},
+				"futsal": {
+					"title": "Eplsite Futsal | Live Kampe & Hurtig Action",
+					"description": "Se Eplsite Futsal kampe i HD gratis uden tilmelding. Nyd streams i høj kvalitet af top indendørs fodbold action. Begynd at se nu."
+				},
+				"badminton": {
+					"title": "Eplsite Badminton | Live Kampe & Turnerings Streams",
+					"description": "Se Eplsite Badminton i HD gratis uden tilmelding. Nyd jævne streams i høj kvalitet af top badminton begivenheder. Begynd at se nu."
+				},
+				"netball": {
+					"title": "Eplsite Netball | Live Kampe & Top Liga Streams",
+					"description": "Se Eplsite Netball i HD gratis uden tilmelding. Nyd jævne streams af top netball ligaer og hurtig action. Begynd at se nu."
+				},
+				"floorball": {
+					"title": "Eplsite Floorball | Live Kampe & Hurtig Liga Action",
+					"description": "Se Eplsite Floorball i HD gratis uden tilmelding. Nyd jævne streams i høj kvalitet af top floorball ligaer. Begynd at se nu."
+				},
+				"boxing": {
+					"title": "Eplsite Boksning | Live Kampe & Mesterskabs Streams",
+					"description": "Se Eplsite Boksning i HD gratis uden tilmelding. Nyd top professionelle boksekampe og hurtige kampstreams i høj kvalitet. Begynd at se nu."
+				},
+				"mma": {
+					"title": "Eplsite MMA | Live Kampe & Ultimate Kamp Streams",
+					"description": "Se Eplsite MMA i HD gratis uden tilmelding. Stream top mixed martial arts kampe, UFC og kamp action øjeblikkeligt. Begynd at se nu."
+				},
+				"snooker": {
+					"title": "Eplsite Snooker | Live Kampe & Turnerings Højdepunkter",
+					"description": "Se Eplsite Snooker i HD gratis uden tilmelding. Nyd jævne streams af top snooker turneringer og cue sports action. Begynd at se nu."
+				},
+				"billiard": {
+					"title": "Eplsite Billard | Live Kampe & Cue Sports Action",
+					"description": "Se Eplsite Billard i HD gratis uden tilmelding. Nyd jævne streams af top pool, snooker og cue sports turneringer. Begynd at se nu."
+				},
+				"table-tennis": {
+					"title": "Eplsite Bordtennis | Live Kampe & Top Turneringer",
+					"description": "Se Eplsite Bordtennis i HD gratis uden tilmelding. Nyd jævne streams af top bordtennis begivenheder og hurtig action. Begynd at se nu."
+				},
+				"padel-tennis": {
+					"title": "Eplsite Padel | Live Kampe & Top Turneringer",
+					"description": "Se Eplsite Padel i HD gratis uden tilmelding. Nyd hurtige streams i høj kvalitet af top padel og tennis action. Begynd at se nu."
+				},
+				"squash": {
+					"title": "Eplsite Squash | Live Kampe & Top Turnerings Action",
+					"description": "Se Eplsite Squash i HD gratis uden tilmelding. Nyd hurtige streams i høj kvalitet af top squash turneringer. Begynd at se actionen nu."
+				},
+				"motorsport": {
+					"title": "Eplsite Motorsport | Live Racing & F1, MotoGP Streams",
+					"description": "Se Eplsite Motorsport live gratis uden tilmelding. Nyd streams i høj kvalitet af F1, MotoGP og top motorsport begivenheder. Begynd at se nu."
+				},
+				"racing": {
+					"title": "Eplsite Racing | Live Motorsport & Bane Action",
+					"description": "Se Eplsite Racing i HD gratis uden tilmelding. Nyd højhastighedsmotorsport action, topløb og jævne streams. Begynd at se nu."
+				},
+				"cycling": {
+					"title": "Eplsite Cykling | Live Løb & Tour Højdepunkter",
+					"description": "Se Eplsite Cykling i HD gratis uden tilmelding. Nyd top cykelløb, tours og professionelle cykelstreams. Begynd at følge actionen nu."
+				},
+				"equestrianism": {
+					"title": "Eplsite Ridesport | Live Ridning Begivenheder",
+					"description": "Se Eplsite Ridesport i HD gratis uden tilmelding. Nyd jævne streams af top ridesport og ridning konkurrencer. Begynd at se nu."
+				},
+				"golf": {
+					"title": "Eplsite Golf | Live Turneringer & Højdepunkter",
+					"description": "Se Eplsite Golf i HD gratis uden tilmelding. Nyd jævne streams af top PGA og professionelle golf begivenheder. Tee off og begynd at se nu."
+				},
+				"field-hockey": {
+					"title": "Eplsite Landhockey | Live Kampe & Top Turneringer",
+					"description": "Se Eplsite Landhockey i HD gratis uden tilmelding. Nyd jævne streams af top landhockey ligaer og hurtig action. Begynd at se nu."
+				},
+				"lacrosse": {
+					"title": "Eplsite Lacrosse | Live Kampe & Pro Liga Action",
+					"description": "Se Eplsite Lacrosse i HD gratis uden tilmelding. Nyd hurtige streams i høj kvalitet af top lacrosse kampe og ligaer. Begynd at se nu."
+				},
+				"athletics": {
+					"title": "Eplsite Atletik | Live Atletik & Løb Begivenheder",
+					"description": "Se Eplsite Atletik i HD gratis uden tilmelding. Nyd top atletik begivenheder, jævne streams og øjeblikkelig adgang. Begynd at se nu."
+				},
+				"gymnastics": {
+					"title": "Eplsite Gymnastik | Live Rutiner & Konkurrence Streams",
+					"description": "Se Eplsite Gymnastik i HD gratis uden tilmelding. Nyd top kunstnerisk og rytmisk gymnastik begivenheder med jævne streams i høj kvalitet. Begynd at se nu."
+				},
+				"weightlifting": {
+					"title": "Eplsite Vægtløftning | Live Løft & Konkurrence Streams",
+					"description": "Se Eplsite Vægtløftning i HD gratis uden tilmelding. Nyd jævne streams i høj kvalitet af top vægtløftnings begivenheder. Begynd at se nu."
+				},
+				"climbing": {
+					"title": "Eplsite Klatring | Live Konkurrencer & Klatring Begivenheder",
+					"description": "Se Eplsite Klatring i HD gratis uden tilmelding. Nyd top sportsklatring og bouldering konkurrencer med jævne streams i høj kvalitet. Begynd at se nu."
+				},
+				"bandy": {
+					"title": "Eplsite Bandy | Live Kampe & Liga Action",
+					"description": "Se Eplsite Bandy i HD gratis uden tilmelding. Nyd top bandy ligaer og hurtig ishockey action. Begynd at se nu."
+				},
+				"curling": {
+					"title": "Eplsite Curling | Live Kampe & Mesterskabs Streams",
+					"description": "Se Eplsite Curling i HD gratis uden tilmelding. Nyd top curling turneringer og jævne streams i høj kvalitet. Begynd at se nu."
+				},
+				"triathlon": {
+					"title": "Eplsite Triatlon | Live Løb & Begivenhed Streams",
+					"description": "Se Eplsite Triatlon i HD gratis uden tilmelding. Nyd top svømning, cykling og løb action med jævne streams i høj kvalitet. Begynd at se nu."
+				},
+				"water-sports": {
+					"title": "Eplsite Vandsport | Live Begivenheder & Action Streams",
+					"description": "Se Eplsite Vandsport i HD gratis uden tilmelding. Nyd top svømning, surfing og vandsport begivenheder med jævne streams i høj kvalitet. Begynd nu."
+				},
+				"water-polo": {
+					"title": "Eplsite Vandpolo | Live Kampe & Top Liga Action",
+					"description": "Se Eplsite Vandpolo i HD gratis uden tilmelding. Nyd jævne streams i høj kvalitet af top vandpolo ligaer og kampe. Begynd at se nu."
+				},
+				"sailing": {
+					"title": "Eplsite Sejlsport | Live Løb & Regatta Streams",
+					"description": "Se Eplsite Sejlsport i HD gratis uden tilmelding. Nyd top sejlsport regattaer og yacht løb med jævne streams i høj kvalitet. Begynd at se nu."
+				},
+				"bowling": {
+					"title": "Eplsite Bowling | Live Kampe & Turnerings Streams",
+					"description": "Se Eplsite Bowling i HD gratis uden tilmelding. Nyd top bowling ligaer og streams i høj kvalitet. Fang hver strike og begynd at se nu."
+				},
+				"darts": {
+					"title": "Eplsite Dart | Live Kampe & Mesterskabs Streams",
+					"description": "Se Eplsite Dart i HD gratis uden tilmelding. Nyd top professionelle dart begivenheder med jævne streams i høj kvalitet. Begynd at se nu."
+				},
+				"chess": {
+					"title": "Eplsite Skak | Live Turneringer & Stormester Kampe",
+					"description": "Se Eplsite Skak i HD gratis uden tilmelding. Følg top skak turneringer, stormester kampe og nyd hurtige streams i høj kvalitet."
+				},
+				"e-sports": {
+					"title": "Eplsite E-sport | Live Kampe & Pro Gaming Streams",
+					"description": "Se Eplsite E-sport i HD gratis uden tilmelding. Stream top pro gaming turneringer og nyd jævn gameplay i høj kvalitet live."
+				},
+				"others": {
+					"title": "Eplsite Andre | Live Sport & Begivenhed Streams",
+					"description": "Se Eplsite Andre i HD gratis uden tilmelding. Nyd streams i høj kvalitet af forskellige sportsgrene og unikke begivenheder. Begynd at se nu."
+				},
+				"combat-sport": {
+					"title": "Eplsite Kampsport | MMA, Boksning & Live Kampe",
+					"description": "Se Eplsite Kampsport live i HD gratis uden tilmelding. Nyd top MMA, boksning og kampsport streams. Fang actionen nu."
+				},
+				"winter-sport": {
+					"title": "Eplsite Vintersport | Live Skiløb & Snowboarding",
+					"description": "Se Eplsite Vintersport i HD gratis uden tilmelding. Nyd top skiløb, snowboarding og andre vinter begivenheder med jævne streams i høj kvalitet. Begynd nu."
+				},
+				"rugby-sevens": {
+					"title": "Eplsite Rugby Sevens | Live Rugby Sevens Streams",
+					"description": "Eplsite Rugby Sevens tilbyder gratis HD sevens turneringer med jævn afspilning og ingen tilmelding nødvendig. Se højhastighedsmatch rugby sevens action live i dag."
+				},
+				"extreme-sport": {
+					"title": "Eplsite Ekstrem Sport | Live Ekstrem Sport Streams",
+					"description": "Eplsite Ekstrem Sport bringer gratis HD dækning af top ekstreme konkurrencer. Ingen registrering påkrævet. Stream spændende ekstrem sport begivenheder nu."
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2p4u | Live Sport Streams og Kommende Kampe",
+				"description": "Udforsk P2p4u for gratis HD-streams af alle live og kommende sportskampe. Hurtig adgang og ingen tilmelding—begynd at se dine yndlingsbegivenheder nu."
+			},
+			"sports": {
+				"football": {
+					"title": "P2p4u Fodbold | Live Fodbold Streams Online",
+					"description": "Se P2p4u Fodbold gratis i HD med hurtige fodboldstreams uden tilmelding. Nyd problemfri adgang til topligaer og kampe. Begynd at se nu."
+				},
+				"basketball": {
+					"title": "P2p4u Basketball | Live NBA Streams",
+					"description": "Se P2p4u Basketball gratis i HD med hurtige NBA-streams. Ingen tilmelding, problemfri adgang og topkvalitet. Begynd at se live kampe nu."
+				},
+				"tennis": {
+					"title": "P2p4u Tennis | Live Grand Slam Streams",
+					"description": "Se P2p4u Tennis i HD med gratis, hurtige streams af ATP- og WTA-begivenheder. Ingen tilmelding påkrævet. Se live kampe nu."
+				},
+				"ice-hockey": {
+					"title": "P2p4u Ishockey | Live NHL Hockey Streams",
+					"description": "Stream P2p4u Ishockey gratis i HD med problemfri NHL-action. Ingen tilmelding, hurtig adgang og streams i topkvalitet. Se live kampe nu."
+				},
+				"baseball": {
+					"title": "P2p4u Baseball | Live MLB Streams",
+					"description": "Nyd P2p4u Baseball med gratis HD-streams af MLB-kampe. Hurtig indlæsning, ingen tilmelding, nem adgang. Se live nu."
+				},
+				"rugby-union": {
+					"title": "P2p4u Rugby Union | Live Rugby Streams",
+					"description": "Se P2p4u Rugby Union gratis i HD med problemfri live rugby-dækning. Ingen login påkrævet—hop ind i action nu."
+				},
+				"rugby-league": {
+					"title": "P2p4u Rugby League | Live Rugby Streams",
+					"description": "Stream P2p4u Rugby League med gratis rugby-action i høj kvalitet. Ingen tilmelding og hurtig adgang. Begynd at se i dag."
+				},
+				"cricket": {
+					"title": "P2p4u Cricket | Live Kamp Streams",
+					"description": "Nyd P2p4u Cricket med gratis HD-streams fra globale turneringer. Ingen registrering påkrævet. Se live kampe nu."
+				},
+				"american-football": {
+					"title": "P2p4u Amerikansk Fodbold | NFL Live Streams",
+					"description": "Se P2p4u Amerikansk Fodbold i HD med gratis NFL-streams. Ingen tilmelding, hurtig adgang, topkvalitet. Begynd at streame nu."
+				},
+				"volleyball": {
+					"title": "P2p4u Volleyball | Live Kamp Streams",
+					"description": "Stream P2p4u Volleyball gratis med problemfri HD-action fra topligaer. Ingen konto påkrævet—se med det samme."
+				},
+				"beach-volleyball": {
+					"title": "P2p4u Beachvolley | Live Sandbanekampe",
+					"description": "Se P2p4u Beachvolley gratis i HD med topturneringer. Ingen tilmelding påkrævet. Begynd at se nu."
+				},
+				"handball": {
+					"title": "P2p4u Håndbold | Live Kamp Streams",
+					"description": "Stream P2p4u Håndbold gratis med hurtig HD-dækning i høj kvalitet. Ingen tilmelding påkrævet—begynd at se live kampe."
+				},
+				"beach-handball": {
+					"title": "P2p4u Strandhåndbold | Live Kamp Streams",
+					"description": "Nyd P2p4u Strandhåndbold i HD med gratis, problemfrie streams. Ingen registrering påkrævet. Se live nu."
+				},
+				"beach-soccer": {
+					"title": "P2p4u Strandfodbold | Live Strandfodbold Streams",
+					"description": "Se P2p4u Strandfodbold gratis med HD strandfodbold-streams. Ingen tilmelding påkrævet. Deltag i live kampe nu."
+				},
+				"aussie-rules": {
+					"title": "P2p4u Australsk Fodbold | AFL Live Streams",
+					"description": "Stream P2p4u Australsk Fodbold gratis med HD AFL-action. Ingen registrering—se kampe live nu."
+				},
+				"futsal": {
+					"title": "P2p4u Futsal | Live Indendørs Fodbold Streams",
+					"description": "Nyd P2p4u Futsal gratis med hurtig HD indendørs fodbold-action. Ingen tilmelding påkrævet. Se nu."
+				},
+				"badminton": {
+					"title": "P2p4u Badminton | Live Kamp Streams",
+					"description": "Se P2p4u Badminton med gratis HD-streams af topturneringer. Ingen login påkrævet—stream live nu."
+				},
+				"netball": {
+					"title": "P2p4u Netball | Live Kamp Streams",
+					"description": "Stream P2p4u Netball gratis i HD med hurtig, problemfri adgang. Ingen tilmelding påkrævet. Begynd at se nu."
+				},
+				"floorball": {
+					"title": "P2p4u Floorball | Live Kamp Streams",
+					"description": "Nyd P2p4u Floorball gratis med rene HD-streams. Ingen registrering nødvendig. Se kampe med det samme."
+				},
+				"boxing": {
+					"title": "P2p4u Boksning | Live Fight Night Streams",
+					"description": "Stream P2p4u Boksning gratis i HD med store kampaftener. Ingen tilmelding påkrævet. Se live nu."
+				},
+				"mma": {
+					"title": "P2p4u MMA | Live Kamp Streams",
+					"description": "Se P2p4u MMA med gratis HD UFC-style kampdækning. Ingen registrering nødvendig. Stream live i dag."
+				},
+				"snooker": {
+					"title": "P2p4u Snooker | Live Bordstreams",
+					"description": "Nyd P2p4u Snooker med problemfrie HD-streams. Ingen tilmelding—se turneringer live nu."
+				},
+				"billiard": {
+					"title": "P2p4u Billard | Live Cuesport Streams",
+					"description": "Stream P2p4u Billard gratis med HD cuesport-action. Ingen registrering påkrævet. Begynd at se nu."
+				},
+				"table-tennis": {
+					"title": "P2p4u Bordtennis | Live Bordtennis Streams",
+					"description": "Se P2p4u Bordtennis med gratis HD bordtennis-streams. Ingen tilmelding nødvendig. Se live nu."
+				},
+				"padel-tennis": {
+					"title": "P2p4u Padel | Live Padel Streams",
+					"description": "Stream P2p4u Padel gratis med HD-kampe. Hurtig adgang, ingen tilmelding. Se live kampe med det samme."
+				},
+				"squash": {
+					"title": "P2p4u Squash | Live Kamp Streams",
+					"description": "Nyd P2p4u Squash med HD-streams i høj kvalitet. Ingen registrering påkrævet—begynd at se nu."
+				},
+				"motorsport": {
+					"title": "P2p4u Motorsport | Live Motorløb Streams",
+					"description": "Stream P2p4u Motorsport gratis i HD med topmotorløb. Ingen tilmelding påkrævet. Se live."
+				},
+				"racing": {
+					"title": "P2p4u Racing | Live Fart Streams",
+					"description": "Se P2p4u Racing med gratis HD-dækning af store racing-begivenheder. Ingen login nødvendig. Begynd at streame nu."
+				},
+				"cycling": {
+					"title": "P2p4u Cykling | Live Løb Streams",
+					"description": "Stream P2p4u Cykling gratis med HD-ture i høj kvalitet. Ingen tilmelding—se live action nu."
+				},
+				"equestrianism": {
+					"title": "P2p4u Ridesport | Live Hestesport Streams",
+					"description": "Se P2p4u Ridesport gratis med HD ridekonkurrencer. Ingen registrering nødvendig. Begynd nu."
+				},
+				"golf": {
+					"title": "P2p4u Golf | Live PGA Streams",
+					"description": "Stream P2p4u Golf gratis med HD PGA og globale begivenheder. Ingen tilmelding—se live runder nu."
+				},
+				"field-hockey": {
+					"title": "P2p4u Landhockey | Live Kamp Streams",
+					"description": "Nyd P2p4u Landhockey i HD med gratis, hurtige streams. Ingen konto påkrævet. Se nu."
+				},
+				"lacrosse": {
+					"title": "P2p4u Lacrosse | Live Kamp Streams",
+					"description": "Stream P2p4u Lacrosse gratis med problemfri HD-dækning. Ingen tilmelding nødvendig—se med det samme."
+				},
+				"athletics": {
+					"title": "P2p4u Atletik | Live Banestreams",
+					"description": "Se P2p4u Atletik gratis i HD med top atletikbegivenheder. Ingen login påkrævet. Begynd at streame nu."
+				},
+				"gymnastics": {
+					"title": "P2p4u Gymnastik | Live Kunstneriske Streams",
+					"description": "Nyd P2p4u Gymnastik med gratis HD-dækning af topkonkurrencer. Ingen registrering nødvendig. Se nu."
+				},
+				"weightlifting": {
+					"title": "P2p4u Vægtløftning | Live Styrke Streams",
+					"description": "Stream P2p4u Vægtløftning gratis med HD-løft og konkurrencer. Ingen registrering nødvendig. Se live nu."
+				},
+				"climbing": {
+					"title": "P2p4u Klatring | Live Klatresport Streams",
+					"description": "Se P2p4u Klatring med gratis HD sportklatringsdækning. Ingen tilmelding—begynd at se nu."
+				},
+				"bandy": {
+					"title": "P2p4u Bandy | Live Isfodbold Streams",
+					"description": "Se P2p4u Bandy med hurtige, gratis HD-streams. Ingen registrering nødvendig. Nyd live kampe nu."
+				},
+				"curling": {
+					"title": "P2p4u Curling | Live Iskamp Streams",
+					"description": "Stream P2p4u Curling gratis i HD med problemfri adgang. Ingen tilmelding nødvendig. Se live nu."
+				},
+				"triathlon": {
+					"title": "P2p4u Triatlon | Live Løb Streams",
+					"description": "Se P2p4u Triatlon gratis med HD multisport-dækning. Ingen login påkrævet—begynd at streame nu."
+				},
+				"water-sports": {
+					"title": "P2p4u Vandsport | Live Akvatiske Streams",
+					"description": "Stream P2p4u Vandsport gratis i HD. Ingen tilmelding—se akvatisk action live nu."
+				},
+				"water-polo": {
+					"title": "P2p4u Vandpolo | Live Kamp Streams",
+					"description": "Nyd P2p4u Vandpolo med gratis HD-streams. Ingen registrering påkrævet. Se live kampe nu."
+				},
+				"sailing": {
+					"title": "P2p4u Sejlsport | Live Regatta Streams",
+					"description": "Se P2p4u Sejlsport gratis med problemfrie HD-streams. Ingen tilmelding—begynd at se nu."
+				},
+				"bowling": {
+					"title": "P2p4u Bowling | Live Bane Streams",
+					"description": "Nyd P2p4u Bowling med gratis HD bowling-action. Ingen login påkrævet—se live nu."
+				},
+				"darts": {
+					"title": "P2p4u Dart | Live Turnerings Streams",
+					"description": "Stream P2p4u Dart gratis i HD med topbegivenheder. Ingen tilmelding nødvendig. Se nu."
+				},
+				"chess": {
+					"title": "P2p4u Skak | Live Turnerings Streams",
+					"description": "Se P2p4u Skak gratis med HD-dækning af store kampe. Ingen registrering nødvendig. Begynd at se."
+				},
+				"e-sports": {
+					"title": "P2p4u E-sport | Live Gaming Streams",
+					"description": "Stream P2p4u E-sport gratis med e-sportturneringer i høj kvalitet. Ingen tilmelding påkrævet. Se med det samme."
+				},
+				"others": {
+					"title": "P2p4u Andre | Live Sport Streams",
+					"description": "Udforsk P2p4u Andre for gratis HD-streams på tværs af mange sportsgrene. Ingen konto nødvendig. Begynd at se nu."
+				},
+				"combat-sport": {
+					"title": "P2p4u Kampsport | Live Kamp Streams",
+					"description": "Se P2p4u Kampsport gratis med HD kampaction på tværs af topbegivenheder. Ingen konto nødvendig—begynd at streame nu."
+				},
+				"winter-sport": {
+					"title": "P2p4u Vintersport | Live Sne Action Streams",
+					"description": "Stream P2p4u Vintersport gratis med HD sne- og isbegivenheder. Ingen konto påkrævet. Se nu."
+				},
+				"rugby-sevens": {
+					"title": "P2p4u Rugby Sevens | Live Rugby Sevens Streams",
+					"description": "P2p4u Rugby Sevens tilbyder hurtige, gratis HD sevens-turneringer uden tilmelding. Se højhastighedsrugby sevens live og nyd problemfri streaming nu."
+				},
+				"extreme-sport": {
+					"title": "P2p4u Ekstremsport | Live Ekstremsport Streams",
+					"description": "P2p4u Ekstremsport leverer gratis HD-dækning af topekstremkonkurrencer. Ingen registrering nødvendig. Stream spændende ekstrem sportsbegivenheder i dag."
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "Streamhunter | Live Sport Streams & Kommende Kampe",
+				"description": "Streamhunter tilbyder gratis HD-streams for alle sportsgrene med kommende og live kampe opdateret dagligt. Hurtig adgang, ingen tilmelding påkrævet. Begynd at se nu."
+			},
+			"sports": {
+				"football": {
+					"title": "Streamhunter Fodbold | Live Kampe Online",
+					"description": "Streamhunter Fodbold leverer gratis HD-streams af fodboldkampe verden over. Nyd hurtig adgang og ingen tilmelding. Begynd at se nu."
+				},
+				"basketball": {
+					"title": "Streamhunter Basketball | Live NBA Action",
+					"description": "Streamhunter Basketball tilbyder gratis HD-streams fra NBA og globale ligaer. Nem adgang og ingen registrering. Se live kampe nu."
+				},
+				"tennis": {
+					"title": "Streamhunter Tennis | Live Grand Slam Streams",
+					"description": "Streamhunter Tennis lader dig se ATP- og WTA-kampe i HD gratis. Ingen tilmelding påkrævet. Stream live tennis nu."
+				},
+				"ice-hockey": {
+					"title": "Streamhunter Ishockey | Live NHL Streams",
+					"description": "Streamhunter Ishockey bringer gratis HD-action fra NHL og globale ligaer. Problemfri streaming uden tilmelding. Se nu."
+				},
+				"baseball": {
+					"title": "Streamhunter Baseball | Live MLB Streams",
+					"description": "Streamhunter Baseball tilbyder HD MLB og internationale liga-streams gratis. Ingen registrering påkrævet. Se live baseball nu."
+				},
+				"rugby-union": {
+					"title": "Streamhunter Rugby Union | Live Rugby Streams",
+					"description": "Streamhunter Rugby Union giver gratis HD-streams fra topligaer og internationale kampe. Ingen tilmelding nødvendig. Se rugby live nu."
+				},
+				"rugby-league": {
+					"title": "Streamhunter Rugby League | Live Rugby Begivenheder",
+					"description": "Streamhunter Rugby League leverer gratis HD-streams fra NRL, Super League og mere. Ingen registrering. Se live nu."
+				},
+				"cricket": {
+					"title": "Streamhunter Cricket | Live Kamp Streams",
+					"description": "Streamhunter Cricket streamer Tests, ODI og T20 i HD gratis. Hurtig indlæsning uden tilmelding. Begynd at se live cricket nu."
+				},
+				"american-football": {
+					"title": "Streamhunter Amerikansk Fodbold | NFL Live Streams",
+					"description": "Streamhunter Amerikansk Fodbold tilbyder gratis HD NFL og NCAA-streams uden tilmelding. Hurtig visning i høj kvalitet. Se live nu."
+				},
+				"volleyball": {
+					"title": "Streamhunter Volleyball | Live Volleyball Streams",
+					"description": "Streamhunter Volleyball giver gratis HD-kampe fra globale ligaer. Ingen tilmelding påkrævet. Se live volleyball nu."
+				},
+				"beach-volleyball": {
+					"title": "Streamhunter Beachvolley | Live Strand Action",
+					"description": "Streamhunter Beachvolley streamer top FIVB og pro-ture i HD. Gratis adgang uden registrering. Se nu."
+				},
+				"handball": {
+					"title": "Streamhunter Håndbold | Live Håndbold Streams",
+					"description": "Streamhunter Håndbold tilbyder gratis HD-kampe fra topligaer og turneringer. Ingen tilmelding nødvendig. Se nu."
+				},
+				"beach-handball": {
+					"title": "Streamhunter Strandhåndbold | Live Strandkampe",
+					"description": "Streamhunter Strandhåndbold bringer gratis HD-action fra globale begivenheder. Ingen registrering påkrævet. Se live nu."
+				},
+				"beach-soccer": {
+					"title": "Streamhunter Strandfodbold | Live Strandkampe",
+					"description": "Streamhunter Strandfodbold tilbyder gratis HD strandfodbold-streams uden tilmelding. Nyd hurtig visning i høj kvalitet nu."
+				},
+				"aussie-rules": {
+					"title": "Streamhunter Australsk Fodbold | Live AFL Streams",
+					"description": "Streamhunter Australsk Fodbold giver gratis HD AFL-action uden registrering. Hurtig, problemfri streaming. Se nu."
+				},
+				"futsal": {
+					"title": "Streamhunter Futsal | Live Futsal Streams",
+					"description": "Streamhunter Futsal leverer gratis HD futsal-kampe verden over. Ingen tilmelding nødvendig. Se live kampe nu."
+				},
+				"badminton": {
+					"title": "Streamhunter Badminton | Live Badminton Streams",
+					"description": "Streamhunter Badminton streamer BWF-turneringer i HD gratis. Ingen registrering påkrævet. Se nu."
+				},
+				"netball": {
+					"title": "Streamhunter Netball | Live Netball Streams",
+					"description": "Streamhunter Netball giver gratis HD-adgang til topligaer og turneringer. Ingen tilmelding påkrævet. Se live nu."
+				},
+				"floorball": {
+					"title": "Streamhunter Floorball | Live Floorball Streams",
+					"description": "Streamhunter Floorball giver gratis HD-kampe fra topligaer. Ingen registrering. Se live action nu."
+				},
+				"boxing": {
+					"title": "Streamhunter Boksning | Live Fight Night Streams",
+					"description": "Streamhunter Boksning leverer gratis HD-streams af store kampe. Ingen registrering nødvendig. Se boksning live nu."
+				},
+				"mma": {
+					"title": "Streamhunter MMA | Live MMA Kamp Streams",
+					"description": "Streamhunter MMA tilbyder gratis HD-action fra toporganisationer. Ingen tilmelding påkrævet. Se live kampe nu."
+				},
+				"snooker": {
+					"title": "Streamhunter Snooker | Live Snooker Streams",
+					"description": "Streamhunter Snooker streamer professionelle turneringer i HD gratis. Ingen registrering. Se live nu."
+				},
+				"billiard": {
+					"title": "Streamhunter Billard | Live Billard Streams",
+					"description": "Streamhunter Billard giver gratis HD-kampe og turneringer uden tilmelding. Begynd at se nu."
+				},
+				"table-tennis": {
+					"title": "Streamhunter Bordtennis | Live Bordtennis Streams",
+					"description": "Streamhunter Bordtennis giver gratis HD ITTF-kampe. Ingen registrering påkrævet. Se live action nu."
+				},
+				"padel-tennis": {
+					"title": "Streamhunter Padel | Live Padel Streams",
+					"description": "Streamhunter Padel tilbyder gratis HD-kampe fra store ture. Ingen tilmelding. Se live padel nu."
+				},
+				"squash": {
+					"title": "Streamhunter Squash | Live Squash Streams",
+					"description": "Streamhunter Squash streamer PSA-kampe i HD gratis. Ingen registrering. Se squash live nu."
+				},
+				"motorsport": {
+					"title": "Streamhunter Motorsport | Live Motorløb",
+					"description": "Streamhunter Motorsport giver gratis HD racing-streams fra store serier. Ingen tilmelding. Se motorsport live nu."
+				},
+				"racing": {
+					"title": "Streamhunter Racing | Live Løb Streams",
+					"description": "Streamhunter Racing tilbyder gratis HD motorsport-streams uden registrering. Nyd hurtig live action nu."
+				},
+				"cycling": {
+					"title": "Streamhunter Cykling | Live Cykling Streams",
+					"description": "Streamhunter Cykling streamer store ture og begivenheder i HD gratis. Ingen tilmelding. Se live cykling nu."
+				},
+				"equestrianism": {
+					"title": "Streamhunter Ridesport | Live Hestebegivenheder",
+					"description": "Streamhunter Ridesport leverer gratis HD-streams af globale hestekonkurrencer. Ingen registrering. Se live nu."
+				},
+				"golf": {
+					"title": "Streamhunter Golf | Live Golf Streams",
+					"description": "Streamhunter Golf tilbyder gratis HD PGA og globale tur-streams. Ingen tilmelding. Se golf live nu."
+				},
+				"field-hockey": {
+					"title": "Streamhunter Landhockey | Live Hockey Streams",
+					"description": "Streamhunter Landhockey streamer globale kampe i HD gratis. Ingen tilmelding påkrævet. Se live nu."
+				},
+				"lacrosse": {
+					"title": "Streamhunter Lacrosse | Live Lacrosse Streams",
+					"description": "Streamhunter Lacrosse giver gratis HD-kampe fra store ligaer. Ingen registrering. Se nu."
+				},
+				"athletics": {
+					"title": "Streamhunter Atletik | Live Atletik Streams",
+					"description": "Streamhunter Atletik streamer globale begivenheder i HD gratis. Ingen tilmelding påkrævet. Se atletik live nu."
+				},
+				"gymnastics": {
+					"title": "Streamhunter Gymnastik | Live Gymnastik Streams",
+					"description": "Streamhunter Gymnastik tilbyder gratis HD konkurrence-streams uden registrering. Se live nu."
+				},
+				"weightlifting": {
+					"title": "Streamhunter Vægtløftning | Live Vægtløftning Streams",
+					"description": "Streamhunter Vægtløftning tilbyder gratis HD-konkurrencer uden tilmelding. Nyd hurtig adgang til live vægtløftningsbegivenheder nu."
+				},
+				"climbing": {
+					"title": "Streamhunter Klatring | Live Klatring Streams",
+					"description": "Streamhunter Klatring streamer lead, bouldering og speed-begivenheder i HD gratis. Ingen tilmelding. Se live nu."
+				},
+				"bandy": {
+					"title": "Streamhunter Bandy | Live Bandy Streams",
+					"description": "Streamhunter Bandy tilbyder gratis HD-kampe uden tilmelding. Se bandy live nu."
+				},
+				"curling": {
+					"title": "Streamhunter Curling | Live Curling Streams",
+					"description": "Streamhunter Curling giver gratis HD turneringsdækning uden registrering. Se live curling nu."
+				},
+				"triathlon": {
+					"title": "Streamhunter Triatlon | Live Løb Streams",
+					"description": "Streamhunter Triatlon streamer globale triatlon-begivenheder i HD gratis. Ingen tilmelding. Se live nu."
+				},
+				"water-sports": {
+					"title": "Streamhunter Vandsport | Live Akvatiske Streams",
+					"description": "Streamhunter Vandsport tilbyder gratis HD-streams af top akvatiske begivenheder. Ingen registrering. Se live nu."
+				},
+				"water-polo": {
+					"title": "Streamhunter Vandpolo | Live Polo Streams",
+					"description": "Streamhunter Vandpolo giver gratis HD-kampe uden tilmelding. Se live vandpolo nu."
+				},
+				"sailing": {
+					"title": "Streamhunter Sejlsport | Live Sejlsport Streams",
+					"description": "Streamhunter Sejlsport streamer globale regattaer i HD gratis. Ingen registrering. Se live sejlsport nu."
+				},
+				"bowling": {
+					"title": "Streamhunter Bowling | Live Bowling Streams",
+					"description": "Streamhunter Bowling giver gratis HD-turneringer uden tilmelding. Se live bowling nu."
+				},
+				"darts": {
+					"title": "Streamhunter Dart | Live Dart Streams",
+					"description": "Streamhunter Dart tilbyder gratis HD PDC og globale dart-streams. Ingen registrering. Se live dart nu."
+				},
+				"chess": {
+					"title": "Streamhunter Skak | Live Skak Kampe",
+					"description": "Streamhunter Skak streamer topturneringer i HD gratis. Ingen tilmelding. Se skak live nu."
+				},
+				"e-sports": {
+					"title": "Streamhunter E-sport | Live E-sport Streams",
+					"description": "Streamhunter E-sport giver gratis HD e-sportturneringer. Ingen registrering påkrævet. Se live nu."
+				},
+				"others": {
+					"title": "Streamhunter Andre | Live Sport Streams",
+					"description": "Streamhunter Andre tilbyder gratis HD-dækning af niche og nye sportsgrene. Ingen tilmelding. Se live action nu."
+				},
+				"combat-sport": {
+					"title": "Streamhunter Kampsport | Live Kamp Streams",
+					"description": "Streamhunter Kampsport tilbyder gratis HD-action fra store kampbegivenheder. Ingen tilmelding. Se live kampe nu."
+				},
+				"winter-sport": {
+					"title": "Streamhunter Vintersport | Live Vintersport Begivenheder",
+					"description": "Streamhunter Vintersport giver gratis HD ski, skøjteløb og mere. Ingen registrering. Se live nu."
+				},
+				"rugby-sevens": {
+					"title": "Streamhunter Rugby Sevens | Live Rugby Sevens Streams",
+					"description": "Streamhunter Rugby Sevens leverer gratis HD sevens-turneringer uden tilmelding. Se tempofyldt rugby sevens live og nyd problemfri, pålidelig streaming nu."
+				},
+				"extreme-sport": {
+					"title": "Streamhunter Ekstremsport | Live Ekstremsport Streams",
+					"description": "Streamhunter Ekstremsport tilbyder gratis HD-action fra topekstremkonkurrencer. Ingen registrering påkrævet. Stream spændende ekstremsportsbegivenheder i dag."
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "Methstreams | Live Sport Streams & Kommende Kampe",
+				"description": "Methstreams leverer gratis HD-streams for alle sportsgrene med live og kommende kampe opdateret dagligt. Ingen tilmelding påkrævet. Begynd at se øjeblikkeligt."
+			},
+			"sports": {
+				"football": {
+					"title": "Methstreams Fodbold | Live Kampe Online",
+					"description": "Methstreams Fodbold tilbyder gratis HD fodbold-streams uden tilmelding. Hurtig, pålidelig adgang til live kampe. Se nu."
+				},
+				"basketball": {
+					"title": "Methstreams Basketball | Live NBA Streams",
+					"description": "Methstreams Basketball bringer gratis HD NBA og globale liga-streams. Ingen registrering påkrævet. Se live basketball nu."
+				},
+				"tennis": {
+					"title": "Methstreams Tennis | Live Tennis Streams",
+					"description": "Methstreams Tennis leverer ATP- og WTA-streams i HD gratis. Øjeblikkelig adgang uden tilmelding. Se nu."
+				},
+				"ice-hockey": {
+					"title": "Methstreams Ishockey | Live NHL Streams",
+					"description": "Methstreams Ishockey tilbyder gratis HD NHL og internationale streams. Ingen registrering påkrævet. Se live hockey nu."
+				},
+				"baseball": {
+					"title": "Methstreams Baseball | Live MLB Streams",
+					"description": "Methstreams Baseball giver HD MLB og globale baseball-streams gratis. Ingen tilmelding påkrævet. Se live nu."
+				},
+				"rugby-union": {
+					"title": "Methstreams Rugby Union | Live Rugby Streams",
+					"description": "Methstreams Rugby Union streamer topligaer og internationale kampe i HD gratis. Ingen tilmelding. Se rugby live nu."
+				},
+				"rugby-league": {
+					"title": "Methstreams Rugby League | Live Rugby Kampe",
+					"description": "Methstreams Rugby League leverer gratis HD NRL og Super League-streams. Hurtig adgang uden registrering. Se nu."
+				},
+				"cricket": {
+					"title": "Methstreams Cricket | Live Cricket Streams",
+					"description": "Methstreams Cricket giver HD T20, ODI og Test-streams gratis. Ingen tilmelding påkrævet. Begynd at se nu."
+				},
+				"american-football": {
+					"title": "Methstreams Amerikansk Fodbold | NFL Live Streams",
+					"description": "Methstreams Amerikansk Fodbold streamer NFL og NCAA-kampe i HD gratis. Ingen registrering. Se live nu."
+				},
+				"volleyball": {
+					"title": "Methstreams Volleyball | Live Volleyball Streams",
+					"description": "Methstreams Volleyball tilbyder gratis HD globale volleyball-kampe uden tilmelding. Se live volleyball nu."
+				},
+				"beach-volleyball": {
+					"title": "Methstreams Beachvolley | Live Strand Streams",
+					"description": "Methstreams Beachvolley giver gratis HD FIVB og pro tur-streams. Ingen registrering påkrævet. Se nu."
+				},
+				"handball": {
+					"title": "Methstreams Håndbold | Live Håndbold Streams",
+					"description": "Methstreams Håndbold giver gratis HD-streams fra globale ligaer. Ingen tilmelding nødvendig. Se håndbold live nu."
+				},
+				"beach-handball": {
+					"title": "Methstreams Strandhåndbold | Live Strandkampe",
+					"description": "Methstreams Strandhåndbold streamer globale begivenheder i HD uden registrering. Se live nu."
+				},
+				"beach-soccer": {
+					"title": "Methstreams Strandfodbold | Live Strandfodbold",
+					"description": "Methstreams Strandfodbold tilbyder gratis HD-kampe uden tilmelding. Nyd hurtige strandfodbold-streams nu."
+				},
+				"aussie-rules": {
+					"title": "Methstreams Australsk Fodbold | Live AFL Streams",
+					"description": "Methstreams Australsk Fodbold streamer AFL-action gratis i HD. Ingen registrering påkrævet. Se nu."
+				},
+				"futsal": {
+					"title": "Methstreams Futsal | Live Futsal Streams",
+					"description": "Methstreams Futsal leverer gratis HD futsal-kampe verden over. Ingen tilmelding. Se live nu."
+				},
+				"badminton": {
+					"title": "Methstreams Badminton | Live Badminton Streams",
+					"description": "Methstreams Badminton streamer BWF-turneringer i HD gratis. Ingen registrering. Se nu."
+				},
+				"netball": {
+					"title": "Methstreams Netball | Live Netball Streams",
+					"description": "Methstreams Netball giver gratis HD-kampe fra topligaer. Ingen tilmelding nødvendig. Se live netball nu."
+				},
+				"floorball": {
+					"title": "Methstreams Floorball | Live Floorball Streams",
+					"description": "Methstreams Floorball streamer globale kampe i HD gratis. Ingen registrering. Se nu."
+				},
+				"boxing": {
+					"title": "Methstreams Boksning | Live Fight Night",
+					"description": "Methstreams Boksning leverer gratis HD boksning-streams uden registrering. Se live kampe nu."
+				},
+				"mma": {
+					"title": "Methstreams MMA | Live MMA Streams",
+					"description": "Methstreams MMA streamer top kamporganisationer i HD gratis. Ingen tilmelding påkrævet. Se nu."
+				},
+				"snooker": {
+					"title": "Methstreams Snooker | Live Snooker Streams",
+					"description": "Methstreams Snooker giver gratis HD professionel snooker-dækning. Ingen registrering. Se live nu."
+				},
+				"billiard": {
+					"title": "Methstreams Billard | Live Billard Streams",
+					"description": "Methstreams Billard streamer globale billard-begivenheder i HD gratis. Ingen tilmelding. Se nu."
+				},
+				"table-tennis": {
+					"title": "Methstreams Bordtennis | Live Bordtennis",
+					"description": "Methstreams Bordtennis tilbyder gratis HD ITTF-streams. Ingen registrering påkrævet. Se live bordtennis nu."
+				},
+				"padel-tennis": {
+					"title": "Methstreams Padel | Live Padel Streams",
+					"description": "Methstreams Padel giver gratis HD padel-action uden tilmelding. Se live nu."
+				},
+				"squash": {
+					"title": "Methstreams Squash | Live Squash Streams",
+					"description": "Methstreams Squash streamer PSA-turneringer i HD gratis. Ingen registrering. Se squash live nu."
+				},
+				"motorsport": {
+					"title": "Methstreams Motorsport | Live Motorløb",
+					"description": "Methstreams Motorsport tilbyder gratis HD racing-streams uden tilmelding. Se motorsport live nu."
+				},
+				"racing": {
+					"title": "Methstreams Racing | Live Løb Streams",
+					"description": "Methstreams Racing giver gratis HD motorsport-streams. Ingen registrering påkrævet. Se løb nu."
+				},
+				"cycling": {
+					"title": "Methstreams Cykling | Live Cykling Streams",
+					"description": "Methstreams Cykling streamer store ture og begivenheder i HD gratis. Ingen tilmelding. Se live cykling nu."
+				},
+				"equestrianism": {
+					"title": "Methstreams Ridesport | Live Hestebegivenheder",
+					"description": "Methstreams Ridesport giver gratis HD hestekonkurrence-streams. Ingen registrering nødvendig. Se nu."
+				},
+				"golf": {
+					"title": "Methstreams Golf | Live Golf Streams",
+					"description": "Methstreams Golf giver gratis HD PGA og globale tur-streams. Ingen tilmelding påkrævet. Se live golf nu."
+				},
+				"field-hockey": {
+					"title": "Methstreams Landhockey | Live Hockey Streams",
+					"description": "Methstreams Landhockey streamer internationale kampe i HD gratis. Ingen registrering. Se nu."
+				},
+				"lacrosse": {
+					"title": "Methstreams Lacrosse | Live Lacrosse Streams",
+					"description": "Methstreams Lacrosse leverer gratis HD pro og college lacrosse-streams. Ingen tilmelding. Se nu."
+				},
+				"athletics": {
+					"title": "Methstreams Atletik | Live Atletik Streams",
+					"description": "Methstreams Atletik streamer store atletikbegivenheder i HD gratis. Ingen registrering. Se live nu."
+				},
+				"gymnastics": {
+					"title": "Methstreams Gymnastik | Live Gymnastik Streams",
+					"description": "Methstreams Gymnastik tilbyder gratis HD konkurrence-streams uden tilmelding. Se gymnastik live nu."
+				},
+				"weightlifting": {
+					"title": "Methstreams Vægtløftning | Live Vægtløftning",
+					"description": "Methstreams Vægtløftning giver gratis HD løftekonkurrencer. Ingen registrering. Se live vægtløftning nu."
+				},
+				"climbing": {
+					"title": "Methstreams Klatring | Live Klatring Streams",
+					"description": "Methstreams Klatring streamer bouldering, lead og speed-begivenheder i HD uden tilmelding. Se nu."
+				},
+				"bandy": {
+					"title": "Methstreams Bandy | Live Bandy Streams",
+					"description": "Methstreams Bandy streamer globale kampe i HD gratis. Ingen tilmelding. Se nu."
+				},
+				"curling": {
+					"title": "Methstreams Curling | Live Curling Streams",
+					"description": "Methstreams Curling giver gratis HD-turneringer uden registrering. Se curling live nu."
+				},
+				"triathlon": {
+					"title": "Methstreams Triatlon | Live Triatlon Streams",
+					"description": "Methstreams Triatlon tilbyder gratis HD global triatlon-dækning. Ingen tilmelding nødvendig. Se live nu."
+				},
+				"water-sports": {
+					"title": "Methstreams Vandsport | Live Akvatiske Streams",
+					"description": "Methstreams Vandsport streamer akvatiske konkurrencer i HD gratis. Ingen registrering. Se nu."
+				},
+				"water-polo": {
+					"title": "Methstreams Vandpolo | Live Polo Streams",
+					"description": "Methstreams Vandpolo giver gratis HD-streams uden tilmelding. Se live vandpolo nu."
+				},
+				"sailing": {
+					"title": "Methstreams Sejlsport | Live Sejlsport Streams",
+					"description": "Methstreams Sejlsport streamer globale regattaer i HD gratis. Ingen registrering. Se sejlsport live nu."
+				},
+				"bowling": {
+					"title": "Methstreams Bowling | Live Bowling Streams",
+					"description": "Methstreams Bowling tilbyder gratis HD-turneringer uden tilmelding. Se bowling live nu."
+				},
+				"darts": {
+					"title": "Methstreams Dart | Live Dart Streams",
+					"description": "Methstreams Dart streamer PDC og globale begivenheder i HD gratis. Ingen registrering. Se dart nu."
+				},
+				"chess": {
+					"title": "Methstreams Skak | Live Skak Kampe",
+					"description": "Methstreams Skak tilbyder gratis HD-streams af topturneringer. Ingen tilmelding. Se skak live nu."
+				},
+				"e-sports": {
+					"title": "Methstreams E-sport | Live E-sport Streams",
+					"description": "Methstreams E-sport giver gratis HD e-sportturneringer. Ingen registrering påkrævet. Se live nu."
+				},
+				"others": {
+					"title": "Methstreams Andre | Live Sport Streams",
+					"description": "Methstreams Andre streamer niche og nye sportsgrene i HD gratis. Ingen tilmelding. Se live nu."
+				},
+				"combat-sport": {
+					"title": "Methstreams Kampsport | Live Kamp Streams",
+					"description": "Methstreams Kampsport tilbyder gratis HD kampbegivenheder uden tilmelding. Se live action nu."
+				},
+				"winter-sport": {
+					"title": "Methstreams Vintersport | Live Sne Action",
+					"description": "Methstreams Vintersport tilbyder gratis HD ski, skøjteløb og vinterbegivenheder. Ingen registrering. Se live nu."
+				},
+				"rugby-sevens": {
+					"title": "Methstreams Rugby Sevens | Live Rugby Sevens Streams",
+					"description": "Methstreams Rugby Sevens bringer gratis HD sevens-turneringer uden tilmelding. Se tempofyldt rugby sevens live og nyd problemfri streaming i dag."
+				},
+				"extreme-sport": {
+					"title": "Methstreams Ekstremsport | Live Ekstremsport Streams",
+					"description": "Methstreams Ekstremsport tilbyder gratis HD-dækning af topekstremkonkurrencer. Ingen registrering påkrævet. Stream spændende ekstremsportsbegivenheder nu."
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "Wiziwig | Live Sports Streams & Kommende Kampe",
+				"description": "Wiziwig leverer hurtige, gratis HD-streams til alle sportsgrene med live og kommende kampe opdateret dagligt. Ingen tilmelding nødvendig—start med at se nu."
+			},
+			"sports": {
+				"football": {
+					"title": "Wiziwig Fodbold | Live Fodbold Streams",
+					"description": "Wiziwig Fodbold giver dig glatte HD-fodboldstreams uden tilmeldingsbarrierer. Nyd live kampe øjeblikkeligt."
+				},
+				"basketball": {
+					"title": "Wiziwig Basketball | Se NBA Live",
+					"description": "Wiziwig Basketball leverer HD NBA og verdensomspændende basketball-action med hurtig indlæsning. Start med at se live nu."
+				},
+				"tennis": {
+					"title": "Wiziwig Tennis | Live Tennis Dækning",
+					"description": "Wiziwig Tennis lader dig få adgang til ATP- og WTA-kampe i HD gratis. Stream live tennis øjeblikkeligt."
+				},
+				"ice-hockey": {
+					"title": "Wiziwig Ishockey | Live NHL Streams",
+					"description": "Wiziwig Ishockey bringer dig NHL og globale kampe i klar HD uden registrering. Se live nu."
+				},
+				"baseball": {
+					"title": "Wiziwig Baseball | Live Baseball Online",
+					"description": "Wiziwig Baseball streamer MLB og internationale kampe i HD uden tilmelding. Nyd live baseball nu."
+				},
+				"rugby-union": {
+					"title": "Wiziwig Rugby Union | Se Rugby Live",
+					"description": "Wiziwig Rugby Union giver HD-adgang til topligaer og testkampe. Deltag i live rugby-action nu."
+				},
+				"rugby-league": {
+					"title": "Wiziwig Rugby League | Live Rugby HD Streams",
+					"description": "Wiziwig Rugby League tilbyder gratis HD NRL og Super League streaming. Se live action nu."
+				},
+				"cricket": {
+					"title": "Wiziwig Cricket | Live Cricket Streams",
+					"description": "Wiziwig Cricket leverer T20, ODI og Test-kampe i HD. Ingen tilmelding påkrævet. Se cricket live."
+				},
+				"american-football": {
+					"title": "Wiziwig Amerikansk Fodbold | NFL Streams Live",
+					"description": "Wiziwig Amerikansk Fodbold streamer NFL og college-kampe i glat HD. Hop ind i live action nu."
+				},
+				"volleyball": {
+					"title": "Wiziwig Volleyball | Live Volleyball Online",
+					"description": "Wiziwig Volleyball tilbyder globale volleyballkampe i HD uden registrering. Se live nu."
+				},
+				"beach-volleyball": {
+					"title": "Wiziwig Beachvolley | Se Beach Live",
+					"description": "Wiziwig Beachvolley bringer HD-sandbane-events gratis. Stream live beachvolley øjeblikkeligt."
+				},
+				"handball": {
+					"title": "Wiziwig Håndbold | Live Håndbold Kampe",
+					"description": "Wiziwig Håndbold leverer HD-streams fra store ligaer og turneringer. Se håndbold live."
+				},
+				"beach-handball": {
+					"title": "Wiziwig Strandhåndbold | Live Beach Action",
+					"description": "Wiziwig Strandhåndbold streamer globale events i HD uden registrering. Se nu."
+				},
+				"beach-soccer": {
+					"title": "Wiziwig Strandfodbold | Live Kampe Online",
+					"description": "Wiziwig Strandfodbold tilbyder hurtige HD-streams af pro og internationale events. Se strandfodbold live."
+				},
+				"aussie-rules": {
+					"title": "Wiziwig Australsk Fodbold | Live AFL Streams",
+					"description": "Wiziwig Australsk Fodbold leverer HD AFL-action gratis. Stream live footy nu."
+				},
+				"futsal": {
+					"title": "Wiziwig Futsal | Live Futsal Streams",
+					"description": "Wiziwig Futsal giver HD-adgang til globale futsal-ligaer og turneringer. Se live nu."
+				},
+				"badminton": {
+					"title": "Wiziwig Badminton | Live Badminton Online",
+					"description": "Wiziwig Badminton streamer BWF-events i HD med øjeblikkelig indlæsning. Se badminton live."
+				},
+				"netball": {
+					"title": "Wiziwig Netball | Live Netball Streams",
+					"description": "Wiziwig Netball leverer HD-liga og international dækning. Stream netball live nu."
+				},
+				"floorball": {
+					"title": "Wiziwig Floorball | Live Floorball Action",
+					"description": "Wiziwig Floorball tilbyder glatte HD-streams fra store konkurrencer. Se live floorball nu."
+				},
+				"boxing": {
+					"title": "Wiziwig Boksning | Se Boksning Live",
+					"description": "Wiziwig Boksning giver HD-adgang til verdensomspændende fight cards gratis. Deltag i live boksning nu."
+				},
+				"mma": {
+					"title": "Wiziwig MMA | Live MMA Streams",
+					"description": "Wiziwig MMA streamer top organisationer i ren HD uden tilmelding. Se MMA live nu."
+				},
+				"snooker": {
+					"title": "Wiziwig Snooker | Live Snooker Dækning",
+					"description": "Wiziwig Snooker tilbyder HD-turneringer og kampe med øjeblikkelig adgang. Se live snooker nu."
+				},
+				"billiard": {
+					"title": "Wiziwig Billard | Live Billard Streams",
+					"description": "Wiziwig Billard leverer HD global billard-streaming uden registrering. Se live nu."
+				},
+				"table-tennis": {
+					"title": "Wiziwig Bordtennis | Live Bordtennis",
+					"description": "Wiziwig Bordtennis streamer professionel bordtennis i HD. Se live kampe øjeblikkeligt."
+				},
+				"padel-tennis": {
+					"title": "Wiziwig Padel | Live Padel Streams",
+					"description": "Wiziwig Padel tilbyder HD padel-events uden tilmelding. Se padel live."
+				},
+				"squash": {
+					"title": "Wiziwig Squash | Live Squash Events",
+					"description": "Wiziwig Squash streamer pro squash i HD med hurtig indlæsning. Se live kampe nu."
+				},
+				"motorsport": {
+					"title": "Wiziwig Motorsport | Live Motorsport",
+					"description": "Wiziwig Motorsport giver HD-adgang til racing-events verden over. Stream motorsport live."
+				},
+				"racing": {
+					"title": "Wiziwig Racing | Live Race Streams",
+					"description": "Wiziwig Racing tilbyder HD-dækning af motorsport-løb uden tilmelding. Se live racing nu."
+				},
+				"cycling": {
+					"title": "Wiziwig Cykling | Live Cykling Streams",
+					"description": "Wiziwig Cykling leverer HD-adgang til store tours og løb. Se cykling live nu."
+				},
+				"equestrianism": {
+					"title": "Wiziwig Ridesport | Live Hestesport",
+					"description": "Wiziwig Ridesport streamer globale hestekonkurrencer i HD. Se live nu."
+				},
+				"golf": {
+					"title": "Wiziwig Golf | Live Golf Streams",
+					"description": "Wiziwig Golf leverer HD PGA og verdenstour-action uden registrering. Se live golf i dag."
+				},
+				"field-hockey": {
+					"title": "Wiziwig Landhockey | Live Hockey Kampe",
+					"description": "Wiziwig Landhockey streamer top international hockey i HD. Se live nu."
+				},
+				"lacrosse": {
+					"title": "Wiziwig Lacrosse | Live Lacrosse Streams",
+					"description": "Wiziwig Lacrosse tilbyder HD pro og college-streams med nem adgang. Se lacrosse live."
+				},
+				"athletics": {
+					"title": "Wiziwig Atletik | Live Atletik Streams",
+					"description": "Wiziwig Atletik dækker store atletik-events i HD. Se live atletik nu."
+				},
+				"gymnastics": {
+					"title": "Wiziwig Gymnastik | Live Gymnastik Events",
+					"description": "Wiziwig Gymnastik streamer verdensklasse konkurrencer gratis i HD. Se live nu."
+				},
+				"weightlifting": {
+					"title": "Wiziwig Vægtløftning | Live Vægtløftning",
+					"description": "Wiziwig Vægtløftning bringer HD løftekonkurrencer uden tilmelding. Se vægtløftning live nu."
+				},
+				"climbing": {
+					"title": "Wiziwig Klatring | Live Klatring Streams",
+					"description": "Wiziwig Klatring streamer bouldering, lead og speed-events i HD. Se klatring live."
+				},
+				"bandy": {
+					"title": "Wiziwig Bandy | Live Bandy Streams",
+					"description": "Wiziwig Bandy streamer globale bandy-ligaer i HD uden tilmelding. Se bandy live nu."
+				},
+				"curling": {
+					"title": "Wiziwig Curling | Live Curling Kampe",
+					"description": "Wiziwig Curling leverer HD-turneringer med hurtig adgang. Se curling live nu."
+				},
+				"triathlon": {
+					"title": "Wiziwig Triatlon | Live Triatlon Streams",
+					"description": "Wiziwig Triatlon giver HD-dækning af verdens triatlon-events. Se live nu."
+				},
+				"water-sports": {
+					"title": "Wiziwig Vandsport | Live Vandsports Events",
+					"description": "Wiziwig Vandsport streamer svømning, dykning og mere i HD. Se vandsport live."
+				},
+				"water-polo": {
+					"title": "Wiziwig Vandpolo | Live Polo Streams",
+					"description": "Wiziwig Vandpolo tilbyder HD globale kampe med hurtig adgang. Se live vandpolo nu."
+				},
+				"sailing": {
+					"title": "Wiziwig Sejlsport | Live Sejlsport Streams",
+					"description": "Wiziwig Sejlsport streamer regattaer og store sejlsportsevents i HD. Se live sejlsport nu."
+				},
+				"bowling": {
+					"title": "Wiziwig Bowling | Live Bowling Streams",
+					"description": "Wiziwig Bowling leverer HD bowling-events uden registrering. Se bowling live nu."
+				},
+				"darts": {
+					"title": "Wiziwig Dart | Live Dart Dækning",
+					"description": "Wiziwig Dart streamer globale turneringer i HD. Se live dart nu."
+				},
+				"chess": {
+					"title": "Wiziwig Skak | Live Skak Kampe",
+					"description": "Wiziwig Skak streamer elite-turneringer i HD gratis. Se skak live nu."
+				},
+				"e-sports": {
+					"title": "Wiziwig E-sport | Live E-sport Streams",
+					"description": "Wiziwig E-sport tilbyder HD-turneringsdækning med øjeblikkelig adgang. Se e-sport live."
+				},
+				"others": {
+					"title": "Wiziwig Andre | Live Sports Streams",
+					"description": "Wiziwig Andre dækker niche og nye sportsgrene i HD. Se live nu."
+				},
+				"combat-sport": {
+					"title": "Wiziwig Kampsport | Live Kamp Streams",
+					"description": "Wiziwig Kampsport dækker store fight nights i HD uden registrering. Se live kampe nu."
+				},
+				"winter-sport": {
+					"title": "Wiziwig Vintersport | Live Snesport",
+					"description": "Wiziwig Vintersport leverer HD ski, skøjteløb og vinter-events. Se live sneaction nu."
+				},
+				"rugby-sevens": {
+					"title": "Wiziwig Rugby Sevens | Live Rugby Sevens Streams",
+					"description": "Wiziwig Rugby Sevens leverer gratis HD sevens-turneringer uden tilmelding. Se tempofyldt rugby sevens-action live og nyd glat, pålidelig streaming nu."
+				},
+				"extreme-sport": {
+					"title": "Wiziwig Ekstrem Sport | Live Ekstrem Sport Streams",
+					"description": "Wiziwig Ekstrem Sport tilbyder gratis HD-dækning af top ekstreme konkurrencer. Ingen registrering påkrævet. Stream spændende ekstrem sport-events i dag."
+				}
+			}
+		}
 	}
 }

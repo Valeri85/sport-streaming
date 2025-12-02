@@ -52,8 +52,7 @@ if (is_dir($langDir)) {
             $availableLanguages[$langCode] = [
                 'code' => $langCode,
                 'name' => $langData['language_info']['name'] ?? $langCode,
-                'flag' => $langData['language_info']['flag'] ?? '🌐',
-                'flag_code' => $langData['language_info']['flag_code'] ?? strtoupper($langCode)
+                'flag_code' => strtoupper($langData['language_info']['flag_code'] ?? $langCode)
             ];
         }
     }
@@ -858,10 +857,12 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
             <!-- LANGUAGE SWITCHER - Compact Grid with Flags Only -->
             <div class="language-switcher" id="languageSwitcher">
                 <button class="language-toggle" id="languageToggle" aria-label="<?php echo htmlspecialchars(t('change_language', 'accessibility')); ?>" aria-expanded="false">
-                    <img src="/shared/icons/flags/<?php echo htmlspecialchars($availableLanguages[$websiteLanguage]['flag_code'] ?? 'GB'); ?>.svg" 
+                    <img src="/shared/icons/flags/<?php echo htmlspecialchars(strtoupper($availableLanguages[$websiteLanguage]['flag_code'] ?? 'GB')); ?>.svg" 
                         alt="<?php echo htmlspecialchars($availableLanguages[$websiteLanguage]['name'] ?? 'Language'); ?>" 
-                        class="current-flag">
-                    <span class="language-arrow">▼</span>
+                        class="current-flag"
+                        width="24"
+                        height="18">
+                    <span class="language-arrow">v</span>
                 </button>
                 <div class="language-dropdown" id="languageDropdown">
                     <?php foreach ($availableLanguages as $code => $langInfo): 
@@ -874,9 +875,11 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
                         data-lang-name="<?php echo htmlspecialchars($langInfo['name'] ?? $code); ?>"
                         title="<?php echo htmlspecialchars($langInfo['name'] ?? $code); ?>"
                         <?php echo $onclickAttr; ?>>
-                            <img src="/shared/icons/flags/<?php echo htmlspecialchars($langInfo['flag_code'] ?? 'GB'); ?>.svg" 
+                            <img src="/shared/icons/flags/<?php echo htmlspecialchars(strtoupper($langInfo['flag_code'] ?? 'GB')); ?>.svg" 
                                 alt="<?php echo htmlspecialchars($langInfo['name'] ?? $code); ?>" 
-                                class="lang-flag">
+                                class="lang-flag"
+                                width="24"
+                                height="18">
                         </a>
                     <?php endforeach; ?>
                 </div>
