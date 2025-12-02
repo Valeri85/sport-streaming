@@ -73,6 +73,12 @@ echo "Disallow: /live-combat-sports\n";
 echo "Disallow: /*/live-combat-sports\n";
 echo "\n";
 
+// Disallow favorites (user-specific, has noindex anyway)
+echo "# Prevent crawling of user-specific pages\n";
+echo "Disallow: /favorites\n";
+echo "Disallow: /*/favorites\n";
+echo "\n";
+
 // Disallow CMS directory (if you want to hide it from search engines)
 echo "# Prevent crawling of CMS admin area\n";
 echo "Disallow: /cms/\n";
@@ -94,8 +100,8 @@ echo "Disallow: /*?tab=soon\n";
 echo "Disallow: /*?tab=tomorrow\n";
 echo "\n";
 
-// Point to sitemap
-echo "# Sitemap location\n";
+// Point to sitemap index
+echo "# Sitemap location (index file containing all language sitemaps)\n";
 echo "Sitemap: " . $baseUrl . "/sitemap.xml\n";
 
 exit;

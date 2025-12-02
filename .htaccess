@@ -1,7 +1,3 @@
-# Master .htaccess for all streaming websites
-
-# CloudFlare handles HTTPS, .htaccess handles WWW and Language URLs
-
 RewriteEngine On
 
 # ==========================================
@@ -19,7 +15,16 @@ RewriteRule ^(.\*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # ==========================================
 
+# Sitemap Index (main sitemap.xml)
+
 RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# Language-specific sitemaps (sitemap-en.xml, sitemap-de.xml, etc.)
+
+RewriteRule ^sitemap-([a-z]{2}(-[a-z]{2})?)\.xml$ sitemap.php?lang=$1 [L,QSA]
+
+# Robots.txt
+
 RewriteRule ^robots\.txt$ robots.php [L]
 
 # ==========================================
@@ -97,3 +102,7 @@ Deny from all
 
 Options -Indexes
 AddDefaultCharset UTF-8
+
+# Serve XSL files with correct MIME type
+
+AddType application/xml .xsl

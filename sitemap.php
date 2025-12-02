@@ -1,8 +1,20 @@
 <?php
 /**
- * Dynamic Sitemap Generator for Multi-Domain Streaming Websites
+ * Dynamic Multilingual Sitemap Generator for Multi-Domain Streaming Websites
  * 
- * UPDATED LOGIC:
+ * FEATURES:
+ * - Sitemap Index: Lists all language-specific sitemaps
+ * - Language Sitemaps: Contains URLs for specific language with hreflang tags
+ * - Smart lastmod: Updates based on game availability
+ * - Bidirectional hreflang: All language versions link to each other
+ * - x-default: Points to English (default language)
+ * 
+ * URL ROUTING (via .htaccess):
+ * - sitemap.xml         → sitemap.php (outputs sitemap INDEX)
+ * - sitemap-en.xml      → sitemap.php?lang=en (outputs English sitemap)
+ * - sitemap-de.xml      → sitemap.php?lang=de (outputs German sitemap)
+ * 
+ * LASTMOD LOGIC:
  * - ALL sport categories ALWAYS appear in sitemap (never removed)
  * - If sport has games TODAY or FUTURE → update lastmod to today
  * - If sport has NO games today → keep old lastmod from last game date
@@ -16,11 +28,17 @@
 // Prevent any output before XML declaration
 ob_start();
 
-// Get current domain and normalize it
+// ==========================================
+// GET REQUEST PARAMETERS
+// ==========================================
+$requestedLang = isset($_GET['lang']) ? strtolower(trim($_GET['lang'])) : null;
+
+// ==========================================
+// GET DOMAIN AND LOAD WEBSITE CONFIG
+// ==========================================
 $domain = $_SERVER['HTTP_HOST'];
 $domain = str_replace('www.', '', strtolower(trim($domain)));
 
-// Load websites configuration
 $configFile = __DIR__ . '/config/websites.json';
 
 if (!file_exists($configFile)) {
@@ -56,6 +74,52 @@ $baseUrl = rtrim($baseUrl, '/');
 // Get sports categories for this website
 $sportsCategories = $website['sports_categories'] ?? [];
 
+// Get default language for this website (usually 'en')
+$defaultLanguage = $website['language'] ?? 'en';
+
+// ==========================================
+// LOAD ACTIVE LANGUAGES
+// ==========================================
+$langDir = __DIR__ . '/config/lang/';
+$activeLanguages = [];
+
+if (is_dir($langDir)) {
+    $files = glob($langDir . '*.json');
+    
+    foreach ($files as $file) {
+        $content = file_get_contents($file);
+        $data = json_decode($content, true);
+        
+        if ($data && isset($data['language_info']) && ($data['language_info']['active'] ?? false)) {
+            $code = $data['language_info']['code'];
+            $activeLanguages[$code] = [
+                'code' => $code,
+                'name' => $data['language_info']['name'] ?? $code
+            ];
+        }
+    }
+}
+
+// Sort: English first, then alphabetically
+uksort($activeLanguages, function($a, $b) use ($activeLanguages, $defaultLanguage) {
+    if ($a === $defaultLanguage) return -1;
+    if ($b === $defaultLanguage) return 1;
+    return strcmp($activeLanguages[$a]['name'], $activeLanguages[$b]['name']);
+});
+
+// If no languages found, fallback to English only
+if (empty($activeLanguages)) {
+    $activeLanguages = ['en' => ['code' => 'en', 'name' => 'English']];
+}
+
+// ==========================================
+// VALIDATE REQUESTED LANGUAGE
+// ==========================================
+if ($requestedLang !== null && !isset($activeLanguages[$requestedLang])) {
+    header('HTTP/1.1 404 Not Found');
+    die('Language sitemap not found');
+}
+
 // ==========================================
 // LOAD GAMES DATA
 // ==========================================
@@ -86,15 +150,11 @@ if (!isset($lastmodData[$domain])) {
 // FUNCTION: Check if sport has games TODAY or FUTURE
 // ==========================================
 function sportHasUpcomingGames($sportName, $gamesData) {
-    // Start of today (00:00:00)
     $today = strtotime('today 00:00:00');
     
     foreach ($gamesData as $game) {
-        // Exact match only - no grouping
         if (strtolower($game['sport']) === strtolower($sportName)) {
             $gameTime = strtotime($game['date']);
-            
-            // Game is today or in the future
             if ($gameTime >= $today) {
                 return true;
             }
@@ -106,7 +166,6 @@ function sportHasUpcomingGames($sportName, $gamesData) {
 
 // ==========================================
 // FUNCTION: Check if ANY sport has games TODAY or FUTURE
-// (For homepage - shows all sports)
 // ==========================================
 function hasAnyUpcomingGames($gamesData) {
     $today = strtotime('today 00:00:00');
@@ -123,23 +182,17 @@ function hasAnyUpcomingGames($gamesData) {
 
 // ==========================================
 // FUNCTION: Get smart lastmod for a page
-// ALWAYS returns a date (never null)
 // ==========================================
 function getSmartLastmod($pageKey, $sportName, $gamesData, &$lastmodData, $domain) {
     $today = date('Y-m-d');
     
-    // Check if this sport has upcoming games
     if (sportHasUpcomingGames($sportName, $gamesData)) {
-        // Has games today/future → update lastmod to today
         $lastmodData[$domain][$pageKey] = $today;
         return $today;
     } else {
-        // No games today → keep old lastmod from JSON
         if (isset($lastmodData[$domain][$pageKey])) {
-            // Keep old lastmod (don't update)
             return $lastmodData[$domain][$pageKey];
         } else {
-            // First time this sport appears → set lastmod to today
             $lastmodData[$domain][$pageKey] = $today;
             return $today;
         }
@@ -147,54 +200,53 @@ function getSmartLastmod($pageKey, $sportName, $gamesData, &$lastmodData, $domai
 }
 
 // ==========================================
-// BUILD URLS ARRAY
+// FUNCTION: Build URL for specific language
 // ==========================================
-$urls = [];
-
-// ==========================================
-// HOMEPAGE
-// ==========================================
-// Homepage shows all sports, so check if ANY sport has games today/future
-if (hasAnyUpcomingGames($gamesData)) {
-    $homeLastmod = date('Y-m-d');
-    $lastmodData[$domain]['home'] = $homeLastmod;
-    
-    $urls[] = [
-        'loc' => $baseUrl . '/',
-        'lastmod' => $homeLastmod,
-        'priority' => '1.0'
-    ];
-} else {
-    // No games today - check if we have old lastmod
-    if (isset($lastmodData[$domain]['home'])) {
-        $homeLastmod = $lastmodData[$domain]['home'];
+function buildLanguageUrl($baseUrl, $langCode, $defaultLanguage, $path = '') {
+    if ($langCode === $defaultLanguage) {
+        return $baseUrl . '/' . ltrim($path, '/');
     } else {
-        // First time - set to today
-        $homeLastmod = date('Y-m-d');
-        $lastmodData[$domain]['home'] = $homeLastmod;
+        if (empty($path) || $path === '/') {
+            return $baseUrl . '/' . $langCode;
+        } else {
+            return $baseUrl . '/' . $langCode . '/' . ltrim($path, '/');
+        }
     }
-    
-    $urls[] = [
-        'loc' => $baseUrl . '/',
-        'lastmod' => $homeLastmod,
-        'priority' => '1.0'
-    ];
 }
 
 // ==========================================
-// SPORT PAGES
-// ALL sports ALWAYS included in sitemap
+// BUILD PAGE DATA WITH LASTMOD
 // ==========================================
+$pages = [];
+
+// Homepage
+if (hasAnyUpcomingGames($gamesData)) {
+    $homeLastmod = date('Y-m-d');
+    $lastmodData[$domain]['home'] = $homeLastmod;
+} else {
+    if (isset($lastmodData[$domain]['home'])) {
+        $homeLastmod = $lastmodData[$domain]['home'];
+    } else {
+        $homeLastmod = date('Y-m-d');
+        $lastmodData[$domain]['home'] = $homeLastmod;
+    }
+}
+
+$pages[] = [
+    'path' => '',
+    'lastmod' => $homeLastmod,
+    'priority' => '1.0'
+];
+
+// Sport Pages
 foreach ($sportsCategories as $sportName) {
     $sportSlug = strtolower(str_replace(' ', '-', $sportName));
     $pageKey = 'live-' . $sportSlug;
     
-    // Get smart lastmod for this sport (ALWAYS returns a date)
     $sportLastmod = getSmartLastmod($pageKey, $sportName, $gamesData, $lastmodData, $domain);
     
-    // ALWAYS add to sitemap (never skip)
-    $urls[] = [
-        'loc' => $baseUrl . '/' . $pageKey,
+    $pages[] = [
+        'path' => $pageKey,
         'lastmod' => $sportLastmod,
         'priority' => '0.9'
     ];
@@ -206,23 +258,72 @@ foreach ($sportsCategories as $sportName) {
 $jsonContent = json_encode($lastmodData, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 file_put_contents($lastmodFile, $jsonContent);
 
-// Clear output buffer
+// ==========================================
+// CLEAR OUTPUT BUFFER AND SET HEADERS
+// ==========================================
 ob_end_clean();
-
-// Set XML headers (REMOVED noindex - sitemaps should be indexable!)
 header('Content-Type: application/xml; charset=utf-8');
 
-// Generate XML sitemap
-echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
-echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
+// ==========================================
+// OUTPUT XML
+// ==========================================
 
-foreach ($urls as $url) {
-    echo '  <url>' . "\n";
-    echo '    <loc>' . htmlspecialchars($url['loc'], ENT_XML1, 'UTF-8') . '</loc>' . "\n";
-    echo '    <lastmod>' . $url['lastmod'] . '</lastmod>' . "\n";
-    echo '    <priority>' . $url['priority'] . '</priority>' . "\n";
-    echo '  </url>' . "\n";
+if ($requestedLang === null) {
+    // ==========================================
+    // SITEMAP INDEX
+    // ==========================================
+    
+    $mostRecentLastmod = $homeLastmod;
+    foreach ($pages as $page) {
+        if ($page['lastmod'] > $mostRecentLastmod) {
+            $mostRecentLastmod = $page['lastmod'];
+        }
+    }
+    
+    echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+    echo '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
+    
+    foreach ($activeLanguages as $langCode => $langInfo) {
+        echo '  <sitemap>' . "\n";
+        echo '    <loc>' . htmlspecialchars($baseUrl . '/sitemap-' . $langCode . '.xml') . '</loc>' . "\n";
+        echo '    <lastmod>' . $mostRecentLastmod . '</lastmod>' . "\n";
+        echo '  </sitemap>' . "\n";
+    }
+    
+    echo '</sitemapindex>';
+    
+} else {
+    // ==========================================
+    // LANGUAGE-SPECIFIC SITEMAP
+    // ==========================================
+    
+    echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+    echo '<urlset' . "\n";
+    echo '  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"' . "\n";
+    echo '  xmlns:xhtml="http://www.w3.org/1999/xhtml">' . "\n";
+    
+    foreach ($pages as $page) {
+        $url = buildLanguageUrl($baseUrl, $requestedLang, $defaultLanguage, $page['path']);
+        
+        echo '  <url>' . "\n";
+        echo '    <loc>' . htmlspecialchars($url) . '</loc>' . "\n";
+        echo '    <lastmod>' . $page['lastmod'] . '</lastmod>' . "\n";
+        echo '    <priority>' . $page['priority'] . '</priority>' . "\n";
+        
+        // Hreflang tags for all languages
+        foreach ($activeLanguages as $code => $langInfo) {
+            $hrefUrl = buildLanguageUrl($baseUrl, $code, $defaultLanguage, $page['path']);
+            echo '    <xhtml:link rel="alternate" hreflang="' . htmlspecialchars($code) . '" href="' . htmlspecialchars($hrefUrl) . '"/>' . "\n";
+        }
+        
+        // x-default
+        $xDefaultUrl = buildLanguageUrl($baseUrl, $defaultLanguage, $defaultLanguage, $page['path']);
+        echo '    <xhtml:link rel="alternate" hreflang="x-default" href="' . htmlspecialchars($xDefaultUrl) . '"/>' . "\n";
+        
+        echo '  </url>' . "\n";
+    }
+    
+    echo '</urlset>';
 }
 
-echo '</urlset>';
 exit;
