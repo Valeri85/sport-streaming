@@ -1,10 +1,4 @@
 {
-    "1": [
-        "Winter Sport",
-        "Combat Sport",
-        "Rugby Union"
-    ],
-    "2": [
-        "Combat Sport"
-    ]
+	"1": ["Winter Sport", "Combat Sport", "Rugby Union"],
+	"2": ["Combat Sport"]
 }

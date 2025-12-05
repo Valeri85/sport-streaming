@@ -52,7 +52,7 @@ if (!$website) {
                 $allActiveLanguages[$langCode] = [
                     'code' => $langCode,
                     'name' => $langData['language_info']['name'] ?? $langCode,
-                    'flag_code' => strtoupper($langData['language_info']['flag_code'] ?? $langCode)
+                    'flag_code' => strtoupper($langData['language_info']['flag'] ?? 'GB')
                 ];
             }
         }
@@ -334,34 +334,8 @@ function getLanguageSeoData($langCode, $domain, $pageType, $sportSlug, $langDir,
         return $defaultSeo;
     }
 
-    // ==========================================
-    // GENERATE FAVICON HTML TAGS
-    // ==========================================
-    function generateFaviconTags($websiteId, $faviconDir) {
-        if (empty($websiteId)) {
-            return '';
-        }
-        
-        $faviconPath = '/images/favicons/' . $websiteId . '/';
-        $faviconFullPath = $faviconDir . $websiteId . '/';
-        
-        // Check if favicon folder exists
-        if (!file_exists($faviconFullPath . 'favicon-32x32.png')) {
-            return '';
-        }
-        
-        $tags = '<!-- FAVICONS -->' . "\n    ";
-        $tags .= '<link rel="icon" type="image/png" sizes="32x32" href="' . $faviconPath . 'favicon-32x32.png">' . "\n    ";
-        $tags .= '<link rel="icon" type="image/png" sizes="16x16" href="' . $faviconPath . 'favicon-16x16.png">' . "\n    ";
-        $tags .= '<link rel="apple-touch-icon" sizes="180x180" href="' . $faviconPath . 'apple-touch-icon.png">' . "\n    ";
-        $tags .= '<link rel="icon" type="image/png" sizes="192x192" href="' . $faviconPath . 'android-chrome-192x192.png">' . "\n    ";
-        $tags .= '<link rel="icon" type="image/png" sizes="512x512" href="' . $faviconPath . 'android-chrome-512x512.png">';
-        
-        return $tags;
-    }
-        
-        // Try to load language-specific SEO
-        $langFile = $langDir . $langCode . '.json';
+    // Try to load language-specific SEO
+    $langFile = $langDir . $langCode . '.json';
         if (!file_exists($langFile)) {
             return $defaultSeo; // Fallback to English
         }
