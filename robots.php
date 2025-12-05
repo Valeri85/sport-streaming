@@ -5,6 +5,8 @@
  * This file generates a unique robots.txt for each domain
  * based on the domain that is requesting it.
  * 
+ * NEW: Adds Disallow rules for languages not enabled for this website
+ * 
  * Location: /var/www/u1852176/data/www/streaming/robots.php
  */
 
@@ -48,6 +50,34 @@ if (!$website) {
 $baseUrl = $website['canonical_url'] ?? 'https://www.' . $domain;
 $baseUrl = rtrim($baseUrl, '/'); // Remove trailing slash
 
+// ==========================================
+// LOAD ALL GLOBALLY ACTIVE LANGUAGES
+// ==========================================
+$langDir = __DIR__ . '/config/lang/';
+$allActiveLanguages = [];
+
+if (is_dir($langDir)) {
+    $files = glob($langDir . '*.json');
+    
+    foreach ($files as $file) {
+        $content = file_get_contents($file);
+        $data = json_decode($content, true);
+        
+        if ($data && isset($data['language_info']) && ($data['language_info']['active'] ?? false)) {
+            $code = $data['language_info']['code'];
+            $allActiveLanguages[] = $code;
+        }
+    }
+}
+
+// ==========================================
+// GET ENABLED LANGUAGES FOR THIS WEBSITE
+// ==========================================
+$enabledLanguages = $website['enabled_languages'] ?? $allActiveLanguages;
+
+// Find disabled languages (globally active but not enabled for this site)
+$disabledLanguages = array_diff($allActiveLanguages, $enabledLanguages);
+
 // Clear output buffer
 ob_end_clean();
 
@@ -64,6 +94,18 @@ echo "\n";
 echo "User-agent: *\n";
 echo "Allow: /\n";
 echo "\n";
+
+// ==========================================
+// NEW: Disallow disabled language URLs
+// ==========================================
+if (!empty($disabledLanguages)) {
+    echo "# Prevent indexing of disabled language URLs for this website\n";
+    foreach ($disabledLanguages as $langCode) {
+        echo "Disallow: /" . $langCode . "\n";
+        echo "Disallow: /" . $langCode . "/\n";
+    }
+    echo "\n";
+}
 
 // Disallow specific sport pages
 echo "# Prevent indexing of specific sport pages\n";

@@ -36,27 +36,44 @@ if (!$website) {
 }
 
 // ==========================================
-// LOAD AVAILABLE LANGUAGES
+// LOAD AVAILABLE LANGUAGES (Global)
 // ==========================================
-$langDir = __DIR__ . '/config/lang/';
-$availableLanguages = [];
+    $langDir = __DIR__ . '/config/lang/';
+    $allActiveLanguages = []; // All globally active languages
 
-if (is_dir($langDir)) {
-    $langFiles = glob($langDir . '*.json');
-    foreach ($langFiles as $file) {
-        $langCode = basename($file, '.json');
-        $langData = json_decode(file_get_contents($file), true);
-        
-        // Only include active languages
-        if (isset($langData['language_info']) && ($langData['language_info']['active'] ?? false)) {
-            $availableLanguages[$langCode] = [
-                'code' => $langCode,
-                'name' => $langData['language_info']['name'] ?? $langCode,
-                'flag_code' => strtoupper($langData['language_info']['flag_code'] ?? $langCode)
-            ];
+    if (is_dir($langDir)) {
+        $langFiles = glob($langDir . '*.json');
+        foreach ($langFiles as $file) {
+            $langCode = basename($file, '.json');
+            $langData = json_decode(file_get_contents($file), true);
+            
+            // Only include globally active languages
+            if (isset($langData['language_info']) && ($langData['language_info']['active'] ?? false)) {
+                $allActiveLanguages[$langCode] = [
+                    'code' => $langCode,
+                    'name' => $langData['language_info']['name'] ?? $langCode,
+                    'flag_code' => strtoupper($langData['language_info']['flag_code'] ?? $langCode)
+                ];
+            }
         }
     }
-}
+
+    // ==========================================
+    // FILTER LANGUAGES BY WEBSITE'S ENABLED LANGUAGES
+    // ==========================================
+    $enabledLanguages = $website['enabled_languages'] ?? array_keys($allActiveLanguages);
+    $availableLanguages = [];
+
+    foreach ($allActiveLanguages as $code => $langInfo) {
+        if (in_array($code, $enabledLanguages)) {
+            $availableLanguages[$code] = $langInfo;
+        }
+    }
+
+    // Ensure at least English is always available
+    if (empty($availableLanguages) && isset($allActiveLanguages['en'])) {
+        $availableLanguages['en'] = $allActiveLanguages['en'];
+    }
 
 // ==========================================
 // DETERMINE ACTIVE LANGUAGE
@@ -71,6 +88,128 @@ $websiteLanguage = $defaultLanguage;
 // .htaccess passes ?url_lang=xx when URL is /xx or /xx/...
 // ==========================================
 $urlLang = $_GET['url_lang'] ?? null;
+
+// ==========================================
+// 404 FOR DISABLED LANGUAGE URLs
+// If URL has a language code that is NOT enabled for this website, return 404
+// ==========================================
+if ($urlLang) {
+    // Check if the language exists globally but is disabled for THIS website
+    if (isset($allActiveLanguages[$urlLang]) && !in_array($urlLang, $enabledLanguages)) {
+        // Language exists globally but NOT enabled for this website - return 404
+        http_response_code(404);
+        
+        // Get site info for error page
+        $siteName = $website['site_name'] ?? 'Website';
+        $primaryColor = $website['primary_color'] ?? '#FFA500';
+        
+        // Show custom 404 page
+        ?>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>404 - Language Not Available | <?php echo htmlspecialchars($siteName); ?></title>
+            <meta name="robots" content="noindex, nofollow">
+            <style>
+                * { margin: 0; padding: 0; box-sizing: border-box; }
+                body {
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+                    color: #fff;
+                    min-height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 20px;
+                }
+                .error-container { max-width: 500px; }
+                .error-code {
+                    font-size: 120px;
+                    font-weight: 700;
+                    color: <?php echo htmlspecialchars($primaryColor); ?>;
+                    line-height: 1;
+                    margin-bottom: 10px;
+                }
+                .error-icon { font-size: 64px; margin-bottom: 20px; }
+                h1 { font-size: 28px; margin-bottom: 15px; color: #fff; }
+                p { font-size: 16px; color: #a0a0a0; margin-bottom: 30px; line-height: 1.6; }
+                .available-languages {
+                    background: rgba(255,255,255,0.1);
+                    border-radius: 12px;
+                    padding: 20px;
+                    margin-bottom: 30px;
+                }
+                .available-languages h3 {
+                    font-size: 14px;
+                    color: #a0a0a0;
+                    margin-bottom: 15px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                .lang-buttons {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    justify-content: center;
+                }
+                .lang-btn {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background: <?php echo htmlspecialchars($primaryColor); ?>;
+                    color: #000;
+                    text-decoration: none;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    transition: transform 0.2s, box-shadow 0.2s;
+                }
+                .lang-btn:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 15px rgba(255,165,0,0.4);
+                }
+                .home-link {
+                    color: <?php echo htmlspecialchars($primaryColor); ?>;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+                .home-link:hover { text-decoration: underline; }
+            </style>
+        </head>
+        <body>
+            <div class="error-container">
+                <div class="error-icon">🌐</div>
+                <div class="error-code">404</div>
+                <h1>Language Not Available</h1>
+                <p>
+                    The requested language <strong>"<?php echo htmlspecialchars($urlLang); ?>"</strong> 
+                    is not available for this website.
+                </p>
+                
+                <div class="available-languages">
+                    <h3>Available Languages</h3>
+                    <div class="lang-buttons">
+                        <?php foreach ($availableLanguages as $code => $info): 
+                            $langUrl = ($code === $defaultLanguage) ? '/' : '/' . $code;
+                        ?>
+                            <a href="<?php echo $langUrl; ?>" class="lang-btn">
+                                <?php echo htmlspecialchars($info['name']); ?>
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+                
+                <p>
+                    <a href="/" class="home-link">← Go to Homepage</a>
+                </p>
+            </div>
+        </body>
+        </html>
+        <?php
+        exit;
+    }
+}
 
 if ($urlLang && array_key_exists($urlLang, $availableLanguages)) {
     // Language code in URL

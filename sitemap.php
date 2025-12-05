@@ -8,6 +8,7 @@
  * - Smart lastmod: Updates based on game availability
  * - Bidirectional hreflang: All language versions link to each other
  * - x-default: Points to English (default language)
+ * - NEW: Only includes languages enabled for this specific website
  * 
  * URL ROUTING (via .htaccess):
  * - sitemap.xml         → sitemap.php (outputs sitemap INDEX)
@@ -78,10 +79,10 @@ $sportsCategories = $website['sports_categories'] ?? [];
 $defaultLanguage = $website['language'] ?? 'en';
 
 // ==========================================
-// LOAD ACTIVE LANGUAGES
+// LOAD ALL GLOBALLY ACTIVE LANGUAGES
 // ==========================================
 $langDir = __DIR__ . '/config/lang/';
-$activeLanguages = [];
+$allActiveLanguages = [];
 
 if (is_dir($langDir)) {
     $files = glob($langDir . '*.json');
@@ -92,7 +93,7 @@ if (is_dir($langDir)) {
         
         if ($data && isset($data['language_info']) && ($data['language_info']['active'] ?? false)) {
             $code = $data['language_info']['code'];
-            $activeLanguages[$code] = [
+            $allActiveLanguages[$code] = [
                 'code' => $code,
                 'name' => $data['language_info']['name'] ?? $code
             ];
@@ -100,7 +101,19 @@ if (is_dir($langDir)) {
     }
 }
 
-// Sort: English first, then alphabetically
+// ==========================================
+// FILTER BY WEBSITE'S ENABLED LANGUAGES
+// ==========================================
+$enabledLanguages = $website['enabled_languages'] ?? array_keys($allActiveLanguages);
+$activeLanguages = [];
+
+foreach ($allActiveLanguages as $code => $langInfo) {
+    if (in_array($code, $enabledLanguages)) {
+        $activeLanguages[$code] = $langInfo;
+    }
+}
+
+// Sort: Default language first, then alphabetically
 uksort($activeLanguages, function($a, $b) use ($activeLanguages, $defaultLanguage) {
     if ($a === $defaultLanguage) return -1;
     if ($b === $defaultLanguage) return 1;
@@ -114,10 +127,14 @@ if (empty($activeLanguages)) {
 
 // ==========================================
 // VALIDATE REQUESTED LANGUAGE
+// Return 404 if language is not enabled for this website
 // ==========================================
-if ($requestedLang !== null && !isset($activeLanguages[$requestedLang])) {
-    header('HTTP/1.1 404 Not Found');
-    die('Language sitemap not found');
+if ($requestedLang !== null) {
+    // Check if language is enabled for this website
+    if (!isset($activeLanguages[$requestedLang])) {
+        header('HTTP/1.1 404 Not Found');
+        die('Language sitemap not found - language not enabled for this website');
+    }
 }
 
 // ==========================================
@@ -271,6 +288,7 @@ header('Content-Type: application/xml; charset=utf-8');
 if ($requestedLang === null) {
     // ==========================================
     // SITEMAP INDEX
+    // Only lists sitemaps for ENABLED languages
     // ==========================================
     
     $mostRecentLastmod = $homeLastmod;
@@ -295,6 +313,7 @@ if ($requestedLang === null) {
 } else {
     // ==========================================
     // LANGUAGE-SPECIFIC SITEMAP
+    // Only includes hreflang for ENABLED languages
     // ==========================================
     
     echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
@@ -310,13 +329,13 @@ if ($requestedLang === null) {
         echo '    <lastmod>' . $page['lastmod'] . '</lastmod>' . "\n";
         echo '    <priority>' . $page['priority'] . '</priority>' . "\n";
         
-        // Hreflang tags for all languages
+        // Hreflang tags ONLY for enabled languages
         foreach ($activeLanguages as $code => $langInfo) {
             $hrefUrl = buildLanguageUrl($baseUrl, $code, $defaultLanguage, $page['path']);
             echo '    <xhtml:link rel="alternate" hreflang="' . htmlspecialchars($code) . '" href="' . htmlspecialchars($hrefUrl) . '"/>' . "\n";
         }
         
-        // x-default
+        // x-default (points to default language)
         $xDefaultUrl = buildLanguageUrl($baseUrl, $defaultLanguage, $defaultLanguage, $page['path']);
         echo '    <xhtml:link rel="alternate" hreflang="x-default" href="' . htmlspecialchars($xDefaultUrl) . '"/>' . "\n";
         
