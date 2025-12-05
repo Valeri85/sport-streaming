@@ -368,12 +368,15 @@
 			padding: 0;
 			border: none;
 			position: fixed;
-			inset-block-start: var(--header-block-size);
+			inset-block-start: 0;
 			inset-inline-start: 0;
-			inset-block-end: 0;
+			block-size: 100dvh;
 			inline-size: min(85%, 300px);
 			max-inline-size: none;
 			max-block-size: none;
+			z-index: 10;
+			overflow-y: auto;
+			overscroll-behavior: contain;
 			opacity: 0;
 			transform: translateX(-100%);
 			transition: opacity var(--transition-normal), transform var(--transition-normal),

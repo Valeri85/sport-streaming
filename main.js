@@ -477,7 +477,10 @@ function initLanguageSwitcher() {
    This function handles:
    1. Syncing burger button aria-expanded with popover state
    2. Closing popover when menu items are clicked (mobile UX)
+   3. Preventing background scroll when menu is open (iOS fix)
    ========================================== */
+let savedScrollPosition = 0;
+
 function initBurgerMenu() {
 	const burgerMenu = document.getElementById('burgerMenu');
 	const sidebar = document.getElementById('sidebar');
@@ -489,8 +492,22 @@ function initBurgerMenu() {
 		const isOpen = event.newState === 'open';
 		burgerMenu.setAttribute('aria-expanded', isOpen);
 
-		// Prevent body scroll when sidebar is open (mobile)
-		document.body.style.overflow = isOpen ? 'hidden' : '';
+		// Prevent body scroll when sidebar is open (mobile) - iOS compatible
+		if (isOpen) {
+			savedScrollPosition = window.scrollY;
+			document.body.style.position = 'fixed';
+			document.body.style.top = `-${savedScrollPosition}px`;
+			document.body.style.left = '0';
+			document.body.style.right = '0';
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.position = '';
+			document.body.style.top = '';
+			document.body.style.left = '';
+			document.body.style.right = '';
+			document.body.style.overflow = '';
+			window.scrollTo(0, savedScrollPosition);
+		}
 	});
 
 	// Close popover when clicking menu items (better mobile UX)
