@@ -194,62 +194,88 @@ function getLanguageSeoData($langCode, $domain, $pageType, $sportSlug, $langDir,
     if ($langCode === 'en') {
         return $defaultSeo;
     }
-    
-    // Try to load language-specific SEO
-    $langFile = $langDir . $langCode . '.json';
-    if (!file_exists($langFile)) {
-        return $defaultSeo; // Fallback to English
-    }
-    
-    $langData = json_decode(file_get_contents($langFile), true);
-    if (!$langData || !isset($langData['seo'])) {
-        return $defaultSeo; // Fallback to English
-    }
-    
-    // Normalize domain for comparison (remove www., lowercase)
-    $normalizedDomain = strtolower(str_replace('www.', '', trim($domain)));
-    
-    // Find matching domain key (case-insensitive search)
-    $seoData = null;
-    foreach ($langData['seo'] as $key => $value) {
-        $normalizedKey = strtolower(str_replace('www.', '', trim($key)));
-        if ($normalizedKey === $normalizedDomain) {
-            $seoData = $value;
-            break;
+
+    // ==========================================
+    // GENERATE FAVICON HTML TAGS
+    // ==========================================
+    function generateFaviconTags($websiteId, $faviconDir) {
+        if (empty($websiteId)) {
+            return '';
         }
+        
+        $faviconPath = '/images/favicons/' . $websiteId . '/';
+        $faviconFullPath = $faviconDir . $websiteId . '/';
+        
+        // Check if favicon folder exists
+        if (!file_exists($faviconFullPath . 'favicon-32x32.png')) {
+            return '';
+        }
+        
+        $tags = '<!-- FAVICONS -->' . "\n    ";
+        $tags .= '<link rel="icon" type="image/png" sizes="32x32" href="' . $faviconPath . 'favicon-32x32.png">' . "\n    ";
+        $tags .= '<link rel="icon" type="image/png" sizes="16x16" href="' . $faviconPath . 'favicon-16x16.png">' . "\n    ";
+        $tags .= '<link rel="apple-touch-icon" sizes="180x180" href="' . $faviconPath . 'apple-touch-icon.png">' . "\n    ";
+        $tags .= '<link rel="icon" type="image/png" sizes="192x192" href="' . $faviconPath . 'android-chrome-192x192.png">' . "\n    ";
+        $tags .= '<link rel="icon" type="image/png" sizes="512x512" href="' . $faviconPath . 'android-chrome-512x512.png">';
+        
+        return $tags;
     }
-    
-    if (!$seoData) {
-        return $defaultSeo; // Fallback to English
-    }
-    
-    // Get SEO based on page type
-    if ($pageType === 'home') {
-        $title = $seoData['home']['title'] ?? '';
-        $description = $seoData['home']['description'] ?? '';
-    } elseif ($pageType === 'sport' && $sportSlug) {
-        // Check case-insensitive for sport slug
-        $title = '';
-        $description = '';
-        if (isset($seoData['sports'])) {
-            foreach ($seoData['sports'] as $sKey => $sValue) {
-                if (strtolower($sKey) === strtolower($sportSlug)) {
-                    $title = $sValue['title'] ?? '';
-                    $description = $sValue['description'] ?? '';
-                    break;
-                }
+        
+        // Try to load language-specific SEO
+        $langFile = $langDir . $langCode . '.json';
+        if (!file_exists($langFile)) {
+            return $defaultSeo; // Fallback to English
+        }
+        
+        $langData = json_decode(file_get_contents($langFile), true);
+        if (!$langData || !isset($langData['seo'])) {
+            return $defaultSeo; // Fallback to English
+        }
+        
+        // Normalize domain for comparison (remove www., lowercase)
+        $normalizedDomain = strtolower(str_replace('www.', '', trim($domain)));
+        
+        // Find matching domain key (case-insensitive search)
+        $seoData = null;
+        foreach ($langData['seo'] as $key => $value) {
+            $normalizedKey = strtolower(str_replace('www.', '', trim($key)));
+            if ($normalizedKey === $normalizedDomain) {
+                $seoData = $value;
+                break;
             }
         }
-    } else {
-        return $defaultSeo; // Unknown page type
+        
+        if (!$seoData) {
+            return $defaultSeo; // Fallback to English
+        }
+        
+        // Get SEO based on page type
+        if ($pageType === 'home') {
+            $title = $seoData['home']['title'] ?? '';
+            $description = $seoData['home']['description'] ?? '';
+        } elseif ($pageType === 'sport' && $sportSlug) {
+            // Check case-insensitive for sport slug
+            $title = '';
+            $description = '';
+            if (isset($seoData['sports'])) {
+                foreach ($seoData['sports'] as $sKey => $sValue) {
+                    if (strtolower($sKey) === strtolower($sportSlug)) {
+                        $title = $sValue['title'] ?? '';
+                        $description = $sValue['description'] ?? '';
+                        break;
+                    }
+                }
+            }
+        } else {
+            return $defaultSeo; // Unknown page type
+        }
+        
+        // If language-specific SEO exists, use it; otherwise fallback to English
+        return [
+            'title' => !empty($title) ? $title : $defaultSeo['title'],
+            'description' => !empty($description) ? $description : $defaultSeo['description']
+        ];
     }
-    
-    // If language-specific SEO exists, use it; otherwise fallback to English
-    return [
-        'title' => !empty($title) ? $title : $defaultSeo['title'],
-        'description' => !empty($description) ? $description : $defaultSeo['description']
-    ];
-}
 
 // ==========================================
 // HELPER: Generate hreflang tags for all active languages
@@ -294,6 +320,57 @@ function generateHreflangTags($availableLanguages, $defaultLanguage, $baseCanoni
     $tags[] = '<link rel="alternate" hreflang="x-default" href="' . htmlspecialchars($xDefaultUrl) . '">';
     
     return implode("\n    ", $tags);
+}
+
+// ==========================================
+// GENERATE FAVICON HTML TAGS
+// ==========================================
+function generateFaviconTags($websiteId, $faviconDir) {
+    if (empty($websiteId)) {
+        return '';
+    }
+    
+    $faviconPath = '/images/favicons/' . $websiteId . '/';
+    $faviconFullPath = $faviconDir . $websiteId . '/';
+    
+    // Check if favicon folder exists
+    if (!file_exists($faviconFullPath . 'favicon-32x32.png')) {
+        return '';
+    }
+    
+    $tags = '<!-- FAVICONS -->' . "\n    ";
+    $tags .= '<link rel="icon" type="image/png" sizes="32x32" href="' . $faviconPath . 'favicon-32x32.png">' . "\n    ";
+    $tags .= '<link rel="icon" type="image/png" sizes="16x16" href="' . $faviconPath . 'favicon-16x16.png">' . "\n    ";
+    $tags .= '<link rel="apple-touch-icon" sizes="180x180" href="' . $faviconPath . 'apple-touch-icon.png">' . "\n    ";
+    $tags .= '<link rel="icon" type="image/png" sizes="192x192" href="' . $faviconPath . 'android-chrome-192x192.png">' . "\n    ";
+    $tags .= '<link rel="icon" type="image/png" sizes="512x512" href="' . $faviconPath . 'android-chrome-512x512.png">';
+    
+    return $tags;
+}
+
+// ==========================================
+// GENERATE GOOGLE ANALYTICS CODE
+// ==========================================
+function generateGoogleAnalyticsCode($analyticsId) {
+    if (empty($analyticsId)) {
+        return '';
+    }
+    
+    // Validate format (G-XXXXXXXXXX)
+    if (!preg_match('/^G-[A-Z0-9]+$/i', $analyticsId)) {
+        return '';
+    }
+    
+    $code = '<!-- Google tag (gtag.js) -->' . "\n    ";
+    $code .= '<script async src="https://www.googletagmanager.com/gtag/js?id=' . htmlspecialchars($analyticsId) . '"></script>' . "\n    ";
+    $code .= '<script>' . "\n    ";
+    $code .= '    window.dataLayer = window.dataLayer || [];' . "\n    ";
+    $code .= '    function gtag(){dataLayer.push(arguments);}' . "\n    ";
+    $code .= '    gtag(\'js\', new Date());' . "\n    ";
+    $code .= '    gtag(\'config\', \'' . htmlspecialchars($analyticsId) . '\');' . "\n    ";
+    $code .= '</script>';
+    
+    return $code;
 }
 
 // ==========================================
@@ -367,6 +444,10 @@ $primaryColor = $website['primary_color'];
 $secondaryColor = $website['secondary_color'];
 $language = $website['language'];
 $sidebarContent = $website['sidebar_content'];
+// NEW: Get analytics and custom head code
+$googleAnalyticsId = $website['google_analytics_id'] ?? '';
+$customHeadCode = $website['custom_head_code'] ?? '';
+$faviconFolder = $website['favicon'] ?? '';
 
 $jsonFile = '/var/www/u1852176/data/www/data/data.json';
 $gamesData = [];
@@ -602,6 +683,17 @@ $seoDescription = $languageSeo['description'];
 // ==========================================
 $hreflangTags = generateHreflangTags($availableLanguages, $siteDefaultLanguage, $baseCanonicalUrl, $activeSport, $viewFavorites);
 
+// ==========================================
+// Generate favicon tags
+// ==========================================
+$faviconDir = __DIR__ . '/images/favicons/';
+$faviconTags = generateFaviconTags($faviconFolder, $faviconDir);
+
+// ==========================================
+// Generate Google Analytics code
+// ==========================================
+$analyticsCode = generateGoogleAnalyticsCode($googleAnalyticsId);
+
 function groupGamesBySport($games) {
     $grouped = [];
     foreach ($games as $game) {
@@ -798,7 +890,38 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
     
     <!-- HREFLANG TAGS FOR MULTILINGUAL SEO -->
     <?php echo $hreflangTags; ?>
-    
+
+    <?php 
+    // ==========================================
+    // NEW: FAVICON TAGS
+    // ==========================================
+    if (!empty($faviconTags)): 
+    ?>
+    <?php echo $faviconTags; ?>
+
+    <?php endif; ?>
+
+    <?php 
+    // ==========================================
+    // NEW: GOOGLE ANALYTICS
+    // ==========================================
+    if (!empty($analyticsCode)): 
+    ?>
+    <?php echo $analyticsCode; ?>
+
+    <?php endif; ?>
+
+    <?php 
+    // ==========================================
+    // NEW: CUSTOM HEAD CODE (Ads, tracking, etc.)
+    // ==========================================
+    if (!empty($customHeadCode)): 
+    ?>
+    <!-- CUSTOM HEAD CODE -->
+    <?php echo $customHeadCode; ?>
+
+    <?php endif; ?>
+
     <link rel="stylesheet" href="/styles.css">
     <script>
         // Pass translations to JavaScript
