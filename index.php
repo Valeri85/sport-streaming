@@ -916,6 +916,29 @@ function getSportIcon($sportName) {
     return '⚽';
 }
 
+/**
+ * Get home icon from master icons folder
+ * Home icon is stored in /shared/icons/home.webp (not in sports subfolder)
+ * 
+ * @return string HTML img tag or emoji fallback
+ */
+function getHomeIcon() {
+    // Check for icon in master folder with different extensions
+    $extensions = ['webp', 'svg', 'avif'];
+    $basePath = __DIR__ . '/shared/icons/';
+    
+    foreach ($extensions as $ext) {
+        $fullPath = $basePath . 'home.' . $ext;
+        if (file_exists($fullPath)) {
+            $iconPath = '/shared/icons/home.' . $ext;
+            return '<img src="' . $iconPath . '" alt="Home" class="sport-icon-img" width="24" height="24" onerror="this.parentElement.innerHTML=\'🏠\'">';
+        }
+    }
+    
+    // If no icon found, show default emoji
+    return '🏠';
+}
+
 // Function to render logo with RELATIVE path
 function renderLogo($logo) {
     // Check if logo contains file extension (is a file)
@@ -1151,7 +1174,7 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
         <nav class="sports-menu">
             <a href="<?php echo $homeUrl; ?>" class="menu-item <?php echo (!$viewFavorites && !$activeSport) ? 'active' : ''; ?>">
                 <span class="menu-item-left">
-                    <span class="sport-icon">🏠</span>
+                    <span class="sport-icon"><?php echo getHomeIcon(); ?></span>
                     <span class="sport-name"><?php echo htmlspecialchars(t('home')); ?></span>
                 </span>
             </a>
