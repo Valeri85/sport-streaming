@@ -5,7 +5,13 @@
  * This file generates a unique robots.txt for each domain
  * based on the domain that is requesting it.
  * 
- * NEW: Adds Disallow rules for languages not enabled for this website
+ * FEATURES:
+ * - Adds Disallow rules for languages not enabled for this website
+ * - Blocks crawling of user-specific pages (/favorites)
+ * - Blocks crawling of filtered views (?tab=soon, ?tab=tomorrow)
+ * - Points to sitemap index
+ * 
+ * REFACTORED: Now uses shared functions and constants from includes/
  * 
  * Location: /var/www/u1852176/data/www/streaming/robots.php
  */
@@ -13,32 +19,20 @@
 // Prevent any output before robots.txt content
 ob_start();
 
-// Get current domain and normalize it
-$domain = $_SERVER['HTTP_HOST'];
-$domain = str_replace('www.', '', strtolower(trim($domain)));
+// ==========================================
+// LOAD CONFIGURATION AND SHARED FUNCTIONS
+// ==========================================
+require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/includes/functions.php';
 
-// Load websites configuration
-$configFile = __DIR__ . '/config/websites.json';
+// ==========================================
+// GET DOMAIN AND LOAD WEBSITE CONFIG
+// Uses shared functions: normalizeDomain(), loadWebsiteConfig()
+// Uses constants: WEBSITES_CONFIG_FILE
+// ==========================================
+$domain = normalizeDomain($_SERVER['HTTP_HOST']);
 
-if (!file_exists($configFile)) {
-    header('HTTP/1.1 404 Not Found');
-    die('Configuration file not found');
-}
-
-$configContent = file_get_contents($configFile);
-$configData = json_decode($configContent, true);
-$websites = $configData['websites'] ?? [];
-
-// Find the website configuration for current domain
-$website = null;
-foreach ($websites as $site) {
-    $siteDomain = str_replace('www.', '', strtolower(trim($site['domain'])));
-    
-    if ($siteDomain === $domain && $site['status'] === 'active') {
-        $website = $site;
-        break;
-    }
-}
+$website = loadWebsiteConfig($domain, WEBSITES_CONFIG_FILE);
 
 // If domain not found or inactive, return 404
 if (!$website) {
@@ -51,40 +45,33 @@ $baseUrl = $website['canonical_url'] ?? 'https://www.' . $domain;
 $baseUrl = rtrim($baseUrl, '/'); // Remove trailing slash
 
 // ==========================================
-// LOAD ALL GLOBALLY ACTIVE LANGUAGES
+// LOAD LANGUAGES
+// Uses shared functions: loadActiveLanguages()
+// Uses constants: LANG_DIR
 // ==========================================
-$langDir = __DIR__ . '/config/lang/';
-$allActiveLanguages = [];
+$allActiveLanguages = loadActiveLanguages(LANG_DIR);
 
-if (is_dir($langDir)) {
-    $files = glob($langDir . '*.json');
-    
-    foreach ($files as $file) {
-        $content = file_get_contents($file);
-        $data = json_decode($content, true);
-        
-        if ($data && isset($data['language_info']) && ($data['language_info']['active'] ?? false)) {
-            $code = $data['language_info']['code'];
-            $allActiveLanguages[] = $code;
-        }
-    }
-}
+// Get just the language codes for comparison
+$allActiveLangCodes = array_keys($allActiveLanguages);
 
 // ==========================================
 // GET ENABLED LANGUAGES FOR THIS WEBSITE
 // ==========================================
-$enabledLanguages = $website['enabled_languages'] ?? $allActiveLanguages;
+$enabledLanguages = $website['enabled_languages'] ?? $allActiveLangCodes;
 
 // Find disabled languages (globally active but not enabled for this site)
-$disabledLanguages = array_diff($allActiveLanguages, $enabledLanguages);
+$disabledLanguages = array_diff($allActiveLangCodes, $enabledLanguages);
 
-// Clear output buffer
+// ==========================================
+// CLEAR OUTPUT BUFFER AND SET HEADERS
+// ==========================================
 ob_end_clean();
-
-// Set text/plain header for robots.txt
 header('Content-Type: text/plain; charset=utf-8');
 
-// Generate robots.txt content
+// ==========================================
+// OUTPUT ROBOTS.TXT CONTENT
+// ==========================================
+
 echo "# Robots.txt for " . htmlspecialchars($website['site_name']) . "\n";
 echo "# Domain: " . htmlspecialchars($domain) . "\n";
 echo "# Generated: " . date('Y-m-d H:i:s') . "\n";
@@ -96,7 +83,7 @@ echo "Allow: /\n";
 echo "\n";
 
 // ==========================================
-// NEW: Disallow disabled language URLs
+// Disallow disabled language URLs
 // ==========================================
 if (!empty($disabledLanguages)) {
     echo "# Prevent indexing of disabled language URLs for this website\n";
@@ -107,7 +94,7 @@ if (!empty($disabledLanguages)) {
     echo "\n";
 }
 
-// Disallow specific sport pages
+// Disallow specific sport pages (if any should be hidden)
 echo "# Prevent indexing of specific sport pages\n";
 echo "Disallow: /live-winter-sports\n";
 echo "Disallow: /*/live-winter-sports\n";
@@ -121,7 +108,7 @@ echo "Disallow: /favorites\n";
 echo "Disallow: /*/favorites\n";
 echo "\n";
 
-// Disallow CMS directory (if you want to hide it from search engines)
+// Disallow CMS directory
 echo "# Prevent crawling of CMS admin area\n";
 echo "Disallow: /cms/\n";
 echo "\n";
@@ -131,9 +118,14 @@ echo "# Prevent crawling of configuration files\n";
 echo "Disallow: /config/\n";
 echo "\n";
 
-// Disallow API directory (if you have one)
+// Disallow API directory
 echo "# Prevent crawling of API directory\n";
 echo "Disallow: /api/\n";
+echo "\n";
+
+// Disallow includes directory
+echo "# Prevent crawling of includes directory\n";
+echo "Disallow: /includes/\n";
 echo "\n";
 
 // Disallow filtered views (tab parameters)

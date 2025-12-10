@@ -1,79 +1,50 @@
 <?php
+/**
+ * Main Index File for Streaming Websites
+ * 
+ * This is the main entry point for all streaming website pages.
+ * It handles routing, language detection, and renders the appropriate content.
+ * 
+ * Location: /var/www/u1852176/data/www/streaming/index.php
+ */
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// ==========================================
+// LOAD CONFIGURATION AND SHARED FUNCTIONS
+// ==========================================
+require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/includes/functions.php';
 
-// ✅ FIX: Get domain and normalize it (remove www. prefix)
-$domain = $_SERVER['HTTP_HOST'];
-$domain = str_replace('www.', '', strtolower(trim($domain)));
+// ==========================================
+// LOAD WEBSITE CONFIGURATION
+// Uses shared functions: normalizeDomain(), loadWebsiteConfig()
+// Uses constants: WEBSITES_CONFIG_FILE
+// ==========================================
+$domain = normalizeDomain($_SERVER['HTTP_HOST']);
 
-$websitesConfigFile = __DIR__ . '/config/websites.json';
-if (!file_exists($websitesConfigFile)) {
-    die("Websites configuration file not found");
-}
-
-$configContent = file_get_contents($websitesConfigFile);
-$configData = json_decode($configContent, true);
-$websites = $configData['websites'] ?? [];
-
-$website = null;
-foreach ($websites as $site) {
-    // ✅ FIX: Also normalize the domain from JSON before comparing
-    $siteDomain = str_replace('www.', '', strtolower(trim($site['domain'])));
-    
-    if ($siteDomain === $domain && $site['status'] === 'active') {
-        $website = $site;
-        break;
-    }
-}
+$website = loadWebsiteConfig($domain, WEBSITES_CONFIG_FILE);
 
 if (!$website) {
-    // ✅ IMPROVED ERROR: Show what we're looking for vs what we have
+    // Load config to show available domains in error message
+    $configData = json_decode(file_get_contents(WEBSITES_CONFIG_FILE), true);
+    $websites = $configData['websites'] ?? [];
+    
     die("Website not found. Looking for: '" . htmlspecialchars($domain) . "'. Available domains: " . 
         implode(', ', array_map(function($s) { 
-            return "'" . str_replace('www.', '', strtolower(trim($s['domain']))) . "'";
+            return "'" . normalizeDomain($s['domain']) . "'";
         }, $websites)));
 }
 
 // ==========================================
-// LOAD AVAILABLE LANGUAGES (Global)
+// LOAD AVAILABLE LANGUAGES
+// Uses shared functions: loadActiveLanguages(), filterEnabledLanguages()
+// Uses constants: LANG_DIR
 // ==========================================
-    $langDir = __DIR__ . '/config/lang/';
-    $allActiveLanguages = []; // All globally active languages
+$langDir = LANG_DIR;
+$allActiveLanguages = loadActiveLanguages($langDir);
 
-    if (is_dir($langDir)) {
-        $langFiles = glob($langDir . '*.json');
-        foreach ($langFiles as $file) {
-            $langCode = basename($file, '.json');
-            $langData = json_decode(file_get_contents($file), true);
-            
-            // Only include globally active languages
-            if (isset($langData['language_info']) && ($langData['language_info']['active'] ?? false)) {
-                $allActiveLanguages[$langCode] = [
-                    'code' => $langCode,
-                    'name' => $langData['language_info']['name'] ?? $langCode,
-                    'flag_code' => strtoupper($langData['language_info']['flag'] ?? 'GB')
-                ];
-            }
-        }
-    }
-
-    // ==========================================
-    // FILTER LANGUAGES BY WEBSITE'S ENABLED LANGUAGES
-    // ==========================================
-    $enabledLanguages = $website['enabled_languages'] ?? array_keys($allActiveLanguages);
-    $availableLanguages = [];
-
-    foreach ($allActiveLanguages as $code => $langInfo) {
-        if (in_array($code, $enabledLanguages)) {
-            $availableLanguages[$code] = $langInfo;
-        }
-    }
-
-    // Ensure at least English is always available
-    if (empty($availableLanguages) && isset($allActiveLanguages['en'])) {
-        $availableLanguages['en'] = $allActiveLanguages['en'];
-    }
+// Filter by website's enabled languages
+$enabledLanguages = $website['enabled_languages'] ?? array_keys($allActiveLanguages);
+$availableLanguages = filterEnabledLanguages($allActiveLanguages, $enabledLanguages);
 
 // ==========================================
 // DETERMINE ACTIVE LANGUAGE
@@ -276,225 +247,39 @@ elseif (!$urlLang) {
 $siteDefaultLanguage = $defaultLanguage;
 
 // ==========================================
-// HELPER: Build language URL
-// Returns clean URL for language switcher links
+// NOTE: The following functions are now in includes/functions.php:
+// - buildLanguageUrl()
+// - langUrl()
+// - getLanguageSeoData()
+// - generateHreflangTags()
+// - generateFaviconTags()
+// - generateGoogleAnalyticsCode()
+// - groupGamesBySport()
+// - groupByCountryAndLeague()
+// - formatGameTime()
+// - getTimeCategory()
+// - getCountryFlag()
+// - getCountryName()
+// - getSportIcon()
+// - getHomeIcon()
+// - renderLogo()
+// - sendNewSportsNotification()
+// - checkForNewSports()
+// - t()
+// - tSport()
 // ==========================================
-function buildLanguageUrl($langCode, $defaultLang, $activeSport = null, $viewFavorites = false, $activeTab = 'all') {
-    // Build the path
-    if ($langCode === $defaultLang) {
-        // Default language = no prefix, clean URL
-        $path = '/';
-        if ($viewFavorites) {
-            $path = '/favorites';
-        } elseif ($activeSport) {
-            $path = '/live-' . $activeSport;
-        }
-    } else {
-        // Non-default language = add prefix
-        $path = '/' . $langCode;
-        if ($viewFavorites) {
-            $path .= '/favorites';
-        } elseif ($activeSport) {
-            $path .= '/live-' . $activeSport;
-        }
-    }
-    
-    // Add tab parameter if not 'all'
-    if ($activeTab !== 'all' && !$viewFavorites) {
-        $path .= '?tab=' . $activeTab;
-    }
-    
-    return $path;
-}
-
-// ==========================================
-// HELPER: Build internal link with language prefix
-// ==========================================
-function langUrl($path, $websiteLanguage, $defaultLanguage) {
-    // If current language is NOT the default, add prefix
-    if ($websiteLanguage !== $defaultLanguage) {
-        // Handle root path
-        if ($path === '/') {
-            return '/' . $websiteLanguage;
-        }
-        // Handle other paths
-        return '/' . $websiteLanguage . $path;
-    }
-    // Default language - no prefix
-    return $path;
-}
-
-// ==========================================
-// HELPER: Get SEO data for specific language
-// Returns title and description for current page/language
-// ==========================================
-function getLanguageSeoData($langCode, $domain, $pageType, $sportSlug, $langDir, $defaultSeo) {
-    // For English (default), return the default SEO from websites.json
-    if ($langCode === 'en') {
-        return $defaultSeo;
-    }
-
-    // Try to load language-specific SEO
-    $langFile = $langDir . $langCode . '.json';
-        if (!file_exists($langFile)) {
-            return $defaultSeo; // Fallback to English
-        }
-        
-        $langData = json_decode(file_get_contents($langFile), true);
-        if (!$langData || !isset($langData['seo'])) {
-            return $defaultSeo; // Fallback to English
-        }
-        
-        // Normalize domain for comparison (remove www., lowercase)
-        $normalizedDomain = strtolower(str_replace('www.', '', trim($domain)));
-        
-        // Find matching domain key (case-insensitive search)
-        $seoData = null;
-        foreach ($langData['seo'] as $key => $value) {
-            $normalizedKey = strtolower(str_replace('www.', '', trim($key)));
-            if ($normalizedKey === $normalizedDomain) {
-                $seoData = $value;
-                break;
-            }
-        }
-        
-        if (!$seoData) {
-            return $defaultSeo; // Fallback to English
-        }
-        
-        // Get SEO based on page type
-        if ($pageType === 'home') {
-            $title = $seoData['home']['title'] ?? '';
-            $description = $seoData['home']['description'] ?? '';
-        } elseif ($pageType === 'sport' && $sportSlug) {
-            // Check case-insensitive for sport slug
-            $title = '';
-            $description = '';
-            if (isset($seoData['sports'])) {
-                foreach ($seoData['sports'] as $sKey => $sValue) {
-                    if (strtolower($sKey) === strtolower($sportSlug)) {
-                        $title = $sValue['title'] ?? '';
-                        $description = $sValue['description'] ?? '';
-                        break;
-                    }
-                }
-            }
-        } else {
-            return $defaultSeo; // Unknown page type
-        }
-        
-        // If language-specific SEO exists, use it; otherwise fallback to English
-        return [
-            'title' => !empty($title) ? $title : $defaultSeo['title'],
-            'description' => !empty($description) ? $description : $defaultSeo['description']
-        ];
-    }
-
-// ==========================================
-// HELPER: Generate hreflang tags for all active languages
-// ==========================================
-function generateHreflangTags($availableLanguages, $defaultLanguage, $baseCanonicalUrl, $activeSport, $viewFavorites) {
-    $tags = [];
-    
-    foreach ($availableLanguages as $code => $langInfo) {
-        // Build URL for this language
-        if ($code === $defaultLanguage) {
-            // Default language = no prefix
-            $url = $baseCanonicalUrl;
-            if ($viewFavorites) {
-                $url .= '/favorites';
-            } elseif ($activeSport) {
-                $url .= '/live-' . $activeSport;
-            } else {
-                $url .= '/';
-            }
-        } else {
-            // Non-default language = add prefix
-            $url = $baseCanonicalUrl . '/' . $code;
-            if ($viewFavorites) {
-                $url .= '/favorites';
-            } elseif ($activeSport) {
-                $url .= '/live-' . $activeSport;
-            }
-        }
-        
-        $tags[] = '<link rel="alternate" hreflang="' . htmlspecialchars($code) . '" href="' . htmlspecialchars($url) . '">';
-    }
-    
-    // Add x-default (points to default language version)
-    $xDefaultUrl = $baseCanonicalUrl;
-    if ($viewFavorites) {
-        $xDefaultUrl .= '/favorites';
-    } elseif ($activeSport) {
-        $xDefaultUrl .= '/live-' . $activeSport;
-    } else {
-        $xDefaultUrl .= '/';
-    }
-    $tags[] = '<link rel="alternate" hreflang="x-default" href="' . htmlspecialchars($xDefaultUrl) . '">';
-    
-    return implode("\n    ", $tags);
-}
-
-// ==========================================
-// GENERATE FAVICON HTML TAGS
-// ==========================================
-function generateFaviconTags($websiteId, $faviconDir) {
-    if (empty($websiteId)) {
-        return '';
-    }
-    
-    $faviconPath = '/images/favicons/' . $websiteId . '/';
-    $faviconFullPath = $faviconDir . $websiteId . '/';
-    
-    // Check if favicon folder exists
-    if (!file_exists($faviconFullPath . 'favicon-32x32.png')) {
-        return '';
-    }
-    
-    $tags = '<!-- FAVICONS -->' . "\n    ";
-    $tags .= '<link rel="icon" type="image/png" sizes="32x32" href="' . $faviconPath . 'favicon-32x32.png">' . "\n    ";
-    $tags .= '<link rel="icon" type="image/png" sizes="16x16" href="' . $faviconPath . 'favicon-16x16.png">' . "\n    ";
-    $tags .= '<link rel="apple-touch-icon" sizes="180x180" href="' . $faviconPath . 'apple-touch-icon.png">' . "\n    ";
-    $tags .= '<link rel="icon" type="image/png" sizes="192x192" href="' . $faviconPath . 'android-chrome-192x192.png">' . "\n    ";
-    $tags .= '<link rel="icon" type="image/png" sizes="512x512" href="' . $faviconPath . 'android-chrome-512x512.png">';
-    
-    return $tags;
-}
-
-// ==========================================
-// GENERATE GOOGLE ANALYTICS CODE
-// ==========================================
-function generateGoogleAnalyticsCode($analyticsId) {
-    if (empty($analyticsId)) {
-        return '';
-    }
-    
-    // Validate format (G-XXXXXXXXXX)
-    if (!preg_match('/^G-[A-Z0-9]+$/i', $analyticsId)) {
-        return '';
-    }
-    
-    $code = '<!-- Google tag (gtag.js) -->' . "\n    ";
-    $code .= '<script async src="https://www.googletagmanager.com/gtag/js?id=' . htmlspecialchars($analyticsId) . '"></script>' . "\n    ";
-    $code .= '<script>' . "\n    ";
-    $code .= '    window.dataLayer = window.dataLayer || [];' . "\n    ";
-    $code .= '    function gtag(){dataLayer.push(arguments);}' . "\n    ";
-    $code .= '    gtag(\'js\', new Date());' . "\n    ";
-    $code .= '    gtag(\'config\', \'' . htmlspecialchars($analyticsId) . '\');' . "\n    ";
-    $code .= '</script>';
-    
-    return $code;
-}
 
 // ==========================================
 // LOAD LANGUAGE FILE
+// Uses constant: LANG_DIR
 // ==========================================
-$langFile = __DIR__ . '/config/lang/' . $websiteLanguage . '.json';
+$langFile = LANG_DIR . $websiteLanguage . '.json';
 
 // ==========================================
 // RTL LANGUAGE DETECTION
+// Uses constant: RTL_LANGUAGES
 // ==========================================
-$rtlLanguages = ['ar', 'he', 'fa', 'ur']; // Arabic, Hebrew, Persian, Urdu
+$rtlLanguages = defined('RTL_LANGUAGES') ? RTL_LANGUAGES : ['ar', 'he', 'fa', 'ur'];
 $isRTL = in_array($websiteLanguage, $rtlLanguages);
 
 // Also check language_info from loaded language file if available
@@ -506,7 +291,7 @@ $textDirection = $isRTL ? 'rtl' : 'ltr';
 
 // Fallback to English if language file not found
 if (!file_exists($langFile)) {
-    $langFile = __DIR__ . '/config/lang/en.json';
+    $langFile = LANG_DIR . 'en.json';
     $websiteLanguage = 'en';
 }
 
@@ -514,41 +299,6 @@ $lang = [];
 if (file_exists($langFile)) {
     $langContent = file_get_contents($langFile);
     $lang = json_decode($langContent, true) ?? [];
-}
-
-// ==========================================
-// TRANSLATION HELPER FUNCTION
-// ==========================================
-function t($key, $section = 'ui') {
-    global $lang;
-    
-    // Handle nested keys like 'footer.sports'
-    if (strpos($key, '.') !== false) {
-        $parts = explode('.', $key);
-        $section = $parts[0];
-        $key = $parts[1];
-    }
-    
-    // Return translated text or key as fallback
-    if (isset($lang[$section][$key])) {
-        return $lang[$section][$key];
-    }
-    
-    // Fallback: return key formatted nicely
-    return ucfirst(str_replace('_', ' ', $key));
-}
-
-// Function to translate sport name
-function tSport($sportName) {
-    global $lang;
-    
-    // Look up in sports translations
-    if (isset($lang['sports'][$sportName])) {
-        return $lang['sports'][$sportName];
-    }
-    
-    // Fallback: return original name
-    return $sportName;
 }
 
 $siteName = $website['site_name'];
@@ -562,112 +312,15 @@ $googleAnalyticsId = $website['google_analytics_id'] ?? '';
 $customHeadCode = $website['custom_head_code'] ?? '';
 $faviconFolder = $website['favicon'] ?? '';
 
-$jsonFile = '/var/www/u1852176/data/www/data/data.json';
+// Load games data using constant from config.php
 $gamesData = [];
-if (file_exists($jsonFile)) {
-    $jsonContent = file_get_contents($jsonFile);
+if (file_exists(DATA_JSON_FILE)) {
+    $jsonContent = file_get_contents(DATA_JSON_FILE);
     $data = json_decode($jsonContent, true);
     $gamesData = $data['games'] ?? [];
 }
 
-// Function to send Slack notification about new sports
-function sendNewSportsNotification($newSports, $siteName) {
-    $slackConfigFile = '/var/www/u1852176/data/www/streaming/config/slack-config.json';
-    if (!file_exists($slackConfigFile)) {
-        return false;
-    }
-    
-    $slackConfig = json_decode(file_get_contents($slackConfigFile), true);
-    $slackWebhookUrl = $slackConfig['webhook_url'] ?? '';
-    
-    if (empty($slackWebhookUrl)) {
-        return false;
-    }
-    
-    $sportsList = implode("\n", array_map(function($sport) {
-        return "• " . $sport;
-    }, $newSports));
-    
-    $message = [
-        'text' => "🆕 *New Sport Categories Detected*",
-        'blocks' => [
-            [
-                'type' => 'section',
-                'text' => [
-                    'type' => 'mrkdwn',
-                    'text' => "*Website:* " . $siteName . "\n*New Sports Found in data.json:*\n" . $sportsList . "\n\n⚠️ Please add these sports to CMS and configure SEO."
-                ]
-            ],
-            [
-                'type' => 'section',
-                'text' => [
-                    'type' => 'mrkdwn',
-                    'text' => "*Action Required:*\n1. Go to CMS > Manage Sports\n2. Add the new sport categories\n3. Configure SEO for new sport pages"
-                ]
-            ]
-        ]
-    ];
-    
-    $ch = curl_init($slackWebhookUrl);
-    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($message));
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
-    
-    $result = curl_exec($ch);
-    curl_close($ch);
-    
-    return $result;
-}
-
-// Check for new sports in data.json
-function checkForNewSports($gamesData, $configuredSports, $siteName, $websiteId) {
-    $dataSports = [];
-    foreach ($gamesData as $game) {
-        $sport = $game['sport'] ?? '';
-        if ($sport && !in_array($sport, $dataSports)) {
-            $dataSports[] = $sport;
-        }
-    }
-    
-    $newSports = [];
-    foreach ($dataSports as $sport) {
-        // Exact match only - no grouping logic
-        if (!in_array($sport, $configuredSports)) {
-            $newSports[] = $sport;
-        }
-    }
-    
-    if (!empty($newSports)) {
-        $notifiedFile = __DIR__ . '/config/notified-sports.json';
-        $notifiedData = [];
-        
-        if (file_exists($notifiedFile)) {
-            $notifiedData = json_decode(file_get_contents($notifiedFile), true) ?: [];
-        }
-        
-        if (!isset($notifiedData[$websiteId])) {
-            $notifiedData[$websiteId] = [];
-        }
-        
-        $sportsToNotify = [];
-        foreach ($newSports as $sport) {
-            if (!in_array($sport, $notifiedData[$websiteId])) {
-                $sportsToNotify[] = $sport;
-            }
-        }
-        
-        if (!empty($sportsToNotify)) {
-            $notificationSent = sendNewSportsNotification($sportsToNotify, $siteName);
-            
-            if ($notificationSent !== false) {
-                $notifiedData[$websiteId] = array_merge($notifiedData[$websiteId], $sportsToNotify);
-                file_put_contents($notifiedFile, json_encode($notifiedData, JSON_PRETTY_PRINT));
-            }
-        }
-    }
-}
-
+// Check for new sports (function now in includes/functions.php)
 $configuredSports = $website['sports_categories'] ?? [];
 checkForNewSports($gamesData, $configuredSports, $siteName, $website['id']);
 
@@ -785,171 +438,33 @@ if ($viewFavorites) {
     $seoSportSlug = $activeSport;
 }
 
-// Get language-specific SEO
+// Get language-specific SEO (function now in includes/functions.php)
 $languageSeo = getLanguageSeoData($websiteLanguage, $domain, $seoPageType, $seoSportSlug, $langDir, $defaultSeo);
 
 $seoTitle = $languageSeo['title'];
 $seoDescription = $languageSeo['description'];
 
 // ==========================================
-// Generate hreflang tags
+// Generate hreflang tags (function now in includes/functions.php)
 // ==========================================
 $hreflangTags = generateHreflangTags($availableLanguages, $siteDefaultLanguage, $baseCanonicalUrl, $activeSport, $viewFavorites);
 
 // ==========================================
-// Generate favicon tags
+// Generate favicon tags (function now in includes/functions.php)
+// Uses constant: FAVICONS_DIR
 // ==========================================
-$faviconDir = __DIR__ . '/images/favicons/';
-$faviconTags = generateFaviconTags($faviconFolder, $faviconDir);
+$faviconTags = generateFaviconTags($faviconFolder, FAVICONS_DIR);
 
 // ==========================================
-// Generate Google Analytics code
+// Generate Google Analytics code (function now in includes/functions.php)
 // ==========================================
 $analyticsCode = generateGoogleAnalyticsCode($googleAnalyticsId);
 
-function groupGamesBySport($games) {
-    $grouped = [];
-    foreach ($games as $game) {
-        $sport = $game['sport'];
-        if (!isset($grouped[$sport])) {
-            $grouped[$sport] = [];
-        }
-        $grouped[$sport][] = $game;
-    }
-    return $grouped;
-}
-
-function groupByCountryAndLeague($games) {
-    $grouped = [];
-    foreach ($games as $game) {
-        $country = $game['country'];
-        $comp = $game['competition'];
-        $key = $country . '|||' . $comp;
-        
-        if (!isset($grouped[$key])) {
-            $grouped[$key] = [
-                'country' => $country,
-                'competition' => $comp,
-                'games' => []
-            ];
-        }
-        $grouped[$key]['games'][] = $game;
-    }
-    return $grouped;
-}
-
-function formatGameTime($dateString) {
-    $timestamp = strtotime($dateString);
-    return date('H:i', $timestamp);
-}
-
-function getTimeCategory($dateString) {
-    $gameTime = strtotime($dateString);
-    $now = time();
-    $diff = $gameTime - $now;
-    
-    if ($diff <= 1800 && $diff >= 0) {
-        return 'soon';
-    }
-    
-    $tomorrow = strtotime('tomorrow 00:00:00');
-    $dayAfter = strtotime('tomorrow 23:59:59');
-    
-    if ($gameTime >= $tomorrow && $gameTime <= $dayAfter) {
-        return 'tomorrow';
-    }
-    
-    return 'other';
-}
-
-function getCountryFlag($countryFile) {
-    $country = str_replace('.png', '', $countryFile);
-    $country = str_replace('-', ' ', $country);
-    
-    $flags = [
-        'United states' => '🇺🇸',
-        'Russia' => '🇷🇺',
-        'Germany' => '🇩🇪',
-        'Italy' => '🇮🇹',
-        'International' => '🌍',
-        'Europe' => '🇪🇺',
-        'Worldwide' => '🌐',
-        'Colombia' => '🇨🇴',
-    ];
-    
-    return $flags[$country] ?? '🌐';
-}
-
-function getCountryName($countryFile) {
-    $country = str_replace('.png', '', $countryFile);
-    return str_replace('-', ' ', ucwords($country));
-}
-
-/**
- * Get sport icon from master icons folder
- * Icons are stored in /shared/icons/sports/ and shared across all websites
- * 
- * @param string $sportName The sport name (e.g., "Ice Hockey", "Football")
- * @return string HTML img tag or emoji fallback
- */
-function getSportIcon($sportName) {
-    // Convert sport name to filename: "Ice Hockey" -> "ice-hockey"
-    $filename = strtolower($sportName);
-    $filename = str_replace(' ', '-', $filename);
-    $filename = preg_replace('/[^a-z0-9\-]/', '', $filename);
-    $filename = preg_replace('/-+/', '-', $filename);
-    $filename = trim($filename, '-');
-    
-    // Check for icon in master folder with different extensions
-    $extensions = ['webp', 'svg', 'avif'];
-    $basePath = __DIR__ . '/shared/icons/sports/';
-    
-    foreach ($extensions as $ext) {
-        $fullPath = $basePath . $filename . '.' . $ext;
-        if (file_exists($fullPath)) {
-            $iconPath = '/shared/icons/sports/' . $filename . '.' . $ext;
-            return '<img src="' . $iconPath . '" alt="' . htmlspecialchars($sportName) . '" class="sport-icon-img" width="24" height="24" onerror="this.parentElement.innerHTML=\'⚽\'">';
-        }
-    }
-    
-    // If no icon found, show default emoji
-    return '⚽';
-}
-
-/**
- * Get home icon from master icons folder
- * Home icon is stored in /shared/icons/home.webp (not in sports subfolder)
- * 
- * @return string HTML img tag or emoji fallback
- */
-function getHomeIcon() {
-    // Check for icon in master folder with different extensions
-    $extensions = ['webp', 'svg', 'avif'];
-    $basePath = __DIR__ . '/shared/icons/';
-    
-    foreach ($extensions as $ext) {
-        $fullPath = $basePath . 'home.' . $ext;
-        if (file_exists($fullPath)) {
-            $iconPath = '/shared/icons/home.' . $ext;
-            return '<img src="' . $iconPath . '" alt="Home" class="sport-icon-img" width="24" height="24" onerror="this.parentElement.innerHTML=\'🏠\'">';
-        }
-    }
-    
-    // If no icon found, show default emoji
-    return '🏠';
-}
-
-// Function to render logo with RELATIVE path
-function renderLogo($logo) {
-    // Check if logo contains file extension (is a file)
-    if (preg_match('/\.(png|jpg|jpeg|webp|svg|avif)$/i', $logo)) {
-        $logoFile = htmlspecialchars($logo);
-        $logoPath = '/images/logos/' . $logoFile;
-        return '<img src="' . $logoPath . '" alt="Logo" class="logo-image" width="48" height="48" style="object-fit: contain;">';
-    } else {
-        return $logo;
-    }
-}
+// ==========================================
+// FILTER AND GROUP GAMES
+// Functions groupGamesBySport, groupByCountryAndLeague, 
+// formatGameTime, getTimeCategory are now in includes/functions.php
+// ==========================================
 
 $filteredGames = $gamesData;
 
@@ -1005,6 +520,7 @@ $jsTranslations = [
 
 // ==========================================
 // PRE-BUILD URLS FOR TEMPLATES
+// langUrl function is now in includes/functions.php
 // ==========================================
 $homeUrl = langUrl('/', $websiteLanguage, $siteDefaultLanguage);
 $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
@@ -1212,23 +728,18 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
             </div>
         </nav>
         <?php endif; ?>
-
-        <section class="content-section" id="mainContent">
-            <h2 class="sr-only"><?php echo htmlspecialchars(t('live_games', 'accessibility')); ?></h2>
+        
+        <section class="games-container" id="gamesContainer">
             <?php if ($viewFavorites): ?>
-                <div id="favoritesContainer">
-                    <div class="no-games">
-                        <p><?php echo htmlspecialchars(t('loading_favorites', 'messages')); ?></p>
-                    </div>
-                </div>
+                <div id="favoritesContainer"></div>
+                
                 <template id="templateData">
-                    <?php
-                    $allGroupedBySport = groupGamesBySport($gamesData);
-                    foreach ($allGroupedBySport as $sportName => $sportGames):
+                    <?php foreach ($groupedBySport as $sportName => $sportGames): 
                         $sportIconDisplay = getSportIcon($sportName);
+                        $sportId = strtolower(str_replace(' ', '-', $sportName));
                         $translatedSportName = tSport($sportName);
                     ?>
-                        <article class="sport-category" data-sport="<?php echo htmlspecialchars($sportName); ?>">
+                        <article class="sport-category" id="<?php echo $sportId; ?>" data-sport="<?php echo htmlspecialchars($sportName); ?>">
                             <h2 class="sr-only"><?php echo htmlspecialchars($translatedSportName); ?></h2>
                             <details open>
                                 <summary class="sport-header">

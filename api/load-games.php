@@ -1,33 +1,46 @@
 <?php
+/**
+ * API: Load Games
+ * 
+ * Returns games data as JSON with HTML for lazy loading
+ * 
+ * REFACTORED: Now uses shared functions and constants from includes/
+ * 
+ * Location: /var/www/u1852176/data/www/streaming/api/load-games.php
+ */
 
 header('Content-Type: application/json');
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+
+// ==========================================
+// LOAD CONFIGURATION AND SHARED FUNCTIONS
+// ==========================================
+require_once dirname(__DIR__) . '/includes/config.php';
+require_once dirname(__DIR__) . '/includes/functions.php';
 
 $sportOffset = isset($_GET['sport_offset']) ? intval($_GET['sport_offset']) : 0;
-$sportsPerLoad = isset($_GET['sports_per_load']) ? intval($_GET['sports_per_load']) : 2;
+$sportsPerLoad = isset($_GET['sports_per_load']) ? intval($_GET['sports_per_load']) : DEFAULT_SPORTS_PER_LOAD;
 $sport = isset($_GET['sport']) ? $_GET['sport'] : null;
 $tab = isset($_GET['tab']) ? $_GET['tab'] : 'all';
 
-// Use centralized data.json
-$jsonFile = '/var/www/u1852176/data/www/data/data.json';
+// Use centralized data.json from constant
+// Uses constant: DATA_JSON_FILE
 
 // Check if file exists
-if (!file_exists($jsonFile)) {
+if (!file_exists(DATA_JSON_FILE)) {
     echo json_encode([
         'error' => 'Data file not found',
-        'path' => $jsonFile,
+        'path' => DATA_JSON_FILE,
         'debug' => 'Please ensure data.json exists at the specified path'
     ]);
     exit;
 }
 
 // Try to read and parse the file
-$jsonContent = @file_get_contents($jsonFile);
+$jsonContent = @file_get_contents(DATA_JSON_FILE);
 if ($jsonContent === false) {
     echo json_encode([
         'error' => 'Could not read data file',
-        'path' => $jsonFile
+        'path' => DATA_JSON_FILE
     ]);
     exit;
 }
@@ -51,56 +64,19 @@ if (empty($gamesData)) {
     exit;
 }
 
-function getTimeCategory($dateString) {
-    $gameTime = strtotime($dateString);
-    $now = time();
-    $diff = $gameTime - $now;
-    
-    if ($diff <= 1800 && $diff >= 0) {
-        return 'soon';
-    }
-    
-    $tomorrow = strtotime('tomorrow 00:00:00');
-    $dayAfter = strtotime('tomorrow 23:59:59');
-    
-    if ($gameTime >= $tomorrow && $gameTime <= $dayAfter) {
-        return 'tomorrow';
-    }
-    
-    return 'other';
-}
-
-function getCountryFlag($countryFile) {
-    $country = str_replace('.png', '', $countryFile);
-    $country = str_replace('-', ' ', $country);
-    
-    $flags = [
-        'United states' => '🇺🇸',
-        'Russia' => '🇷🇺',
-        'Germany' => '🇩🇪',
-        'Italy' => '🇮🇹',
-        'International' => '🌍',
-        'Europe' => '🇪🇺',
-        'Worldwide' => '🌐',
-        'Colombia' => '🇨🇴',
-    ];
-    
-    return $flags[$country] ?? '🌐';
-}
-
-function getCountryName($countryFile) {
-    $country = str_replace('.png', '', $countryFile);
-    return str_replace('-', ' ', ucwords($country));
-}
-
-function formatGameTime($dateString) {
-    $timestamp = strtotime($dateString);
-    return date('H:i', $timestamp);
-}
+// ==========================================
+// NOTE: The following functions are now in includes/functions.php:
+// - getTimeCategory()
+// - getCountryFlag()
+// - getCountryName()
+// - formatGameTime()
+// - groupGamesBySport()
+// - groupByCountryAndLeague()
+// ==========================================
 
 $filteredGames = $gamesData;
 
-// Apply sport filter - REMOVED GROUPING LOGIC - exact match only
+// Apply sport filter - exact match only
 if ($sport) {
     $sportName = str_replace('-', ' ', $sport);
     $filteredGames = array_filter($filteredGames, function($game) use ($sportName) {
@@ -108,7 +84,7 @@ if ($sport) {
     });
 }
 
-// Apply time filter
+// Apply time filter (uses getTimeCategory from shared functions)
 if ($tab === 'soon') {
     $filteredGames = array_filter($filteredGames, function($game) {
         return getTimeCategory($game['date']) === 'soon';
@@ -122,15 +98,8 @@ if ($tab === 'soon') {
 $filteredGames = array_values($filteredGames);
 $totalGames = count($filteredGames);
 
-// Group by sport first
-$allGroupedBySport = [];
-foreach ($filteredGames as $game) {
-    $sportName = $game['sport'];
-    if (!isset($allGroupedBySport[$sportName])) {
-        $allGroupedBySport[$sportName] = [];
-    }
-    $allGroupedBySport[$sportName][] = $game;
-}
+// Group by sport first (uses groupGamesBySport from shared functions)
+$allGroupedBySport = groupGamesBySport($filteredGames);
 
 // Get sport names
 $sportNames = array_keys($allGroupedBySport);
@@ -145,6 +114,7 @@ foreach ($sportsToReturn as $sportName) {
     $gamesToReturn = array_merge($gamesToReturn, $allGroupedBySport[$sportName]);
 }
 
+// Sport icons mapping (fallback for when icon files don't exist)
 $sportsIcons = [
     'Football' => '⚽',
     'Basketball' => '🏀',
@@ -167,36 +137,34 @@ $sportsIcons = [
     'Racing' => '🏎️',
     'Boxing' => '🥊',
     'Chess' => '♟️',
-    'Rugby' => '🏉'
+    'Rugby' => '🏉',
+    'Rugby Union' => '🏉',
+    'Rugby League' => '🏉',
+    'Rugby Sevens' => '🏉',
+    'American Football' => '🏈',
+    'MMA' => '🥊',
+    'Combat Sport' => '🥊',
+    'Snooker' => '🎱',
+    'E-sports' => '🎮',
+    'Motorsport' => '🏎️',
+    'Cycling' => '🚴',
+    'Athletics' => '🏃',
+    'Swimming' => '🏊',
+    'Extreme Sport' => '🪂',
 ];
 
-$groupedBySport = [];
-foreach ($gamesToReturn as $game) {
-    $sportName = $game['sport'];
-    if (!isset($groupedBySport[$sportName])) {
-        $groupedBySport[$sportName] = [];
-    }
-    $groupedBySport[$sportName][] = $game;
-}
+// Group games to return by sport
+$groupedBySport = groupGamesBySport($gamesToReturn);
 
 $html = '';
 
 foreach ($groupedBySport as $sportName => $sportGames) {
+    // Use emoji fallback if no icon file
     $sportIcon = $sportsIcons[$sportName] ?? '⚽';
     $sportId = strtolower(str_replace(' ', '-', $sportName));
     
-    $byCountryLeague = [];
-    foreach ($sportGames as $game) {
-        $key = $game['country'] . '|||' . $game['competition'];
-        if (!isset($byCountryLeague[$key])) {
-            $byCountryLeague[$key] = [
-                'country' => $game['country'],
-                'competition' => $game['competition'],
-                'games' => []
-            ];
-        }
-        $byCountryLeague[$key]['games'][] = $game;
-    }
+    // Group by country and league (uses groupByCountryAndLeague from shared functions)
+    $byCountryLeague = groupByCountryAndLeague($sportGames);
     
     $html .= '<article class="sport-category" id="' . $sportId . '" data-sport="' . htmlspecialchars($sportName) . '">';
     $html .= '<details open>';
@@ -210,6 +178,8 @@ foreach ($groupedBySport as $sportName => $sportGames) {
     
     foreach ($byCountryLeague as $key => $group) {
         $leagueId = 'league-' . md5($sportName . $group['country'] . $group['competition']);
+        
+        // Use shared functions for country flag and name
         $countryFlag = getCountryFlag($group['country']);
         $countryName = getCountryName($group['country']);
         
@@ -230,6 +200,7 @@ foreach ($groupedBySport as $sportName => $sportGames) {
         foreach ($group['games'] as $game) {
             $html .= '<details class="game-item-details" data-game-id="' . $game['id'] . '" data-league-id="' . $leagueId . '">';
             $html .= '<summary class="game-item-summary">';
+            // Use shared formatGameTime function
             $html .= '<time class="game-time" datetime="' . $game['date'] . '">' . formatGameTime($game['date']) . '</time>';
             $html .= '<span class="game-teams">';
             $html .= '<span class="team">';
