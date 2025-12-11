@@ -2,12 +2,12 @@
 	"websites": [
 		{
 			"id": 1,
-			"domain": "Sportlemons.info",
-			"canonical_url": "https://www.Sportlemons.info",
-			"site_name": "Sportlemons",
-			"logo": "Sportlemons-logo.webp",
+			"domain": "sportlemons.info",
+			"canonical_url": "https://www.sportlemons.info",
+			"site_name": "SportLemons",
+			"logo": "sportlemons-logo.webp",
 			"primary_color": "#ffa500",
-			"secondary_color": "#FF8C00",
+			"secondary_color": "#ff8c00",
 			"language": "en",
 			"sidebar_content": "",
 			"status": "active",
@@ -69,6 +69,10 @@
 				"home": {
 					"title": "SportLemon | Live Sports & Today’s Match Listings",
 					"description": "SportLemon gives you live sports streams plus today’s upcoming and current matches across all sports. Free access, no sign-up—start watching now."
+				},
+				"favorites": {
+					"title": "SportLemon Favorites | Watch Live Your Favorite Sport Events",
+					"description": "Favorite Sport Matches - SportLemon offers free, high-quality sports streams with no sign-up. Enjoy smooth playback across devices—start watching now."
 				},
 				"sports": {
 					"football": {
@@ -285,7 +289,62 @@
 					}
 				}
 			},
-			"home_icon": "home.webp"
+			"home_icon": "home.webp",
+			"google_analytics_id": "G-370587538",
+			"custom_head_code": "",
+			"owner": "user_1",
+			"enabled_languages": [
+				"en",
+				"af",
+				"id",
+				"ms",
+				"ca",
+				"da",
+				"de",
+				"et",
+				"en-us",
+				"es",
+				"tl",
+				"fr",
+				"hr",
+				"it",
+				"sw",
+				"lv",
+				"lt",
+				"hu",
+				"nl",
+				"no",
+				"pl",
+				"pt",
+				"pt-br",
+				"ro",
+				"sk",
+				"sl",
+				"fi",
+				"sv",
+				"vi",
+				"tr",
+				"cs",
+				"el",
+				"bg",
+				"ru",
+				"sr",
+				"uk",
+				"he",
+				"ur",
+				"ar",
+				"fa",
+				"hi",
+				"bn",
+				"ta",
+				"te",
+				"th",
+				"zh",
+				"ja",
+				"zh-tw",
+				"ko"
+			],
+			"analytics_url": ""
 		},
 		{
 			"id": 2,
@@ -568,7 +627,62 @@
 					"description": "Discover live streams, schedules, and updates for all sports on Eplsite. Watch free HD matches, track upcoming games, and never miss any action."
 				}
 			},
-			"home_icon": "home.webp"
+			"home_icon": "home.webp",
+			"google_analytics_id": "G-359272135",
+			"custom_head_code": "",
+			"enabled_languages": [
+				"en",
+				"af",
+				"id",
+				"ms",
+				"ca",
+				"da",
+				"de",
+				"et",
+				"en-us",
+				"es",
+				"tl",
+				"fr",
+				"hr",
+				"it",
+				"sw",
+				"lv",
+				"lt",
+				"hu",
+				"nl",
+				"no",
+				"pl",
+				"pt",
+				"pt-br",
+				"ro",
+				"sk",
+				"sl",
+				"fi",
+				"sv",
+				"vi",
+				"tr",
+				"cs",
+				"el",
+				"bg",
+				"ru",
+				"sr",
+				"uk",
+				"he",
+				"ur",
+				"ar",
+				"fa",
+				"hi",
+				"bn",
+				"ta",
+				"te",
+				"th",
+				"zh",
+				"ja",
+				"zh-tw",
+				"ko"
+			],
+			"owner": "user_1",
+			"analytics_url": ""
 		},
 		{
 			"id": 3,
@@ -851,7 +965,62 @@
 					"description": "Explore P2p4u for free HD streams of all live and upcoming sports matches. Fast access and no sign-up—start watching your favorite events now."
 				}
 			},
-			"home_icon": "home.webp"
+			"home_icon": "home.webp",
+			"google_analytics_id": "G-363012953",
+			"custom_head_code": "",
+			"enabled_languages": [
+				"en",
+				"af",
+				"id",
+				"ms",
+				"ca",
+				"da",
+				"de",
+				"et",
+				"en-us",
+				"es",
+				"tl",
+				"fr",
+				"hr",
+				"it",
+				"sw",
+				"lv",
+				"lt",
+				"hu",
+				"nl",
+				"no",
+				"pl",
+				"pt",
+				"pt-br",
+				"ro",
+				"sk",
+				"sl",
+				"fi",
+				"sv",
+				"vi",
+				"tr",
+				"cs",
+				"el",
+				"bg",
+				"ru",
+				"sr",
+				"uk",
+				"he",
+				"ur",
+				"ar",
+				"fa",
+				"hi",
+				"bn",
+				"ta",
+				"te",
+				"th",
+				"zh",
+				"ja",
+				"zh-tw",
+				"ko"
+			],
+			"owner": "user_1",
+			"analytics_url": ""
 		},
 		{
 			"id": 4,
@@ -1133,7 +1302,8 @@
 					"title": "Streamhunter | Live Sports Streams & Upcoming Matches",
 					"description": "Streamhunter offers free HD streams for all sports with upcoming and live matches updated daily. Fast access, no sign-up required. Start watching now."
 				}
-			}
+			},
+			"owner": "user_1"
 		},
 		{
 			"id": 5,
@@ -1415,7 +1585,8 @@
 					"title": "Methstreams | Live Sports Streams & Upcoming Matches",
 					"description": "Methstreams delivers free HD streams for all sports with live and upcoming matches updated daily. No sign-up required. Start watching instantly."
 				}
-			}
+			},
+			"owner": "user_1"
 		},
 		{
 			"id": 6,
@@ -1697,15 +1868,8 @@
 						"description": "Wiziwig Extreme Sport offers free HD coverage of top extreme competitions. No registration required. Stream thrilling extreme sport events today."
 					}
 				}
-			}
-		}
-	],
-	"admins": [
-		{
-			"id": 1,
-			"username": "admin",
-			"password": "$2y$10$CFev3njRQzlacX6nyJnUpeSxQF9NrFqnLH7Ek5NiprGAvT1TNENcm",
-			"email": "admin@example.com"
+			},
+			"owner": "user_1"
 		}
 	]
 }
