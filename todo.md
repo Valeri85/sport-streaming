@@ -38,3 +38,6 @@ ADD NEW WEBSITE:
 6. give me code one by one (one site per prompt), work on one website and that after my confirmation continue to another.
 
 give me from "domain.com": {...} field.
+
+First - Fix the missing fields in the base file (direction, missing sports)
+Then - Add SEO translations for all 6 websites one by one

@@ -290,7 +290,7 @@
 				}
 			},
 			"home_icon": "home.webp",
-			"google_analytics_id": "G-370587538",
+			"google_analytics_id": "G-GE2N5FD40P",
 			"custom_head_code": "",
 			"owner": "user_1",
 			"enabled_languages": [
@@ -344,7 +344,7 @@
 				"zh-tw",
 				"ko"
 			],
-			"analytics_url": ""
+			"analytics_property_url": "https://analytics.google.com/analytics/web/#/a209318075p370587538/reports/intelligenthome"
 		},
 		{
 			"id": 2,
@@ -628,7 +628,7 @@
 				}
 			},
 			"home_icon": "home.webp",
-			"google_analytics_id": "G-359272135",
+			"google_analytics_id": "G-PRWJWCWH24",
 			"custom_head_code": "",
 			"enabled_languages": [
 				"en",
@@ -681,8 +681,8 @@
 				"zh-tw",
 				"ko"
 			],
-			"owner": "user_1",
-			"analytics_url": ""
+			"analytics_property_url": "https://analytics.google.com/analytics/web/#/a203299265p359272135/reports/intelligenthome",
+			"owner": "user_1"
 		},
 		{
 			"id": 3,
@@ -966,7 +966,8 @@
 				}
 			},
 			"home_icon": "home.webp",
-			"google_analytics_id": "G-363012953",
+			"google_analytics_id": "G-2G5Z3DF5Y9",
+			"analytics_property_url": "https://analytics.google.com/analytics/web/#/a203308096p363012953/reports/intelligenthome",
 			"custom_head_code": "",
 			"enabled_languages": [
 				"en",
@@ -1019,8 +1020,7 @@
 				"zh-tw",
 				"ko"
 			],
-			"owner": "user_1",
-			"analytics_url": ""
+			"owner": "user_1"
 		},
 		{
 			"id": 4,
@@ -1303,6 +1303,60 @@
 					"description": "Streamhunter offers free HD streams for all sports with upcoming and live matches updated daily. Fast access, no sign-up required. Start watching now."
 				}
 			},
+			"enabled_languages": [
+				"en",
+				"af",
+				"id",
+				"ms",
+				"ca",
+				"da",
+				"de",
+				"et",
+				"en-us",
+				"es",
+				"tl",
+				"fr",
+				"hr",
+				"it",
+				"sw",
+				"lv",
+				"lt",
+				"hu",
+				"nl",
+				"no",
+				"pl",
+				"pt",
+				"pt-br",
+				"ro",
+				"sk",
+				"sl",
+				"fi",
+				"sv",
+				"vi",
+				"tr",
+				"cs",
+				"el",
+				"bg",
+				"ru",
+				"sr",
+				"uk",
+				"he",
+				"ur",
+				"ar",
+				"fa",
+				"hi",
+				"bn",
+				"ta",
+				"te",
+				"th",
+				"zh",
+				"ja",
+				"zh-tw",
+				"ko"
+			],
+			"google_analytics_id": "G-DK9ERXYZFF",
+			"analytics_property_url": "https://analytics.google.com/analytics/web/#/a208502661p516685327/admin/streams/table/",
+			"custom_head_code": "",
 			"owner": "user_1"
 		},
 		{
@@ -1586,6 +1640,60 @@
 					"description": "Methstreams delivers free HD streams for all sports with live and upcoming matches updated daily. No sign-up required. Start watching instantly."
 				}
 			},
+			"enabled_languages": [
+				"en",
+				"af",
+				"id",
+				"ms",
+				"ca",
+				"da",
+				"de",
+				"et",
+				"en-us",
+				"es",
+				"tl",
+				"fr",
+				"hr",
+				"it",
+				"sw",
+				"lv",
+				"lt",
+				"hu",
+				"nl",
+				"no",
+				"pl",
+				"pt",
+				"pt-br",
+				"ro",
+				"sk",
+				"sl",
+				"fi",
+				"sv",
+				"vi",
+				"tr",
+				"cs",
+				"el",
+				"bg",
+				"ru",
+				"sr",
+				"uk",
+				"he",
+				"ur",
+				"ar",
+				"fa",
+				"hi",
+				"bn",
+				"ta",
+				"te",
+				"th",
+				"zh",
+				"ja",
+				"zh-tw",
+				"ko"
+			],
+			"google_analytics_id": "G-KFY8PLKPHT",
+			"analytics_property_url": "https://analytics.google.com/analytics/web/#/a377918269p516704643/reports/intelligenthome",
+			"custom_head_code": "",
 			"owner": "user_1"
 		},
 		{
@@ -1869,7 +1977,370 @@
 					}
 				}
 			},
+			"enabled_languages": [
+				"en",
+				"af",
+				"id",
+				"ms",
+				"ca",
+				"da",
+				"de",
+				"et",
+				"en-us",
+				"es",
+				"tl",
+				"fr",
+				"hr",
+				"it",
+				"sw",
+				"lv",
+				"lt",
+				"hu",
+				"nl",
+				"no",
+				"pl",
+				"pt",
+				"pt-br",
+				"ro",
+				"sk",
+				"sl",
+				"fi",
+				"sv",
+				"vi",
+				"tr",
+				"cs",
+				"el",
+				"bg",
+				"ru",
+				"sr",
+				"uk",
+				"he",
+				"ur",
+				"ar",
+				"fa",
+				"hi",
+				"bn",
+				"ta",
+				"te",
+				"th",
+				"zh",
+				"ja",
+				"zh-tw",
+				"ko"
+			],
+			"custom_head_code": "",
+			"google_analytics_id": "G-5Q9LJFEMJY",
+			"analytics_property_url": "https://analytics.google.com/analytics/web/#/a377918269p516736089/reports/intelligenthome",
 			"owner": "user_1"
+		},
+		{
+			"id": 7,
+			"domain": "rojadirecta.ge",
+			"canonical_url": "https://www.rojadirecta.ge",
+			"site_name": "Roja Directa",
+			"logo": "roja-directa-logo.webp",
+			"primary_color": "#f6d76f",
+			"secondary_color": "#ec465f",
+			"seo_title": "",
+			"seo_description": "",
+			"language": "es",
+			"sidebar_content": "",
+			"status": "active",
+			"sports_categories": [
+				"Football",
+				"Basketball",
+				"Tennis",
+				"Ice Hockey",
+				"Baseball",
+				"Rugby Union",
+				"Rugby League",
+				"Rugby Sevens",
+				"Cricket",
+				"American Football",
+				"Volleyball",
+				"Beach Volleyball",
+				"Handball",
+				"Beach Handball",
+				"Beach Soccer",
+				"Aussie Rules",
+				"Futsal",
+				"Badminton",
+				"Netball",
+				"Floorball",
+				"Combat Sport",
+				"Boxing",
+				"MMA",
+				"Snooker",
+				"Billiard",
+				"Table Tennis",
+				"Padel Tennis",
+				"Squash",
+				"Motorsport",
+				"Racing",
+				"Cycling",
+				"Equestrianism",
+				"Golf",
+				"Field Hockey",
+				"Lacrosse",
+				"Athletics",
+				"Gymnastics",
+				"Weightlifting",
+				"Climbing",
+				"Winter Sport",
+				"Bandy",
+				"Curling",
+				"Triathlon",
+				"Water Sports",
+				"Water Polo",
+				"Sailing",
+				"Bowling",
+				"Darts",
+				"Chess",
+				"E-sports",
+				"Extreme Sport",
+				"Others"
+			],
+			"enabled_languages": ["en", "es", "it"],
+			"owner": "user_2",
+			"google_analytics_id": "G-H15JQ8N9W9",
+			"analytics_url": "",
+			"custom_head_code": "",
+			"favicon": "7",
+			"pages_seo": {
+				"home": {
+					"title": "Roja Directa TV - Watch Tarjeta Roja Directa TV Online",
+					"description": "Rojadirecta TV offers free live sports streaming. Find Tarjeta Roja links, Rojadirecta en Vivo schedules, and watch instantly online."
+				},
+				"sports": {
+					"football": {
+						"title": "Rojadirecta Football - Watch Roja Directa Football Online",
+						"description": "Rojadirecta Football provides free football streaming links. Discover Tarjeta Roja and Rojadirecta en Vivo for live games."
+					},
+					"basketball": {
+						"title": "Rojadirecta Basketball - Roja Directa NBA Basketball Online",
+						"description": "Rojadirecta Basketball offers free live basketball streaming. Access Tarjeta Roja and Rojadirecta en Vivo links instantly."
+					},
+					"tennis": {
+						"title": "Rojadirecta Tennis - Watch Roja Directa Tennis Online",
+						"description": "Rojadirecta Tennis delivers free tennis streaming links via Tarjeta Roja and Rojadirecta en Vivo. Watch tennis live online."
+					},
+					"ice-hockey": {
+						"title": "Rojadirecta Ice Hockey - Watch Roja Directa NHL Online",
+						"description": "Rojadirecta Ice Hockey offers live hockey streaming links via Tarjeta Roja and Rojadirecta en Vivo. Watch ice hockey live free."
+					},
+					"baseball": {
+						"title": "Rojadirecta Baseball - Watch Roja Directa MLB Online",
+						"description": "Rojadirecta Baseball offers free live baseball streaming. Find MLB Matches with Tarjeta Roja links instantly."
+					},
+					"rugby-union": {
+						"title": "Rojadirecta Rugby Union - Watch Rugby Union Online",
+						"description": "Watch live Rugby Union on Rojadirecta TV. Access Tarjeta Roja for free international tournaments and Rojadirecta en Vivo links today."
+					},
+					"rugby-sevens": {
+						"title": "Rojadirecta Rugby Sevens - Watch Rugby Sevens Online",
+						"description": "Experience the speed of Rugby Sevens live on Rojadirecta TV. Use Tarjeta Roja for quick streaming and Rojadirecta en Vivo access."
+					},
+					"rugby-league": {
+						"title": "Rojadirecta Rugby League - Watch Rugby League Online",
+						"description": "Get free Rugby League streaming on Rojadirecta Live. Find Tarjeta Roja links and Rojadirecta en Vivo schedules for every match."
+					},
+					"cricket": {
+						"title": "Rojadirecta Cricket - Watch Roja Directa Cricket Online",
+						"description": "Watch live Cricket on Rojadirecta TV. Access Tarjeta Roja for the best test matches and Rojadirecta en Vivo cricket streaming for free."
+					},
+					"american-football": {
+						"title": "Rojadirecta NFL - Watch Roja Directa American Football Online",
+						"description": "Don't miss the NFL live on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for free American Football in HD online."
+					},
+					"volleyball": {
+						"title": "Rojadirecta Volleyball - Watch Roja Directa Volleyball Online",
+						"description": "Free Volleyball streaming on Rojadirecta Live. Access Tarjeta Roja and Rojadirecta en Vivo for world leagues without a subscription."
+					},
+					"beach-volleyball": {
+						"title": "Rojadirecta Beach Volleyball - Watch Beach Volleyball Online",
+						"description": "Watch live Beach Volleyball on Rojadirecta TV. Use Tarjeta Roja for free HD streaming and Rojadirecta en Vivo sand court action."
+					},
+					"handball": {
+						"title": "Rojadirecta Handball - Watch Roja Directa Handball Online",
+						"description": "Enjoy live Handball on Rojadirecta Live. Find Tarjeta Roja and Rojadirecta en Vivo links for free tournaments in high definition."
+					},
+					"beach-handball": {
+						"title": "Rojadirecta Beach Handball - Watch Beach Handball Online",
+						"description": "Follow live Beach Handball on Rojadirecta TV. Use Tarjeta Roja for high-quality free streaming and Rojadirecta en Vivo beach action."
+					},
+					"beach-soccer": {
+						"title": "Rojadirecta Beach Soccer - Watch Beach Soccer Online",
+						"description": "Experience live Beach Soccer on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for the best goals on the sand for free."
+					},
+					"aussie-rules": {
+						"title": "Rojadirecta Aussie Rules - Watch Aussie Rules Online",
+						"description": "Follow live Aussie Rules on Rojadirecta TV. Use Tarjeta Roja for free AFL streaming and Rojadirecta en Vivo footy links today."
+					},
+					"futsal": {
+						"title": "Rojadirecta Futsal - Watch Roja Directa Futsal Online",
+						"description": "Watch live Futsal on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for premier leagues and international futsal for free."
+					},
+					"badminton": {
+						"title": "Rojadirecta Badminton - Watch Roja Directa Badminton Online",
+						"description": "Enjoy live Badminton on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for free streaming of world badminton tournaments."
+					},
+					"netball": {
+						"title": "Rojadirecta Netball - Watch Roja Directa Netball Online",
+						"description": "Watch live Netball on Rojadirecta Live. Access Tarjeta Roja and Rojadirecta en Vivo for the best matches free and without interruptions."
+					},
+					"floorball": {
+						"title": "Rojadirecta Floorball - Watch Roja Directa Floorball Online",
+						"description": "Experience Floorball on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for free HD streaming links for all major matches."
+					},
+					"combat-sport": {
+						"title": "Rojadirecta Combat Sports - Watch Combat Sport Online",
+						"description": "Follow the best combat sports on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for free Boxing and MMA streaming."
+					},
+					"boxing": {
+						"title": "Rojadirecta Boxing - Watch Roja Directa Boxing Online",
+						"description": "Watch live Boxing on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for the year's biggest fights for free in HD."
+					},
+					"mma": {
+						"title": "Rojadirecta MMA - Watch Roja Directa MMA Online",
+						"description": "Free MMA and UFC streaming on Rojadirecta Live. Access Tarjeta Roja and Rojadirecta en Vivo for the most anticipated fights online."
+					},
+					"snooker": {
+						"title": "Rojadirecta Snooker - Watch Roja Directa Snooker Online",
+						"description": "Watch live Snooker on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for the most prestigious tournaments and 147 breaks."
+					},
+					"billiard": {
+						"title": "Rojadirecta Billiard - Watch Roja Directa Billiard Online",
+						"description": "Enjoy live Billiards on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for free pool and billiard streaming in HD."
+					},
+					"table-tennis": {
+						"title": "Rojadirecta Table Tennis - Watch Table Tennis Online",
+						"description": "Watch live Table Tennis on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for the world's fastest tournaments for free."
+					},
+					"padel-tennis": {
+						"title": "Rojadirecta Padel Tennis - Watch Padel Tennis Online",
+						"description": "Experience live Padel on Rojadirecta Live. Access Tarjeta Roja and Rojadirecta en Vivo for free World Padel Tour coverage in HD."
+					},
+					"squash": {
+						"title": "Rojadirecta Squash - Watch Roja Directa Squash Online",
+						"description": "Enjoy live Squash on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for free PSA streaming and more court action."
+					},
+					"motorsport": {
+						"title": "Rojadirecta Motorsport - Watch Roja Directa Motorsport Online",
+						"description": "Experience live Motorsport on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for F1, MotoGP, and more for free."
+					},
+					"racing": {
+						"title": "Rojadirecta Racing - Watch Roja Directa Racing Online",
+						"description": "Follow the most exciting racing on Rojadirecta Live. Use Tarjeta Roja and Rojadirecta en Vivo for free motor racing streaming links."
+					},
+					"cycling": {
+						"title": "Rojadirecta Cycling - Watch Roja Directa Cycling Online",
+						"description": "Follow live Cycling on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo to watch the Tour, Giro, and Vuelta for free."
+					},
+					"equestrianism": {
+						"title": "Rojadirecta Equestrianism - Watch Equestrianism Online",
+						"description": "Watch live Equestrianism on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for show jumping and dressage for free."
+					},
+					"golf": {
+						"title": "Rojadirecta Golf - Watch Roja Directa Golf Online",
+						"description": "Enjoy live Golf on Rojadirecta Live. Use Tarjeta Roja and Rojadirecta en Vivo to follow the PGA and Majors in high-quality streaming."
+					},
+					"field-hockey": {
+						"title": "Rojadirecta Field Hockey - Watch Field Hockey Online",
+						"description": "Watch live Field Hockey on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for free streaming of world hockey leagues."
+					},
+					"lacrosse": {
+						"title": "Rojadirecta Lacrosse - Watch Roja Directa Lacrosse Online",
+						"description": "Experience live Lacrosse on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for free HD streaming of every major match."
+					},
+					"athletics": {
+						"title": "Rojadirecta Athletics - Watch Roja Directa Athletics Online",
+						"description": "Follow live Athletics on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for World Championships and Diamond League free."
+					},
+					"gymnastics": {
+						"title": "Rojadirecta Gymnastics - Watch Roja Directa Gymnastics Online",
+						"description": "Watch live Gymnastics on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for international gymnastics competitions for free."
+					},
+					"weightlifting": {
+						"title": "Rojadirecta Weightlifting - Watch Weightlifting Online",
+						"description": "Enjoy live Weightlifting on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for world records and Olympic lifting for free."
+					},
+					"climbing": {
+						"title": "Rojadirecta Climbing - Watch Roja Directa Climbing Online",
+						"description": "Watch live Climbing on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for IFSC and world climbing events for free in HD."
+					},
+					"winter-sport": {
+						"title": "Rojadirecta Winter Sports - Watch Winter Sport Online",
+						"description": "Experience live Winter Sports on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for free skiing, skating, and snowboarding."
+					},
+					"bandy": {
+						"title": "Rojadirecta Bandy - Watch Roja Directa Bandy Online",
+						"description": "Watch live Bandy on Rojadirecta Live. Use Tarjeta Roja and Rojadirecta en Vivo for free access to high-quality bandy streaming links."
+					},
+					"curling": {
+						"title": "Rojadirecta Curling - Watch Roja Directa Curling Online",
+						"description": "Enjoy live Curling on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for international curling tournaments for free."
+					},
+					"triathlon": {
+						"title": "Rojadirecta Triathlon - Watch Roja Directa Triathlon Online",
+						"description": "Follow live Triathlon on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for the World Series and ironman events for free."
+					},
+					"water-sports": {
+						"title": "Rojadirecta Water Sports - Watch Water Sports Online",
+						"description": "Watch Water Sports live on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for free swimming and diving streaming."
+					},
+					"water-polo": {
+						"title": "Rojadirecta Water Polo - Watch Roja Directa Water Polo Online",
+						"description": "Free Water Polo streaming on Rojadirecta Live. Use Tarjeta Roja and Rojadirecta en Vivo for the best water polo championship matches."
+					},
+					"sailing": {
+						"title": "Rojadirecta Sailing - Watch Roja Directa Sailing Online",
+						"description": "Experience live Sailing on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for regattas and America's Cup for free in HD."
+					},
+					"bowling": {
+						"title": "Rojadirecta Bowling - Watch Roja Directa Bowling Online",
+						"description": "Watch live Bowling on Rojadirecta Live. Access Tarjeta Roja and Rojadirecta en Vivo for the most spectacular bowling strikes for free."
+					},
+					"darts": {
+						"title": "Rojadirecta Darts - Watch Roja Directa Darts Online",
+						"description": "Enjoy live Darts on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for the PDC and world championships for free in HD."
+					},
+					"chess": {
+						"title": "Rojadirecta Chess - Watch Roja Directa Chess Online",
+						"description": "Follow live Chess on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for Grandmaster tournaments and matches for free."
+					},
+					"e-sports": {
+						"title": "Rojadirecta E-sports - Watch Roja Directa E-sports Online",
+						"description": "Watch live E-sports on Rojadirecta TV. Use Tarjeta Roja and Rojadirecta en Vivo for LoL, CS:GO, and Dota 2 for free in HD."
+					},
+					"extreme-sport": {
+						"title": "Rojadirecta Extreme Sports - Watch Extreme Sport Online",
+						"description": "Experience live Extreme Sports on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for free streaming of pure adrenaline."
+					},
+					"others": {
+						"title": "Rojadirecta Others - Watch Roja Directa Others Online",
+						"description": "Discover other live sports on Rojadirecta TV. Access Tarjeta Roja and Rojadirecta en Vivo for various free sporting events in HD."
+					}
+				}
+			}
+		}
+	],
+	"users": [
+		{
+			"id": 1,
+			"username": "Valeri",
+			"password": "$2y$10$lRC4MgYN9R.2s93B0s/6uOhetok8rHbojLE9ogAjoWI4u2iTT/o6S",
+			"email": "admin@example.com",
+			"is_super_admin": true,
+			"created_at": "2025-12-10 08:41:14"
+		},
+		{
+			"id": 2,
+			"username": "Pati",
+			"password": "$2y$10$wobnHWQH/e5be5ru.QYBTuhrY/3THDEi8371Y/VABR1pJSaUo8RE.",
+			"email": "",
+			"is_super_admin": true,
+			"created_at": "2025-12-10 09:11:46",
+			"created_by": 1
 		}
 	]
 }

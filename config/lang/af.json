@@ -127,10 +127,6 @@
 					"title": "SportLemon Bofbal | Gratis Lewendige MLB Strome Aanlyn",
 					"description": "Stroom lewendige bofbal wedstryde gratis. Kyk MLB, NPB, en meer in HD op SportLemon. Maklike en gratis toegang."
 				},
-				"rugby": {
-					"title": "SportLemon Rugby | Gratis Lewendige Rugby Union & League",
-					"description": "Kyk gratis na lewendige rugby strome. Rugby Union, Rugby League, Six Nations & meer in HD op SportLemon."
-				},
 				"cricket": {
 					"title": "SportLemon Krieket | Gratis Lewendige Krieket Strome HD",
 					"description": "Gratis lewendige krieket strome op SportLemon. Kyk IPL, T20, Toetswedstryde & meer in hoë definisie. Skakel nou in!"
@@ -312,12 +308,12 @@
 					"description": "Kyk gratis na lewendige wintersport strome. Ski, snowboard & meer in HD op SportLemon."
 				},
 				"rugby-sevens": {
-					"title": "Sportlemons Rugby Sewens | Lewendige Rugby Sewens Strome",
-					"description": "Sportlemons Rugby Sewens lewer gratis HD sewens toernooie met gladde terugspeel en geen registrasie. Kyk vinnige rugby sewens aksie lewendig nou."
+					"title": "Sportlemon Rugby Sewens | Lewendige Rugby Sewens Strome",
+					"description": "Sportlemon Rugby Sewens lewer gratis HD sewens toernooie met gladde terugspeel en geen registrasie. Kyk vinnige rugby sewens aksie lewendig nou."
 				},
 				"extreme-sport": {
-					"title": "Sportlemons Ekstreme Sport | Lewendige Ekstreme Sport Strome",
-					"description": "Sportlemons Ekstreme Sport bied gratis HD dekking van top ekstreme kompetisies. Geen registrasie nodig nie. Stroom opwindende ekstreme sport geleenthede vandag."
+					"title": "Sportlemon Ekstreme Sport | Lewendige Ekstreme Sport Strome",
+					"description": "Sportlemon Ekstreme Sport bied gratis HD dekking van top ekstreme kompetisies. Geen registrasie nodig nie. Stroom opwindende ekstreme sport geleenthede vandag."
 				}
 			}
 		},

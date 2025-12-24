@@ -53,6 +53,7 @@
 		"Baseball": "בייסבול",
 		"Rugby Union": "רוגבי יוניון",
 		"Rugby League": "רוגבי ליג",
+		"Rugby Sevens": "רוגבי שבעות",
 		"Cricket": "קריקט",
 		"American Football": "פוטבול אמריקאי",
 		"Volleyball": "כדורעף",
@@ -65,8 +66,7 @@
 		"Badminton": "בדמינטון",
 		"Netball": "נטבול",
 		"Floorball": "פלורבול",
-		"Combat": "קרב",
-		"combat sport": "ספורט קרבי",
+		"Combat Sport": "ספורט לחימה",
 		"Boxing": "איגרוף",
 		"MMA": "אומנויות לחימה משולבות",
 		"Snooker": "סנוקר",
@@ -85,7 +85,7 @@
 		"Gymnastics": "התעמלות",
 		"Weightlifting": "הרמת משקולות",
 		"Climbing": "טיפוס",
-		"winter sport": "ספורט חורף",
+		"Winter Sport": "ספורט חורף",
 		"Bandy": "בנדי",
 		"Curling": "קרלינג",
 		"Triathlon": "טריאתלון",
@@ -96,6 +96,1305 @@
 		"Darts": "חצים",
 		"Chess": "שחמט",
 		"E-sports": "ספורט אלקטרוני",
+		"Extreme Sport": "ספורט אתגרי",
 		"Others": "אחרים"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | צפייה בספורט חי בחינם HD",
+				"description": "SportLemon מציע שידורי ספורט חיים בחינם באיכות HD. צפו בכדורגל, כדורסל, טניס ועוד ללא הרשמה. התחילו עכשיו."
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon כדורגל | שידור חי בחינם HD",
+					"description": "צפו בכדורגל ב-SportLemon עם שידורים חיים בחינם באיכות HD. ללא הרשמה, גישה מהירה לליגות ומשחקים מובילים. התחילו עכשיו."
+				},
+				"basketball": {
+					"title": "SportLemon כדורסל | שידור NBA חי בחינם",
+					"description": "צפו בכדורסל ב-SportLemon עם שידורי NBA בחינם באיכות HD. ללא הרשמה, גישה חלקה ופעולה מהירה. התחילו עכשיו."
+				},
+				"tennis": {
+					"title": "SportLemon טניס | שידור גרנד סלאם חי בחינם",
+					"description": "צפו בטניס ב-SportLemon עם שידורי ATP ו-WTA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"ice-hockey": {
+					"title": "SportLemon הוקי קרח | שידור NHL חי בחינם",
+					"description": "צפו בהוקי קרח ב-SportLemon עם שידורי NHL בחינם באיכות HD. ללא הרשמה, שידורים חלקים. התחילו עכשיו."
+				},
+				"baseball": {
+					"title": "SportLemon בייסבול | שידור MLB חי בחינם",
+					"description": "צפו בבייסבול ב-SportLemon עם שידורי MLB בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"rugby-union": {
+					"title": "SportLemon רוגבי יוניון | שידור חי בחינם HD",
+					"description": "צפו ברוגבי יוניון ב-SportLemon עם שידורים חיים בחינם באיכות HD. ללא הרשמה, גישה חלקה. התחילו עכשיו."
+				},
+				"rugby-league": {
+					"title": "SportLemon רוגבי ליג | שידור NRL חי בחינם",
+					"description": "צפו ברוגבי ליג ב-SportLemon עם שידורי NRL וסופר ליג בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"rugby-sevens": {
+					"title": "SportLemon רוגבי שבעות | שידור חי בחינם",
+					"description": "SportLemon רוגבי שבעות מציע שידורי טורנירים בחינם באיכות HD ללא הרשמה. צפו בפעולת הרוגבי המהירה בשידור חי."
+				},
+				"cricket": {
+					"title": "SportLemon קריקט | שידור חי בחינם HD",
+					"description": "צפו בקריקט ב-SportLemon עם שידורי T20, ODI וטסט בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"american-football": {
+					"title": "SportLemon פוטבול אמריקאי | שידור NFL חי בחינם",
+					"description": "צפו בפוטבול אמריקאי ב-SportLemon עם שידורי NFL וקולג' בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"volleyball": {
+					"title": "SportLemon כדורעף | שידור FIVB חי בחינם",
+					"description": "צפו בכדורעף ב-SportLemon עם שידורי FIVB וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"beach-volleyball": {
+					"title": "SportLemon כדורעף חופים | שידור חי בחינם",
+					"description": "צפו בכדורעף חופים ב-SportLemon עם שידורים בחינם באיכות HD. ללא הרשמה, גישה חלקה. התחילו עכשיו."
+				},
+				"handball": {
+					"title": "SportLemon כדוריד | שידור EHF חי בחינם",
+					"description": "צפו בכדוריד ב-SportLemon עם שידורי EHF וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"beach-handball": {
+					"title": "SportLemon כדוריד חופים | שידור חי בחינם",
+					"description": "צפו בכדוריד חופים ב-SportLemon עם שידורים בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"beach-soccer": {
+					"title": "SportLemon כדורגל חופים | שידור FIFA חי בחינם",
+					"description": "צפו בכדורגל חופים ב-SportLemon עם שידורי FIFA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"aussie-rules": {
+					"title": "SportLemon כדורגל אוסטרלי | שידור AFL חי בחינם",
+					"description": "צפו ב-AFL ב-SportLemon עם שידורים בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"futsal": {
+					"title": "SportLemon פוטסל | שידור UEFA חי בחינם",
+					"description": "צפו בפוטסל ב-SportLemon עם שידורי UEFA ו-FIFA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"badminton": {
+					"title": "SportLemon בדמינטון | שידור BWF חי בחינם",
+					"description": "צפו בבדמינטון ב-SportLemon עם שידורי BWF בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"netball": {
+					"title": "SportLemon נטבול | שידור חי בחינם HD",
+					"description": "צפו בנטבול ב-SportLemon עם שידורי ליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"floorball": {
+					"title": "SportLemon פלורבול | שידור IFF חי בחינם",
+					"description": "צפו בפלורבול ב-SportLemon עם שידורי IFF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"combat-sport": {
+					"title": "SportLemon ספורט לחימה | שידור UFC חי בחינם",
+					"description": "צפו בספורט לחימה ב-SportLemon עם שידורי UFC ואיגרוף בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"boxing": {
+					"title": "SportLemon איגרוף | שידור חי בחינם HD",
+					"description": "צפו באיגרוף ב-SportLemon עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"mma": {
+					"title": "SportLemon MMA | שידור UFC חי בחינם HD",
+					"description": "צפו ב-MMA ב-SportLemon עם שידורי UFC ו-Bellator בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"snooker": {
+					"title": "SportLemon סנוקר | שידור חי בחינם HD",
+					"description": "צפו בסנוקר ב-SportLemon עם שידורי טורנירים בחינם באיכות HD. ללא הרשמה, שידורים חלקים. התחילו עכשיו."
+				},
+				"billiard": {
+					"title": "SportLemon ביליארד | שידור חי בחינם HD",
+					"description": "צפו בביליארד ב-SportLemon עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"table-tennis": {
+					"title": "SportLemon טניס שולחן | שידור ITTF חי בחינם",
+					"description": "צפו בטניס שולחן ב-SportLemon עם שידורי ITTF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"padel-tennis": {
+					"title": "SportLemon פאדל | שידור WPT חי בחינם",
+					"description": "צפו בפאדל ב-SportLemon עם שידורי World Padel Tour בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"squash": {
+					"title": "SportLemon סקווש | שידור PSA חי בחינם",
+					"description": "צפו בסקווש ב-SportLemon עם שידורי PSA בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"motorsport": {
+					"title": "SportLemon מוטורספורט | שידור F1 חי בחינם HD",
+					"description": "צפו במוטורספורט ב-SportLemon עם שידורי F1 ו-MotoGP בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"racing": {
+					"title": "SportLemon מירוצים | שידור חי בחינם HD",
+					"description": "צפו במירוצים ב-SportLemon עם שידורי מוטורספורט בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"cycling": {
+					"title": "SportLemon רכיבה על אופניים | שידור טור חי בחינם",
+					"description": "צפו ברכיבה על אופניים ב-SportLemon עם שידורי טור דה פראנס וג'ירו בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"equestrianism": {
+					"title": "SportLemon רכיבה על סוסים | שידור FEI חי בחינם",
+					"description": "צפו ברכיבה על סוסים ב-SportLemon עם שידורי FEI בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"golf": {
+					"title": "SportLemon גולף | שידור PGA חי בחינם HD",
+					"description": "צפו בגולף ב-SportLemon עם שידורי PGA ומאסטרס בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"field-hockey": {
+					"title": "SportLemon הוקי שדה | שידור FIH חי בחינם",
+					"description": "צפו בהוקי שדה ב-SportLemon עם שידורי FIH בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"lacrosse": {
+					"title": "SportLemon לקרוס | שידור PLL חי בחינם",
+					"description": "צפו בלקרוס ב-SportLemon עם שידורי PLL ו-NLL בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"athletics": {
+					"title": "SportLemon אתלטיקה | שידור Diamond League חי בחינם",
+					"description": "צפו באתלטיקה ב-SportLemon עם שידורי Diamond League ואליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"gymnastics": {
+					"title": "SportLemon התעמלות | שידור חי בחינם HD",
+					"description": "צפו בהתעמלות ב-SportLemon עם שידורי אליפויות ואולימפיאדה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"weightlifting": {
+					"title": "SportLemon הרמת משקולות | שידור IWF חי בחינם",
+					"description": "צפו בהרמת משקולות ב-SportLemon עם שידורי IWF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"climbing": {
+					"title": "SportLemon טיפוס | שידור IFSC חי בחינם",
+					"description": "צפו בטיפוס ב-SportLemon עם שידורי IFSC בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"winter-sport": {
+					"title": "SportLemon ספורט חורף | שידור חי בחינם HD",
+					"description": "צפו בספורט חורף ב-SportLemon עם שידורי סקי והחלקה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"bandy": {
+					"title": "SportLemon בנדי | שידור חי בחינם HD",
+					"description": "צפו בבנדי ב-SportLemon עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"curling": {
+					"title": "SportLemon קרלינג | שידור חי בחינם HD",
+					"description": "צפו בקרלינג ב-SportLemon עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"triathlon": {
+					"title": "SportLemon טריאתלון | שידור Ironman חי בחינם",
+					"description": "צפו בטריאתלון ב-SportLemon עם שידורי Ironman ו-ITU בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"water-sports": {
+					"title": "SportLemon ספורט מים | שידור חי בחינם HD",
+					"description": "צפו בספורט מים ב-SportLemon עם שידורי שחייה וצלילה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"water-polo": {
+					"title": "SportLemon כדור מים | שידור חי בחינם HD",
+					"description": "צפו בכדור מים ב-SportLemon עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"sailing": {
+					"title": "SportLemon שיט | שידור חי בחינם HD",
+					"description": "צפו בשיט ב-SportLemon עם שידורי רגטות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"bowling": {
+					"title": "SportLemon באולינג | שידור PBA חי בחינם",
+					"description": "צפו בבאולינג ב-SportLemon עם שידורי PBA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"darts": {
+					"title": "SportLemon חצים | שידור PDC חי בחינם HD",
+					"description": "צפו בחצים ב-SportLemon עם שידורי PDC בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"chess": {
+					"title": "SportLemon שחמט | שידור חי בחינם HD",
+					"description": "צפו בשחמט ב-SportLemon עם שידורי אליפויות וטורנירים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"e-sports": {
+					"title": "SportLemon ספורט אלקטרוני | שידור חי בחינם HD",
+					"description": "צפו בספורט אלקטרוני ב-SportLemon עם שידורי LoL ו-CS:GO בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"extreme-sport": {
+					"title": "SportLemon ספורט אתגרי | שידור חי בחינם",
+					"description": "SportLemon ספורט אתגרי מציע את שידורי התחרויות האתגריות הטובים ביותר בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"others": {
+					"title": "SportLemon אחרים | שידור ספורט חי בחינם",
+					"description": "צפו בענפי ספורט נישה ב-SportLemon עם שידורים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "Eplsite | שידור ספורט חי, משחקים קרובים ונוכחיים",
+				"description": "גלו שידורים חיים, לוחות זמנים וחדשות ספורט באתר Eplsite. צפו במשחקים בחינם באיכות HD, עקבו אחר אירועים קרובים."
+			},
+			"sports": {
+				"football": {
+					"title": "Eplsite כדורגל | שידור חי בחינם HD",
+					"description": "צפו בכדורגל ב-Eplsite עם שידורים חיים בחינם באיכות HD. ללא הרשמה, גישה מהירה לליגות ומשחקים מובילים. התחילו עכשיו."
+				},
+				"basketball": {
+					"title": "Eplsite כדורסל | שידור NBA חי בחינם",
+					"description": "צפו בכדורסל ב-Eplsite עם שידורי NBA בחינם באיכות HD. ללא הרשמה, גישה חלקה וכיסוי איכותי. התחילו עכשיו."
+				},
+				"tennis": {
+					"title": "Eplsite טניס | שידור גרנד סלאם חי בחינם",
+					"description": "צפו בטניס ב-Eplsite עם שידורי ATP ו-WTA בחינם באיכות HD. ללא הרשמה. צפו במשחקים בשידור חי עכשיו."
+				},
+				"ice-hockey": {
+					"title": "Eplsite הוקי קרח | שידור NHL חי בחינם",
+					"description": "צפו בהוקי קרח ב-Eplsite עם שידורי NHL בחינם באיכות HD. ללא הרשמה, גישה מהירה. צפו בשידור חי עכשיו."
+				},
+				"baseball": {
+					"title": "Eplsite בייסבול | שידור MLB חי בחינם",
+					"description": "צפו בבייסבול ב-Eplsite עם שידורי MLB בחינם באיכות HD. ללא הרשמה, גישה חלקה וכיסוי איכותי. התחילו עכשיו."
+				},
+				"rugby-union": {
+					"title": "Eplsite רוגבי יוניון | שידור חי בחינם HD",
+					"description": "צפו ברוגבי יוניון ב-Eplsite עם שידורים חיים בחינם באיכות HD. ללא הרשמה, גישה חלקה לליגות מובילות. התחילו עכשיו."
+				},
+				"rugby-league": {
+					"title": "Eplsite רוגבי ליג | שידור NRL חי בחינם",
+					"description": "צפו ברוגבי ליג ב-Eplsite עם שידורי NRL וסופר ליג בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"rugby-sevens": {
+					"title": "Eplsite רוגבי שבעות | שידור חי בחינם",
+					"description": "Eplsite רוגבי שבעות מציע שידורי טורנירים בחינם באיכות HD ללא הרשמה. צפו בפעולת הרוגבי המהירה בשידור חי."
+				},
+				"cricket": {
+					"title": "Eplsite קריקט | שידור חי בחינם HD",
+					"description": "צפו בקריקט ב-Eplsite עם שידורי T20, ODI וטסט בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"american-football": {
+					"title": "Eplsite פוטבול אמריקאי | שידור NFL חי בחינם",
+					"description": "צפו בפוטבול אמריקאי ב-Eplsite עם שידורי NFL וקולג' בחינם באיכות HD. ללא הרשמה. צפו בפעולה בשידור חי עכשיו."
+				},
+				"volleyball": {
+					"title": "Eplsite כדורעף | שידור FIVB חי בחינם",
+					"description": "צפו בכדורעף ב-Eplsite עם שידורי FIVB וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"beach-volleyball": {
+					"title": "Eplsite כדורעף חופים | שידור חי בחינם",
+					"description": "צפו בכדורעף חופים ב-Eplsite עם שידורי FIVB Pro Tour בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"handball": {
+					"title": "Eplsite כדוריד | שידור EHF חי בחינם",
+					"description": "צפו בכדוריד ב-Eplsite עם שידורי EHF וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"beach-handball": {
+					"title": "Eplsite כדוריד חופים | שידור חי בחינם",
+					"description": "צפו בכדוריד חופים ב-Eplsite עם שידורים בינלאומיים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"beach-soccer": {
+					"title": "Eplsite כדורגל חופים | שידור FIFA חי בחינם",
+					"description": "צפו בכדורגל חופים ב-Eplsite עם שידורי FIFA וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"aussie-rules": {
+					"title": "Eplsite כדורגל אוסטרלי | שידור AFL חי בחינם",
+					"description": "צפו ב-AFL ב-Eplsite עם שידורים בחינם באיכות HD. ללא הרשמה. צפו בשידור חי עכשיו."
+				},
+				"futsal": {
+					"title": "Eplsite פוטסל | שידור UEFA חי בחינם",
+					"description": "צפו בפוטסל ב-Eplsite עם שידורי UEFA ו-FIFA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"badminton": {
+					"title": "Eplsite בדמינטון | שידור BWF חי בחינם",
+					"description": "צפו בבדמינטון ב-Eplsite עם שידורי BWF בחינם באיכות HD. ללא הרשמה. צפו בשידור חי עכשיו."
+				},
+				"netball": {
+					"title": "Eplsite נטבול | שידור חי בחינם HD",
+					"description": "צפו בנטבול ב-Eplsite עם שידורי ליגות ובינלאומיים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"floorball": {
+					"title": "Eplsite פלורבול | שידור IFF חי בחינם",
+					"description": "צפו בפלורבול ב-Eplsite עם שידורי IFF וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"combat-sport": {
+					"title": "Eplsite ספורט לחימה | שידור UFC חי בחינם",
+					"description": "צפו בספורט לחימה ב-Eplsite עם שידורי UFC ואיגרוף בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"boxing": {
+					"title": "Eplsite איגרוף | שידור חי בחינם HD",
+					"description": "צפו באיגרוף ב-Eplsite עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"mma": {
+					"title": "Eplsite MMA | שידור UFC חי בחינם HD",
+					"description": "צפו ב-MMA ב-Eplsite עם שידורי UFC ו-Bellator בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"snooker": {
+					"title": "Eplsite סנוקר | שידור חי בחינם HD",
+					"description": "צפו בסנוקר ב-Eplsite עם שידורי טורנירים בחינם באיכות HD. ללא הרשמה, שידורים חלקים. התחילו עכשיו."
+				},
+				"billiard": {
+					"title": "Eplsite ביליארד | שידור חי בחינם HD",
+					"description": "צפו בביליארד ב-Eplsite עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"table-tennis": {
+					"title": "Eplsite טניס שולחן | שידור ITTF חי בחינם",
+					"description": "צפו בטניס שולחן ב-Eplsite עם שידורי ITTF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"padel-tennis": {
+					"title": "Eplsite פאדל | שידור WPT חי בחינם",
+					"description": "צפו בפאדל ב-Eplsite עם שידורי World Padel Tour בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"squash": {
+					"title": "Eplsite סקווש | שידור PSA חי בחינם",
+					"description": "צפו בסקווש ב-Eplsite עם שידורי PSA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"motorsport": {
+					"title": "Eplsite מוטורספורט | שידור F1 חי בחינם HD",
+					"description": "צפו במוטורספורט ב-Eplsite עם שידורי F1 ו-MotoGP בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"racing": {
+					"title": "Eplsite מירוצים | שידור חי בחינם HD",
+					"description": "צפו במירוצים ב-Eplsite עם שידורי מוטורספורט בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"cycling": {
+					"title": "Eplsite רכיבה על אופניים | שידור טור חי בחינם",
+					"description": "צפו ברכיבה על אופניים ב-Eplsite עם שידורי טור דה פראנס וג'ירו בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"equestrianism": {
+					"title": "Eplsite רכיבה על סוסים | שידור FEI חי בחינם",
+					"description": "צפו ברכיבה על סוסים ב-Eplsite עם שידורי FEI בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"golf": {
+					"title": "Eplsite גולף | שידור PGA חי בחינם HD",
+					"description": "צפו בגולף ב-Eplsite עם שידורי PGA ומאסטרס בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"field-hockey": {
+					"title": "Eplsite הוקי שדה | שידור FIH חי בחינם",
+					"description": "צפו בהוקי שדה ב-Eplsite עם שידורי FIH ובינלאומיים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"lacrosse": {
+					"title": "Eplsite לקרוס | שידור PLL חי בחינם",
+					"description": "צפו בלקרוס ב-Eplsite עם שידורי PLL ו-NLL בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"athletics": {
+					"title": "Eplsite אתלטיקה | שידור Diamond League חי בחינם",
+					"description": "צפו באתלטיקה ב-Eplsite עם שידורי Diamond League ואליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"gymnastics": {
+					"title": "Eplsite התעמלות | שידור חי בחינם HD",
+					"description": "צפו בהתעמלות ב-Eplsite עם שידורי אליפויות ואולימפיאדה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"weightlifting": {
+					"title": "Eplsite הרמת משקולות | שידור IWF חי בחינם",
+					"description": "צפו בהרמת משקולות ב-Eplsite עם שידורי IWF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"climbing": {
+					"title": "Eplsite טיפוס | שידור IFSC חי בחינם",
+					"description": "צפו בטיפוס ב-Eplsite עם שידורי IFSC בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"winter-sport": {
+					"title": "Eplsite ספורט חורף | שידור חי בחינם HD",
+					"description": "צפו בספורט חורף ב-Eplsite עם שידורי סקי והחלקה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"bandy": {
+					"title": "Eplsite בנדי | שידור חי בחינם HD",
+					"description": "צפו בבנדי ב-Eplsite עם שידורי אליפויות וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"curling": {
+					"title": "Eplsite קרלינג | שידור חי בחינם HD",
+					"description": "צפו בקרלינג ב-Eplsite עם שידורי אליפויות וטורנירים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"triathlon": {
+					"title": "Eplsite טריאתלון | שידור Ironman חי בחינם",
+					"description": "צפו בטריאתלון ב-Eplsite עם שידורי Ironman ו-ITU בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"water-sports": {
+					"title": "Eplsite ספורט מים | שידור חי בחינם HD",
+					"description": "צפו בספורט מים ב-Eplsite עם שידורי שחייה וצלילה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"water-polo": {
+					"title": "Eplsite כדור מים | שידור חי בחינם HD",
+					"description": "צפו בכדור מים ב-Eplsite עם שידורי אליפויות וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"sailing": {
+					"title": "Eplsite שיט | שידור חי בחינם HD",
+					"description": "צפו בשיט ב-Eplsite עם שידורי רגטות ואירועים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"bowling": {
+					"title": "Eplsite באולינג | שידור PBA חי בחינם",
+					"description": "צפו בבאולינג ב-Eplsite עם שידורי PBA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"darts": {
+					"title": "Eplsite חצים | שידור PDC חי בחינם HD",
+					"description": "צפו בחצים ב-Eplsite עם שידורי PDC בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"chess": {
+					"title": "Eplsite שחמט | שידור חי בחינם HD",
+					"description": "צפו בשחמט ב-Eplsite עם שידורי אליפויות וטורנירים בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"e-sports": {
+					"title": "Eplsite ספורט אלקטרוני | שידור חי בחינם HD",
+					"description": "צפו בספורט אלקטרוני ב-Eplsite עם שידורי LoL ו-CS:GO בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"extreme-sport": {
+					"title": "Eplsite ספורט אתגרי | שידור חי בחינם",
+					"description": "Eplsite ספורט אתגרי מציע את שידורי התחרויות האתגריות הטובים ביותר בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"others": {
+					"title": "Eplsite אחרים | שידור ספורט חי בחינם",
+					"description": "צפו בענפי ספורט נישה ב-Eplsite עם שידורים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | שידור ספורט חי בחינם HD",
+				"description": "P2P4U מציע שידורי ספורט חיים בחינם באיכות HD. צפו בכדורגל, כדורסל, טניס ועוד ללא הרשמה. התחילו עכשיו."
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U כדורגל | שידור חי בחינם HD",
+					"description": "צפו בכדורגל ב-P2P4U עם שידורים חיים בחינם באיכות HD. ללא הרשמה, גישה מהירה לליגות ומשחקים מובילים. התחילו עכשיו."
+				},
+				"basketball": {
+					"title": "P2P4U כדורסל | שידור NBA חי בחינם",
+					"description": "צפו בכדורסל ב-P2P4U עם שידורי NBA בחינם באיכות HD. ללא הרשמה, גישה חלקה ופעולה מהירה. התחילו עכשיו."
+				},
+				"tennis": {
+					"title": "P2P4U טניס | שידור גרנד סלאם חי בחינם",
+					"description": "צפו בטניס ב-P2P4U עם שידורי ATP ו-WTA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"ice-hockey": {
+					"title": "P2P4U הוקי קרח | שידור NHL חי בחינם",
+					"description": "צפו בהוקי קרח ב-P2P4U עם שידורי NHL בחינם באיכות HD. ללא הרשמה, שידורים חלקים. התחילו עכשיו."
+				},
+				"baseball": {
+					"title": "P2P4U בייסבול | שידור MLB חי בחינם",
+					"description": "צפו בבייסבול ב-P2P4U עם שידורי MLB בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"rugby-union": {
+					"title": "P2P4U רוגבי יוניון | שידור חי בחינם HD",
+					"description": "צפו ברוגבי יוניון ב-P2P4U עם שידורים חיים בחינם באיכות HD. ללא הרשמה, גישה חלקה. התחילו עכשיו."
+				},
+				"rugby-league": {
+					"title": "P2P4U רוגבי ליג | שידור NRL חי בחינם",
+					"description": "צפו ברוגבי ליג ב-P2P4U עם שידורי NRL וסופר ליג בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"rugby-sevens": {
+					"title": "P2P4U רוגבי שבעות | שידור חי בחינם",
+					"description": "P2P4U רוגבי שבעות מציע שידורי טורנירים בחינם באיכות HD ללא הרשמה. צפו בפעולת הרוגבי המהירה בשידור חי."
+				},
+				"cricket": {
+					"title": "P2P4U קריקט | שידור חי בחינם HD",
+					"description": "צפו בקריקט ב-P2P4U עם שידורי T20, ODI וטסט בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"american-football": {
+					"title": "P2P4U פוטבול אמריקאי | שידור NFL חי בחינם",
+					"description": "צפו בפוטבול אמריקאי ב-P2P4U עם שידורי NFL וקולג' בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"volleyball": {
+					"title": "P2P4U כדורעף | שידור FIVB חי בחינם",
+					"description": "צפו בכדורעף ב-P2P4U עם שידורי FIVB וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"beach-volleyball": {
+					"title": "P2P4U כדורעף חופים | שידור חי בחינם",
+					"description": "צפו בכדורעף חופים ב-P2P4U עם שידורים בחינם באיכות HD. ללא הרשמה, גישה חלקה. התחילו עכשיו."
+				},
+				"handball": {
+					"title": "P2P4U כדוריד | שידור EHF חי בחינם",
+					"description": "צפו בכדוריד ב-P2P4U עם שידורי EHF וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"beach-handball": {
+					"title": "P2P4U כדוריד חופים | שידור חי בחינם",
+					"description": "צפו בכדוריד חופים ב-P2P4U עם שידורים בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"beach-soccer": {
+					"title": "P2P4U כדורגל חופים | שידור FIFA חי בחינם",
+					"description": "צפו בכדורגל חופים ב-P2P4U עם שידורי FIFA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"aussie-rules": {
+					"title": "P2P4U כדורגל אוסטרלי | שידור AFL חי בחינם",
+					"description": "צפו ב-AFL ב-P2P4U עם שידורים בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"futsal": {
+					"title": "P2P4U פוטסל | שידור UEFA חי בחינם",
+					"description": "צפו בפוטסל ב-P2P4U עם שידורי UEFA ו-FIFA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"badminton": {
+					"title": "P2P4U בדמינטון | שידור BWF חי בחינם",
+					"description": "צפו בבדמינטון ב-P2P4U עם שידורי BWF בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"netball": {
+					"title": "P2P4U נטבול | שידור חי בחינם HD",
+					"description": "צפו בנטבול ב-P2P4U עם שידורי ליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"floorball": {
+					"title": "P2P4U פלורבול | שידור IFF חי בחינם",
+					"description": "צפו בפלורבול ב-P2P4U עם שידורי IFF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"combat-sport": {
+					"title": "P2P4U ספורט לחימה | שידור UFC חי בחינם",
+					"description": "צפו בספורט לחימה ב-P2P4U עם שידורי UFC ואיגרוף בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"boxing": {
+					"title": "P2P4U איגרוף | שידור חי בחינם HD",
+					"description": "צפו באיגרוף ב-P2P4U עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"mma": {
+					"title": "P2P4U MMA | שידור UFC חי בחינם HD",
+					"description": "צפו ב-MMA ב-P2P4U עם שידורי UFC ו-Bellator בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"snooker": {
+					"title": "P2P4U סנוקר | שידור חי בחינם HD",
+					"description": "צפו בסנוקר ב-P2P4U עם שידורי טורנירים בחינם באיכות HD. ללא הרשמה, שידורים חלקים. התחילו עכשיו."
+				},
+				"billiard": {
+					"title": "P2P4U ביליארד | שידור חי בחינם HD",
+					"description": "צפו בביליארד ב-P2P4U עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"table-tennis": {
+					"title": "P2P4U טניס שולחן | שידור ITTF חי בחינם",
+					"description": "צפו בטניס שולחן ב-P2P4U עם שידורי ITTF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"padel-tennis": {
+					"title": "P2P4U פאדל | שידור WPT חי בחינם",
+					"description": "צפו בפאדל ב-P2P4U עם שידורי World Padel Tour בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"squash": {
+					"title": "P2P4U סקווש | שידור PSA חי בחינם",
+					"description": "צפו בסקווש ב-P2P4U עם שידורי PSA בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"motorsport": {
+					"title": "P2P4U מוטורספורט | שידור F1 חי בחינם HD",
+					"description": "צפו במוטורספורט ב-P2P4U עם שידורי F1 ו-MotoGP בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"racing": {
+					"title": "P2P4U מירוצים | שידור חי בחינם HD",
+					"description": "צפו במירוצים ב-P2P4U עם שידורי מוטורספורט בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"cycling": {
+					"title": "P2P4U רכיבה על אופניים | שידור טור חי בחינם",
+					"description": "צפו ברכיבה על אופניים ב-P2P4U עם שידורי טור דה פראנס וג'ירו בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"equestrianism": {
+					"title": "P2P4U רכיבה על סוסים | שידור FEI חי בחינם",
+					"description": "צפו ברכיבה על סוסים ב-P2P4U עם שידורי FEI בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"golf": {
+					"title": "P2P4U גולף | שידור PGA חי בחינם HD",
+					"description": "צפו בגולף ב-P2P4U עם שידורי PGA ומאסטרס בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"field-hockey": {
+					"title": "P2P4U הוקי שדה | שידור FIH חי בחינם",
+					"description": "צפו בהוקי שדה ב-P2P4U עם שידורי FIH בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"lacrosse": {
+					"title": "P2P4U לקרוס | שידור PLL חי בחינם",
+					"description": "צפו בלקרוס ב-P2P4U עם שידורי PLL ו-NLL בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"athletics": {
+					"title": "P2P4U אתלטיקה | שידור Diamond League חי בחינם",
+					"description": "צפו באתלטיקה ב-P2P4U עם שידורי Diamond League ואליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"gymnastics": {
+					"title": "P2P4U התעמלות | שידור חי בחינם HD",
+					"description": "צפו בהתעמלות ב-P2P4U עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"weightlifting": {
+					"title": "P2P4U הרמת משקולות | שידור IWF חי בחינם",
+					"description": "צפו בהרמת משקולות ב-P2P4U עם שידורי IWF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"climbing": {
+					"title": "P2P4U טיפוס | שידור IFSC חי בחינם",
+					"description": "צפו בטיפוס ב-P2P4U עם שידורי IFSC בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"winter-sport": {
+					"title": "P2P4U ספורט חורף | שידור חי בחינם HD",
+					"description": "צפו בספורט חורף ב-P2P4U עם שידורי סקי והחלקה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"bandy": {
+					"title": "P2P4U בנדי | שידור חי בחינם HD",
+					"description": "צפו בבנדי ב-P2P4U עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"curling": {
+					"title": "P2P4U קרלינג | שידור חי בחינם HD",
+					"description": "צפו בקרלינג ב-P2P4U עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"triathlon": {
+					"title": "P2P4U טריאתלון | שידור Ironman חי בחינם",
+					"description": "צפו בטריאתלון ב-P2P4U עם שידורי Ironman ו-ITU בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"water-sports": {
+					"title": "P2P4U ספורט מים | שידור חי בחינם HD",
+					"description": "צפו בספורט מים ב-P2P4U עם שידורי שחייה וצלילה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"water-polo": {
+					"title": "P2P4U כדור מים | שידור חי בחינם HD",
+					"description": "צפו בכדור מים ב-P2P4U עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"sailing": {
+					"title": "P2P4U שיט | שידור חי בחינם HD",
+					"description": "צפו בשיט ב-P2P4U עם שידורי רגטות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"bowling": {
+					"title": "P2P4U באולינג | שידור PBA חי בחינם",
+					"description": "צפו בבאולינג ב-P2P4U עם שידורי PBA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"darts": {
+					"title": "P2P4U חצים | שידור PDC חי בחינם HD",
+					"description": "צפו בחצים ב-P2P4U עם שידורי PDC בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"chess": {
+					"title": "P2P4U שחמט | שידור חי בחינם HD",
+					"description": "צפו בשחמט ב-P2P4U עם שידורי אליפויות וטורנירים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"e-sports": {
+					"title": "P2P4U ספורט אלקטרוני | שידור חי בחינם HD",
+					"description": "צפו בספורט אלקטרוני ב-P2P4U עם שידורי LoL ו-CS:GO בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"extreme-sport": {
+					"title": "P2P4U ספורט אתגרי | שידור חי בחינם",
+					"description": "P2P4U ספורט אתגרי מציע את שידורי התחרויות האתגריות הטובים ביותר בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"others": {
+					"title": "P2P4U אחרים | שידור ספורט חי בחינם",
+					"description": "צפו בענפי ספורט נישה ב-P2P4U עם שידורים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | שידור ספורט חי בחינם HD",
+				"description": "StreamHunter מציע שידורי ספורט חיים בחינם באיכות HD. צפו בכדורגל, כדורסל, טניס ועוד ללא הרשמה. התחילו עכשיו."
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter כדורגל | שידור חי בחינם HD",
+					"description": "צפו בכדורגל ב-StreamHunter עם שידורים חיים בחינם באיכות HD. ללא הרשמה, גישה מהירה לליגות ומשחקים מובילים. התחילו עכשיו."
+				},
+				"basketball": {
+					"title": "StreamHunter כדורסל | שידור NBA חי בחינם",
+					"description": "צפו בכדורסל ב-StreamHunter עם שידורי NBA בחינם באיכות HD. ללא הרשמה, גישה חלקה ופעולה מהירה. התחילו עכשיו."
+				},
+				"tennis": {
+					"title": "StreamHunter טניס | שידור גרנד סלאם חי בחינם",
+					"description": "צפו בטניס ב-StreamHunter עם שידורי ATP ו-WTA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"ice-hockey": {
+					"title": "StreamHunter הוקי קרח | שידור NHL חי בחינם",
+					"description": "צפו בהוקי קרח ב-StreamHunter עם שידורי NHL בחינם באיכות HD. ללא הרשמה, שידורים חלקים. התחילו עכשיו."
+				},
+				"baseball": {
+					"title": "StreamHunter בייסבול | שידור MLB חי בחינם",
+					"description": "צפו בבייסבול ב-StreamHunter עם שידורי MLB בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"rugby-union": {
+					"title": "StreamHunter רוגבי יוניון | שידור חי בחינם HD",
+					"description": "צפו ברוגבי יוניון ב-StreamHunter עם שידורים חיים בחינם באיכות HD. ללא הרשמה, גישה חלקה. התחילו עכשיו."
+				},
+				"rugby-league": {
+					"title": "StreamHunter רוגבי ליג | שידור NRL חי בחינם",
+					"description": "צפו ברוגבי ליג ב-StreamHunter עם שידורי NRL וסופר ליג בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter רוגבי שבעות | שידור חי בחינם",
+					"description": "StreamHunter רוגבי שבעות מציע שידורי טורנירים בחינם באיכות HD ללא הרשמה. צפו בפעולת הרוגבי המהירה בשידור חי."
+				},
+				"cricket": {
+					"title": "StreamHunter קריקט | שידור חי בחינם HD",
+					"description": "צפו בקריקט ב-StreamHunter עם שידורי T20, ODI וטסט בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"american-football": {
+					"title": "StreamHunter פוטבול אמריקאי | שידור NFL חי בחינם",
+					"description": "צפו בפוטבול אמריקאי ב-StreamHunter עם שידורי NFL וקולג' בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"volleyball": {
+					"title": "StreamHunter כדורעף | שידור FIVB חי בחינם",
+					"description": "צפו בכדורעף ב-StreamHunter עם שידורי FIVB וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter כדורעף חופים | שידור חי בחינם",
+					"description": "צפו בכדורעף חופים ב-StreamHunter עם שידורים בחינם באיכות HD. ללא הרשמה, גישה חלקה. התחילו עכשיו."
+				},
+				"handball": {
+					"title": "StreamHunter כדוריד | שידור EHF חי בחינם",
+					"description": "צפו בכדוריד ב-StreamHunter עם שידורי EHF וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"beach-handball": {
+					"title": "StreamHunter כדוריד חופים | שידור חי בחינם",
+					"description": "צפו בכדוריד חופים ב-StreamHunter עם שידורים בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"beach-soccer": {
+					"title": "StreamHunter כדורגל חופים | שידור FIFA חי בחינם",
+					"description": "צפו בכדורגל חופים ב-StreamHunter עם שידורי FIFA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"aussie-rules": {
+					"title": "StreamHunter כדורגל אוסטרלי | שידור AFL חי בחינם",
+					"description": "צפו ב-AFL ב-StreamHunter עם שידורים בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"futsal": {
+					"title": "StreamHunter פוטסל | שידור UEFA חי בחינם",
+					"description": "צפו בפוטסל ב-StreamHunter עם שידורי UEFA ו-FIFA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"badminton": {
+					"title": "StreamHunter בדמינטון | שידור BWF חי בחינם",
+					"description": "צפו בבדמינטון ב-StreamHunter עם שידורי BWF בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"netball": {
+					"title": "StreamHunter נטבול | שידור חי בחינם HD",
+					"description": "צפו בנטבול ב-StreamHunter עם שידורי ליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"floorball": {
+					"title": "StreamHunter פלורבול | שידור IFF חי בחינם",
+					"description": "צפו בפלורבול ב-StreamHunter עם שידורי IFF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"combat-sport": {
+					"title": "StreamHunter ספורט לחימה | שידור UFC חי בחינם",
+					"description": "צפו בספורט לחימה ב-StreamHunter עם שידורי UFC ואיגרוף בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"boxing": {
+					"title": "StreamHunter איגרוף | שידור חי בחינם HD",
+					"description": "צפו באיגרוף ב-StreamHunter עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"mma": {
+					"title": "StreamHunter MMA | שידור UFC חי בחינם HD",
+					"description": "צפו ב-MMA ב-StreamHunter עם שידורי UFC ו-Bellator בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"snooker": {
+					"title": "StreamHunter סנוקר | שידור חי בחינם HD",
+					"description": "צפו בסנוקר ב-StreamHunter עם שידורי טורנירים בחינם באיכות HD. ללא הרשמה, שידורים חלקים. התחילו עכשיו."
+				},
+				"billiard": {
+					"title": "StreamHunter ביליארד | שידור חי בחינם HD",
+					"description": "צפו בביליארד ב-StreamHunter עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"table-tennis": {
+					"title": "StreamHunter טניס שולחן | שידור ITTF חי בחינם",
+					"description": "צפו בטניס שולחן ב-StreamHunter עם שידורי ITTF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"padel-tennis": {
+					"title": "StreamHunter פאדל | שידור WPT חי בחינם",
+					"description": "צפו בפאדל ב-StreamHunter עם שידורי World Padel Tour בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"squash": {
+					"title": "StreamHunter סקווש | שידור PSA חי בחינם",
+					"description": "צפו בסקווש ב-StreamHunter עם שידורי PSA בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"motorsport": {
+					"title": "StreamHunter מוטורספורט | שידור F1 חי בחינם HD",
+					"description": "צפו במוטורספורט ב-StreamHunter עם שידורי F1 ו-MotoGP בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"racing": {
+					"title": "StreamHunter מירוצים | שידור חי בחינם HD",
+					"description": "צפו במירוצים ב-StreamHunter עם שידורי מוטורספורט בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"cycling": {
+					"title": "StreamHunter רכיבה על אופניים | שידור טור חי בחינם",
+					"description": "צפו ברכיבה על אופניים ב-StreamHunter עם שידורי טור דה פראנס וג'ירו בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"equestrianism": {
+					"title": "StreamHunter רכיבה על סוסים | שידור FEI חי בחינם",
+					"description": "צפו ברכיבה על סוסים ב-StreamHunter עם שידורי FEI בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"golf": {
+					"title": "StreamHunter גולף | שידור PGA חי בחינם HD",
+					"description": "צפו בגולף ב-StreamHunter עם שידורי PGA ומאסטרס בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"field-hockey": {
+					"title": "StreamHunter הוקי שדה | שידור FIH חי בחינם",
+					"description": "צפו בהוקי שדה ב-StreamHunter עם שידורי FIH בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"lacrosse": {
+					"title": "StreamHunter לקרוס | שידור PLL חי בחינם",
+					"description": "צפו בלקרוס ב-StreamHunter עם שידורי PLL ו-NLL בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"athletics": {
+					"title": "StreamHunter אתלטיקה | שידור Diamond League חי בחינם",
+					"description": "צפו באתלטיקה ב-StreamHunter עם שידורי Diamond League ואליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"gymnastics": {
+					"title": "StreamHunter התעמלות | שידור חי בחינם HD",
+					"description": "צפו בהתעמלות ב-StreamHunter עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"weightlifting": {
+					"title": "StreamHunter הרמת משקולות | שידור IWF חי בחינם",
+					"description": "צפו בהרמת משקולות ב-StreamHunter עם שידורי IWF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"climbing": {
+					"title": "StreamHunter טיפוס | שידור IFSC חי בחינם",
+					"description": "צפו בטיפוס ב-StreamHunter עם שידורי IFSC בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"winter-sport": {
+					"title": "StreamHunter ספורט חורף | שידור חי בחינם HD",
+					"description": "צפו בספורט חורף ב-StreamHunter עם שידורי סקי והחלקה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"bandy": {
+					"title": "StreamHunter בנדי | שידור חי בחינם HD",
+					"description": "צפו בבנדי ב-StreamHunter עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"curling": {
+					"title": "StreamHunter קרלינג | שידור חי בחינם HD",
+					"description": "צפו בקרלינג ב-StreamHunter עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"triathlon": {
+					"title": "StreamHunter טריאתלון | שידור Ironman חי בחינם",
+					"description": "צפו בטריאתלון ב-StreamHunter עם שידורי Ironman ו-ITU בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"water-sports": {
+					"title": "StreamHunter ספורט מים | שידור חי בחינם HD",
+					"description": "צפו בספורט מים ב-StreamHunter עם שידורי שחייה וצלילה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"water-polo": {
+					"title": "StreamHunter כדור מים | שידור חי בחינם HD",
+					"description": "צפו בכדור מים ב-StreamHunter עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"sailing": {
+					"title": "StreamHunter שיט | שידור חי בחינם HD",
+					"description": "צפו בשיט ב-StreamHunter עם שידורי רגטות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"bowling": {
+					"title": "StreamHunter באולינג | שידור PBA חי בחינם",
+					"description": "צפו בבאולינג ב-StreamHunter עם שידורי PBA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"darts": {
+					"title": "StreamHunter חצים | שידור PDC חי בחינם HD",
+					"description": "צפו בחצים ב-StreamHunter עם שידורי PDC בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"chess": {
+					"title": "StreamHunter שחמט | שידור חי בחינם HD",
+					"description": "צפו בשחמט ב-StreamHunter עם שידורי אליפויות וטורנירים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"e-sports": {
+					"title": "StreamHunter ספורט אלקטרוני | שידור חי בחינם HD",
+					"description": "צפו בספורט אלקטרוני ב-StreamHunter עם שידורי LoL ו-CS:GO בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"extreme-sport": {
+					"title": "StreamHunter ספורט אתגרי | שידור חי בחינם",
+					"description": "StreamHunter ספורט אתגרי מציע את שידורי התחרויות האתגריות הטובים ביותר בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"others": {
+					"title": "StreamHunter אחרים | שידור ספורט חי בחינם",
+					"description": "צפו בענפי ספורט נישה ב-StreamHunter עם שידורים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | שידור ספורט חי בחינם HD",
+				"description": "MethStreams מציע שידורי ספורט חיים בחינם באיכות HD. צפו בכדורגל, כדורסל, טניס ועוד ללא הרשמה. התחילו עכשיו."
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams כדורגל | שידור חי בחינם HD",
+					"description": "צפו בכדורגל ב-MethStreams עם שידורים חיים בחינם באיכות HD. ללא הרשמה, גישה מהירה לליגות ומשחקים מובילים. התחילו עכשיו."
+				},
+				"basketball": {
+					"title": "MethStreams כדורסל | שידור NBA חי בחינם",
+					"description": "צפו בכדורסל ב-MethStreams עם שידורי NBA בחינם באיכות HD. ללא הרשמה, גישה חלקה ופעולה מהירה. התחילו עכשיו."
+				},
+				"tennis": {
+					"title": "MethStreams טניס | שידור גרנד סלאם חי בחינם",
+					"description": "צפו בטניס ב-MethStreams עם שידורי ATP ו-WTA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"ice-hockey": {
+					"title": "MethStreams הוקי קרח | שידור NHL חי בחינם",
+					"description": "צפו בהוקי קרח ב-MethStreams עם שידורי NHL בחינם באיכות HD. ללא הרשמה, שידורים חלקים. התחילו עכשיו."
+				},
+				"baseball": {
+					"title": "MethStreams בייסבול | שידור MLB חי בחינם",
+					"description": "צפו בבייסבול ב-MethStreams עם שידורי MLB בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"rugby-union": {
+					"title": "MethStreams רוגבי יוניון | שידור חי בחינם HD",
+					"description": "צפו ברוגבי יוניון ב-MethStreams עם שידורים חיים בחינם באיכות HD. ללא הרשמה, גישה חלקה. התחילו עכשיו."
+				},
+				"rugby-league": {
+					"title": "MethStreams רוגבי ליג | שידור NRL חי בחינם",
+					"description": "צפו ברוגבי ליג ב-MethStreams עם שידורי NRL וסופר ליג בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"rugby-sevens": {
+					"title": "MethStreams רוגבי שבעות | שידור חי בחינם",
+					"description": "MethStreams רוגבי שבעות מציע שידורי טורנירים בחינם באיכות HD ללא הרשמה. צפו בפעולת הרוגבי המהירה בשידור חי."
+				},
+				"cricket": {
+					"title": "MethStreams קריקט | שידור חי בחינם HD",
+					"description": "צפו בקריקט ב-MethStreams עם שידורי T20, ODI וטסט בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"american-football": {
+					"title": "MethStreams פוטבול אמריקאי | שידור NFL חי בחינם",
+					"description": "צפו בפוטבול אמריקאי ב-MethStreams עם שידורי NFL וקולג' בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"volleyball": {
+					"title": "MethStreams כדורעף | שידור FIVB חי בחינם",
+					"description": "צפו בכדורעף ב-MethStreams עם שידורי FIVB וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"beach-volleyball": {
+					"title": "MethStreams כדורעף חופים | שידור חי בחינם",
+					"description": "צפו בכדורעף חופים ב-MethStreams עם שידורים בחינם באיכות HD. ללא הרשמה, גישה חלקה. התחילו עכשיו."
+				},
+				"handball": {
+					"title": "MethStreams כדוריד | שידור EHF חי בחינם",
+					"description": "צפו בכדוריד ב-MethStreams עם שידורי EHF וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"beach-handball": {
+					"title": "MethStreams כדוריד חופים | שידור חי בחינם",
+					"description": "צפו בכדוריד חופים ב-MethStreams עם שידורים בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"beach-soccer": {
+					"title": "MethStreams כדורגל חופים | שידור FIFA חי בחינם",
+					"description": "צפו בכדורגל חופים ב-MethStreams עם שידורי FIFA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"aussie-rules": {
+					"title": "MethStreams כדורגל אוסטרלי | שידור AFL חי בחינם",
+					"description": "צפו ב-AFL ב-MethStreams עם שידורים בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"futsal": {
+					"title": "MethStreams פוטסל | שידור UEFA חי בחינם",
+					"description": "צפו בפוטסל ב-MethStreams עם שידורי UEFA ו-FIFA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"badminton": {
+					"title": "MethStreams בדמינטון | שידור BWF חי בחינם",
+					"description": "צפו בבדמינטון ב-MethStreams עם שידורי BWF בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"netball": {
+					"title": "MethStreams נטבול | שידור חי בחינם HD",
+					"description": "צפו בנטבול ב-MethStreams עם שידורי ליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"floorball": {
+					"title": "MethStreams פלורבול | שידור IFF חי בחינם",
+					"description": "צפו בפלורבול ב-MethStreams עם שידורי IFF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"combat-sport": {
+					"title": "MethStreams ספורט לחימה | שידור UFC חי בחינם",
+					"description": "צפו בספורט לחימה ב-MethStreams עם שידורי UFC ואיגרוף בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"boxing": {
+					"title": "MethStreams איגרוף | שידור חי בחינם HD",
+					"description": "צפו באיגרוף ב-MethStreams עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"mma": {
+					"title": "MethStreams MMA | שידור UFC חי בחינם HD",
+					"description": "צפו ב-MMA ב-MethStreams עם שידורי UFC ו-Bellator בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"snooker": {
+					"title": "MethStreams סנוקר | שידור חי בחינם HD",
+					"description": "צפו בסנוקר ב-MethStreams עם שידורי טורנירים בחינם באיכות HD. ללא הרשמה, שידורים חלקים. התחילו עכשיו."
+				},
+				"billiard": {
+					"title": "MethStreams ביליארד | שידור חי בחינם HD",
+					"description": "צפו בביליארד ב-MethStreams עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"table-tennis": {
+					"title": "MethStreams טניס שולחן | שידור ITTF חי בחינם",
+					"description": "צפו בטניס שולחן ב-MethStreams עם שידורי ITTF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"padel-tennis": {
+					"title": "MethStreams פאדל | שידור WPT חי בחינם",
+					"description": "צפו בפאדל ב-MethStreams עם שידורי World Padel Tour בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"squash": {
+					"title": "MethStreams סקווש | שידור PSA חי בחינם",
+					"description": "צפו בסקווש ב-MethStreams עם שידורי PSA בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"motorsport": {
+					"title": "MethStreams מוטורספורט | שידור F1 חי בחינם HD",
+					"description": "צפו במוטורספורט ב-MethStreams עם שידורי F1 ו-MotoGP בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"racing": {
+					"title": "MethStreams מירוצים | שידור חי בחינם HD",
+					"description": "צפו במירוצים ב-MethStreams עם שידורי מוטורספורט בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"cycling": {
+					"title": "MethStreams רכיבה על אופניים | שידור טור חי בחינם",
+					"description": "צפו ברכיבה על אופניים ב-MethStreams עם שידורי טור דה פראנס וג'ירו בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"equestrianism": {
+					"title": "MethStreams רכיבה על סוסים | שידור FEI חי בחינם",
+					"description": "צפו ברכיבה על סוסים ב-MethStreams עם שידורי FEI בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"golf": {
+					"title": "MethStreams גולף | שידור PGA חי בחינם HD",
+					"description": "צפו בגולף ב-MethStreams עם שידורי PGA ומאסטרס בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"field-hockey": {
+					"title": "MethStreams הוקי שדה | שידור FIH חי בחינם",
+					"description": "צפו בהוקי שדה ב-MethStreams עם שידורי FIH בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"lacrosse": {
+					"title": "MethStreams לקרוס | שידור PLL חי בחינם",
+					"description": "צפו בלקרוס ב-MethStreams עם שידורי PLL ו-NLL בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"athletics": {
+					"title": "MethStreams אתלטיקה | שידור Diamond League חי בחינם",
+					"description": "צפו באתלטיקה ב-MethStreams עם שידורי Diamond League ואליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"gymnastics": {
+					"title": "MethStreams התעמלות | שידור חי בחינם HD",
+					"description": "צפו בהתעמלות ב-MethStreams עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"weightlifting": {
+					"title": "MethStreams הרמת משקולות | שידור IWF חי בחינם",
+					"description": "צפו בהרמת משקולות ב-MethStreams עם שידורי IWF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"climbing": {
+					"title": "MethStreams טיפוס | שידור IFSC חי בחינם",
+					"description": "צפו בטיפוס ב-MethStreams עם שידורי IFSC בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"winter-sport": {
+					"title": "MethStreams ספורט חורף | שידור חי בחינם HD",
+					"description": "צפו בספורט חורף ב-MethStreams עם שידורי סקי והחלקה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"bandy": {
+					"title": "MethStreams בנדי | שידור חי בחינם HD",
+					"description": "צפו בבנדי ב-MethStreams עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"curling": {
+					"title": "MethStreams קרלינג | שידור חי בחינם HD",
+					"description": "צפו בקרלינג ב-MethStreams עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"triathlon": {
+					"title": "MethStreams טריאתלון | שידור Ironman חי בחינם",
+					"description": "צפו בטריאתלון ב-MethStreams עם שידורי Ironman ו-ITU בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"water-sports": {
+					"title": "MethStreams ספורט מים | שידור חי בחינם HD",
+					"description": "צפו בספורט מים ב-MethStreams עם שידורי שחייה וצלילה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"water-polo": {
+					"title": "MethStreams כדור מים | שידור חי בחינם HD",
+					"description": "צפו בכדור מים ב-MethStreams עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"sailing": {
+					"title": "MethStreams שיט | שידור חי בחינם HD",
+					"description": "צפו בשיט ב-MethStreams עם שידורי רגטות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"bowling": {
+					"title": "MethStreams באולינג | שידור PBA חי בחינם",
+					"description": "צפו בבאולינג ב-MethStreams עם שידורי PBA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"darts": {
+					"title": "MethStreams חצים | שידור PDC חי בחינם HD",
+					"description": "צפו בחצים ב-MethStreams עם שידורי PDC בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"chess": {
+					"title": "MethStreams שחמט | שידור חי בחינם HD",
+					"description": "צפו בשחמט ב-MethStreams עם שידורי אליפויות וטורנירים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"e-sports": {
+					"title": "MethStreams ספורט אלקטרוני | שידור חי בחינם HD",
+					"description": "צפו בספורט אלקטרוני ב-MethStreams עם שידורי LoL ו-CS:GO בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"extreme-sport": {
+					"title": "MethStreams ספורט אתגרי | שידור חי בחינם",
+					"description": "MethStreams ספורט אתגרי מציע את שידורי התחרויות האתגריות הטובים ביותר בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"others": {
+					"title": "MethStreams אחרים | שידור ספורט חי בחינם",
+					"description": "צפו בענפי ספורט נישה ב-MethStreams עם שידורים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | שידור ספורט חי בחינם HD",
+				"description": "WiziWig מציע שידורי ספורט חיים בחינם באיכות HD. צפו בכדורגל, כדורסל, טניס ועוד ללא הרשמה. התחילו עכשיו."
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig כדורגל | שידור חי בחינם HD",
+					"description": "צפו בכדורגל ב-WiziWig עם שידורים חיים בחינם באיכות HD. ללא הרשמה, גישה מהירה לליגות ומשחקים מובילים. התחילו עכשיו."
+				},
+				"basketball": {
+					"title": "WiziWig כדורסל | שידור NBA חי בחינם",
+					"description": "צפו בכדורסל ב-WiziWig עם שידורי NBA בחינם באיכות HD. ללא הרשמה, גישה חלקה ופעולה מהירה. התחילו עכשיו."
+				},
+				"tennis": {
+					"title": "WiziWig טניס | שידור גרנד סלאם חי בחינם",
+					"description": "צפו בטניס ב-WiziWig עם שידורי ATP ו-WTA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"ice-hockey": {
+					"title": "WiziWig הוקי קרח | שידור NHL חי בחינם",
+					"description": "צפו בהוקי קרח ב-WiziWig עם שידורי NHL בחינם באיכות HD. ללא הרשמה, שידורים חלקים. התחילו עכשיו."
+				},
+				"baseball": {
+					"title": "WiziWig בייסבול | שידור MLB חי בחינם",
+					"description": "צפו בבייסבול ב-WiziWig עם שידורי MLB בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"rugby-union": {
+					"title": "WiziWig רוגבי יוניון | שידור חי בחינם HD",
+					"description": "צפו ברוגבי יוניון ב-WiziWig עם שידורים חיים בחינם באיכות HD. ללא הרשמה, גישה חלקה. התחילו עכשיו."
+				},
+				"rugby-league": {
+					"title": "WiziWig רוגבי ליג | שידור NRL חי בחינם",
+					"description": "צפו ברוגבי ליג ב-WiziWig עם שידורי NRL וסופר ליג בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"rugby-sevens": {
+					"title": "WiziWig רוגבי שבעות | שידור חי בחינם",
+					"description": "WiziWig רוגבי שבעות מציע שידורי טורנירים בחינם באיכות HD ללא הרשמה. צפו בפעולת הרוגבי המהירה בשידור חי."
+				},
+				"cricket": {
+					"title": "WiziWig קריקט | שידור חי בחינם HD",
+					"description": "צפו בקריקט ב-WiziWig עם שידורי T20, ODI וטסט בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"american-football": {
+					"title": "WiziWig פוטבול אמריקאי | שידור NFL חי בחינם",
+					"description": "צפו בפוטבול אמריקאי ב-WiziWig עם שידורי NFL וקולג' בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"volleyball": {
+					"title": "WiziWig כדורעף | שידור FIVB חי בחינם",
+					"description": "צפו בכדורעף ב-WiziWig עם שידורי FIVB וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"beach-volleyball": {
+					"title": "WiziWig כדורעף חופים | שידור חי בחינם",
+					"description": "צפו בכדורעף חופים ב-WiziWig עם שידורים בחינם באיכות HD. ללא הרשמה, גישה חלקה. התחילו עכשיו."
+				},
+				"handball": {
+					"title": "WiziWig כדוריד | שידור EHF חי בחינם",
+					"description": "צפו בכדוריד ב-WiziWig עם שידורי EHF וליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"beach-handball": {
+					"title": "WiziWig כדוריד חופים | שידור חי בחינם",
+					"description": "צפו בכדוריד חופים ב-WiziWig עם שידורים בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"beach-soccer": {
+					"title": "WiziWig כדורגל חופים | שידור FIFA חי בחינם",
+					"description": "צפו בכדורגל חופים ב-WiziWig עם שידורי FIFA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"aussie-rules": {
+					"title": "WiziWig כדורגל אוסטרלי | שידור AFL חי בחינם",
+					"description": "צפו ב-AFL ב-WiziWig עם שידורים בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"futsal": {
+					"title": "WiziWig פוטסל | שידור UEFA חי בחינם",
+					"description": "צפו בפוטסל ב-WiziWig עם שידורי UEFA ו-FIFA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"badminton": {
+					"title": "WiziWig בדמינטון | שידור BWF חי בחינם",
+					"description": "צפו בבדמינטון ב-WiziWig עם שידורי BWF בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"netball": {
+					"title": "WiziWig נטבול | שידור חי בחינם HD",
+					"description": "צפו בנטבול ב-WiziWig עם שידורי ליגות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"floorball": {
+					"title": "WiziWig פלורבול | שידור IFF חי בחינם",
+					"description": "צפו בפלורבול ב-WiziWig עם שידורי IFF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"combat-sport": {
+					"title": "WiziWig ספורט לחימה | שידור UFC חי בחינם",
+					"description": "צפו בספורט לחימה ב-WiziWig עם שידורי UFC ואיגרוף בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"boxing": {
+					"title": "WiziWig איגרוף | שידור חי בחינם HD",
+					"description": "צפו באיגרוף ב-WiziWig עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה, פעולה מהירה. התחילו עכשיו."
+				},
+				"mma": {
+					"title": "WiziWig MMA | שידור UFC חי בחינם HD",
+					"description": "צפו ב-MMA ב-WiziWig עם שידורי UFC ו-Bellator בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"snooker": {
+					"title": "WiziWig סנוקר | שידור חי בחינם HD",
+					"description": "צפו בסנוקר ב-WiziWig עם שידורי טורנירים בחינם באיכות HD. ללא הרשמה, שידורים חלקים. התחילו עכשיו."
+				},
+				"billiard": {
+					"title": "WiziWig ביליארד | שידור חי בחינם HD",
+					"description": "צפו בביליארד ב-WiziWig עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"table-tennis": {
+					"title": "WiziWig טניס שולחן | שידור ITTF חי בחינם",
+					"description": "צפו בטניס שולחן ב-WiziWig עם שידורי ITTF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"padel-tennis": {
+					"title": "WiziWig פאדל | שידור WPT חי בחינם",
+					"description": "צפו בפאדל ב-WiziWig עם שידורי World Padel Tour בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"squash": {
+					"title": "WiziWig סקווש | שידור PSA חי בחינם",
+					"description": "צפו בסקווש ב-WiziWig עם שידורי PSA בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"motorsport": {
+					"title": "WiziWig מוטורספורט | שידור F1 חי בחינם HD",
+					"description": "צפו במוטורספורט ב-WiziWig עם שידורי F1 ו-MotoGP בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"racing": {
+					"title": "WiziWig מירוצים | שידור חי בחינם HD",
+					"description": "צפו במירוצים ב-WiziWig עם שידורי מוטורספורט בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"cycling": {
+					"title": "WiziWig רכיבה על אופניים | שידור טור חי בחינם",
+					"description": "צפו ברכיבה על אופניים ב-WiziWig עם שידורי טור דה פראנס וג'ירו בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"equestrianism": {
+					"title": "WiziWig רכיבה על סוסים | שידור FEI חי בחינם",
+					"description": "צפו ברכיבה על סוסים ב-WiziWig עם שידורי FEI בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"golf": {
+					"title": "WiziWig גולף | שידור PGA חי בחינם HD",
+					"description": "צפו בגולף ב-WiziWig עם שידורי PGA ומאסטרס בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"field-hockey": {
+					"title": "WiziWig הוקי שדה | שידור FIH חי בחינם",
+					"description": "צפו בהוקי שדה ב-WiziWig עם שידורי FIH בחינם באיכות HD. ללא הרשמה, גישה מהירה. התחילו עכשיו."
+				},
+				"lacrosse": {
+					"title": "WiziWig לקרוס | שידור PLL חי בחינם",
+					"description": "צפו בלקרוס ב-WiziWig עם שידורי PLL ו-NLL בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"athletics": {
+					"title": "WiziWig אתלטיקה | שידור Diamond League חי בחינם",
+					"description": "צפו באתלטיקה ב-WiziWig עם שידורי Diamond League ואליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"gymnastics": {
+					"title": "WiziWig התעמלות | שידור חי בחינם HD",
+					"description": "צפו בהתעמלות ב-WiziWig עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"weightlifting": {
+					"title": "WiziWig הרמת משקולות | שידור IWF חי בחינם",
+					"description": "צפו בהרמת משקולות ב-WiziWig עם שידורי IWF בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"climbing": {
+					"title": "WiziWig טיפוס | שידור IFSC חי בחינם",
+					"description": "צפו בטיפוס ב-WiziWig עם שידורי IFSC בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"winter-sport": {
+					"title": "WiziWig ספורט חורף | שידור חי בחינם HD",
+					"description": "צפו בספורט חורף ב-WiziWig עם שידורי סקי והחלקה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"bandy": {
+					"title": "WiziWig בנדי | שידור חי בחינם HD",
+					"description": "צפו בבנדי ב-WiziWig עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"curling": {
+					"title": "WiziWig קרלינג | שידור חי בחינם HD",
+					"description": "צפו בקרלינג ב-WiziWig עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"triathlon": {
+					"title": "WiziWig טריאתלון | שידור Ironman חי בחינם",
+					"description": "צפו בטריאתלון ב-WiziWig עם שידורי Ironman ו-ITU בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"water-sports": {
+					"title": "WiziWig ספורט מים | שידור חי בחינם HD",
+					"description": "צפו בספורט מים ב-WiziWig עם שידורי שחייה וצלילה בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"water-polo": {
+					"title": "WiziWig כדור מים | שידור חי בחינם HD",
+					"description": "צפו בכדור מים ב-WiziWig עם שידורי אליפויות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"sailing": {
+					"title": "WiziWig שיט | שידור חי בחינם HD",
+					"description": "צפו בשיט ב-WiziWig עם שידורי רגטות בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"bowling": {
+					"title": "WiziWig באולינג | שידור PBA חי בחינם",
+					"description": "צפו בבאולינג ב-WiziWig עם שידורי PBA בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"darts": {
+					"title": "WiziWig חצים | שידור PDC חי בחינם HD",
+					"description": "צפו בחצים ב-WiziWig עם שידורי PDC בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"chess": {
+					"title": "WiziWig שחמט | שידור חי בחינם HD",
+					"description": "צפו בשחמט ב-WiziWig עם שידורי אליפויות וטורנירים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"e-sports": {
+					"title": "WiziWig ספורט אלקטרוני | שידור חי בחינם HD",
+					"description": "צפו בספורט אלקטרוני ב-WiziWig עם שידורי LoL ו-CS:GO בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"extreme-sport": {
+					"title": "WiziWig ספורט אתגרי | שידור חי בחינם",
+					"description": "WiziWig ספורט אתגרי מציע את שידורי התחרויות האתגריות הטובים ביותר בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				},
+				"others": {
+					"title": "WiziWig אחרים | שידור ספורט חי בחינם",
+					"description": "צפו בענפי ספורט נישה ב-WiziWig עם שידורים בחינם באיכות HD. ללא הרשמה. התחילו עכשיו."
+				}
+			}
+		}
 	}
 }

@@ -3,7 +3,8 @@
 		"code": "hi",
 		"name": "हिन्दी",
 		"flag": "IN",
-		"active": true
+		"active": true,
+		"direction": "ltr"
 	},
 	"ui": {
 		"home": "होम",
@@ -52,6 +53,7 @@
 		"Baseball": "बेसबॉल",
 		"Rugby Union": "रग्बी यूनियन",
 		"Rugby League": "रग्बी लीग",
+		"Rugby Sevens": "रग्बी सेवंस",
 		"Cricket": "क्रिकेट",
 		"American Football": "अमेरिकी फुटबॉल",
 		"Volleyball": "वॉलीबॉल",
@@ -64,8 +66,7 @@
 		"Badminton": "बैडमिंटन",
 		"Netball": "नेटबॉल",
 		"Floorball": "फ्लोरबॉल",
-		"Combat": "मुकाबला",
-		"combat sport": "मार्शल आर्ट्स",
+		"Combat Sport": "कॉम्बैट स्पोर्ट",
 		"Boxing": "मुक्केबाज़ी",
 		"MMA": "मिक्स्ड मार्शल आर्ट्स",
 		"Snooker": "स्नूकर",
@@ -84,7 +85,7 @@
 		"Gymnastics": "जिमनास्टिक्स",
 		"Weightlifting": "भारोत्तोलन",
 		"Climbing": "क्लाइम्बिंग",
-		"winter sport": "शीतकालीन खेल",
+		"Winter Sport": "शीतकालीन खेल",
 		"Bandy": "बैंडी",
 		"Curling": "कर्लिंग",
 		"Triathlon": "ट्रायथलॉन",
@@ -95,6 +96,1305 @@
 		"Darts": "डार्ट्स",
 		"Chess": "शतरंज",
 		"E-sports": "ई-स्पोर्ट्स",
+		"Extreme Sport": "एक्सट्रीम स्पोर्ट",
 		"Others": "अन्य"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | मुफ्त लाइव खेल स्ट्रीमिंग HD",
+				"description": "SportLemon पर मुफ्त HD में लाइव खेल स्ट्रीमिंग देखें। फुटबॉल, बास्केटबॉल, टेनिस और भी बहुत कुछ बिना रजिस्ट्रेशन के। अभी शुरू करें।"
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon फुटबॉल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में फुटबॉल लाइव देखें। बिना रजिस्ट्रेशन, शीर्ष लीग और मैचों तक तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"basketball": {
+					"title": "SportLemon बास्केटबॉल | मुफ्त NBA लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में NBA बास्केटबॉल देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस और तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"tennis": {
+					"title": "SportLemon टेनिस | मुफ्त ग्रैंड स्लैम लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में ATP और WTA टेनिस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"ice-hockey": {
+					"title": "SportLemon आइस हॉकी | मुफ्त NHL लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में NHL आइस हॉकी देखें। बिना रजिस्ट्रेशन, स्मूथ स्ट्रीम्स। अभी शुरू करें।"
+				},
+				"baseball": {
+					"title": "SportLemon बेसबॉल | मुफ्त MLB लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में MLB बेसबॉल देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"rugby-union": {
+					"title": "SportLemon रग्बी यूनियन | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में रग्बी यूनियन लाइव देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस। अभी शुरू करें।"
+				},
+				"rugby-league": {
+					"title": "SportLemon रग्बी लीग | मुफ्त NRL लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में NRL और सुपर लीग रग्बी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"rugby-sevens": {
+					"title": "SportLemon रग्बी सेवंस | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "SportLemon रग्बी सेवंस पर मुफ्त HD में टूर्नामेंट स्ट्रीम्स देखें बिना रजिस्ट्रेशन के। तेज़ रग्बी एक्शन लाइव देखें।"
+				},
+				"cricket": {
+					"title": "SportLemon क्रिकेट | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में T20, ODI और टेस्ट क्रिकेट देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"american-football": {
+					"title": "SportLemon अमेरिकी फुटबॉल | मुफ्त NFL लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में NFL और कॉलेज फुटबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"volleyball": {
+					"title": "SportLemon वॉलीबॉल | मुफ्त FIVB लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में FIVB और लीग वॉलीबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"beach-volleyball": {
+					"title": "SportLemon बीच वॉलीबॉल | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में बीच वॉलीबॉल देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस। अभी शुरू करें।"
+				},
+				"handball": {
+					"title": "SportLemon हैंडबॉल | मुफ्त EHF लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में EHF और लीग हैंडबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"beach-handball": {
+					"title": "SportLemon बीच हैंडबॉल | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में बीच हैंडबॉल देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"beach-soccer": {
+					"title": "SportLemon बीच सॉकर | मुफ्त FIFA लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में FIFA बीच सॉकर देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"aussie-rules": {
+					"title": "SportLemon ऑस्ट्रेलियाई फुटबॉल | मुफ्त AFL लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में AFL देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"futsal": {
+					"title": "SportLemon फुटसल | मुफ्त UEFA लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में UEFA और FIFA फुटसल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"badminton": {
+					"title": "SportLemon बैडमिंटन | मुफ्त BWF लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में BWF बैडमिंटन देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"netball": {
+					"title": "SportLemon नेटबॉल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में लीग नेटबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"floorball": {
+					"title": "SportLemon फ्लोरबॉल | मुफ्त IFF लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में IFF फ्लोरबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"combat-sport": {
+					"title": "SportLemon कॉम्बैट स्पोर्ट | मुफ्त UFC लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में UFC और बॉक्सिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"boxing": {
+					"title": "SportLemon मुक्केबाज़ी | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में चैंपियनशिप बॉक्सिंग देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"mma": {
+					"title": "SportLemon MMA | मुफ्त UFC लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में UFC और Bellator MMA देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"snooker": {
+					"title": "SportLemon स्नूकर | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में टूर्नामेंट स्नूकर देखें। बिना रजिस्ट्रेशन, स्मूथ स्ट्रीम्स। अभी शुरू करें।"
+				},
+				"billiard": {
+					"title": "SportLemon बिलियर्ड्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में चैंपियनशिप बिलियर्ड्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"table-tennis": {
+					"title": "SportLemon टेबल टेनिस | मुफ्त ITTF लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में ITTF टेबल टेनिस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"padel-tennis": {
+					"title": "SportLemon पैडल | मुफ्त WPT लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में World Padel Tour देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"squash": {
+					"title": "SportLemon स्क्वैश | मुफ्त PSA लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में PSA स्क्वैश देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"motorsport": {
+					"title": "SportLemon मोटरस्पोर्ट | मुफ्त F1 लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में F1 और MotoGP देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"racing": {
+					"title": "SportLemon रेसिंग | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में मोटरस्पोर्ट रेसिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"cycling": {
+					"title": "SportLemon साइकिलिंग | मुफ्त टूर लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में टूर डी फ्रांस और जिरो देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"equestrianism": {
+					"title": "SportLemon घुड़सवारी | मुफ्त FEI लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में FEI घुड़सवारी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"golf": {
+					"title": "SportLemon गोल्फ | मुफ्त PGA लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में PGA और मास्टर्स गोल्फ देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"field-hockey": {
+					"title": "SportLemon हॉकी | मुफ्त FIH लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में FIH हॉकी देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"lacrosse": {
+					"title": "SportLemon लैक्रोस | मुफ्त PLL लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में PLL और NLL लैक्रोस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"athletics": {
+					"title": "SportLemon एथलेटिक्स | मुफ्त Diamond League लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में Diamond League और चैंपियनशिप एथलेटिक्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"gymnastics": {
+					"title": "SportLemon जिमनास्टिक्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में चैंपियनशिप और ओलंपिक जिमनास्टिक्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"weightlifting": {
+					"title": "SportLemon भारोत्तोलन | मुफ्त IWF लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में IWF भारोत्तोलन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"climbing": {
+					"title": "SportLemon क्लाइम्बिंग | मुफ्त IFSC लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में IFSC क्लाइम्बिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"winter-sport": {
+					"title": "SportLemon शीतकालीन खेल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में स्की और स्केटिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"bandy": {
+					"title": "SportLemon बैंडी | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में चैंपियनशिप बैंडी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"curling": {
+					"title": "SportLemon कर्लिंग | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में चैंपियनशिप कर्लिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"triathlon": {
+					"title": "SportLemon ट्रायथलॉन | मुफ्त Ironman लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में Ironman और ITU ट्रायथलॉन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"water-sports": {
+					"title": "SportLemon जल क्रीड़ा | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में तैराकी और डाइविंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"water-polo": {
+					"title": "SportLemon वाटर पोलो | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में चैंपियनशिप वाटर पोलो देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"sailing": {
+					"title": "SportLemon नौकायन | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में रेगाटा नौकायन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"bowling": {
+					"title": "SportLemon बॉलिंग | मुफ्त PBA लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में PBA बॉलिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"darts": {
+					"title": "SportLemon डार्ट्स | मुफ्त PDC लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में PDC डार्ट्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"chess": {
+					"title": "SportLemon शतरंज | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में चैंपियनशिप और टूर्नामेंट शतरंज देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"e-sports": {
+					"title": "SportLemon ई-स्पोर्ट्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "SportLemon पर मुफ्त HD में LoL और CS:GO ई-स्पोर्ट्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"extreme-sport": {
+					"title": "SportLemon एक्सट्रीम स्पोर्ट | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "SportLemon एक्सट्रीम स्पोर्ट पर मुफ्त HD में सर्वश्रेष्ठ एक्सट्रीम प्रतियोगिता स्ट्रीम्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"others": {
+					"title": "SportLemon अन्य | मुफ्त खेल लाइव स्ट्रीमिंग",
+					"description": "SportLemon पर मुफ्त HD में विशेष खेल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLsite | मुफ्त लाइव खेल स्ट्रीमिंग HD",
+				"description": "EPLsite पर मुफ्त HD में लाइव खेल स्ट्रीमिंग देखें। फुटबॉल, बास्केटबॉल, टेनिस और भी बहुत कुछ बिना रजिस्ट्रेशन के। अभी शुरू करें।"
+			},
+			"sports": {
+				"football": {
+					"title": "EPLsite फुटबॉल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में फुटबॉल लाइव देखें। बिना रजिस्ट्रेशन, शीर्ष लीग और मैचों तक तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"basketball": {
+					"title": "EPLsite बास्केटबॉल | मुफ्त NBA लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में NBA बास्केटबॉल देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस और तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"tennis": {
+					"title": "EPLsite टेनिस | मुफ्त ग्रैंड स्लैम लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में ATP और WTA टेनिस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"ice-hockey": {
+					"title": "EPLsite आइस हॉकी | मुफ्त NHL लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में NHL आइस हॉकी देखें। बिना रजिस्ट्रेशन, स्मूथ स्ट्रीम्स। अभी शुरू करें।"
+				},
+				"baseball": {
+					"title": "EPLsite बेसबॉल | मुफ्त MLB लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में MLB बेसबॉल देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"rugby-union": {
+					"title": "EPLsite रग्बी यूनियन | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में रग्बी यूनियन लाइव देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस। अभी शुरू करें।"
+				},
+				"rugby-league": {
+					"title": "EPLsite रग्बी लीग | मुफ्त NRL लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में NRL और सुपर लीग रग्बी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"rugby-sevens": {
+					"title": "EPLsite रग्बी सेवंस | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "EPLsite रग्बी सेवंस पर मुफ्त HD में टूर्नामेंट स्ट्रीम्स देखें बिना रजिस्ट्रेशन के। तेज़ रग्बी एक्शन लाइव देखें।"
+				},
+				"cricket": {
+					"title": "EPLsite क्रिकेट | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में T20, ODI और टेस्ट क्रिकेट देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"american-football": {
+					"title": "EPLsite अमेरिकी फुटबॉल | मुफ्त NFL लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में NFL और कॉलेज फुटबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"volleyball": {
+					"title": "EPLsite वॉलीबॉल | मुफ्त FIVB लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में FIVB और लीग वॉलीबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"beach-volleyball": {
+					"title": "EPLsite बीच वॉलीबॉल | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में बीच वॉलीबॉल देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस। अभी शुरू करें।"
+				},
+				"handball": {
+					"title": "EPLsite हैंडबॉल | मुफ्त EHF लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में EHF और लीग हैंडबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"beach-handball": {
+					"title": "EPLsite बीच हैंडबॉल | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में बीच हैंडबॉल देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"beach-soccer": {
+					"title": "EPLsite बीच सॉकर | मुफ्त FIFA लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में FIFA बीच सॉकर देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"aussie-rules": {
+					"title": "EPLsite ऑस्ट्रेलियाई फुटबॉल | मुफ्त AFL लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में AFL देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"futsal": {
+					"title": "EPLsite फुटसल | मुफ्त UEFA लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में UEFA और FIFA फुटसल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"badminton": {
+					"title": "EPLsite बैडमिंटन | मुफ्त BWF लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में BWF बैडमिंटन देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"netball": {
+					"title": "EPLsite नेटबॉल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में लीग नेटबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"floorball": {
+					"title": "EPLsite फ्लोरबॉल | मुफ्त IFF लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में IFF फ्लोरबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"combat-sport": {
+					"title": "EPLsite कॉम्बैट स्पोर्ट | मुफ्त UFC लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में UFC और बॉक्सिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"boxing": {
+					"title": "EPLsite मुक्केबाज़ी | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में चैंपियनशिप बॉक्सिंग देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"mma": {
+					"title": "EPLsite MMA | मुफ्त UFC लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में UFC और Bellator MMA देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"snooker": {
+					"title": "EPLsite स्नूकर | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में टूर्नामेंट स्नूकर देखें। बिना रजिस्ट्रेशन, स्मूथ स्ट्रीम्स। अभी शुरू करें।"
+				},
+				"billiard": {
+					"title": "EPLsite बिलियर्ड्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में चैंपियनशिप बिलियर्ड्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"table-tennis": {
+					"title": "EPLsite टेबल टेनिस | मुफ्त ITTF लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में ITTF टेबल टेनिस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"padel-tennis": {
+					"title": "EPLsite पैडल | मुफ्त WPT लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में World Padel Tour देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"squash": {
+					"title": "EPLsite स्क्वैश | मुफ्त PSA लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में PSA स्क्वैश देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"motorsport": {
+					"title": "EPLsite मोटरस्पोर्ट | मुफ्त F1 लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में F1 और MotoGP देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"racing": {
+					"title": "EPLsite रेसिंग | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में मोटरस्पोर्ट रेसिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"cycling": {
+					"title": "EPLsite साइकिलिंग | मुफ्त टूर लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में टूर डी फ्रांस और जिरो देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"equestrianism": {
+					"title": "EPLsite घुड़सवारी | मुफ्त FEI लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में FEI घुड़सवारी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"golf": {
+					"title": "EPLsite गोल्फ | मुफ्त PGA लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में PGA और मास्टर्स गोल्फ देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"field-hockey": {
+					"title": "EPLsite हॉकी | मुफ्त FIH लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में FIH हॉकी देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"lacrosse": {
+					"title": "EPLsite लैक्रोस | मुफ्त PLL लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में PLL और NLL लैक्रोस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"athletics": {
+					"title": "EPLsite एथलेटिक्स | मुफ्त Diamond League लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में Diamond League और चैंपियनशिप एथलेटिक्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"gymnastics": {
+					"title": "EPLsite जिमनास्टिक्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में चैंपियनशिप जिमनास्टिक्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"weightlifting": {
+					"title": "EPLsite भारोत्तोलन | मुफ्त IWF लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में IWF भारोत्तोलन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"climbing": {
+					"title": "EPLsite क्लाइम्बिंग | मुफ्त IFSC लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में IFSC क्लाइम्बिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"winter-sport": {
+					"title": "EPLsite शीतकालीन खेल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में स्की और स्केटिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"bandy": {
+					"title": "EPLsite बैंडी | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में चैंपियनशिप बैंडी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"curling": {
+					"title": "EPLsite कर्लिंग | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में चैंपियनशिप कर्लिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"triathlon": {
+					"title": "EPLsite ट्रायथलॉन | मुफ्त Ironman लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में Ironman और ITU ट्रायथलॉन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"water-sports": {
+					"title": "EPLsite जल क्रीड़ा | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में तैराकी और डाइविंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"water-polo": {
+					"title": "EPLsite वाटर पोलो | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में चैंपियनशिप वाटर पोलो देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"sailing": {
+					"title": "EPLsite नौकायन | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में रेगाटा नौकायन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"bowling": {
+					"title": "EPLsite बॉलिंग | मुफ्त PBA लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में PBA बॉलिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"darts": {
+					"title": "EPLsite डार्ट्स | मुफ्त PDC लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में PDC डार्ट्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"chess": {
+					"title": "EPLsite शतरंज | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में चैंपियनशिप और टूर्नामेंट शतरंज देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"e-sports": {
+					"title": "EPLsite ई-स्पोर्ट्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "EPLsite पर मुफ्त HD में LoL और CS:GO ई-स्पोर्ट्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"extreme-sport": {
+					"title": "EPLsite एक्सट्रीम स्पोर्ट | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "EPLsite एक्सट्रीम स्पोर्ट पर मुफ्त HD में सर्वश्रेष्ठ एक्सट्रीम प्रतियोगिता स्ट्रीम्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"others": {
+					"title": "EPLsite अन्य | मुफ्त खेल लाइव स्ट्रीमिंग",
+					"description": "EPLsite पर मुफ्त HD में विशेष खेल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | मुफ्त लाइव खेल स्ट्रीमिंग HD",
+				"description": "P2P4U पर मुफ्त HD में लाइव खेल स्ट्रीमिंग देखें। फुटबॉल, बास्केटबॉल, टेनिस और भी बहुत कुछ बिना रजिस्ट्रेशन के। अभी शुरू करें।"
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U फुटबॉल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में फुटबॉल लाइव देखें। बिना रजिस्ट्रेशन, शीर्ष लीग और मैचों तक तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"basketball": {
+					"title": "P2P4U बास्केटबॉल | मुफ्त NBA लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में NBA बास्केटबॉल देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस और तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"tennis": {
+					"title": "P2P4U टेनिस | मुफ्त ग्रैंड स्लैम लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में ATP और WTA टेनिस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"ice-hockey": {
+					"title": "P2P4U आइस हॉकी | मुफ्त NHL लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में NHL आइस हॉकी देखें। बिना रजिस्ट्रेशन, स्मूथ स्ट्रीम्स। अभी शुरू करें।"
+				},
+				"baseball": {
+					"title": "P2P4U बेसबॉल | मुफ्त MLB लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में MLB बेसबॉल देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"rugby-union": {
+					"title": "P2P4U रग्बी यूनियन | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में रग्बी यूनियन लाइव देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस। अभी शुरू करें।"
+				},
+				"rugby-league": {
+					"title": "P2P4U रग्बी लीग | मुफ्त NRL लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में NRL और सुपर लीग रग्बी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"rugby-sevens": {
+					"title": "P2P4U रग्बी सेवंस | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "P2P4U रग्बी सेवंस पर मुफ्त HD में टूर्नामेंट स्ट्रीम्स देखें बिना रजिस्ट्रेशन के। तेज़ रग्बी एक्शन लाइव देखें।"
+				},
+				"cricket": {
+					"title": "P2P4U क्रिकेट | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में T20, ODI और टेस्ट क्रिकेट देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"american-football": {
+					"title": "P2P4U अमेरिकी फुटबॉल | मुफ्त NFL लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में NFL और कॉलेज फुटबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"volleyball": {
+					"title": "P2P4U वॉलीबॉल | मुफ्त FIVB लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में FIVB और लीग वॉलीबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"beach-volleyball": {
+					"title": "P2P4U बीच वॉलीबॉल | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में बीच वॉलीबॉल देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस। अभी शुरू करें।"
+				},
+				"handball": {
+					"title": "P2P4U हैंडबॉल | मुफ्त EHF लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में EHF और लीग हैंडबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"beach-handball": {
+					"title": "P2P4U बीच हैंडबॉल | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में बीच हैंडबॉल देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"beach-soccer": {
+					"title": "P2P4U बीच सॉकर | मुफ्त FIFA लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में FIFA बीच सॉकर देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"aussie-rules": {
+					"title": "P2P4U ऑस्ट्रेलियाई फुटबॉल | मुफ्त AFL लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में AFL देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"futsal": {
+					"title": "P2P4U फुटसल | मुफ्त UEFA लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में UEFA और FIFA फुटसल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"badminton": {
+					"title": "P2P4U बैडमिंटन | मुफ्त BWF लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में BWF बैडमिंटन देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"netball": {
+					"title": "P2P4U नेटबॉल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में लीग नेटबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"floorball": {
+					"title": "P2P4U फ्लोरबॉल | मुफ्त IFF लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में IFF फ्लोरबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"combat-sport": {
+					"title": "P2P4U कॉम्बैट स्पोर्ट | मुफ्त UFC लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में UFC और बॉक्सिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"boxing": {
+					"title": "P2P4U मुक्केबाज़ी | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में चैंपियनशिप बॉक्सिंग देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"mma": {
+					"title": "P2P4U MMA | मुफ्त UFC लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में UFC और Bellator MMA देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"snooker": {
+					"title": "P2P4U स्नूकर | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में टूर्नामेंट स्नूकर देखें। बिना रजिस्ट्रेशन, स्मूथ स्ट्रीम्स। अभी शुरू करें।"
+				},
+				"billiard": {
+					"title": "P2P4U बिलियर्ड्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में चैंपियनशिप बिलियर्ड्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"table-tennis": {
+					"title": "P2P4U टेबल टेनिस | मुफ्त ITTF लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में ITTF टेबल टेनिस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"padel-tennis": {
+					"title": "P2P4U पैडल | मुफ्त WPT लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में World Padel Tour देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"squash": {
+					"title": "P2P4U स्क्वैश | मुफ्त PSA लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में PSA स्क्वैश देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"motorsport": {
+					"title": "P2P4U मोटरस्पोर्ट | मुफ्त F1 लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में F1 और MotoGP देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"racing": {
+					"title": "P2P4U रेसिंग | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में मोटरस्पोर्ट रेसिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"cycling": {
+					"title": "P2P4U साइकिलिंग | मुफ्त टूर लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में टूर डी फ्रांस और जिरो देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"equestrianism": {
+					"title": "P2P4U घुड़सवारी | मुफ्त FEI लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में FEI घुड़सवारी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"golf": {
+					"title": "P2P4U गोल्फ | मुफ्त PGA लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में PGA और मास्टर्स गोल्फ देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"field-hockey": {
+					"title": "P2P4U हॉकी | मुफ्त FIH लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में FIH हॉकी देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"lacrosse": {
+					"title": "P2P4U लैक्रोस | मुफ्त PLL लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में PLL और NLL लैक्रोस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"athletics": {
+					"title": "P2P4U एथलेटिक्स | मुफ्त Diamond League लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में Diamond League और चैंपियनशिप एथलेटिक्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"gymnastics": {
+					"title": "P2P4U जिमनास्टिक्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में चैंपियनशिप जिमनास्टिक्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"weightlifting": {
+					"title": "P2P4U भारोत्तोलन | मुफ्त IWF लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में IWF भारोत्तोलन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"climbing": {
+					"title": "P2P4U क्लाइम्बिंग | मुफ्त IFSC लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में IFSC क्लाइम्बिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"winter-sport": {
+					"title": "P2P4U शीतकालीन खेल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में स्की और स्केटिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"bandy": {
+					"title": "P2P4U बैंडी | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में चैंपियनशिप बैंडी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"curling": {
+					"title": "P2P4U कर्लिंग | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में चैंपियनशिप कर्लिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"triathlon": {
+					"title": "P2P4U ट्रायथलॉन | मुफ्त Ironman लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में Ironman और ITU ट्रायथलॉन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"water-sports": {
+					"title": "P2P4U जल क्रीड़ा | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में तैराकी और डाइविंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"water-polo": {
+					"title": "P2P4U वाटर पोलो | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में चैंपियनशिप वाटर पोलो देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"sailing": {
+					"title": "P2P4U नौकायन | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में रेगाटा नौकायन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"bowling": {
+					"title": "P2P4U बॉलिंग | मुफ्त PBA लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में PBA बॉलिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"darts": {
+					"title": "P2P4U डार्ट्स | मुफ्त PDC लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में PDC डार्ट्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"chess": {
+					"title": "P2P4U शतरंज | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में चैंपियनशिप और टूर्नामेंट शतरंज देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"e-sports": {
+					"title": "P2P4U ई-स्पोर्ट्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "P2P4U पर मुफ्त HD में LoL और CS:GO ई-स्पोर्ट्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"extreme-sport": {
+					"title": "P2P4U एक्सट्रीम स्पोर्ट | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "P2P4U एक्सट्रीम स्पोर्ट पर मुफ्त HD में सर्वश्रेष्ठ एक्सट्रीम प्रतियोगिता स्ट्रीम्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"others": {
+					"title": "P2P4U अन्य | मुफ्त खेल लाइव स्ट्रीमिंग",
+					"description": "P2P4U पर मुफ्त HD में विशेष खेल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | मुफ्त लाइव खेल स्ट्रीमिंग HD",
+				"description": "StreamHunter पर मुफ्त HD में लाइव खेल स्ट्रीमिंग देखें। फुटबॉल, बास्केटबॉल, टेनिस और भी बहुत कुछ बिना रजिस्ट्रेशन के। अभी शुरू करें।"
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter फुटबॉल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में फुटबॉल लाइव देखें। बिना रजिस्ट्रेशन, शीर्ष लीग और मैचों तक तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"basketball": {
+					"title": "StreamHunter बास्केटबॉल | मुफ्त NBA लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में NBA बास्केटबॉल देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस और तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"tennis": {
+					"title": "StreamHunter टेनिस | मुफ्त ग्रैंड स्लैम लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में ATP और WTA टेनिस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"ice-hockey": {
+					"title": "StreamHunter आइस हॉकी | मुफ्त NHL लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में NHL आइस हॉकी देखें। बिना रजिस्ट्रेशन, स्मूथ स्ट्रीम्स। अभी शुरू करें।"
+				},
+				"baseball": {
+					"title": "StreamHunter बेसबॉल | मुफ्त MLB लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में MLB बेसबॉल देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"rugby-union": {
+					"title": "StreamHunter रग्बी यूनियन | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में रग्बी यूनियन लाइव देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस। अभी शुरू करें।"
+				},
+				"rugby-league": {
+					"title": "StreamHunter रग्बी लीग | मुफ्त NRL लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में NRL और सुपर लीग रग्बी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter रग्बी सेवंस | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "StreamHunter रग्बी सेवंस पर मुफ्त HD में टूर्नामेंट स्ट्रीम्स देखें बिना रजिस्ट्रेशन के। तेज़ रग्बी एक्शन लाइव देखें।"
+				},
+				"cricket": {
+					"title": "StreamHunter क्रिकेट | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में T20, ODI और टेस्ट क्रिकेट देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"american-football": {
+					"title": "StreamHunter अमेरिकी फुटबॉल | मुफ्त NFL लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में NFL और कॉलेज फुटबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"volleyball": {
+					"title": "StreamHunter वॉलीबॉल | मुफ्त FIVB लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में FIVB और लीग वॉलीबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter बीच वॉलीबॉल | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में बीच वॉलीबॉल देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस। अभी शुरू करें।"
+				},
+				"handball": {
+					"title": "StreamHunter हैंडबॉल | मुफ्त EHF लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में EHF और लीग हैंडबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"beach-handball": {
+					"title": "StreamHunter बीच हैंडबॉल | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में बीच हैंडबॉल देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"beach-soccer": {
+					"title": "StreamHunter बीच सॉकर | मुफ्त FIFA लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में FIFA बीच सॉकर देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"aussie-rules": {
+					"title": "StreamHunter ऑस्ट्रेलियाई फुटबॉल | मुफ्त AFL लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में AFL देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"futsal": {
+					"title": "StreamHunter फुटसल | मुफ्त UEFA लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में UEFA और FIFA फुटसल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"badminton": {
+					"title": "StreamHunter बैडमिंटन | मुफ्त BWF लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में BWF बैडमिंटन देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"netball": {
+					"title": "StreamHunter नेटबॉल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में लीग नेटबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"floorball": {
+					"title": "StreamHunter फ्लोरबॉल | मुफ्त IFF लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में IFF फ्लोरबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"combat-sport": {
+					"title": "StreamHunter कॉम्बैट स्पोर्ट | मुफ्त UFC लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में UFC और बॉक्सिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"boxing": {
+					"title": "StreamHunter मुक्केबाज़ी | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में चैंपियनशिप बॉक्सिंग देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"mma": {
+					"title": "StreamHunter MMA | मुफ्त UFC लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में UFC और Bellator MMA देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"snooker": {
+					"title": "StreamHunter स्नूकर | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में टूर्नामेंट स्नूकर देखें। बिना रजिस्ट्रेशन, स्मूथ स्ट्रीम्स। अभी शुरू करें।"
+				},
+				"billiard": {
+					"title": "StreamHunter बिलियर्ड्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में चैंपियनशिप बिलियर्ड्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"table-tennis": {
+					"title": "StreamHunter टेबल टेनिस | मुफ्त ITTF लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में ITTF टेबल टेनिस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"padel-tennis": {
+					"title": "StreamHunter पैडल | मुफ्त WPT लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में World Padel Tour देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"squash": {
+					"title": "StreamHunter स्क्वैश | मुफ्त PSA लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में PSA स्क्वैश देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"motorsport": {
+					"title": "StreamHunter मोटरस्पोर्ट | मुफ्त F1 लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में F1 और MotoGP देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"racing": {
+					"title": "StreamHunter रेसिंग | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में मोटरस्पोर्ट रेसिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"cycling": {
+					"title": "StreamHunter साइकिलिंग | मुफ्त टूर लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में टूर डी फ्रांस और जिरो देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"equestrianism": {
+					"title": "StreamHunter घुड़सवारी | मुफ्त FEI लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में FEI घुड़सवारी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"golf": {
+					"title": "StreamHunter गोल्फ | मुफ्त PGA लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में PGA और मास्टर्स गोल्फ देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"field-hockey": {
+					"title": "StreamHunter हॉकी | मुफ्त FIH लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में FIH हॉकी देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"lacrosse": {
+					"title": "StreamHunter लैक्रोस | मुफ्त PLL लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में PLL और NLL लैक्रोस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"athletics": {
+					"title": "StreamHunter एथलेटिक्स | मुफ्त Diamond League लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में Diamond League और चैंपियनशिप एथलेटिक्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"gymnastics": {
+					"title": "StreamHunter जिमनास्टिक्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में चैंपियनशिप जिमनास्टिक्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"weightlifting": {
+					"title": "StreamHunter भारोत्तोलन | मुफ्त IWF लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में IWF भारोत्तोलन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"climbing": {
+					"title": "StreamHunter क्लाइम्बिंग | मुफ्त IFSC लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में IFSC क्लाइम्बिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"winter-sport": {
+					"title": "StreamHunter शीतकालीन खेल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में स्की और स्केटिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"bandy": {
+					"title": "StreamHunter बैंडी | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में चैंपियनशिप बैंडी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"curling": {
+					"title": "StreamHunter कर्लिंग | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में चैंपियनशिप कर्लिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"triathlon": {
+					"title": "StreamHunter ट्रायथलॉन | मुफ्त Ironman लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में Ironman और ITU ट्रायथलॉन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"water-sports": {
+					"title": "StreamHunter जल क्रीड़ा | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में तैराकी और डाइविंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"water-polo": {
+					"title": "StreamHunter वाटर पोलो | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में चैंपियनशिप वाटर पोलो देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"sailing": {
+					"title": "StreamHunter नौकायन | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में रेगाटा नौकायन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"bowling": {
+					"title": "StreamHunter बॉलिंग | मुफ्त PBA लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में PBA बॉलिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"darts": {
+					"title": "StreamHunter डार्ट्स | मुफ्त PDC लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में PDC डार्ट्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"chess": {
+					"title": "StreamHunter शतरंज | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में चैंपियनशिप और टूर्नामेंट शतरंज देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"e-sports": {
+					"title": "StreamHunter ई-स्पोर्ट्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "StreamHunter पर मुफ्त HD में LoL और CS:GO ई-स्पोर्ट्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"extreme-sport": {
+					"title": "StreamHunter एक्सट्रीम स्पोर्ट | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "StreamHunter एक्सट्रीम स्पोर्ट पर मुफ्त HD में सर्वश्रेष्ठ एक्सट्रीम प्रतियोगिता स्ट्रीम्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"others": {
+					"title": "StreamHunter अन्य | मुफ्त खेल लाइव स्ट्रीमिंग",
+					"description": "StreamHunter पर मुफ्त HD में विशेष खेल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | मुफ्त लाइव खेल स्ट्रीमिंग HD",
+				"description": "MethStreams पर मुफ्त HD में लाइव खेल स्ट्रीमिंग देखें। फुटबॉल, बास्केटबॉल, टेनिस और भी बहुत कुछ बिना रजिस्ट्रेशन के। अभी शुरू करें।"
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams फुटबॉल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में फुटबॉल लाइव देखें। बिना रजिस्ट्रेशन, शीर्ष लीग और मैचों तक तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"basketball": {
+					"title": "MethStreams बास्केटबॉल | मुफ्त NBA लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में NBA बास्केटबॉल देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस और तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"tennis": {
+					"title": "MethStreams टेनिस | मुफ्त ग्रैंड स्लैम लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में ATP और WTA टेनिस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"ice-hockey": {
+					"title": "MethStreams आइस हॉकी | मुफ्त NHL लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में NHL आइस हॉकी देखें। बिना रजिस्ट्रेशन, स्मूथ स्ट्रीम्स। अभी शुरू करें।"
+				},
+				"baseball": {
+					"title": "MethStreams बेसबॉल | मुफ्त MLB लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में MLB बेसबॉल देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"rugby-union": {
+					"title": "MethStreams रग्बी यूनियन | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में रग्बी यूनियन लाइव देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस। अभी शुरू करें।"
+				},
+				"rugby-league": {
+					"title": "MethStreams रग्बी लीग | मुफ्त NRL लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में NRL और सुपर लीग रग्बी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"rugby-sevens": {
+					"title": "MethStreams रग्बी सेवंस | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "MethStreams रग्बी सेवंस पर मुफ्त HD में टूर्नामेंट स्ट्रीम्स देखें बिना रजिस्ट्रेशन के। तेज़ रग्बी एक्शन लाइव देखें।"
+				},
+				"cricket": {
+					"title": "MethStreams क्रिकेट | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में T20, ODI और टेस्ट क्रिकेट देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"american-football": {
+					"title": "MethStreams अमेरिकी फुटबॉल | मुफ्त NFL लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में NFL और कॉलेज फुटबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"volleyball": {
+					"title": "MethStreams वॉलीबॉल | मुफ्त FIVB लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में FIVB और लीग वॉलीबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"beach-volleyball": {
+					"title": "MethStreams बीच वॉलीबॉल | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में बीच वॉलीबॉल देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस। अभी शुरू करें।"
+				},
+				"handball": {
+					"title": "MethStreams हैंडबॉल | मुफ्त EHF लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में EHF और लीग हैंडबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"beach-handball": {
+					"title": "MethStreams बीच हैंडबॉल | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में बीच हैंडबॉल देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"beach-soccer": {
+					"title": "MethStreams बीच सॉकर | मुफ्त FIFA लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में FIFA बीच सॉकर देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"aussie-rules": {
+					"title": "MethStreams ऑस्ट्रेलियाई फुटबॉल | मुफ्त AFL लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में AFL देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"futsal": {
+					"title": "MethStreams फुटसल | मुफ्त UEFA लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में UEFA और FIFA फुटसल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"badminton": {
+					"title": "MethStreams बैडमिंटन | मुफ्त BWF लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में BWF बैडमिंटन देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"netball": {
+					"title": "MethStreams नेटबॉल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में लीग नेटबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"floorball": {
+					"title": "MethStreams फ्लोरबॉल | मुफ्त IFF लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में IFF फ्लोरबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"combat-sport": {
+					"title": "MethStreams कॉम्बैट स्पोर्ट | मुफ्त UFC लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में UFC और बॉक्सिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"boxing": {
+					"title": "MethStreams मुक्केबाज़ी | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में चैंपियनशिप बॉक्सिंग देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"mma": {
+					"title": "MethStreams MMA | मुफ्त UFC लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में UFC और Bellator MMA देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"snooker": {
+					"title": "MethStreams स्नूकर | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में टूर्नामेंट स्नूकर देखें। बिना रजिस्ट्रेशन, स्मूथ स्ट्रीम्स। अभी शुरू करें।"
+				},
+				"billiard": {
+					"title": "MethStreams बिलियर्ड्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में चैंपियनशिप बिलियर्ड्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"table-tennis": {
+					"title": "MethStreams टेबल टेनिस | मुफ्त ITTF लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में ITTF टेबल टेनिस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"padel-tennis": {
+					"title": "MethStreams पैडल | मुफ्त WPT लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में World Padel Tour देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"squash": {
+					"title": "MethStreams स्क्वैश | मुफ्त PSA लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में PSA स्क्वैश देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"motorsport": {
+					"title": "MethStreams मोटरस्पोर्ट | मुफ्त F1 लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में F1 और MotoGP देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"racing": {
+					"title": "MethStreams रेसिंग | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में मोटरस्पोर्ट रेसिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"cycling": {
+					"title": "MethStreams साइकिलिंग | मुफ्त टूर लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में टूर डी फ्रांस और जिरो देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"equestrianism": {
+					"title": "MethStreams घुड़सवारी | मुफ्त FEI लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में FEI घुड़सवारी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"golf": {
+					"title": "MethStreams गोल्फ | मुफ्त PGA लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में PGA और मास्टर्स गोल्फ देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"field-hockey": {
+					"title": "MethStreams हॉकी | मुफ्त FIH लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में FIH हॉकी देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"lacrosse": {
+					"title": "MethStreams लैक्रोस | मुफ्त PLL लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में PLL और NLL लैक्रोस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"athletics": {
+					"title": "MethStreams एथलेटिक्स | मुफ्त Diamond League लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में Diamond League और चैंपियनशिप एथलेटिक्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"gymnastics": {
+					"title": "MethStreams जिमनास्टिक्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में चैंपियनशिप जिमनास्टिक्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"weightlifting": {
+					"title": "MethStreams भारोत्तोलन | मुफ्त IWF लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में IWF भारोत्तोलन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"climbing": {
+					"title": "MethStreams क्लाइम्बिंग | मुफ्त IFSC लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में IFSC क्लाइम्बिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"winter-sport": {
+					"title": "MethStreams शीतकालीन खेल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में स्की और स्केटिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"bandy": {
+					"title": "MethStreams बैंडी | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में चैंपियनशिप बैंडी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"curling": {
+					"title": "MethStreams कर्लिंग | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में चैंपियनशिप कर्लिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"triathlon": {
+					"title": "MethStreams ट्रायथलॉन | मुफ्त Ironman लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में Ironman और ITU ट्रायथलॉन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"water-sports": {
+					"title": "MethStreams जल क्रीड़ा | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में तैराकी और डाइविंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"water-polo": {
+					"title": "MethStreams वाटर पोलो | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में चैंपियनशिप वाटर पोलो देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"sailing": {
+					"title": "MethStreams नौकायन | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में रेगाटा नौकायन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"bowling": {
+					"title": "MethStreams बॉलिंग | मुफ्त PBA लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में PBA बॉलिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"darts": {
+					"title": "MethStreams डार्ट्स | मुफ्त PDC लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में PDC डार्ट्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"chess": {
+					"title": "MethStreams शतरंज | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में चैंपियनशिप और टूर्नामेंट शतरंज देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"e-sports": {
+					"title": "MethStreams ई-स्पोर्ट्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "MethStreams पर मुफ्त HD में LoL और CS:GO ई-स्पोर्ट्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"extreme-sport": {
+					"title": "MethStreams एक्सट्रीम स्पोर्ट | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "MethStreams एक्सट्रीम स्पोर्ट पर मुफ्त HD में सर्वश्रेष्ठ एक्सट्रीम प्रतियोगिता स्ट्रीम्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"others": {
+					"title": "MethStreams अन्य | मुफ्त खेल लाइव स्ट्रीमिंग",
+					"description": "MethStreams पर मुफ्त HD में विशेष खेल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | मुफ्त लाइव खेल स्ट्रीमिंग HD",
+				"description": "WiziWig पर मुफ्त HD में लाइव खेल स्ट्रीमिंग देखें। फुटबॉल, बास्केटबॉल, टेनिस और भी बहुत कुछ बिना रजिस्ट्रेशन के। अभी शुरू करें।"
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig फुटबॉल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में फुटबॉल लाइव देखें। बिना रजिस्ट्रेशन, शीर्ष लीग और मैचों तक तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"basketball": {
+					"title": "WiziWig बास्केटबॉल | मुफ्त NBA लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में NBA बास्केटबॉल देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस और तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"tennis": {
+					"title": "WiziWig टेनिस | मुफ्त ग्रैंड स्लैम लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में ATP और WTA टेनिस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"ice-hockey": {
+					"title": "WiziWig आइस हॉकी | मुफ्त NHL लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में NHL आइस हॉकी देखें। बिना रजिस्ट्रेशन, स्मूथ स्ट्रीम्स। अभी शुरू करें।"
+				},
+				"baseball": {
+					"title": "WiziWig बेसबॉल | मुफ्त MLB लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में MLB बेसबॉल देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"rugby-union": {
+					"title": "WiziWig रग्बी यूनियन | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में रग्बी यूनियन लाइव देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस। अभी शुरू करें।"
+				},
+				"rugby-league": {
+					"title": "WiziWig रग्बी लीग | मुफ्त NRL लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में NRL और सुपर लीग रग्बी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"rugby-sevens": {
+					"title": "WiziWig रग्बी सेवंस | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "WiziWig रग्बी सेवंस पर मुफ्त HD में टूर्नामेंट स्ट्रीम्स देखें बिना रजिस्ट्रेशन के। तेज़ रग्बी एक्शन लाइव देखें।"
+				},
+				"cricket": {
+					"title": "WiziWig क्रिकेट | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में T20, ODI और टेस्ट क्रिकेट देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"american-football": {
+					"title": "WiziWig अमेरिकी फुटबॉल | मुफ्त NFL लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में NFL और कॉलेज फुटबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"volleyball": {
+					"title": "WiziWig वॉलीबॉल | मुफ्त FIVB लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में FIVB और लीग वॉलीबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"beach-volleyball": {
+					"title": "WiziWig बीच वॉलीबॉल | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में बीच वॉलीबॉल देखें। बिना रजिस्ट्रेशन, स्मूथ एक्सेस। अभी शुरू करें।"
+				},
+				"handball": {
+					"title": "WiziWig हैंडबॉल | मुफ्त EHF लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में EHF और लीग हैंडबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"beach-handball": {
+					"title": "WiziWig बीच हैंडबॉल | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में बीच हैंडबॉल देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"beach-soccer": {
+					"title": "WiziWig बीच सॉकर | मुफ्त FIFA लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में FIFA बीच सॉकर देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"aussie-rules": {
+					"title": "WiziWig ऑस्ट्रेलियाई फुटबॉल | मुफ्त AFL लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में AFL देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"futsal": {
+					"title": "WiziWig फुटसल | मुफ्त UEFA लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में UEFA और FIFA फुटसल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"badminton": {
+					"title": "WiziWig बैडमिंटन | मुफ्त BWF लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में BWF बैडमिंटन देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"netball": {
+					"title": "WiziWig नेटबॉल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में लीग नेटबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"floorball": {
+					"title": "WiziWig फ्लोरबॉल | मुफ्त IFF लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में IFF फ्लोरबॉल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"combat-sport": {
+					"title": "WiziWig कॉम्बैट स्पोर्ट | मुफ्त UFC लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में UFC और बॉक्सिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"boxing": {
+					"title": "WiziWig मुक्केबाज़ी | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में चैंपियनशिप बॉक्सिंग देखें। बिना रजिस्ट्रेशन, तेज़ एक्शन। अभी शुरू करें।"
+				},
+				"mma": {
+					"title": "WiziWig MMA | मुफ्त UFC लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में UFC और Bellator MMA देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"snooker": {
+					"title": "WiziWig स्नूकर | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में टूर्नामेंट स्नूकर देखें। बिना रजिस्ट्रेशन, स्मूथ स्ट्रीम्स। अभी शुरू करें।"
+				},
+				"billiard": {
+					"title": "WiziWig बिलियर्ड्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में चैंपियनशिप बिलियर्ड्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"table-tennis": {
+					"title": "WiziWig टेबल टेनिस | मुफ्त ITTF लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में ITTF टेबल टेनिस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"padel-tennis": {
+					"title": "WiziWig पैडल | मुफ्त WPT लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में World Padel Tour देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"squash": {
+					"title": "WiziWig स्क्वैश | मुफ्त PSA लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में PSA स्क्वैश देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"motorsport": {
+					"title": "WiziWig मोटरस्पोर्ट | मुफ्त F1 लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में F1 और MotoGP देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"racing": {
+					"title": "WiziWig रेसिंग | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में मोटरस्पोर्ट रेसिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"cycling": {
+					"title": "WiziWig साइकिलिंग | मुफ्त टूर लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में टूर डी फ्रांस और जिरो देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"equestrianism": {
+					"title": "WiziWig घुड़सवारी | मुफ्त FEI लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में FEI घुड़सवारी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"golf": {
+					"title": "WiziWig गोल्फ | मुफ्त PGA लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में PGA और मास्टर्स गोल्फ देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"field-hockey": {
+					"title": "WiziWig हॉकी | मुफ्त FIH लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में FIH हॉकी देखें। बिना रजिस्ट्रेशन, तेज़ पहुंच। अभी शुरू करें।"
+				},
+				"lacrosse": {
+					"title": "WiziWig लैक्रोस | मुफ्त PLL लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में PLL और NLL लैक्रोस देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"athletics": {
+					"title": "WiziWig एथलेटिक्स | मुफ्त Diamond League लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में Diamond League और चैंपियनशिप एथलेटिक्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"gymnastics": {
+					"title": "WiziWig जिमनास्टिक्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में चैंपियनशिप जिमनास्टिक्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"weightlifting": {
+					"title": "WiziWig भारोत्तोलन | मुफ्त IWF लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में IWF भारोत्तोलन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"climbing": {
+					"title": "WiziWig क्लाइम्बिंग | मुफ्त IFSC लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में IFSC क्लाइम्बिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"winter-sport": {
+					"title": "WiziWig शीतकालीन खेल | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में स्की और स्केटिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"bandy": {
+					"title": "WiziWig बैंडी | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में चैंपियनशिप बैंडी देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"curling": {
+					"title": "WiziWig कर्लिंग | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में चैंपियनशिप कर्लिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"triathlon": {
+					"title": "WiziWig ट्रायथलॉन | मुफ्त Ironman लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में Ironman और ITU ट्रायथलॉन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"water-sports": {
+					"title": "WiziWig जल क्रीड़ा | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में तैराकी और डाइविंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"water-polo": {
+					"title": "WiziWig वाटर पोलो | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में चैंपियनशिप वाटर पोलो देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"sailing": {
+					"title": "WiziWig नौकायन | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में रेगाटा नौकायन देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"bowling": {
+					"title": "WiziWig बॉलिंग | मुफ्त PBA लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में PBA बॉलिंग देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"darts": {
+					"title": "WiziWig डार्ट्स | मुफ्त PDC लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में PDC डार्ट्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"chess": {
+					"title": "WiziWig शतरंज | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में चैंपियनशिप और टूर्नामेंट शतरंज देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"e-sports": {
+					"title": "WiziWig ई-स्पोर्ट्स | मुफ्त लाइव स्ट्रीमिंग HD",
+					"description": "WiziWig पर मुफ्त HD में LoL और CS:GO ई-स्पोर्ट्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"extreme-sport": {
+					"title": "WiziWig एक्सट्रीम स्पोर्ट | मुफ्त लाइव स्ट्रीमिंग",
+					"description": "WiziWig एक्सट्रीम स्पोर्ट पर मुफ्त HD में सर्वश्रेष्ठ एक्सट्रीम प्रतियोगिता स्ट्रीम्स देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				},
+				"others": {
+					"title": "WiziWig अन्य | मुफ्त खेल लाइव स्ट्रीमिंग",
+					"description": "WiziWig पर मुफ्त HD में विशेष खेल देखें। बिना रजिस्ट्रेशन। अभी शुरू करें।"
+				}
+			}
+		}
 	}
 }

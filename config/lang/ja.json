@@ -3,6 +3,7 @@
 		"code": "ja",
 		"name": "日本語",
 		"flag": "JP",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -52,6 +53,7 @@
 		"Baseball": "野球",
 		"Rugby Union": "ラグビーユニオン",
 		"Rugby League": "ラグビーリーグ",
+		"Rugby Sevens": "ラグビーセブンズ",
 		"Cricket": "クリケット",
 		"American Football": "アメリカンフットボール",
 		"Volleyball": "バレーボール",
@@ -64,8 +66,7 @@
 		"Badminton": "バドミントン",
 		"Netball": "ネットボール",
 		"Floorball": "フロアボール",
-		"Combat": "格闘技",
-		"combat sport": "格闘スポーツ",
+		"Combat Sport": "格闘スポーツ",
 		"Boxing": "ボクシング",
 		"MMA": "総合格闘技",
 		"Snooker": "スヌーカー",
@@ -84,7 +85,7 @@
 		"Gymnastics": "体操",
 		"Weightlifting": "重量挙げ",
 		"Climbing": "クライミング",
-		"winter sport": "ウィンタースポーツ",
+		"Winter Sport": "ウィンタースポーツ",
 		"Bandy": "バンディ",
 		"Curling": "カーリング",
 		"Triathlon": "トライアスロン",
@@ -95,6 +96,1305 @@
 		"Darts": "ダーツ",
 		"Chess": "チェス",
 		"E-sports": "eスポーツ",
+		"Extreme Sport": "エクストリームスポーツ",
 		"Others": "その他"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | スポーツライブ配信 無料HD",
+				"description": "SportLemonで無料HDスポーツライブ配信を視聴。毎日更新される試合情報。登録不要。今すぐ視聴開始。"
+			},
+			"sports": {
+				"football": {
+					"title": "サッカーライブ配信 無料 | SportLemon",
+					"description": "SportLemonで世界中のサッカーライブ配信を無料HD視聴。全リーグ対応。登録不要。今すぐ視聴。"
+				},
+				"basketball": {
+					"title": "バスケットボールライブ配信 無料 | SportLemon",
+					"description": "SportLemonでNBAと世界のバスケットボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"tennis": {
+					"title": "テニスライブ配信 無料 | SportLemon",
+					"description": "SportLemonでATP・WTAテニス試合を無料HD配信。グランドスラム対応。登録不要。今すぐ視聴。"
+				},
+				"ice-hockey": {
+					"title": "アイスホッケーライブ配信 | SportLemon",
+					"description": "SportLemonでNHLと世界のアイスホッケーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"baseball": {
+					"title": "野球ライブ配信 無料 | SportLemon",
+					"description": "SportLemonでMLBと国際野球を無料HD配信。登録不要。今すぐ試合を視聴。"
+				},
+				"rugby-union": {
+					"title": "ラグビーユニオンライブ配信 | SportLemon",
+					"description": "SportLemonでラグビーユニオンを無料HD配信。シックスネーションズ、ワールドカップ対応。登録不要。"
+				},
+				"rugby-league": {
+					"title": "ラグビーリーグライブ配信 | SportLemon",
+					"description": "SportLemonでNRL・スーパーリーグを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"rugby-sevens": {
+					"title": "ラグビーセブンズライブ配信 | SportLemon",
+					"description": "SportLemonでセブンズトーナメントを無料HD配信。登録不要。ライブアクションを今すぐ視聴。"
+				},
+				"cricket": {
+					"title": "クリケットライブ配信 無料 | SportLemon",
+					"description": "SportLemonでT20・ODI・テストマッチを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"american-football": {
+					"title": "アメリカンフットボールライブ配信 | SportLemon",
+					"description": "SportLemonでNFL・NCAAを無料HD配信。登録不要。今すぐ試合を視聴。"
+				},
+				"volleyball": {
+					"title": "バレーボールライブ配信 無料 | SportLemon",
+					"description": "SportLemonで世界のバレーボールを無料HD配信。国際大会対応。登録不要。今すぐ視聴。"
+				},
+				"beach-volleyball": {
+					"title": "ビーチバレーライブ配信 | SportLemon",
+					"description": "SportLemonでFIVBビーチバレーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"handball": {
+					"title": "ハンドボールライブ配信 無料 | SportLemon",
+					"description": "SportLemonでヨーロッパ・世界のハンドボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"beach-handball": {
+					"title": "ビーチハンドボールライブ配信 | SportLemon",
+					"description": "SportLemonでビーチハンドボール国際大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"beach-soccer": {
+					"title": "ビーチサッカーライブ配信 | SportLemon",
+					"description": "SportLemonでビーチサッカーを無料HD配信。登録不要。高画質で視聴。"
+				},
+				"aussie-rules": {
+					"title": "オージーフットボールライブ配信 | SportLemon",
+					"description": "SportLemonでAFLオージーフットボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"futsal": {
+					"title": "フットサルライブ配信 無料 | SportLemon",
+					"description": "SportLemonで世界のフットサルを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"badminton": {
+					"title": "バドミントンライブ配信 無料 | SportLemon",
+					"description": "SportLemonでBWFバドミントン大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"netball": {
+					"title": "ネットボールライブ配信 | SportLemon",
+					"description": "SportLemonでトップリーグのネットボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"floorball": {
+					"title": "フロアボールライブ配信 | SportLemon",
+					"description": "SportLemonでトップリーグのフロアボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"combat-sport": {
+					"title": "格闘スポーツライブ配信 | SportLemon",
+					"description": "SportLemonで格闘スポーツビッグイベントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"boxing": {
+					"title": "ボクシングライブ配信 無料 | SportLemon",
+					"description": "SportLemonで世界のボクシングビッグマッチを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"mma": {
+					"title": "総合格闘技ライブ配信 無料 | SportLemon",
+					"description": "SportLemonでトップMMAプロモーションを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"snooker": {
+					"title": "スヌーカーライブ配信 無料 | SportLemon",
+					"description": "SportLemonでプロスヌーカートーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"billiard": {
+					"title": "ビリヤードライブ配信 | SportLemon",
+					"description": "SportLemonでビリヤード試合・トーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"table-tennis": {
+					"title": "卓球ライブ配信 無料 | SportLemon",
+					"description": "SportLemonでITTF卓球試合を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"padel-tennis": {
+					"title": "パデルライブ配信 無料 | SportLemon",
+					"description": "SportLemonでメジャーパデルツアーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"squash": {
+					"title": "スカッシュライブ配信 | SportLemon",
+					"description": "SportLemonでPSAスカッシュ試合を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"motorsport": {
+					"title": "モータースポーツライブ配信 無料 | SportLemon",
+					"description": "SportLemonでメジャーシリーズのレースを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"racing": {
+					"title": "レースライブ配信 無料 | SportLemon",
+					"description": "SportLemonでモータースポーツレースを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"cycling": {
+					"title": "サイクリングライブ配信 無料 | SportLemon",
+					"description": "SportLemonでグランツールと主要レースを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"equestrianism": {
+					"title": "馬術ライブ配信 | SportLemon",
+					"description": "SportLemonで国際馬術大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"golf": {
+					"title": "ゴルフライブ配信 無料 | SportLemon",
+					"description": "SportLemonでPGAと世界ツアーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"field-hockey": {
+					"title": "フィールドホッケーライブ配信 | SportLemon",
+					"description": "SportLemonで国際フィールドホッケーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"lacrosse": {
+					"title": "ラクロスライブ配信 | SportLemon",
+					"description": "SportLemonでメジャーリーグラクロスを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"athletics": {
+					"title": "陸上競技ライブ配信 無料 | SportLemon",
+					"description": "SportLemonで世界陸上イベントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"gymnastics": {
+					"title": "体操ライブ配信 | SportLemon",
+					"description": "SportLemonで体操競技大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"weightlifting": {
+					"title": "重量挙げライブ配信 | SportLemon",
+					"description": "SportLemonで重量挙げ大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"climbing": {
+					"title": "クライミングライブ配信 | SportLemon",
+					"description": "SportLemonでボルダリング・リード・スピードを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"winter-sport": {
+					"title": "ウィンタースポーツライブ配信 | SportLemon",
+					"description": "SportLemonでスキー・スケートなどを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"bandy": {
+					"title": "バンディライブ配信 | SportLemon",
+					"description": "SportLemonでバンディ試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"curling": {
+					"title": "カーリングライブ配信 | SportLemon",
+					"description": "SportLemonでカーリング世界大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"triathlon": {
+					"title": "トライアスロンライブ配信 | SportLemon",
+					"description": "SportLemonで世界トライアスロンイベントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"water-sports": {
+					"title": "ウォータースポーツライブ配信 | SportLemon",
+					"description": "SportLemonでウォータースポーツイベントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"water-polo": {
+					"title": "水球ライブ配信 | SportLemon",
+					"description": "SportLemonで水球試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"sailing": {
+					"title": "セーリングライブ配信 | SportLemon",
+					"description": "SportLemonで世界のレガッタを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"bowling": {
+					"title": "ボウリングライブ配信 | SportLemon",
+					"description": "SportLemonでボウリングトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"darts": {
+					"title": "ダーツライブ配信 無料 | SportLemon",
+					"description": "SportLemonでPDCダーツトーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"chess": {
+					"title": "チェスライブ配信 | SportLemon",
+					"description": "SportLemonでエリートチェストーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"e-sports": {
+					"title": "eスポーツライブ配信 無料 | SportLemon",
+					"description": "SportLemonで世界のeスポーツトーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"extreme-sport": {
+					"title": "エクストリームスポーツライブ配信 | SportLemon",
+					"description": "SportLemonでトップエクストリーム大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"others": {
+					"title": "その他スポーツライブ配信 | SportLemon",
+					"description": "SportLemonでニッチスポーツを無料HD配信。登録不要。今すぐライブ視聴。"
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLsite | スポーツライブ配信＆最新試合",
+				"description": "EPLsiteで無料HDスポーツライブ配信を視聴。毎日更新される試合情報。登録不要。今すぐ視聴開始。"
+			},
+			"sports": {
+				"football": {
+					"title": "EPLsite サッカー | ライブ試合無料",
+					"description": "EPLsiteで世界中のサッカーライブ配信を無料HD視聴。登録不要。今すぐ視聴。"
+				},
+				"basketball": {
+					"title": "EPLsite バスケットボール | NBAライブ配信",
+					"description": "EPLsiteでNBAと世界のバスケットボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"tennis": {
+					"title": "EPLsite テニス | グランドスラムライブ配信",
+					"description": "EPLsiteでATP・WTAテニス試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"ice-hockey": {
+					"title": "EPLsite アイスホッケー | NHLライブ配信",
+					"description": "EPLsiteでNHLと世界のアイスホッケーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"baseball": {
+					"title": "EPLsite 野球 | MLBライブ配信",
+					"description": "EPLsiteでMLBと国際野球を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"rugby-union": {
+					"title": "EPLsite ラグビーユニオン | ライブ配信",
+					"description": "EPLsiteでトップリーグのラグビーユニオンを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"rugby-league": {
+					"title": "EPLsite ラグビーリーグ | ライブ配信",
+					"description": "EPLsiteでNRL・スーパーリーグを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"rugby-sevens": {
+					"title": "EPLsite ラグビーセブンズ | ライブ配信",
+					"description": "EPLsiteでセブンズトーナメントを無料HD配信。登録不要。ライブアクションを今すぐ視聴。"
+				},
+				"cricket": {
+					"title": "EPLsite クリケット | ライブ配信",
+					"description": "EPLsiteでT20・ODI・テストマッチを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"american-football": {
+					"title": "EPLsite アメリカンフットボール | NFLライブ配信",
+					"description": "EPLsiteでNFL・NCAAを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"volleyball": {
+					"title": "EPLsite バレーボール | ライブ配信",
+					"description": "EPLsiteで世界のバレーボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"beach-volleyball": {
+					"title": "EPLsite ビーチバレー | ライブ配信",
+					"description": "EPLsiteでFIVBビーチバレーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"handball": {
+					"title": "EPLsite ハンドボール | ライブ配信",
+					"description": "EPLsiteでトップリーグのハンドボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"beach-handball": {
+					"title": "EPLsite ビーチハンドボール | ライブ配信",
+					"description": "EPLsiteでビーチハンドボール国際大会を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"beach-soccer": {
+					"title": "EPLsite ビーチサッカー | ライブ配信",
+					"description": "EPLsiteでビーチサッカーを無料HD配信。登録不要。最高画質で視聴。"
+				},
+				"aussie-rules": {
+					"title": "EPLsite オージーフットボール | AFLライブ配信",
+					"description": "EPLsiteでAFLオージーフットボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"futsal": {
+					"title": "EPLsite フットサル | ライブ配信",
+					"description": "EPLsiteで世界のフットサルを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"badminton": {
+					"title": "EPLsite バドミントン | ライブ配信",
+					"description": "EPLsiteでBWFバドミントン大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"netball": {
+					"title": "EPLsite ネットボール | ライブ配信",
+					"description": "EPLsiteでトップリーグのネットボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"floorball": {
+					"title": "EPLsite フロアボール | ライブ配信",
+					"description": "EPLsiteでトップリーグのフロアボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"combat-sport": {
+					"title": "EPLsite 格闘スポーツ | ライブ配信",
+					"description": "EPLsiteで格闘スポーツビッグイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"boxing": {
+					"title": "EPLsite ボクシング | ライブ配信",
+					"description": "EPLsiteでボクシングビッグマッチを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"mma": {
+					"title": "EPLsite 総合格闘技 | ライブ配信",
+					"description": "EPLsiteでトップMMAプロモーションを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"snooker": {
+					"title": "EPLsite スヌーカー | ライブ配信",
+					"description": "EPLsiteでプロスヌーカートーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"billiard": {
+					"title": "EPLsite ビリヤード | ライブ配信",
+					"description": "EPLsiteでビリヤード試合・トーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"table-tennis": {
+					"title": "EPLsite 卓球 | ライブ配信",
+					"description": "EPLsiteでITTF卓球試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"padel-tennis": {
+					"title": "EPLsite パデル | ライブ配信",
+					"description": "EPLsiteでメジャーパデルツアーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"squash": {
+					"title": "EPLsite スカッシュ | ライブ配信",
+					"description": "EPLsiteでPSAスカッシュ試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"motorsport": {
+					"title": "EPLsite モータースポーツ | ライブ配信",
+					"description": "EPLsiteでメジャーシリーズのレースを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"racing": {
+					"title": "EPLsite レース | ライブ配信",
+					"description": "EPLsiteでモータースポーツレースを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"cycling": {
+					"title": "EPLsite サイクリング | ライブ配信",
+					"description": "EPLsiteでグランツールと主要レースを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"equestrianism": {
+					"title": "EPLsite 馬術 | ライブ配信",
+					"description": "EPLsiteで国際馬術大会を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"golf": {
+					"title": "EPLsite ゴルフ | ライブ配信",
+					"description": "EPLsiteでPGAと世界ツアーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"field-hockey": {
+					"title": "EPLsite フィールドホッケー | ライブ配信",
+					"description": "EPLsiteで国際フィールドホッケーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"lacrosse": {
+					"title": "EPLsite ラクロス | ライブ配信",
+					"description": "EPLsiteでメジャーリーグラクロスを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"athletics": {
+					"title": "EPLsite 陸上競技 | ライブ配信",
+					"description": "EPLsiteで世界陸上イベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"gymnastics": {
+					"title": "EPLsite 体操 | ライブ配信",
+					"description": "EPLsiteで体操競技大会を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"weightlifting": {
+					"title": "EPLsite 重量挙げ | ライブ配信",
+					"description": "EPLsiteで重量挙げ大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"climbing": {
+					"title": "EPLsite クライミング | ライブ配信",
+					"description": "EPLsiteでボルダリング・リード・スピードを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"winter-sport": {
+					"title": "EPLsite ウィンタースポーツ | ライブ配信",
+					"description": "EPLsiteでスキー・スケートなどを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"bandy": {
+					"title": "EPLsite バンディ | ライブ配信",
+					"description": "EPLsiteでバンディ試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"curling": {
+					"title": "EPLsite カーリング | ライブ配信",
+					"description": "EPLsiteでカーリングトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"triathlon": {
+					"title": "EPLsite トライアスロン | ライブ配信",
+					"description": "EPLsiteで世界トライアスロンイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"water-sports": {
+					"title": "EPLsite ウォータースポーツ | ライブ配信",
+					"description": "EPLsiteでウォータースポーツイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"water-polo": {
+					"title": "EPLsite 水球 | ライブ配信",
+					"description": "EPLsiteで水球試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"sailing": {
+					"title": "EPLsite セーリング | ライブ配信",
+					"description": "EPLsiteで世界のレガッタを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"bowling": {
+					"title": "EPLsite ボウリング | ライブ配信",
+					"description": "EPLsiteでボウリングトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"darts": {
+					"title": "EPLsite ダーツ | ライブ配信",
+					"description": "EPLsiteでPDCダーツトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"chess": {
+					"title": "EPLsite チェス | ライブ配信",
+					"description": "EPLsiteでエリートチェストーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"e-sports": {
+					"title": "EPLsite eスポーツ | ライブ配信",
+					"description": "EPLsiteでeスポーツトーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"extreme-sport": {
+					"title": "EPLsite エクストリームスポーツ | ライブ配信",
+					"description": "EPLsiteでトップエクストリーム大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"others": {
+					"title": "EPLsite その他スポーツ | ライブ配信",
+					"description": "EPLsiteでニッチスポーツを無料HD配信。登録不要。今すぐライブ視聴。"
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | 無料スポーツライブ配信HD",
+				"description": "P2P4Uで無料HDスポーツライブ配信を視聴。毎日更新される試合情報。登録不要。今すぐ視聴開始。"
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U サッカー配信 | ライブ試合無料",
+					"description": "P2P4Uで世界中のサッカーライブ配信を無料HD視聴。全リーグ対応。登録不要。今すぐ視聴。"
+				},
+				"basketball": {
+					"title": "P2P4U バスケットボール | NBAライブ無料",
+					"description": "P2P4UでNBAと世界のバスケットボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"tennis": {
+					"title": "P2P4U テニス配信 | グランドスラム無料",
+					"description": "P2P4UでATP・WTAテニス試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"ice-hockey": {
+					"title": "P2P4U アイスホッケー | NHLライブ無料",
+					"description": "P2P4UでNHLと世界のアイスホッケーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"baseball": {
+					"title": "P2P4U 野球配信 | MLBライブ無料",
+					"description": "P2P4UでMLBと国際野球を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"rugby-union": {
+					"title": "P2P4U ラグビーユニオン | ライブ配信無料",
+					"description": "P2P4Uでトップリーグのラグビーユニオンを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"rugby-league": {
+					"title": "P2P4U ラグビーリーグ | NRLライブ無料",
+					"description": "P2P4UでNRL・スーパーリーグを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"rugby-sevens": {
+					"title": "P2P4U ラグビーセブンズ | ライブ配信無料",
+					"description": "P2P4Uでセブンズトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"cricket": {
+					"title": "P2P4U クリケット配信 | T20ライブ無料",
+					"description": "P2P4UでT20・ODI・テストマッチを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"american-football": {
+					"title": "P2P4U アメリカンフットボール | NFLライブ無料",
+					"description": "P2P4UでNFL・NCAAを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"volleyball": {
+					"title": "P2P4U バレーボール | ライブ配信無料",
+					"description": "P2P4Uで世界のバレーボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"beach-volleyball": {
+					"title": "P2P4U ビーチバレー | ライブ配信無料",
+					"description": "P2P4UでFIVBビーチバレーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"handball": {
+					"title": "P2P4U ハンドボール | ライブ配信無料",
+					"description": "P2P4Uでトップリーグのハンドボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"beach-handball": {
+					"title": "P2P4U ビーチハンドボール | ライブ配信無料",
+					"description": "P2P4Uでビーチハンドボール国際大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"beach-soccer": {
+					"title": "P2P4U ビーチサッカー | ライブ配信無料",
+					"description": "P2P4Uでビーチサッカーを無料HD配信。登録不要。最高画質で視聴。"
+				},
+				"aussie-rules": {
+					"title": "P2P4U オージーフットボール | AFLライブ無料",
+					"description": "P2P4UでAFLオージーフットボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"futsal": {
+					"title": "P2P4U フットサル | ライブ配信無料",
+					"description": "P2P4Uで世界のフットサルを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"badminton": {
+					"title": "P2P4U バドミントン | ライブ配信無料",
+					"description": "P2P4UでBWFバドミントン大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"netball": {
+					"title": "P2P4U ネットボール | ライブ配信無料",
+					"description": "P2P4Uでトップリーグのネットボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"floorball": {
+					"title": "P2P4U フロアボール | ライブ配信無料",
+					"description": "P2P4Uでトップリーグのフロアボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"combat-sport": {
+					"title": "P2P4U 格闘スポーツ | ライブ配信無料",
+					"description": "P2P4Uで格闘スポーツビッグイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"boxing": {
+					"title": "P2P4U ボクシング | ライブ配信無料",
+					"description": "P2P4Uでボクシングビッグマッチを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"mma": {
+					"title": "P2P4U 総合格闘技 | MMAライブ無料",
+					"description": "P2P4UでトップMMAプロモーションを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"snooker": {
+					"title": "P2P4U スヌーカー | ライブ配信無料",
+					"description": "P2P4Uでプロスヌーカートーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"billiard": {
+					"title": "P2P4U ビリヤード | ライブ配信無料",
+					"description": "P2P4Uでビリヤード試合・トーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"table-tennis": {
+					"title": "P2P4U 卓球 | ライブ配信無料",
+					"description": "P2P4UでITTF卓球試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"padel-tennis": {
+					"title": "P2P4U パデル | ライブ配信無料",
+					"description": "P2P4Uでメジャーパデルツアーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"squash": {
+					"title": "P2P4U スカッシュ | ライブ配信無料",
+					"description": "P2P4UでPSAスカッシュ試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"motorsport": {
+					"title": "P2P4U モータースポーツ | ライブ配信無料",
+					"description": "P2P4Uでメジャーシリーズのレースを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"racing": {
+					"title": "P2P4U レース | ライブ配信無料",
+					"description": "P2P4Uでモータースポーツレースを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"cycling": {
+					"title": "P2P4U サイクリング | ライブ配信無料",
+					"description": "P2P4Uでグランツールと主要レースを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"equestrianism": {
+					"title": "P2P4U 馬術 | ライブ配信無料",
+					"description": "P2P4Uで国際馬術大会を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"golf": {
+					"title": "P2P4U ゴルフ | PGAライブ無料",
+					"description": "P2P4UでPGAと世界ツアーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"field-hockey": {
+					"title": "P2P4U フィールドホッケー | ライブ配信無料",
+					"description": "P2P4Uで国際フィールドホッケーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"lacrosse": {
+					"title": "P2P4U ラクロス | ライブ配信無料",
+					"description": "P2P4Uでメジャーリーグラクロスを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"athletics": {
+					"title": "P2P4U 陸上競技 | ライブ配信無料",
+					"description": "P2P4Uで世界陸上イベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"gymnastics": {
+					"title": "P2P4U 体操 | ライブ配信無料",
+					"description": "P2P4Uで体操競技大会を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"weightlifting": {
+					"title": "P2P4U 重量挙げ | ライブ配信無料",
+					"description": "P2P4Uで重量挙げ大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"climbing": {
+					"title": "P2P4U クライミング | ライブ配信無料",
+					"description": "P2P4Uでボルダリング・リード・スピードを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"winter-sport": {
+					"title": "P2P4U ウィンタースポーツ | ライブ配信無料",
+					"description": "P2P4Uでスキー・スケートなどを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"bandy": {
+					"title": "P2P4U バンディ | ライブ配信無料",
+					"description": "P2P4Uでバンディ試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"curling": {
+					"title": "P2P4U カーリング | ライブ配信無料",
+					"description": "P2P4Uでカーリングトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"triathlon": {
+					"title": "P2P4U トライアスロン | ライブ配信無料",
+					"description": "P2P4Uで世界トライアスロンイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"water-sports": {
+					"title": "P2P4U ウォータースポーツ | ライブ配信無料",
+					"description": "P2P4Uでウォータースポーツイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"water-polo": {
+					"title": "P2P4U 水球 | ライブ配信無料",
+					"description": "P2P4Uで水球試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"sailing": {
+					"title": "P2P4U セーリング | ライブ配信無料",
+					"description": "P2P4Uで世界のレガッタを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"bowling": {
+					"title": "P2P4U ボウリング | ライブ配信無料",
+					"description": "P2P4Uでボウリングトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"darts": {
+					"title": "P2P4U ダーツ | PDCライブ無料",
+					"description": "P2P4UでPDCダーツトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"chess": {
+					"title": "P2P4U チェス | ライブ配信無料",
+					"description": "P2P4Uでエリートチェストーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"e-sports": {
+					"title": "P2P4U eスポーツ | ライブ配信無料",
+					"description": "P2P4Uでeスポーツトーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"extreme-sport": {
+					"title": "P2P4U エクストリームスポーツ | ライブ配信無料",
+					"description": "P2P4Uでトップエクストリーム大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"others": {
+					"title": "P2P4U その他スポーツ | ライブ配信無料",
+					"description": "P2P4Uでニッチスポーツを無料HD配信。登録不要。今すぐライブ視聴。"
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | スポーツライブ配信を探す",
+				"description": "StreamHunterで無料HDスポーツライブ配信を発見。毎日更新される試合情報。登録不要。今すぐ視聴開始。"
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter サッカー | ライブ試合を探す",
+					"description": "StreamHunterで世界中のサッカーライブ配信を無料HD視聴。全リーグ対応。登録不要。今すぐ視聴。"
+				},
+				"basketball": {
+					"title": "StreamHunter バスケットボール | NBAライブ配信",
+					"description": "StreamHunterでNBAと世界のバスケットボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"tennis": {
+					"title": "StreamHunter テニス | グランドスラムライブ",
+					"description": "StreamHunterでATP・WTAテニス試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"ice-hockey": {
+					"title": "StreamHunter アイスホッケー | NHLライブ配信",
+					"description": "StreamHunterでNHLと世界のアイスホッケーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"baseball": {
+					"title": "StreamHunter 野球 | MLBライブ配信",
+					"description": "StreamHunterでMLBと国際野球を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"rugby-union": {
+					"title": "StreamHunter ラグビーユニオン | ライブ配信",
+					"description": "StreamHunterでトップリーグのラグビーユニオンを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"rugby-league": {
+					"title": "StreamHunter ラグビーリーグ | NRLライブ配信",
+					"description": "StreamHunterでNRL・スーパーリーグを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter ラグビーセブンズ | ライブ配信",
+					"description": "StreamHunterでセブンズトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"cricket": {
+					"title": "StreamHunter クリケット | T20ライブ配信",
+					"description": "StreamHunterでT20・ODI・テストマッチを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"american-football": {
+					"title": "StreamHunter アメリカンフットボール | NFLライブ",
+					"description": "StreamHunterでNFL・NCAAを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"volleyball": {
+					"title": "StreamHunter バレーボール | ライブ配信",
+					"description": "StreamHunterで世界のバレーボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter ビーチバレー | ライブ配信",
+					"description": "StreamHunterでFIVBビーチバレーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"handball": {
+					"title": "StreamHunter ハンドボール | ライブ配信",
+					"description": "StreamHunterでトップリーグのハンドボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"beach-handball": {
+					"title": "StreamHunter ビーチハンドボール | ライブ配信",
+					"description": "StreamHunterでビーチハンドボール国際大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"beach-soccer": {
+					"title": "StreamHunter ビーチサッカー | ライブ配信",
+					"description": "StreamHunterでビーチサッカーを無料HD配信。登録不要。最高画質で視聴。"
+				},
+				"aussie-rules": {
+					"title": "StreamHunter オージーフットボール | AFLライブ",
+					"description": "StreamHunterでAFLオージーフットボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"futsal": {
+					"title": "StreamHunter フットサル | ライブ配信",
+					"description": "StreamHunterで世界のフットサルを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"badminton": {
+					"title": "StreamHunter バドミントン | BWFライブ配信",
+					"description": "StreamHunterでBWFバドミントン大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"netball": {
+					"title": "StreamHunter ネットボール | ライブ配信",
+					"description": "StreamHunterでトップリーグのネットボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"floorball": {
+					"title": "StreamHunter フロアボール | ライブ配信",
+					"description": "StreamHunterでトップリーグのフロアボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"combat-sport": {
+					"title": "StreamHunter 格闘スポーツ | ライブ配信",
+					"description": "StreamHunterで格闘スポーツビッグイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"boxing": {
+					"title": "StreamHunter ボクシング | ライブ配信",
+					"description": "StreamHunterでボクシングビッグマッチを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"mma": {
+					"title": "StreamHunter 総合格闘技 | MMAライブ配信",
+					"description": "StreamHunterでトップMMAプロモーションを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"snooker": {
+					"title": "StreamHunter スヌーカー | ライブ配信",
+					"description": "StreamHunterでプロスヌーカートーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"billiard": {
+					"title": "StreamHunter ビリヤード | ライブ配信",
+					"description": "StreamHunterでビリヤード試合・トーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"table-tennis": {
+					"title": "StreamHunter 卓球 | ITTFライブ配信",
+					"description": "StreamHunterでITTF卓球試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"padel-tennis": {
+					"title": "StreamHunter パデル | ライブ配信",
+					"description": "StreamHunterでメジャーパデルツアーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"squash": {
+					"title": "StreamHunter スカッシュ | PSAライブ配信",
+					"description": "StreamHunterでPSAスカッシュ試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"motorsport": {
+					"title": "StreamHunter モータースポーツ | ライブ配信",
+					"description": "StreamHunterでメジャーシリーズのレースを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"racing": {
+					"title": "StreamHunter レース | ライブ配信",
+					"description": "StreamHunterでモータースポーツレースを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"cycling": {
+					"title": "StreamHunter サイクリング | ツールライブ配信",
+					"description": "StreamHunterでグランツールと主要レースを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"equestrianism": {
+					"title": "StreamHunter 馬術 | ライブ配信",
+					"description": "StreamHunterで国際馬術大会を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"golf": {
+					"title": "StreamHunter ゴルフ | PGAライブ配信",
+					"description": "StreamHunterでPGAと世界ツアーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"field-hockey": {
+					"title": "StreamHunter フィールドホッケー | ライブ配信",
+					"description": "StreamHunterで国際フィールドホッケーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"lacrosse": {
+					"title": "StreamHunter ラクロス | ライブ配信",
+					"description": "StreamHunterでメジャーリーグラクロスを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"athletics": {
+					"title": "StreamHunter 陸上競技 | ライブ配信",
+					"description": "StreamHunterで世界陸上イベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"gymnastics": {
+					"title": "StreamHunter 体操 | ライブ配信",
+					"description": "StreamHunterで体操競技大会を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"weightlifting": {
+					"title": "StreamHunter 重量挙げ | ライブ配信",
+					"description": "StreamHunterで重量挙げ大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"climbing": {
+					"title": "StreamHunter クライミング | ライブ配信",
+					"description": "StreamHunterでボルダリング・リード・スピードを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"winter-sport": {
+					"title": "StreamHunter ウィンタースポーツ | ライブ配信",
+					"description": "StreamHunterでスキー・スケートなどを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"bandy": {
+					"title": "StreamHunter バンディ | ライブ配信",
+					"description": "StreamHunterでバンディ試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"curling": {
+					"title": "StreamHunter カーリング | ライブ配信",
+					"description": "StreamHunterでカーリングトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"triathlon": {
+					"title": "StreamHunter トライアスロン | ライブ配信",
+					"description": "StreamHunterで世界トライアスロンイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"water-sports": {
+					"title": "StreamHunter ウォータースポーツ | ライブ配信",
+					"description": "StreamHunterでウォータースポーツイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"water-polo": {
+					"title": "StreamHunter 水球 | ライブ配信",
+					"description": "StreamHunterで水球試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"sailing": {
+					"title": "StreamHunter セーリング | ライブ配信",
+					"description": "StreamHunterで世界のレガッタを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"bowling": {
+					"title": "StreamHunter ボウリング | ライブ配信",
+					"description": "StreamHunterでボウリングトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"darts": {
+					"title": "StreamHunter ダーツ | PDCライブ配信",
+					"description": "StreamHunterでPDCダーツトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"chess": {
+					"title": "StreamHunter チェス | ライブ配信",
+					"description": "StreamHunterでエリートチェストーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"e-sports": {
+					"title": "StreamHunter eスポーツ | ライブ配信",
+					"description": "StreamHunterでeスポーツトーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"extreme-sport": {
+					"title": "StreamHunter エクストリームスポーツ | ライブ配信",
+					"description": "StreamHunterでトップエクストリーム大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"others": {
+					"title": "StreamHunter その他スポーツ | ライブ配信",
+					"description": "StreamHunterでニッチスポーツを無料HD配信。登録不要。今すぐライブ視聴。"
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | 無料HDスポーツライブ配信",
+				"description": "MethStreamsで無料HDスポーツライブ配信を視聴。毎日更新される試合情報。登録不要。今すぐ視聴開始。"
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams サッカー | ライブ試合無料HD",
+					"description": "MethStreamsで世界中のサッカーライブ配信を無料HD視聴。全リーグ対応。登録不要。今すぐ視聴。"
+				},
+				"basketball": {
+					"title": "MethStreams バスケットボール | NBAライブ無料",
+					"description": "MethStreamsでNBAと世界のバスケットボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"tennis": {
+					"title": "MethStreams テニス | グランドスラム無料配信",
+					"description": "MethStreamsでATP・WTAテニス試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"ice-hockey": {
+					"title": "MethStreams アイスホッケー | NHLライブ無料",
+					"description": "MethStreamsでNHLと世界のアイスホッケーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"baseball": {
+					"title": "MethStreams 野球 | MLBライブ無料配信",
+					"description": "MethStreamsでMLBと国際野球を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"rugby-union": {
+					"title": "MethStreams ラグビーユニオン | ライブ無料",
+					"description": "MethStreamsでトップリーグのラグビーユニオンを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"rugby-league": {
+					"title": "MethStreams ラグビーリーグ | NRLライブ無料",
+					"description": "MethStreamsでNRL・スーパーリーグを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"rugby-sevens": {
+					"title": "MethStreams ラグビーセブンズ | ライブ無料",
+					"description": "MethStreamsでセブンズトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"cricket": {
+					"title": "MethStreams クリケット | T20ライブ無料",
+					"description": "MethStreamsでT20・ODI・テストマッチを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"american-football": {
+					"title": "MethStreams アメリカンフットボール | NFLライブ無料",
+					"description": "MethStreamsでNFL・NCAAを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"volleyball": {
+					"title": "MethStreams バレーボール | ライブ無料配信",
+					"description": "MethStreamsで世界のバレーボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"beach-volleyball": {
+					"title": "MethStreams ビーチバレー | ライブ無料",
+					"description": "MethStreamsでFIVBビーチバレーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"handball": {
+					"title": "MethStreams ハンドボール | ライブ無料配信",
+					"description": "MethStreamsでトップリーグのハンドボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"beach-handball": {
+					"title": "MethStreams ビーチハンドボール | ライブ無料",
+					"description": "MethStreamsでビーチハンドボール国際大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"beach-soccer": {
+					"title": "MethStreams ビーチサッカー | ライブ無料",
+					"description": "MethStreamsでビーチサッカーを無料HD配信。登録不要。最高画質で視聴。"
+				},
+				"aussie-rules": {
+					"title": "MethStreams オージーフットボール | AFLライブ無料",
+					"description": "MethStreamsでAFLオージーフットボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"futsal": {
+					"title": "MethStreams フットサル | ライブ無料配信",
+					"description": "MethStreamsで世界のフットサルを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"badminton": {
+					"title": "MethStreams バドミントン | BWFライブ無料",
+					"description": "MethStreamsでBWFバドミントン大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"netball": {
+					"title": "MethStreams ネットボール | ライブ無料配信",
+					"description": "MethStreamsでトップリーグのネットボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"floorball": {
+					"title": "MethStreams フロアボール | ライブ無料",
+					"description": "MethStreamsでトップリーグのフロアボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"combat-sport": {
+					"title": "MethStreams 格闘スポーツ | ライブ無料配信",
+					"description": "MethStreamsで格闘スポーツビッグイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"boxing": {
+					"title": "MethStreams ボクシング | ライブ無料配信",
+					"description": "MethStreamsでボクシングビッグマッチを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"mma": {
+					"title": "MethStreams 総合格闘技 | MMAライブ無料",
+					"description": "MethStreamsでトップMMAプロモーションを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"snooker": {
+					"title": "MethStreams スヌーカー | ライブ無料配信",
+					"description": "MethStreamsでプロスヌーカートーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"billiard": {
+					"title": "MethStreams ビリヤード | ライブ無料",
+					"description": "MethStreamsでビリヤード試合・トーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"table-tennis": {
+					"title": "MethStreams 卓球 | ITTFライブ無料",
+					"description": "MethStreamsでITTF卓球試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"padel-tennis": {
+					"title": "MethStreams パデル | ライブ無料配信",
+					"description": "MethStreamsでメジャーパデルツアーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"squash": {
+					"title": "MethStreams スカッシュ | PSAライブ無料",
+					"description": "MethStreamsでPSAスカッシュ試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"motorsport": {
+					"title": "MethStreams モータースポーツ | ライブ無料配信",
+					"description": "MethStreamsでメジャーシリーズのレースを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"racing": {
+					"title": "MethStreams レース | ライブ無料配信",
+					"description": "MethStreamsでモータースポーツレースを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"cycling": {
+					"title": "MethStreams サイクリング | ツールライブ無料",
+					"description": "MethStreamsでグランツールと主要レースを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"equestrianism": {
+					"title": "MethStreams 馬術 | ライブ無料配信",
+					"description": "MethStreamsで国際馬術大会を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"golf": {
+					"title": "MethStreams ゴルフ | PGAライブ無料",
+					"description": "MethStreamsでPGAと世界ツアーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"field-hockey": {
+					"title": "MethStreams フィールドホッケー | ライブ無料",
+					"description": "MethStreamsで国際フィールドホッケーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"lacrosse": {
+					"title": "MethStreams ラクロス | ライブ無料配信",
+					"description": "MethStreamsでメジャーリーグラクロスを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"athletics": {
+					"title": "MethStreams 陸上競技 | ライブ無料配信",
+					"description": "MethStreamsで世界陸上イベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"gymnastics": {
+					"title": "MethStreams 体操 | ライブ無料配信",
+					"description": "MethStreamsで体操競技大会を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"weightlifting": {
+					"title": "MethStreams 重量挙げ | ライブ無料",
+					"description": "MethStreamsで重量挙げ大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"climbing": {
+					"title": "MethStreams クライミング | ライブ無料配信",
+					"description": "MethStreamsでボルダリング・リード・スピードを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"winter-sport": {
+					"title": "MethStreams ウィンタースポーツ | ライブ無料",
+					"description": "MethStreamsでスキー・スケートなどを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"bandy": {
+					"title": "MethStreams バンディ | ライブ無料配信",
+					"description": "MethStreamsでバンディ試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"curling": {
+					"title": "MethStreams カーリング | ライブ無料配信",
+					"description": "MethStreamsでカーリングトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"triathlon": {
+					"title": "MethStreams トライアスロン | ライブ無料",
+					"description": "MethStreamsで世界トライアスロンイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"water-sports": {
+					"title": "MethStreams ウォータースポーツ | ライブ無料",
+					"description": "MethStreamsでウォータースポーツイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"water-polo": {
+					"title": "MethStreams 水球 | ライブ無料配信",
+					"description": "MethStreamsで水球試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"sailing": {
+					"title": "MethStreams セーリング | ライブ無料配信",
+					"description": "MethStreamsで世界のレガッタを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"bowling": {
+					"title": "MethStreams ボウリング | ライブ無料配信",
+					"description": "MethStreamsでボウリングトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"darts": {
+					"title": "MethStreams ダーツ | PDCライブ無料",
+					"description": "MethStreamsでPDCダーツトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"chess": {
+					"title": "MethStreams チェス | ライブ無料配信",
+					"description": "MethStreamsでエリートチェストーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"e-sports": {
+					"title": "MethStreams eスポーツ | ライブ無料配信",
+					"description": "MethStreamsでeスポーツトーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"extreme-sport": {
+					"title": "MethStreams エクストリームスポーツ | ライブ無料",
+					"description": "MethStreamsでトップエクストリーム大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"others": {
+					"title": "MethStreams その他スポーツ | ライブ無料配信",
+					"description": "MethStreamsでニッチスポーツを無料HD配信。登録不要。今すぐライブ視聴。"
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | スポーツライブ配信無料HD視聴",
+				"description": "WiziWigで無料HDスポーツライブ配信を視聴。毎日更新される試合情報。登録不要。今すぐ視聴開始。"
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig サッカー | 無料ライブ試合HD",
+					"description": "WiziWigで世界中のサッカーライブ配信を無料HD視聴。全リーグ対応。登録不要。今すぐ視聴。"
+				},
+				"basketball": {
+					"title": "WiziWig バスケットボール | NBA無料ライブ",
+					"description": "WiziWigでNBAと世界のバスケットボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"tennis": {
+					"title": "WiziWig テニス | グランドスラム無料ライブ",
+					"description": "WiziWigでATP・WTAテニス試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"ice-hockey": {
+					"title": "WiziWig アイスホッケー | NHL無料ライブ",
+					"description": "WiziWigでNHLと世界のアイスホッケーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"baseball": {
+					"title": "WiziWig 野球 | MLB無料ライブ配信",
+					"description": "WiziWigでMLBと国際野球を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"rugby-union": {
+					"title": "WiziWig ラグビーユニオン | 無料ライブ配信",
+					"description": "WiziWigでトップリーグのラグビーユニオンを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"rugby-league": {
+					"title": "WiziWig ラグビーリーグ | NRL無料ライブ",
+					"description": "WiziWigでNRL・スーパーリーグを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"rugby-sevens": {
+					"title": "WiziWig ラグビーセブンズ | 無料ライブ配信",
+					"description": "WiziWigでセブンズトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"cricket": {
+					"title": "WiziWig クリケット | T20無料ライブ配信",
+					"description": "WiziWigでT20・ODI・テストマッチを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"american-football": {
+					"title": "WiziWig アメリカンフットボール | NFL無料ライブ",
+					"description": "WiziWigでNFL・NCAAを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"volleyball": {
+					"title": "WiziWig バレーボール | 無料ライブ配信",
+					"description": "WiziWigで世界のバレーボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"beach-volleyball": {
+					"title": "WiziWig ビーチバレー | 無料ライブ配信",
+					"description": "WiziWigでFIVBビーチバレーを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"handball": {
+					"title": "WiziWig ハンドボール | 無料ライブ配信",
+					"description": "WiziWigでトップリーグのハンドボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"beach-handball": {
+					"title": "WiziWig ビーチハンドボール | 無料ライブ",
+					"description": "WiziWigでビーチハンドボール国際大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"beach-soccer": {
+					"title": "WiziWig ビーチサッカー | 無料ライブ配信",
+					"description": "WiziWigでビーチサッカーを無料HD配信。登録不要。最高画質で視聴。"
+				},
+				"aussie-rules": {
+					"title": "WiziWig オージーフットボール | AFL無料ライブ",
+					"description": "WiziWigでAFLオージーフットボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"futsal": {
+					"title": "WiziWig フットサル | 無料ライブ配信",
+					"description": "WiziWigで世界のフットサルを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"badminton": {
+					"title": "WiziWig バドミントン | BWF無料ライブ",
+					"description": "WiziWigでBWFバドミントン大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"netball": {
+					"title": "WiziWig ネットボール | 無料ライブ配信",
+					"description": "WiziWigでトップリーグのネットボールを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"floorball": {
+					"title": "WiziWig フロアボール | 無料ライブ配信",
+					"description": "WiziWigでトップリーグのフロアボールを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"combat-sport": {
+					"title": "WiziWig 格闘スポーツ | 無料ライブ配信",
+					"description": "WiziWigで格闘スポーツビッグイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"boxing": {
+					"title": "WiziWig ボクシング | 無料ライブ配信",
+					"description": "WiziWigでボクシングビッグマッチを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"mma": {
+					"title": "WiziWig 総合格闘技 | MMA無料ライブ",
+					"description": "WiziWigでトップMMAプロモーションを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"snooker": {
+					"title": "WiziWig スヌーカー | 無料ライブ配信",
+					"description": "WiziWigでプロスヌーカートーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"billiard": {
+					"title": "WiziWig ビリヤード | 無料ライブ配信",
+					"description": "WiziWigでビリヤード試合・トーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"table-tennis": {
+					"title": "WiziWig 卓球 | ITTF無料ライブ",
+					"description": "WiziWigでITTF卓球試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"padel-tennis": {
+					"title": "WiziWig パデル | 無料ライブ配信",
+					"description": "WiziWigでメジャーパデルツアーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"squash": {
+					"title": "WiziWig スカッシュ | PSA無料ライブ",
+					"description": "WiziWigでPSAスカッシュ試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"motorsport": {
+					"title": "WiziWig モータースポーツ | 無料ライブ配信",
+					"description": "WiziWigでメジャーシリーズのレースを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"racing": {
+					"title": "WiziWig レース | 無料ライブ配信",
+					"description": "WiziWigでモータースポーツレースを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"cycling": {
+					"title": "WiziWig サイクリング | ツール無料ライブ",
+					"description": "WiziWigでグランツールと主要レースを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"equestrianism": {
+					"title": "WiziWig 馬術 | 無料ライブ配信",
+					"description": "WiziWigで国際馬術大会を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"golf": {
+					"title": "WiziWig ゴルフ | PGA無料ライブ配信",
+					"description": "WiziWigでPGAと世界ツアーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"field-hockey": {
+					"title": "WiziWig フィールドホッケー | 無料ライブ",
+					"description": "WiziWigで国際フィールドホッケーを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"lacrosse": {
+					"title": "WiziWig ラクロス | 無料ライブ配信",
+					"description": "WiziWigでメジャーリーグラクロスを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"athletics": {
+					"title": "WiziWig 陸上競技 | 無料ライブ配信",
+					"description": "WiziWigで世界陸上イベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"gymnastics": {
+					"title": "WiziWig 体操 | 無料ライブ配信",
+					"description": "WiziWigで体操競技大会を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"weightlifting": {
+					"title": "WiziWig 重量挙げ | 無料ライブ配信",
+					"description": "WiziWigで重量挙げ大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"climbing": {
+					"title": "WiziWig クライミング | 無料ライブ配信",
+					"description": "WiziWigでボルダリング・リード・スピードを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"winter-sport": {
+					"title": "WiziWig ウィンタースポーツ | 無料ライブ",
+					"description": "WiziWigでスキー・スケートなどを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"bandy": {
+					"title": "WiziWig バンディ | 無料ライブ配信",
+					"description": "WiziWigでバンディ試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"curling": {
+					"title": "WiziWig カーリング | 無料ライブ配信",
+					"description": "WiziWigでカーリングトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"triathlon": {
+					"title": "WiziWig トライアスロン | 無料ライブ配信",
+					"description": "WiziWigで世界トライアスロンイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"water-sports": {
+					"title": "WiziWig ウォータースポーツ | 無料ライブ",
+					"description": "WiziWigでウォータースポーツイベントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"water-polo": {
+					"title": "WiziWig 水球 | 無料ライブ配信",
+					"description": "WiziWigで水球試合を無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"sailing": {
+					"title": "WiziWig セーリング | 無料ライブ配信",
+					"description": "WiziWigで世界のレガッタを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"bowling": {
+					"title": "WiziWig ボウリング | 無料ライブ配信",
+					"description": "WiziWigでボウリングトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"darts": {
+					"title": "WiziWig ダーツ | PDC無料ライブ",
+					"description": "WiziWigでPDCダーツトーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"chess": {
+					"title": "WiziWig チェス | 無料ライブ配信",
+					"description": "WiziWigでエリートチェストーナメントを無料HD配信。登録不要。今すぐライブ視聴。"
+				},
+				"e-sports": {
+					"title": "WiziWig eスポーツ | 無料ライブ配信",
+					"description": "WiziWigでeスポーツトーナメントを無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"extreme-sport": {
+					"title": "WiziWig エクストリームスポーツ | 無料ライブ",
+					"description": "WiziWigでトップエクストリーム大会を無料HD配信。登録不要。今すぐ視聴。"
+				},
+				"others": {
+					"title": "WiziWig その他スポーツ | 無料ライブ配信",
+					"description": "WiziWigでニッチスポーツを無料HD配信。登録不要。今すぐライブ視聴。"
+				}
+			}
+		}
 	}
 }

@@ -3,6 +3,7 @@
 		"code": "hu",
 		"name": "Magyar",
 		"flag": "HU",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -52,6 +53,7 @@
 		"Baseball": "Baseball",
 		"Rugby Union": "Rugby Union",
 		"Rugby League": "Rugby League",
+		"Rugby Sevens": "Rugby Sevens",
 		"Cricket": "Krikett",
 		"American Football": "Amerikai Foci",
 		"Volleyball": "Röplabda",
@@ -64,8 +66,7 @@
 		"Badminton": "Tollaslabda",
 		"Netball": "Netball",
 		"Floorball": "Floorball",
-		"Combat": "Küzdősport",
-		"combat sport": "Küzdősportok",
+		"Combat Sport": "Küzdősportok",
 		"Boxing": "Boksz",
 		"MMA": "MMA",
 		"Snooker": "Snooker",
@@ -84,7 +85,7 @@
 		"Gymnastics": "Torna",
 		"Weightlifting": "Súlyemelés",
 		"Climbing": "Mászás",
-		"winter sport": "Téli Sportok",
+		"Winter Sport": "Téli Sportok",
 		"Bandy": "Bandy",
 		"Curling": "Curling",
 		"Triathlon": "Triatlon",
@@ -95,6 +96,1305 @@
 		"Darts": "Darts",
 		"Chess": "Sakk",
 		"E-sports": "E-sport",
+		"Extreme Sport": "Extrém Sportok",
 		"Others": "Egyéb"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | Élő Sport és Mai Meccsek",
+				"description": "A SportLemon élő sportközvetítéseket kínál, valamint mai közelgő és aktuális meccseket minden sportágban. Ingyenes hozzáférés, regisztráció nélkül—nézd most."
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon Labdarúgás | Ingyenes Élő Foci Közvetítések HD",
+					"description": "Nézz ingyenes élő labdarúgás közvetítéseket HD-ben a SportLemon-on. Bajnokok Ligája, Premier League és több. Ne maradj le egyetlen meccsről sem!"
+				},
+				"basketball": {
+					"title": "SportLemon Kosárlabda | Ingyenes Élő NBA Közvetítések",
+					"description": "Streamelj élő kosárlabda meccseket ingyen. Nézz NBA-t, EuroLeague-et és többet HD-ben a SportLemon-on. Regisztráció nem szükséges."
+				},
+				"tennis": {
+					"title": "SportLemon Tenisz | Ingyenes Élő Tenisz Közvetítések HD",
+					"description": "Nézz ingyenes élő tenisz közvetítéseket. Grand Slam, ATP, WTA túrák HD-ben a SportLemon-on. Csatlakozz most!"
+				},
+				"ice-hockey": {
+					"title": "SportLemon Jégkorong | Ingyenes Élő NHL Közvetítések HD",
+					"description": "Ingyenes élő jégkorong közvetítések HD-ben. Nézz NHL-t, KHL-t és világbajnokságokat a SportLemon-on. Ne maradj le semmiről."
+				},
+				"baseball": {
+					"title": "SportLemon Baseball | Ingyenes Élő MLB Közvetítések",
+					"description": "Streamelj élő baseball meccseket ingyen. Nézz MLB-t, NPB-t és többet HD-ben a SportLemon-on. Egyszerű és ingyenes hozzáférés."
+				},
+				"rugby-union": {
+					"title": "SportLemon Rugby Union | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő Rugby Union közvetítéseket. Six Nations és több HD-ben a SportLemon-on. Regisztráció nélkül."
+				},
+				"rugby-league": {
+					"title": "SportLemon Rugby League | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő Rugby League közvetítéseket. NRL, Super League és több HD-ben a SportLemon-on."
+				},
+				"rugby-sevens": {
+					"title": "SportLemon Rugby Sevens | Ingyenes Élő Közvetítések",
+					"description": "A SportLemon Rugby Sevens ingyenes HD hétszemélyes rugby tornákat kínál regisztráció nélkül. Nézd az izgalmas Rugby Sevens akciókat élőben."
+				},
+				"cricket": {
+					"title": "SportLemon Krikett | Ingyenes Élő Közvetítések HD",
+					"description": "Ingyenes élő krikett közvetítések a SportLemon-on. Nézz IPL-t, T20-at, Test meccseket és többet HD-ben. Kapcsolódj be most!"
+				},
+				"american-football": {
+					"title": "SportLemon Amerikai Foci | Ingyenes Élő NFL Közvetítések",
+					"description": "Nézz ingyenes élő amerikai foci közvetítéseket. Élvezd az NFL-t, egyetemi meccseket és többet HD-ben a SportLemon-on. Előfizetés nélkül."
+				},
+				"volleyball": {
+					"title": "SportLemon Röplabda | Ingyenes Élő Közvetítések",
+					"description": "Streamelj élő röplabda meccseket ingyen. Nézz FIVB-t, CEV-et és nagy ligákat HD-ben a SportLemon-on. Légy ott!"
+				},
+				"beach-volleyball": {
+					"title": "SportLemon Strandröplabda | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő strandröplabda közvetítéseket. FIVB World Tour és nagy tornák HD-ben a SportLemon-on."
+				},
+				"handball": {
+					"title": "SportLemon Kézilabda | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő kézilabda közvetítések a SportLemon-on. Nézz EHF-et, IHF eseményeket és nagy ligákat HD-ben."
+				},
+				"beach-handball": {
+					"title": "SportLemon Strandkézilabda | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő strandkézilabda közvetítéseket. IHF World Tour és bajnokságok HD-ben a SportLemon-on."
+				},
+				"beach-soccer": {
+					"title": "SportLemon Strandfoci | Ingyenes Élő Közvetítések HD",
+					"description": "Streamelj élő strandfocit ingyen. FIFA Beach Soccer Világbajnokság és ligák HD-ben a SportLemon-on."
+				},
+				"aussie-rules": {
+					"title": "SportLemon Ausztrál Foci | Ingyenes Élő AFL Közvetítések",
+					"description": "Nézz ingyenes élő ausztrál focit. Streamelj AFL meccseket és tornákat HD-ben a SportLemon-on."
+				},
+				"futsal": {
+					"title": "SportLemon Futsal | Ingyenes Élő Közvetítések HD",
+					"description": "Ingyenes élő futsal közvetítések a SportLemon-on. Nézz UEFA Futsal-t, FIFA eseményeket és többet HD-ben."
+				},
+				"badminton": {
+					"title": "SportLemon Tollaslabda | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő tollaslabda közvetítéseket. BWF World Tour, Thomas Kupa és több HD-ben a SportLemon-on."
+				},
+				"netball": {
+					"title": "SportLemon Netball | Ingyenes Élő Közvetítések",
+					"description": "Streamelj élő netballt ingyen. Nézz Vitality Netball Superleague-et, világbajnokságokat és többet a SportLemon-on."
+				},
+				"floorball": {
+					"title": "SportLemon Floorball | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő floorball közvetítések a SportLemon-on. Nézz IFF világbajnokságokat és nagy ligákat HD-ben."
+				},
+				"combat-sport": {
+					"title": "SportLemon Küzdősportok | Ingyenes Élő Közvetítések",
+					"description": "A SportLemon Küzdősportok ingyenes HD akciót kínál a nagy meccsekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"boxing": {
+					"title": "SportLemon Boksz | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő boksz közvetítéseket HD-ben. Világbajnoki küzdelmek és nagy galák a SportLemon-on. Ne maradj le!"
+				},
+				"mma": {
+					"title": "SportLemon MMA | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő MMA közvetítések a SportLemon-on. Nézz UFC-t, Bellator-t és többet HD-ben. Regisztráció nélkül."
+				},
+				"snooker": {
+					"title": "SportLemon Snooker | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő snooker közvetítéseket. Világbajnokság és nagy tornák HD-ben a SportLemon-on."
+				},
+				"billiard": {
+					"title": "SportLemon Biliárd | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő biliárd közvetítések a SportLemon-on. Pool, carom és több HD minőségben. Nézd most!"
+				},
+				"table-tennis": {
+					"title": "SportLemon Asztalitenisz | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő asztalitenisz közvetítéseket. ITTF World Tour és tornák HD-ben a SportLemon-on."
+				},
+				"padel-tennis": {
+					"title": "SportLemon Padel | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő padel közvetítések a SportLemon-on. World Padel Tour és nagy tornák HD-ben. Nézd most!"
+				},
+				"squash": {
+					"title": "SportLemon Squash | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő squash közvetítéseket. PSA World Tour és bajnokságok HD-ben a SportLemon-on."
+				},
+				"motorsport": {
+					"title": "SportLemon Motorsport | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő motorsport közvetítések a SportLemon-on. F1, MotoGP, rally és több HD-ben. Nézd a versenyeket!"
+				},
+				"racing": {
+					"title": "SportLemon Versenyzés | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő versenyzés közvetítéseket. Autó- és motorversenyek HD-ben a SportLemon-on. Regisztráció nélkül."
+				},
+				"cycling": {
+					"title": "SportLemon Kerékpározás | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő kerékpár közvetítések a SportLemon-on. Tour de France, Giro és több HD-ben. Nézd most!"
+				},
+				"equestrianism": {
+					"title": "SportLemon Lovaglás | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő lovas közvetítéseket. Díjugratás, díjlovaglás és több HD-ben a SportLemon-on."
+				},
+				"golf": {
+					"title": "SportLemon Golf | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő golf közvetítések a SportLemon-on. PGA Tour, Masters és nagy tornák HD-ben. Nézd most!"
+				},
+				"field-hockey": {
+					"title": "SportLemon Gyeplabda | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő gyeplabda közvetítéseket. FIH Pro League és világbajnokságok HD-ben a SportLemon-on."
+				},
+				"lacrosse": {
+					"title": "SportLemon Lacrosse | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő lacrosse közvetítések a SportLemon-on. PLL, NLL és nagy ligák HD-ben. Nézd most!"
+				},
+				"athletics": {
+					"title": "SportLemon Atlétika | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő atlétika közvetítéseket. Világbajnokságok, Diamond League és több HD-ben a SportLemon-on."
+				},
+				"gymnastics": {
+					"title": "SportLemon Torna | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő torna közvetítések a SportLemon-on. Világbajnokságok és nagy versenyek HD-ben. Nézd most!"
+				},
+				"weightlifting": {
+					"title": "SportLemon Súlyemelés | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő súlyemelés közvetítéseket. Világbajnokságok és nagy versenyek HD-ben a SportLemon-on."
+				},
+				"climbing": {
+					"title": "SportLemon Mászás | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő mászás közvetítések a SportLemon-on. Boulder, lead és speed versenyek HD-ben. Nézd most!"
+				},
+				"winter-sport": {
+					"title": "SportLemon Téli Sportok | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő téli sport közvetítéseket. Síelés, korcsolya, hoki és több HD-ben a SportLemon-on."
+				},
+				"bandy": {
+					"title": "SportLemon Bandy | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő bandy közvetítések a SportLemon-on. Világbajnokságok és nagy ligák HD-ben. Nézd most!"
+				},
+				"curling": {
+					"title": "SportLemon Curling | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő curling közvetítéseket. Világbajnokságok és nagy tornák HD-ben a SportLemon-on."
+				},
+				"triathlon": {
+					"title": "SportLemon Triatlon | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő triatlon közvetítések a SportLemon-on. Ironman, World Triathlon Series HD-ben. Nézd most!"
+				},
+				"water-sports": {
+					"title": "SportLemon Vízi Sportok | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő vízi sport közvetítéseket. Úszás, búvárkodás és több HD-ben a SportLemon-on."
+				},
+				"water-polo": {
+					"title": "SportLemon Vízilabda | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő vízilabda közvetítések a SportLemon-on. Világbajnokságok és nagy ligák HD-ben. Nézd most!"
+				},
+				"sailing": {
+					"title": "SportLemon Vitorlázás | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő vitorlás közvetítéseket. America's Cup, regatták és több HD-ben a SportLemon-on."
+				},
+				"bowling": {
+					"title": "SportLemon Bowling | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő bowling közvetítések a SportLemon-on. PBA Tour és nagy tornák HD-ben. Nézd most!"
+				},
+				"darts": {
+					"title": "SportLemon Darts | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő darts közvetítéseket. PDC világbajnokság és nagy tornák HD-ben a SportLemon-on."
+				},
+				"chess": {
+					"title": "SportLemon Sakk | Ingyenes Élő Közvetítések",
+					"description": "Ingyenes élő sakk közvetítések a SportLemon-on. Világbajnokságok és nagymester tornák HD-ben. Nézd most!"
+				},
+				"e-sports": {
+					"title": "SportLemon E-sport | Ingyenes Élő Közvetítések",
+					"description": "Nézz ingyenes élő e-sport közvetítéseket. LoL, CS2, Dota 2 és több HD-ben a SportLemon-on."
+				},
+				"extreme-sport": {
+					"title": "SportLemon Extrém Sportok | Ingyenes Élő Közvetítések",
+					"description": "A SportLemon Extrém Sportok ingyenes HD akciókat kínál a legjobb extrém versenyekről. Regisztráció nélkül. Nézd az izgalmas eseményeket ma."
+				},
+				"others": {
+					"title": "SportLemon Egyéb | Élő Sport Közvetítések",
+					"description": "Ingyenes élő közvetítések egyéb sportágakból a SportLemon-on. Különleges és feltörekvő sportok HD-ben. Nézd most!"
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "Eplsite | Élő Sportok, Közelgő és Aktuális Meccsek",
+				"description": "Az Eplsite élő sportközvetítéseket kínál közelgő és aktuális meccsekkel naponta frissítve. Ingyenes HD hozzáférés, regisztráció nélkül. Kezdd el nézni most."
+			},
+			"sports": {
+				"football": {
+					"title": "Eplsite Labdarúgás | Élő Foci Közvetítések HD",
+					"description": "Az Eplsite Labdarúgás ingyenes HD foci közvetítéseket kínál világszerte. Gyors hozzáférés regisztráció nélkül. Nézd most."
+				},
+				"basketball": {
+					"title": "Eplsite Kosárlabda | Élő NBA Közvetítések",
+					"description": "Az Eplsite Kosárlabda ingyenes HD NBA és globális liga közvetítéseket kínál. Regisztráció nélkül. Nézd élőben most."
+				},
+				"tennis": {
+					"title": "Eplsite Tenisz | Élő Grand Slam Közvetítések",
+					"description": "Az Eplsite Tenisz ATP és WTA meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd a teniszt élőben."
+				},
+				"ice-hockey": {
+					"title": "Eplsite Jégkorong | Élő NHL Közvetítések",
+					"description": "Az Eplsite Jégkorong ingyenes HD NHL és világliga akciókat kínál. Regisztráció nélkül. Nézd most."
+				},
+				"baseball": {
+					"title": "Eplsite Baseball | Élő MLB Közvetítések",
+					"description": "Az Eplsite Baseball ingyenes HD MLB és nemzetközi közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"rugby-union": {
+					"title": "Eplsite Rugby Union | Élő Közvetítések",
+					"description": "Az Eplsite Rugby Union ingyenes HD közvetítéseket kínál a legjobb ligákból és válogatottaktól. Regisztráció nélkül. Nézd élőben."
+				},
+				"rugby-league": {
+					"title": "Eplsite Rugby League | Élő Közvetítések",
+					"description": "Az Eplsite Rugby League ingyenes HD NRL és Super League közvetítéseket kínál. Regisztráció nélkül. Nézd most."
+				},
+				"rugby-sevens": {
+					"title": "Eplsite Rugby Sevens | Élő Közvetítések",
+					"description": "Az Eplsite Rugby Sevens ingyenes HD hétszemélyes tornákat kínál regisztráció nélkül. Nézd az izgalmas akciókat élőben."
+				},
+				"cricket": {
+					"title": "Eplsite Krikett | Élő Közvetítések",
+					"description": "Az Eplsite Krikett HD T20, ODI és Test meccseket kínál ingyen. Regisztráció nélkül. Nézd élőben most."
+				},
+				"american-football": {
+					"title": "Eplsite Amerikai Foci | Élő NFL Közvetítések",
+					"description": "Az Eplsite Amerikai Foci ingyenes HD NFL és NCAA közvetítéseket kínál. Regisztráció nélkül. Nézd most."
+				},
+				"volleyball": {
+					"title": "Eplsite Röplabda | Élő Közvetítések",
+					"description": "Az Eplsite Röplabda ingyenes HD globális liga meccseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"beach-volleyball": {
+					"title": "Eplsite Strandröplabda | Élő Közvetítések",
+					"description": "Az Eplsite Strandröplabda FIVB és pro túrákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd most."
+				},
+				"handball": {
+					"title": "Eplsite Kézilabda | Élő Közvetítések",
+					"description": "Az Eplsite Kézilabda ingyenes HD meccseket kínál a legjobb ligákból és tornákról. Regisztráció nélkül. Nézd élőben."
+				},
+				"beach-handball": {
+					"title": "Eplsite Strandkézilabda | Élő Közvetítések",
+					"description": "Az Eplsite Strandkézilabda ingyenes HD akciókat kínál globális eseményekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"beach-soccer": {
+					"title": "Eplsite Strandfoci | Élő Közvetítések",
+					"description": "Az Eplsite Strandfoci ingyenes HD közvetítéseket kínál regisztráció nélkül. Élvezd a kiváló minőségű nézést."
+				},
+				"aussie-rules": {
+					"title": "Eplsite Ausztrál Foci | Élő AFL Közvetítések",
+					"description": "Az Eplsite Ausztrál Foci ingyenes HD AFL akciókat kínál regisztráció nélkül. Nézd most."
+				},
+				"futsal": {
+					"title": "Eplsite Futsal | Élő Közvetítések",
+					"description": "Az Eplsite Futsal ingyenes HD futsal meccseket kínál világszerte. Regisztráció nélkül. Nézd élőben."
+				},
+				"badminton": {
+					"title": "Eplsite Tollaslabda | Élő Közvetítések",
+					"description": "Az Eplsite Tollaslabda BWF tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd most."
+				},
+				"netball": {
+					"title": "Eplsite Netball | Élő Közvetítések",
+					"description": "Az Eplsite Netball ingyenes HD hozzáférést kínál a legjobb ligákhoz és tornákhoz. Regisztráció nélkül. Nézd élőben."
+				},
+				"floorball": {
+					"title": "Eplsite Floorball | Élő Közvetítések",
+					"description": "Az Eplsite Floorball ingyenes HD meccseket kínál a legjobb ligákból. Regisztráció nélkül. Nézd most."
+				},
+				"combat-sport": {
+					"title": "Eplsite Küzdősportok | Élő Közvetítések",
+					"description": "Az Eplsite Küzdősportok ingyenes HD akciókat kínál a nagy meccsekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"boxing": {
+					"title": "Eplsite Boksz | Élő Közvetítések",
+					"description": "Az Eplsite Boksz ingyenes HD közvetítéseket kínál a nagy meccsekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"mma": {
+					"title": "Eplsite MMA | Élő Közvetítések",
+					"description": "Az Eplsite MMA ingyenes HD akciókat kínál a legjobb promócióktól. Regisztráció nélkül. Nézd a harcokat élőben."
+				},
+				"snooker": {
+					"title": "Eplsite Snooker | Élő Közvetítések",
+					"description": "Az Eplsite Snooker profi tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"billiard": {
+					"title": "Eplsite Biliárd | Élő Közvetítések",
+					"description": "Az Eplsite Biliárd ingyenes HD meccseket és tornákat kínál regisztráció nélkül. Nézd most."
+				},
+				"table-tennis": {
+					"title": "Eplsite Asztalitenisz | Élő Közvetítések",
+					"description": "Az Eplsite Asztalitenisz ingyenes HD ITTF meccseket kínál. Regisztráció nélkül. Nézd élőben most."
+				},
+				"padel-tennis": {
+					"title": "Eplsite Padel | Élő Közvetítések",
+					"description": "Az Eplsite Padel ingyenes HD meccseket kínál a nagy túrákról. Regisztráció nélkül. Nézd élőben."
+				},
+				"squash": {
+					"title": "Eplsite Squash | Élő Közvetítések",
+					"description": "Az Eplsite Squash PSA meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"motorsport": {
+					"title": "Eplsite Motorsport | Élő Közvetítések",
+					"description": "Az Eplsite Motorsport ingyenes HD versenyközvetítéseket kínál a nagy sorozatokból. Regisztráció nélkül. Nézd élőben."
+				},
+				"racing": {
+					"title": "Eplsite Versenyzés | Élő Közvetítések",
+					"description": "Az Eplsite Versenyzés ingyenes HD motorsport közvetítéseket kínál regisztráció nélkül. Nézd most."
+				},
+				"cycling": {
+					"title": "Eplsite Kerékpározás | Élő Közvetítések",
+					"description": "Az Eplsite Kerékpározás nagy túrákat és eseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"equestrianism": {
+					"title": "Eplsite Lovaglás | Élő Közvetítések",
+					"description": "Az Eplsite Lovaglás ingyenes HD közvetítéseket kínál globális versenyekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"golf": {
+					"title": "Eplsite Golf | Élő Közvetítések",
+					"description": "Az Eplsite Golf ingyenes HD PGA és világtúra közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"field-hockey": {
+					"title": "Eplsite Gyeplabda | Élő Közvetítések",
+					"description": "Az Eplsite Gyeplabda globális meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"lacrosse": {
+					"title": "Eplsite Lacrosse | Élő Közvetítések",
+					"description": "Az Eplsite Lacrosse ingyenes HD meccseket kínál a nagy ligákból. Regisztráció nélkül. Nézd most."
+				},
+				"athletics": {
+					"title": "Eplsite Atlétika | Élő Közvetítések",
+					"description": "Az Eplsite Atlétika globális eseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"gymnastics": {
+					"title": "Eplsite Torna | Élő Közvetítések",
+					"description": "Az Eplsite Torna ingyenes HD versenyközvetítéseket kínál regisztráció nélkül. Nézd élőben."
+				},
+				"weightlifting": {
+					"title": "Eplsite Súlyemelés | Élő Közvetítések",
+					"description": "Az Eplsite Súlyemelés ingyenes HD versenyeket kínál regisztráció nélkül. Nézd most."
+				},
+				"climbing": {
+					"title": "Eplsite Mászás | Élő Közvetítések",
+					"description": "Az Eplsite Mászás boulder, lead és speed versenyeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"winter-sport": {
+					"title": "Eplsite Téli Sportok | Élő Közvetítések",
+					"description": "Az Eplsite Téli Sportok ingyenes HD síelést, korcsolyát és többet kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"bandy": {
+					"title": "Eplsite Bandy | Élő Közvetítések",
+					"description": "Az Eplsite Bandy ingyenes HD meccseket kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"curling": {
+					"title": "Eplsite Curling | Élő Közvetítések",
+					"description": "Az Eplsite Curling ingyenes HD tornalefedettséget kínál regisztráció nélkül. Nézd élőben."
+				},
+				"triathlon": {
+					"title": "Eplsite Triatlon | Élő Közvetítések",
+					"description": "Az Eplsite Triatlon globális triatloneseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"water-sports": {
+					"title": "Eplsite Vízi Sportok | Élő Közvetítések",
+					"description": "Az Eplsite Vízi Sportok ingyenes HD közvetítéseket kínál vízi eseményekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"water-polo": {
+					"title": "Eplsite Vízilabda | Élő Közvetítések",
+					"description": "Az Eplsite Vízilabda ingyenes HD meccseket kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"sailing": {
+					"title": "Eplsite Vitorlázás | Élő Közvetítések",
+					"description": "Az Eplsite Vitorlázás globális regattákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"bowling": {
+					"title": "Eplsite Bowling | Élő Közvetítések",
+					"description": "Az Eplsite Bowling ingyenes HD tornákat kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"darts": {
+					"title": "Eplsite Darts | Élő Közvetítések",
+					"description": "Az Eplsite Darts ingyenes HD PDC és globális közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"chess": {
+					"title": "Eplsite Sakk | Élő Közvetítések",
+					"description": "Az Eplsite Sakk élvonalbeli tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"e-sports": {
+					"title": "Eplsite E-sport | Élő Közvetítések",
+					"description": "Az Eplsite E-sport ingyenes HD e-sport tornákat kínál. Regisztráció nélkül. Nézd most."
+				},
+				"extreme-sport": {
+					"title": "Eplsite Extrém Sportok | Élő Közvetítések",
+					"description": "Az Eplsite Extrém Sportok ingyenes HD akciókat kínál a legjobb extrém versenyekről. Regisztráció nélkül. Nézd ma."
+				},
+				"others": {
+					"title": "Eplsite Egyéb | Élő Sport Közvetítések",
+					"description": "Az Eplsite Egyéb ingyenes HD lefedettséget kínál rés és feltörekvő sportokról. Regisztráció nélkül. Nézd élőben."
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | Élő Sportközvetítések és Közelgő Meccsek",
+				"description": "A P2P4U ingyenes HD sportközvetítéseket kínál élő és közelgő meccsekkel naponta frissítve. Regisztráció nélkül. Kezdd el nézni most."
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U Labdarúgás | Élő Közvetítések",
+					"description": "A P2P4U Labdarúgás ingyenes HD foci közvetítéseket kínál világszerte. Gyors hozzáférés regisztráció nélkül. Nézd most."
+				},
+				"basketball": {
+					"title": "P2P4U Kosárlabda | Élő NBA Közvetítések",
+					"description": "A P2P4U Kosárlabda ingyenes HD NBA és globális liga közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"tennis": {
+					"title": "P2P4U Tenisz | Élő Grand Slam Közvetítések",
+					"description": "A P2P4U Tenisz ATP és WTA meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"ice-hockey": {
+					"title": "P2P4U Jégkorong | Élő NHL Közvetítések",
+					"description": "A P2P4U Jégkorong ingyenes HD NHL és világliga akciókat kínál. Regisztráció nélkül. Nézd most."
+				},
+				"baseball": {
+					"title": "P2P4U Baseball | Élő MLB Közvetítések",
+					"description": "A P2P4U Baseball ingyenes HD MLB és nemzetközi közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"rugby-union": {
+					"title": "P2P4U Rugby Union | Élő Közvetítések",
+					"description": "A P2P4U Rugby Union ingyenes HD közvetítéseket kínál a legjobb ligákból. Regisztráció nélkül. Nézd élőben."
+				},
+				"rugby-league": {
+					"title": "P2P4U Rugby League | Élő Közvetítések",
+					"description": "A P2P4U Rugby League ingyenes HD NRL és Super League közvetítéseket kínál. Regisztráció nélkül. Nézd most."
+				},
+				"rugby-sevens": {
+					"title": "P2P4U Rugby Sevens | Élő Közvetítések",
+					"description": "A P2P4U Rugby Sevens ingyenes HD hétszemélyes tornákat kínál regisztráció nélkül. Nézd az akciókat élőben."
+				},
+				"cricket": {
+					"title": "P2P4U Krikett | Élő Közvetítések",
+					"description": "A P2P4U Krikett HD T20, ODI és Test meccseket kínál ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"american-football": {
+					"title": "P2P4U Amerikai Foci | Élő NFL Közvetítések",
+					"description": "A P2P4U Amerikai Foci ingyenes HD NFL és NCAA közvetítéseket kínál. Regisztráció nélkül. Nézd most."
+				},
+				"volleyball": {
+					"title": "P2P4U Röplabda | Élő Közvetítések",
+					"description": "A P2P4U Röplabda ingyenes HD globális liga meccseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"beach-volleyball": {
+					"title": "P2P4U Strandröplabda | Élő Közvetítések",
+					"description": "A P2P4U Strandröplabda FIVB és pro túrákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd most."
+				},
+				"handball": {
+					"title": "P2P4U Kézilabda | Élő Közvetítések",
+					"description": "A P2P4U Kézilabda ingyenes HD meccseket kínál a legjobb ligákból. Regisztráció nélkül. Nézd élőben."
+				},
+				"beach-handball": {
+					"title": "P2P4U Strandkézilabda | Élő Közvetítések",
+					"description": "A P2P4U Strandkézilabda ingyenes HD akciókat kínál globális eseményekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"beach-soccer": {
+					"title": "P2P4U Strandfoci | Élő Közvetítések",
+					"description": "A P2P4U Strandfoci ingyenes HD közvetítéseket kínál regisztráció nélkül. Élvezd a minőségi nézést."
+				},
+				"aussie-rules": {
+					"title": "P2P4U Ausztrál Foci | Élő AFL Közvetítések",
+					"description": "A P2P4U Ausztrál Foci ingyenes HD AFL akciókat kínál regisztráció nélkül. Nézd most."
+				},
+				"futsal": {
+					"title": "P2P4U Futsal | Élő Közvetítések",
+					"description": "A P2P4U Futsal ingyenes HD futsal meccseket kínál világszerte. Regisztráció nélkül. Nézd élőben."
+				},
+				"badminton": {
+					"title": "P2P4U Tollaslabda | Élő Közvetítések",
+					"description": "A P2P4U Tollaslabda BWF tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd most."
+				},
+				"netball": {
+					"title": "P2P4U Netball | Élő Közvetítések",
+					"description": "A P2P4U Netball ingyenes HD hozzáférést kínál a legjobb ligákhoz. Regisztráció nélkül. Nézd élőben."
+				},
+				"floorball": {
+					"title": "P2P4U Floorball | Élő Közvetítések",
+					"description": "A P2P4U Floorball ingyenes HD meccseket kínál a legjobb ligákból. Regisztráció nélkül. Nézd most."
+				},
+				"combat-sport": {
+					"title": "P2P4U Küzdősportok | Élő Közvetítések",
+					"description": "A P2P4U Küzdősportok ingyenes HD akciókat kínál a nagy meccsekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"boxing": {
+					"title": "P2P4U Boksz | Élő Közvetítések",
+					"description": "A P2P4U Boksz ingyenes HD közvetítéseket kínál a nagy meccsekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"mma": {
+					"title": "P2P4U MMA | Élő Közvetítések",
+					"description": "A P2P4U MMA ingyenes HD akciókat kínál a legjobb promócióktól. Regisztráció nélkül. Nézd élőben."
+				},
+				"snooker": {
+					"title": "P2P4U Snooker | Élő Közvetítések",
+					"description": "A P2P4U Snooker profi tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"billiard": {
+					"title": "P2P4U Biliárd | Élő Közvetítések",
+					"description": "A P2P4U Biliárd ingyenes HD meccseket és tornákat kínál regisztráció nélkül. Nézd most."
+				},
+				"table-tennis": {
+					"title": "P2P4U Asztalitenisz | Élő Közvetítések",
+					"description": "A P2P4U Asztalitenisz ingyenes HD ITTF meccseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"padel-tennis": {
+					"title": "P2P4U Padel | Élő Közvetítések",
+					"description": "A P2P4U Padel ingyenes HD meccseket kínál a nagy túrákról. Regisztráció nélkül. Nézd élőben."
+				},
+				"squash": {
+					"title": "P2P4U Squash | Élő Közvetítések",
+					"description": "A P2P4U Squash PSA meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"motorsport": {
+					"title": "P2P4U Motorsport | Élő Közvetítések",
+					"description": "A P2P4U Motorsport ingyenes HD versenyközvetítéseket kínál a nagy sorozatokból. Regisztráció nélkül. Nézd élőben."
+				},
+				"racing": {
+					"title": "P2P4U Versenyzés | Élő Közvetítések",
+					"description": "A P2P4U Versenyzés ingyenes HD motorsport közvetítéseket kínál regisztráció nélkül. Nézd most."
+				},
+				"cycling": {
+					"title": "P2P4U Kerékpározás | Élő Közvetítések",
+					"description": "A P2P4U Kerékpározás nagy túrákat és eseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"equestrianism": {
+					"title": "P2P4U Lovaglás | Élő Közvetítések",
+					"description": "A P2P4U Lovaglás ingyenes HD közvetítéseket kínál globális versenyekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"golf": {
+					"title": "P2P4U Golf | Élő Közvetítések",
+					"description": "A P2P4U Golf ingyenes HD PGA és világtúra közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"field-hockey": {
+					"title": "P2P4U Gyeplabda | Élő Közvetítések",
+					"description": "A P2P4U Gyeplabda globális meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"lacrosse": {
+					"title": "P2P4U Lacrosse | Élő Közvetítések",
+					"description": "A P2P4U Lacrosse ingyenes HD meccseket kínál a nagy ligákból. Regisztráció nélkül. Nézd most."
+				},
+				"athletics": {
+					"title": "P2P4U Atlétika | Élő Közvetítések",
+					"description": "A P2P4U Atlétika globális eseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"gymnastics": {
+					"title": "P2P4U Torna | Élő Közvetítések",
+					"description": "A P2P4U Torna ingyenes HD versenyközvetítéseket kínál regisztráció nélkül. Nézd élőben."
+				},
+				"weightlifting": {
+					"title": "P2P4U Súlyemelés | Élő Közvetítések",
+					"description": "A P2P4U Súlyemelés ingyenes HD versenyeket kínál regisztráció nélkül. Nézd most."
+				},
+				"climbing": {
+					"title": "P2P4U Mászás | Élő Közvetítések",
+					"description": "A P2P4U Mászás boulder, lead és speed versenyeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"winter-sport": {
+					"title": "P2P4U Téli Sportok | Élő Közvetítések",
+					"description": "A P2P4U Téli Sportok ingyenes HD síelést, korcsolyát és többet kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"bandy": {
+					"title": "P2P4U Bandy | Élő Közvetítések",
+					"description": "A P2P4U Bandy ingyenes HD meccseket kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"curling": {
+					"title": "P2P4U Curling | Élő Közvetítések",
+					"description": "A P2P4U Curling ingyenes HD tornalefedettséget kínál regisztráció nélkül. Nézd élőben."
+				},
+				"triathlon": {
+					"title": "P2P4U Triatlon | Élő Közvetítések",
+					"description": "A P2P4U Triatlon globális triatloneseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"water-sports": {
+					"title": "P2P4U Vízi Sportok | Élő Közvetítések",
+					"description": "A P2P4U Vízi Sportok ingyenes HD közvetítéseket kínál vízi eseményekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"water-polo": {
+					"title": "P2P4U Vízilabda | Élő Közvetítések",
+					"description": "A P2P4U Vízilabda ingyenes HD meccseket kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"sailing": {
+					"title": "P2P4U Vitorlázás | Élő Közvetítések",
+					"description": "A P2P4U Vitorlázás globális regattákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"bowling": {
+					"title": "P2P4U Bowling | Élő Közvetítések",
+					"description": "A P2P4U Bowling ingyenes HD tornákat kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"darts": {
+					"title": "P2P4U Darts | Élő Közvetítések",
+					"description": "A P2P4U Darts ingyenes HD PDC és globális közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"chess": {
+					"title": "P2P4U Sakk | Élő Közvetítések",
+					"description": "A P2P4U Sakk élvonalbeli tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"e-sports": {
+					"title": "P2P4U E-sport | Élő Közvetítések",
+					"description": "A P2P4U E-sport ingyenes HD e-sport tornákat kínál. Regisztráció nélkül. Nézd most."
+				},
+				"extreme-sport": {
+					"title": "P2P4U Extrém Sportok | Élő Közvetítések",
+					"description": "A P2P4U Extrém Sportok ingyenes HD akciókat kínál a legjobb extrém versenyekről. Regisztráció nélkül. Nézd ma."
+				},
+				"others": {
+					"title": "P2P4U Egyéb | Élő Sport Közvetítések",
+					"description": "A P2P4U Egyéb ingyenes HD lefedettséget kínál rés és feltörekvő sportokról. Regisztráció nélkül. Nézd élőben."
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | Élő Sportközvetítések és Közelgő Meccsek",
+				"description": "A StreamHunter ingyenes HD sportközvetítéseket kínál élő és közelgő meccsekkel naponta frissítve. Gyors hozzáférés, regisztráció nélkül. Kezdd el nézni most."
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter Labdarúgás | Élő Meccsek Online",
+					"description": "A StreamHunter Labdarúgás ingyenes HD foci közvetítéseket kínál világszerte. Gyors hozzáférés regisztráció nélkül. Kezdd el nézni most."
+				},
+				"basketball": {
+					"title": "StreamHunter Kosárlabda | Élő NBA Akció",
+					"description": "A StreamHunter Kosárlabda ingyenes HD NBA és globális liga közvetítéseket kínál. Egyszerű hozzáférés regisztráció nélkül. Nézd élőben."
+				},
+				"tennis": {
+					"title": "StreamHunter Tenisz | Élő Grand Slam Közvetítések",
+					"description": "A StreamHunter Tenisz ATP és WTA meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben azonnal."
+				},
+				"ice-hockey": {
+					"title": "StreamHunter Jégkorong | Élő NHL Közvetítések",
+					"description": "A StreamHunter Jégkorong ingyenes HD NHL és globális liga akciókat kínál. Folyamatos közvetítés regisztráció nélkül. Nézd most."
+				},
+				"baseball": {
+					"title": "StreamHunter Baseball | Élő MLB Közvetítések",
+					"description": "A StreamHunter Baseball HD MLB és nemzetközi közvetítéseket kínál ingyen. Regisztráció nélkül. Nézd élőben most."
+				},
+				"rugby-union": {
+					"title": "StreamHunter Rugby Union | Élő Közvetítések",
+					"description": "A StreamHunter Rugby Union ingyenes HD közvetítéseket kínál a legjobb ligákból és válogatottaktól. Regisztráció nélkül. Nézd élőben."
+				},
+				"rugby-league": {
+					"title": "StreamHunter Rugby League | Élő Rugby Események",
+					"description": "A StreamHunter Rugby League ingyenes HD NRL, Super League és több közvetítést kínál. Regisztráció nélkül. Nézd most."
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter Rugby Sevens | Élő Közvetítések",
+					"description": "A StreamHunter Rugby Sevens ingyenes HD hétszemélyes tornákat kínál regisztráció nélkül. Nézd az izgalmas akciókat élőben folyamatos közvetítéssel."
+				},
+				"cricket": {
+					"title": "StreamHunter Krikett | Élő Közvetítések",
+					"description": "A StreamHunter Krikett Test, ODI és T20 meccseket közvetít HD-ben ingyen. Gyors betöltés regisztráció nélkül. Nézd élőben most."
+				},
+				"american-football": {
+					"title": "StreamHunter Amerikai Foci | Élő NFL Közvetítések",
+					"description": "A StreamHunter Amerikai Foci ingyenes HD NFL és NCAA közvetítéseket kínál regisztráció nélkül. Gyors, kiváló minőségű nézés. Nézd most."
+				},
+				"volleyball": {
+					"title": "StreamHunter Röplabda | Élő Közvetítések",
+					"description": "A StreamHunter Röplabda ingyenes HD globális liga meccseket kínál. Regisztráció nélkül. Nézd élőben most."
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter Strandröplabda | Élő Akció",
+					"description": "A StreamHunter Strandröplabda élvonalbeli FIVB és pro túrákat közvetít HD-ben. Ingyenes hozzáférés regisztráció nélkül. Nézd most."
+				},
+				"handball": {
+					"title": "StreamHunter Kézilabda | Élő Közvetítések",
+					"description": "A StreamHunter Kézilabda ingyenes HD meccseket kínál a legjobb ligákból és tornákról. Regisztráció nélkül. Nézd most."
+				},
+				"beach-handball": {
+					"title": "StreamHunter Strandkézilabda | Élő Meccsek",
+					"description": "A StreamHunter Strandkézilabda ingyenes HD akciókat kínál globális eseményekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"beach-soccer": {
+					"title": "StreamHunter Strandfoci | Élő Meccsek",
+					"description": "A StreamHunter Strandfoci ingyenes HD közvetítéseket kínál regisztráció nélkül. Élvezd a gyors, minőségi nézést most."
+				},
+				"aussie-rules": {
+					"title": "StreamHunter Ausztrál Foci | Élő AFL Közvetítések",
+					"description": "A StreamHunter Ausztrál Foci ingyenes HD AFL akciókat kínál regisztráció nélkül. Gyors, folyamatos közvetítés. Nézd most."
+				},
+				"futsal": {
+					"title": "StreamHunter Futsal | Élő Közvetítések",
+					"description": "A StreamHunter Futsal ingyenes HD futsal meccseket kínál világszerte. Regisztráció nélkül. Nézd élőben."
+				},
+				"badminton": {
+					"title": "StreamHunter Tollaslabda | Élő Közvetítések",
+					"description": "A StreamHunter Tollaslabda BWF tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd most."
+				},
+				"netball": {
+					"title": "StreamHunter Netball | Élő Közvetítések",
+					"description": "A StreamHunter Netball ingyenes HD hozzáférést kínál a legjobb ligákhoz és tornákhoz. Regisztráció nélkül. Nézd élőben."
+				},
+				"floorball": {
+					"title": "StreamHunter Floorball | Élő Közvetítések",
+					"description": "A StreamHunter Floorball ingyenes HD meccseket kínál a legjobb ligákból. Regisztráció nélkül. Nézd az akciókat élőben."
+				},
+				"combat-sport": {
+					"title": "StreamHunter Küzdősportok | Élő Közvetítések",
+					"description": "A StreamHunter Küzdősportok ingyenes HD akciókat kínál a nagy meccsekről. Regisztráció nélkül. Nézd a harcokat élőben."
+				},
+				"boxing": {
+					"title": "StreamHunter Boksz | Élő Boksz Esték",
+					"description": "A StreamHunter Boksz ingyenes HD közvetítéseket kínál a nagy meccsekről. Regisztráció nélkül. Nézd élőben most."
+				},
+				"mma": {
+					"title": "StreamHunter MMA | Élő Közvetítések",
+					"description": "A StreamHunter MMA ingyenes HD akciókat kínál a legjobb promócióktól. Regisztráció nélkül. Nézd a harcokat élőben."
+				},
+				"snooker": {
+					"title": "StreamHunter Snooker | Élő Közvetítések",
+					"description": "A StreamHunter Snooker profi tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben most."
+				},
+				"billiard": {
+					"title": "StreamHunter Biliárd | Élő Közvetítések",
+					"description": "A StreamHunter Biliárd ingyenes HD meccseket és tornákat kínál regisztráció nélkül. Kezdd el nézni most."
+				},
+				"table-tennis": {
+					"title": "StreamHunter Asztalitenisz | Élő Közvetítések",
+					"description": "A StreamHunter Asztalitenisz ingyenes HD ITTF meccseket kínál. Regisztráció nélkül. Nézd az akciókat élőben."
+				},
+				"padel-tennis": {
+					"title": "StreamHunter Padel | Élő Közvetítések",
+					"description": "A StreamHunter Padel ingyenes HD meccseket kínál a nagy túrákról. Regisztráció nélkül. Nézd élőben most."
+				},
+				"squash": {
+					"title": "StreamHunter Squash | Élő Közvetítések",
+					"description": "A StreamHunter Squash PSA meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben most."
+				},
+				"motorsport": {
+					"title": "StreamHunter Motorsport | Élő Versenyek",
+					"description": "A StreamHunter Motorsport ingyenes HD versenyközvetítéseket kínál a nagy sorozatokból. Regisztráció nélkül. Nézd élőben."
+				},
+				"racing": {
+					"title": "StreamHunter Versenyzés | Élő Közvetítések",
+					"description": "A StreamHunter Versenyzés ingyenes HD motorsport közvetítéseket kínál regisztráció nélkül. Élvezd a gyors akciókat élőben."
+				},
+				"cycling": {
+					"title": "StreamHunter Kerékpározás | Élő Közvetítések",
+					"description": "A StreamHunter Kerékpározás nagy túrákat és eseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"equestrianism": {
+					"title": "StreamHunter Lovaglás | Élő Események",
+					"description": "A StreamHunter Lovaglás ingyenes HD közvetítéseket kínál globális lovas versenyekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"golf": {
+					"title": "StreamHunter Golf | Élő Közvetítések",
+					"description": "A StreamHunter Golf ingyenes HD PGA és globális túra közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"field-hockey": {
+					"title": "StreamHunter Gyeplabda | Élő Közvetítések",
+					"description": "A StreamHunter Gyeplabda globális meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"lacrosse": {
+					"title": "StreamHunter Lacrosse | Élő Közvetítések",
+					"description": "A StreamHunter Lacrosse ingyenes HD meccseket kínál a nagy ligákból. Regisztráció nélkül. Nézd most."
+				},
+				"athletics": {
+					"title": "StreamHunter Atlétika | Élő Közvetítések",
+					"description": "A StreamHunter Atlétika globális eseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"gymnastics": {
+					"title": "StreamHunter Torna | Élő Közvetítések",
+					"description": "A StreamHunter Torna ingyenes HD versenyközvetítéseket kínál regisztráció nélkül. Nézd élőben."
+				},
+				"weightlifting": {
+					"title": "StreamHunter Súlyemelés | Élő Közvetítések",
+					"description": "A StreamHunter Súlyemelés ingyenes HD versenyeket kínál regisztráció nélkül. Élvezd a gyors hozzáférést élőben."
+				},
+				"climbing": {
+					"title": "StreamHunter Mászás | Élő Közvetítések",
+					"description": "A StreamHunter Mászás boulder, lead és speed versenyeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"winter-sport": {
+					"title": "StreamHunter Téli Sportok | Élő Események",
+					"description": "A StreamHunter Téli Sportok ingyenes HD síelést, korcsolyát és többet kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"bandy": {
+					"title": "StreamHunter Bandy | Élő Közvetítések",
+					"description": "A StreamHunter Bandy ingyenes HD meccseket kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"curling": {
+					"title": "StreamHunter Curling | Élő Közvetítések",
+					"description": "A StreamHunter Curling ingyenes HD tornalefedettséget kínál regisztráció nélkül. Nézd élőben."
+				},
+				"triathlon": {
+					"title": "StreamHunter Triatlon | Élő Közvetítések",
+					"description": "A StreamHunter Triatlon globális triatloneseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"water-sports": {
+					"title": "StreamHunter Vízi Sportok | Élő Közvetítések",
+					"description": "A StreamHunter Vízi Sportok ingyenes HD közvetítéseket kínál élvonalbeli vízi eseményekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"water-polo": {
+					"title": "StreamHunter Vízilabda | Élő Közvetítések",
+					"description": "A StreamHunter Vízilabda ingyenes HD meccseket kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"sailing": {
+					"title": "StreamHunter Vitorlázás | Élő Közvetítések",
+					"description": "A StreamHunter Vitorlázás globális regattákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"bowling": {
+					"title": "StreamHunter Bowling | Élő Közvetítések",
+					"description": "A StreamHunter Bowling ingyenes HD tornákat kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"darts": {
+					"title": "StreamHunter Darts | Élő Közvetítések",
+					"description": "A StreamHunter Darts ingyenes HD PDC és globális közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"chess": {
+					"title": "StreamHunter Sakk | Élő Játszmák",
+					"description": "A StreamHunter Sakk élvonalbeli tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"e-sports": {
+					"title": "StreamHunter E-sport | Élő Közvetítések",
+					"description": "A StreamHunter E-sport ingyenes HD e-sport tornákat kínál. Regisztráció nélkül. Nézd most."
+				},
+				"extreme-sport": {
+					"title": "StreamHunter Extrém Sportok | Élő Közvetítések",
+					"description": "A StreamHunter Extrém Sportok ingyenes HD akciókat kínál a legjobb extrém versenyekről. Regisztráció nélkül. Nézd az izgalmas eseményeket ma."
+				},
+				"others": {
+					"title": "StreamHunter Egyéb | Élő Sport Közvetítések",
+					"description": "A StreamHunter Egyéb ingyenes HD lefedettséget kínál rés és feltörekvő sportokról. Regisztráció nélkül. Nézd az akciókat élőben."
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | Élő Sportközvetítések és Közelgő Meccsek",
+				"description": "A MethStreams ingyenes HD sportközvetítéseket kínál élő és közelgő meccsekkel naponta frissítve. Regisztráció nélkül. Kezdd el nézni most."
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams Labdarúgás | Élő Meccsek",
+					"description": "A MethStreams Labdarúgás ingyenes HD foci közvetítéseket kínál világszerte. Regisztráció nélkül. Nézd most."
+				},
+				"basketball": {
+					"title": "MethStreams Kosárlabda | Élő NBA Közvetítések",
+					"description": "A MethStreams Kosárlabda ingyenes HD NBA és globális liga közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"tennis": {
+					"title": "MethStreams Tenisz | Élő Grand Slam Közvetítések",
+					"description": "A MethStreams Tenisz ATP és WTA meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"ice-hockey": {
+					"title": "MethStreams Jégkorong | Élő NHL Közvetítések",
+					"description": "A MethStreams Jégkorong ingyenes HD NHL és világliga akciókat kínál. Regisztráció nélkül. Nézd most."
+				},
+				"baseball": {
+					"title": "MethStreams Baseball | Élő MLB Közvetítések",
+					"description": "A MethStreams Baseball ingyenes HD MLB és nemzetközi közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"rugby-union": {
+					"title": "MethStreams Rugby Union | Élő Közvetítések",
+					"description": "A MethStreams Rugby Union ingyenes HD közvetítéseket kínál a legjobb ligákból. Regisztráció nélkül. Nézd élőben."
+				},
+				"rugby-league": {
+					"title": "MethStreams Rugby League | Élő Közvetítések",
+					"description": "A MethStreams Rugby League ingyenes HD NRL és Super League közvetítéseket kínál. Regisztráció nélkül. Nézd most."
+				},
+				"rugby-sevens": {
+					"title": "MethStreams Rugby Sevens | Élő Közvetítések",
+					"description": "A MethStreams Rugby Sevens ingyenes HD hétszemélyes tornákat kínál regisztráció nélkül. Nézd az akciókat élőben."
+				},
+				"cricket": {
+					"title": "MethStreams Krikett | Élő Közvetítések",
+					"description": "A MethStreams Krikett HD T20, ODI és Test meccseket kínál ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"american-football": {
+					"title": "MethStreams Amerikai Foci | Élő NFL Közvetítések",
+					"description": "A MethStreams Amerikai Foci ingyenes HD NFL és NCAA közvetítéseket kínál. Regisztráció nélkül. Nézd most."
+				},
+				"volleyball": {
+					"title": "MethStreams Röplabda | Élő Közvetítések",
+					"description": "A MethStreams Röplabda ingyenes HD globális liga meccseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"beach-volleyball": {
+					"title": "MethStreams Strandröplabda | Élő Közvetítések",
+					"description": "A MethStreams Strandröplabda FIVB és pro túrákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd most."
+				},
+				"handball": {
+					"title": "MethStreams Kézilabda | Élő Közvetítések",
+					"description": "A MethStreams Kézilabda ingyenes HD meccseket kínál a legjobb ligákból. Regisztráció nélkül. Nézd élőben."
+				},
+				"beach-handball": {
+					"title": "MethStreams Strandkézilabda | Élő Közvetítések",
+					"description": "A MethStreams Strandkézilabda ingyenes HD akciókat kínál globális eseményekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"beach-soccer": {
+					"title": "MethStreams Strandfoci | Élő Közvetítések",
+					"description": "A MethStreams Strandfoci ingyenes HD közvetítéseket kínál regisztráció nélkül. Élvezd a minőségi nézést."
+				},
+				"aussie-rules": {
+					"title": "MethStreams Ausztrál Foci | Élő AFL Közvetítések",
+					"description": "A MethStreams Ausztrál Foci ingyenes HD AFL akciókat kínál regisztráció nélkül. Nézd most."
+				},
+				"futsal": {
+					"title": "MethStreams Futsal | Élő Közvetítések",
+					"description": "A MethStreams Futsal ingyenes HD futsal meccseket kínál világszerte. Regisztráció nélkül. Nézd élőben."
+				},
+				"badminton": {
+					"title": "MethStreams Tollaslabda | Élő Közvetítések",
+					"description": "A MethStreams Tollaslabda BWF tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd most."
+				},
+				"netball": {
+					"title": "MethStreams Netball | Élő Közvetítések",
+					"description": "A MethStreams Netball ingyenes HD hozzáférést kínál a legjobb ligákhoz. Regisztráció nélkül. Nézd élőben."
+				},
+				"floorball": {
+					"title": "MethStreams Floorball | Élő Közvetítések",
+					"description": "A MethStreams Floorball ingyenes HD meccseket kínál a legjobb ligákból. Regisztráció nélkül. Nézd most."
+				},
+				"combat-sport": {
+					"title": "MethStreams Küzdősportok | Élő Közvetítések",
+					"description": "A MethStreams Küzdősportok ingyenes HD akciókat kínál a nagy meccsekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"boxing": {
+					"title": "MethStreams Boksz | Élő Közvetítések",
+					"description": "A MethStreams Boksz ingyenes HD közvetítéseket kínál a nagy meccsekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"mma": {
+					"title": "MethStreams MMA | Élő Közvetítések",
+					"description": "A MethStreams MMA ingyenes HD akciókat kínál a legjobb promócióktól. Regisztráció nélkül. Nézd élőben."
+				},
+				"snooker": {
+					"title": "MethStreams Snooker | Élő Közvetítések",
+					"description": "A MethStreams Snooker profi tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"billiard": {
+					"title": "MethStreams Biliárd | Élő Közvetítések",
+					"description": "A MethStreams Biliárd ingyenes HD meccseket és tornákat kínál regisztráció nélkül. Nézd most."
+				},
+				"table-tennis": {
+					"title": "MethStreams Asztalitenisz | Élő Közvetítések",
+					"description": "A MethStreams Asztalitenisz ingyenes HD ITTF meccseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"padel-tennis": {
+					"title": "MethStreams Padel | Élő Közvetítések",
+					"description": "A MethStreams Padel ingyenes HD meccseket kínál a nagy túrákról. Regisztráció nélkül. Nézd élőben."
+				},
+				"squash": {
+					"title": "MethStreams Squash | Élő Közvetítések",
+					"description": "A MethStreams Squash PSA meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"motorsport": {
+					"title": "MethStreams Motorsport | Élő Közvetítések",
+					"description": "A MethStreams Motorsport ingyenes HD versenyközvetítéseket kínál a nagy sorozatokból. Regisztráció nélkül. Nézd élőben."
+				},
+				"racing": {
+					"title": "MethStreams Versenyzés | Élő Közvetítések",
+					"description": "A MethStreams Versenyzés ingyenes HD motorsport közvetítéseket kínál regisztráció nélkül. Nézd most."
+				},
+				"cycling": {
+					"title": "MethStreams Kerékpározás | Élő Közvetítések",
+					"description": "A MethStreams Kerékpározás nagy túrákat és eseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"equestrianism": {
+					"title": "MethStreams Lovaglás | Élő Közvetítések",
+					"description": "A MethStreams Lovaglás ingyenes HD közvetítéseket kínál globális versenyekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"golf": {
+					"title": "MethStreams Golf | Élő Közvetítések",
+					"description": "A MethStreams Golf ingyenes HD PGA és világtúra közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"field-hockey": {
+					"title": "MethStreams Gyeplabda | Élő Közvetítések",
+					"description": "A MethStreams Gyeplabda globális meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"lacrosse": {
+					"title": "MethStreams Lacrosse | Élő Közvetítések",
+					"description": "A MethStreams Lacrosse ingyenes HD meccseket kínál a nagy ligákból. Regisztráció nélkül. Nézd most."
+				},
+				"athletics": {
+					"title": "MethStreams Atlétika | Élő Közvetítések",
+					"description": "A MethStreams Atlétika globális eseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"gymnastics": {
+					"title": "MethStreams Torna | Élő Közvetítések",
+					"description": "A MethStreams Torna ingyenes HD versenyközvetítéseket kínál regisztráció nélkül. Nézd élőben."
+				},
+				"weightlifting": {
+					"title": "MethStreams Súlyemelés | Élő Közvetítések",
+					"description": "A MethStreams Súlyemelés ingyenes HD versenyeket kínál regisztráció nélkül. Nézd most."
+				},
+				"climbing": {
+					"title": "MethStreams Mászás | Élő Közvetítések",
+					"description": "A MethStreams Mászás boulder, lead és speed versenyeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"winter-sport": {
+					"title": "MethStreams Téli Sportok | Élő Közvetítések",
+					"description": "A MethStreams Téli Sportok ingyenes HD síelést, korcsolyát és többet kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"bandy": {
+					"title": "MethStreams Bandy | Élő Közvetítések",
+					"description": "A MethStreams Bandy ingyenes HD meccseket kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"curling": {
+					"title": "MethStreams Curling | Élő Közvetítések",
+					"description": "A MethStreams Curling ingyenes HD tornalefedettséget kínál regisztráció nélkül. Nézd élőben."
+				},
+				"triathlon": {
+					"title": "MethStreams Triatlon | Élő Közvetítések",
+					"description": "A MethStreams Triatlon globális triatloneseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"water-sports": {
+					"title": "MethStreams Vízi Sportok | Élő Közvetítések",
+					"description": "A MethStreams Vízi Sportok ingyenes HD közvetítéseket kínál vízi eseményekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"water-polo": {
+					"title": "MethStreams Vízilabda | Élő Közvetítések",
+					"description": "A MethStreams Vízilabda ingyenes HD meccseket kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"sailing": {
+					"title": "MethStreams Vitorlázás | Élő Közvetítések",
+					"description": "A MethStreams Vitorlázás globális regattákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"bowling": {
+					"title": "MethStreams Bowling | Élő Közvetítések",
+					"description": "A MethStreams Bowling ingyenes HD tornákat kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"darts": {
+					"title": "MethStreams Darts | Élő Közvetítések",
+					"description": "A MethStreams Darts ingyenes HD PDC és globális közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"chess": {
+					"title": "MethStreams Sakk | Élő Közvetítések",
+					"description": "A MethStreams Sakk élvonalbeli tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"e-sports": {
+					"title": "MethStreams E-sport | Élő Közvetítések",
+					"description": "A MethStreams E-sport ingyenes HD e-sport tornákat kínál. Regisztráció nélkül. Nézd most."
+				},
+				"extreme-sport": {
+					"title": "MethStreams Extrém Sportok | Élő Közvetítések",
+					"description": "A MethStreams Extrém Sportok ingyenes HD akciókat kínál a legjobb extrém versenyekről. Regisztráció nélkül. Nézd ma."
+				},
+				"others": {
+					"title": "MethStreams Egyéb | Élő Sport Közvetítések",
+					"description": "A MethStreams Egyéb ingyenes HD lefedettséget kínál rés és feltörekvő sportokról. Regisztráció nélkül. Nézd élőben."
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | Élő Sportközvetítések és Közelgő Meccsek",
+				"description": "A WiziWig ingyenes HD sportközvetítéseket kínál élő és közelgő meccsekkel naponta frissítve. Regisztráció nélkül. Kezdd el nézni most."
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig Labdarúgás | Élő Meccsek Online",
+					"description": "A WiziWig Labdarúgás ingyenes HD foci közvetítéseket kínál világszerte. Regisztráció nélkül. Nézd most."
+				},
+				"basketball": {
+					"title": "WiziWig Kosárlabda | Élő NBA Közvetítések",
+					"description": "A WiziWig Kosárlabda ingyenes HD NBA és globális liga közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"tennis": {
+					"title": "WiziWig Tenisz | Élő Grand Slam Közvetítések",
+					"description": "A WiziWig Tenisz ATP és WTA meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"ice-hockey": {
+					"title": "WiziWig Jégkorong | Élő NHL Közvetítések",
+					"description": "A WiziWig Jégkorong ingyenes HD NHL és világliga akciókat kínál. Regisztráció nélkül. Nézd most."
+				},
+				"baseball": {
+					"title": "WiziWig Baseball | Élő MLB Közvetítések",
+					"description": "A WiziWig Baseball ingyenes HD MLB és nemzetközi közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"rugby-union": {
+					"title": "WiziWig Rugby Union | Élő Közvetítések",
+					"description": "A WiziWig Rugby Union ingyenes HD közvetítéseket kínál a legjobb ligákból. Regisztráció nélkül. Nézd élőben."
+				},
+				"rugby-league": {
+					"title": "WiziWig Rugby League | Élő Közvetítések",
+					"description": "A WiziWig Rugby League ingyenes HD NRL és Super League közvetítéseket kínál. Regisztráció nélkül. Nézd most."
+				},
+				"rugby-sevens": {
+					"title": "WiziWig Rugby Sevens | Élő Közvetítések",
+					"description": "A WiziWig Rugby Sevens ingyenes HD hétszemélyes tornákat kínál regisztráció nélkül. Nézd az akciókat élőben."
+				},
+				"cricket": {
+					"title": "WiziWig Krikett | Élő Közvetítések",
+					"description": "A WiziWig Krikett HD T20, ODI és Test meccseket kínál ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"american-football": {
+					"title": "WiziWig Amerikai Foci | Élő NFL Közvetítések",
+					"description": "A WiziWig Amerikai Foci ingyenes HD NFL és NCAA közvetítéseket kínál. Regisztráció nélkül. Nézd most."
+				},
+				"volleyball": {
+					"title": "WiziWig Röplabda | Élő Közvetítések",
+					"description": "A WiziWig Röplabda ingyenes HD globális liga meccseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"beach-volleyball": {
+					"title": "WiziWig Strandröplabda | Élő Közvetítések",
+					"description": "A WiziWig Strandröplabda FIVB és pro túrákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd most."
+				},
+				"handball": {
+					"title": "WiziWig Kézilabda | Élő Közvetítések",
+					"description": "A WiziWig Kézilabda ingyenes HD meccseket kínál a legjobb ligákból. Regisztráció nélkül. Nézd élőben."
+				},
+				"beach-handball": {
+					"title": "WiziWig Strandkézilabda | Élő Közvetítések",
+					"description": "A WiziWig Strandkézilabda ingyenes HD akciókat kínál globális eseményekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"beach-soccer": {
+					"title": "WiziWig Strandfoci | Élő Közvetítések",
+					"description": "A WiziWig Strandfoci ingyenes HD közvetítéseket kínál regisztráció nélkül. Élvezd a minőségi nézést."
+				},
+				"aussie-rules": {
+					"title": "WiziWig Ausztrál Foci | Élő AFL Közvetítések",
+					"description": "A WiziWig Ausztrál Foci ingyenes HD AFL akciókat kínál regisztráció nélkül. Nézd most."
+				},
+				"futsal": {
+					"title": "WiziWig Futsal | Élő Közvetítések",
+					"description": "A WiziWig Futsal ingyenes HD futsal meccseket kínál világszerte. Regisztráció nélkül. Nézd élőben."
+				},
+				"badminton": {
+					"title": "WiziWig Tollaslabda | Élő Közvetítések",
+					"description": "A WiziWig Tollaslabda BWF tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd most."
+				},
+				"netball": {
+					"title": "WiziWig Netball | Élő Közvetítések",
+					"description": "A WiziWig Netball ingyenes HD hozzáférést kínál a legjobb ligákhoz. Regisztráció nélkül. Nézd élőben."
+				},
+				"floorball": {
+					"title": "WiziWig Floorball | Élő Közvetítések",
+					"description": "A WiziWig Floorball ingyenes HD meccseket kínál a legjobb ligákból. Regisztráció nélkül. Nézd most."
+				},
+				"combat-sport": {
+					"title": "WiziWig Küzdősportok | Élő Közvetítések",
+					"description": "A WiziWig Küzdősportok ingyenes HD akciókat kínál a nagy meccsekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"boxing": {
+					"title": "WiziWig Boksz | Élő Közvetítések",
+					"description": "A WiziWig Boksz ingyenes HD közvetítéseket kínál a nagy meccsekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"mma": {
+					"title": "WiziWig MMA | Élő Közvetítések",
+					"description": "A WiziWig MMA ingyenes HD akciókat kínál a legjobb promócióktól. Regisztráció nélkül. Nézd élőben."
+				},
+				"snooker": {
+					"title": "WiziWig Snooker | Élő Közvetítések",
+					"description": "A WiziWig Snooker profi tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"billiard": {
+					"title": "WiziWig Biliárd | Élő Közvetítések",
+					"description": "A WiziWig Biliárd ingyenes HD meccseket és tornákat kínál regisztráció nélkül. Nézd most."
+				},
+				"table-tennis": {
+					"title": "WiziWig Asztalitenisz | Élő Közvetítések",
+					"description": "A WiziWig Asztalitenisz ingyenes HD ITTF meccseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"padel-tennis": {
+					"title": "WiziWig Padel | Élő Közvetítések",
+					"description": "A WiziWig Padel ingyenes HD meccseket kínál a nagy túrákról. Regisztráció nélkül. Nézd élőben."
+				},
+				"squash": {
+					"title": "WiziWig Squash | Élő Közvetítések",
+					"description": "A WiziWig Squash PSA meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"motorsport": {
+					"title": "WiziWig Motorsport | Élő Közvetítések",
+					"description": "A WiziWig Motorsport ingyenes HD versenyközvetítéseket kínál a nagy sorozatokból. Regisztráció nélkül. Nézd élőben."
+				},
+				"racing": {
+					"title": "WiziWig Versenyzés | Élő Közvetítések",
+					"description": "A WiziWig Versenyzés ingyenes HD motorsport közvetítéseket kínál regisztráció nélkül. Nézd most."
+				},
+				"cycling": {
+					"title": "WiziWig Kerékpározás | Élő Közvetítések",
+					"description": "A WiziWig Kerékpározás nagy túrákat és eseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"equestrianism": {
+					"title": "WiziWig Lovaglás | Élő Közvetítések",
+					"description": "A WiziWig Lovaglás ingyenes HD közvetítéseket kínál globális versenyekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"golf": {
+					"title": "WiziWig Golf | Élő Közvetítések",
+					"description": "A WiziWig Golf ingyenes HD PGA és világtúra közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"field-hockey": {
+					"title": "WiziWig Gyeplabda | Élő Közvetítések",
+					"description": "A WiziWig Gyeplabda globális meccseket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"lacrosse": {
+					"title": "WiziWig Lacrosse | Élő Közvetítések",
+					"description": "A WiziWig Lacrosse ingyenes HD meccseket kínál a nagy ligákból. Regisztráció nélkül. Nézd most."
+				},
+				"athletics": {
+					"title": "WiziWig Atlétika | Élő Közvetítések",
+					"description": "A WiziWig Atlétika globális eseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"gymnastics": {
+					"title": "WiziWig Torna | Élő Közvetítések",
+					"description": "A WiziWig Torna ingyenes HD versenyközvetítéseket kínál regisztráció nélkül. Nézd élőben."
+				},
+				"weightlifting": {
+					"title": "WiziWig Súlyemelés | Élő Közvetítések",
+					"description": "A WiziWig Súlyemelés ingyenes HD versenyeket kínál regisztráció nélkül. Nézd most."
+				},
+				"climbing": {
+					"title": "WiziWig Mászás | Élő Közvetítések",
+					"description": "A WiziWig Mászás boulder, lead és speed versenyeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"winter-sport": {
+					"title": "WiziWig Téli Sportok | Élő Közvetítések",
+					"description": "A WiziWig Téli Sportok ingyenes HD síelést, korcsolyát és többet kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"bandy": {
+					"title": "WiziWig Bandy | Élő Közvetítések",
+					"description": "A WiziWig Bandy ingyenes HD meccseket kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"curling": {
+					"title": "WiziWig Curling | Élő Közvetítések",
+					"description": "A WiziWig Curling ingyenes HD tornalefedettséget kínál regisztráció nélkül. Nézd élőben."
+				},
+				"triathlon": {
+					"title": "WiziWig Triatlon | Élő Közvetítések",
+					"description": "A WiziWig Triatlon globális triatloneseményeket közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"water-sports": {
+					"title": "WiziWig Vízi Sportok | Élő Közvetítések",
+					"description": "A WiziWig Vízi Sportok ingyenes HD közvetítéseket kínál vízi eseményekről. Regisztráció nélkül. Nézd élőben."
+				},
+				"water-polo": {
+					"title": "WiziWig Vízilabda | Élő Közvetítések",
+					"description": "A WiziWig Vízilabda ingyenes HD meccseket kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"sailing": {
+					"title": "WiziWig Vitorlázás | Élő Közvetítések",
+					"description": "A WiziWig Vitorlázás globális regattákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"bowling": {
+					"title": "WiziWig Bowling | Élő Közvetítések",
+					"description": "A WiziWig Bowling ingyenes HD tornákat kínál regisztráció nélkül. Nézd élőben most."
+				},
+				"darts": {
+					"title": "WiziWig Darts | Élő Közvetítések",
+					"description": "A WiziWig Darts ingyenes HD PDC és globális közvetítéseket kínál. Regisztráció nélkül. Nézd élőben."
+				},
+				"chess": {
+					"title": "WiziWig Sakk | Élő Közvetítések",
+					"description": "A WiziWig Sakk élvonalbeli tornákat közvetít HD-ben ingyen. Regisztráció nélkül. Nézd élőben."
+				},
+				"e-sports": {
+					"title": "WiziWig E-sport | Élő Közvetítések",
+					"description": "A WiziWig E-sport ingyenes HD e-sport tornákat kínál. Regisztráció nélkül. Nézd most."
+				},
+				"extreme-sport": {
+					"title": "WiziWig Extrém Sportok | Élő Közvetítések",
+					"description": "A WiziWig Extrém Sportok ingyenes HD akciókat kínál a legjobb extrém versenyekről. Regisztráció nélkül. Nézd ma."
+				},
+				"others": {
+					"title": "WiziWig Egyéb | Élő Sport Közvetítések",
+					"description": "A WiziWig Egyéb ingyenes HD lefedettséget kínál rés és feltörekvő sportokról. Regisztráció nélkül. Nézd élőben."
+				}
+			}
+		}
 	}
 }

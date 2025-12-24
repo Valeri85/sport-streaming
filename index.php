@@ -866,6 +866,12 @@ $favoritesUrl = langUrl('/favorites', $websiteLanguage, $siteDefaultLanguage);
 
     <!-- RIGHT SIDEBAR -->
     <aside class="right-sidebar">
+        <script
+            async="async"
+            data-cfasync="false"
+            src="https://mishandlewrestle.com/bbb6b4a52ba4c0c160de3ce919e541dc/invoke.js"
+            ></script>
+        <div id="container-bbb6b4a52ba4c0c160de3ce919e541dc"></div>
         <div class="sidebar-content">
             <?php echo $sidebarContent; ?>
         </div>

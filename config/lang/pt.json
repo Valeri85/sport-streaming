@@ -3,6 +3,7 @@
 		"code": "pt",
 		"name": "Português",
 		"flag": "PT",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -52,6 +53,7 @@
 		"Baseball": "Basebol",
 		"Rugby Union": "Rugby Union",
 		"Rugby League": "Rugby League",
+		"Rugby Sevens": "Rugby Sevens",
 		"Cricket": "Críquete",
 		"American Football": "Futebol Americano",
 		"Volleyball": "Voleibol",
@@ -64,8 +66,7 @@
 		"Badminton": "Badminton",
 		"Netball": "Netball",
 		"Floorball": "Floorball",
-		"Combat": "Combate",
-		"combat sport": "Desportos de Combate",
+		"Combat Sport": "Desportos de Combate",
 		"Boxing": "Boxe",
 		"MMA": "MMA",
 		"Snooker": "Snooker",
@@ -84,7 +85,7 @@
 		"Gymnastics": "Ginástica",
 		"Weightlifting": "Halterofilismo",
 		"Climbing": "Escalada",
-		"winter sport": "Desportos de Inverno",
+		"Winter Sport": "Desportos de Inverno",
 		"Bandy": "Bandy",
 		"Curling": "Curling",
 		"Triathlon": "Triatlo",
@@ -95,6 +96,225 @@
 		"Darts": "Dardos",
 		"Chess": "Xadrez",
 		"E-sports": "E-sports",
+		"Extreme Sport": "Desportos Extremos",
 		"Others": "Outros"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | Streaming de Desporto ao Vivo Grátis HD",
+				"description": "SportLemon oferece streaming de desporto ao vivo grátis em qualidade HD. Todos os eventos desportivos sem registo. Veja agora!"
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon Futebol | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de futebol ao vivo grátis em HD no SportLemon. Champions League, Premier League e mais. Sem registo!"
+				},
+				"basketball": {
+					"title": "SportLemon Basquetebol | Streaming NBA ao Vivo Grátis",
+					"description": "Streaming de basquetebol ao vivo grátis em HD. Veja NBA, EuroLeague e mais no SportLemon. Sem registo!"
+				},
+				"tennis": {
+					"title": "SportLemon Ténis | Streaming Grand Slam ao Vivo Grátis",
+					"description": "Veja streaming de ténis ao vivo grátis em HD. ATP, WTA e Grand Slams no SportLemon."
+				},
+				"ice-hockey": {
+					"title": "SportLemon Hóquei no Gelo | Streaming NHL ao Vivo HD",
+					"description": "Streaming de hóquei no gelo ao vivo grátis em HD no SportLemon. NHL e mais."
+				},
+				"baseball": {
+					"title": "SportLemon Basebol | Streaming MLB ao Vivo Grátis HD",
+					"description": "Streaming de basebol ao vivo grátis em HD no SportLemon. MLB e mais ligas."
+				},
+				"rugby-union": {
+					"title": "SportLemon Rugby Union | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de Rugby Union ao vivo grátis em HD no SportLemon. Six Nations e mais."
+				},
+				"rugby-league": {
+					"title": "SportLemon Rugby League | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de Rugby League ao vivo grátis em HD no SportLemon."
+				},
+				"cricket": {
+					"title": "SportLemon Críquete | Streaming IPL ao Vivo Grátis HD",
+					"description": "Streaming de críquete ao vivo grátis no SportLemon. IPL, T20 em HD."
+				},
+				"american-football": {
+					"title": "SportLemon Futebol Americano | Streaming NFL ao Vivo HD",
+					"description": "Veja streaming de NFL ao vivo grátis em HD no SportLemon."
+				},
+				"volleyball": {
+					"title": "SportLemon Voleibol | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de voleibol ao vivo grátis em HD no SportLemon."
+				},
+				"beach-volleyball": {
+					"title": "SportLemon Voleibol de Praia | Streaming ao Vivo HD",
+					"description": "Veja streaming de voleibol de praia ao vivo grátis em HD no SportLemon."
+				},
+				"handball": {
+					"title": "SportLemon Andebol | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de andebol ao vivo grátis em HD no SportLemon."
+				},
+				"beach-handball": {
+					"title": "SportLemon Andebol de Praia | Streaming ao Vivo HD",
+					"description": "Veja streaming de andebol de praia ao vivo grátis em HD no SportLemon."
+				},
+				"beach-soccer": {
+					"title": "SportLemon Futebol de Praia | Streaming ao Vivo HD",
+					"description": "Streaming de futebol de praia ao vivo grátis em HD no SportLemon."
+				},
+				"aussie-rules": {
+					"title": "SportLemon Futebol Australiano | Streaming AFL ao Vivo",
+					"description": "Veja streaming de AFL ao vivo grátis em HD no SportLemon."
+				},
+				"futsal": {
+					"title": "SportLemon Futsal | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de futsal ao vivo grátis em HD no SportLemon."
+				},
+				"badminton": {
+					"title": "SportLemon Badminton | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de badminton ao vivo grátis em HD no SportLemon."
+				},
+				"netball": {
+					"title": "SportLemon Netball | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de netball ao vivo grátis em HD no SportLemon."
+				},
+				"floorball": {
+					"title": "SportLemon Floorball | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de floorball ao vivo grátis em HD no SportLemon."
+				},
+				"combat-sport": {
+					"title": "SportLemon Desportos de Combate | Streaming ao Vivo HD",
+					"description": "Streaming de desportos de combate ao vivo grátis em HD no SportLemon."
+				},
+				"boxing": {
+					"title": "SportLemon Boxe | Streaming de Lutas ao Vivo HD",
+					"description": "Veja streaming de boxe ao vivo grátis em HD no SportLemon."
+				},
+				"mma": {
+					"title": "SportLemon MMA | Streaming UFC ao Vivo Grátis HD",
+					"description": "Streaming de MMA e UFC ao vivo grátis em HD no SportLemon."
+				},
+				"snooker": {
+					"title": "SportLemon Snooker | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de snooker ao vivo grátis em HD no SportLemon."
+				},
+				"billiard": {
+					"title": "SportLemon Bilhar | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bilhar ao vivo grátis em HD no SportLemon."
+				},
+				"table-tennis": {
+					"title": "SportLemon Ténis de Mesa | Streaming ao Vivo HD",
+					"description": "Veja streaming de ténis de mesa ao vivo grátis em HD no SportLemon."
+				},
+				"padel-tennis": {
+					"title": "SportLemon Padel | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de padel ao vivo grátis em HD no SportLemon."
+				},
+				"squash": {
+					"title": "SportLemon Squash | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de squash ao vivo grátis em HD no SportLemon."
+				},
+				"motorsport": {
+					"title": "SportLemon Desporto Motorizado | Streaming F1 ao Vivo",
+					"description": "Streaming de F1 e desporto motorizado ao vivo grátis em HD no SportLemon."
+				},
+				"racing": {
+					"title": "SportLemon Corridas | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de corridas ao vivo grátis em HD no SportLemon."
+				},
+				"cycling": {
+					"title": "SportLemon Ciclismo | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de ciclismo ao vivo grátis em HD no SportLemon."
+				},
+				"equestrianism": {
+					"title": "SportLemon Equitação | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de equitação ao vivo grátis em HD no SportLemon."
+				},
+				"golf": {
+					"title": "SportLemon Golfe | Streaming PGA ao Vivo Grátis HD",
+					"description": "Streaming de golfe ao vivo grátis em HD no SportLemon."
+				},
+				"field-hockey": {
+					"title": "SportLemon Hóquei em Campo | Streaming ao Vivo HD",
+					"description": "Veja streaming de hóquei em campo ao vivo grátis em HD no SportLemon."
+				},
+				"lacrosse": {
+					"title": "SportLemon Lacrosse | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de lacrosse ao vivo grátis em HD no SportLemon."
+				},
+				"athletics": {
+					"title": "SportLemon Atletismo | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de atletismo ao vivo grátis em HD no SportLemon."
+				},
+				"gymnastics": {
+					"title": "SportLemon Ginástica | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de ginástica ao vivo grátis em HD no SportLemon."
+				},
+				"weightlifting": {
+					"title": "SportLemon Halterofilismo | Streaming ao Vivo HD",
+					"description": "Veja streaming de halterofilismo ao vivo grátis em HD no SportLemon."
+				},
+				"climbing": {
+					"title": "SportLemon Escalada | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de escalada ao vivo grátis em HD no SportLemon."
+				},
+				"winter-sport": {
+					"title": "SportLemon Desportos de Inverno | Streaming ao Vivo HD",
+					"description": "Veja streaming de desportos de inverno ao vivo grátis em HD no SportLemon."
+				},
+				"bandy": {
+					"title": "SportLemon Bandy | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bandy ao vivo grátis em HD no SportLemon."
+				},
+				"curling": {
+					"title": "SportLemon Curling | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de curling ao vivo grátis em HD no SportLemon."
+				},
+				"triathlon": {
+					"title": "SportLemon Triatlo | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de triatlo ao vivo grátis em HD no SportLemon."
+				},
+				"water-sports": {
+					"title": "SportLemon Desportos Aquáticos | Streaming ao Vivo HD",
+					"description": "Veja streaming de desportos aquáticos ao vivo grátis em HD no SportLemon."
+				},
+				"water-polo": {
+					"title": "SportLemon Polo Aquático | Streaming ao Vivo HD",
+					"description": "Streaming de polo aquático ao vivo grátis em HD no SportLemon."
+				},
+				"sailing": {
+					"title": "SportLemon Vela | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de vela ao vivo grátis em HD no SportLemon."
+				},
+				"bowling": {
+					"title": "SportLemon Bowling | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bowling ao vivo grátis em HD no SportLemon."
+				},
+				"darts": {
+					"title": "SportLemon Dardos | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de dardos ao vivo grátis em HD no SportLemon."
+				},
+				"chess": {
+					"title": "SportLemon Xadrez | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de xadrez ao vivo grátis em HD no SportLemon."
+				},
+				"e-sports": {
+					"title": "SportLemon E-sports | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de e-sports ao vivo grátis em HD no SportLemon."
+				},
+				"others": {
+					"title": "SportLemon Outros | Streaming Desportivo ao Vivo HD",
+					"description": "Streaming de vários desportos ao vivo grátis em HD no SportLemon."
+				},
+				"rugby-sevens": {
+					"title": "SportLemon Rugby Sevens | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de Rugby Sevens ao vivo grátis em HD no SportLemon. SVNS Series e torneios. Sem registo."
+				},
+				"extreme-sport": {
+					"title": "SportLemon Desportos Extremos | Streaming ao Vivo HD",
+					"description": "Streaming de desportos extremos ao vivo grátis em HD no SportLemon. X Games e competições. Sem registo."
+				}
+			}
+		}
 	}
 }

@@ -3,6 +3,7 @@
 		"code": "et",
 		"name": "Eesti",
 		"flag": "EE",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -29,7 +30,7 @@
 		"toggle_menu": "Lülita menüü",
 		"favorite_game": "Lemmik mäng",
 		"favorite_league": "Lemmik liiga",
-		"time_filter": "Ajafil",
+		"time_filter": "Ajafilter",
 		"live_games": "Otse Mängud",
 		"change_language": "Muuda keelt"
 	},
@@ -52,6 +53,7 @@
 		"Baseball": "Pesapall",
 		"Rugby Union": "Rugby Union",
 		"Rugby League": "Rugby League",
+		"Rugby Sevens": "Rugby Sevens",
 		"Cricket": "Kriket",
 		"American Football": "Ameerika Jalgpall",
 		"Volleyball": "Võrkpall",
@@ -65,7 +67,7 @@
 		"Netball": "Netipall",
 		"Floorball": "Saalihoki",
 		"Combat": "Võitlussport",
-		"combat sport": "Võitlussport",
+		"Combat Sport": "Võitlussport",
 		"Boxing": "Poks",
 		"MMA": "MMA",
 		"Snooker": "Snuuker",
@@ -84,7 +86,7 @@
 		"Gymnastics": "Võimlemine",
 		"Weightlifting": "Tõstmine",
 		"Climbing": "Ronimine",
-		"winter sport": "Talvealad",
+		"Winter Sport": "Talvealad",
 		"Bandy": "Jääpall",
 		"Curling": "Curling",
 		"Triathlon": "Triatlon",
@@ -95,6 +97,1305 @@
 		"Darts": "Noolevise",
 		"Chess": "Male",
 		"E-sports": "E-sport",
+		"Extreme Sport": "Ekstreemsport",
 		"Others": "Muud"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | Otse Sport ja Tänased Mängud",
+				"description": "SportLemon pakub otse spordiülekandeid ning tänaseid ja tulevasi mänge kõigis spordialades. Tasuta ligipääs, registreerimata — alusta vaatamist kohe."
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon Jalgpall | Tasuta Otseülekanded HD",
+					"description": "Vaata tasuta jalgpalli otseülekandeid HD kvaliteedis SportLemonis. Meistrite liiga, Premier League ja palju muud. Ära jäta ühtegi mängu vahele!"
+				},
+				"basketball": {
+					"title": "SportLemon Korvpall | Tasuta NBA Otseülekanded",
+					"description": "Vaata tasuta korvpalli otseülekandeid. NBA, EuroLeague ja palju muud HD kvaliteedis SportLemonis. Registreerimata."
+				},
+				"tennis": {
+					"title": "SportLemon Tennis | Tasuta Otseülekanded HD",
+					"description": "Vaata tasuta tennise otseülekandeid. Grand Slam turniirid, ATP, WTA HD kvaliteedis SportLemonis. Liitu kohe!"
+				},
+				"ice-hockey": {
+					"title": "SportLemon Jäähoki | Tasuta NHL Otseülekanded HD",
+					"description": "Tasuta jäähoki otseülekanded HD kvaliteedis. Vaata NHL, KHL ja maailmameistrivõistlusi SportLemonis."
+				},
+				"baseball": {
+					"title": "SportLemon Pesapall | Tasuta MLB Otseülekanded",
+					"description": "Vaata tasuta pesapalli otseülekandeid. MLB, NPB ja palju muud HD kvaliteedis SportLemonis. Lihtne ja tasuta ligipääs."
+				},
+				"rugby-union": {
+					"title": "SportLemon Rugby Union | Tasuta HD Otseülekanded",
+					"description": "SportLemon Rugby Union pakub tasuta kvaliteetseid otseülekandeid ilma registreerimata. Naudi kiiret ligipääsu igale mängule HD kvaliteedis."
+				},
+				"rugby-league": {
+					"title": "SportLemon Rugby League | Tasuta HD Otseülekanded",
+					"description": "SportLemon Rugby League toob sulle tasuta kvaliteetsed otseülekanded igast mängust. Naudi kiiret ligipääsu HD kvaliteedis — alusta vaatamist täna."
+				},
+				"rugby-sevens": {
+					"title": "SportLemon Rugby Sevens | Otseülekanded",
+					"description": "SportLemon Rugby Sevens pakub tasuta HD sevens-turniire sujuva taasesitusega ilma registreerimata. Vaata kiire tempoga rugby sevens otse kohe."
+				},
+				"cricket": {
+					"title": "SportLemon Kriket | Tasuta Otseülekanded HD",
+					"description": "Tasuta kriketi otseülekanded SportLemonis. Vaata IPL, T20, testmatše ja palju muud kõrgresolutsioonis."
+				},
+				"american-football": {
+					"title": "SportLemon Ameerika Jalgpall | Tasuta NFL Otseülekanded",
+					"description": "Vaata tasuta ameerika jalgpalli otseülekandeid. Naudi NFL, kolledži mänge ja palju muud HD kvaliteedis SportLemonis. Tellimusi pole vaja."
+				},
+				"volleyball": {
+					"title": "SportLemon Võrkpall | Tasuta Otseülekanded",
+					"description": "Vaata tasuta võrkpalli otseülekandeid. FIVB, CEV ja suuremad liigad HD kvaliteedis SportLemonis. Liitu tegevusega!"
+				},
+				"beach-volleyball": {
+					"title": "SportLemon Rannavõrkpall | Tasuta Otseülekanded",
+					"description": "Vaata tasuta rannavõrkpalli otseülekandeid. FIVB World Tour ja suuremad turniirid HD kvaliteedis SportLemonis."
+				},
+				"handball": {
+					"title": "SportLemon Käsipall | Tasuta Otseülekanded",
+					"description": "Tasuta käsipalli otseülekanded SportLemonis. Vaata EHF, IHF üritusi ja suuremaid liigasid kõrgresolutsioonis."
+				},
+				"beach-handball": {
+					"title": "SportLemon Rannakäsipall | Tasuta Otseülekanded",
+					"description": "Vaata tasuta rannakäsipalli otseülekandeid. IHF World Tour ja meistrivõistlused HD kvaliteedis SportLemonis."
+				},
+				"beach-soccer": {
+					"title": "SportLemon Rannajalgpall | Tasuta Otseülekanded HD",
+					"description": "Vaata tasuta rannajalgpalli otseülekandeid. FIFA Beach Soccer MM ja liigad HD kvaliteedis SportLemonis."
+				},
+				"aussie-rules": {
+					"title": "SportLemon Austraalia Jalgpall | Tasuta AFL Otseülekanded",
+					"description": "Vaata tasuta Austraalia jalgpalli. AFL mängud ja turniirid HD kvaliteedis SportLemonis."
+				},
+				"futsal": {
+					"title": "SportLemon Saalijalgpall | Tasuta Otseülekanded HD",
+					"description": "Tasuta saalijalgpalli otseülekanded SportLemonis. Vaata UEFA Futsal, FIFA üritusi ja palju muud kõrgresolutsioonis."
+				},
+				"badminton": {
+					"title": "SportLemon Sulgpall | Tasuta Otseülekanded",
+					"description": "Vaata tasuta sulgpalli otseülekandeid. BWF World Tour, Thomas Cup ja palju muud HD kvaliteedis SportLemonis."
+				},
+				"netball": {
+					"title": "SportLemon Netipall | Tasuta Otseülekanded",
+					"description": "Vaata tasuta netipalli otseülekandeid. Supernetball, rahvusvahelised mängud HD kvaliteedis SportLemonis."
+				},
+				"floorball": {
+					"title": "SportLemon Saalihoki | Tasuta Otseülekanded",
+					"description": "Tasuta saalihoki otseülekanded SportLemonis. Vaata IFF MM ja suuremaid liigasid kõrgresolutsioonis."
+				},
+				"combat-sport": {
+					"title": "SportLemon Võitlussport | Tasuta Otseülekanded",
+					"description": "Vaata tasuta võitlusspordi otseülekandeid. UFC, Bellator, ONE Championship HD kvaliteedis SportLemonis."
+				},
+				"boxing": {
+					"title": "SportLemon Poks | Tasuta Otseülekanded HD",
+					"description": "Tasuta poksi otseülekanded SportLemonis. Vaata maailma tiitlimatše ja suuri võitlusõhtuid kõrgresolutsioonis."
+				},
+				"mma": {
+					"title": "SportLemon MMA | Tasuta UFC Otseülekanded",
+					"description": "Vaata tasuta MMA otseülekandeid. UFC, Bellator, ONE Championship HD kvaliteedis SportLemonis."
+				},
+				"snooker": {
+					"title": "SportLemon Snuuker | Tasuta Otseülekanded HD",
+					"description": "Tasuta snuukri otseülekanded SportLemonis. Vaata MM, UK Championship ja reitinguturniirid kõrgresolutsioonis."
+				},
+				"billiard": {
+					"title": "SportLemon Piljard | Tasuta Otseülekanded",
+					"description": "Vaata tasuta piljardi otseülekandeid. Maailma turniirid ja professionaalsed mängud HD kvaliteedis SportLemonis."
+				},
+				"table-tennis": {
+					"title": "SportLemon Lauatennis | Tasuta Otseülekanded",
+					"description": "Tasuta lauatennise otseülekanded SportLemonis. Vaata ITTF World Tour ja rahvusvahelisi matše kõrgresolutsioonis."
+				},
+				"padel-tennis": {
+					"title": "SportLemon Padel | Tasuta Otseülekanded HD",
+					"description": "Vaata tasuta padeli otseülekandeid. World Padel Tour ja suuremad turniirid HD kvaliteedis SportLemonis."
+				},
+				"squash": {
+					"title": "SportLemon Squash | Tasuta Otseülekanded",
+					"description": "Tasuta squashi otseülekanded SportLemonis. Vaata PSA World Tour ja rahvusvahelisi turniire kõrgresolutsioonis."
+				},
+				"motorsport": {
+					"title": "SportLemon Motosport | Tasuta F1 Otseülekanded",
+					"description": "Vaata tasuta motospordi otseülekandeid. F1, MotoGP, WRC HD kvaliteedis SportLemonis."
+				},
+				"racing": {
+					"title": "SportLemon Võidusõit | Tasuta Otseülekanded HD",
+					"description": "Tasuta võidusõidu otseülekanded SportLemonis. Vaata Formula 1, NASCAR ja palju muud kõrgresolutsioonis."
+				},
+				"cycling": {
+					"title": "SportLemon Jalgrattasport | Tasuta Otseülekanded",
+					"description": "Vaata tasuta jalgrattaspordi otseülekandeid. Tour de France, Giro, Vuelta HD kvaliteedis SportLemonis."
+				},
+				"equestrianism": {
+					"title": "SportLemon Ratsasport | Tasuta Otseülekanded",
+					"description": "Tasuta ratsaspordi otseülekanded SportLemonis. Vaata FEI üritusi ja rahvusvahelisi võistlusi kõrgresolutsioonis."
+				},
+				"golf": {
+					"title": "SportLemon Golf | Tasuta Otseülekanded HD",
+					"description": "Vaata tasuta golfi otseülekandeid. PGA Tour, majoorid ja Euroopa Tour HD kvaliteedis SportLemonis."
+				},
+				"field-hockey": {
+					"title": "SportLemon Maahoki | Tasuta Otseülekanded",
+					"description": "Tasuta maahoki otseülekanded SportLemonis. Vaata FIH üritusi ja rahvusvahelisi mänge kõrgresolutsioonis."
+				},
+				"lacrosse": {
+					"title": "SportLemon Lacrosse | Tasuta Otseülekanded",
+					"description": "Vaata tasuta lacrosse otseülekandeid. PLL, NLL ja rahvusvahelised turniirid HD kvaliteedis SportLemonis."
+				},
+				"athletics": {
+					"title": "SportLemon Kergejõustik | Tasuta Otseülekanded",
+					"description": "Tasuta kergejõustiku otseülekanded SportLemonis. Vaata Diamond League, MM ja olümpiamänge kõrgresolutsioonis."
+				},
+				"gymnastics": {
+					"title": "SportLemon Võimlemine | Tasuta Otseülekanded",
+					"description": "Vaata tasuta võimlemise otseülekandeid. MM, olümpiamängud ja suuremad võistlused HD kvaliteedis SportLemonis."
+				},
+				"weightlifting": {
+					"title": "SportLemon Tõstmine | Tasuta Otseülekanded",
+					"description": "Tasuta tõstmise otseülekanded SportLemonis. Vaata IWF MM ja rahvusvahelisi võistlusi kõrgresolutsioonis."
+				},
+				"climbing": {
+					"title": "SportLemon Ronimine | Tasuta Otseülekanded",
+					"description": "Vaata tasuta ronimise otseülekandeid. IFSC MM ja raskusaste võistlused HD kvaliteedis SportLemonis."
+				},
+				"winter-sport": {
+					"title": "SportLemon Talvealad | Tasuta Otseülekanded",
+					"description": "Tasuta talvealade otseülekanded SportLemonis. Vaata suusatamist, uisutamist ja taliolümpiamänge kõrgresolutsioonis."
+				},
+				"bandy": {
+					"title": "SportLemon Jääpall | Tasuta Otseülekanded",
+					"description": "Vaata tasuta jääpalli otseülekandeid. MM ja rahvusvahelised turniirid HD kvaliteedis SportLemonis."
+				},
+				"curling": {
+					"title": "SportLemon Curling | Tasuta Otseülekanded",
+					"description": "Tasuta curlingu otseülekanded SportLemonis. Vaata MM ja rahvusvahelisi turniire kõrgresolutsioonis."
+				},
+				"triathlon": {
+					"title": "SportLemon Triatlon | Tasuta Otseülekanded",
+					"description": "Vaata tasuta triatloni otseülekandeid. Ironman, ITU sari ja palju muud HD kvaliteedis SportLemonis."
+				},
+				"water-sports": {
+					"title": "SportLemon Veespordialad | Tasuta Otseülekanded",
+					"description": "Tasuta veespordi otseülekanded SportLemonis. Vaata ujumist, sukeldumist ja veeüritusi kõrgresolutsioonis."
+				},
+				"water-polo": {
+					"title": "SportLemon Veepall | Tasuta Otseülekanded",
+					"description": "Vaata tasuta veepalli otseülekandeid. MM, olümpiamängud ja liigad HD kvaliteedis SportLemonis."
+				},
+				"sailing": {
+					"title": "SportLemon Purjetamine | Tasuta Otseülekanded",
+					"description": "Tasuta purjetamise otseülekanded SportLemonis. Vaata America's Cup, olümpiaregatid kõrgresolutsioonis."
+				},
+				"bowling": {
+					"title": "SportLemon Keegel | Tasuta Otseülekanded",
+					"description": "Vaata tasuta keeglit otseülekandeid. PBA Tour ja suuremad turniirid HD kvaliteedis SportLemonis."
+				},
+				"darts": {
+					"title": "SportLemon Noolevise | Tasuta Otseülekanded",
+					"description": "Tasuta nooleviske otseülekanded SportLemonis. Vaata PDC MM ja suuri turniire kõrgresolutsioonis."
+				},
+				"chess": {
+					"title": "SportLemon Male | Tasuta Otseülekanded",
+					"description": "Vaata tasuta male otseülekandeid. MM, Kandidaatide turniir ja suured võistlused HD kvaliteedis SportLemonis."
+				},
+				"e-sports": {
+					"title": "SportLemon E-sport | Tasuta Otseülekanded",
+					"description": "Tasuta e-spordi otseülekanded SportLemonis. Vaata LoL, CS:GO, Dota 2 ja palju muud kõrgresolutsioonis."
+				},
+				"extreme-sport": {
+					"title": "SportLemon Ekstreemsport | Tasuta Otseülekanded",
+					"description": "SportLemon Ekstreemsport pakub tasuta HD kajastust parimatest ekstreemvõistlustest. Registreerimata. Vaata põnevaid üritusi täna."
+				},
+				"others": {
+					"title": "SportLemon Muud | Tasuta Spordi Otseülekanded HD",
+					"description": "Vaata tasuta muude spordialade otseülekandeid. Ainulaadsed ja arenevad spordialad HD kvaliteedis SportLemonis."
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "Eplsite | Otse Sport, Tulevased ja Praegused Mängud",
+				"description": "Avasta otseülekandeid, ajakavasid ja uuendusi kõigist spordialadest Eplsite'is. Vaata mänge tasuta HD kvaliteedis, jälgi tulevasi mänge ja ära jäta midagi vahele."
+			},
+			"sports": {
+				"football": {
+					"title": "Eplsite Jalgpall | Otseülekanded ja Tasuta HD",
+					"description": "Vaata parimaid mänge Eplsite Jalgpallis kvaliteetsete tasuta ülekannetega ilma registreerimata. Naudi kiiret ligipääsu otse jalgpallile — alusta vaatamist kohe."
+				},
+				"basketball": {
+					"title": "Eplsite Korvpall | Otseülekanded ja Tasuta HD",
+					"description": "Vaata kvaliteetseid mänge Eplsite Korvpallis tasuta ülekannetega ilma registreerimata. Naudi kiiret HD tegevust igal ajal. Alusta vaatamist kohe."
+				},
+				"tennis": {
+					"title": "Eplsite Tennis | Otseülekanded ja Tasuta HD",
+					"description": "Vaata kvaliteetseid matše Eplsite Tennises tasuta ligipääsuga ilma registreerimata ja kiire HD vaatamisega. Naudi otse tegevust — alusta vaatamist täna."
+				},
+				"ice-hockey": {
+					"title": "Eplsite Jäähoki | Tasuta HD Otseülekanded",
+					"description": "Naudi kiiret kvaliteetset tegevust Eplsite Jäähokis tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist kohe."
+				},
+				"baseball": {
+					"title": "Eplsite Pesapall | HD Otseülekanded ja Tasuta Mängud",
+					"description": "Vaata kvaliteetseid mänge Eplsite Pesapallis tasuta ülekannetega ilma registreerimata ja kiire HD taasesitusega. Naudi iga mängu — alusta vaatamist kohe."
+				},
+				"rugby-union": {
+					"title": "Eplsite Rugby Union | HD Otseülekanded ja Tasuta Mängud",
+					"description": "Vaata parimaid matše Eplsite Rugby Unionis tasuta ligipääsuga ilma registreerimata ja sujuva HD taasesitusega. Naudi kiiret tegevust — alusta vaatamist täna."
+				},
+				"rugby-league": {
+					"title": "Eplsite Rugby League | HD Otseülekanded ja Tasuta Mängud",
+					"description": "Vaata kiireid kvaliteetseid mänge Eplsite Rugby League'is tasuta ülekannetega ilma registreerimata ja sujuva HD tegevusega. Alusta vaatamist täna."
+				},
+				"rugby-sevens": {
+					"title": "Eplsite Rugby Sevens | Otse Rugby Sevens Ülekanded",
+					"description": "Eplsite Rugby Sevens pakub tasuta HD sevens-turniire ilma registreerimata. Vaata kiire tempoga rugby sevens tegevust otse ja naudi sujuvat ülekannet täna."
+				},
+				"cricket": {
+					"title": "Eplsite Kriket | HD Otseülekanded ja Tasuta Mängud",
+					"description": "Vaata kvaliteetseid matše Eplsite Kriketis tasuta ülekannetega ilma registreerimata ja kiire HD vaatamisega. Naudi iga mängu — alusta vaatamist kohe."
+				},
+				"american-football": {
+					"title": "Eplsite Ameerika Jalgpall | Tasuta NFL Otseülekanded HD",
+					"description": "Vaata kiireid kvaliteetseid mänge Eplsite Ameerika Jalgpallis tasuta ülekannetega ilma registreerimata ja sujuva HD tegevusega. Alusta vaatamist kohe."
+				},
+				"volleyball": {
+					"title": "Eplsite Võrkpall | Tasuta HD Otseülekanded",
+					"description": "Vaata kvaliteetseid mänge Eplsite Võrkpallis tasuta ülekannetega ilma registreerimata ja kiire HD tegevusega. Naudi iga matši — alusta vaatamist kohe."
+				},
+				"beach-volleyball": {
+					"title": "Eplsite Rannavõrkpall | Tasuta HD Otseülekanded",
+					"description": "Vaata kiireid kvaliteetseid mänge Eplsite Rannavõrkpallis tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist kohe."
+				},
+				"handball": {
+					"title": "Eplsite Käsipall | Tasuta HD Otseülekanded",
+					"description": "Naudi kvaliteetseid mänge Eplsite Käsipallis tasuta ülekannetega ilma registreerimata ja kiire HD tegevusega. Alusta vaatamist täna."
+				},
+				"beach-handball": {
+					"title": "Eplsite Rannakäsipall | Tasuta HD Otseülekanded",
+					"description": "Vaata kiireid mänge Eplsite Rannakäsipallis tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist kohe."
+				},
+				"beach-soccer": {
+					"title": "Eplsite Rannajalgpall | Tasuta HD Otseülekanded",
+					"description": "Vaata kvaliteetseid mänge Eplsite Rannajalgpallis tasuta ülekannetega ilma registreerimata ja kiire HD taasesitusega. Naudi tegevust — alusta vaatamist kohe."
+				},
+				"aussie-rules": {
+					"title": "Eplsite Austraalia Jalgpall | Tasuta AFL Otseülekanded HD",
+					"description": "Vaata kiireid kvaliteetseid mänge Eplsite Austraalia Jalgpallis tasuta ülekannetega ilma registreerimata ja sujuva HD tegevusega. Alusta vaatamist kohe."
+				},
+				"futsal": {
+					"title": "Eplsite Saalijalgpall | Tasuta HD Otseülekanded",
+					"description": "Naudi kvaliteetseid mänge Eplsite Saalijalgpallis tasuta ülekannetega ilma registreerimata ja kiire HD taasesitusega. Alusta vaatamist täna."
+				},
+				"badminton": {
+					"title": "Eplsite Sulgpall | Tasuta HD Otseülekanded",
+					"description": "Vaata kiireid kvaliteetseid matše Eplsite Sulgpallis tasuta ülekannetega ilma registreerimata ja sujuva HD tegevusega. Alusta vaatamist kohe."
+				},
+				"netball": {
+					"title": "Eplsite Netipall | Tasuta HD Otseülekanded",
+					"description": "Vaata kvaliteetseid mänge Eplsite Netipallis tasuta ülekannetega ilma registreerimata ja kiire HD taasesitusega. Naudi tegevust — alusta vaatamist kohe."
+				},
+				"floorball": {
+					"title": "Eplsite Saalihoki | Tasuta HD Otseülekanded",
+					"description": "Naudi kiireid kvaliteetseid mänge Eplsite Saalihokis tasuta ülekannetega ilma registreerimata ja sujuva HD tegevusega. Alusta vaatamist täna."
+				},
+				"combat-sport": {
+					"title": "Eplsite Võitlussport | Tasuta HD Otseülekanded",
+					"description": "Vaata kvaliteetseid võitlusi Eplsite Võitlusspordis tasuta ülekannetega ilma registreerimata ja kiire HD taasesitusega. Alusta vaatamist kohe."
+				},
+				"boxing": {
+					"title": "Eplsite Poks | Tasuta HD Otseülekanded",
+					"description": "Vaata kiireid kvaliteetseid võitlusi Eplsite Poksis tasuta ülekannetega ilma registreerimata ja sujuva HD tegevusega. Alusta vaatamist kohe."
+				},
+				"mma": {
+					"title": "Eplsite MMA | Tasuta UFC Otseülekanded HD",
+					"description": "Naudi kvaliteetseid võitlusi Eplsite MMA-s tasuta ülekannetega ilma registreerimata ja kiire HD taasesitusega. Alusta vaatamist täna."
+				},
+				"snooker": {
+					"title": "Eplsite Snuuker | Tasuta HD Otseülekanded",
+					"description": "Vaata kvaliteetseid matše Eplsite Snuukris tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist kohe."
+				},
+				"billiard": {
+					"title": "Eplsite Piljard | Tasuta HD Otseülekanded",
+					"description": "Vaata kiireid kvaliteetseid mänge Eplsite Piljardis tasuta ülekannetega ilma registreerimata ja kiire HD tegevusega. Alusta vaatamist kohe."
+				},
+				"table-tennis": {
+					"title": "Eplsite Lauatennis | Tasuta HD Otseülekanded",
+					"description": "Naudi kvaliteetseid matše Eplsite Lauatennises tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist täna."
+				},
+				"padel-tennis": {
+					"title": "Eplsite Padel | Tasuta HD Otseülekanded",
+					"description": "Vaata kiireid kvaliteetseid matše Eplsite Padelis tasuta ülekannetega ilma registreerimata ja kiire HD tegevusega. Alusta vaatamist kohe."
+				},
+				"squash": {
+					"title": "Eplsite Squash | Tasuta HD Otseülekanded",
+					"description": "Vaata kvaliteetseid matše Eplsite Squashis tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist kohe."
+				},
+				"motorsport": {
+					"title": "Eplsite Motosport | Tasuta F1 Otseülekanded HD",
+					"description": "Naudi kiireid kvaliteetseid võistlusi Eplsite Motospordis tasuta ülekannetega ilma registreerimata ja kiire HD tegevusega. Alusta vaatamist täna."
+				},
+				"racing": {
+					"title": "Eplsite Võidusõit | Tasuta HD Otseülekanded",
+					"description": "Vaata kvaliteetseid võistlusi Eplsite Võidusõidus tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist kohe."
+				},
+				"cycling": {
+					"title": "Eplsite Jalgrattasport | Tasuta HD Otseülekanded",
+					"description": "Vaata kiireid kvaliteetseid võistlusi Eplsite Jalgrattaspordis tasuta ülekannetega ilma registreerimata ja kiire HD tegevusega. Alusta vaatamist kohe."
+				},
+				"equestrianism": {
+					"title": "Eplsite Ratsasport | Tasuta HD Otseülekanded",
+					"description": "Naudi kvaliteetseid võistlusi Eplsite Ratsaspordis tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist täna."
+				},
+				"golf": {
+					"title": "Eplsite Golf | Tasuta HD Otseülekanded",
+					"description": "Vaata kvaliteetseid turniire Eplsite Golfis tasuta ülekannetega ilma registreerimata ja kiire HD taasesitusega. Alusta vaatamist kohe."
+				},
+				"field-hockey": {
+					"title": "Eplsite Maahoki | Tasuta HD Otseülekanded",
+					"description": "Vaata kiireid kvaliteetseid mänge Eplsite Maahokis tasuta ülekannetega ilma registreerimata ja sujuva HD tegevusega. Alusta vaatamist kohe."
+				},
+				"lacrosse": {
+					"title": "Eplsite Lacrosse | Tasuta HD Otseülekanded",
+					"description": "Naudi kvaliteetseid mänge Eplsite Lacrosse'is tasuta ülekannetega ilma registreerimata ja kiire HD taasesitusega. Alusta vaatamist täna."
+				},
+				"athletics": {
+					"title": "Eplsite Kergejõustik | Tasuta HD Otseülekanded",
+					"description": "Vaata kvaliteetseid võistlusi Eplsite Kergejõustikus tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist kohe."
+				},
+				"gymnastics": {
+					"title": "Eplsite Võimlemine | Tasuta HD Otseülekanded",
+					"description": "Vaata kiireid kvaliteetseid võistlusi Eplsite Võimlemises tasuta ülekannetega ilma registreerimata ja kiire HD tegevusega. Alusta vaatamist kohe."
+				},
+				"weightlifting": {
+					"title": "Eplsite Tõstmine | Tasuta HD Otseülekanded",
+					"description": "Naudi kvaliteetseid võistlusi Eplsite Tõstmises tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist täna."
+				},
+				"climbing": {
+					"title": "Eplsite Ronimine | Tasuta HD Otseülekanded",
+					"description": "Vaata kvaliteetseid võistlusi Eplsite Ronimises tasuta ülekannetega ilma registreerimata ja kiire HD taasesitusega. Alusta vaatamist kohe."
+				},
+				"winter-sport": {
+					"title": "Eplsite Talvealad | Tasuta HD Otseülekanded",
+					"description": "Vaata kiireid kvaliteetseid võistlusi Eplsite Talvealades tasuta ülekannetega ilma registreerimata ja sujuva HD tegevusega. Alusta vaatamist kohe."
+				},
+				"bandy": {
+					"title": "Eplsite Jääpall | Tasuta HD Otseülekanded",
+					"description": "Naudi kvaliteetseid mänge Eplsite Jääpallis tasuta ülekannetega ilma registreerimata ja kiire HD taasesitusega. Alusta vaatamist täna."
+				},
+				"curling": {
+					"title": "Eplsite Curling | Tasuta HD Otseülekanded",
+					"description": "Vaata kvaliteetseid matše Eplsite Curlingus tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist kohe."
+				},
+				"triathlon": {
+					"title": "Eplsite Triatlon | Tasuta HD Otseülekanded",
+					"description": "Vaata kiireid kvaliteetseid võistlusi Eplsite Triatlonis tasuta ülekannetega ilma registreerimata ja kiire HD tegevusega. Alusta vaatamist kohe."
+				},
+				"water-sports": {
+					"title": "Eplsite Veespordialad | Tasuta HD Otseülekanded",
+					"description": "Naudi kvaliteetseid võistlusi Eplsite Veespordialades tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist täna."
+				},
+				"water-polo": {
+					"title": "Eplsite Veepall | Tasuta HD Otseülekanded",
+					"description": "Vaata kvaliteetseid mänge Eplsite Veepallis tasuta ülekannetega ilma registreerimata ja kiire HD taasesitusega. Alusta vaatamist kohe."
+				},
+				"sailing": {
+					"title": "Eplsite Purjetamine | Tasuta HD Otseülekanded",
+					"description": "Vaata kiireid kvaliteetseid võistlusi Eplsite Purjetamises tasuta ülekannetega ilma registreerimata ja sujuva HD tegevusega. Alusta vaatamist kohe."
+				},
+				"bowling": {
+					"title": "Eplsite Keegel | Tasuta HD Otseülekanded",
+					"description": "Naudi kvaliteetseid turniire Eplsite Keeglis tasuta ülekannetega ilma registreerimata ja kiire HD taasesitusega. Alusta vaatamist täna."
+				},
+				"darts": {
+					"title": "Eplsite Noolevise | Tasuta HD Otseülekanded",
+					"description": "Vaata kvaliteetseid turniire Eplsite Noolevises tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist kohe."
+				},
+				"chess": {
+					"title": "Eplsite Male | Tasuta HD Otseülekanded",
+					"description": "Vaata kiireid kvaliteetseid matše Eplsite Males tasuta ülekannetega ilma registreerimata ja kiire HD tegevusega. Alusta vaatamist kohe."
+				},
+				"e-sports": {
+					"title": "Eplsite E-sport | Tasuta HD Otseülekanded",
+					"description": "Naudi kvaliteetseid turniire Eplsite E-spordis tasuta ülekannetega ilma registreerimata ja sujuva HD taasesitusega. Alusta vaatamist täna."
+				},
+				"extreme-sport": {
+					"title": "Eplsite Ekstreemsport | Otseülekanded",
+					"description": "Eplsite Ekstreemsport toob tasuta HD kajastuse parimatest ekstreemvõistlustest. Registreerimata. Vaata põnevaid ekstreemspordi üritusi kohe."
+				},
+				"others": {
+					"title": "Eplsite Muud | Otse Sport ja Üritused",
+					"description": "Vaata Eplsite Muud HD kvaliteedis tasuta ilma registreerimata. Naudi kvaliteetseid ülekandeid erinevatest spordialadest ja ainulaadsetest üritustest. Alusta vaatamist kohe."
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | Otse Spordiülekanded ja Tulevased Mängud",
+				"description": "Avasta P2P4U tasuta HD ülekandeid kõigist otse ja tulevastest spordimängudest. Kiire ligipääs ilma registreerimata — alusta oma lemmikürituste vaatamist kohe."
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U Jalgpall | Otse Jalgpalli Ülekanded",
+					"description": "Vaata P2P4U Jalgpalli tasuta HD kvaliteedis kiirete ülekannetega ilma registreerimata. Naudi sujuvat ligipääsu parimatele liigadele ja mängudele. Alusta vaatamist kohe."
+				},
+				"basketball": {
+					"title": "P2P4U Korvpall | Otse NBA Ülekanded",
+					"description": "Vaata P2P4U Korvpalli tasuta HD kvaliteedis kiirete NBA ülekannetega. Registreerimata, sujuv ligipääs ja kvaliteetne kajastus. Alusta otse mängude vaatamist kohe."
+				},
+				"tennis": {
+					"title": "P2P4U Tennis | Otse Grand Slam Ülekanded",
+					"description": "Naudi P2P4U Tennist HD kvaliteedis tasuta kiirete ATP ja WTA ürituste ülekannetega. Registreerimist pole vaja. Vaata otse matše kohe."
+				},
+				"ice-hockey": {
+					"title": "P2P4U Jäähoki | Otse NHL Ülekanded",
+					"description": "Vaata P2P4U Jäähokit tasuta HD kvaliteedis sujuva NHL tegevusega. Registreerimata, kiire ligipääs ja kvaliteetsed ülekanded. Vaata otse mänge kohe."
+				},
+				"baseball": {
+					"title": "P2P4U Pesapall | Otse MLB Ülekanded",
+					"description": "Vaata P2P4U Pesapalli tasuta HD kvaliteedis kiirete MLB ülekannetega. Registreerimata, sujuv ligipääs ja kvaliteetne kajastus. Alusta vaatamist kohe."
+				},
+				"rugby-union": {
+					"title": "P2P4U Rugby Union | Otse Rugby Ülekanded",
+					"description": "Vaata P2P4U Rugby Unionit tasuta HD kvaliteedis kiirete ülekannetega ilma registreerimata. Naudi sujuvat ligipääsu parimatele liigadele. Alusta vaatamist kohe."
+				},
+				"rugby-league": {
+					"title": "P2P4U Rugby League | Otse Rugby Mängud",
+					"description": "Vaata P2P4U Rugby League'i tasuta HD kvaliteedis kiirete NRL ja Super League ülekannetega. Registreerimata. Vaata otse kohe."
+				},
+				"rugby-sevens": {
+					"title": "P2P4U Rugby Sevens | Otse Rugby Sevens Ülekanded",
+					"description": "P2P4U Rugby Sevens pakub tasuta HD sevens-turniire ilma registreerimata. Vaata kiire tempoga rugby sevens tegevust otse ja naudi sujuvat ülekannet täna."
+				},
+				"cricket": {
+					"title": "P2P4U Kriket | Otse Kriketi Ülekanded",
+					"description": "Vaata P2P4U Kriketit tasuta HD kvaliteedis kiirete T20, ODI ja testmatšide ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"american-football": {
+					"title": "P2P4U Ameerika Jalgpall | Otse NFL Ülekanded",
+					"description": "Vaata P2P4U Ameerika Jalgpalli tasuta HD kvaliteedis kiirete NFL ja kolledži ülekannetega. Registreerimata. Vaata otse tegevust kohe."
+				},
+				"volleyball": {
+					"title": "P2P4U Võrkpall | Otse Võrkpalli Ülekanded",
+					"description": "Vaata P2P4U Võrkpalli tasuta HD kvaliteedis kiirete FIVB ja liigamängude ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"beach-volleyball": {
+					"title": "P2P4U Rannavõrkpall | Otse Ranna Ülekanded",
+					"description": "Vaata P2P4U Rannavõrkpalli tasuta HD kvaliteedis kiirete FIVB ja pro tour ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"handball": {
+					"title": "P2P4U Käsipall | Otse Käsipalli Ülekanded",
+					"description": "Vaata P2P4U Käsipalli tasuta HD kvaliteedis kiirete EHF ja liigamängude ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"beach-handball": {
+					"title": "P2P4U Rannakäsipall | Otse Ranna Tegevus",
+					"description": "Vaata P2P4U Rannakäsipalli tasuta HD kvaliteedis kiirete rahvusvaheliste ürituste ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"beach-soccer": {
+					"title": "P2P4U Rannajalgpall | Otse Rannajalgpalli Mängud",
+					"description": "Vaata P2P4U Rannajalgpalli tasuta HD kvaliteedis kiirete FIFA ja liigamängude ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"aussie-rules": {
+					"title": "P2P4U Austraalia Jalgpall | Otse AFL Ülekanded",
+					"description": "Vaata P2P4U Austraalia Jalgpalli tasuta HD kvaliteedis kiirete AFL mängude ülekannetega. Registreerimata. Vaata otse kohe."
+				},
+				"futsal": {
+					"title": "P2P4U Saalijalgpall | Otse Saalijalgpalli Ülekanded",
+					"description": "Vaata P2P4U Saalijalgpalli tasuta HD kvaliteedis kiirete UEFA ja FIFA ürituste ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"badminton": {
+					"title": "P2P4U Sulgpall | Otse Sulgpalli Ülekanded",
+					"description": "Vaata P2P4U Sulgpalli tasuta HD kvaliteedis kiirete BWF turniiride ülekannetega. Registreerimata. Vaata otse kohe."
+				},
+				"netball": {
+					"title": "P2P4U Netipall | Otse Netipalli Ülekanded",
+					"description": "Vaata P2P4U Netipalli tasuta HD kvaliteedis kiirete liiga ja rahvusvaheliste mängude ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"floorball": {
+					"title": "P2P4U Saalihoki | Otse Saalihoki Ülekanded",
+					"description": "Vaata P2P4U Saalihoki tasuta HD kvaliteedis kiirete IFF ja liigamängude ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"combat-sport": {
+					"title": "P2P4U Võitlussport | Otse Võitluse Ülekanded",
+					"description": "Vaata P2P4U Võitlussporti tasuta HD kvaliteedis kiirete UFC ja poksi ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"boxing": {
+					"title": "P2P4U Poks | Otse Poksi Ülekanded",
+					"description": "Vaata P2P4U Poksi tasuta HD kvaliteedis kiirete maailma tiitlimatšide ülekannetega. Registreerimata. Vaata otse kohe."
+				},
+				"mma": {
+					"title": "P2P4U MMA | Otse UFC Ülekanded",
+					"description": "Vaata P2P4U MMA-d tasuta HD kvaliteedis kiirete UFC ja Bellatori ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"snooker": {
+					"title": "P2P4U Snuuker | Otse Snuukri Ülekanded",
+					"description": "Vaata P2P4U Snuukrit tasuta HD kvaliteedis kiirete turniiride ja matšide ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"billiard": {
+					"title": "P2P4U Piljard | Otse Piljardi Ülekanded",
+					"description": "Vaata P2P4U Piljardit tasuta HD kvaliteedis kiirete maailma turniiride ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"table-tennis": {
+					"title": "P2P4U Lauatennis | Otse Lauatennise Ülekanded",
+					"description": "Vaata P2P4U Lauatennist tasuta HD kvaliteedis kiirete ITTF turniiride ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"padel-tennis": {
+					"title": "P2P4U Padel | Otse Padeli Ülekanded",
+					"description": "Vaata P2P4U Padelit tasuta HD kvaliteedis kiirete World Padel Tour ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"squash": {
+					"title": "P2P4U Squash | Otse Squashi Ülekanded",
+					"description": "Vaata P2P4U Squashi tasuta HD kvaliteedis kiirete PSA turniiride ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"motorsport": {
+					"title": "P2P4U Motosport | Otse F1 Ülekanded",
+					"description": "Vaata P2P4U Motosporti tasuta HD kvaliteedis kiirete F1 ja MotoGP ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"racing": {
+					"title": "P2P4U Võidusõit | Otse Võidusõidu Ülekanded",
+					"description": "Vaata P2P4U Võidusõitu tasuta HD kvaliteedis kiirete motospordi võistluste ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"cycling": {
+					"title": "P2P4U Jalgrattasport | Otse Jalgrattaspordi Ülekanded",
+					"description": "Vaata P2P4U Jalgrattasporti tasuta HD kvaliteedis kiirete Tour de France ja Giro ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"equestrianism": {
+					"title": "P2P4U Ratsasport | Otse Ratsaspordi Ülekanded",
+					"description": "Vaata P2P4U Ratsasporti tasuta HD kvaliteedis kiirete FEI ürituste ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"golf": {
+					"title": "P2P4U Golf | Otse Golfi Ülekanded",
+					"description": "Vaata P2P4U Golfi tasuta HD kvaliteedis kiirete PGA ja majooride ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"field-hockey": {
+					"title": "P2P4U Maahoki | Otse Maahoki Ülekanded",
+					"description": "Vaata P2P4U Maahoki tasuta HD kvaliteedis kiirete FIH ja rahvusvaheliste mängude ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"lacrosse": {
+					"title": "P2P4U Lacrosse | Otse Lacrosse'i Ülekanded",
+					"description": "Vaata P2P4U Lacrosse'i tasuta HD kvaliteedis kiirete PLL ja NLL ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"athletics": {
+					"title": "P2P4U Kergejõustik | Otse Kergejõustiku Ülekanded",
+					"description": "Vaata P2P4U Kergejõustikku tasuta HD kvaliteedis kiirete Diamond League ja MM ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"gymnastics": {
+					"title": "P2P4U Võimlemine | Otse Võimlemise Ülekanded",
+					"description": "Vaata P2P4U Võimlemist tasuta HD kvaliteedis kiirete MM ja olümpiamängude ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"weightlifting": {
+					"title": "P2P4U Tõstmine | Otse Tõstmise Ülekanded",
+					"description": "Vaata P2P4U Tõstmist tasuta HD kvaliteedis kiirete IWF võistluste ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"climbing": {
+					"title": "P2P4U Ronimine | Otse Ronimise Ülekanded",
+					"description": "Vaata P2P4U Ronimist tasuta HD kvaliteedis kiirete IFSC võistluste ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"winter-sport": {
+					"title": "P2P4U Talvealad | Otse Talvealade Ülekanded",
+					"description": "Vaata P2P4U Talvealasid tasuta HD kvaliteedis kiirete suusatamise ja uisutamise ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"bandy": {
+					"title": "P2P4U Jääpall | Otse Jääpalli Ülekanded",
+					"description": "Vaata P2P4U Jääpalli tasuta HD kvaliteedis kiirete MM ja liigamängude ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"curling": {
+					"title": "P2P4U Curling | Otse Curlingu Ülekanded",
+					"description": "Vaata P2P4U Curlingut tasuta HD kvaliteedis kiirete MM ja turniiride ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"triathlon": {
+					"title": "P2P4U Triatlon | Otse Triatloni Ülekanded",
+					"description": "Vaata P2P4U Triatloni tasuta HD kvaliteedis kiirete Ironman ja ITU ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"water-sports": {
+					"title": "P2P4U Veespordialad | Otse Veespordi Ülekanded",
+					"description": "Vaata P2P4U Veespordialasid tasuta HD kvaliteedis kiirete ujumise ja sukeldumise ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"water-polo": {
+					"title": "P2P4U Veepall | Otse Veepalli Ülekanded",
+					"description": "Vaata P2P4U Veepalli tasuta HD kvaliteedis kiirete MM ja liigamängude ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"sailing": {
+					"title": "P2P4U Purjetamine | Otse Purjetamise Ülekanded",
+					"description": "Vaata P2P4U Purjetamist tasuta HD kvaliteedis kiirete regattide ja ürituste ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"bowling": {
+					"title": "P2P4U Keegel | Otse Keegliülekanded",
+					"description": "Vaata P2P4U Keeglit tasuta HD kvaliteedis kiirete PBA turniiride ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"darts": {
+					"title": "P2P4U Noolevise | Otse Nooleviske Ülekanded",
+					"description": "Vaata P2P4U Nooleviske tasuta HD kvaliteedis kiirete PDC turniiride ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"chess": {
+					"title": "P2P4U Male | Otse Male Ülekanded",
+					"description": "Vaata P2P4U Male tasuta HD kvaliteedis kiirete MM ja turniiride ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"e-sports": {
+					"title": "P2P4U E-sport | Otse E-spordi Ülekanded",
+					"description": "Vaata P2P4U E-sporti tasuta HD kvaliteedis kiirete LoL ja CS:GO turniiride ülekannetega. Registreerimata. Vaata kohe."
+				},
+				"extreme-sport": {
+					"title": "P2P4U Ekstreemsport | Otse Ekstreemspordi Ülekanded",
+					"description": "P2P4U Ekstreemsport pakub tasuta HD kajastust parimatest ekstreemvõistlustest. Registreerimata. Vaata põnevaid ekstreemspordi üritusi kohe."
+				},
+				"others": {
+					"title": "P2P4U Muud | Otse Spordiülekanded",
+					"description": "Vaata P2P4U Muud tasuta HD kvaliteedis kiirete nišišpordi ja arenevate spordialade ülekannetega. Registreerimata. Alusta vaatamist kohe."
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | Otse Spordiülekanded Tasuta HD",
+				"description": "StreamHunter toob sulle parimad otse spordiülekanded tasuta HD kvaliteedis. Vaata jalgpalli, korvpalli, tennist ja rohkemat ilma registreerimata. Alusta vaatamist kohe."
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter Jalgpall | Tasuta Otse Jalgpalli Ülekanded",
+					"description": "Vaata StreamHunter Jalgpalli tasuta HD kvaliteedis parimate liigade ja turniiridega. Registreerimata, kiire ligipääs ja sujuvad ülekanded. Alusta vaatamist kohe."
+				},
+				"basketball": {
+					"title": "StreamHunter Korvpall | Tasuta NBA Otseülekanded",
+					"description": "Vaata StreamHunter Korvpalli tasuta HD kvaliteedis NBA ja rahvusvaheliste mängudega. Registreerimata, sujuv ligipääs. Alusta otse tegevuse vaatamist kohe."
+				},
+				"tennis": {
+					"title": "StreamHunter Tennis | Tasuta Grand Slam Otseülekanded",
+					"description": "Naudi StreamHunter Tennist tasuta HD kvaliteedis ATP, WTA ja Grand Slam üritustega. Registreerimata. Vaata otse matše kohe."
+				},
+				"ice-hockey": {
+					"title": "StreamHunter Jäähoki | Tasuta NHL Otseülekanded",
+					"description": "Vaata StreamHunter Jäähokit tasuta HD kvaliteedis NHL ja rahvusvahelise tegevusega. Registreerimata, kiire ligipääs. Alusta vaatamist kohe."
+				},
+				"baseball": {
+					"title": "StreamHunter Pesapall | Tasuta MLB Otseülekanded",
+					"description": "Vaata StreamHunter Pesapalli tasuta HD kvaliteedis MLB mängude ja rahvusvaheliste turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"rugby-union": {
+					"title": "StreamHunter Rugby Union | Tasuta Otse Rugby Ülekanded",
+					"description": "Vaata StreamHunter Rugby Unionit tasuta HD kvaliteedis parimate liigade ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"rugby-league": {
+					"title": "StreamHunter Rugby League | Tasuta NRL Otseülekanded",
+					"description": "Vaata StreamHunter Rugby League'i tasuta HD kvaliteedis NRL ja Super League mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter Rugby Sevens | Tasuta Sevens Ülekanded",
+					"description": "StreamHunter Rugby Sevens pakub tasuta HD sevens-turniire ilma registreerimata. Vaata kiire tempoga rugby sevens tegevust otse täna."
+				},
+				"cricket": {
+					"title": "StreamHunter Kriket | Tasuta Otse Kriketi Ülekanded",
+					"description": "Vaata StreamHunter Kriketit tasuta HD kvaliteedis IPL, T20 ja testmatšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"american-football": {
+					"title": "StreamHunter Ameerika Jalgpall | Tasuta NFL Otseülekanded",
+					"description": "Vaata StreamHunter Ameerika Jalgpalli tasuta HD kvaliteedis NFL ja kolledži mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"volleyball": {
+					"title": "StreamHunter Võrkpall | Tasuta Otse Võrkpalli Ülekanded",
+					"description": "Vaata StreamHunter Võrkpalli tasuta HD kvaliteedis FIVB ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter Rannavõrkpall | Tasuta Ranna Ülekanded",
+					"description": "Vaata StreamHunter Rannavõrkpalli tasuta HD kvaliteedis pro tour ja FIVB üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"handball": {
+					"title": "StreamHunter Käsipall | Tasuta Otse Käsipalli Ülekanded",
+					"description": "Vaata StreamHunter Käsipalli tasuta HD kvaliteedis EHF ja liigamängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"beach-handball": {
+					"title": "StreamHunter Rannakäsipall | Tasuta Ranna Tegevus",
+					"description": "Vaata StreamHunter Rannakäsipalli tasuta HD kvaliteedis rahvusvaheliste üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"beach-soccer": {
+					"title": "StreamHunter Rannajalgpall | Tasuta Rannajalgpalli Ülekanded",
+					"description": "Vaata StreamHunter Rannajalgpalli tasuta HD kvaliteedis FIFA ja liigamängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"aussie-rules": {
+					"title": "StreamHunter Austraalia Jalgpall | Tasuta AFL Otseülekanded",
+					"description": "Vaata StreamHunter Austraalia Jalgpalli tasuta HD kvaliteedis AFL mängude ja finaalidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"futsal": {
+					"title": "StreamHunter Saalijalgpall | Tasuta Otse Saalijalgpalli Ülekanded",
+					"description": "Vaata StreamHunter Saalijalgpalli tasuta HD kvaliteedis UEFA ja FIFA turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"badminton": {
+					"title": "StreamHunter Sulgpall | Tasuta Otse Sulgpalli Ülekanded",
+					"description": "Vaata StreamHunter Sulgpalli tasuta HD kvaliteedis BWF ja rahvusvaheliste turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"netball": {
+					"title": "StreamHunter Netipall | Tasuta Otse Netipalli Ülekanded",
+					"description": "Vaata StreamHunter Netipalli tasuta HD kvaliteedis liiga ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"floorball": {
+					"title": "StreamHunter Saalihoki | Tasuta Otse Saalihoki Ülekanded",
+					"description": "Vaata StreamHunter Saalihoki tasuta HD kvaliteedis IFF ja liigamängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"combat-sport": {
+					"title": "StreamHunter Võitlussport | Tasuta Otse Võitluse Ülekanded",
+					"description": "Vaata StreamHunter Võitlussporti tasuta HD kvaliteedis UFC, poksi ja MMA üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"boxing": {
+					"title": "StreamHunter Poks | Tasuta Otse Poksi Ülekanded",
+					"description": "Vaata StreamHunter Poksi tasuta HD kvaliteedis maailma tiitlimatšide ja PPV üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"mma": {
+					"title": "StreamHunter MMA | Tasuta UFC Otseülekanded",
+					"description": "Vaata StreamHunter MMA-d tasuta HD kvaliteedis UFC ja Bellatori üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"snooker": {
+					"title": "StreamHunter Snuuker | Tasuta Otse Snuukri Ülekanded",
+					"description": "Vaata StreamHunter Snuukrit tasuta HD kvaliteedis maailma turniiride ja matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"billiard": {
+					"title": "StreamHunter Piljard | Tasuta Otse Piljardi Ülekanded",
+					"description": "Vaata StreamHunter Piljardit tasuta HD kvaliteedis profiturniiride ja matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"table-tennis": {
+					"title": "StreamHunter Lauatennis | Tasuta Otse Lauatennise Ülekanded",
+					"description": "Vaata StreamHunter Lauatennist tasuta HD kvaliteedis ITTF turniiride ja matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"padel-tennis": {
+					"title": "StreamHunter Padel | Tasuta Otse Padeli Ülekanded",
+					"description": "Vaata StreamHunter Padelit tasuta HD kvaliteedis World Padel Tour üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"squash": {
+					"title": "StreamHunter Squash | Tasuta Otse Squashi Ülekanded",
+					"description": "Vaata StreamHunter Squashi tasuta HD kvaliteedis PSA turniiride ja matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"motorsport": {
+					"title": "StreamHunter Motosport | Tasuta F1 Otseülekanded",
+					"description": "Vaata StreamHunter Motosporti tasuta HD kvaliteedis F1, MotoGP ja NASCAR võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"racing": {
+					"title": "StreamHunter Võidusõit | Tasuta Otse Võidusõidu Ülekanded",
+					"description": "Vaata StreamHunter Võidusõitu tasuta HD kvaliteedis auto- ja mootorrattavõistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"cycling": {
+					"title": "StreamHunter Jalgrattasport | Tasuta Otse Jalgrattaspordi Ülekanded",
+					"description": "Vaata StreamHunter Jalgrattasporti tasuta HD kvaliteedis Tour de France ja suurtega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"equestrianism": {
+					"title": "StreamHunter Ratsasport | Tasuta Otse Ratsaspordi Ülekanded",
+					"description": "Vaata StreamHunter Ratsasporti tasuta HD kvaliteedis FEI ja rahvusvaheliste üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"golf": {
+					"title": "StreamHunter Golf | Tasuta Otse Golfi Ülekanded",
+					"description": "Vaata StreamHunter Golfi tasuta HD kvaliteedis PGA, majooride ja Ryder Cup üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"field-hockey": {
+					"title": "StreamHunter Maahoki | Tasuta Otse Maahoki Ülekanded",
+					"description": "Vaata StreamHunter Maahoki tasuta HD kvaliteedis FIH ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"lacrosse": {
+					"title": "StreamHunter Lacrosse | Tasuta Otse Lacrosse'i Ülekanded",
+					"description": "Vaata StreamHunter Lacrosse'i tasuta HD kvaliteedis PLL, NLL ja kolledži mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"athletics": {
+					"title": "StreamHunter Kergejõustik | Tasuta Otse Kergejõustiku Ülekanded",
+					"description": "Vaata StreamHunter Kergejõustikku tasuta HD kvaliteedis Diamond League ja MM üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"gymnastics": {
+					"title": "StreamHunter Võimlemine | Tasuta Otse Võimlemise Ülekanded",
+					"description": "Vaata StreamHunter Võimlemist tasuta HD kvaliteedis MM ja olümpiamängude võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"weightlifting": {
+					"title": "StreamHunter Tõstmine | Tasuta Otse Tõstmise Ülekanded",
+					"description": "Vaata StreamHunter Tõstmist tasuta HD kvaliteedis IWF ja rahvusvaheliste võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"climbing": {
+					"title": "StreamHunter Ronimine | Tasuta Otse Ronimise Ülekanded",
+					"description": "Vaata StreamHunter Ronimist tasuta HD kvaliteedis IFSC ja maailma karika võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"winter-sport": {
+					"title": "StreamHunter Talvealad | Tasuta Otse Talvealade Ülekanded",
+					"description": "Vaata StreamHunter Talvealasid tasuta HD kvaliteedis suusatamise, lumelaua ja uisutamise võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"bandy": {
+					"title": "StreamHunter Jääpall | Tasuta Otse Jääpalli Ülekanded",
+					"description": "Vaata StreamHunter Jääpalli tasuta HD kvaliteedis MM ja liigamängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"curling": {
+					"title": "StreamHunter Curling | Tasuta Otse Curlingu Ülekanded",
+					"description": "Vaata StreamHunter Curlingut tasuta HD kvaliteedis MM ja maailma turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"triathlon": {
+					"title": "StreamHunter Triatlon | Tasuta Otse Triatloni Ülekanded",
+					"description": "Vaata StreamHunter Triatloni tasuta HD kvaliteedis Ironman ja ITU üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"water-sports": {
+					"title": "StreamHunter Veespordialad | Tasuta Otse Veespordi Ülekanded",
+					"description": "Vaata StreamHunter Veespordialasid tasuta HD kvaliteedis ujumise ja sukeldumise võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"water-polo": {
+					"title": "StreamHunter Veepall | Tasuta Otse Veepalli Ülekanded",
+					"description": "Vaata StreamHunter Veepalli tasuta HD kvaliteedis MM ja liigamängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"sailing": {
+					"title": "StreamHunter Purjetamine | Tasuta Otse Purjetamise Ülekanded",
+					"description": "Vaata StreamHunter Purjetamist tasuta HD kvaliteedis America's Cup ja regattidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"bowling": {
+					"title": "StreamHunter Keegel | Tasuta Otse Keegliülekanded",
+					"description": "Vaata StreamHunter Keeglit tasuta HD kvaliteedis PBA turniiride ja matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"darts": {
+					"title": "StreamHunter Noolevise | Tasuta Otse Nooleviske Ülekanded",
+					"description": "Vaata StreamHunter Nooleviske tasuta HD kvaliteedis PDC ja BDO turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"chess": {
+					"title": "StreamHunter Male | Tasuta Otse Male Ülekanded",
+					"description": "Vaata StreamHunter Male tasuta HD kvaliteedis MM ja superturniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"e-sports": {
+					"title": "StreamHunter E-sport | Tasuta Otse E-spordi Ülekanded",
+					"description": "Vaata StreamHunter E-sporti tasuta HD kvaliteedis LoL, CS:GO ja Dota 2 turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"extreme-sport": {
+					"title": "StreamHunter Ekstreemsport | Tasuta Otse Ekstreemülekanded",
+					"description": "StreamHunter Ekstreemsport pakub tasuta HD kajastust parimatest ekstreemvõistlustest. Registreerimata. Vaata X Games ja rohkemat kohe."
+				},
+				"others": {
+					"title": "StreamHunter Muud | Tasuta Otse Spordiülekanded",
+					"description": "Vaata StreamHunter Muud tasuta HD kvaliteedis erinevate spordialade ja ainulaadsete üritustega. Registreerimata. Alusta vaatamist kohe."
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | Tasuta Otse Spordiülekanded HD Kvaliteedis",
+				"description": "MethStreams pakub tasuta HD otse spordiülekandeid jalgpallist, korvpallist, tennisest ja rohkemast. Registreerimata, kiire ligipääs. Alusta vaatamist kohe."
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams Jalgpall | Tasuta Otse Jalgpalli Ülekanded",
+					"description": "Vaata MethStreams Jalgpalli tasuta HD kvaliteedis Premier League, La Liga ja Champions League mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"basketball": {
+					"title": "MethStreams Korvpall | Tasuta NBA Otseülekanded",
+					"description": "Vaata MethStreams Korvpalli tasuta HD kvaliteedis NBA, EuroLeague ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"tennis": {
+					"title": "MethStreams Tennis | Tasuta Grand Slam Otseülekanded",
+					"description": "Naudi MethStreams Tennist tasuta HD kvaliteedis Wimbledoni, US Openi ja ATP turniiridega. Registreerimata. Vaata otse kohe."
+				},
+				"ice-hockey": {
+					"title": "MethStreams Jäähoki | Tasuta NHL Otseülekanded",
+					"description": "Vaata MethStreams Jäähokit tasuta HD kvaliteedis NHL ja rahvusvahelise tegevusega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"baseball": {
+					"title": "MethStreams Pesapall | Tasuta MLB Otseülekanded",
+					"description": "Vaata MethStreams Pesapalli tasuta HD kvaliteedis MLB ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"rugby-union": {
+					"title": "MethStreams Rugby Union | Tasuta Otse Rugby Ülekanded",
+					"description": "Vaata MethStreams Rugby Unionit tasuta HD kvaliteedis Six Nations ja Premiership mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"rugby-league": {
+					"title": "MethStreams Rugby League | Tasuta Super League Otseülekanded",
+					"description": "Vaata MethStreams Rugby League'i tasuta HD kvaliteedis Super League ja NRL mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"rugby-sevens": {
+					"title": "MethStreams Rugby Sevens | Tasuta Sevens Turniirid",
+					"description": "MethStreams Rugby Sevens pakub tasuta HD sevens-turniire ilma registreerimata. Vaata kiire tempoga rugby sevens tegevust otse täna."
+				},
+				"cricket": {
+					"title": "MethStreams Kriket | Tasuta Otse Kriketi Ülekanded",
+					"description": "Vaata MethStreams Kriketit tasuta HD kvaliteedis IPL, Ashes ja rahvusvaheliste matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"american-football": {
+					"title": "MethStreams Ameerika Jalgpall | Tasuta NFL Otseülekanded",
+					"description": "Vaata MethStreams Ameerika Jalgpalli tasuta HD kvaliteedis NFL, Super Bowl ja kolledži mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"volleyball": {
+					"title": "MethStreams Võrkpall | Tasuta Otse Võrkpalli Ülekanded",
+					"description": "Vaata MethStreams Võrkpalli tasuta HD kvaliteedis FIVB ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"beach-volleyball": {
+					"title": "MethStreams Rannavõrkpall | Tasuta Ranna Ülekanded",
+					"description": "Vaata MethStreams Rannavõrkpalli tasuta HD kvaliteedis FIVB ja pro tour üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"handball": {
+					"title": "MethStreams Käsipall | Tasuta Otse Käsipalli Ülekanded",
+					"description": "Vaata MethStreams Käsipalli tasuta HD kvaliteedis EHF Champions League ja liigamängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"beach-handball": {
+					"title": "MethStreams Rannakäsipall | Tasuta Ranna Ülekanded",
+					"description": "Vaata MethStreams Rannakäsipalli tasuta HD kvaliteedis rahvusvaheliste üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"beach-soccer": {
+					"title": "MethStreams Rannajalgpall | Tasuta Rannajalgpalli Ülekanded",
+					"description": "Vaata MethStreams Rannajalgpalli tasuta HD kvaliteedis FIFA ja turniirimängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"aussie-rules": {
+					"title": "MethStreams Austraalia Jalgpall | Tasuta AFL Otseülekanded",
+					"description": "Vaata MethStreams Austraalia Jalgpalli tasuta HD kvaliteedis AFL mängude ja finaalidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"futsal": {
+					"title": "MethStreams Saalijalgpall | Tasuta Otse Saalijalgpalli Ülekanded",
+					"description": "Vaata MethStreams Saalijalgpalli tasuta HD kvaliteedis UEFA ja FIFA turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"badminton": {
+					"title": "MethStreams Sulgpall | Tasuta Otse Sulgpalli Ülekanded",
+					"description": "Vaata MethStreams Sulgpalli tasuta HD kvaliteedis BWF ja All England turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"netball": {
+					"title": "MethStreams Netipall | Tasuta Otse Netipalli Ülekanded",
+					"description": "Vaata MethStreams Netipalli tasuta HD kvaliteedis Superleague ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"floorball": {
+					"title": "MethStreams Saalihoki | Tasuta Otse Saalihoki Ülekanded",
+					"description": "Vaata MethStreams Saalihoki tasuta HD kvaliteedis IFF ja liigamängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"combat-sport": {
+					"title": "MethStreams Võitlussport | Tasuta Otse Võitluse Ülekanded",
+					"description": "Vaata MethStreams Võitlussporti tasuta HD kvaliteedis UFC, poksi ja MMA üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"boxing": {
+					"title": "MethStreams Poks | Tasuta Otse Poksi Ülekanded",
+					"description": "Vaata MethStreams Poksi tasuta HD kvaliteedis maailma tiitlimatšide ja PPV võitlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"mma": {
+					"title": "MethStreams MMA | Tasuta UFC Otseülekanded",
+					"description": "Vaata MethStreams MMA-d tasuta HD kvaliteedis UFC ja Bellatori võitlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"snooker": {
+					"title": "MethStreams Snuuker | Tasuta Otse Snuukri Ülekanded",
+					"description": "Vaata MethStreams Snuukrit tasuta HD kvaliteedis maailma turniiride ja Crucible'i matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"billiard": {
+					"title": "MethStreams Piljard | Tasuta Otse Piljardi Ülekanded",
+					"description": "Vaata MethStreams Piljardit tasuta HD kvaliteedis profiturniiride ja matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"table-tennis": {
+					"title": "MethStreams Lauatennis | Tasuta Otse Lauatennise Ülekanded",
+					"description": "Vaata MethStreams Lauatennist tasuta HD kvaliteedis ITTF ja rahvusvaheliste turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"padel-tennis": {
+					"title": "MethStreams Padel | Tasuta Otse Padeli Ülekanded",
+					"description": "Vaata MethStreams Padelit tasuta HD kvaliteedis World Padel Tour üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"squash": {
+					"title": "MethStreams Squash | Tasuta Otse Squashi Ülekanded",
+					"description": "Vaata MethStreams Squashi tasuta HD kvaliteedis PSA turniiride ja matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"motorsport": {
+					"title": "MethStreams Motosport | Tasuta F1 Otseülekanded",
+					"description": "Vaata MethStreams Motosporti tasuta HD kvaliteedis F1, MotoGP ja WRC võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"racing": {
+					"title": "MethStreams Võidusõit | Tasuta Otse Võidusõidu Ülekanded",
+					"description": "Vaata MethStreams Võidusõitu tasuta HD kvaliteedis auto- ja mootorrattavõistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"cycling": {
+					"title": "MethStreams Jalgrattasport | Tasuta Otse Jalgrattaspordi Ülekanded",
+					"description": "Vaata MethStreams Jalgrattasporti tasuta HD kvaliteedis Tour de France ja suurtuuridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"equestrianism": {
+					"title": "MethStreams Ratsasport | Tasuta Otse Ratsaspordi Ülekanded",
+					"description": "Vaata MethStreams Ratsasporti tasuta HD kvaliteedis FEI ja rahvusvaheliste üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"golf": {
+					"title": "MethStreams Golf | Tasuta Otse Golfi Ülekanded",
+					"description": "Vaata MethStreams Golfi tasuta HD kvaliteedis The Open, Masters ja PGA turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"field-hockey": {
+					"title": "MethStreams Maahoki | Tasuta Otse Maahoki Ülekanded",
+					"description": "Vaata MethStreams Maahoki tasuta HD kvaliteedis FIH ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"lacrosse": {
+					"title": "MethStreams Lacrosse | Tasuta Otse Lacrosse'i Ülekanded",
+					"description": "Vaata MethStreams Lacrosse'i tasuta HD kvaliteedis PLL ja NLL mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"athletics": {
+					"title": "MethStreams Kergejõustik | Tasuta Otse Kergejõustiku Ülekanded",
+					"description": "Vaata MethStreams Kergejõustikku tasuta HD kvaliteedis Diamond League ja MM üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"gymnastics": {
+					"title": "MethStreams Võimlemine | Tasuta Otse Võimlemise Ülekanded",
+					"description": "Vaata MethStreams Võimlemist tasuta HD kvaliteedis MM ja olümpiamängude võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"weightlifting": {
+					"title": "MethStreams Tõstmine | Tasuta Otse Tõstmise Ülekanded",
+					"description": "Vaata MethStreams Tõstmist tasuta HD kvaliteedis IWF ja rahvusvaheliste võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"climbing": {
+					"title": "MethStreams Ronimine | Tasuta Otse Ronimise Ülekanded",
+					"description": "Vaata MethStreams Ronimist tasuta HD kvaliteedis IFSC ja maailma karika võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"winter-sport": {
+					"title": "MethStreams Talvealad | Tasuta Otse Talvealade Ülekanded",
+					"description": "Vaata MethStreams Talvealasid tasuta HD kvaliteedis suusatamise, lumelaua ja uisutamise võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"bandy": {
+					"title": "MethStreams Jääpall | Tasuta Otse Jääpalli Ülekanded",
+					"description": "Vaata MethStreams Jääpalli tasuta HD kvaliteedis MM ja liigamängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"curling": {
+					"title": "MethStreams Curling | Tasuta Otse Curlingu Ülekanded",
+					"description": "Vaata MethStreams Curlingut tasuta HD kvaliteedis MM ja turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"triathlon": {
+					"title": "MethStreams Triatlon | Tasuta Otse Triatloni Ülekanded",
+					"description": "Vaata MethStreams Triatloni tasuta HD kvaliteedis Ironman ja ITU üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"water-sports": {
+					"title": "MethStreams Veespordialad | Tasuta Otse Veespordi Ülekanded",
+					"description": "Vaata MethStreams Veespordialasid tasuta HD kvaliteedis ujumise ja sukeldumise võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"water-polo": {
+					"title": "MethStreams Veepall | Tasuta Otse Veepalli Ülekanded",
+					"description": "Vaata MethStreams Veepalli tasuta HD kvaliteedis MM ja liigamängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"sailing": {
+					"title": "MethStreams Purjetamine | Tasuta Otse Purjetamise Ülekanded",
+					"description": "Vaata MethStreams Purjetamist tasuta HD kvaliteedis America's Cup ja regattidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"bowling": {
+					"title": "MethStreams Keegel | Tasuta Otse Keegliülekanded",
+					"description": "Vaata MethStreams Keeglit tasuta HD kvaliteedis PBA turniiride ja matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"darts": {
+					"title": "MethStreams Noolevise | Tasuta Otse Nooleviske Ülekanded",
+					"description": "Vaata MethStreams Nooleviske tasuta HD kvaliteedis PDC MM ja turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"chess": {
+					"title": "MethStreams Male | Tasuta Otse Male Ülekanded",
+					"description": "Vaata MethStreams Male tasuta HD kvaliteedis MM ja superturniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"e-sports": {
+					"title": "MethStreams E-sport | Tasuta Otse E-spordi Ülekanded",
+					"description": "Vaata MethStreams E-sporti tasuta HD kvaliteedis LoL, CS:GO ja Valorant turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"extreme-sport": {
+					"title": "MethStreams Ekstreemsport | Tasuta Otse Ekstreemülekanded",
+					"description": "MethStreams Ekstreemsport pakub tasuta HD kajastust parimatest ekstreemvõistlustest. Registreerimata. Vaata X Games ja rohkemat kohe."
+				},
+				"others": {
+					"title": "MethStreams Muud | Tasuta Otse Spordiülekanded",
+					"description": "Vaata MethStreams Muud tasuta HD kvaliteedis erinevate spordialade ja ainulaadsete üritustega. Registreerimata. Alusta vaatamist kohe."
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | Tasuta Otse Spordiülekanded HD Kvaliteedis",
+				"description": "WiziWig pakub tasuta HD otse spordiülekandeid jalgpallist, korvpallist, tennisest ja rohkemast. Registreerimata, kiire ligipääs ja kvaliteetsed ülekanded. Alusta vaatamist kohe."
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig Jalgpall | Tasuta Otse Jalgpalli Ülekanded",
+					"description": "Vaata WiziWig Jalgpalli tasuta HD kvaliteedis parimate liigade ja turniiridega. Registreerimata, kiire ligipääs ja sujuvad ülekanded. Alusta vaatamist kohe."
+				},
+				"basketball": {
+					"title": "WiziWig Korvpall | Tasuta NBA Otseülekanded",
+					"description": "Vaata WiziWig Korvpalli tasuta HD kvaliteedis NBA ja rahvusvaheliste mängudega. Registreerimata, sujuv ligipääs. Alusta vaatamist kohe."
+				},
+				"tennis": {
+					"title": "WiziWig Tennis | Tasuta Grand Slam Otseülekanded",
+					"description": "Naudi WiziWig Tennist tasuta HD kvaliteedis ATP, WTA ja Grand Slam turniiridega. Registreerimata. Vaata otse matše kohe."
+				},
+				"ice-hockey": {
+					"title": "WiziWig Jäähoki | Tasuta NHL Otseülekanded",
+					"description": "Vaata WiziWig Jäähokit tasuta HD kvaliteedis NHL ja rahvusvahelise tegevusega. Registreerimata, kiire ligipääs. Alusta vaatamist kohe."
+				},
+				"baseball": {
+					"title": "WiziWig Pesapall | Tasuta MLB Otseülekanded",
+					"description": "Vaata WiziWig Pesapalli tasuta HD kvaliteedis MLB ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"rugby-union": {
+					"title": "WiziWig Rugby Union | Tasuta Otse Rugby Ülekanded",
+					"description": "Vaata WiziWig Rugby Unionit tasuta HD kvaliteedis parimate liigade ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"rugby-league": {
+					"title": "WiziWig Rugby League | Tasuta NRL Otseülekanded",
+					"description": "Vaata WiziWig Rugby League'i tasuta HD kvaliteedis NRL ja Super League mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"rugby-sevens": {
+					"title": "WiziWig Rugby Sevens | Tasuta Sevens Turniirid",
+					"description": "WiziWig Rugby Sevens pakub tasuta HD sevens-turniire ilma registreerimata. Vaata kiire tempoga rugby sevens tegevust otse täna."
+				},
+				"cricket": {
+					"title": "WiziWig Kriket | Tasuta Otse Kriketi Ülekanded",
+					"description": "Vaata WiziWig Kriketit tasuta HD kvaliteedis IPL, T20 ja testmatšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"american-football": {
+					"title": "WiziWig Ameerika Jalgpall | Tasuta NFL Otseülekanded",
+					"description": "Vaata WiziWig Ameerika Jalgpalli tasuta HD kvaliteedis NFL ja kolledži mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"volleyball": {
+					"title": "WiziWig Võrkpall | Tasuta Otse Võrkpalli Ülekanded",
+					"description": "Vaata WiziWig Võrkpalli tasuta HD kvaliteedis FIVB ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"beach-volleyball": {
+					"title": "WiziWig Rannavõrkpall | Tasuta Ranna Ülekanded",
+					"description": "Vaata WiziWig Rannavõrkpalli tasuta HD kvaliteedis FIVB ja pro tour üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"handball": {
+					"title": "WiziWig Käsipall | Tasuta Otse Käsipalli Ülekanded",
+					"description": "Vaata WiziWig Käsipalli tasuta HD kvaliteedis EHF ja liigamängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"beach-handball": {
+					"title": "WiziWig Rannakäsipall | Tasuta Ranna Ülekanded",
+					"description": "Vaata WiziWig Rannakäsipalli tasuta HD kvaliteedis rahvusvaheliste üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"beach-soccer": {
+					"title": "WiziWig Rannajalgpall | Tasuta Rannajalgpalli Ülekanded",
+					"description": "Vaata WiziWig Rannajalgpalli tasuta HD kvaliteedis FIFA ja turniirimängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"aussie-rules": {
+					"title": "WiziWig Austraalia Jalgpall | Tasuta AFL Otseülekanded",
+					"description": "Vaata WiziWig Austraalia Jalgpalli tasuta HD kvaliteedis AFL mängude ja finaalidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"futsal": {
+					"title": "WiziWig Saalijalgpall | Tasuta Otse Saalijalgpalli Ülekanded",
+					"description": "Vaata WiziWig Saalijalgpalli tasuta HD kvaliteedis UEFA ja FIFA turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"badminton": {
+					"title": "WiziWig Sulgpall | Tasuta Otse Sulgpalli Ülekanded",
+					"description": "Vaata WiziWig Sulgpalli tasuta HD kvaliteedis BWF ja rahvusvaheliste turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"netball": {
+					"title": "WiziWig Netipall | Tasuta Otse Netipalli Ülekanded",
+					"description": "Vaata WiziWig Netipalli tasuta HD kvaliteedis liiga ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"floorball": {
+					"title": "WiziWig Saalihoki | Tasuta Otse Saalihoki Ülekanded",
+					"description": "Vaata WiziWig Saalihoki tasuta HD kvaliteedis IFF ja liigamängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"combat-sport": {
+					"title": "WiziWig Võitlussport | Tasuta Otse Võitluse Ülekanded",
+					"description": "Vaata WiziWig Võitlussporti tasuta HD kvaliteedis UFC, poksi ja MMA üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"boxing": {
+					"title": "WiziWig Poks | Tasuta Otse Poksi Ülekanded",
+					"description": "Vaata WiziWig Poksi tasuta HD kvaliteedis maailma tiitlimatšide ja PPV võitlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"mma": {
+					"title": "WiziWig MMA | Tasuta UFC Otseülekanded",
+					"description": "Vaata WiziWig MMA-d tasuta HD kvaliteedis UFC ja Bellatori võitlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"snooker": {
+					"title": "WiziWig Snuuker | Tasuta Otse Snuukri Ülekanded",
+					"description": "Vaata WiziWig Snuukrit tasuta HD kvaliteedis maailma turniiride ja matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"billiard": {
+					"title": "WiziWig Piljard | Tasuta Otse Piljardi Ülekanded",
+					"description": "Vaata WiziWig Piljardit tasuta HD kvaliteedis profiturniiride ja matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"table-tennis": {
+					"title": "WiziWig Lauatennis | Tasuta Otse Lauatennise Ülekanded",
+					"description": "Vaata WiziWig Lauatennist tasuta HD kvaliteedis ITTF ja rahvusvaheliste turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"padel-tennis": {
+					"title": "WiziWig Padel | Tasuta Otse Padeli Ülekanded",
+					"description": "Vaata WiziWig Padelit tasuta HD kvaliteedis World Padel Tour üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"squash": {
+					"title": "WiziWig Squash | Tasuta Otse Squashi Ülekanded",
+					"description": "Vaata WiziWig Squashi tasuta HD kvaliteedis PSA turniiride ja matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"motorsport": {
+					"title": "WiziWig Motosport | Tasuta F1 Otseülekanded",
+					"description": "Vaata WiziWig Motosporti tasuta HD kvaliteedis F1, MotoGP ja NASCAR võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"racing": {
+					"title": "WiziWig Võidusõit | Tasuta Otse Võidusõidu Ülekanded",
+					"description": "Vaata WiziWig Võidusõitu tasuta HD kvaliteedis auto- ja mootorrattavõistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"cycling": {
+					"title": "WiziWig Jalgrattasport | Tasuta Otse Jalgrattaspordi Ülekanded",
+					"description": "Vaata WiziWig Jalgrattasporti tasuta HD kvaliteedis Tour de France ja suurtuuridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"equestrianism": {
+					"title": "WiziWig Ratsasport | Tasuta Otse Ratsaspordi Ülekanded",
+					"description": "Vaata WiziWig Ratsasporti tasuta HD kvaliteedis FEI ja rahvusvaheliste üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"golf": {
+					"title": "WiziWig Golf | Tasuta Otse Golfi Ülekanded",
+					"description": "Vaata WiziWig Golfi tasuta HD kvaliteedis PGA, majooride ja Ryder Cup üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"field-hockey": {
+					"title": "WiziWig Maahoki | Tasuta Otse Maahoki Ülekanded",
+					"description": "Vaata WiziWig Maahoki tasuta HD kvaliteedis FIH ja rahvusvaheliste mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"lacrosse": {
+					"title": "WiziWig Lacrosse | Tasuta Otse Lacrosse'i Ülekanded",
+					"description": "Vaata WiziWig Lacrosse'i tasuta HD kvaliteedis PLL ja NLL mängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"athletics": {
+					"title": "WiziWig Kergejõustik | Tasuta Otse Kergejõustiku Ülekanded",
+					"description": "Vaata WiziWig Kergejõustikku tasuta HD kvaliteedis Diamond League ja MM üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"gymnastics": {
+					"title": "WiziWig Võimlemine | Tasuta Otse Võimlemise Ülekanded",
+					"description": "Vaata WiziWig Võimlemist tasuta HD kvaliteedis MM ja olümpiamängude võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"weightlifting": {
+					"title": "WiziWig Tõstmine | Tasuta Otse Tõstmise Ülekanded",
+					"description": "Vaata WiziWig Tõstmist tasuta HD kvaliteedis IWF ja rahvusvaheliste võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"climbing": {
+					"title": "WiziWig Ronimine | Tasuta Otse Ronimise Ülekanded",
+					"description": "Vaata WiziWig Ronimist tasuta HD kvaliteedis IFSC ja maailma karika võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"winter-sport": {
+					"title": "WiziWig Talvealad | Tasuta Otse Talvealade Ülekanded",
+					"description": "Vaata WiziWig Talvealasid tasuta HD kvaliteedis suusatamise, lumelaua ja uisutamise võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"bandy": {
+					"title": "WiziWig Jääpall | Tasuta Otse Jääpalli Ülekanded",
+					"description": "Vaata WiziWig Jääpalli tasuta HD kvaliteedis MM ja liigamängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"curling": {
+					"title": "WiziWig Curling | Tasuta Otse Curlingu Ülekanded",
+					"description": "Vaata WiziWig Curlingut tasuta HD kvaliteedis MM ja turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"triathlon": {
+					"title": "WiziWig Triatlon | Tasuta Otse Triatloni Ülekanded",
+					"description": "Vaata WiziWig Triatloni tasuta HD kvaliteedis Ironman ja ITU üritustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"water-sports": {
+					"title": "WiziWig Veespordialad | Tasuta Otse Veespordi Ülekanded",
+					"description": "Vaata WiziWig Veespordialasid tasuta HD kvaliteedis ujumise ja sukeldumise võistlustega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"water-polo": {
+					"title": "WiziWig Veepall | Tasuta Otse Veepalli Ülekanded",
+					"description": "Vaata WiziWig Veepalli tasuta HD kvaliteedis MM ja liigamängudega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"sailing": {
+					"title": "WiziWig Purjetamine | Tasuta Otse Purjetamise Ülekanded",
+					"description": "Vaata WiziWig Purjetamist tasuta HD kvaliteedis America's Cup ja regattidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"bowling": {
+					"title": "WiziWig Keegel | Tasuta Otse Keegliülekanded",
+					"description": "Vaata WiziWig Keeglit tasuta HD kvaliteedis PBA turniiride ja matšidega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"darts": {
+					"title": "WiziWig Noolevise | Tasuta Otse Nooleviske Ülekanded",
+					"description": "Vaata WiziWig Nooleviske tasuta HD kvaliteedis PDC ja BDO turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"chess": {
+					"title": "WiziWig Male | Tasuta Otse Male Ülekanded",
+					"description": "Vaata WiziWig Male tasuta HD kvaliteedis MM ja superturniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"e-sports": {
+					"title": "WiziWig E-sport | Tasuta Otse E-spordi Ülekanded",
+					"description": "Vaata WiziWig E-sporti tasuta HD kvaliteedis LoL, CS:GO ja Dota 2 turniiridega. Registreerimata. Alusta vaatamist kohe."
+				},
+				"extreme-sport": {
+					"title": "WiziWig Ekstreemsport | Tasuta Otse Ekstreemülekanded",
+					"description": "WiziWig Ekstreemsport pakub tasuta HD kajastust parimatest ekstreemvõistlustest. Registreerimata. Vaata X Games ja rohkemat kohe."
+				},
+				"others": {
+					"title": "WiziWig Muud | Tasuta Otse Spordiülekanded",
+					"description": "Vaata WiziWig Muud tasuta HD kvaliteedis erinevate spordialade ja ainulaadsete üritustega. Registreerimata. Alusta vaatamist kohe."
+				}
+			}
+		}
 	}
 }

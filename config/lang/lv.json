@@ -3,6 +3,7 @@
 		"code": "lv",
 		"name": "Latviešu",
 		"flag": "LV",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -52,6 +53,7 @@
 		"Baseball": "Beisbols",
 		"Rugby Union": "Regbijs Union",
 		"Rugby League": "Regbijs League",
+		"Rugby Sevens": "Regbijs Sevens",
 		"Cricket": "Krikets",
 		"American Football": "Amerikāņu Futbols",
 		"Volleyball": "Volejbols",
@@ -64,8 +66,7 @@
 		"Badminton": "Badmintons",
 		"Netball": "Netbols",
 		"Floorball": "Florbols",
-		"Combat": "Cīņas Sports",
-		"combat sport": "Cīņas Sporta Veidi",
+		"Combat Sport": "Cīņas Sports",
 		"Boxing": "Bokss",
 		"MMA": "MMA",
 		"Snooker": "Snūkers",
@@ -84,7 +85,7 @@
 		"Gymnastics": "Vingrošana",
 		"Weightlifting": "Svarcelšana",
 		"Climbing": "Kāpšana",
-		"winter sport": "Ziemas Sporta Veidi",
+		"Winter Sport": "Ziemas Sports",
 		"Bandy": "Bendijs",
 		"Curling": "Kērlings",
 		"Triathlon": "Triatlons",
@@ -95,6 +96,1305 @@
 		"Darts": "Šautriņas",
 		"Chess": "Šahs",
 		"E-sports": "E-sports",
+		"Extreme Sport": "Ekstrēmais Sports",
 		"Others": "Citi"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | Sporta Tiešraides un Šodienas Spēles",
+				"description": "SportLemon piedāvā sporta tiešraides un šodienas spēles visos sporta veidos. Bezmaksas piekļuve, bez reģistrācijas—skatieties tagad."
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon Futbols | Bezmaksas Tiešraides HD",
+					"description": "Skatieties futbolu tiešraidē bezmaksas HD SportLemon. Čempionu Līga, Premier League un vairāk. Nepalaidiet garām!"
+				},
+				"basketball": {
+					"title": "SportLemon Basketbols | Bezmaksas NBA Tiešraides",
+					"description": "Skatieties basketbolu tiešraidē bezmaksas. NBA, EuroLīga un vairāk HD SportLemon. Bez reģistrācijas."
+				},
+				"tennis": {
+					"title": "SportLemon Teniss | Bezmaksas Tiešraides HD",
+					"description": "Skatieties tenisu tiešraidē bezmaksas. Grand Slam, ATP, WTA tūres HD SportLemon. Pievienojieties tagad!"
+				},
+				"ice-hockey": {
+					"title": "SportLemon Hokejs | Bezmaksas NHL Tiešraides HD",
+					"description": "Bezmaksas hokeja tiešraides HD. Skatieties NHL, KHL un pasaules čempionātus SportLemon."
+				},
+				"baseball": {
+					"title": "SportLemon Beisbols | Bezmaksas MLB Tiešraides",
+					"description": "Skatieties beisbolu tiešraidē bezmaksas. MLB, NPB un vairāk HD SportLemon. Vienkārša piekļuve."
+				},
+				"rugby-union": {
+					"title": "SportLemon Regbijs Union | Bezmaksas Tiešraides",
+					"description": "Skatieties Regbijs Union tiešraidē bezmaksas HD. Six Nations, Pasaules Kauss un vairāk SportLemon."
+				},
+				"rugby-league": {
+					"title": "SportLemon Regbijs League | Bezmaksas Tiešraides",
+					"description": "Skatieties Regbijs League tiešraidē bezmaksas HD. NRL, Super League un vairāk SportLemon."
+				},
+				"cricket": {
+					"title": "SportLemon Krikets | Bezmaksas Tiešraides HD",
+					"description": "Bezmaksas kriketa tiešraides SportLemon. Skatieties IPL, T20, testa mačus HD. Ieslēdzieties tagad!"
+				},
+				"american-football": {
+					"title": "SportLemon Amerikāņu Futbols | Bezmaksas NFL Tiešraides",
+					"description": "Skatieties amerikāņu futbolu tiešraidē bezmaksas. NFL, koledžas spēles HD SportLemon. Bez abonēšanas."
+				},
+				"volleyball": {
+					"title": "SportLemon Volejbols | Bezmaksas Tiešraides",
+					"description": "Skatieties volejbolu tiešraidē bezmaksas. FIVB, CEV un galvenās līgas HD SportLemon."
+				},
+				"beach-volleyball": {
+					"title": "SportLemon Pludmales Volejbols | Bezmaksas Tiešraides",
+					"description": "Skatieties pludmales volejbolu tiešraidē bezmaksas. FIVB Pasaules Tūre un turnīri HD SportLemon."
+				},
+				"handball": {
+					"title": "SportLemon Handbols | Bezmaksas Tiešraides",
+					"description": "Bezmaksas handbola tiešraides SportLemon. Skatieties EHF, IHF pasākumus HD kvalitātē."
+				},
+				"beach-handball": {
+					"title": "SportLemon Pludmales Handbols | Bezmaksas Tiešraides",
+					"description": "Skatieties pludmales handbolu tiešraidē bezmaksas. IHF Pasaules Tūre un čempionāti HD SportLemon."
+				},
+				"beach-soccer": {
+					"title": "SportLemon Pludmales Futbols | Bezmaksas Tiešraides HD",
+					"description": "Skatieties pludmales futbolu tiešraidē bezmaksas. FIFA Pasaules Kauss un līgas HD SportLemon."
+				},
+				"aussie-rules": {
+					"title": "SportLemon Austrāliešu Futbols | Bezmaksas AFL Tiešraides",
+					"description": "Skatieties Aussie Rules futbolu tiešraidē bezmaksas. AFL spēles un turnīri HD SportLemon."
+				},
+				"futsal": {
+					"title": "SportLemon Telpu Futbols | Bezmaksas Tiešraides HD",
+					"description": "Bezmaksas telpu futbola tiešraides SportLemon. UEFA Futsal, FIFA pasākumi HD kvalitātē."
+				},
+				"badminton": {
+					"title": "SportLemon Badmintons | Bezmaksas Tiešraides",
+					"description": "Skatieties badmintonu tiešraidē bezmaksas. BWF Pasaules Tūre, Thomas Kauss HD SportLemon."
+				},
+				"netball": {
+					"title": "SportLemon Netbols | Bezmaksas Tiešraides",
+					"description": "Skatieties netbolu tiešraidē bezmaksas. Superlīga, Pasaules Kauss un vairāk SportLemon."
+				},
+				"floorball": {
+					"title": "SportLemon Florbols | Bezmaksas Tiešraides",
+					"description": "Skatieties florbolu tiešraidē bezmaksas HD. IFF čempionāti un līgas SportLemon."
+				},
+				"combat-sport": {
+					"title": "SportLemon Cīņas Sports | Bezmaksas Tiešraides",
+					"description": "Skatieties cīņas sportu tiešraidē bezmaksas HD. Visas cīņas disciplīnas SportLemon."
+				},
+				"boxing": {
+					"title": "SportLemon Bokss | Bezmaksas Cīņas Tiešraidē HD",
+					"description": "Skatieties boksu tiešraidē bezmaksas. Pasaules cīņas un čempionāti HD SportLemon."
+				},
+				"mma": {
+					"title": "SportLemon MMA | Bezmaksas Tiešraides",
+					"description": "Skatieties MMA tiešraidē bezmaksas. UFC, Bellator un vairāk HD SportLemon. Bez reģistrācijas."
+				},
+				"snooker": {
+					"title": "SportLemon Snūkers | Bezmaksas Tiešraides",
+					"description": "Skatieties snūkeru tiešraidē bezmaksas. Pasaules čempionāti un turnīri HD SportLemon."
+				},
+				"billiard": {
+					"title": "SportLemon Biljards | Bezmaksas Tiešraides",
+					"description": "Skatieties biljardu tiešraidē bezmaksas HD. Profesionālie turnīri SportLemon."
+				},
+				"table-tennis": {
+					"title": "SportLemon Galda Teniss | Bezmaksas Tiešraides",
+					"description": "Skatieties galda tenisu tiešraidē bezmaksas. ITTF pasākumi un turnīri HD SportLemon."
+				},
+				"padel-tennis": {
+					"title": "SportLemon Padels | Bezmaksas Tiešraides",
+					"description": "Skatieties padelu tiešraidē bezmaksas. World Padel Tour un turnīri HD SportLemon."
+				},
+				"squash": {
+					"title": "SportLemon Skvošs | Bezmaksas Tiešraides",
+					"description": "Skatieties skvošu tiešraidē bezmaksas. PSA Tour un čempionāti HD SportLemon."
+				},
+				"motorsport": {
+					"title": "SportLemon Autosports | Bezmaksas Tiešraides",
+					"description": "Skatieties autosportu tiešraidē bezmaksas. F1, MotoGP un vairāk HD SportLemon."
+				},
+				"racing": {
+					"title": "SportLemon Sacīkstes | Bezmaksas Tiešraides",
+					"description": "Skatieties sacīkstes tiešraidē bezmaksas. NASCAR, Rally un vairāk HD SportLemon."
+				},
+				"cycling": {
+					"title": "SportLemon Riteņbraukšana | Bezmaksas Tiešraides",
+					"description": "Skatieties riteņbraukšanu tiešraidē bezmaksas. Tour de France, Giro HD SportLemon."
+				},
+				"equestrianism": {
+					"title": "SportLemon Jāšanas Sports | Bezmaksas Tiešraides",
+					"description": "Skatieties jāšanas sportu tiešraidē bezmaksas. FEI pasākumi un turnīri HD SportLemon."
+				},
+				"golf": {
+					"title": "SportLemon Golfs | Bezmaksas Tiešraides",
+					"description": "Skatieties golfu tiešraidē bezmaksas. PGA Tour, Masters un vairāk HD SportLemon."
+				},
+				"field-hockey": {
+					"title": "SportLemon Lauka Hokejs | Bezmaksas Tiešraides",
+					"description": "Skatieties lauka hokeju tiešraidē bezmaksas. FIH pasākumi un līgas HD SportLemon."
+				},
+				"lacrosse": {
+					"title": "SportLemon Lakross | Bezmaksas Tiešraides",
+					"description": "Skatieties lakrosu tiešraidē bezmaksas. PLL, NLL un vairāk HD SportLemon."
+				},
+				"athletics": {
+					"title": "SportLemon Vieglatlētika | Bezmaksas Tiešraides",
+					"description": "Skatieties vieglatlētiku tiešraidē bezmaksas. Dimanta Līga, čempionāti HD SportLemon."
+				},
+				"gymnastics": {
+					"title": "SportLemon Vingrošana | Bezmaksas Tiešraides",
+					"description": "Skatieties vingrošanu tiešraidē bezmaksas. FIG pasākumi un čempionāti HD SportLemon."
+				},
+				"weightlifting": {
+					"title": "SportLemon Svarcelšana | Bezmaksas Tiešraides",
+					"description": "Skatieties svarcelšanu tiešraidē bezmaksas. IWF čempionāti HD SportLemon."
+				},
+				"climbing": {
+					"title": "SportLemon Kāpšana | Bezmaksas Tiešraides",
+					"description": "Skatieties kāpšanu tiešraidē bezmaksas. IFSC pasākumi un sacensības HD SportLemon."
+				},
+				"winter-sport": {
+					"title": "SportLemon Ziemas Sports | Bezmaksas Tiešraides",
+					"description": "Skatieties ziemas sportu tiešraidē bezmaksas. Slēpošana, slidošana HD SportLemon."
+				},
+				"bandy": {
+					"title": "SportLemon Bendijs | Bezmaksas Tiešraides",
+					"description": "Skatieties bendiju tiešraidē bezmaksas. Pasaules čempionāti un līgas HD SportLemon."
+				},
+				"curling": {
+					"title": "SportLemon Kērlings | Bezmaksas Tiešraides",
+					"description": "Skatieties kērlingu tiešraidē bezmaksas. Pasaules čempionāti HD SportLemon."
+				},
+				"triathlon": {
+					"title": "SportLemon Triatlons | Bezmaksas Tiešraides",
+					"description": "Skatieties triatlonu tiešraidē bezmaksas. Ironman, ITU pasākumi HD SportLemon."
+				},
+				"water-sports": {
+					"title": "SportLemon Ūdenssports | Bezmaksas Tiešraides",
+					"description": "Skatieties ūdenssportu tiešraidē bezmaksas. Peldēšana, lēkšana HD SportLemon."
+				},
+				"water-polo": {
+					"title": "SportLemon Ūdenspolo | Bezmaksas Tiešraides",
+					"description": "Skatieties ūdenspolo tiešraidē bezmaksas. FINA līgas un čempionāti HD SportLemon."
+				},
+				"sailing": {
+					"title": "SportLemon Burāšana | Bezmaksas Tiešraides",
+					"description": "Skatieties burāšanu tiešraidē bezmaksas. America's Cup, regates HD SportLemon."
+				},
+				"bowling": {
+					"title": "SportLemon Boulings | Bezmaksas Tiešraides",
+					"description": "Skatieties boulingu tiešraidē bezmaksas. PBA Tour un turnīri HD SportLemon."
+				},
+				"darts": {
+					"title": "SportLemon Šautriņas | Bezmaksas Tiešraides",
+					"description": "Skatieties šautriņas tiešraidē bezmaksas. PDC, BDO turnīri HD SportLemon."
+				},
+				"chess": {
+					"title": "SportLemon Šahs | Bezmaksas Tiešraides",
+					"description": "Skatieties šahu tiešraidē bezmaksas. FIDE čempionāti un turnīri HD SportLemon."
+				},
+				"e-sports": {
+					"title": "SportLemon E-sports | Bezmaksas Tiešraides",
+					"description": "Skatieties e-sportu tiešraidē bezmaksas. CS2, LoL, Dota 2 turnīri HD SportLemon."
+				},
+				"others": {
+					"title": "SportLemon Citi | Bezmaksas Sporta Tiešraides",
+					"description": "Skatieties dažādus sportus tiešraidē bezmaksas. Visi sporta pasākumi HD SportLemon."
+				},
+				"rugby-sevens": {
+					"title": "SportLemon Regbijs Sevens | Bezmaksas Tiešraides HD",
+					"description": "Skatieties Regbijs Sevens tiešraidē bezmaksas HD SportLemon. SVNS sērija un turnīri. Bez reģistrācijas."
+				},
+				"extreme-sport": {
+					"title": "SportLemon Ekstrēmais Sports | Bezmaksas Tiešraides HD",
+					"description": "Skatieties ekstrēmo sportu tiešraidē bezmaksas HD SportLemon. X Games un sacensības. Bez reģistrācijas."
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLsite | Sporta Tiešraides Bezmaksas HD",
+				"description": "EPLsite piedāvā sporta tiešraides bezmaksas HD kvalitātē. Ātra piekļuve, bez reģistrācijas. Skatieties tagad."
+			},
+			"sports": {
+				"football": {
+					"title": "EPLsite Futbols | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā futbola tiešraides bezmaksas HD. Premier League, La Liga un vairāk."
+				},
+				"basketball": {
+					"title": "EPLsite Basketbols | NBA Tiešraides Bezmaksas",
+					"description": "EPLsite piedāvā NBA un basketbola tiešraides bezmaksas HD. Ātra piekļuve."
+				},
+				"tennis": {
+					"title": "EPLsite Teniss | Grand Slam Tiešraides Bezmaksas",
+					"description": "EPLsite piedāvā tenisa tiešraides bezmaksas HD. ATP, WTA turnīri."
+				},
+				"ice-hockey": {
+					"title": "EPLsite Hokejs | NHL Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā NHL un hokeja tiešraides bezmaksas HD."
+				},
+				"baseball": {
+					"title": "EPLsite Beisbols | MLB Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā MLB un beisbola tiešraides bezmaksas HD."
+				},
+				"rugby-union": {
+					"title": "EPLsite Regbijs Union | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā Regbijs Union tiešraides bezmaksas HD."
+				},
+				"rugby-league": {
+					"title": "EPLsite Regbijs League | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā Regbijs League tiešraides bezmaksas HD."
+				},
+				"cricket": {
+					"title": "EPLsite Krikets | IPL Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā kriketa tiešraides bezmaksas HD. IPL, T20."
+				},
+				"american-football": {
+					"title": "EPLsite Amerikāņu Futbols | NFL Tiešraides HD",
+					"description": "EPLsite piedāvā NFL tiešraides bezmaksas HD."
+				},
+				"volleyball": {
+					"title": "EPLsite Volejbols | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā volejbola tiešraides bezmaksas HD."
+				},
+				"beach-volleyball": {
+					"title": "EPLsite Pludmales Volejbols | Tiešraides HD",
+					"description": "EPLsite piedāvā pludmales volejbola tiešraides bezmaksas HD."
+				},
+				"handball": {
+					"title": "EPLsite Handbols | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā handbola tiešraides bezmaksas HD."
+				},
+				"beach-handball": {
+					"title": "EPLsite Pludmales Handbols | Tiešraides HD",
+					"description": "EPLsite piedāvā pludmales handbola tiešraides bezmaksas HD."
+				},
+				"beach-soccer": {
+					"title": "EPLsite Pludmales Futbols | Tiešraides HD",
+					"description": "EPLsite piedāvā pludmales futbola tiešraides bezmaksas HD."
+				},
+				"aussie-rules": {
+					"title": "EPLsite Austrāliešu Futbols | AFL Tiešraides HD",
+					"description": "EPLsite piedāvā AFL tiešraides bezmaksas HD."
+				},
+				"futsal": {
+					"title": "EPLsite Telpu Futbols | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā telpu futbola tiešraides bezmaksas HD."
+				},
+				"badminton": {
+					"title": "EPLsite Badmintons | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā badmintona tiešraides bezmaksas HD."
+				},
+				"netball": {
+					"title": "EPLsite Netbols | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā netbola tiešraides bezmaksas HD."
+				},
+				"floorball": {
+					"title": "EPLsite Florbols | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā florbola tiešraides bezmaksas HD."
+				},
+				"combat-sport": {
+					"title": "EPLsite Cīņas Sports | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā cīņas sporta tiešraides bezmaksas HD."
+				},
+				"boxing": {
+					"title": "EPLsite Bokss | Cīņas Tiešraidē Bezmaksas HD",
+					"description": "EPLsite piedāvā boksa tiešraides bezmaksas HD."
+				},
+				"mma": {
+					"title": "EPLsite MMA | UFC Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā MMA un UFC tiešraides bezmaksas HD."
+				},
+				"snooker": {
+					"title": "EPLsite Snūkers | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā snūkera tiešraides bezmaksas HD."
+				},
+				"billiard": {
+					"title": "EPLsite Biljards | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā biljarda tiešraides bezmaksas HD."
+				},
+				"table-tennis": {
+					"title": "EPLsite Galda Teniss | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā galda tenisa tiešraides bezmaksas HD."
+				},
+				"padel-tennis": {
+					"title": "EPLsite Padels | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā padela tiešraides bezmaksas HD."
+				},
+				"squash": {
+					"title": "EPLsite Skvošs | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā skvoša tiešraides bezmaksas HD."
+				},
+				"motorsport": {
+					"title": "EPLsite Autosports | F1 Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā F1 un autosporta tiešraides bezmaksas HD."
+				},
+				"racing": {
+					"title": "EPLsite Sacīkstes | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā sacīkšu tiešraides bezmaksas HD."
+				},
+				"cycling": {
+					"title": "EPLsite Riteņbraukšana | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā riteņbraukšanas tiešraides bezmaksas HD."
+				},
+				"equestrianism": {
+					"title": "EPLsite Jāšanas Sports | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā jāšanas sporta tiešraides bezmaksas HD."
+				},
+				"golf": {
+					"title": "EPLsite Golfs | PGA Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā golfa tiešraides bezmaksas HD."
+				},
+				"field-hockey": {
+					"title": "EPLsite Lauka Hokejs | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā lauka hokeja tiešraides bezmaksas HD."
+				},
+				"lacrosse": {
+					"title": "EPLsite Lakross | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā lakrosa tiešraides bezmaksas HD."
+				},
+				"athletics": {
+					"title": "EPLsite Vieglatlētika | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā vieglatlētikas tiešraides bezmaksas HD."
+				},
+				"gymnastics": {
+					"title": "EPLsite Vingrošana | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā vingrošanas tiešraides bezmaksas HD."
+				},
+				"weightlifting": {
+					"title": "EPLsite Svarcelšana | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā svarcelšanas tiešraides bezmaksas HD."
+				},
+				"climbing": {
+					"title": "EPLsite Kāpšana | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā kāpšanas tiešraides bezmaksas HD."
+				},
+				"winter-sport": {
+					"title": "EPLsite Ziemas Sports | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā ziemas sporta tiešraides bezmaksas HD."
+				},
+				"bandy": {
+					"title": "EPLsite Bendijs | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā bendija tiešraides bezmaksas HD."
+				},
+				"curling": {
+					"title": "EPLsite Kērlings | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā kērlinga tiešraides bezmaksas HD."
+				},
+				"triathlon": {
+					"title": "EPLsite Triatlons | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā triatlona tiešraides bezmaksas HD."
+				},
+				"water-sports": {
+					"title": "EPLsite Ūdenssports | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā ūdenssporta tiešraides bezmaksas HD."
+				},
+				"water-polo": {
+					"title": "EPLsite Ūdenspolo | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā ūdenspolo tiešraides bezmaksas HD."
+				},
+				"sailing": {
+					"title": "EPLsite Burāšana | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā burāšanas tiešraides bezmaksas HD."
+				},
+				"bowling": {
+					"title": "EPLsite Boulings | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā boulinga tiešraides bezmaksas HD."
+				},
+				"darts": {
+					"title": "EPLsite Šautriņas | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā šautriņu tiešraides bezmaksas HD."
+				},
+				"chess": {
+					"title": "EPLsite Šahs | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā šaha tiešraides bezmaksas HD."
+				},
+				"e-sports": {
+					"title": "EPLsite E-sports | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā e-sporta tiešraides bezmaksas HD."
+				},
+				"others": {
+					"title": "EPLsite Citi | Sporta Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā dažādu sportu tiešraides bezmaksas HD."
+				},
+				"rugby-sevens": {
+					"title": "EPLsite Regbijs Sevens | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā Regbijs Sevens tiešraides bezmaksas HD. SVNS sērija un turnīri. Bez reģistrācijas."
+				},
+				"extreme-sport": {
+					"title": "EPLsite Ekstrēmais Sports | Tiešraides Bezmaksas HD",
+					"description": "EPLsite piedāvā ekstrēmā sporta tiešraides bezmaksas HD. X Games un sacensības. Bez reģistrācijas."
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | Sporta Tiešraides Bezmaksas HD",
+				"description": "P2P4U piedāvā sporta tiešraides bezmaksas HD kvalitātē. Ātra ielāde, bez reģistrācijas. Skatieties tagad."
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U Futbols | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā futbola tiešraides bezmaksas HD. Ātra ielāde, visas līgas."
+				},
+				"basketball": {
+					"title": "P2P4U Basketbols | NBA Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā NBA un basketbola tiešraides bezmaksas HD. Ātra ielāde."
+				},
+				"tennis": {
+					"title": "P2P4U Teniss | Grand Slam Tiešraides Bezmaksas",
+					"description": "P2P4U piedāvā tenisa tiešraides bezmaksas HD. ATP, WTA turnīri."
+				},
+				"ice-hockey": {
+					"title": "P2P4U Hokejs | NHL Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā NHL un hokeja tiešraides bezmaksas HD."
+				},
+				"baseball": {
+					"title": "P2P4U Beisbols | MLB Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā MLB un beisbola tiešraides bezmaksas HD."
+				},
+				"rugby-union": {
+					"title": "P2P4U Regbijs Union | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā Regbijs Union tiešraides bezmaksas HD."
+				},
+				"rugby-league": {
+					"title": "P2P4U Regbijs League | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā Regbijs League tiešraides bezmaksas HD."
+				},
+				"cricket": {
+					"title": "P2P4U Krikets | IPL Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā kriketa tiešraides bezmaksas HD. IPL, T20."
+				},
+				"american-football": {
+					"title": "P2P4U Amerikāņu Futbols | NFL Tiešraides HD",
+					"description": "P2P4U piedāvā NFL tiešraides bezmaksas HD."
+				},
+				"volleyball": {
+					"title": "P2P4U Volejbols | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā volejbola tiešraides bezmaksas HD."
+				},
+				"beach-volleyball": {
+					"title": "P2P4U Pludmales Volejbols | Tiešraides HD",
+					"description": "P2P4U piedāvā pludmales volejbola tiešraides bezmaksas HD."
+				},
+				"handball": {
+					"title": "P2P4U Handbols | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā handbola tiešraides bezmaksas HD."
+				},
+				"beach-handball": {
+					"title": "P2P4U Pludmales Handbols | Tiešraides HD",
+					"description": "P2P4U piedāvā pludmales handbola tiešraides bezmaksas HD."
+				},
+				"beach-soccer": {
+					"title": "P2P4U Pludmales Futbols | Tiešraides HD",
+					"description": "P2P4U piedāvā pludmales futbola tiešraides bezmaksas HD."
+				},
+				"aussie-rules": {
+					"title": "P2P4U Austrāliešu Futbols | AFL Tiešraides HD",
+					"description": "P2P4U piedāvā AFL tiešraides bezmaksas HD."
+				},
+				"futsal": {
+					"title": "P2P4U Telpu Futbols | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā telpu futbola tiešraides bezmaksas HD."
+				},
+				"badminton": {
+					"title": "P2P4U Badmintons | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā badmintona tiešraides bezmaksas HD."
+				},
+				"netball": {
+					"title": "P2P4U Netbols | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā netbola tiešraides bezmaksas HD."
+				},
+				"floorball": {
+					"title": "P2P4U Florbols | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā florbola tiešraides bezmaksas HD."
+				},
+				"combat-sport": {
+					"title": "P2P4U Cīņas Sports | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā cīņas sporta tiešraides bezmaksas HD."
+				},
+				"boxing": {
+					"title": "P2P4U Bokss | Cīņas Tiešraidē Bezmaksas HD",
+					"description": "P2P4U piedāvā boksa tiešraides bezmaksas HD."
+				},
+				"mma": {
+					"title": "P2P4U MMA | UFC Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā MMA un UFC tiešraides bezmaksas HD."
+				},
+				"snooker": {
+					"title": "P2P4U Snūkers | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā snūkera tiešraides bezmaksas HD."
+				},
+				"billiard": {
+					"title": "P2P4U Biljards | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā biljarda tiešraides bezmaksas HD."
+				},
+				"table-tennis": {
+					"title": "P2P4U Galda Teniss | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā galda tenisa tiešraides bezmaksas HD."
+				},
+				"padel-tennis": {
+					"title": "P2P4U Padels | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā padela tiešraides bezmaksas HD."
+				},
+				"squash": {
+					"title": "P2P4U Skvošs | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā skvoša tiešraides bezmaksas HD."
+				},
+				"motorsport": {
+					"title": "P2P4U Autosports | F1 Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā F1 un autosporta tiešraides bezmaksas HD."
+				},
+				"racing": {
+					"title": "P2P4U Sacīkstes | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā sacīkšu tiešraides bezmaksas HD."
+				},
+				"cycling": {
+					"title": "P2P4U Riteņbraukšana | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā riteņbraukšanas tiešraides bezmaksas HD."
+				},
+				"equestrianism": {
+					"title": "P2P4U Jāšanas Sports | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā jāšanas sporta tiešraides bezmaksas HD."
+				},
+				"golf": {
+					"title": "P2P4U Golfs | PGA Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā golfa tiešraides bezmaksas HD."
+				},
+				"field-hockey": {
+					"title": "P2P4U Lauka Hokejs | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā lauka hokeja tiešraides bezmaksas HD."
+				},
+				"lacrosse": {
+					"title": "P2P4U Lakross | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā lakrosa tiešraides bezmaksas HD."
+				},
+				"athletics": {
+					"title": "P2P4U Vieglatlētika | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā vieglatlētikas tiešraides bezmaksas HD."
+				},
+				"gymnastics": {
+					"title": "P2P4U Vingrošana | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā vingrošanas tiešraides bezmaksas HD."
+				},
+				"weightlifting": {
+					"title": "P2P4U Svarcelšana | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā svarcelšanas tiešraides bezmaksas HD."
+				},
+				"climbing": {
+					"title": "P2P4U Kāpšana | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā kāpšanas tiešraides bezmaksas HD."
+				},
+				"winter-sport": {
+					"title": "P2P4U Ziemas Sports | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā ziemas sporta tiešraides bezmaksas HD."
+				},
+				"bandy": {
+					"title": "P2P4U Bendijs | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā bendija tiešraides bezmaksas HD."
+				},
+				"curling": {
+					"title": "P2P4U Kērlings | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā kērlinga tiešraides bezmaksas HD."
+				},
+				"triathlon": {
+					"title": "P2P4U Triatlons | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā triatlona tiešraides bezmaksas HD."
+				},
+				"water-sports": {
+					"title": "P2P4U Ūdenssports | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā ūdenssporta tiešraides bezmaksas HD."
+				},
+				"water-polo": {
+					"title": "P2P4U Ūdenspolo | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā ūdenspolo tiešraides bezmaksas HD."
+				},
+				"sailing": {
+					"title": "P2P4U Burāšana | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā burāšanas tiešraides bezmaksas HD."
+				},
+				"bowling": {
+					"title": "P2P4U Boulings | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā boulinga tiešraides bezmaksas HD."
+				},
+				"darts": {
+					"title": "P2P4U Šautriņas | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā šautriņu tiešraides bezmaksas HD."
+				},
+				"chess": {
+					"title": "P2P4U Šahs | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā šaha tiešraides bezmaksas HD."
+				},
+				"e-sports": {
+					"title": "P2P4U E-sports | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā e-sporta tiešraides bezmaksas HD."
+				},
+				"others": {
+					"title": "P2P4U Citi | Sporta Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā dažādu sportu tiešraides bezmaksas HD."
+				},
+				"rugby-sevens": {
+					"title": "P2P4U Regbijs Sevens | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā Regbijs Sevens tiešraides bezmaksas HD. SVNS sērija un turnīri. Bez reģistrācijas."
+				},
+				"extreme-sport": {
+					"title": "P2P4U Ekstrēmais Sports | Tiešraides Bezmaksas HD",
+					"description": "P2P4U piedāvā ekstrēmā sporta tiešraides bezmaksas HD. X Games un sacensības. Bez reģistrācijas."
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | Sporta Tiešraides Bezmaksas HD",
+				"description": "StreamHunter piedāvā sporta tiešraides bezmaksas HD kvalitātē. Ātra ielāde, bez reģistrācijas. Skatieties tagad."
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter Futbols | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā futbola tiešraides bezmaksas HD. Ātra ielāde, visas līgas."
+				},
+				"basketball": {
+					"title": "StreamHunter Basketbols | NBA Tiešraides Bezmaksas",
+					"description": "StreamHunter piedāvā NBA un basketbola tiešraides bezmaksas HD. Ātra ielāde."
+				},
+				"tennis": {
+					"title": "StreamHunter Teniss | Grand Slam Tiešraides Bezmaksas",
+					"description": "StreamHunter piedāvā tenisa tiešraides bezmaksas HD. ATP, WTA turnīri."
+				},
+				"ice-hockey": {
+					"title": "StreamHunter Hokejs | NHL Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā NHL un hokeja tiešraides bezmaksas HD."
+				},
+				"baseball": {
+					"title": "StreamHunter Beisbols | MLB Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā MLB un beisbola tiešraides bezmaksas HD."
+				},
+				"rugby-union": {
+					"title": "StreamHunter Regbijs Union | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā Regbijs Union tiešraides bezmaksas HD."
+				},
+				"rugby-league": {
+					"title": "StreamHunter Regbijs League | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā Regbijs League tiešraides bezmaksas HD."
+				},
+				"cricket": {
+					"title": "StreamHunter Krikets | IPL Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā kriketa tiešraides bezmaksas HD. IPL, T20."
+				},
+				"american-football": {
+					"title": "StreamHunter Amerikāņu Futbols | NFL Tiešraides HD",
+					"description": "StreamHunter piedāvā NFL tiešraides bezmaksas HD."
+				},
+				"volleyball": {
+					"title": "StreamHunter Volejbols | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā volejbola tiešraides bezmaksas HD."
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter Pludmales Volejbols | Tiešraides HD",
+					"description": "StreamHunter piedāvā pludmales volejbola tiešraides bezmaksas HD."
+				},
+				"handball": {
+					"title": "StreamHunter Handbols | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā handbola tiešraides bezmaksas HD."
+				},
+				"beach-handball": {
+					"title": "StreamHunter Pludmales Handbols | Tiešraides HD",
+					"description": "StreamHunter piedāvā pludmales handbola tiešraides bezmaksas HD."
+				},
+				"beach-soccer": {
+					"title": "StreamHunter Pludmales Futbols | Tiešraides HD",
+					"description": "StreamHunter piedāvā pludmales futbola tiešraides bezmaksas HD."
+				},
+				"aussie-rules": {
+					"title": "StreamHunter Austrāliešu Futbols | AFL Tiešraides HD",
+					"description": "StreamHunter piedāvā AFL tiešraides bezmaksas HD."
+				},
+				"futsal": {
+					"title": "StreamHunter Telpu Futbols | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā telpu futbola tiešraides bezmaksas HD."
+				},
+				"badminton": {
+					"title": "StreamHunter Badmintons | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā badmintona tiešraides bezmaksas HD."
+				},
+				"netball": {
+					"title": "StreamHunter Netbols | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā netbola tiešraides bezmaksas HD."
+				},
+				"floorball": {
+					"title": "StreamHunter Florbols | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā florbola tiešraides bezmaksas HD."
+				},
+				"combat-sport": {
+					"title": "StreamHunter Cīņas Sports | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā cīņas sporta tiešraides bezmaksas HD."
+				},
+				"boxing": {
+					"title": "StreamHunter Bokss | Cīņas Tiešraidē Bezmaksas HD",
+					"description": "StreamHunter piedāvā boksa tiešraides bezmaksas HD."
+				},
+				"mma": {
+					"title": "StreamHunter MMA | UFC Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā MMA un UFC tiešraides bezmaksas HD."
+				},
+				"snooker": {
+					"title": "StreamHunter Snūkers | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā snūkera tiešraides bezmaksas HD."
+				},
+				"billiard": {
+					"title": "StreamHunter Biljards | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā biljarda tiešraides bezmaksas HD."
+				},
+				"table-tennis": {
+					"title": "StreamHunter Galda Teniss | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā galda tenisa tiešraides bezmaksas HD."
+				},
+				"padel-tennis": {
+					"title": "StreamHunter Padels | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā padela tiešraides bezmaksas HD."
+				},
+				"squash": {
+					"title": "StreamHunter Skvošs | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā skvoša tiešraides bezmaksas HD."
+				},
+				"motorsport": {
+					"title": "StreamHunter Autosports | F1 Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā F1 un autosporta tiešraides bezmaksas HD."
+				},
+				"racing": {
+					"title": "StreamHunter Sacīkstes | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā sacīkšu tiešraides bezmaksas HD."
+				},
+				"cycling": {
+					"title": "StreamHunter Riteņbraukšana | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā riteņbraukšanas tiešraides bezmaksas HD."
+				},
+				"equestrianism": {
+					"title": "StreamHunter Jāšanas Sports | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā jāšanas sporta tiešraides bezmaksas HD."
+				},
+				"golf": {
+					"title": "StreamHunter Golfs | PGA Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā golfa tiešraides bezmaksas HD."
+				},
+				"field-hockey": {
+					"title": "StreamHunter Lauka Hokejs | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā lauka hokeja tiešraides bezmaksas HD."
+				},
+				"lacrosse": {
+					"title": "StreamHunter Lakross | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā lakrosa tiešraides bezmaksas HD."
+				},
+				"athletics": {
+					"title": "StreamHunter Vieglatlētika | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā vieglatlētikas tiešraides bezmaksas HD."
+				},
+				"gymnastics": {
+					"title": "StreamHunter Vingrošana | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā vingrošanas tiešraides bezmaksas HD."
+				},
+				"weightlifting": {
+					"title": "StreamHunter Svarcelšana | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā svarcelšanas tiešraides bezmaksas HD."
+				},
+				"climbing": {
+					"title": "StreamHunter Kāpšana | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā kāpšanas tiešraides bezmaksas HD."
+				},
+				"winter-sport": {
+					"title": "StreamHunter Ziemas Sports | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā ziemas sporta tiešraides bezmaksas HD."
+				},
+				"bandy": {
+					"title": "StreamHunter Bendijs | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā bendija tiešraides bezmaksas HD."
+				},
+				"curling": {
+					"title": "StreamHunter Kērlings | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā kērlinga tiešraides bezmaksas HD."
+				},
+				"triathlon": {
+					"title": "StreamHunter Triatlons | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā triatlona tiešraides bezmaksas HD."
+				},
+				"water-sports": {
+					"title": "StreamHunter Ūdenssports | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā ūdenssporta tiešraides bezmaksas HD."
+				},
+				"water-polo": {
+					"title": "StreamHunter Ūdenspolo | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā ūdenspolo tiešraides bezmaksas HD."
+				},
+				"sailing": {
+					"title": "StreamHunter Burāšana | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā burāšanas tiešraides bezmaksas HD."
+				},
+				"bowling": {
+					"title": "StreamHunter Boulings | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā boulinga tiešraides bezmaksas HD."
+				},
+				"darts": {
+					"title": "StreamHunter Šautriņas | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā šautriņu tiešraides bezmaksas HD."
+				},
+				"chess": {
+					"title": "StreamHunter Šahs | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā šaha tiešraides bezmaksas HD."
+				},
+				"e-sports": {
+					"title": "StreamHunter E-sports | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā e-sporta tiešraides bezmaksas HD."
+				},
+				"others": {
+					"title": "StreamHunter Citi | Sporta Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā dažādu sportu tiešraides bezmaksas HD."
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter Regbijs Sevens | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā Regbijs Sevens tiešraides bezmaksas HD. SVNS sērija un turnīri. Bez reģistrācijas."
+				},
+				"extreme-sport": {
+					"title": "StreamHunter Ekstrēmais Sports | Tiešraides Bezmaksas HD",
+					"description": "StreamHunter piedāvā ekstrēmā sporta tiešraides bezmaksas HD. X Games un sacensības. Bez reģistrācijas."
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | Sporta Tiešraides Bezmaksas HD",
+				"description": "MethStreams piedāvā sporta tiešraides bezmaksas HD kvalitātē. Ātra ielāde, bez reģistrācijas. Skatieties tagad."
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams Futbols | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā futbola tiešraides bezmaksas HD. Ātra ielāde, visas līgas."
+				},
+				"basketball": {
+					"title": "MethStreams Basketbols | NBA Tiešraides Bezmaksas",
+					"description": "MethStreams piedāvā NBA un basketbola tiešraides bezmaksas HD. Ātra ielāde."
+				},
+				"tennis": {
+					"title": "MethStreams Teniss | Grand Slam Tiešraides Bezmaksas",
+					"description": "MethStreams piedāvā tenisa tiešraides bezmaksas HD. ATP, WTA turnīri."
+				},
+				"ice-hockey": {
+					"title": "MethStreams Hokejs | NHL Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā NHL un hokeja tiešraides bezmaksas HD."
+				},
+				"baseball": {
+					"title": "MethStreams Beisbols | MLB Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā MLB un beisbola tiešraides bezmaksas HD."
+				},
+				"rugby-union": {
+					"title": "MethStreams Regbijs Union | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā Regbijs Union tiešraides bezmaksas HD."
+				},
+				"rugby-league": {
+					"title": "MethStreams Regbijs League | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā Regbijs League tiešraides bezmaksas HD."
+				},
+				"cricket": {
+					"title": "MethStreams Krikets | IPL Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā kriketa tiešraides bezmaksas HD. IPL, T20."
+				},
+				"american-football": {
+					"title": "MethStreams Amerikāņu Futbols | NFL Tiešraides HD",
+					"description": "MethStreams piedāvā NFL tiešraides bezmaksas HD."
+				},
+				"volleyball": {
+					"title": "MethStreams Volejbols | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā volejbola tiešraides bezmaksas HD."
+				},
+				"beach-volleyball": {
+					"title": "MethStreams Pludmales Volejbols | Tiešraides HD",
+					"description": "MethStreams piedāvā pludmales volejbola tiešraides bezmaksas HD."
+				},
+				"handball": {
+					"title": "MethStreams Handbols | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā handbola tiešraides bezmaksas HD."
+				},
+				"beach-handball": {
+					"title": "MethStreams Pludmales Handbols | Tiešraides HD",
+					"description": "MethStreams piedāvā pludmales handbola tiešraides bezmaksas HD."
+				},
+				"beach-soccer": {
+					"title": "MethStreams Pludmales Futbols | Tiešraides HD",
+					"description": "MethStreams piedāvā pludmales futbola tiešraides bezmaksas HD."
+				},
+				"aussie-rules": {
+					"title": "MethStreams Austrāliešu Futbols | AFL Tiešraides HD",
+					"description": "MethStreams piedāvā AFL tiešraides bezmaksas HD."
+				},
+				"futsal": {
+					"title": "MethStreams Telpu Futbols | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā telpu futbola tiešraides bezmaksas HD."
+				},
+				"badminton": {
+					"title": "MethStreams Badmintons | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā badmintona tiešraides bezmaksas HD."
+				},
+				"netball": {
+					"title": "MethStreams Netbols | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā netbola tiešraides bezmaksas HD."
+				},
+				"floorball": {
+					"title": "MethStreams Florbols | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā florbola tiešraides bezmaksas HD."
+				},
+				"combat-sport": {
+					"title": "MethStreams Cīņas Sports | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā cīņas sporta tiešraides bezmaksas HD."
+				},
+				"boxing": {
+					"title": "MethStreams Bokss | Cīņas Tiešraidē Bezmaksas HD",
+					"description": "MethStreams piedāvā boksa tiešraides bezmaksas HD."
+				},
+				"mma": {
+					"title": "MethStreams MMA | UFC Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā MMA un UFC tiešraides bezmaksas HD."
+				},
+				"snooker": {
+					"title": "MethStreams Snūkers | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā snūkera tiešraides bezmaksas HD."
+				},
+				"billiard": {
+					"title": "MethStreams Biljards | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā biljarda tiešraides bezmaksas HD."
+				},
+				"table-tennis": {
+					"title": "MethStreams Galda Teniss | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā galda tenisa tiešraides bezmaksas HD."
+				},
+				"padel-tennis": {
+					"title": "MethStreams Padels | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā padela tiešraides bezmaksas HD."
+				},
+				"squash": {
+					"title": "MethStreams Skvošs | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā skvoša tiešraides bezmaksas HD."
+				},
+				"motorsport": {
+					"title": "MethStreams Autosports | F1 Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā F1 un autosporta tiešraides bezmaksas HD."
+				},
+				"racing": {
+					"title": "MethStreams Sacīkstes | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā sacīkšu tiešraides bezmaksas HD."
+				},
+				"cycling": {
+					"title": "MethStreams Riteņbraukšana | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā riteņbraukšanas tiešraides bezmaksas HD."
+				},
+				"equestrianism": {
+					"title": "MethStreams Jāšanas Sports | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā jāšanas sporta tiešraides bezmaksas HD."
+				},
+				"golf": {
+					"title": "MethStreams Golfs | PGA Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā golfa tiešraides bezmaksas HD."
+				},
+				"field-hockey": {
+					"title": "MethStreams Lauka Hokejs | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā lauka hokeja tiešraides bezmaksas HD."
+				},
+				"lacrosse": {
+					"title": "MethStreams Lakross | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā lakrosa tiešraides bezmaksas HD."
+				},
+				"athletics": {
+					"title": "MethStreams Vieglatlētika | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā vieglatlētikas tiešraides bezmaksas HD."
+				},
+				"gymnastics": {
+					"title": "MethStreams Vingrošana | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā vingrošanas tiešraides bezmaksas HD."
+				},
+				"weightlifting": {
+					"title": "MethStreams Svarcelšana | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā svarcelšanas tiešraides bezmaksas HD."
+				},
+				"climbing": {
+					"title": "MethStreams Kāpšana | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā kāpšanas tiešraides bezmaksas HD."
+				},
+				"winter-sport": {
+					"title": "MethStreams Ziemas Sports | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā ziemas sporta tiešraides bezmaksas HD."
+				},
+				"bandy": {
+					"title": "MethStreams Bendijs | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā bendija tiešraides bezmaksas HD."
+				},
+				"curling": {
+					"title": "MethStreams Kērlings | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā kērlinga tiešraides bezmaksas HD."
+				},
+				"triathlon": {
+					"title": "MethStreams Triatlons | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā triatlona tiešraides bezmaksas HD."
+				},
+				"water-sports": {
+					"title": "MethStreams Ūdenssports | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā ūdenssporta tiešraides bezmaksas HD."
+				},
+				"water-polo": {
+					"title": "MethStreams Ūdenspolo | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā ūdenspolo tiešraides bezmaksas HD."
+				},
+				"sailing": {
+					"title": "MethStreams Burāšana | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā burāšanas tiešraides bezmaksas HD."
+				},
+				"bowling": {
+					"title": "MethStreams Boulings | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā boulinga tiešraides bezmaksas HD."
+				},
+				"darts": {
+					"title": "MethStreams Šautriņas | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā šautriņu tiešraides bezmaksas HD."
+				},
+				"chess": {
+					"title": "MethStreams Šahs | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā šaha tiešraides bezmaksas HD."
+				},
+				"e-sports": {
+					"title": "MethStreams E-sports | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā e-sporta tiešraides bezmaksas HD."
+				},
+				"others": {
+					"title": "MethStreams Citi | Sporta Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā dažādu sportu tiešraides bezmaksas HD."
+				},
+				"rugby-sevens": {
+					"title": "MethStreams Regbijs Sevens | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā Regbijs Sevens tiešraides bezmaksas HD. SVNS sērija un turnīri. Bez reģistrācijas."
+				},
+				"extreme-sport": {
+					"title": "MethStreams Ekstrēmais Sports | Tiešraides Bezmaksas HD",
+					"description": "MethStreams piedāvā ekstrēmā sporta tiešraides bezmaksas HD. X Games un sacensības. Bez reģistrācijas."
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "Wiziwig | Sporta Tiešraides Bezmaksas HD",
+				"description": "Wiziwig piedāvā uzticamas sporta tiešraides bezmaksas HD. Ātra ielāde, bez reģistrācijas. Skatieties tagad."
+			},
+			"sports": {
+				"football": {
+					"title": "Wiziwig Futbols | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā futbola tiešraides bezmaksas HD. Ātra ielāde, visas līgas."
+				},
+				"basketball": {
+					"title": "Wiziwig Basketbols | NBA Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā NBA un basketbola tiešraides bezmaksas HD. Ātra ielāde."
+				},
+				"tennis": {
+					"title": "Wiziwig Teniss | Grand Slam Tiešraides Bezmaksas",
+					"description": "Wiziwig piedāvā tenisa tiešraides bezmaksas HD. ATP, WTA turnīri."
+				},
+				"ice-hockey": {
+					"title": "Wiziwig Hokejs | NHL Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā NHL un hokeja tiešraides bezmaksas HD."
+				},
+				"baseball": {
+					"title": "Wiziwig Beisbols | MLB Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā MLB un beisbola tiešraides bezmaksas HD."
+				},
+				"rugby-union": {
+					"title": "Wiziwig Regbijs Union | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā Regbijs Union tiešraides bezmaksas HD."
+				},
+				"rugby-league": {
+					"title": "Wiziwig Regbijs League | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā Regbijs League tiešraides bezmaksas HD."
+				},
+				"cricket": {
+					"title": "Wiziwig Krikets | IPL Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā kriketa tiešraides bezmaksas HD. IPL, T20."
+				},
+				"american-football": {
+					"title": "Wiziwig Amerikāņu Futbols | NFL Tiešraides HD",
+					"description": "Wiziwig piedāvā NFL tiešraides bezmaksas HD."
+				},
+				"volleyball": {
+					"title": "Wiziwig Volejbols | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā volejbola tiešraides bezmaksas HD."
+				},
+				"beach-volleyball": {
+					"title": "Wiziwig Pludmales Volejbols | Tiešraides HD",
+					"description": "Wiziwig piedāvā pludmales volejbola tiešraides bezmaksas HD."
+				},
+				"handball": {
+					"title": "Wiziwig Handbols | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā handbola tiešraides bezmaksas HD."
+				},
+				"beach-handball": {
+					"title": "Wiziwig Pludmales Handbols | Tiešraides HD",
+					"description": "Wiziwig piedāvā pludmales handbola tiešraides bezmaksas HD."
+				},
+				"beach-soccer": {
+					"title": "Wiziwig Pludmales Futbols | Tiešraides HD",
+					"description": "Wiziwig piedāvā pludmales futbola tiešraides bezmaksas HD."
+				},
+				"aussie-rules": {
+					"title": "Wiziwig Austrāliešu Futbols | AFL Tiešraides HD",
+					"description": "Wiziwig piedāvā AFL tiešraides bezmaksas HD."
+				},
+				"futsal": {
+					"title": "Wiziwig Telpu Futbols | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā telpu futbola tiešraides bezmaksas HD."
+				},
+				"badminton": {
+					"title": "Wiziwig Badmintons | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā badmintona tiešraides bezmaksas HD."
+				},
+				"netball": {
+					"title": "Wiziwig Netbols | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā netbola tiešraides bezmaksas HD."
+				},
+				"floorball": {
+					"title": "Wiziwig Florbols | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā florbola tiešraides bezmaksas HD."
+				},
+				"combat-sport": {
+					"title": "Wiziwig Cīņas Sports | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā cīņas sporta tiešraides bezmaksas HD."
+				},
+				"boxing": {
+					"title": "Wiziwig Bokss | Cīņas Tiešraidē Bezmaksas HD",
+					"description": "Wiziwig piedāvā boksa tiešraides bezmaksas HD."
+				},
+				"mma": {
+					"title": "Wiziwig MMA | UFC Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā MMA un UFC tiešraides bezmaksas HD."
+				},
+				"snooker": {
+					"title": "Wiziwig Snūkers | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā snūkera tiešraides bezmaksas HD."
+				},
+				"billiard": {
+					"title": "Wiziwig Biljards | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā biljarda tiešraides bezmaksas HD."
+				},
+				"table-tennis": {
+					"title": "Wiziwig Galda Teniss | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā galda tenisa tiešraides bezmaksas HD."
+				},
+				"padel-tennis": {
+					"title": "Wiziwig Padels | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā padela tiešraides bezmaksas HD."
+				},
+				"squash": {
+					"title": "Wiziwig Skvošs | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā skvoša tiešraides bezmaksas HD."
+				},
+				"motorsport": {
+					"title": "Wiziwig Autosports | F1 Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā F1 un autosporta tiešraides bezmaksas HD."
+				},
+				"racing": {
+					"title": "Wiziwig Sacīkstes | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā sacīkšu tiešraides bezmaksas HD."
+				},
+				"cycling": {
+					"title": "Wiziwig Riteņbraukšana | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā riteņbraukšanas tiešraides bezmaksas HD."
+				},
+				"equestrianism": {
+					"title": "Wiziwig Jāšanas Sports | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā jāšanas sporta tiešraides bezmaksas HD."
+				},
+				"golf": {
+					"title": "Wiziwig Golfs | PGA Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā golfa tiešraides bezmaksas HD."
+				},
+				"field-hockey": {
+					"title": "Wiziwig Lauka Hokejs | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā lauka hokeja tiešraides bezmaksas HD."
+				},
+				"lacrosse": {
+					"title": "Wiziwig Lakross | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā lakrosa tiešraides bezmaksas HD."
+				},
+				"athletics": {
+					"title": "Wiziwig Vieglatlētika | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā vieglatlētikas tiešraides bezmaksas HD."
+				},
+				"gymnastics": {
+					"title": "Wiziwig Vingrošana | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā vingrošanas tiešraides bezmaksas HD."
+				},
+				"weightlifting": {
+					"title": "Wiziwig Svarcelšana | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā svarcelšanas tiešraides bezmaksas HD."
+				},
+				"climbing": {
+					"title": "Wiziwig Kāpšana | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā kāpšanas tiešraides bezmaksas HD."
+				},
+				"winter-sport": {
+					"title": "Wiziwig Ziemas Sports | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā ziemas sporta tiešraides bezmaksas HD."
+				},
+				"bandy": {
+					"title": "Wiziwig Bendijs | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā bendija tiešraides bezmaksas HD."
+				},
+				"curling": {
+					"title": "Wiziwig Kērlings | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā kērlinga tiešraides bezmaksas HD."
+				},
+				"triathlon": {
+					"title": "Wiziwig Triatlons | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā triatlona tiešraides bezmaksas HD."
+				},
+				"water-sports": {
+					"title": "Wiziwig Ūdenssports | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā ūdenssporta tiešraides bezmaksas HD."
+				},
+				"water-polo": {
+					"title": "Wiziwig Ūdenspolo | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā ūdenspolo tiešraides bezmaksas HD."
+				},
+				"sailing": {
+					"title": "Wiziwig Burāšana | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā burāšanas tiešraides bezmaksas HD."
+				},
+				"bowling": {
+					"title": "Wiziwig Boulings | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā boulinga tiešraides bezmaksas HD."
+				},
+				"darts": {
+					"title": "Wiziwig Šautriņas | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā šautriņu tiešraides bezmaksas HD."
+				},
+				"chess": {
+					"title": "Wiziwig Šahs | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā šaha tiešraides bezmaksas HD."
+				},
+				"e-sports": {
+					"title": "Wiziwig E-sports | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā e-sporta tiešraides bezmaksas HD."
+				},
+				"others": {
+					"title": "Wiziwig Citi | Sporta Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā dažādu sportu tiešraides bezmaksas HD."
+				},
+				"rugby-sevens": {
+					"title": "Wiziwig Regbijs Sevens | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā Regbijs Sevens tiešraides bezmaksas HD. SVNS sērija un turnīri. Bez reģistrācijas."
+				},
+				"extreme-sport": {
+					"title": "Wiziwig Ekstrēmais Sports | Tiešraides Bezmaksas HD",
+					"description": "Wiziwig piedāvā ekstrēmā sporta tiešraides bezmaksas HD. X Games un sacensības. Bez reģistrācijas."
+				}
+			}
+		}
 	}
 }

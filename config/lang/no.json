@@ -3,6 +3,7 @@
 		"code": "no",
 		"name": "Norsk",
 		"flag": "NO",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -64,8 +65,7 @@
 		"Badminton": "Badminton",
 		"Netball": "Netball",
 		"Floorball": "Innebandy",
-		"Combat": "Kampsport",
-		"combat sport": "Kampsporter",
+		"Combat Sport": "Kampsport",
 		"Boxing": "Boksing",
 		"MMA": "MMA",
 		"Snooker": "Snooker",
@@ -84,7 +84,7 @@
 		"Gymnastics": "Gymnastikk",
 		"Weightlifting": "Vektløfting",
 		"Climbing": "Klatring",
-		"winter sport": "Vintersport",
+		"Winter Sport": "Vintersport",
 		"Bandy": "Bandy",
 		"Curling": "Curling",
 		"Triathlon": "Triatlon",
@@ -95,6 +95,1306 @@
 		"Darts": "Dart",
 		"Chess": "Sjakk",
 		"E-sports": "E-sport",
-		"Others": "Andre"
+		"Others": "Andre",
+		"Rugby Sevens": "Rugby Sevens",
+		"Extreme Sport": "Ekstremsport"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | Gratis Live Sport Strømmer HD",
+				"description": "SportLemon tilbyr gratis live sport strømmer i HD-kvalitet. Fotball, basketball, tennis og mer. Se nå uten registrering."
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon Fotball | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis live fotball strømmer i HD. Eliteserien, Premier League, Champions League og mer."
+				},
+				"basketball": {
+					"title": "SportLemon Basketball | Gratis NBA Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis NBA og basketball live strømmer i HD-kvalitet. Se nå."
+				},
+				"tennis": {
+					"title": "SportLemon Tennis | Gratis Grand Slam Live Strømmer",
+					"description": "SportLemon tilbyr gratis tennis live strømmer i HD. ATP, WTA og Grand Slam turneringer."
+				},
+				"ice-hockey": {
+					"title": "SportLemon Ishockey | Gratis NHL Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis NHL og ishockey live strømmer i HD-kvalitet."
+				},
+				"baseball": {
+					"title": "SportLemon Baseball | Gratis MLB Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis MLB og baseball live strømmer i HD-kvalitet."
+				},
+				"rugby-union": {
+					"title": "SportLemon Rugby Union | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis Rugby Union live strømmer i HD-kvalitet."
+				},
+				"rugby-league": {
+					"title": "SportLemon Rugby League | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis Rugby League live strømmer i HD-kvalitet."
+				},
+				"cricket": {
+					"title": "SportLemon Cricket | Gratis IPL Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis cricket live strømmer i HD. IPL, T20 og testkamper."
+				},
+				"american-football": {
+					"title": "SportLemon Amerikansk Fotball | Gratis NFL Strømmer HD",
+					"description": "SportLemon tilbyr gratis NFL og amerikansk fotball live strømmer i HD."
+				},
+				"volleyball": {
+					"title": "SportLemon Volleyball | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis volleyball live strømmer i HD-kvalitet."
+				},
+				"beach-volleyball": {
+					"title": "SportLemon Sandvolleyball | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis sandvolleyball live strømmer i HD-kvalitet."
+				},
+				"handball": {
+					"title": "SportLemon Håndball | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis håndball live strømmer i HD-kvalitet."
+				},
+				"beach-handball": {
+					"title": "SportLemon Strandhåndball | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis strandhåndball live strømmer i HD-kvalitet."
+				},
+				"beach-soccer": {
+					"title": "SportLemon Strandfotball | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis strandfotball live strømmer i HD-kvalitet."
+				},
+				"aussie-rules": {
+					"title": "SportLemon Australsk Fotball | Gratis AFL Strømmer HD",
+					"description": "SportLemon tilbyr gratis AFL og australsk fotball live strømmer i HD."
+				},
+				"futsal": {
+					"title": "SportLemon Futsal | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis futsal live strømmer i HD-kvalitet."
+				},
+				"badminton": {
+					"title": "SportLemon Badminton | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis badminton live strømmer i HD-kvalitet."
+				},
+				"netball": {
+					"title": "SportLemon Netball | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis netball live strømmer i HD-kvalitet."
+				},
+				"floorball": {
+					"title": "SportLemon Innebandy | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis innebandy live strømmer i HD-kvalitet."
+				},
+				"combat-sport": {
+					"title": "SportLemon Kampsport | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis kampsport live strømmer i HD-kvalitet."
+				},
+				"boxing": {
+					"title": "SportLemon Boksing | Gratis Live Kamper HD",
+					"description": "SportLemon tilbyr gratis boksing live strømmer i HD-kvalitet."
+				},
+				"mma": {
+					"title": "SportLemon MMA | Gratis UFC Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis MMA og UFC live strømmer i HD-kvalitet."
+				},
+				"snooker": {
+					"title": "SportLemon Snooker | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis snooker live strømmer i HD-kvalitet."
+				},
+				"billiard": {
+					"title": "SportLemon Biljard | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis biljard live strømmer i HD-kvalitet."
+				},
+				"table-tennis": {
+					"title": "SportLemon Bordtennis | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis bordtennis live strømmer i HD-kvalitet."
+				},
+				"padel-tennis": {
+					"title": "SportLemon Padel | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis padel live strømmer i HD-kvalitet."
+				},
+				"squash": {
+					"title": "SportLemon Squash | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis squash live strømmer i HD-kvalitet."
+				},
+				"motorsport": {
+					"title": "SportLemon Motorsport | Gratis F1 Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis F1 og motorsport live strømmer i HD-kvalitet."
+				},
+				"racing": {
+					"title": "SportLemon Racing | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis racing live strømmer i HD-kvalitet."
+				},
+				"cycling": {
+					"title": "SportLemon Sykling | Gratis Tour Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis sykling live strømmer i HD. Tour de France, Giro og mer."
+				},
+				"equestrianism": {
+					"title": "SportLemon Ridning | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis ridning live strømmer i HD-kvalitet."
+				},
+				"golf": {
+					"title": "SportLemon Golf | Gratis PGA Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis golf live strømmer i HD-kvalitet."
+				},
+				"field-hockey": {
+					"title": "SportLemon Landhockey | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis landhockey live strømmer i HD-kvalitet."
+				},
+				"lacrosse": {
+					"title": "SportLemon Lacrosse | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis lacrosse live strømmer i HD-kvalitet."
+				},
+				"athletics": {
+					"title": "SportLemon Friidrett | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis friidrett live strømmer i HD-kvalitet."
+				},
+				"gymnastics": {
+					"title": "SportLemon Gymnastikk | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis gymnastikk live strømmer i HD-kvalitet."
+				},
+				"weightlifting": {
+					"title": "SportLemon Vektløfting | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis vektløfting live strømmer i HD-kvalitet."
+				},
+				"climbing": {
+					"title": "SportLemon Klatring | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis klatring live strømmer i HD-kvalitet."
+				},
+				"winter-sport": {
+					"title": "SportLemon Vintersport | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis vintersport live strømmer i HD-kvalitet."
+				},
+				"bandy": {
+					"title": "SportLemon Bandy | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis bandy live strømmer i HD-kvalitet."
+				},
+				"curling": {
+					"title": "SportLemon Curling | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis curling live strømmer i HD-kvalitet."
+				},
+				"triathlon": {
+					"title": "SportLemon Triatlon | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis triatlon live strømmer i HD-kvalitet."
+				},
+				"water-sports": {
+					"title": "SportLemon Vannsport | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis vannsport live strømmer i HD-kvalitet."
+				},
+				"water-polo": {
+					"title": "SportLemon Vannpolo | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis vannpolo live strømmer i HD-kvalitet."
+				},
+				"sailing": {
+					"title": "SportLemon Seiling | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis seiling live strømmer i HD-kvalitet."
+				},
+				"bowling": {
+					"title": "SportLemon Bowling | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis bowling live strømmer i HD-kvalitet."
+				},
+				"darts": {
+					"title": "SportLemon Dart | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis dart live strømmer i HD-kvalitet."
+				},
+				"chess": {
+					"title": "SportLemon Sjakk | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis sjakk live strømmer i HD-kvalitet."
+				},
+				"e-sports": {
+					"title": "SportLemon E-sport | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis e-sport live strømmer i HD-kvalitet."
+				},
+				"others": {
+					"title": "SportLemon Andre | Gratis Live Sport Strømmer HD",
+					"description": "SportLemon tilbyr gratis diverse sport live strømmer i HD-kvalitet."
+				},
+				"rugby-sevens": {
+					"title": "SportLemon Rugby Sevens | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis Rugby Sevens live strømmer i HD. SVNS Series og turneringer. Uten registrering."
+				},
+				"extreme-sport": {
+					"title": "SportLemon Ekstremsport | Gratis Live Strømmer HD",
+					"description": "SportLemon tilbyr gratis ekstremsport live strømmer i HD. X Games og konkurranser. Uten registrering."
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLsite | Gratis Live Sport Strømmer HD",
+				"description": "EPLsite tilbyr gratis live sport strømmer i HD-kvalitet. Fotball, basketball, tennis og mer. Se nå uten registrering."
+			},
+			"sports": {
+				"football": {
+					"title": "EPLsite Fotball | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis live fotball strømmer i HD. Eliteserien, Premier League, Champions League og mer."
+				},
+				"basketball": {
+					"title": "EPLsite Basketball | Gratis NBA Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis NBA og basketball live strømmer i HD-kvalitet. Se nå."
+				},
+				"tennis": {
+					"title": "EPLsite Tennis | Gratis Grand Slam Live Strømmer",
+					"description": "EPLsite tilbyr gratis tennis live strømmer i HD. ATP, WTA og Grand Slam turneringer."
+				},
+				"ice-hockey": {
+					"title": "EPLsite Ishockey | Gratis NHL Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis NHL og ishockey live strømmer i HD-kvalitet."
+				},
+				"baseball": {
+					"title": "EPLsite Baseball | Gratis MLB Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis MLB og baseball live strømmer i HD-kvalitet."
+				},
+				"rugby-union": {
+					"title": "EPLsite Rugby Union | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis Rugby Union live strømmer i HD-kvalitet."
+				},
+				"rugby-league": {
+					"title": "EPLsite Rugby League | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis Rugby League live strømmer i HD-kvalitet."
+				},
+				"cricket": {
+					"title": "EPLsite Cricket | Gratis IPL Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis cricket live strømmer i HD. IPL, T20 og testkamper."
+				},
+				"american-football": {
+					"title": "EPLsite Amerikansk Fotball | Gratis NFL Strømmer HD",
+					"description": "EPLsite tilbyr gratis NFL og amerikansk fotball live strømmer i HD."
+				},
+				"volleyball": {
+					"title": "EPLsite Volleyball | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis volleyball live strømmer i HD-kvalitet."
+				},
+				"beach-volleyball": {
+					"title": "EPLsite Sandvolleyball | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis sandvolleyball live strømmer i HD-kvalitet."
+				},
+				"handball": {
+					"title": "EPLsite Håndball | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis håndball live strømmer i HD-kvalitet."
+				},
+				"beach-handball": {
+					"title": "EPLsite Strandhåndball | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis strandhåndball live strømmer i HD-kvalitet."
+				},
+				"beach-soccer": {
+					"title": "EPLsite Strandfotball | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis strandfotball live strømmer i HD-kvalitet."
+				},
+				"aussie-rules": {
+					"title": "EPLsite Australsk Fotball | Gratis AFL Strømmer HD",
+					"description": "EPLsite tilbyr gratis AFL og australsk fotball live strømmer i HD."
+				},
+				"futsal": {
+					"title": "EPLsite Futsal | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis futsal live strømmer i HD-kvalitet."
+				},
+				"badminton": {
+					"title": "EPLsite Badminton | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis badminton live strømmer i HD-kvalitet."
+				},
+				"netball": {
+					"title": "EPLsite Netball | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis netball live strømmer i HD-kvalitet."
+				},
+				"floorball": {
+					"title": "EPLsite Innebandy | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis innebandy live strømmer i HD-kvalitet."
+				},
+				"combat-sport": {
+					"title": "EPLsite Kampsport | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis kampsport live strømmer i HD-kvalitet."
+				},
+				"boxing": {
+					"title": "EPLsite Boksing | Gratis Live Kamper HD",
+					"description": "EPLsite tilbyr gratis boksing live strømmer i HD-kvalitet."
+				},
+				"mma": {
+					"title": "EPLsite MMA | Gratis UFC Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis MMA og UFC live strømmer i HD-kvalitet."
+				},
+				"snooker": {
+					"title": "EPLsite Snooker | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis snooker live strømmer i HD-kvalitet."
+				},
+				"billiard": {
+					"title": "EPLsite Biljard | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis biljard live strømmer i HD-kvalitet."
+				},
+				"table-tennis": {
+					"title": "EPLsite Bordtennis | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis bordtennis live strømmer i HD-kvalitet."
+				},
+				"padel-tennis": {
+					"title": "EPLsite Padel | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis padel live strømmer i HD-kvalitet."
+				},
+				"squash": {
+					"title": "EPLsite Squash | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis squash live strømmer i HD-kvalitet."
+				},
+				"motorsport": {
+					"title": "EPLsite Motorsport | Gratis F1 Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis F1 og motorsport live strømmer i HD-kvalitet."
+				},
+				"racing": {
+					"title": "EPLsite Racing | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis racing live strømmer i HD-kvalitet."
+				},
+				"cycling": {
+					"title": "EPLsite Sykling | Gratis Tour Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis sykling live strømmer i HD. Tour de France, Giro og mer."
+				},
+				"equestrianism": {
+					"title": "EPLsite Ridning | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis ridning live strømmer i HD-kvalitet."
+				},
+				"golf": {
+					"title": "EPLsite Golf | Gratis PGA Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis golf live strømmer i HD-kvalitet."
+				},
+				"field-hockey": {
+					"title": "EPLsite Landhockey | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis landhockey live strømmer i HD-kvalitet."
+				},
+				"lacrosse": {
+					"title": "EPLsite Lacrosse | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis lacrosse live strømmer i HD-kvalitet."
+				},
+				"athletics": {
+					"title": "EPLsite Friidrett | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis friidrett live strømmer i HD-kvalitet."
+				},
+				"gymnastics": {
+					"title": "EPLsite Gymnastikk | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis gymnastikk live strømmer i HD-kvalitet."
+				},
+				"weightlifting": {
+					"title": "EPLsite Vektløfting | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis vektløfting live strømmer i HD-kvalitet."
+				},
+				"climbing": {
+					"title": "EPLsite Klatring | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis klatring live strømmer i HD-kvalitet."
+				},
+				"winter-sport": {
+					"title": "EPLsite Vintersport | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis vintersport live strømmer i HD-kvalitet."
+				},
+				"bandy": {
+					"title": "EPLsite Bandy | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis bandy live strømmer i HD-kvalitet."
+				},
+				"curling": {
+					"title": "EPLsite Curling | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis curling live strømmer i HD-kvalitet."
+				},
+				"triathlon": {
+					"title": "EPLsite Triatlon | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis triatlon live strømmer i HD-kvalitet."
+				},
+				"water-sports": {
+					"title": "EPLsite Vannsport | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis vannsport live strømmer i HD-kvalitet."
+				},
+				"water-polo": {
+					"title": "EPLsite Vannpolo | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis vannpolo live strømmer i HD-kvalitet."
+				},
+				"sailing": {
+					"title": "EPLsite Seiling | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis seiling live strømmer i HD-kvalitet."
+				},
+				"bowling": {
+					"title": "EPLsite Bowling | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis bowling live strømmer i HD-kvalitet."
+				},
+				"darts": {
+					"title": "EPLsite Dart | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis dart live strømmer i HD-kvalitet."
+				},
+				"chess": {
+					"title": "EPLsite Sjakk | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis sjakk live strømmer i HD-kvalitet."
+				},
+				"e-sports": {
+					"title": "EPLsite E-sport | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis e-sport live strømmer i HD-kvalitet."
+				},
+				"others": {
+					"title": "EPLsite Andre | Gratis Live Sport Strømmer HD",
+					"description": "EPLsite tilbyr gratis diverse sport live strømmer i HD-kvalitet."
+				},
+				"rugby-sevens": {
+					"title": "EPLsite Rugby Sevens | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis Rugby Sevens live strømmer i HD. SVNS Series og turneringer. Uten registrering."
+				},
+				"extreme-sport": {
+					"title": "EPLsite Ekstremsport | Gratis Live Strømmer HD",
+					"description": "EPLsite tilbyr gratis ekstremsport live strømmer i HD. X Games og konkurranser. Uten registrering."
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | Gratis Live Sport Strømmer HD",
+				"description": "P2P4U tilbyr gratis live sport strømmer i HD-kvalitet. Rask lasting, uten registrering. Se nå."
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U Fotball | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis live fotball strømmer i HD. Rask lasting, alle ligaer."
+				},
+				"basketball": {
+					"title": "P2P4U Basketball | Gratis NBA Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis NBA og basketball live strømmer i HD. Rask lasting."
+				},
+				"tennis": {
+					"title": "P2P4U Tennis | Gratis Grand Slam Live Strømmer",
+					"description": "P2P4U tilbyr gratis tennis live strømmer i HD. ATP, WTA turneringer."
+				},
+				"ice-hockey": {
+					"title": "P2P4U Ishockey | Gratis NHL Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis NHL og ishockey live strømmer i HD."
+				},
+				"baseball": {
+					"title": "P2P4U Baseball | Gratis MLB Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis MLB og baseball live strømmer i HD."
+				},
+				"rugby-union": {
+					"title": "P2P4U Rugby Union | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis Rugby Union live strømmer i HD."
+				},
+				"rugby-league": {
+					"title": "P2P4U Rugby League | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis Rugby League live strømmer i HD."
+				},
+				"cricket": {
+					"title": "P2P4U Cricket | Gratis IPL Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis cricket live strømmer i HD. IPL, T20."
+				},
+				"american-football": {
+					"title": "P2P4U Amerikansk Fotball | Gratis NFL Strømmer HD",
+					"description": "P2P4U tilbyr gratis NFL live strømmer i HD."
+				},
+				"volleyball": {
+					"title": "P2P4U Volleyball | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis volleyball live strømmer i HD."
+				},
+				"beach-volleyball": {
+					"title": "P2P4U Sandvolleyball | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis sandvolleyball live strømmer i HD."
+				},
+				"handball": {
+					"title": "P2P4U Håndball | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis håndball live strømmer i HD."
+				},
+				"beach-handball": {
+					"title": "P2P4U Strandhåndball | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis strandhåndball live strømmer i HD."
+				},
+				"beach-soccer": {
+					"title": "P2P4U Strandfotball | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis strandfotball live strømmer i HD."
+				},
+				"aussie-rules": {
+					"title": "P2P4U Australsk Fotball | Gratis AFL Strømmer HD",
+					"description": "P2P4U tilbyr gratis AFL live strømmer i HD."
+				},
+				"futsal": {
+					"title": "P2P4U Futsal | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis futsal live strømmer i HD."
+				},
+				"badminton": {
+					"title": "P2P4U Badminton | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis badminton live strømmer i HD."
+				},
+				"netball": {
+					"title": "P2P4U Netball | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis netball live strømmer i HD."
+				},
+				"floorball": {
+					"title": "P2P4U Innebandy | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis innebandy live strømmer i HD."
+				},
+				"combat-sport": {
+					"title": "P2P4U Kampsport | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis kampsport live strømmer i HD."
+				},
+				"boxing": {
+					"title": "P2P4U Boksing | Gratis Live Kamper HD",
+					"description": "P2P4U tilbyr gratis boksing live strømmer i HD."
+				},
+				"mma": {
+					"title": "P2P4U MMA | Gratis UFC Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis MMA og UFC live strømmer i HD."
+				},
+				"snooker": {
+					"title": "P2P4U Snooker | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis snooker live strømmer i HD."
+				},
+				"billiard": {
+					"title": "P2P4U Biljard | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis biljard live strømmer i HD."
+				},
+				"table-tennis": {
+					"title": "P2P4U Bordtennis | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis bordtennis live strømmer i HD."
+				},
+				"padel-tennis": {
+					"title": "P2P4U Padel | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis padel live strømmer i HD."
+				},
+				"squash": {
+					"title": "P2P4U Squash | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis squash live strømmer i HD."
+				},
+				"motorsport": {
+					"title": "P2P4U Motorsport | Gratis F1 Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis F1 og motorsport live strømmer i HD."
+				},
+				"racing": {
+					"title": "P2P4U Racing | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis racing live strømmer i HD."
+				},
+				"cycling": {
+					"title": "P2P4U Sykling | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis sykling live strømmer i HD."
+				},
+				"equestrianism": {
+					"title": "P2P4U Ridning | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis ridning live strømmer i HD."
+				},
+				"golf": {
+					"title": "P2P4U Golf | Gratis PGA Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis golf live strømmer i HD."
+				},
+				"field-hockey": {
+					"title": "P2P4U Landhockey | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis landhockey live strømmer i HD."
+				},
+				"lacrosse": {
+					"title": "P2P4U Lacrosse | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis lacrosse live strømmer i HD."
+				},
+				"athletics": {
+					"title": "P2P4U Friidrett | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis friidrett live strømmer i HD."
+				},
+				"gymnastics": {
+					"title": "P2P4U Gymnastikk | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis gymnastikk live strømmer i HD."
+				},
+				"weightlifting": {
+					"title": "P2P4U Vektløfting | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis vektløfting live strømmer i HD."
+				},
+				"climbing": {
+					"title": "P2P4U Klatring | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis klatring live strømmer i HD."
+				},
+				"winter-sport": {
+					"title": "P2P4U Vintersport | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis vintersport live strømmer i HD."
+				},
+				"bandy": {
+					"title": "P2P4U Bandy | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis bandy live strømmer i HD."
+				},
+				"curling": {
+					"title": "P2P4U Curling | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis curling live strømmer i HD."
+				},
+				"triathlon": {
+					"title": "P2P4U Triatlon | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis triatlon live strømmer i HD."
+				},
+				"water-sports": {
+					"title": "P2P4U Vannsport | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis vannsport live strømmer i HD."
+				},
+				"water-polo": {
+					"title": "P2P4U Vannpolo | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis vannpolo live strømmer i HD."
+				},
+				"sailing": {
+					"title": "P2P4U Seiling | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis seiling live strømmer i HD."
+				},
+				"bowling": {
+					"title": "P2P4U Bowling | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis bowling live strømmer i HD."
+				},
+				"darts": {
+					"title": "P2P4U Dart | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis dart live strømmer i HD."
+				},
+				"chess": {
+					"title": "P2P4U Sjakk | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis sjakk live strømmer i HD."
+				},
+				"e-sports": {
+					"title": "P2P4U E-sport | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis e-sport live strømmer i HD."
+				},
+				"others": {
+					"title": "P2P4U Andre | Gratis Live Sport Strømmer HD",
+					"description": "P2P4U tilbyr gratis diverse sport live strømmer i HD."
+				},
+				"rugby-sevens": {
+					"title": "P2P4U Rugby Sevens | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis Rugby Sevens live strømmer i HD. SVNS Series og turneringer. Uten registrering."
+				},
+				"extreme-sport": {
+					"title": "P2P4U Ekstremsport | Gratis Live Strømmer HD",
+					"description": "P2P4U tilbyr gratis ekstremsport live strømmer i HD. X Games og konkurranser. Uten registrering."
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | Gratis Live Sport Strømmer HD",
+				"description": "StreamHunter tilbyr gratis live sport strømmer i HD-kvalitet. Rask lasting, uten registrering. Se nå."
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter Fotball | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis live fotball strømmer i HD. Rask lasting, alle ligaer."
+				},
+				"basketball": {
+					"title": "StreamHunter Basketball | Gratis NBA Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis NBA og basketball live strømmer i HD. Rask lasting."
+				},
+				"tennis": {
+					"title": "StreamHunter Tennis | Gratis Grand Slam Live Strømmer",
+					"description": "StreamHunter tilbyr gratis tennis live strømmer i HD. ATP, WTA turneringer."
+				},
+				"ice-hockey": {
+					"title": "StreamHunter Ishockey | Gratis NHL Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis NHL og ishockey live strømmer i HD."
+				},
+				"baseball": {
+					"title": "StreamHunter Baseball | Gratis MLB Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis MLB og baseball live strømmer i HD."
+				},
+				"rugby-union": {
+					"title": "StreamHunter Rugby Union | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis Rugby Union live strømmer i HD."
+				},
+				"rugby-league": {
+					"title": "StreamHunter Rugby League | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis Rugby League live strømmer i HD."
+				},
+				"cricket": {
+					"title": "StreamHunter Cricket | Gratis IPL Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis cricket live strømmer i HD. IPL, T20."
+				},
+				"american-football": {
+					"title": "StreamHunter Amerikansk Fotball | Gratis NFL Strømmer HD",
+					"description": "StreamHunter tilbyr gratis NFL live strømmer i HD."
+				},
+				"volleyball": {
+					"title": "StreamHunter Volleyball | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis volleyball live strømmer i HD."
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter Sandvolleyball | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis sandvolleyball live strømmer i HD."
+				},
+				"handball": {
+					"title": "StreamHunter Håndball | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis håndball live strømmer i HD."
+				},
+				"beach-handball": {
+					"title": "StreamHunter Strandhåndball | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis strandhåndball live strømmer i HD."
+				},
+				"beach-soccer": {
+					"title": "StreamHunter Strandfotball | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis strandfotball live strømmer i HD."
+				},
+				"aussie-rules": {
+					"title": "StreamHunter Australsk Fotball | Gratis AFL Strømmer HD",
+					"description": "StreamHunter tilbyr gratis AFL live strømmer i HD."
+				},
+				"futsal": {
+					"title": "StreamHunter Futsal | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis futsal live strømmer i HD."
+				},
+				"badminton": {
+					"title": "StreamHunter Badminton | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis badminton live strømmer i HD."
+				},
+				"netball": {
+					"title": "StreamHunter Netball | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis netball live strømmer i HD."
+				},
+				"floorball": {
+					"title": "StreamHunter Innebandy | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis innebandy live strømmer i HD."
+				},
+				"combat-sport": {
+					"title": "StreamHunter Kampsport | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis kampsport live strømmer i HD."
+				},
+				"boxing": {
+					"title": "StreamHunter Boksing | Gratis Live Kamper HD",
+					"description": "StreamHunter tilbyr gratis boksing live strømmer i HD."
+				},
+				"mma": {
+					"title": "StreamHunter MMA | Gratis UFC Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis MMA og UFC live strømmer i HD."
+				},
+				"snooker": {
+					"title": "StreamHunter Snooker | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis snooker live strømmer i HD."
+				},
+				"billiard": {
+					"title": "StreamHunter Biljard | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis biljard live strømmer i HD."
+				},
+				"table-tennis": {
+					"title": "StreamHunter Bordtennis | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis bordtennis live strømmer i HD."
+				},
+				"padel-tennis": {
+					"title": "StreamHunter Padel | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis padel live strømmer i HD."
+				},
+				"squash": {
+					"title": "StreamHunter Squash | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis squash live strømmer i HD."
+				},
+				"motorsport": {
+					"title": "StreamHunter Motorsport | Gratis F1 Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis F1 og motorsport live strømmer i HD."
+				},
+				"racing": {
+					"title": "StreamHunter Racing | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis racing live strømmer i HD."
+				},
+				"cycling": {
+					"title": "StreamHunter Sykling | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis sykling live strømmer i HD."
+				},
+				"equestrianism": {
+					"title": "StreamHunter Ridning | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis ridning live strømmer i HD."
+				},
+				"golf": {
+					"title": "StreamHunter Golf | Gratis PGA Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis golf live strømmer i HD."
+				},
+				"field-hockey": {
+					"title": "StreamHunter Landhockey | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis landhockey live strømmer i HD."
+				},
+				"lacrosse": {
+					"title": "StreamHunter Lacrosse | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis lacrosse live strømmer i HD."
+				},
+				"athletics": {
+					"title": "StreamHunter Friidrett | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis friidrett live strømmer i HD."
+				},
+				"gymnastics": {
+					"title": "StreamHunter Gymnastikk | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis gymnastikk live strømmer i HD."
+				},
+				"weightlifting": {
+					"title": "StreamHunter Vektløfting | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis vektløfting live strømmer i HD."
+				},
+				"climbing": {
+					"title": "StreamHunter Klatring | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis klatring live strømmer i HD."
+				},
+				"winter-sport": {
+					"title": "StreamHunter Vintersport | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis vintersport live strømmer i HD."
+				},
+				"bandy": {
+					"title": "StreamHunter Bandy | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis bandy live strømmer i HD."
+				},
+				"curling": {
+					"title": "StreamHunter Curling | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis curling live strømmer i HD."
+				},
+				"triathlon": {
+					"title": "StreamHunter Triatlon | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis triatlon live strømmer i HD."
+				},
+				"water-sports": {
+					"title": "StreamHunter Vannsport | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis vannsport live strømmer i HD."
+				},
+				"water-polo": {
+					"title": "StreamHunter Vannpolo | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis vannpolo live strømmer i HD."
+				},
+				"sailing": {
+					"title": "StreamHunter Seiling | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis seiling live strømmer i HD."
+				},
+				"bowling": {
+					"title": "StreamHunter Bowling | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis bowling live strømmer i HD."
+				},
+				"darts": {
+					"title": "StreamHunter Dart | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis dart live strømmer i HD."
+				},
+				"chess": {
+					"title": "StreamHunter Sjakk | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis sjakk live strømmer i HD."
+				},
+				"e-sports": {
+					"title": "StreamHunter E-sport | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis e-sport live strømmer i HD."
+				},
+				"others": {
+					"title": "StreamHunter Andre | Gratis Live Sport Strømmer HD",
+					"description": "StreamHunter tilbyr gratis diverse sport live strømmer i HD."
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter Rugby Sevens | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis Rugby Sevens live strømmer i HD. SVNS Series og turneringer. Uten registrering."
+				},
+				"extreme-sport": {
+					"title": "StreamHunter Ekstremsport | Gratis Live Strømmer HD",
+					"description": "StreamHunter tilbyr gratis ekstremsport live strømmer i HD. X Games og konkurranser. Uten registrering."
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | Gratis Live Sport Strømmer HD",
+				"description": "MethStreams tilbyr gratis live sport strømmer i HD-kvalitet. Rask lasting, uten registrering. Se nå."
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams Fotball | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis live fotball strømmer i HD. Rask lasting, alle ligaer."
+				},
+				"basketball": {
+					"title": "MethStreams Basketball | Gratis NBA Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis NBA og basketball live strømmer i HD. Rask lasting."
+				},
+				"tennis": {
+					"title": "MethStreams Tennis | Gratis Grand Slam Live Strømmer",
+					"description": "MethStreams tilbyr gratis tennis live strømmer i HD. ATP, WTA turneringer."
+				},
+				"ice-hockey": {
+					"title": "MethStreams Ishockey | Gratis NHL Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis NHL og ishockey live strømmer i HD."
+				},
+				"baseball": {
+					"title": "MethStreams Baseball | Gratis MLB Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis MLB og baseball live strømmer i HD."
+				},
+				"rugby-union": {
+					"title": "MethStreams Rugby Union | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis Rugby Union live strømmer i HD."
+				},
+				"rugby-league": {
+					"title": "MethStreams Rugby League | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis Rugby League live strømmer i HD."
+				},
+				"cricket": {
+					"title": "MethStreams Cricket | Gratis IPL Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis cricket live strømmer i HD. IPL, T20."
+				},
+				"american-football": {
+					"title": "MethStreams Amerikansk Fotball | Gratis NFL Strømmer HD",
+					"description": "MethStreams tilbyr gratis NFL live strømmer i HD."
+				},
+				"volleyball": {
+					"title": "MethStreams Volleyball | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis volleyball live strømmer i HD."
+				},
+				"beach-volleyball": {
+					"title": "MethStreams Sandvolleyball | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis sandvolleyball live strømmer i HD."
+				},
+				"handball": {
+					"title": "MethStreams Håndball | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis håndball live strømmer i HD."
+				},
+				"beach-handball": {
+					"title": "MethStreams Strandhåndball | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis strandhåndball live strømmer i HD."
+				},
+				"beach-soccer": {
+					"title": "MethStreams Strandfotball | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis strandfotball live strømmer i HD."
+				},
+				"aussie-rules": {
+					"title": "MethStreams Australsk Fotball | Gratis AFL Strømmer HD",
+					"description": "MethStreams tilbyr gratis AFL live strømmer i HD."
+				},
+				"futsal": {
+					"title": "MethStreams Futsal | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis futsal live strømmer i HD."
+				},
+				"badminton": {
+					"title": "MethStreams Badminton | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis badminton live strømmer i HD."
+				},
+				"netball": {
+					"title": "MethStreams Netball | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis netball live strømmer i HD."
+				},
+				"floorball": {
+					"title": "MethStreams Innebandy | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis innebandy live strømmer i HD."
+				},
+				"combat-sport": {
+					"title": "MethStreams Kampsport | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis kampsport live strømmer i HD."
+				},
+				"boxing": {
+					"title": "MethStreams Boksing | Gratis Live Kamper HD",
+					"description": "MethStreams tilbyr gratis boksing live strømmer i HD."
+				},
+				"mma": {
+					"title": "MethStreams MMA | Gratis UFC Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis MMA og UFC live strømmer i HD."
+				},
+				"snooker": {
+					"title": "MethStreams Snooker | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis snooker live strømmer i HD."
+				},
+				"billiard": {
+					"title": "MethStreams Biljard | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis biljard live strømmer i HD."
+				},
+				"table-tennis": {
+					"title": "MethStreams Bordtennis | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis bordtennis live strømmer i HD."
+				},
+				"padel-tennis": {
+					"title": "MethStreams Padel | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis padel live strømmer i HD."
+				},
+				"squash": {
+					"title": "MethStreams Squash | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis squash live strømmer i HD."
+				},
+				"motorsport": {
+					"title": "MethStreams Motorsport | Gratis F1 Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis F1 og motorsport live strømmer i HD."
+				},
+				"racing": {
+					"title": "MethStreams Racing | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis racing live strømmer i HD."
+				},
+				"cycling": {
+					"title": "MethStreams Sykling | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis sykling live strømmer i HD."
+				},
+				"equestrianism": {
+					"title": "MethStreams Ridning | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis ridning live strømmer i HD."
+				},
+				"golf": {
+					"title": "MethStreams Golf | Gratis PGA Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis golf live strømmer i HD."
+				},
+				"field-hockey": {
+					"title": "MethStreams Landhockey | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis landhockey live strømmer i HD."
+				},
+				"lacrosse": {
+					"title": "MethStreams Lacrosse | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis lacrosse live strømmer i HD."
+				},
+				"athletics": {
+					"title": "MethStreams Friidrett | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis friidrett live strømmer i HD."
+				},
+				"gymnastics": {
+					"title": "MethStreams Gymnastikk | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis gymnastikk live strømmer i HD."
+				},
+				"weightlifting": {
+					"title": "MethStreams Vektløfting | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis vektløfting live strømmer i HD."
+				},
+				"climbing": {
+					"title": "MethStreams Klatring | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis klatring live strømmer i HD."
+				},
+				"winter-sport": {
+					"title": "MethStreams Vintersport | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis vintersport live strømmer i HD."
+				},
+				"bandy": {
+					"title": "MethStreams Bandy | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis bandy live strømmer i HD."
+				},
+				"curling": {
+					"title": "MethStreams Curling | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis curling live strømmer i HD."
+				},
+				"triathlon": {
+					"title": "MethStreams Triatlon | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis triatlon live strømmer i HD."
+				},
+				"water-sports": {
+					"title": "MethStreams Vannsport | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis vannsport live strømmer i HD."
+				},
+				"water-polo": {
+					"title": "MethStreams Vannpolo | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis vannpolo live strømmer i HD."
+				},
+				"sailing": {
+					"title": "MethStreams Seiling | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis seiling live strømmer i HD."
+				},
+				"bowling": {
+					"title": "MethStreams Bowling | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis bowling live strømmer i HD."
+				},
+				"darts": {
+					"title": "MethStreams Dart | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis dart live strømmer i HD."
+				},
+				"chess": {
+					"title": "MethStreams Sjakk | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis sjakk live strømmer i HD."
+				},
+				"e-sports": {
+					"title": "MethStreams E-sport | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis e-sport live strømmer i HD."
+				},
+				"others": {
+					"title": "MethStreams Andre | Gratis Live Sport Strømmer HD",
+					"description": "MethStreams tilbyr gratis diverse sport live strømmer i HD."
+				},
+				"rugby-sevens": {
+					"title": "MethStreams Rugby Sevens | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis Rugby Sevens live strømmer i HD. SVNS Series og turneringer. Uten registrering."
+				},
+				"extreme-sport": {
+					"title": "MethStreams Ekstremsport | Gratis Live Strømmer HD",
+					"description": "MethStreams tilbyr gratis ekstremsport live strømmer i HD. X Games og konkurranser. Uten registrering."
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | Gratis Live Sport Strømmer HD",
+				"description": "WiziWig tilbyr gratis live sport strømmer i HD-kvalitet. Pålitelige linker, uten registrering. Se nå."
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig Fotball | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis live fotball strømmer i HD. Pålitelige linker, alle ligaer."
+				},
+				"basketball": {
+					"title": "WiziWig Basketball | Gratis NBA Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis NBA og basketball live strømmer i HD. Pålitelige linker."
+				},
+				"tennis": {
+					"title": "WiziWig Tennis | Gratis Grand Slam Live Strømmer",
+					"description": "WiziWig tilbyr gratis tennis live strømmer i HD. ATP, WTA turneringer."
+				},
+				"ice-hockey": {
+					"title": "WiziWig Ishockey | Gratis NHL Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis NHL og ishockey live strømmer i HD."
+				},
+				"baseball": {
+					"title": "WiziWig Baseball | Gratis MLB Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis MLB og baseball live strømmer i HD."
+				},
+				"rugby-union": {
+					"title": "WiziWig Rugby Union | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis Rugby Union live strømmer i HD."
+				},
+				"rugby-league": {
+					"title": "WiziWig Rugby League | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis Rugby League live strømmer i HD."
+				},
+				"cricket": {
+					"title": "WiziWig Cricket | Gratis IPL Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis cricket live strømmer i HD. IPL, T20."
+				},
+				"american-football": {
+					"title": "WiziWig Amerikansk Fotball | Gratis NFL Strømmer HD",
+					"description": "WiziWig tilbyr gratis NFL live strømmer i HD."
+				},
+				"volleyball": {
+					"title": "WiziWig Volleyball | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis volleyball live strømmer i HD."
+				},
+				"beach-volleyball": {
+					"title": "WiziWig Sandvolleyball | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis sandvolleyball live strømmer i HD."
+				},
+				"handball": {
+					"title": "WiziWig Håndball | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis håndball live strømmer i HD."
+				},
+				"beach-handball": {
+					"title": "WiziWig Strandhåndball | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis strandhåndball live strømmer i HD."
+				},
+				"beach-soccer": {
+					"title": "WiziWig Strandfotball | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis strandfotball live strømmer i HD."
+				},
+				"aussie-rules": {
+					"title": "WiziWig Australsk Fotball | Gratis AFL Strømmer HD",
+					"description": "WiziWig tilbyr gratis AFL live strømmer i HD."
+				},
+				"futsal": {
+					"title": "WiziWig Futsal | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis futsal live strømmer i HD."
+				},
+				"badminton": {
+					"title": "WiziWig Badminton | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis badminton live strømmer i HD."
+				},
+				"netball": {
+					"title": "WiziWig Netball | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis netball live strømmer i HD."
+				},
+				"floorball": {
+					"title": "WiziWig Innebandy | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis innebandy live strømmer i HD."
+				},
+				"combat-sport": {
+					"title": "WiziWig Kampsport | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis kampsport live strømmer i HD."
+				},
+				"boxing": {
+					"title": "WiziWig Boksing | Gratis Live Kamper HD",
+					"description": "WiziWig tilbyr gratis boksing live strømmer i HD."
+				},
+				"mma": {
+					"title": "WiziWig MMA | Gratis UFC Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis MMA og UFC live strømmer i HD."
+				},
+				"snooker": {
+					"title": "WiziWig Snooker | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis snooker live strømmer i HD."
+				},
+				"billiard": {
+					"title": "WiziWig Biljard | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis biljard live strømmer i HD."
+				},
+				"table-tennis": {
+					"title": "WiziWig Bordtennis | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis bordtennis live strømmer i HD."
+				},
+				"padel-tennis": {
+					"title": "WiziWig Padel | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis padel live strømmer i HD."
+				},
+				"squash": {
+					"title": "WiziWig Squash | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis squash live strømmer i HD."
+				},
+				"motorsport": {
+					"title": "WiziWig Motorsport | Gratis F1 Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis F1 og motorsport live strømmer i HD."
+				},
+				"racing": {
+					"title": "WiziWig Racing | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis racing live strømmer i HD."
+				},
+				"cycling": {
+					"title": "WiziWig Sykling | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis sykling live strømmer i HD."
+				},
+				"equestrianism": {
+					"title": "WiziWig Ridning | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis ridning live strømmer i HD."
+				},
+				"golf": {
+					"title": "WiziWig Golf | Gratis PGA Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis golf live strømmer i HD."
+				},
+				"field-hockey": {
+					"title": "WiziWig Landhockey | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis landhockey live strømmer i HD."
+				},
+				"lacrosse": {
+					"title": "WiziWig Lacrosse | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis lacrosse live strømmer i HD."
+				},
+				"athletics": {
+					"title": "WiziWig Friidrett | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis friidrett live strømmer i HD."
+				},
+				"gymnastics": {
+					"title": "WiziWig Gymnastikk | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis gymnastikk live strømmer i HD."
+				},
+				"weightlifting": {
+					"title": "WiziWig Vektløfting | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis vektløfting live strømmer i HD."
+				},
+				"climbing": {
+					"title": "WiziWig Klatring | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis klatring live strømmer i HD."
+				},
+				"winter-sport": {
+					"title": "WiziWig Vintersport | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis vintersport live strømmer i HD."
+				},
+				"bandy": {
+					"title": "WiziWig Bandy | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis bandy live strømmer i HD."
+				},
+				"curling": {
+					"title": "WiziWig Curling | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis curling live strømmer i HD."
+				},
+				"triathlon": {
+					"title": "WiziWig Triatlon | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis triatlon live strømmer i HD."
+				},
+				"water-sports": {
+					"title": "WiziWig Vannsport | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis vannsport live strømmer i HD."
+				},
+				"water-polo": {
+					"title": "WiziWig Vannpolo | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis vannpolo live strømmer i HD."
+				},
+				"sailing": {
+					"title": "WiziWig Seiling | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis seiling live strømmer i HD."
+				},
+				"bowling": {
+					"title": "WiziWig Bowling | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis bowling live strømmer i HD."
+				},
+				"darts": {
+					"title": "WiziWig Dart | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis dart live strømmer i HD."
+				},
+				"chess": {
+					"title": "WiziWig Sjakk | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis sjakk live strømmer i HD."
+				},
+				"e-sports": {
+					"title": "WiziWig E-sport | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis e-sport live strømmer i HD."
+				},
+				"others": {
+					"title": "WiziWig Andre | Gratis Live Sport Strømmer HD",
+					"description": "WiziWig tilbyr gratis diverse sport live strømmer i HD."
+				},
+				"rugby-sevens": {
+					"title": "WiziWig Rugby Sevens | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis Rugby Sevens live strømmer i HD. SVNS Series og turneringer. Uten registrering."
+				},
+				"extreme-sport": {
+					"title": "WiziWig Ekstremsport | Gratis Live Strømmer HD",
+					"description": "WiziWig tilbyr gratis ekstremsport live strømmer i HD. X Games og konkurranser. Uten registrering."
+				}
+			}
+		}
 	}
 }
