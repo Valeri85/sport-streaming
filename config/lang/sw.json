@@ -3,6 +3,7 @@
 		"code": "sw",
 		"name": "Kiswahili",
 		"flag": "KE",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -64,8 +65,7 @@
 		"Badminton": "Badmintoni",
 		"Netball": "Netboli",
 		"Floorball": "Florboli",
-		"Combat": "Mapigano",
-		"combat sport": "Michezo ya Mapigano",
+		"Combat Sport": "Michezo ya Mapigano",
 		"Boxing": "Ndondi",
 		"MMA": "MMA",
 		"Snooker": "Snuka",
@@ -84,7 +84,7 @@
 		"Gymnastics": "Mazoezi ya Mwili",
 		"Weightlifting": "Kuinua Uzito",
 		"Climbing": "Kupanda",
-		"winter sport": "Michezo ya Baridi",
+		"Winter Sport": "Michezo ya Baridi",
 		"Bandy": "Bandi",
 		"Curling": "Kerlingi",
 		"Triathlon": "Triathlon",
@@ -95,6 +95,1306 @@
 		"Darts": "Mishale",
 		"Chess": "Sataranji",
 		"E-sports": "Michezo ya Kielektroniki",
-		"Others": "Nyingine"
+		"Others": "Nyingine",
+		"Rugby Sevens": "Rugby Sevens",
+		"Extreme Sport": "Michezo ya Hatari"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemons | Tazama Michezo Moja kwa Moja Bure Mtandaoni",
+				"description": "SportLemons inatoa utiririshaji wa michezo bure moja kwa moja kwa ubora wa HD. Hakuna usajili unaohitajika. Tazama sasa!"
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemons Soka | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mechi za soka moja kwa moja bure kwenye SportLemons. Ubora wa HD, upakiaji wa haraka!"
+				},
+				"basketball": {
+					"title": "SportLemons Mpira wa Kikapu | Tazama NBA Moja kwa Moja Bure",
+					"description": "Furahia mpira wa kikapu moja kwa moja bure kwenye SportLemons. NBA kwa ubora wa HD!"
+				},
+				"tennis": {
+					"title": "SportLemons Tenisi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama tenisi moja kwa moja bure kwenye SportLemons. Ubora wa HD, hakuna usajili!"
+				},
+				"ice-hockey": {
+					"title": "SportLemons Hoki ya Barafu | Tazama NHL Moja kwa Moja Bure",
+					"description": "Furahia hoki ya barafu moja kwa moja bure kwenye SportLemons. NHL kwa ubora wa HD!"
+				},
+				"baseball": {
+					"title": "SportLemons Besiboli | Tazama MLB Moja kwa Moja Bure",
+					"description": "Tazama besiboli moja kwa moja bure kwenye SportLemons. MLB kwa ubora wa HD!"
+				},
+				"rugby-union": {
+					"title": "SportLemons Rugby Union | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia Rugby Union moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"rugby-league": {
+					"title": "SportLemons Rugby League | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama Rugby League moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"cricket": {
+					"title": "SportLemons Kriketi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kriketi moja kwa moja bure kwenye SportLemons. IPL kwa ubora wa HD!"
+				},
+				"american-football": {
+					"title": "SportLemons Soka ya Marekani | Tazama NFL Moja kwa Moja Bure",
+					"description": "Tazama NFL moja kwa moja bure kwenye SportLemons. Ubora wa HD, upakiaji wa haraka!"
+				},
+				"volleyball": {
+					"title": "SportLemons Mpira wa Wavu | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mpira wa wavu moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"beach-volleyball": {
+					"title": "SportLemons Mpira wa Wavu wa Pwani | Tazama Moja kwa Moja Bure",
+					"description": "Tazama mpira wa wavu wa pwani moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"handball": {
+					"title": "SportLemons Mpira wa Mikono | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mpira wa mikono moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"beach-handball": {
+					"title": "SportLemons Mpira wa Mikono wa Pwani | Tazama Moja kwa Moja Bure",
+					"description": "Tazama mpira wa mikono wa pwani moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"beach-soccer": {
+					"title": "SportLemons Soka ya Pwani | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia soka ya pwani moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"aussie-rules": {
+					"title": "SportLemons Sheria za Australia | Tazama AFL Moja kwa Moja Bure",
+					"description": "Tazama AFL moja kwa moja bure kwenye SportLemons. Ubora wa HD, upakiaji wa haraka!"
+				},
+				"futsal": {
+					"title": "SportLemons Futsali | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia futsali moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"badminton": {
+					"title": "SportLemons Badmintoni | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama badmintoni moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"netball": {
+					"title": "SportLemons Netboli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia netboli moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"floorball": {
+					"title": "SportLemons Florboli | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama florboli moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"combat-sport": {
+					"title": "SportLemons Michezo ya Mapigano | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia michezo ya mapigano moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"boxing": {
+					"title": "SportLemons Ndondi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama ndondi moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"mma": {
+					"title": "SportLemons MMA | Tazama UFC Moja kwa Moja Bure HD",
+					"description": "Furahia MMA moja kwa moja bure kwenye SportLemons. UFC kwa ubora wa HD!"
+				},
+				"snooker": {
+					"title": "SportLemons Snuka | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama snuka moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"billiard": {
+					"title": "SportLemons Biladi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia biladi moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"table-tennis": {
+					"title": "SportLemons Tenisi ya Meza | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama tenisi ya meza moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"padel-tennis": {
+					"title": "SportLemons Padeli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia padeli moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"squash": {
+					"title": "SportLemons Skwashi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama skwashi moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"motorsport": {
+					"title": "SportLemons Michezo ya Magari | Tazama F1 Moja kwa Moja Bure",
+					"description": "Furahia michezo ya magari moja kwa moja bure kwenye SportLemons. F1 kwa ubora wa HD!"
+				},
+				"racing": {
+					"title": "SportLemons Mashindano | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mashindano moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"cycling": {
+					"title": "SportLemons Kuendesha Baiskeli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kuendesha baiskeli moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"equestrianism": {
+					"title": "SportLemons Upandaji Farasi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama upandaji farasi moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"golf": {
+					"title": "SportLemons Gofu | Tazama PGA Moja kwa Moja Bure HD",
+					"description": "Furahia gofu moja kwa moja bure kwenye SportLemons. PGA kwa ubora wa HD!"
+				},
+				"field-hockey": {
+					"title": "SportLemons Hoki ya Uwanja | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama hoki ya uwanja moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"lacrosse": {
+					"title": "SportLemons Lakrosi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia lakrosi moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"athletics": {
+					"title": "SportLemons Riadha | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama riadha moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"gymnastics": {
+					"title": "SportLemons Mazoezi ya Mwili | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mazoezi ya mwili moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"weightlifting": {
+					"title": "SportLemons Kuinua Uzito | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kuinua uzito moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"climbing": {
+					"title": "SportLemons Kupanda | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kupanda moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"winter-sport": {
+					"title": "SportLemons Michezo ya Baridi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya baridi moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"bandy": {
+					"title": "SportLemons Bandi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia bandi moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"curling": {
+					"title": "SportLemons Kerlingi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kerlingi moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"triathlon": {
+					"title": "SportLemons Triathlon | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia triathlon moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"water-sports": {
+					"title": "SportLemons Michezo ya Maji | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya maji moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"water-polo": {
+					"title": "SportLemons Polo ya Maji | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia polo ya maji moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"sailing": {
+					"title": "SportLemons Kusafiri kwa Meli | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kusafiri kwa meli moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"bowling": {
+					"title": "SportLemons Bolini | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia bolini moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"darts": {
+					"title": "SportLemons Mishale | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mishale moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"chess": {
+					"title": "SportLemons Sataranji | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia sataranji moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"e-sports": {
+					"title": "SportLemons Michezo ya Kielektroniki | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya kielektroniki moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"others": {
+					"title": "SportLemons Nyingine | Tazama Michezo Moja kwa Moja Bure HD",
+					"description": "Furahia michezo mingine moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"rugby-sevens": {
+					"title": "SportLemons Rugby Sevens | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama Rugby Sevens moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				},
+				"extreme-sport": {
+					"title": "SportLemons Michezo ya Hatari | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia michezo ya hatari moja kwa moja bure kwenye SportLemons. Ubora wa HD!"
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLsite | Tazama Michezo Moja kwa Moja Bure Mtandaoni",
+				"description": "EPLsite inatoa utiririshaji wa michezo bure moja kwa moja kwa ubora wa HD. Hakuna usajili unaohitajika. Tazama sasa!"
+			},
+			"sports": {
+				"football": {
+					"title": "EPLsite Soka | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mechi za soka moja kwa moja bure kwenye EPLsite. Ubora wa HD, upakiaji wa haraka!"
+				},
+				"basketball": {
+					"title": "EPLsite Mpira wa Kikapu | Tazama NBA Moja kwa Moja Bure",
+					"description": "Furahia mpira wa kikapu moja kwa moja bure kwenye EPLsite. NBA kwa ubora wa HD!"
+				},
+				"tennis": {
+					"title": "EPLsite Tenisi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama tenisi moja kwa moja bure kwenye EPLsite. Ubora wa HD, hakuna usajili!"
+				},
+				"ice-hockey": {
+					"title": "EPLsite Hoki ya Barafu | Tazama NHL Moja kwa Moja Bure",
+					"description": "Furahia hoki ya barafu moja kwa moja bure kwenye EPLsite. NHL kwa ubora wa HD!"
+				},
+				"baseball": {
+					"title": "EPLsite Besiboli | Tazama MLB Moja kwa Moja Bure",
+					"description": "Tazama besiboli moja kwa moja bure kwenye EPLsite. MLB kwa ubora wa HD!"
+				},
+				"rugby-union": {
+					"title": "EPLsite Rugby Union | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia Rugby Union moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"rugby-league": {
+					"title": "EPLsite Rugby League | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama Rugby League moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"cricket": {
+					"title": "EPLsite Kriketi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kriketi moja kwa moja bure kwenye EPLsite. IPL kwa ubora wa HD!"
+				},
+				"american-football": {
+					"title": "EPLsite Soka ya Marekani | Tazama NFL Moja kwa Moja Bure",
+					"description": "Tazama NFL moja kwa moja bure kwenye EPLsite. Ubora wa HD, upakiaji wa haraka!"
+				},
+				"volleyball": {
+					"title": "EPLsite Mpira wa Wavu | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mpira wa wavu moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"beach-volleyball": {
+					"title": "EPLsite Mpira wa Wavu wa Pwani | Tazama Moja kwa Moja Bure",
+					"description": "Tazama mpira wa wavu wa pwani moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"handball": {
+					"title": "EPLsite Mpira wa Mikono | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mpira wa mikono moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"beach-handball": {
+					"title": "EPLsite Mpira wa Mikono wa Pwani | Tazama Moja kwa Moja Bure",
+					"description": "Tazama mpira wa mikono wa pwani moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"beach-soccer": {
+					"title": "EPLsite Soka ya Pwani | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia soka ya pwani moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"aussie-rules": {
+					"title": "EPLsite Sheria za Australia | Tazama AFL Moja kwa Moja Bure",
+					"description": "Tazama AFL moja kwa moja bure kwenye EPLsite. Ubora wa HD, upakiaji wa haraka!"
+				},
+				"futsal": {
+					"title": "EPLsite Futsali | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia futsali moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"badminton": {
+					"title": "EPLsite Badmintoni | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama badmintoni moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"netball": {
+					"title": "EPLsite Netboli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia netboli moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"floorball": {
+					"title": "EPLsite Florboli | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama florboli moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"combat-sport": {
+					"title": "EPLsite Michezo ya Mapigano | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia michezo ya mapigano moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"boxing": {
+					"title": "EPLsite Ndondi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama ndondi moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"mma": {
+					"title": "EPLsite MMA | Tazama UFC Moja kwa Moja Bure HD",
+					"description": "Furahia MMA moja kwa moja bure kwenye EPLsite. UFC kwa ubora wa HD!"
+				},
+				"snooker": {
+					"title": "EPLsite Snuka | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama snuka moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"billiard": {
+					"title": "EPLsite Biladi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia biladi moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"table-tennis": {
+					"title": "EPLsite Tenisi ya Meza | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama tenisi ya meza moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"padel-tennis": {
+					"title": "EPLsite Padeli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia padeli moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"squash": {
+					"title": "EPLsite Skwashi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama skwashi moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"motorsport": {
+					"title": "EPLsite Michezo ya Magari | Tazama F1 Moja kwa Moja Bure",
+					"description": "Furahia michezo ya magari moja kwa moja bure kwenye EPLsite. F1 kwa ubora wa HD!"
+				},
+				"racing": {
+					"title": "EPLsite Mashindano | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mashindano moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"cycling": {
+					"title": "EPLsite Kuendesha Baiskeli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kuendesha baiskeli moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"equestrianism": {
+					"title": "EPLsite Upandaji Farasi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama upandaji farasi moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"golf": {
+					"title": "EPLsite Gofu | Tazama PGA Moja kwa Moja Bure HD",
+					"description": "Furahia gofu moja kwa moja bure kwenye EPLsite. PGA kwa ubora wa HD!"
+				},
+				"field-hockey": {
+					"title": "EPLsite Hoki ya Uwanja | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama hoki ya uwanja moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"lacrosse": {
+					"title": "EPLsite Lakrosi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia lakrosi moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"athletics": {
+					"title": "EPLsite Riadha | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama riadha moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"gymnastics": {
+					"title": "EPLsite Mazoezi ya Mwili | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mazoezi ya mwili moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"weightlifting": {
+					"title": "EPLsite Kuinua Uzito | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kuinua uzito moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"climbing": {
+					"title": "EPLsite Kupanda | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kupanda moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"winter-sport": {
+					"title": "EPLsite Michezo ya Baridi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya baridi moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"bandy": {
+					"title": "EPLsite Bandi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia bandi moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"curling": {
+					"title": "EPLsite Kerlingi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kerlingi moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"triathlon": {
+					"title": "EPLsite Triathlon | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia triathlon moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"water-sports": {
+					"title": "EPLsite Michezo ya Maji | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya maji moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"water-polo": {
+					"title": "EPLsite Polo ya Maji | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia polo ya maji moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"sailing": {
+					"title": "EPLsite Kusafiri kwa Meli | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kusafiri kwa meli moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"bowling": {
+					"title": "EPLsite Bolini | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia bolini moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"darts": {
+					"title": "EPLsite Mishale | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mishale moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"chess": {
+					"title": "EPLsite Sataranji | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia sataranji moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"e-sports": {
+					"title": "EPLsite Michezo ya Kielektroniki | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya kielektroniki moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"others": {
+					"title": "EPLsite Nyingine | Tazama Michezo Moja kwa Moja Bure HD",
+					"description": "Furahia michezo mingine moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"rugby-sevens": {
+					"title": "EPLsite Rugby Sevens | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama Rugby Sevens moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				},
+				"extreme-sport": {
+					"title": "EPLsite Michezo ya Hatari | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia michezo ya hatari moja kwa moja bure kwenye EPLsite. Ubora wa HD!"
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | Tazama Michezo Moja kwa Moja Bure Mtandaoni",
+				"description": "P2P4U inatoa utiririshaji wa michezo bure moja kwa moja. Upakiaji wa haraka, hakuna usajili. Tazama sasa!"
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U Soka | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mechi za soka moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka, hakuna usajili!"
+				},
+				"basketball": {
+					"title": "P2P4U Mpira wa Kikapu | Tazama NBA Moja kwa Moja Bure",
+					"description": "Furahia mpira wa kikapu moja kwa moja bure kwenye P2P4U. NBA kwa ubora wa HD!"
+				},
+				"tennis": {
+					"title": "P2P4U Tenisi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama tenisi moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka, hakuna usajili!"
+				},
+				"ice-hockey": {
+					"title": "P2P4U Hoki ya Barafu | Tazama NHL Moja kwa Moja Bure",
+					"description": "Furahia hoki ya barafu moja kwa moja bure kwenye P2P4U. NHL kwa ubora wa HD!"
+				},
+				"baseball": {
+					"title": "P2P4U Besiboli | Tazama MLB Moja kwa Moja Bure",
+					"description": "Tazama besiboli moja kwa moja bure kwenye P2P4U. MLB kwa ubora wa HD!"
+				},
+				"rugby-union": {
+					"title": "P2P4U Rugby Union | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia Rugby Union moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"rugby-league": {
+					"title": "P2P4U Rugby League | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama Rugby League moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"cricket": {
+					"title": "P2P4U Kriketi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kriketi moja kwa moja bure kwenye P2P4U. IPL kwa ubora wa HD!"
+				},
+				"american-football": {
+					"title": "P2P4U Soka ya Marekani | Tazama NFL Moja kwa Moja Bure",
+					"description": "Tazama NFL moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka, hakuna usajili!"
+				},
+				"volleyball": {
+					"title": "P2P4U Mpira wa Wavu | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mpira wa wavu moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"beach-volleyball": {
+					"title": "P2P4U Mpira wa Wavu wa Pwani | Tazama Moja kwa Moja Bure",
+					"description": "Tazama mpira wa wavu wa pwani moja kwa moja bure kwenye P2P4U. Ubora wa HD!"
+				},
+				"handball": {
+					"title": "P2P4U Mpira wa Mikono | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mpira wa mikono moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"beach-handball": {
+					"title": "P2P4U Mpira wa Mikono wa Pwani | Tazama Moja kwa Moja Bure",
+					"description": "Tazama mpira wa mikono wa pwani moja kwa moja bure kwenye P2P4U. Ubora wa HD!"
+				},
+				"beach-soccer": {
+					"title": "P2P4U Soka ya Pwani | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia soka ya pwani moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"aussie-rules": {
+					"title": "P2P4U Sheria za Australia | Tazama AFL Moja kwa Moja Bure",
+					"description": "Tazama AFL moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka, hakuna usajili!"
+				},
+				"futsal": {
+					"title": "P2P4U Futsali | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia futsali moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"badminton": {
+					"title": "P2P4U Badmintoni | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama badmintoni moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"netball": {
+					"title": "P2P4U Netboli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia netboli moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"floorball": {
+					"title": "P2P4U Florboli | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama florboli moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"combat-sport": {
+					"title": "P2P4U Michezo ya Mapigano | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia michezo ya mapigano moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"boxing": {
+					"title": "P2P4U Ndondi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama ndondi moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"mma": {
+					"title": "P2P4U MMA | Tazama UFC Moja kwa Moja Bure HD",
+					"description": "Furahia MMA moja kwa moja bure kwenye P2P4U. UFC kwa ubora wa HD!"
+				},
+				"snooker": {
+					"title": "P2P4U Snuka | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama snuka moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"billiard": {
+					"title": "P2P4U Biladi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia biladi moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"table-tennis": {
+					"title": "P2P4U Tenisi ya Meza | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama tenisi ya meza moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"padel-tennis": {
+					"title": "P2P4U Padeli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia padeli moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"squash": {
+					"title": "P2P4U Skwashi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama skwashi moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"motorsport": {
+					"title": "P2P4U Michezo ya Magari | Tazama F1 Moja kwa Moja Bure",
+					"description": "Furahia michezo ya magari moja kwa moja bure kwenye P2P4U. F1 kwa ubora wa HD!"
+				},
+				"racing": {
+					"title": "P2P4U Mashindano | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mashindano moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"cycling": {
+					"title": "P2P4U Kuendesha Baiskeli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kuendesha baiskeli moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"equestrianism": {
+					"title": "P2P4U Upandaji Farasi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama upandaji farasi moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"golf": {
+					"title": "P2P4U Gofu | Tazama PGA Moja kwa Moja Bure HD",
+					"description": "Furahia gofu moja kwa moja bure kwenye P2P4U. PGA kwa ubora wa HD!"
+				},
+				"field-hockey": {
+					"title": "P2P4U Hoki ya Uwanja | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama hoki ya uwanja moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"lacrosse": {
+					"title": "P2P4U Lakrosi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia lakrosi moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"athletics": {
+					"title": "P2P4U Riadha | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama riadha moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"gymnastics": {
+					"title": "P2P4U Mazoezi ya Mwili | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mazoezi ya mwili moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"weightlifting": {
+					"title": "P2P4U Kuinua Uzito | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kuinua uzito moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"climbing": {
+					"title": "P2P4U Kupanda | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kupanda moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"winter-sport": {
+					"title": "P2P4U Michezo ya Baridi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya baridi moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"bandy": {
+					"title": "P2P4U Bandi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia bandi moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"curling": {
+					"title": "P2P4U Kerlingi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kerlingi moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"triathlon": {
+					"title": "P2P4U Triathlon | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia triathlon moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"water-sports": {
+					"title": "P2P4U Michezo ya Maji | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya maji moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"water-polo": {
+					"title": "P2P4U Polo ya Maji | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia polo ya maji moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"sailing": {
+					"title": "P2P4U Kusafiri kwa Meli | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kusafiri kwa meli moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"bowling": {
+					"title": "P2P4U Bolini | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia bolini moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"darts": {
+					"title": "P2P4U Mishale | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mishale moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"chess": {
+					"title": "P2P4U Sataranji | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia sataranji moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"e-sports": {
+					"title": "P2P4U Michezo ya Kielektroniki | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya kielektroniki moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"others": {
+					"title": "P2P4U Nyingine | Tazama Michezo Moja kwa Moja Bure HD",
+					"description": "Furahia michezo mingine moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"rugby-sevens": {
+					"title": "P2P4U Rugby Sevens | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama Rugby Sevens moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				},
+				"extreme-sport": {
+					"title": "P2P4U Michezo ya Hatari | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia michezo ya hatari moja kwa moja bure kwenye P2P4U. Upakiaji wa haraka!"
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | Tazama Michezo Moja kwa Moja Bure Mtandaoni",
+				"description": "StreamHunter inatoa utiririshaji wa michezo bure moja kwa moja kwa ubora wa HD. Viungo vya kuaminika. Tazama sasa!"
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter Soka | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mechi za soka moja kwa moja bure kwenye StreamHunter. Ubora wa HD, viungo vya kuaminika!"
+				},
+				"basketball": {
+					"title": "StreamHunter Mpira wa Kikapu | Tazama NBA Moja kwa Moja Bure",
+					"description": "Furahia mpira wa kikapu moja kwa moja bure kwenye StreamHunter. NBA kwa ubora wa HD!"
+				},
+				"tennis": {
+					"title": "StreamHunter Tenisi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama tenisi moja kwa moja bure kwenye StreamHunter. Ubora wa HD, viungo vya kuaminika!"
+				},
+				"ice-hockey": {
+					"title": "StreamHunter Hoki ya Barafu | Tazama NHL Moja kwa Moja Bure",
+					"description": "Furahia hoki ya barafu moja kwa moja bure kwenye StreamHunter. NHL kwa ubora wa HD!"
+				},
+				"baseball": {
+					"title": "StreamHunter Besiboli | Tazama MLB Moja kwa Moja Bure",
+					"description": "Tazama besiboli moja kwa moja bure kwenye StreamHunter. MLB kwa ubora wa HD!"
+				},
+				"rugby-union": {
+					"title": "StreamHunter Rugby Union | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia Rugby Union moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"rugby-league": {
+					"title": "StreamHunter Rugby League | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama Rugby League moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"cricket": {
+					"title": "StreamHunter Kriketi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kriketi moja kwa moja bure kwenye StreamHunter. IPL kwa ubora wa HD!"
+				},
+				"american-football": {
+					"title": "StreamHunter Soka ya Marekani | Tazama NFL Moja kwa Moja Bure",
+					"description": "Tazama NFL moja kwa moja bure kwenye StreamHunter. Ubora wa HD, viungo vya kuaminika!"
+				},
+				"volleyball": {
+					"title": "StreamHunter Mpira wa Wavu | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mpira wa wavu moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter Mpira wa Wavu wa Pwani | Tazama Moja kwa Moja Bure",
+					"description": "Tazama mpira wa wavu wa pwani moja kwa moja bure kwenye StreamHunter. Ubora wa HD!"
+				},
+				"handball": {
+					"title": "StreamHunter Mpira wa Mikono | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mpira wa mikono moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"beach-handball": {
+					"title": "StreamHunter Mpira wa Mikono wa Pwani | Tazama Moja kwa Moja Bure",
+					"description": "Tazama mpira wa mikono wa pwani moja kwa moja bure kwenye StreamHunter. Ubora wa HD!"
+				},
+				"beach-soccer": {
+					"title": "StreamHunter Soka ya Pwani | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia soka ya pwani moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"aussie-rules": {
+					"title": "StreamHunter Sheria za Australia | Tazama AFL Moja kwa Moja Bure",
+					"description": "Tazama AFL moja kwa moja bure kwenye StreamHunter. Ubora wa HD, viungo vya kuaminika!"
+				},
+				"futsal": {
+					"title": "StreamHunter Futsali | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia futsali moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"badminton": {
+					"title": "StreamHunter Badmintoni | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama badmintoni moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"netball": {
+					"title": "StreamHunter Netboli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia netboli moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"floorball": {
+					"title": "StreamHunter Florboli | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama florboli moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"combat-sport": {
+					"title": "StreamHunter Michezo ya Mapigano | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia michezo ya mapigano moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"boxing": {
+					"title": "StreamHunter Ndondi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama ndondi moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"mma": {
+					"title": "StreamHunter MMA | Tazama UFC Moja kwa Moja Bure HD",
+					"description": "Furahia MMA moja kwa moja bure kwenye StreamHunter. UFC kwa ubora wa HD!"
+				},
+				"snooker": {
+					"title": "StreamHunter Snuka | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama snuka moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"billiard": {
+					"title": "StreamHunter Biladi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia biladi moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"table-tennis": {
+					"title": "StreamHunter Tenisi ya Meza | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama tenisi ya meza moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"padel-tennis": {
+					"title": "StreamHunter Padeli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia padeli moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"squash": {
+					"title": "StreamHunter Skwashi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama skwashi moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"motorsport": {
+					"title": "StreamHunter Michezo ya Magari | Tazama F1 Moja kwa Moja Bure",
+					"description": "Furahia michezo ya magari moja kwa moja bure kwenye StreamHunter. F1 kwa ubora wa HD!"
+				},
+				"racing": {
+					"title": "StreamHunter Mashindano | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mashindano moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"cycling": {
+					"title": "StreamHunter Kuendesha Baiskeli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kuendesha baiskeli moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"equestrianism": {
+					"title": "StreamHunter Upandaji Farasi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama upandaji farasi moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"golf": {
+					"title": "StreamHunter Gofu | Tazama PGA Moja kwa Moja Bure HD",
+					"description": "Furahia gofu moja kwa moja bure kwenye StreamHunter. PGA kwa ubora wa HD!"
+				},
+				"field-hockey": {
+					"title": "StreamHunter Hoki ya Uwanja | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama hoki ya uwanja moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"lacrosse": {
+					"title": "StreamHunter Lakrosi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia lakrosi moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"athletics": {
+					"title": "StreamHunter Riadha | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama riadha moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"gymnastics": {
+					"title": "StreamHunter Mazoezi ya Mwili | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mazoezi ya mwili moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"weightlifting": {
+					"title": "StreamHunter Kuinua Uzito | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kuinua uzito moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"climbing": {
+					"title": "StreamHunter Kupanda | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kupanda moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"winter-sport": {
+					"title": "StreamHunter Michezo ya Baridi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya baridi moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"bandy": {
+					"title": "StreamHunter Bandi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia bandi moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"curling": {
+					"title": "StreamHunter Kerlingi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kerlingi moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"triathlon": {
+					"title": "StreamHunter Triathlon | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia triathlon moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"water-sports": {
+					"title": "StreamHunter Michezo ya Maji | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya maji moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"water-polo": {
+					"title": "StreamHunter Polo ya Maji | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia polo ya maji moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"sailing": {
+					"title": "StreamHunter Kusafiri kwa Meli | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kusafiri kwa meli moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"bowling": {
+					"title": "StreamHunter Bolini | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia bolini moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"darts": {
+					"title": "StreamHunter Mishale | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mishale moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"chess": {
+					"title": "StreamHunter Sataranji | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia sataranji moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"e-sports": {
+					"title": "StreamHunter Michezo ya Kielektroniki | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya kielektroniki moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"others": {
+					"title": "StreamHunter Nyingine | Tazama Michezo Moja kwa Moja Bure HD",
+					"description": "Furahia michezo mingine moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter Rugby Sevens | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama Rugby Sevens moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				},
+				"extreme-sport": {
+					"title": "StreamHunter Michezo ya Hatari | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia michezo ya hatari moja kwa moja bure kwenye StreamHunter. Viungo vya kuaminika!"
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | Tazama Michezo Moja kwa Moja Bure Mtandaoni",
+				"description": "MethStreams inatoa utiririshaji wa michezo bure moja kwa moja. Ubora wa HD, upakiaji wa haraka. Tazama sasa!"
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams Soka | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mechi za soka moja kwa moja bure kwenye MethStreams. Ubora wa HD, upakiaji wa haraka!"
+				},
+				"basketball": {
+					"title": "MethStreams Mpira wa Kikapu | Tazama NBA Moja kwa Moja Bure",
+					"description": "Furahia mpira wa kikapu moja kwa moja bure kwenye MethStreams. NBA kwa ubora wa HD!"
+				},
+				"tennis": {
+					"title": "MethStreams Tenisi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama tenisi moja kwa moja bure kwenye MethStreams. Ubora wa HD, upakiaji wa haraka!"
+				},
+				"ice-hockey": {
+					"title": "MethStreams Hoki ya Barafu | Tazama NHL Moja kwa Moja Bure",
+					"description": "Furahia hoki ya barafu moja kwa moja bure kwenye MethStreams. NHL kwa ubora wa HD!"
+				},
+				"baseball": {
+					"title": "MethStreams Besiboli | Tazama MLB Moja kwa Moja Bure",
+					"description": "Tazama besiboli moja kwa moja bure kwenye MethStreams. MLB kwa ubora wa HD!"
+				},
+				"rugby-union": {
+					"title": "MethStreams Rugby Union | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia Rugby Union moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"rugby-league": {
+					"title": "MethStreams Rugby League | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama Rugby League moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"cricket": {
+					"title": "MethStreams Kriketi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kriketi moja kwa moja bure kwenye MethStreams. IPL kwa ubora wa HD!"
+				},
+				"american-football": {
+					"title": "MethStreams Soka ya Marekani | Tazama NFL Moja kwa Moja Bure",
+					"description": "Tazama NFL moja kwa moja bure kwenye MethStreams. Ubora wa HD, upakiaji wa haraka!"
+				},
+				"volleyball": {
+					"title": "MethStreams Mpira wa Wavu | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mpira wa wavu moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"beach-volleyball": {
+					"title": "MethStreams Mpira wa Wavu wa Pwani | Tazama Moja kwa Moja Bure",
+					"description": "Tazama mpira wa wavu wa pwani moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"handball": {
+					"title": "MethStreams Mpira wa Mikono | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mpira wa mikono moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"beach-handball": {
+					"title": "MethStreams Mpira wa Mikono wa Pwani | Tazama Moja kwa Moja Bure",
+					"description": "Tazama mpira wa mikono wa pwani moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"beach-soccer": {
+					"title": "MethStreams Soka ya Pwani | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia soka ya pwani moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"aussie-rules": {
+					"title": "MethStreams Sheria za Australia | Tazama AFL Moja kwa Moja Bure",
+					"description": "Tazama AFL moja kwa moja bure kwenye MethStreams. Ubora wa HD, upakiaji wa haraka!"
+				},
+				"futsal": {
+					"title": "MethStreams Futsali | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia futsali moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"badminton": {
+					"title": "MethStreams Badmintoni | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama badmintoni moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"netball": {
+					"title": "MethStreams Netboli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia netboli moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"floorball": {
+					"title": "MethStreams Florboli | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama florboli moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"combat-sport": {
+					"title": "MethStreams Michezo ya Mapigano | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia michezo ya mapigano moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"boxing": {
+					"title": "MethStreams Ndondi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama ndondi moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"mma": {
+					"title": "MethStreams MMA | Tazama UFC Moja kwa Moja Bure HD",
+					"description": "Furahia MMA moja kwa moja bure kwenye MethStreams. UFC kwa ubora wa HD!"
+				},
+				"snooker": {
+					"title": "MethStreams Snuka | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama snuka moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"billiard": {
+					"title": "MethStreams Biladi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia biladi moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"table-tennis": {
+					"title": "MethStreams Tenisi ya Meza | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama tenisi ya meza moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"padel-tennis": {
+					"title": "MethStreams Padeli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia padeli moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"squash": {
+					"title": "MethStreams Skwashi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama skwashi moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"motorsport": {
+					"title": "MethStreams Michezo ya Magari | Tazama F1 Moja kwa Moja Bure",
+					"description": "Furahia michezo ya magari moja kwa moja bure kwenye MethStreams. F1 kwa ubora wa HD!"
+				},
+				"racing": {
+					"title": "MethStreams Mashindano | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mashindano moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"cycling": {
+					"title": "MethStreams Kuendesha Baiskeli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kuendesha baiskeli moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"equestrianism": {
+					"title": "MethStreams Upandaji Farasi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama upandaji farasi moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"golf": {
+					"title": "MethStreams Gofu | Tazama PGA Moja kwa Moja Bure HD",
+					"description": "Furahia gofu moja kwa moja bure kwenye MethStreams. PGA kwa ubora wa HD!"
+				},
+				"field-hockey": {
+					"title": "MethStreams Hoki ya Uwanja | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama hoki ya uwanja moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"lacrosse": {
+					"title": "MethStreams Lakrosi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia lakrosi moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"athletics": {
+					"title": "MethStreams Riadha | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama riadha moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"gymnastics": {
+					"title": "MethStreams Mazoezi ya Mwili | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mazoezi ya mwili moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"weightlifting": {
+					"title": "MethStreams Kuinua Uzito | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kuinua uzito moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"climbing": {
+					"title": "MethStreams Kupanda | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kupanda moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"winter-sport": {
+					"title": "MethStreams Michezo ya Baridi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya baridi moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"bandy": {
+					"title": "MethStreams Bandi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia bandi moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"curling": {
+					"title": "MethStreams Kerlingi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kerlingi moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"triathlon": {
+					"title": "MethStreams Triathlon | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia triathlon moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"water-sports": {
+					"title": "MethStreams Michezo ya Maji | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya maji moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"water-polo": {
+					"title": "MethStreams Polo ya Maji | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia polo ya maji moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"sailing": {
+					"title": "MethStreams Kusafiri kwa Meli | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kusafiri kwa meli moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"bowling": {
+					"title": "MethStreams Bolini | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia bolini moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"darts": {
+					"title": "MethStreams Mishale | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mishale moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"chess": {
+					"title": "MethStreams Sataranji | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia sataranji moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"e-sports": {
+					"title": "MethStreams Michezo ya Kielektroniki | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya kielektroniki moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"others": {
+					"title": "MethStreams Nyingine | Tazama Michezo Moja kwa Moja Bure HD",
+					"description": "Furahia michezo mingine moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"rugby-sevens": {
+					"title": "MethStreams Rugby Sevens | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama Rugby Sevens moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				},
+				"extreme-sport": {
+					"title": "MethStreams Michezo ya Hatari | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia michezo ya hatari moja kwa moja bure kwenye MethStreams. Ubora wa HD!"
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | Tazama Michezo Moja kwa Moja Bure Mtandaoni",
+				"description": "WiziWig inatoa utiririshaji wa michezo bure moja kwa moja. Ubora wa HD, hakuna usajili. Tazama sasa!"
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig Soka | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mechi za soka moja kwa moja bure kwenye WiziWig. Ubora wa HD, hakuna usajili!"
+				},
+				"basketball": {
+					"title": "WiziWig Mpira wa Kikapu | Tazama NBA Moja kwa Moja Bure",
+					"description": "Furahia mpira wa kikapu moja kwa moja bure kwenye WiziWig. NBA kwa ubora wa HD!"
+				},
+				"tennis": {
+					"title": "WiziWig Tenisi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama tenisi moja kwa moja bure kwenye WiziWig. Ubora wa HD, hakuna usajili!"
+				},
+				"ice-hockey": {
+					"title": "WiziWig Hoki ya Barafu | Tazama NHL Moja kwa Moja Bure",
+					"description": "Furahia hoki ya barafu moja kwa moja bure kwenye WiziWig. NHL kwa ubora wa HD!"
+				},
+				"baseball": {
+					"title": "WiziWig Besiboli | Tazama MLB Moja kwa Moja Bure",
+					"description": "Tazama besiboli moja kwa moja bure kwenye WiziWig. MLB kwa ubora wa HD!"
+				},
+				"rugby-union": {
+					"title": "WiziWig Rugby Union | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia Rugby Union moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"rugby-league": {
+					"title": "WiziWig Rugby League | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama Rugby League moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"cricket": {
+					"title": "WiziWig Kriketi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kriketi moja kwa moja bure kwenye WiziWig. IPL kwa ubora wa HD!"
+				},
+				"american-football": {
+					"title": "WiziWig Soka ya Marekani | Tazama NFL Moja kwa Moja Bure",
+					"description": "Tazama NFL moja kwa moja bure kwenye WiziWig. Ubora wa HD, hakuna usajili!"
+				},
+				"volleyball": {
+					"title": "WiziWig Mpira wa Wavu | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mpira wa wavu moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"beach-volleyball": {
+					"title": "WiziWig Mpira wa Wavu wa Pwani | Tazama Moja kwa Moja Bure",
+					"description": "Tazama mpira wa wavu wa pwani moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"handball": {
+					"title": "WiziWig Mpira wa Mikono | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mpira wa mikono moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"beach-handball": {
+					"title": "WiziWig Mpira wa Mikono wa Pwani | Tazama Moja kwa Moja Bure",
+					"description": "Tazama mpira wa mikono wa pwani moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"beach-soccer": {
+					"title": "WiziWig Soka ya Pwani | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia soka ya pwani moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"aussie-rules": {
+					"title": "WiziWig Sheria za Australia | Tazama AFL Moja kwa Moja Bure",
+					"description": "Tazama AFL moja kwa moja bure kwenye WiziWig. Ubora wa HD, hakuna usajili!"
+				},
+				"futsal": {
+					"title": "WiziWig Futsali | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia futsali moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"badminton": {
+					"title": "WiziWig Badmintoni | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama badmintoni moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"netball": {
+					"title": "WiziWig Netboli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia netboli moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"floorball": {
+					"title": "WiziWig Florboli | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama florboli moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"combat-sport": {
+					"title": "WiziWig Michezo ya Mapigano | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia michezo ya mapigano moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"boxing": {
+					"title": "WiziWig Ndondi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama ndondi moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"mma": {
+					"title": "WiziWig MMA | Tazama UFC Moja kwa Moja Bure HD",
+					"description": "Furahia MMA moja kwa moja bure kwenye WiziWig. UFC kwa ubora wa HD!"
+				},
+				"snooker": {
+					"title": "WiziWig Snuka | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama snuka moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"billiard": {
+					"title": "WiziWig Biladi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia biladi moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"table-tennis": {
+					"title": "WiziWig Tenisi ya Meza | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama tenisi ya meza moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"padel-tennis": {
+					"title": "WiziWig Padeli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia padeli moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"squash": {
+					"title": "WiziWig Skwashi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama skwashi moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"motorsport": {
+					"title": "WiziWig Michezo ya Magari | Tazama F1 Moja kwa Moja Bure",
+					"description": "Furahia michezo ya magari moja kwa moja bure kwenye WiziWig. F1 kwa ubora wa HD!"
+				},
+				"racing": {
+					"title": "WiziWig Mashindano | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mashindano moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"cycling": {
+					"title": "WiziWig Kuendesha Baiskeli | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kuendesha baiskeli moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"equestrianism": {
+					"title": "WiziWig Upandaji Farasi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama upandaji farasi moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"golf": {
+					"title": "WiziWig Gofu | Tazama PGA Moja kwa Moja Bure HD",
+					"description": "Furahia gofu moja kwa moja bure kwenye WiziWig. PGA kwa ubora wa HD!"
+				},
+				"field-hockey": {
+					"title": "WiziWig Hoki ya Uwanja | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama hoki ya uwanja moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"lacrosse": {
+					"title": "WiziWig Lakrosi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia lakrosi moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"athletics": {
+					"title": "WiziWig Riadha | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama riadha moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"gymnastics": {
+					"title": "WiziWig Mazoezi ya Mwili | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia mazoezi ya mwili moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"weightlifting": {
+					"title": "WiziWig Kuinua Uzito | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kuinua uzito moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"climbing": {
+					"title": "WiziWig Kupanda | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia kupanda moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"winter-sport": {
+					"title": "WiziWig Michezo ya Baridi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya baridi moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"bandy": {
+					"title": "WiziWig Bandi | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia bandi moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"curling": {
+					"title": "WiziWig Kerlingi | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kerlingi moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"triathlon": {
+					"title": "WiziWig Triathlon | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia triathlon moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"water-sports": {
+					"title": "WiziWig Michezo ya Maji | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya maji moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"water-polo": {
+					"title": "WiziWig Polo ya Maji | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia polo ya maji moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"sailing": {
+					"title": "WiziWig Kusafiri kwa Meli | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama kusafiri kwa meli moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"bowling": {
+					"title": "WiziWig Bolini | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia bolini moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"darts": {
+					"title": "WiziWig Mishale | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama mishale moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"chess": {
+					"title": "WiziWig Sataranji | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia sataranji moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"e-sports": {
+					"title": "WiziWig Michezo ya Kielektroniki | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama michezo ya kielektroniki moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"others": {
+					"title": "WiziWig Nyingine | Tazama Michezo Moja kwa Moja Bure HD",
+					"description": "Furahia michezo mingine moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"rugby-sevens": {
+					"title": "WiziWig Rugby Sevens | Tazama Moja kwa Moja Bure HD",
+					"description": "Tazama Rugby Sevens moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				},
+				"extreme-sport": {
+					"title": "WiziWig Michezo ya Hatari | Tazama Moja kwa Moja Bure HD",
+					"description": "Furahia michezo ya hatari moja kwa moja bure kwenye WiziWig. Ubora wa HD!"
+				}
+			}
+		}
 	}
 }

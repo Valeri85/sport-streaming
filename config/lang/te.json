@@ -3,6 +3,7 @@
 		"code": "te",
 		"name": "తెలుగు",
 		"flag": "IN",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -52,6 +53,7 @@
 		"Baseball": "బేస్‌బాల్",
 		"Rugby Union": "రగ్బీ యూనియన్",
 		"Rugby League": "రగ్బీ లీగ్",
+		"Rugby Sevens": "రగ్బీ సెవెన్స్",
 		"Cricket": "క్రికెట్",
 		"American Football": "అమెరికన్ ఫుట్‌బాల్",
 		"Volleyball": "వాలీబాల్",
@@ -64,8 +66,7 @@
 		"Badminton": "బ్యాడ్మింటన్",
 		"Netball": "నెట్‌బాల్",
 		"Floorball": "ఫ్లోర్‌బాల్",
-		"Combat": "పోరాటం",
-		"combat sport": "పోరాట క్రీడలు",
+		"Combat Sport": "పోరాట క్రీడలు",
 		"Boxing": "బాక్సింగ్",
 		"MMA": "ఎంఎంఎ",
 		"Snooker": "స్నూకర్",
@@ -84,7 +85,7 @@
 		"Gymnastics": "జిమ్నాస్టిక్స్",
 		"Weightlifting": "వెయిట్ లిఫ్టింగ్",
 		"Climbing": "క్లైంబింగ్",
-		"winter sport": "శీతాకాలపు క్రీడలు",
+		"Winter Sport": "శీతాకాలపు క్రీడలు",
 		"Bandy": "బాండీ",
 		"Curling": "కర్లింగ్",
 		"Triathlon": "ట్రయాథ్లాన్",
@@ -95,6 +96,1305 @@
 		"Darts": "డార్ట్స్",
 		"Chess": "చదరంగం",
 		"E-sports": "ఇ-స్పోర్ట్స్",
+		"Extreme Sport": "ఎక్స్ట్రీమ్ స్పోర్ట్",
 		"Others": "ఇతరులు"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemons | ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమింగ్ ఆన్‌లైన్",
+				"description": "SportLemons ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమ్‌లను HD నాణ్యతలో అందిస్తుంది. రిజిస్ట్రేషన్ అవసరం లేదు. ఇప్పుడే చూడండి!"
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemons ఫుట్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ ఫుట్‌బాల్ చూడండి. HD నాణ్యత, వేగవంతమైన లోడింగ్!"
+				},
+				"basketball": {
+					"title": "SportLemons బాస్కెట్‌బాల్ | ఉచిత లైవ్ NBA స్ట్రీమింగ్",
+					"description": "SportLemons లో ఉచితంగా లైవ్ బాస్కెట్‌బాల్ చూడండి. NBA HD నాణ్యతలో!"
+				},
+				"tennis": {
+					"title": "SportLemons టెన్నిస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ టెన్నిస్ చూడండి. HD నాణ్యత, రిజిస్ట్రేషన్ లేదు!"
+				},
+				"ice-hockey": {
+					"title": "SportLemons ఐస్ హాకీ | ఉచిత లైవ్ NHL స్ట్రీమింగ్",
+					"description": "SportLemons లో ఉచితంగా లైవ్ ఐస్ హాకీ చూడండి. NHL HD నాణ్యతలో!"
+				},
+				"baseball": {
+					"title": "SportLemons బేస్‌బాల్ | ఉచిత లైవ్ MLB స్ట్రీమింగ్",
+					"description": "SportLemons లో ఉచితంగా లైవ్ బేస్‌బాల్ చూడండి. MLB HD నాణ్యతలో!"
+				},
+				"rugby-union": {
+					"title": "SportLemons రగ్బీ యూనియన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ రగ్బీ యూనియన్ చూడండి. HD నాణ్యత!"
+				},
+				"rugby-league": {
+					"title": "SportLemons రగ్బీ లీగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ రగ్బీ లీగ్ చూడండి. HD నాణ్యత!"
+				},
+				"cricket": {
+					"title": "SportLemons క్రికెట్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ క్రికెట్ చూడండి. IPL HD నాణ్యతలో!"
+				},
+				"american-football": {
+					"title": "SportLemons అమెరికన్ ఫుట్‌బాల్ | ఉచిత లైవ్ NFL",
+					"description": "SportLemons లో ఉచితంగా లైవ్ NFL చూడండి. HD నాణ్యత, వేగవంతమైన లోడింగ్!"
+				},
+				"volleyball": {
+					"title": "SportLemons వాలీబాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ వాలీబాల్ చూడండి. HD నాణ్యత!"
+				},
+				"beach-volleyball": {
+					"title": "SportLemons బీచ్ వాలీబాల్ | ఉచిత లైవ్ స్ట్రీమింగ్",
+					"description": "SportLemons లో ఉచితంగా లైవ్ బీచ్ వాలీబాల్ చూడండి. HD నాణ్యత!"
+				},
+				"handball": {
+					"title": "SportLemons హ్యాండ్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ హ్యాండ్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"beach-handball": {
+					"title": "SportLemons బీచ్ హ్యాండ్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్",
+					"description": "SportLemons లో ఉచితంగా లైవ్ బీచ్ హ్యాండ్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"beach-soccer": {
+					"title": "SportLemons బీచ్ సాకర్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ బీచ్ సాకర్ చూడండి. HD నాణ్యత!"
+				},
+				"aussie-rules": {
+					"title": "SportLemons ఆసీ రూల్స్ | ఉచిత లైవ్ AFL స్ట్రీమింగ్",
+					"description": "SportLemons లో ఉచితంగా లైవ్ AFL చూడండి. HD నాణ్యత, వేగవంతమైన లోడింగ్!"
+				},
+				"futsal": {
+					"title": "SportLemons ఫుట్సల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ ఫుట్సల్ చూడండి. HD నాణ్యత!"
+				},
+				"badminton": {
+					"title": "SportLemons బ్యాడ్మింటన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ బ్యాడ్మింటన్ చూడండి. HD నాణ్యత!"
+				},
+				"netball": {
+					"title": "SportLemons నెట్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ నెట్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"floorball": {
+					"title": "SportLemons ఫ్లోర్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ ఫ్లోర్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"combat-sport": {
+					"title": "SportLemons పోరాట క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ పోరాట క్రీడలు చూడండి. HD నాణ్యత!"
+				},
+				"boxing": {
+					"title": "SportLemons బాక్సింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ బాక్సింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"mma": {
+					"title": "SportLemons MMA | ఉచిత లైవ్ UFC స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ MMA చూడండి. UFC HD నాణ్యతలో!"
+				},
+				"snooker": {
+					"title": "SportLemons స్నూకర్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ స్నూకర్ చూడండి. HD నాణ్యత!"
+				},
+				"billiard": {
+					"title": "SportLemons బిలియర్డ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ బిలియర్డ్ చూడండి. HD నాణ్యత!"
+				},
+				"table-tennis": {
+					"title": "SportLemons టేబుల్ టెన్నిస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ టేబుల్ టెన్నిస్ చూడండి. HD నాణ్యత!"
+				},
+				"padel-tennis": {
+					"title": "SportLemons పాడెల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ పాడెల్ చూడండి. HD నాణ్యత!"
+				},
+				"squash": {
+					"title": "SportLemons స్క్వాష్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ స్క్వాష్ చూడండి. HD నాణ్యత!"
+				},
+				"motorsport": {
+					"title": "SportLemons మోటార్‌స్పోర్ట్ | ఉచిత లైవ్ F1 స్ట్రీమింగ్",
+					"description": "SportLemons లో ఉచితంగా లైవ్ మోటార్‌స్పోర్ట్ చూడండి. F1 HD నాణ్యతలో!"
+				},
+				"racing": {
+					"title": "SportLemons రేసింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ రేసింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"cycling": {
+					"title": "SportLemons సైక్లింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ సైక్లింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"equestrianism": {
+					"title": "SportLemons గుర్రపు స్వారీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ గుర్రపు స్వారీ చూడండి. HD నాణ్యత!"
+				},
+				"golf": {
+					"title": "SportLemons గోల్ఫ్ | ఉచిత లైవ్ PGA స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ గోల్ఫ్ చూడండి. PGA HD నాణ్యతలో!"
+				},
+				"field-hockey": {
+					"title": "SportLemons ఫీల్డ్ హాకీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ ఫీల్డ్ హాకీ చూడండి. HD నాణ్యత!"
+				},
+				"lacrosse": {
+					"title": "SportLemons లాక్రోస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ లాక్రోస్ చూడండి. HD నాణ్యత!"
+				},
+				"athletics": {
+					"title": "SportLemons అథ్లెటిక్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ అథ్లెటిక్స్ చూడండి. HD నాణ్యత!"
+				},
+				"gymnastics": {
+					"title": "SportLemons జిమ్నాస్టిక్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ జిమ్నాస్టిక్స్ చూడండి. HD నాణ్యత!"
+				},
+				"weightlifting": {
+					"title": "SportLemons వెయిట్ లిఫ్టింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ వెయిట్ లిఫ్టింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"climbing": {
+					"title": "SportLemons క్లైంబింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ క్లైంబింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"winter-sport": {
+					"title": "SportLemons శీతాకాలపు క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ శీతాకాలపు క్రీడలు చూడండి. HD నాణ్యత!"
+				},
+				"bandy": {
+					"title": "SportLemons బాండీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ బాండీ చూడండి. HD నాణ్యత!"
+				},
+				"curling": {
+					"title": "SportLemons కర్లింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ కర్లింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"triathlon": {
+					"title": "SportLemons ట్రయాథ్లాన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ ట్రయాథ్లాన్ చూడండి. HD నాణ్యత!"
+				},
+				"water-sports": {
+					"title": "SportLemons నీటి క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ నీటి క్రీడలు చూడండి. HD నాణ్యత!"
+				},
+				"water-polo": {
+					"title": "SportLemons వాటర్ పోలో | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ వాటర్ పోలో చూడండి. HD నాణ్యత!"
+				},
+				"sailing": {
+					"title": "SportLemons సెయిలింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ సెయిలింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"bowling": {
+					"title": "SportLemons బౌలింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ బౌలింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"darts": {
+					"title": "SportLemons డార్ట్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ డార్ట్స్ చూడండి. HD నాణ్యత!"
+				},
+				"chess": {
+					"title": "SportLemons చదరంగం | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ చదరంగం చూడండి. HD నాణ్యత!"
+				},
+				"e-sports": {
+					"title": "SportLemons ఇ-స్పోర్ట్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ ఇ-స్పోర్ట్స్ చూడండి. HD నాణ్యత!"
+				},
+				"others": {
+					"title": "SportLemons ఇతరులు | ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ ఇతర క్రీడలు చూడండి. HD నాణ్యత!"
+				},
+				"rugby-sevens": {
+					"title": "SportLemons రగ్బీ సెవెన్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ రగ్బీ సెవెన్స్ చూడండి. HD నాణ్యత!"
+				},
+				"extreme-sport": {
+					"title": "SportLemons ఎక్స్ట్రీమ్ స్పోర్ట్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "SportLemons లో ఉచితంగా లైవ్ ఎక్స్ట్రీమ్ స్పోర్ట్ చూడండి. HD నాణ్యత!"
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLsite | ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమింగ్ ఆన్‌లైన్",
+				"description": "EPLsite ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమ్‌లను HD నాణ్యతలో అందిస్తుంది. రిజిస్ట్రేషన్ అవసరం లేదు. ఇప్పుడే చూడండి!"
+			},
+			"sports": {
+				"football": {
+					"title": "EPLsite ఫుట్‌బాల్ | ఉచిత లైవ్ EPL స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ ఫుట్‌బాల్ చూడండి. Premier League HD నాణ్యతలో!"
+				},
+				"basketball": {
+					"title": "EPLsite బాస్కెట్‌బాల్ | ఉచిత లైవ్ NBA స్ట్రీమింగ్",
+					"description": "EPLsite లో ఉచితంగా లైవ్ బాస్కెట్‌బాల్ చూడండి. NBA HD నాణ్యతలో!"
+				},
+				"tennis": {
+					"title": "EPLsite టెన్నిస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ టెన్నిస్ చూడండి. HD నాణ్యత, వేగవంతమైన లోడింగ్!"
+				},
+				"ice-hockey": {
+					"title": "EPLsite ఐస్ హాకీ | ఉచిత లైవ్ NHL స్ట్రీమింగ్",
+					"description": "EPLsite లో ఉచితంగా లైవ్ ఐస్ హాకీ చూడండి. NHL HD నాణ్యతలో!"
+				},
+				"baseball": {
+					"title": "EPLsite బేస్‌బాల్ | ఉచిత లైవ్ MLB స్ట్రీమింగ్",
+					"description": "EPLsite లో ఉచితంగా లైవ్ బేస్‌బాల్ చూడండి. MLB HD నాణ్యతలో!"
+				},
+				"rugby-union": {
+					"title": "EPLsite రగ్బీ యూనియన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ రగ్బీ యూనియన్ చూడండి. HD నాణ్యత!"
+				},
+				"rugby-league": {
+					"title": "EPLsite రగ్బీ లీగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ రగ్బీ లీగ్ చూడండి. HD నాణ్యత!"
+				},
+				"cricket": {
+					"title": "EPLsite క్రికెట్ | ఉచిత లైవ్ IPL స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ క్రికెట్ చూడండి. IPL HD నాణ్యతలో!"
+				},
+				"american-football": {
+					"title": "EPLsite అమెరికన్ ఫుట్‌బాల్ | ఉచిత లైవ్ NFL",
+					"description": "EPLsite లో ఉచితంగా లైవ్ NFL చూడండి. HD నాణ్యత, వేగవంతమైన లోడింగ్!"
+				},
+				"volleyball": {
+					"title": "EPLsite వాలీబాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ వాలీబాల్ చూడండి. HD నాణ్యత!"
+				},
+				"beach-volleyball": {
+					"title": "EPLsite బీచ్ వాలీబాల్ | ఉచిత లైవ్ స్ట్రీమింగ్",
+					"description": "EPLsite లో ఉచితంగా లైవ్ బీచ్ వాలీబాల్ చూడండి. HD నాణ్యత!"
+				},
+				"handball": {
+					"title": "EPLsite హ్యాండ్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ హ్యాండ్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"beach-handball": {
+					"title": "EPLsite బీచ్ హ్యాండ్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్",
+					"description": "EPLsite లో ఉచితంగా లైవ్ బీచ్ హ్యాండ్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"beach-soccer": {
+					"title": "EPLsite బీచ్ సాకర్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ బీచ్ సాకర్ చూడండి. HD నాణ్యత!"
+				},
+				"aussie-rules": {
+					"title": "EPLsite ఆసీ రూల్స్ | ఉచిత లైవ్ AFL స్ట్రీమింగ్",
+					"description": "EPLsite లో ఉచితంగా లైవ్ AFL చూడండి. HD నాణ్యత, వేగవంతమైన లోడింగ్!"
+				},
+				"futsal": {
+					"title": "EPLsite ఫుట్సల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ ఫుట్సల్ చూడండి. HD నాణ్యత!"
+				},
+				"badminton": {
+					"title": "EPLsite బ్యాడ్మింటన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ బ్యాడ్మింటన్ చూడండి. HD నాణ్యత!"
+				},
+				"netball": {
+					"title": "EPLsite నెట్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ నెట్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"floorball": {
+					"title": "EPLsite ఫ్లోర్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ ఫ్లోర్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"combat-sport": {
+					"title": "EPLsite పోరాట క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ పోరాట క్రీడలు చూడండి. HD నాణ్యత!"
+				},
+				"boxing": {
+					"title": "EPLsite బాక్సింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ బాక్సింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"mma": {
+					"title": "EPLsite MMA | ఉచిత లైవ్ UFC స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ MMA చూడండి. UFC HD నాణ్యతలో!"
+				},
+				"snooker": {
+					"title": "EPLsite స్నూకర్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ స్నూకర్ చూడండి. HD నాణ్యత!"
+				},
+				"billiard": {
+					"title": "EPLsite బిలియర్డ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ బిలియర్డ్ చూడండి. HD నాణ్యత!"
+				},
+				"table-tennis": {
+					"title": "EPLsite టేబుల్ టెన్నిస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ టేబుల్ టెన్నిస్ చూడండి. HD నాణ్యత!"
+				},
+				"padel-tennis": {
+					"title": "EPLsite పాడెల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ పాడెల్ చూడండి. HD నాణ్యత!"
+				},
+				"squash": {
+					"title": "EPLsite స్క్వాష్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ స్క్వాష్ చూడండి. HD నాణ్యత!"
+				},
+				"motorsport": {
+					"title": "EPLsite మోటార్‌స్పోర్ట్ | ఉచిత లైవ్ F1 స్ట్రీమింగ్",
+					"description": "EPLsite లో ఉచితంగా లైవ్ మోటార్‌స్పోర్ట్ చూడండి. F1 HD నాణ్యతలో!"
+				},
+				"racing": {
+					"title": "EPLsite రేసింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ రేసింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"cycling": {
+					"title": "EPLsite సైక్లింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ సైక్లింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"equestrianism": {
+					"title": "EPLsite గుర్రపు స్వారీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ గుర్రపు స్వారీ చూడండి. HD నాణ్యత!"
+				},
+				"golf": {
+					"title": "EPLsite గోల్ఫ్ | ఉచిత లైవ్ PGA స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ గోల్ఫ్ చూడండి. PGA HD నాణ్యతలో!"
+				},
+				"field-hockey": {
+					"title": "EPLsite ఫీల్డ్ హాకీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ ఫీల్డ్ హాకీ చూడండి. HD నాణ్యత!"
+				},
+				"lacrosse": {
+					"title": "EPLsite లాక్రోస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ లాక్రోస్ చూడండి. HD నాణ్యత!"
+				},
+				"athletics": {
+					"title": "EPLsite అథ్లెటిక్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ అథ్లెటిక్స్ చూడండి. HD నాణ్యత!"
+				},
+				"gymnastics": {
+					"title": "EPLsite జిమ్నాస్టిక్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ జిమ్నాస్టిక్స్ చూడండి. HD నాణ్యత!"
+				},
+				"weightlifting": {
+					"title": "EPLsite వెయిట్ లిఫ్టింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ వెయిట్ లిఫ్టింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"climbing": {
+					"title": "EPLsite క్లైంబింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ క్లైంబింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"winter-sport": {
+					"title": "EPLsite శీతాకాలపు క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ శీతాకాలపు క్రీడలు చూడండి. HD నాణ్యత!"
+				},
+				"bandy": {
+					"title": "EPLsite బాండీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ బాండీ చూడండి. HD నాణ్యత!"
+				},
+				"curling": {
+					"title": "EPLsite కర్లింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ కర్లింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"triathlon": {
+					"title": "EPLsite ట్రయాథ్లాన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ ట్రయాథ్లాన్ చూడండి. HD నాణ్యత!"
+				},
+				"water-sports": {
+					"title": "EPLsite నీటి క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ నీటి క్రీడలు చూడండి. HD నాణ్యత!"
+				},
+				"water-polo": {
+					"title": "EPLsite వాటర్ పోలో | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ వాటర్ పోలో చూడండి. HD నాణ్యత!"
+				},
+				"sailing": {
+					"title": "EPLsite సెయిలింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ సెయిలింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"bowling": {
+					"title": "EPLsite బౌలింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ బౌలింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"darts": {
+					"title": "EPLsite డార్ట్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ డార్ట్స్ చూడండి. HD నాణ్యత!"
+				},
+				"chess": {
+					"title": "EPLsite చదరంగం | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ చదరంగం చూడండి. HD నాణ్యత!"
+				},
+				"e-sports": {
+					"title": "EPLsite ఇ-స్పోర్ట్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ ఇ-స్పోర్ట్స్ చూడండి. HD నాణ్యత!"
+				},
+				"others": {
+					"title": "EPLsite ఇతరులు | ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ ఇతర క్రీడలు చూడండి. HD నాణ్యత!"
+				},
+				"rugby-sevens": {
+					"title": "EPLsite రగ్బీ సెవెన్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ రగ్బీ సెవెన్స్ చూడండి. HD నాణ్యత!"
+				},
+				"extreme-sport": {
+					"title": "EPLsite ఎక్స్ట్రీమ్ స్పోర్ట్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "EPLsite లో ఉచితంగా లైవ్ ఎక్స్ట్రీమ్ స్పోర్ట్ చూడండి. HD నాణ్యత!"
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమింగ్ ఆన్‌లైన్",
+				"description": "P2P4U ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమ్‌లను HD నాణ్యతలో అందిస్తుంది. వేగవంతమైన లోడింగ్, రిజిస్ట్రేషన్ లేదు!"
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U ఫుట్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ ఫుట్‌బాల్ చూడండి. వేగవంతమైన లోడింగ్, రిజిస్ట్రేషన్ లేదు!"
+				},
+				"basketball": {
+					"title": "P2P4U బాస్కెట్‌బాల్ | ఉచిత లైవ్ NBA స్ట్రీమింగ్",
+					"description": "P2P4U లో ఉచితంగా లైవ్ బాస్కెట్‌బాల్ చూడండి. NBA HD నాణ్యతలో!"
+				},
+				"tennis": {
+					"title": "P2P4U టెన్నిస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ టెన్నిస్ చూడండి. వేగవంతమైన లోడింగ్, HD నాణ్యత!"
+				},
+				"ice-hockey": {
+					"title": "P2P4U ఐస్ హాకీ | ఉచిత లైవ్ NHL స్ట్రీమింగ్",
+					"description": "P2P4U లో ఉచితంగా లైవ్ ఐస్ హాకీ చూడండి. NHL HD నాణ్యతలో!"
+				},
+				"baseball": {
+					"title": "P2P4U బేస్‌బాల్ | ఉచిత లైవ్ MLB స్ట్రీమింగ్",
+					"description": "P2P4U లో ఉచితంగా లైవ్ బేస్‌బాల్ చూడండి. MLB HD నాణ్యతలో!"
+				},
+				"rugby-union": {
+					"title": "P2P4U రగ్బీ యూనియన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ రగ్బీ యూనియన్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"rugby-league": {
+					"title": "P2P4U రగ్బీ లీగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ రగ్బీ లీగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"cricket": {
+					"title": "P2P4U క్రికెట్ | ఉచిత లైవ్ IPL స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ క్రికెట్ చూడండి. IPL HD నాణ్యతలో!"
+				},
+				"american-football": {
+					"title": "P2P4U అమెరికన్ ఫుట్‌బాల్ | ఉచిత లైవ్ NFL",
+					"description": "P2P4U లో ఉచితంగా లైవ్ NFL చూడండి. వేగవంతమైన లోడింగ్, రిజిస్ట్రేషన్ లేదు!"
+				},
+				"volleyball": {
+					"title": "P2P4U వాలీబాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ వాలీబాల్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"beach-volleyball": {
+					"title": "P2P4U బీచ్ వాలీబాల్ | ఉచిత లైవ్ స్ట్రీమింగ్",
+					"description": "P2P4U లో ఉచితంగా లైవ్ బీచ్ వాలీబాల్ చూడండి. HD నాణ్యత!"
+				},
+				"handball": {
+					"title": "P2P4U హ్యాండ్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ హ్యాండ్‌బాల్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"beach-handball": {
+					"title": "P2P4U బీచ్ హ్యాండ్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్",
+					"description": "P2P4U లో ఉచితంగా లైవ్ బీచ్ హ్యాండ్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"beach-soccer": {
+					"title": "P2P4U బీచ్ సాకర్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ బీచ్ సాకర్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"aussie-rules": {
+					"title": "P2P4U ఆసీ రూల్స్ | ఉచిత లైవ్ AFL స్ట్రీమింగ్",
+					"description": "P2P4U లో ఉచితంగా లైవ్ AFL చూడండి. వేగవంతమైన లోడింగ్, రిజిస్ట్రేషన్ లేదు!"
+				},
+				"futsal": {
+					"title": "P2P4U ఫుట్సల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ ఫుట్సల్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"badminton": {
+					"title": "P2P4U బ్యాడ్మింటన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ బ్యాడ్మింటన్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"netball": {
+					"title": "P2P4U నెట్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ నెట్‌బాల్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"floorball": {
+					"title": "P2P4U ఫ్లోర్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ ఫ్లోర్‌బాల్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"combat-sport": {
+					"title": "P2P4U పోరాట క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ పోరాట క్రీడలు చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"boxing": {
+					"title": "P2P4U బాక్సింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ బాక్సింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"mma": {
+					"title": "P2P4U MMA | ఉచిత లైవ్ UFC స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ MMA చూడండి. UFC HD నాణ్యతలో!"
+				},
+				"snooker": {
+					"title": "P2P4U స్నూకర్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ స్నూకర్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"billiard": {
+					"title": "P2P4U బిలియర్డ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ బిలియర్డ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"table-tennis": {
+					"title": "P2P4U టేబుల్ టెన్నిస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ టేబుల్ టెన్నిస్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"padel-tennis": {
+					"title": "P2P4U పాడెల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ పాడెల్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"squash": {
+					"title": "P2P4U స్క్వాష్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ స్క్వాష్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"motorsport": {
+					"title": "P2P4U మోటార్‌స్పోర్ట్ | ఉచిత లైవ్ F1 స్ట్రీమింగ్",
+					"description": "P2P4U లో ఉచితంగా లైవ్ మోటార్‌స్పోర్ట్ చూడండి. F1 HD నాణ్యతలో!"
+				},
+				"racing": {
+					"title": "P2P4U రేసింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ రేసింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"cycling": {
+					"title": "P2P4U సైక్లింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ సైక్లింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"equestrianism": {
+					"title": "P2P4U గుర్రపు స్వారీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ గుర్రపు స్వారీ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"golf": {
+					"title": "P2P4U గోల్ఫ్ | ఉచిత లైవ్ PGA స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ గోల్ఫ్ చూడండి. PGA HD నాణ్యతలో!"
+				},
+				"field-hockey": {
+					"title": "P2P4U ఫీల్డ్ హాకీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ ఫీల్డ్ హాకీ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"lacrosse": {
+					"title": "P2P4U లాక్రోస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ లాక్రోస్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"athletics": {
+					"title": "P2P4U అథ్లెటిక్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ అథ్లెటిక్స్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"gymnastics": {
+					"title": "P2P4U జిమ్నాస్టిక్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ జిమ్నాస్టిక్స్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"weightlifting": {
+					"title": "P2P4U వెయిట్ లిఫ్టింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ వెయిట్ లిఫ్టింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"climbing": {
+					"title": "P2P4U క్లైంబింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ క్లైంబింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"winter-sport": {
+					"title": "P2P4U శీతాకాలపు క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ శీతాకాలపు క్రీడలు చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"bandy": {
+					"title": "P2P4U బాండీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ బాండీ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"curling": {
+					"title": "P2P4U కర్లింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ కర్లింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"triathlon": {
+					"title": "P2P4U ట్రయాథ్లాన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ ట్రయాథ్లాన్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"water-sports": {
+					"title": "P2P4U నీటి క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ నీటి క్రీడలు చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"water-polo": {
+					"title": "P2P4U వాటర్ పోలో | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ వాటర్ పోలో చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"sailing": {
+					"title": "P2P4U సెయిలింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ సెయిలింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"bowling": {
+					"title": "P2P4U బౌలింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ బౌలింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"darts": {
+					"title": "P2P4U డార్ట్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ డార్ట్స్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"chess": {
+					"title": "P2P4U చదరంగం | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ చదరంగం చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"e-sports": {
+					"title": "P2P4U ఇ-స్పోర్ట్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ ఇ-స్పోర్ట్స్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"others": {
+					"title": "P2P4U ఇతరులు | ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ ఇతర క్రీడలు చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"rugby-sevens": {
+					"title": "P2P4U రగ్బీ సెవెన్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ రగ్బీ సెవెన్స్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"extreme-sport": {
+					"title": "P2P4U ఎక్స్ట్రీమ్ స్పోర్ట్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "P2P4U లో ఉచితంగా లైవ్ ఎక్స్ట్రీమ్ స్పోర్ట్ చూడండి. వేగవంతమైన లోడింగ్!"
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమింగ్ ఆన్‌లైన్",
+				"description": "StreamHunter ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమ్‌లను HD నాణ్యతలో అందిస్తుంది. నమ్మకమైన లింక్‌లు, రిజిస్ట్రేషన్ లేదు!"
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter ఫుట్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ ఫుట్‌బాల్ చూడండి. HD నాణ్యత, నమ్మకమైన లింక్‌లు!"
+				},
+				"basketball": {
+					"title": "StreamHunter బాస్కెట్‌బాల్ | ఉచిత లైవ్ NBA స్ట్రీమింగ్",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ బాస్కెట్‌బాల్ చూడండి. NBA HD నాణ్యతలో!"
+				},
+				"tennis": {
+					"title": "StreamHunter టెన్నిస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ టెన్నిస్ చూడండి. HD నాణ్యత, నమ్మకమైన లింక్‌లు!"
+				},
+				"ice-hockey": {
+					"title": "StreamHunter ఐస్ హాకీ | ఉచిత లైవ్ NHL స్ట్రీమింగ్",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ ఐస్ హాకీ చూడండి. NHL HD నాణ్యతలో!"
+				},
+				"baseball": {
+					"title": "StreamHunter బేస్‌బాల్ | ఉచిత లైవ్ MLB స్ట్రీమింగ్",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ బేస్‌బాల్ చూడండి. MLB HD నాణ్యతలో!"
+				},
+				"rugby-union": {
+					"title": "StreamHunter రగ్బీ యూనియన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ రగ్బీ యూనియన్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"rugby-league": {
+					"title": "StreamHunter రగ్బీ లీగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ రగ్బీ లీగ్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"cricket": {
+					"title": "StreamHunter క్రికెట్ | ఉచిత లైవ్ IPL స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ క్రికెట్ చూడండి. IPL HD నాణ్యతలో!"
+				},
+				"american-football": {
+					"title": "StreamHunter అమెరికన్ ఫుట్‌బాల్ | ఉచిత లైవ్ NFL",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ NFL చూడండి. HD నాణ్యత, నమ్మకమైన లింక్‌లు!"
+				},
+				"volleyball": {
+					"title": "StreamHunter వాలీబాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ వాలీబాల్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter బీచ్ వాలీబాల్ | ఉచిత లైవ్ స్ట్రీమింగ్",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ బీచ్ వాలీబాల్ చూడండి. HD నాణ్యత!"
+				},
+				"handball": {
+					"title": "StreamHunter హ్యాండ్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ హ్యాండ్‌బాల్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"beach-handball": {
+					"title": "StreamHunter బీచ్ హ్యాండ్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ బీచ్ హ్యాండ్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"beach-soccer": {
+					"title": "StreamHunter బీచ్ సాకర్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ బీచ్ సాకర్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"aussie-rules": {
+					"title": "StreamHunter ఆసీ రూల్స్ | ఉచిత లైవ్ AFL స్ట్రీమింగ్",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ AFL చూడండి. HD నాణ్యత, నమ్మకమైన లింక్‌లు!"
+				},
+				"futsal": {
+					"title": "StreamHunter ఫుట్సల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ ఫుట్సల్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"badminton": {
+					"title": "StreamHunter బ్యాడ్మింటన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ బ్యాడ్మింటన్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"netball": {
+					"title": "StreamHunter నెట్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ నెట్‌బాల్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"floorball": {
+					"title": "StreamHunter ఫ్లోర్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ ఫ్లోర్‌బాల్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"combat-sport": {
+					"title": "StreamHunter పోరాట క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ పోరాట క్రీడలు చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"boxing": {
+					"title": "StreamHunter బాక్సింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ బాక్సింగ్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"mma": {
+					"title": "StreamHunter MMA | ఉచిత లైవ్ UFC స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ MMA చూడండి. UFC HD నాణ్యతలో!"
+				},
+				"snooker": {
+					"title": "StreamHunter స్నూకర్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ స్నూకర్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"billiard": {
+					"title": "StreamHunter బిలియర్డ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ బిలియర్డ్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"table-tennis": {
+					"title": "StreamHunter టేబుల్ టెన్నిస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ టేబుల్ టెన్నిస్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"padel-tennis": {
+					"title": "StreamHunter పాడెల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ పాడెల్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"squash": {
+					"title": "StreamHunter స్క్వాష్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ స్క్వాష్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"motorsport": {
+					"title": "StreamHunter మోటార్‌స్పోర్ట్ | ఉచిత లైవ్ F1 స్ట్రీమింగ్",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ మోటార్‌స్పోర్ట్ చూడండి. F1 HD నాణ్యతలో!"
+				},
+				"racing": {
+					"title": "StreamHunter రేసింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ రేసింగ్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"cycling": {
+					"title": "StreamHunter సైక్లింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ సైక్లింగ్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"equestrianism": {
+					"title": "StreamHunter గుర్రపు స్వారీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ గుర్రపు స్వారీ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"golf": {
+					"title": "StreamHunter గోల్ఫ్ | ఉచిత లైవ్ PGA స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ గోల్ఫ్ చూడండి. PGA HD నాణ్యతలో!"
+				},
+				"field-hockey": {
+					"title": "StreamHunter ఫీల్డ్ హాకీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ ఫీల్డ్ హాకీ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"lacrosse": {
+					"title": "StreamHunter లాక్రోస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ లాక్రోస్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"athletics": {
+					"title": "StreamHunter అథ్లెటిక్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ అథ్లెటిక్స్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"gymnastics": {
+					"title": "StreamHunter జిమ్నాస్టిక్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ జిమ్నాస్టిక్స్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"weightlifting": {
+					"title": "StreamHunter వెయిట్ లిఫ్టింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ వెయిట్ లిఫ్టింగ్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"climbing": {
+					"title": "StreamHunter క్లైంబింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ క్లైంబింగ్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"winter-sport": {
+					"title": "StreamHunter శీతాకాలపు క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ శీతాకాలపు క్రీడలు చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"bandy": {
+					"title": "StreamHunter బాండీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ బాండీ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"curling": {
+					"title": "StreamHunter కర్లింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ కర్లింగ్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"triathlon": {
+					"title": "StreamHunter ట్రయాథ్లాన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ ట్రయాథ్లాన్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"water-sports": {
+					"title": "StreamHunter నీటి క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ నీటి క్రీడలు చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"water-polo": {
+					"title": "StreamHunter వాటర్ పోలో | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ వాటర్ పోలో చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"sailing": {
+					"title": "StreamHunter సెయిలింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ సెయిలింగ్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"bowling": {
+					"title": "StreamHunter బౌలింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ బౌలింగ్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"darts": {
+					"title": "StreamHunter డార్ట్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ డార్ట్స్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"chess": {
+					"title": "StreamHunter చదరంగం | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ చదరంగం చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"e-sports": {
+					"title": "StreamHunter ఇ-స్పోర్ట్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ ఇ-స్పోర్ట్స్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"others": {
+					"title": "StreamHunter ఇతరులు | ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ ఇతర క్రీడలు చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter రగ్బీ సెవెన్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ రగ్బీ సెవెన్స్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				},
+				"extreme-sport": {
+					"title": "StreamHunter ఎక్స్ట్రీమ్ స్పోర్ట్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "StreamHunter లో ఉచితంగా లైవ్ ఎక్స్ట్రీమ్ స్పోర్ట్ చూడండి. నమ్మకమైన లింక్‌లు!"
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమింగ్ ఆన్‌లైన్",
+				"description": "MethStreams ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమ్‌లను HD నాణ్యతలో అందిస్తుంది. వేగవంతమైన లోడింగ్, రిజిస్ట్రేషన్ లేదు!"
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams ఫుట్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ ఫుట్‌బాల్ చూడండి. HD నాణ్యత, వేగవంతమైన లోడింగ్!"
+				},
+				"basketball": {
+					"title": "MethStreams బాస్కెట్‌బాల్ | ఉచిత లైవ్ NBA స్ట్రీమింగ్",
+					"description": "MethStreams లో ఉచితంగా లైవ్ బాస్కెట్‌బాల్ చూడండి. NBA HD నాణ్యతలో!"
+				},
+				"tennis": {
+					"title": "MethStreams టెన్నిస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ టెన్నిస్ చూడండి. HD నాణ్యత, వేగవంతమైన లోడింగ్!"
+				},
+				"ice-hockey": {
+					"title": "MethStreams ఐస్ హాకీ | ఉచిత లైవ్ NHL స్ట్రీమింగ్",
+					"description": "MethStreams లో ఉచితంగా లైవ్ ఐస్ హాకీ చూడండి. NHL HD నాణ్యతలో!"
+				},
+				"baseball": {
+					"title": "MethStreams బేస్‌బాల్ | ఉచిత లైవ్ MLB స్ట్రీమింగ్",
+					"description": "MethStreams లో ఉచితంగా లైవ్ బేస్‌బాల్ చూడండి. MLB HD నాణ్యతలో!"
+				},
+				"rugby-union": {
+					"title": "MethStreams రగ్బీ యూనియన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ రగ్బీ యూనియన్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"rugby-league": {
+					"title": "MethStreams రగ్బీ లీగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ రగ్బీ లీగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"cricket": {
+					"title": "MethStreams క్రికెట్ | ఉచిత లైవ్ IPL స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ క్రికెట్ చూడండి. IPL HD నాణ్యతలో!"
+				},
+				"american-football": {
+					"title": "MethStreams అమెరికన్ ఫుట్‌బాల్ | ఉచిత లైవ్ NFL",
+					"description": "MethStreams లో ఉచితంగా లైవ్ NFL చూడండి. HD నాణ్యత, వేగవంతమైన లోడింగ్!"
+				},
+				"volleyball": {
+					"title": "MethStreams వాలీబాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ వాలీబాల్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"beach-volleyball": {
+					"title": "MethStreams బీచ్ వాలీబాల్ | ఉచిత లైవ్ స్ట్రీమింగ్",
+					"description": "MethStreams లో ఉచితంగా లైవ్ బీచ్ వాలీబాల్ చూడండి. HD నాణ్యత!"
+				},
+				"handball": {
+					"title": "MethStreams హ్యాండ్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ హ్యాండ్‌బాల్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"beach-handball": {
+					"title": "MethStreams బీచ్ హ్యాండ్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్",
+					"description": "MethStreams లో ఉచితంగా లైవ్ బీచ్ హ్యాండ్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"beach-soccer": {
+					"title": "MethStreams బీచ్ సాకర్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ బీచ్ సాకర్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"aussie-rules": {
+					"title": "MethStreams ఆసీ రూల్స్ | ఉచిత లైవ్ AFL స్ట్రీమింగ్",
+					"description": "MethStreams లో ఉచితంగా లైవ్ AFL చూడండి. HD నాణ్యత, వేగవంతమైన లోడింగ్!"
+				},
+				"futsal": {
+					"title": "MethStreams ఫుట్సల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ ఫుట్సల్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"badminton": {
+					"title": "MethStreams బ్యాడ్మింటన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ బ్యాడ్మింటన్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"netball": {
+					"title": "MethStreams నెట్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ నెట్‌బాల్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"floorball": {
+					"title": "MethStreams ఫ్లోర్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ ఫ్లోర్‌బాల్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"combat-sport": {
+					"title": "MethStreams పోరాట క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ పోరాట క్రీడలు చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"boxing": {
+					"title": "MethStreams బాక్సింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ బాక్సింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"mma": {
+					"title": "MethStreams MMA | ఉచిత లైవ్ UFC స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ MMA చూడండి. UFC HD నాణ్యతలో!"
+				},
+				"snooker": {
+					"title": "MethStreams స్నూకర్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ స్నూకర్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"billiard": {
+					"title": "MethStreams బిలియర్డ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ బిలియర్డ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"table-tennis": {
+					"title": "MethStreams టేబుల్ టెన్నిస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ టేబుల్ టెన్నిస్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"padel-tennis": {
+					"title": "MethStreams పాడెల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ పాడెల్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"squash": {
+					"title": "MethStreams స్క్వాష్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ స్క్వాష్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"motorsport": {
+					"title": "MethStreams మోటార్‌స్పోర్ట్ | ఉచిత లైవ్ F1 స్ట్రీమింగ్",
+					"description": "MethStreams లో ఉచితంగా లైవ్ మోటార్‌స్పోర్ట్ చూడండి. F1 HD నాణ్యతలో!"
+				},
+				"racing": {
+					"title": "MethStreams రేసింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ రేసింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"cycling": {
+					"title": "MethStreams సైక్లింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ సైక్లింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"equestrianism": {
+					"title": "MethStreams గుర్రపు స్వారీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ గుర్రపు స్వారీ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"golf": {
+					"title": "MethStreams గోల్ఫ్ | ఉచిత లైవ్ PGA స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ గోల్ఫ్ చూడండి. PGA HD నాణ్యతలో!"
+				},
+				"field-hockey": {
+					"title": "MethStreams ఫీల్డ్ హాకీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ ఫీల్డ్ హాకీ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"lacrosse": {
+					"title": "MethStreams లాక్రోస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ లాక్రోస్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"athletics": {
+					"title": "MethStreams అథ్లెటిక్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ అథ్లెటిక్స్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"gymnastics": {
+					"title": "MethStreams జిమ్నాస్టిక్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ జిమ్నాస్టిక్స్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"weightlifting": {
+					"title": "MethStreams వెయిట్ లిఫ్టింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ వెయిట్ లిఫ్టింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"climbing": {
+					"title": "MethStreams క్లైంబింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ క్లైంబింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"winter-sport": {
+					"title": "MethStreams శీతాకాలపు క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ శీతాకాలపు క్రీడలు చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"bandy": {
+					"title": "MethStreams బాండీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ బాండీ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"curling": {
+					"title": "MethStreams కర్లింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ కర్లింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"triathlon": {
+					"title": "MethStreams ట్రయాథ్లాన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ ట్రయాథ్లాన్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"water-sports": {
+					"title": "MethStreams నీటి క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ నీటి క్రీడలు చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"water-polo": {
+					"title": "MethStreams వాటర్ పోలో | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ వాటర్ పోలో చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"sailing": {
+					"title": "MethStreams సెయిలింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ సెయిలింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"bowling": {
+					"title": "MethStreams బౌలింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ బౌలింగ్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"darts": {
+					"title": "MethStreams డార్ట్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ డార్ట్స్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"chess": {
+					"title": "MethStreams చదరంగం | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ చదరంగం చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"e-sports": {
+					"title": "MethStreams ఇ-స్పోర్ట్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ ఇ-స్పోర్ట్స్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"others": {
+					"title": "MethStreams ఇతరులు | ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ ఇతర క్రీడలు చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"rugby-sevens": {
+					"title": "MethStreams రగ్బీ సెవెన్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ రగ్బీ సెవెన్స్ చూడండి. వేగవంతమైన లోడింగ్!"
+				},
+				"extreme-sport": {
+					"title": "MethStreams ఎక్స్ట్రీమ్ స్పోర్ట్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "MethStreams లో ఉచితంగా లైవ్ ఎక్స్ట్రీమ్ స్పోర్ట్ చూడండి. వేగవంతమైన లోడింగ్!"
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమింగ్ ఆన్‌లైన్",
+				"description": "WiziWig ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమ్‌లను HD నాణ్యతలో అందిస్తుంది. రిజిస్ట్రేషన్ అవసరం లేదు. ఇప్పుడే చూడండి!"
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig ఫుట్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ ఫుట్‌బాల్ చూడండి. HD నాణ్యత, రిజిస్ట్రేషన్ లేదు!"
+				},
+				"basketball": {
+					"title": "WiziWig బాస్కెట్‌బాల్ | ఉచిత లైవ్ NBA స్ట్రీమింగ్",
+					"description": "WiziWig లో ఉచితంగా లైవ్ బాస్కెట్‌బాల్ చూడండి. NBA HD నాణ్యతలో!"
+				},
+				"tennis": {
+					"title": "WiziWig టెన్నిస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ టెన్నిస్ చూడండి. HD నాణ్యత, రిజిస్ట్రేషన్ లేదు!"
+				},
+				"ice-hockey": {
+					"title": "WiziWig ఐస్ హాకీ | ఉచిత లైవ్ NHL స్ట్రీమింగ్",
+					"description": "WiziWig లో ఉచితంగా లైవ్ ఐస్ హాకీ చూడండి. NHL HD నాణ్యతలో!"
+				},
+				"baseball": {
+					"title": "WiziWig బేస్‌బాల్ | ఉచిత లైవ్ MLB స్ట్రీమింగ్",
+					"description": "WiziWig లో ఉచితంగా లైవ్ బేస్‌బాల్ చూడండి. MLB HD నాణ్యతలో!"
+				},
+				"rugby-union": {
+					"title": "WiziWig రగ్బీ యూనియన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ రగ్బీ యూనియన్ చూడండి. HD నాణ్యత!"
+				},
+				"rugby-league": {
+					"title": "WiziWig రగ్బీ లీగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ రగ్బీ లీగ్ చూడండి. HD నాణ్యత!"
+				},
+				"cricket": {
+					"title": "WiziWig క్రికెట్ | ఉచిత లైవ్ IPL స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ క్రికెట్ చూడండి. IPL HD నాణ్యతలో!"
+				},
+				"american-football": {
+					"title": "WiziWig అమెరికన్ ఫుట్‌బాల్ | ఉచిత లైవ్ NFL",
+					"description": "WiziWig లో ఉచితంగా లైవ్ NFL చూడండి. HD నాణ్యత, రిజిస్ట్రేషన్ లేదు!"
+				},
+				"volleyball": {
+					"title": "WiziWig వాలీబాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ వాలీబాల్ చూడండి. HD నాణ్యత!"
+				},
+				"beach-volleyball": {
+					"title": "WiziWig బీచ్ వాలీబాల్ | ఉచిత లైవ్ స్ట్రీమింగ్",
+					"description": "WiziWig లో ఉచితంగా లైవ్ బీచ్ వాలీబాల్ చూడండి. HD నాణ్యత!"
+				},
+				"handball": {
+					"title": "WiziWig హ్యాండ్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ హ్యాండ్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"beach-handball": {
+					"title": "WiziWig బీచ్ హ్యాండ్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్",
+					"description": "WiziWig లో ఉచితంగా లైవ్ బీచ్ హ్యాండ్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"beach-soccer": {
+					"title": "WiziWig బీచ్ సాకర్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ బీచ్ సాకర్ చూడండి. HD నాణ్యత!"
+				},
+				"aussie-rules": {
+					"title": "WiziWig ఆసీ రూల్స్ | ఉచిత లైవ్ AFL స్ట్రీమింగ్",
+					"description": "WiziWig లో ఉచితంగా లైవ్ AFL చూడండి. HD నాణ్యత, రిజిస్ట్రేషన్ లేదు!"
+				},
+				"futsal": {
+					"title": "WiziWig ఫుట్సల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ ఫుట్సల్ చూడండి. HD నాణ్యత!"
+				},
+				"badminton": {
+					"title": "WiziWig బ్యాడ్మింటన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ బ్యాడ్మింటన్ చూడండి. HD నాణ్యత!"
+				},
+				"netball": {
+					"title": "WiziWig నెట్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ నెట్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"floorball": {
+					"title": "WiziWig ఫ్లోర్‌బాల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ ఫ్లోర్‌బాల్ చూడండి. HD నాణ్యత!"
+				},
+				"combat-sport": {
+					"title": "WiziWig పోరాట క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ పోరాట క్రీడలు చూడండి. HD నాణ్యత!"
+				},
+				"boxing": {
+					"title": "WiziWig బాక్సింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ బాక్సింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"mma": {
+					"title": "WiziWig MMA | ఉచిత లైవ్ UFC స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ MMA చూడండి. UFC HD నాణ్యతలో!"
+				},
+				"snooker": {
+					"title": "WiziWig స్నూకర్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ స్నూకర్ చూడండి. HD నాణ్యత!"
+				},
+				"billiard": {
+					"title": "WiziWig బిలియర్డ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ బిలియర్డ్ చూడండి. HD నాణ్యత!"
+				},
+				"table-tennis": {
+					"title": "WiziWig టేబుల్ టెన్నిస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ టేబుల్ టెన్నిస్ చూడండి. HD నాణ్యత!"
+				},
+				"padel-tennis": {
+					"title": "WiziWig పాడెల్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ పాడెల్ చూడండి. HD నాణ్యత!"
+				},
+				"squash": {
+					"title": "WiziWig స్క్వాష్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ స్క్వాష్ చూడండి. HD నాణ్యత!"
+				},
+				"motorsport": {
+					"title": "WiziWig మోటార్‌స్పోర్ట్ | ఉచిత లైవ్ F1 స్ట్రీమింగ్",
+					"description": "WiziWig లో ఉచితంగా లైవ్ మోటార్‌స్పోర్ట్ చూడండి. F1 HD నాణ్యతలో!"
+				},
+				"racing": {
+					"title": "WiziWig రేసింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ రేసింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"cycling": {
+					"title": "WiziWig సైక్లింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ సైక్లింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"equestrianism": {
+					"title": "WiziWig గుర్రపు స్వారీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ గుర్రపు స్వారీ చూడండి. HD నాణ్యత!"
+				},
+				"golf": {
+					"title": "WiziWig గోల్ఫ్ | ఉచిత లైవ్ PGA స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ గోల్ఫ్ చూడండి. PGA HD నాణ్యతలో!"
+				},
+				"field-hockey": {
+					"title": "WiziWig ఫీల్డ్ హాకీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ ఫీల్డ్ హాకీ చూడండి. HD నాణ్యత!"
+				},
+				"lacrosse": {
+					"title": "WiziWig లాక్రోస్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ లాక్రోస్ చూడండి. HD నాణ్యత!"
+				},
+				"athletics": {
+					"title": "WiziWig అథ్లెటిక్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ అథ్లెటిక్స్ చూడండి. HD నాణ్యత!"
+				},
+				"gymnastics": {
+					"title": "WiziWig జిమ్నాస్టిక్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ జిమ్నాస్టిక్స్ చూడండి. HD నాణ్యత!"
+				},
+				"weightlifting": {
+					"title": "WiziWig వెయిట్ లిఫ్టింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ వెయిట్ లిఫ్టింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"climbing": {
+					"title": "WiziWig క్లైంబింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ క్లైంబింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"winter-sport": {
+					"title": "WiziWig శీతాకాలపు క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ శీతాకాలపు క్రీడలు చూడండి. HD నాణ్యత!"
+				},
+				"bandy": {
+					"title": "WiziWig బాండీ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ బాండీ చూడండి. HD నాణ్యత!"
+				},
+				"curling": {
+					"title": "WiziWig కర్లింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ కర్లింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"triathlon": {
+					"title": "WiziWig ట్రయాథ్లాన్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ ట్రయాథ్లాన్ చూడండి. HD నాణ్యత!"
+				},
+				"water-sports": {
+					"title": "WiziWig నీటి క్రీడలు | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ నీటి క్రీడలు చూడండి. HD నాణ్యత!"
+				},
+				"water-polo": {
+					"title": "WiziWig వాటర్ పోలో | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ వాటర్ పోలో చూడండి. HD నాణ్యత!"
+				},
+				"sailing": {
+					"title": "WiziWig సెయిలింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ సెయిలింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"bowling": {
+					"title": "WiziWig బౌలింగ్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ బౌలింగ్ చూడండి. HD నాణ్యత!"
+				},
+				"darts": {
+					"title": "WiziWig డార్ట్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ డార్ట్స్ చూడండి. HD నాణ్యత!"
+				},
+				"chess": {
+					"title": "WiziWig చదరంగం | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ చదరంగం చూడండి. HD నాణ్యత!"
+				},
+				"e-sports": {
+					"title": "WiziWig ఇ-స్పోర్ట్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ ఇ-స్పోర్ట్స్ చూడండి. HD నాణ్యత!"
+				},
+				"others": {
+					"title": "WiziWig ఇతరులు | ఉచిత లైవ్ స్పోర్ట్స్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ ఇతర క్రీడలు చూడండి. HD నాణ్యత!"
+				},
+				"rugby-sevens": {
+					"title": "WiziWig రగ్బీ సెవెన్స్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ రగ్బీ సెవెన్స్ చూడండి. HD నాణ్యత!"
+				},
+				"extreme-sport": {
+					"title": "WiziWig ఎక్స్ట్రీమ్ స్పోర్ట్ | ఉచిత లైవ్ స్ట్రీమింగ్ HD",
+					"description": "WiziWig లో ఉచితంగా లైవ్ ఎక్స్ట్రీమ్ స్పోర్ట్ చూడండి. HD నాణ్యత!"
+				}
+			}
+		}
 	}
 }

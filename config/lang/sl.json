@@ -3,6 +3,7 @@
 		"code": "sl",
 		"name": "Slovenščina",
 		"flag": "SI",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -52,6 +53,7 @@
 		"Baseball": "Baseball",
 		"Rugby Union": "Rugby Union",
 		"Rugby League": "Rugby League",
+		"Rugby Sevens": "Rugby Sevens",
 		"Cricket": "Kriket",
 		"American Football": "Ameriški Nogomet",
 		"Volleyball": "Odbojka",
@@ -64,8 +66,7 @@
 		"Badminton": "Badminton",
 		"Netball": "Netball",
 		"Floorball": "Floorball",
-		"Combat": "Borilne Veščine",
-		"combat sport": "Borilni Športi",
+		"Combat Sport": "Borilni Športi",
 		"Boxing": "Boks",
 		"MMA": "MMA",
 		"Snooker": "Snooker",
@@ -84,7 +85,7 @@
 		"Gymnastics": "Gimnastika",
 		"Weightlifting": "Dvigovanje Uteži",
 		"Climbing": "Plezanje",
-		"winter sport": "Zimski Športi",
+		"Winter Sport": "Zimski Športi",
 		"Bandy": "Bandy",
 		"Curling": "Curling",
 		"Triathlon": "Triatlon",
@@ -95,6 +96,1305 @@
 		"Darts": "Pikado",
 		"Chess": "Šah",
 		"E-sports": "E-šport",
+		"Extreme Sport": "Ekstremni Športi",
 		"Others": "Drugo"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | Športni Prenosi V Živo Brezplačno HD",
+				"description": "SportLemon ponuja športne prenose v živo brezplačno v HD kakovosti. Brez registracije. Glejte zdaj!"
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon Nogomet | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte nogomet v živo brezplačno v HD na SportLemon. Brez registracije, hitro nalaganje!"
+				},
+				"basketball": {
+					"title": "SportLemon Košarka | NBA Prenosi V Živo Brezplačno",
+					"description": "Košarka in NBA prenosi v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"tennis": {
+					"title": "SportLemon Tenis | Grand Slam Prenosi V Živo Brezplačno",
+					"description": "Glejte tenis v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"ice-hockey": {
+					"title": "SportLemon Hokej | NHL Prenosi V Živo Brezplačno HD",
+					"description": "Hokej in NHL prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"baseball": {
+					"title": "SportLemon Baseball | MLB Prenosi V Živo Brezplačno HD",
+					"description": "Baseball in MLB prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"rugby-union": {
+					"title": "SportLemon Rugby Union | Prenosi V Živo Brezplačno HD",
+					"description": "Rugby Union prenosi v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"rugby-league": {
+					"title": "SportLemon Rugby League | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte Rugby League v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"cricket": {
+					"title": "SportLemon Kriket | IPL Prenosi V Živo Brezplačno HD",
+					"description": "Kriket prenosi v živo brezplačno na SportLemon. Hitro nalaganje!"
+				},
+				"american-football": {
+					"title": "SportLemon Ameriški Nogomet | NFL Prenosi V Živo HD",
+					"description": "Glejte NFL v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"volleyball": {
+					"title": "SportLemon Odbojka | Prenosi V Živo Brezplačno HD",
+					"description": "Odbojka prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"beach-volleyball": {
+					"title": "SportLemon Odbojka na Mivki | Prenosi V Živo HD",
+					"description": "Glejte odbojko na mivki v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"handball": {
+					"title": "SportLemon Rokomet | Prenosi V Živo Brezplačno HD",
+					"description": "Rokomet prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"beach-handball": {
+					"title": "SportLemon Rokomet na Mivki | Prenosi V Živo HD",
+					"description": "Glejte rokomet na mivki v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"beach-soccer": {
+					"title": "SportLemon Nogomet na Mivki | Prenosi V Živo HD",
+					"description": "Nogomet na mivki prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"aussie-rules": {
+					"title": "SportLemon Avstralski Nogomet | AFL Prenosi V Živo",
+					"description": "Glejte AFL v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"futsal": {
+					"title": "SportLemon Futsal | Prenosi V Živo Brezplačno HD",
+					"description": "Futsal prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"badminton": {
+					"title": "SportLemon Badminton | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte badminton v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"netball": {
+					"title": "SportLemon Netball | Prenosi V Živo Brezplačno HD",
+					"description": "Netball prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"floorball": {
+					"title": "SportLemon Floorball | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte floorball v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"combat-sport": {
+					"title": "SportLemon Borilni Športi | Prenosi V Živo HD",
+					"description": "Borilni športi prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"boxing": {
+					"title": "SportLemon Boks | Dvoboji Prenosi V Živo Brezplačno HD",
+					"description": "Glejte boks v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"mma": {
+					"title": "SportLemon MMA | UFC Prenosi V Živo Brezplačno HD",
+					"description": "MMA in UFC prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"snooker": {
+					"title": "SportLemon Snooker | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte snooker v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"billiard": {
+					"title": "SportLemon Biljard | Prenosi V Živo Brezplačno HD",
+					"description": "Biljard prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"table-tennis": {
+					"title": "SportLemon Namizni Tenis | Prenosi V Živo HD",
+					"description": "Glejte namizni tenis v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"padel-tennis": {
+					"title": "SportLemon Padel | Prenosi V Živo Brezplačno HD",
+					"description": "Padel prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"squash": {
+					"title": "SportLemon Squash | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte squash v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"motorsport": {
+					"title": "SportLemon Motošport | F1 Prenosi V Živo",
+					"description": "F1 in motošport prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"racing": {
+					"title": "SportLemon Dirke | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte dirke v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"cycling": {
+					"title": "SportLemon Kolesarstvo | Prenosi V Živo Brezplačno HD",
+					"description": "Kolesarstvo prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"equestrianism": {
+					"title": "SportLemon Konjeniški Šport | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte konjeniški šport v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"golf": {
+					"title": "SportLemon Golf | PGA Prenosi V Živo Brezplačno HD",
+					"description": "Golf prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"field-hockey": {
+					"title": "SportLemon Hokej na Travi | Prenosi V Živo HD",
+					"description": "Glejte hokej na travi v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"lacrosse": {
+					"title": "SportLemon Lacrosse | Prenosi V Živo Brezplačno HD",
+					"description": "Lacrosse prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"athletics": {
+					"title": "SportLemon Atletika | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte atletiko v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"gymnastics": {
+					"title": "SportLemon Gimnastika | Prenosi V Živo Brezplačno HD",
+					"description": "Gimnastika prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"weightlifting": {
+					"title": "SportLemon Dvigovanje Uteži | Prenosi V Živo HD",
+					"description": "Glejte dvigovanje uteži v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"climbing": {
+					"title": "SportLemon Plezanje | Prenosi V Živo Brezplačno HD",
+					"description": "Plezanje prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"winter-sport": {
+					"title": "SportLemon Zimski Športi | Prenosi V Živo HD",
+					"description": "Glejte zimske športe v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"bandy": {
+					"title": "SportLemon Bandy | Prenosi V Živo Brezplačno HD",
+					"description": "Bandy prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"curling": {
+					"title": "SportLemon Curling | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte curling v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"triathlon": {
+					"title": "SportLemon Triatlon | Prenosi V Živo Brezplačno HD",
+					"description": "Triatlon prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"water-sports": {
+					"title": "SportLemon Vodni Športi | Prenosi V Živo HD",
+					"description": "Glejte vodne športe v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"water-polo": {
+					"title": "SportLemon Vaterpolo | Prenosi V Živo HD",
+					"description": "Vaterpolo prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"sailing": {
+					"title": "SportLemon Jadranje | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte jadranje v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"bowling": {
+					"title": "SportLemon Kegljanje | Prenosi V Živo Brezplačno HD",
+					"description": "Kegljanje prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"darts": {
+					"title": "SportLemon Pikado | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte pikado v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"chess": {
+					"title": "SportLemon Šah | Prenosi V Živo Brezplačno HD",
+					"description": "Šah prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"e-sports": {
+					"title": "SportLemon E-šport | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte e-šport v živo brezplačno v HD na SportLemon. Brez registracije!"
+				},
+				"others": {
+					"title": "SportLemon Drugo | Športni Prenosi Brezplačno HD",
+					"description": "Razni športi prenosi v živo brezplačno v HD na SportLemon. Hitro nalaganje!"
+				},
+				"rugby-sevens": {
+					"title": "SportLemon Rugby Sevens | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte Rugby Sevens v živo brezplačno v HD na SportLemon. Brez registracije, hitro nalaganje!"
+				},
+				"extreme-sport": {
+					"title": "SportLemon Ekstremni Športi | Prenosi V Živo HD",
+					"description": "Ekstremni športi prenosi v živo brezplačno v HD na SportLemon. Brez registracije, hitro nalaganje!"
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLSite | Športni Prenosi V Živo Brezplačno HD",
+				"description": "EPLSite ponuja športne prenose v živo brezplačno v HD kakovosti. Brez registracije. Glejte zdaj!"
+			},
+			"sports": {
+				"football": {
+					"title": "EPLSite Nogomet | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte nogomet v živo brezplačno v HD na EPLSite. Brez registracije, hitro nalaganje!"
+				},
+				"basketball": {
+					"title": "EPLSite Košarka | NBA Prenosi V Živo Brezplačno",
+					"description": "Košarka in NBA prenosi v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"tennis": {
+					"title": "EPLSite Tenis | Grand Slam Prenosi V Živo Brezplačno",
+					"description": "Glejte tenis v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"ice-hockey": {
+					"title": "EPLSite Hokej | NHL Prenosi V Živo Brezplačno HD",
+					"description": "Hokej in NHL prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"baseball": {
+					"title": "EPLSite Baseball | MLB Prenosi V Živo Brezplačno HD",
+					"description": "Baseball in MLB prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"rugby-union": {
+					"title": "EPLSite Rugby Union | Prenosi V Živo Brezplačno HD",
+					"description": "Rugby Union prenosi v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"rugby-league": {
+					"title": "EPLSite Rugby League | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte Rugby League v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"cricket": {
+					"title": "EPLSite Kriket | IPL Prenosi V Živo Brezplačno HD",
+					"description": "Kriket prenosi v živo brezplačno na EPLSite. Hitro nalaganje!"
+				},
+				"american-football": {
+					"title": "EPLSite Ameriški Nogomet | NFL Prenosi V Živo HD",
+					"description": "Glejte NFL v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"volleyball": {
+					"title": "EPLSite Odbojka | Prenosi V Živo Brezplačno HD",
+					"description": "Odbojka prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"beach-volleyball": {
+					"title": "EPLSite Odbojka na Mivki | Prenosi V Živo HD",
+					"description": "Glejte odbojko na mivki v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"handball": {
+					"title": "EPLSite Rokomet | Prenosi V Živo Brezplačno HD",
+					"description": "Rokomet prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"beach-handball": {
+					"title": "EPLSite Rokomet na Mivki | Prenosi V Živo HD",
+					"description": "Glejte rokomet na mivki v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"beach-soccer": {
+					"title": "EPLSite Nogomet na Mivki | Prenosi V Živo HD",
+					"description": "Nogomet na mivki prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"aussie-rules": {
+					"title": "EPLSite Avstralski Nogomet | AFL Prenosi V Živo",
+					"description": "Glejte AFL v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"futsal": {
+					"title": "EPLSite Futsal | Prenosi V Živo Brezplačno HD",
+					"description": "Futsal prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"badminton": {
+					"title": "EPLSite Badminton | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte badminton v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"netball": {
+					"title": "EPLSite Netball | Prenosi V Živo Brezplačno HD",
+					"description": "Netball prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"floorball": {
+					"title": "EPLSite Floorball | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte floorball v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"combat-sport": {
+					"title": "EPLSite Borilni Športi | Prenosi V Živo HD",
+					"description": "Borilni športi prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"boxing": {
+					"title": "EPLSite Boks | Dvoboji Prenosi V Živo Brezplačno HD",
+					"description": "Glejte boks v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"mma": {
+					"title": "EPLSite MMA | UFC Prenosi V Živo Brezplačno HD",
+					"description": "MMA in UFC prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"snooker": {
+					"title": "EPLSite Snooker | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte snooker v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"billiard": {
+					"title": "EPLSite Biljard | Prenosi V Živo Brezplačno HD",
+					"description": "Biljard prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"table-tennis": {
+					"title": "EPLSite Namizni Tenis | Prenosi V Živo HD",
+					"description": "Glejte namizni tenis v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"padel-tennis": {
+					"title": "EPLSite Padel | Prenosi V Živo Brezplačno HD",
+					"description": "Padel prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"squash": {
+					"title": "EPLSite Squash | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte squash v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"motorsport": {
+					"title": "EPLSite Motošport | F1 Prenosi V Živo",
+					"description": "F1 in motošport prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"racing": {
+					"title": "EPLSite Dirke | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte dirke v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"cycling": {
+					"title": "EPLSite Kolesarstvo | Prenosi V Živo Brezplačno HD",
+					"description": "Kolesarstvo prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"equestrianism": {
+					"title": "EPLSite Konjeniški Šport | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte konjeniški šport v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"golf": {
+					"title": "EPLSite Golf | PGA Prenosi V Živo Brezplačno HD",
+					"description": "Golf prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"field-hockey": {
+					"title": "EPLSite Hokej na Travi | Prenosi V Živo HD",
+					"description": "Glejte hokej na travi v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"lacrosse": {
+					"title": "EPLSite Lacrosse | Prenosi V Živo Brezplačno HD",
+					"description": "Lacrosse prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"athletics": {
+					"title": "EPLSite Atletika | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte atletiko v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"gymnastics": {
+					"title": "EPLSite Gimnastika | Prenosi V Živo Brezplačno HD",
+					"description": "Gimnastika prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"weightlifting": {
+					"title": "EPLSite Dvigovanje Uteži | Prenosi V Živo HD",
+					"description": "Glejte dvigovanje uteži v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"climbing": {
+					"title": "EPLSite Plezanje | Prenosi V Živo Brezplačno HD",
+					"description": "Plezanje prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"winter-sport": {
+					"title": "EPLSite Zimski Športi | Prenosi V Živo HD",
+					"description": "Glejte zimske športe v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"bandy": {
+					"title": "EPLSite Bandy | Prenosi V Živo Brezplačno HD",
+					"description": "Bandy prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"curling": {
+					"title": "EPLSite Curling | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte curling v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"triathlon": {
+					"title": "EPLSite Triatlon | Prenosi V Živo Brezplačno HD",
+					"description": "Triatlon prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"water-sports": {
+					"title": "EPLSite Vodni Športi | Prenosi V Živo HD",
+					"description": "Glejte vodne športe v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"water-polo": {
+					"title": "EPLSite Vaterpolo | Prenosi V Živo HD",
+					"description": "Vaterpolo prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"sailing": {
+					"title": "EPLSite Jadranje | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte jadranje v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"bowling": {
+					"title": "EPLSite Kegljanje | Prenosi V Živo Brezplačno HD",
+					"description": "Kegljanje prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"darts": {
+					"title": "EPLSite Pikado | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte pikado v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"chess": {
+					"title": "EPLSite Šah | Prenosi V Živo Brezplačno HD",
+					"description": "Šah prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"e-sports": {
+					"title": "EPLSite E-šport | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte e-šport v živo brezplačno v HD na EPLSite. Brez registracije!"
+				},
+				"others": {
+					"title": "EPLSite Drugo | Športni Prenosi Brezplačno HD",
+					"description": "Razni športi prenosi v živo brezplačno v HD na EPLSite. Hitro nalaganje!"
+				},
+				"rugby-sevens": {
+					"title": "EPLSite Rugby Sevens | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte Rugby Sevens v živo brezplačno v HD na EPLSite. Brez registracije, hitro nalaganje!"
+				},
+				"extreme-sport": {
+					"title": "EPLSite Ekstremni Športi | Prenosi V Živo HD",
+					"description": "Ekstremni športi prenosi v živo brezplačno v HD na EPLSite. Brez registracije, hitro nalaganje!"
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | Športni Prenosi V Živo Brezplačno Online",
+				"description": "P2P4U ponuja športne prenose v živo brezplačno. Hitro nalaganje, brez registracije. Glejte zdaj!"
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U Nogomet | Prenosi V Živo Brezplačno Online",
+					"description": "Glejte nogomet v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"basketball": {
+					"title": "P2P4U Košarka | NBA Prenosi V Živo Brezplačno",
+					"description": "Košarka in NBA prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"tennis": {
+					"title": "P2P4U Tenis | Grand Slam Prenosi V Živo Brezplačno",
+					"description": "Glejte tenis v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"ice-hockey": {
+					"title": "P2P4U Hokej | NHL Prenosi V Živo Brezplačno",
+					"description": "Hokej in NHL prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"baseball": {
+					"title": "P2P4U Baseball | MLB Prenosi V Živo Brezplačno",
+					"description": "Baseball in MLB prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"rugby-union": {
+					"title": "P2P4U Rugby Union | Prenosi V Živo Brezplačno",
+					"description": "Rugby Union prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"rugby-league": {
+					"title": "P2P4U Rugby League | Prenosi V Živo Brezplačno",
+					"description": "Glejte Rugby League v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"cricket": {
+					"title": "P2P4U Kriket | IPL Prenosi V Živo Brezplačno",
+					"description": "Kriket prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"american-football": {
+					"title": "P2P4U Ameriški Nogomet | NFL Prenosi V Živo",
+					"description": "Glejte NFL v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"volleyball": {
+					"title": "P2P4U Odbojka | Prenosi V Živo Brezplačno Online",
+					"description": "Odbojka prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"beach-volleyball": {
+					"title": "P2P4U Odbojka na Mivki | Prenosi V Živo Brezplačno",
+					"description": "Glejte odbojko na mivki v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"handball": {
+					"title": "P2P4U Rokomet | Prenosi V Živo Brezplačno Online",
+					"description": "Rokomet prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"beach-handball": {
+					"title": "P2P4U Rokomet na Mivki | Prenosi V Živo Brezplačno",
+					"description": "Glejte rokomet na mivki v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"beach-soccer": {
+					"title": "P2P4U Nogomet na Mivki | Prenosi V Živo Brezplačno",
+					"description": "Nogomet na mivki prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"aussie-rules": {
+					"title": "P2P4U Avstralski Nogomet | AFL Prenosi V Živo",
+					"description": "Glejte AFL v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"futsal": {
+					"title": "P2P4U Futsal | Prenosi V Živo Brezplačno Online",
+					"description": "Futsal prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"badminton": {
+					"title": "P2P4U Badminton | Prenosi V Živo Brezplačno Online",
+					"description": "Glejte badminton v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"netball": {
+					"title": "P2P4U Netball | Prenosi V Živo Brezplačno Online",
+					"description": "Netball prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"floorball": {
+					"title": "P2P4U Floorball | Prenosi V Živo Brezplačno Online",
+					"description": "Glejte floorball v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"combat-sport": {
+					"title": "P2P4U Borilni Športi | Prenosi V Živo Brezplačno",
+					"description": "Borilni športi prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"boxing": {
+					"title": "P2P4U Boks | Dvoboji Prenosi V Živo Brezplačno",
+					"description": "Glejte boks v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"mma": {
+					"title": "P2P4U MMA | UFC Prenosi V Živo Brezplačno Online",
+					"description": "MMA in UFC prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"snooker": {
+					"title": "P2P4U Snooker | Prenosi V Živo Brezplačno Online",
+					"description": "Glejte snooker v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"billiard": {
+					"title": "P2P4U Biljard | Prenosi V Živo Brezplačno Online",
+					"description": "Biljard prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"table-tennis": {
+					"title": "P2P4U Namizni Tenis | Prenosi V Živo Brezplačno",
+					"description": "Glejte namizni tenis v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"padel-tennis": {
+					"title": "P2P4U Padel | Prenosi V Živo Brezplačno Online",
+					"description": "Padel prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"squash": {
+					"title": "P2P4U Squash | Prenosi V Živo Brezplačno Online",
+					"description": "Glejte squash v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"motorsport": {
+					"title": "P2P4U Motošport | F1 Prenosi V Živo Brezplačno",
+					"description": "F1 in motošport prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"racing": {
+					"title": "P2P4U Dirke | Prenosi V Živo Brezplačno Online",
+					"description": "Glejte dirke v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"cycling": {
+					"title": "P2P4U Kolesarstvo | Prenosi V Živo Brezplačno Online",
+					"description": "Kolesarstvo prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"equestrianism": {
+					"title": "P2P4U Konjeniški Šport | Prenosi V Živo Brezplačno",
+					"description": "Glejte konjeniški šport v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"golf": {
+					"title": "P2P4U Golf | PGA Prenosi V Živo Brezplačno Online",
+					"description": "Golf prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"field-hockey": {
+					"title": "P2P4U Hokej na Travi | Prenosi V Živo Brezplačno",
+					"description": "Glejte hokej na travi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"lacrosse": {
+					"title": "P2P4U Lacrosse | Prenosi V Živo Brezplačno Online",
+					"description": "Lacrosse prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"athletics": {
+					"title": "P2P4U Atletika | Prenosi V Živo Brezplačno Online",
+					"description": "Glejte atletiko v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"gymnastics": {
+					"title": "P2P4U Gimnastika | Prenosi V Živo Brezplačno Online",
+					"description": "Gimnastika prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"weightlifting": {
+					"title": "P2P4U Dvigovanje Uteži | Prenosi V Živo Brezplačno",
+					"description": "Glejte dvigovanje uteži v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"climbing": {
+					"title": "P2P4U Plezanje | Prenosi V Živo Brezplačno Online",
+					"description": "Plezanje prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"winter-sport": {
+					"title": "P2P4U Zimski Športi | Prenosi V Živo Brezplačno",
+					"description": "Glejte zimske športe v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"bandy": {
+					"title": "P2P4U Bandy | Prenosi V Živo Brezplačno Online",
+					"description": "Bandy prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"curling": {
+					"title": "P2P4U Curling | Prenosi V Živo Brezplačno Online",
+					"description": "Glejte curling v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"triathlon": {
+					"title": "P2P4U Triatlon | Prenosi V Živo Brezplačno Online",
+					"description": "Triatlon prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"water-sports": {
+					"title": "P2P4U Vodni Športi | Prenosi V Živo Brezplačno",
+					"description": "Glejte vodne športe v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"water-polo": {
+					"title": "P2P4U Vaterpolo | Prenosi V Živo Brezplačno",
+					"description": "Vaterpolo prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"sailing": {
+					"title": "P2P4U Jadranje | Prenosi V Živo Brezplačno Online",
+					"description": "Glejte jadranje v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"bowling": {
+					"title": "P2P4U Kegljanje | Prenosi V Živo Brezplačno Online",
+					"description": "Kegljanje prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"darts": {
+					"title": "P2P4U Pikado | Prenosi V Živo Brezplačno Online",
+					"description": "Glejte pikado v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"chess": {
+					"title": "P2P4U Šah | Prenosi V Živo Brezplačno Online",
+					"description": "Šah prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"e-sports": {
+					"title": "P2P4U E-šport | Prenosi V Živo Brezplačno Online",
+					"description": "Glejte e-šport v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"others": {
+					"title": "P2P4U Drugo | Športni Prenosi Brezplačno",
+					"description": "Razni športi prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"rugby-sevens": {
+					"title": "P2P4U Rugby Sevens | Prenosi V Živo Brezplačno",
+					"description": "Glejte Rugby Sevens v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				},
+				"extreme-sport": {
+					"title": "P2P4U Ekstremni Športi | Prenosi V Živo Brezplačno",
+					"description": "Ekstremni športi prenosi v živo brezplačno na P2P4U. Hitro nalaganje, brez registracije!"
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | Športni Prenosi V Živo Brezplačno HD",
+				"description": "StreamHunter ponuja športne prenose v živo brezplačno v HD kakovosti. Zanesljive povezave, brez registracije!"
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter Nogomet | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte nogomet v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"basketball": {
+					"title": "StreamHunter Košarka | NBA Prenosi V Živo Brezplačno",
+					"description": "Košarka in NBA prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"tennis": {
+					"title": "StreamHunter Tenis | Grand Slam Prenosi V Živo HD",
+					"description": "Glejte tenis v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"ice-hockey": {
+					"title": "StreamHunter Hokej | NHL Prenosi V Živo Brezplačno HD",
+					"description": "Hokej in NHL prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"baseball": {
+					"title": "StreamHunter Baseball | MLB Prenosi V Živo Brezplačno HD",
+					"description": "Baseball in MLB prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"rugby-union": {
+					"title": "StreamHunter Rugby Union | Prenosi V Živo Brezplačno HD",
+					"description": "Rugby Union prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"rugby-league": {
+					"title": "StreamHunter Rugby League | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte Rugby League v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"cricket": {
+					"title": "StreamHunter Kriket | IPL Prenosi V Živo Brezplačno HD",
+					"description": "Kriket prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"american-football": {
+					"title": "StreamHunter Ameriški Nogomet | NFL Prenosi V Živo HD",
+					"description": "Glejte NFL v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"volleyball": {
+					"title": "StreamHunter Odbojka | Prenosi V Živo Brezplačno HD",
+					"description": "Odbojka prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter Odbojka na Mivki | Prenosi V Živo HD",
+					"description": "Glejte odbojko na mivki v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"handball": {
+					"title": "StreamHunter Rokomet | Prenosi V Živo Brezplačno HD",
+					"description": "Rokomet prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"beach-handball": {
+					"title": "StreamHunter Rokomet na Mivki | Prenosi V Živo HD",
+					"description": "Glejte rokomet na mivki v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"beach-soccer": {
+					"title": "StreamHunter Nogomet na Mivki | Prenosi V Živo HD",
+					"description": "Nogomet na mivki prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"aussie-rules": {
+					"title": "StreamHunter Avstralski Nogomet | AFL Prenosi V Živo",
+					"description": "Glejte AFL v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"futsal": {
+					"title": "StreamHunter Futsal | Prenosi V Živo Brezplačno HD",
+					"description": "Futsal prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"badminton": {
+					"title": "StreamHunter Badminton | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte badminton v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"netball": {
+					"title": "StreamHunter Netball | Prenosi V Živo Brezplačno HD",
+					"description": "Netball prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"floorball": {
+					"title": "StreamHunter Floorball | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte floorball v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"combat-sport": {
+					"title": "StreamHunter Borilni Športi | Prenosi V Živo HD",
+					"description": "Borilni športi prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"boxing": {
+					"title": "StreamHunter Boks | Dvoboji Prenosi V Živo Brezplačno HD",
+					"description": "Glejte boks v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"mma": {
+					"title": "StreamHunter MMA | UFC Prenosi V Živo Brezplačno HD",
+					"description": "MMA in UFC prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"snooker": {
+					"title": "StreamHunter Snooker | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte snooker v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"billiard": {
+					"title": "StreamHunter Biljard | Prenosi V Živo Brezplačno HD",
+					"description": "Biljard prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"table-tennis": {
+					"title": "StreamHunter Namizni Tenis | Prenosi V Živo HD",
+					"description": "Glejte namizni tenis v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"padel-tennis": {
+					"title": "StreamHunter Padel | Prenosi V Živo Brezplačno HD",
+					"description": "Padel prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"squash": {
+					"title": "StreamHunter Squash | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte squash v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"motorsport": {
+					"title": "StreamHunter Motošport | F1 Prenosi V Živo HD",
+					"description": "F1 in motošport prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"racing": {
+					"title": "StreamHunter Dirke | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte dirke v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"cycling": {
+					"title": "StreamHunter Kolesarstvo | Prenosi V Živo Brezplačno HD",
+					"description": "Kolesarstvo prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"equestrianism": {
+					"title": "StreamHunter Konjeniški Šport | Prenosi V Živo HD",
+					"description": "Glejte konjeniški šport v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"golf": {
+					"title": "StreamHunter Golf | PGA Prenosi V Živo Brezplačno HD",
+					"description": "Golf prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"field-hockey": {
+					"title": "StreamHunter Hokej na Travi | Prenosi V Živo HD",
+					"description": "Glejte hokej na travi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"lacrosse": {
+					"title": "StreamHunter Lacrosse | Prenosi V Živo Brezplačno HD",
+					"description": "Lacrosse prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"athletics": {
+					"title": "StreamHunter Atletika | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte atletiko v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"gymnastics": {
+					"title": "StreamHunter Gimnastika | Prenosi V Živo Brezplačno HD",
+					"description": "Gimnastika prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"weightlifting": {
+					"title": "StreamHunter Dvigovanje Uteži | Prenosi V Živo HD",
+					"description": "Glejte dvigovanje uteži v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"climbing": {
+					"title": "StreamHunter Plezanje | Prenosi V Živo Brezplačno HD",
+					"description": "Plezanje prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"winter-sport": {
+					"title": "StreamHunter Zimski Športi | Prenosi V Živo HD",
+					"description": "Glejte zimske športe v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"bandy": {
+					"title": "StreamHunter Bandy | Prenosi V Živo Brezplačno HD",
+					"description": "Bandy prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"curling": {
+					"title": "StreamHunter Curling | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte curling v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"triathlon": {
+					"title": "StreamHunter Triatlon | Prenosi V Živo Brezplačno HD",
+					"description": "Triatlon prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"water-sports": {
+					"title": "StreamHunter Vodni Športi | Prenosi V Živo HD",
+					"description": "Glejte vodne športe v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"water-polo": {
+					"title": "StreamHunter Vaterpolo | Prenosi V Živo HD",
+					"description": "Vaterpolo prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"sailing": {
+					"title": "StreamHunter Jadranje | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte jadranje v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"bowling": {
+					"title": "StreamHunter Kegljanje | Prenosi V Živo Brezplačno HD",
+					"description": "Kegljanje prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"darts": {
+					"title": "StreamHunter Pikado | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte pikado v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"chess": {
+					"title": "StreamHunter Šah | Prenosi V Živo Brezplačno HD",
+					"description": "Šah prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"e-sports": {
+					"title": "StreamHunter E-šport | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte e-šport v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"others": {
+					"title": "StreamHunter Drugo | Športni Prenosi Brezplačno HD",
+					"description": "Razni športi prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter Rugby Sevens | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte Rugby Sevens v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				},
+				"extreme-sport": {
+					"title": "StreamHunter Ekstremni Športi | Prenosi V Živo HD",
+					"description": "Ekstremni športi prenosi v živo brezplačno v HD na StreamHunter. Zanesljive povezave!"
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | Športni Prenosi V Živo Brezplačno HD",
+				"description": "MethStreams ponuja športne prenose v živo brezplačno v HD kakovosti. Glejte zdaj brez registracije!"
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams Nogomet | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte nogomet v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"basketball": {
+					"title": "MethStreams Košarka | NBA Prenosi V Živo Brezplačno",
+					"description": "Košarka in NBA prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"tennis": {
+					"title": "MethStreams Tenis | Grand Slam Prenosi V Živo HD",
+					"description": "Glejte tenis v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"ice-hockey": {
+					"title": "MethStreams Hokej | NHL Prenosi V Živo Brezplačno HD",
+					"description": "Hokej in NHL prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"baseball": {
+					"title": "MethStreams Baseball | MLB Prenosi V Živo Brezplačno HD",
+					"description": "Baseball in MLB prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"rugby-union": {
+					"title": "MethStreams Rugby Union | Prenosi V Živo Brezplačno HD",
+					"description": "Rugby Union prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"rugby-league": {
+					"title": "MethStreams Rugby League | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte Rugby League v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"cricket": {
+					"title": "MethStreams Kriket | IPL Prenosi V Živo Brezplačno HD",
+					"description": "Kriket prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"american-football": {
+					"title": "MethStreams Ameriški Nogomet | NFL Prenosi V Živo HD",
+					"description": "Glejte NFL v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"volleyball": {
+					"title": "MethStreams Odbojka | Prenosi V Živo Brezplačno HD",
+					"description": "Odbojka prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"beach-volleyball": {
+					"title": "MethStreams Odbojka na Mivki | Prenosi V Živo HD",
+					"description": "Glejte odbojko na mivki v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"handball": {
+					"title": "MethStreams Rokomet | Prenosi V Živo Brezplačno HD",
+					"description": "Rokomet prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"beach-handball": {
+					"title": "MethStreams Rokomet na Mivki | Prenosi V Živo HD",
+					"description": "Glejte rokomet na mivki v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"beach-soccer": {
+					"title": "MethStreams Nogomet na Mivki | Prenosi V Živo HD",
+					"description": "Nogomet na mivki prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"aussie-rules": {
+					"title": "MethStreams Avstralski Nogomet | AFL Prenosi V Živo",
+					"description": "Glejte AFL v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"futsal": {
+					"title": "MethStreams Futsal | Prenosi V Živo Brezplačno HD",
+					"description": "Futsal prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"badminton": {
+					"title": "MethStreams Badminton | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte badminton v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"netball": {
+					"title": "MethStreams Netball | Prenosi V Živo Brezplačno HD",
+					"description": "Netball prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"floorball": {
+					"title": "MethStreams Floorball | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte floorball v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"combat-sport": {
+					"title": "MethStreams Borilni Športi | Prenosi V Živo HD",
+					"description": "Borilni športi prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"boxing": {
+					"title": "MethStreams Boks | Dvoboji Prenosi V Živo Brezplačno HD",
+					"description": "Glejte boks v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"mma": {
+					"title": "MethStreams MMA | UFC Prenosi V Živo Brezplačno HD",
+					"description": "MMA in UFC prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"snooker": {
+					"title": "MethStreams Snooker | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte snooker v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"billiard": {
+					"title": "MethStreams Biljard | Prenosi V Živo Brezplačno HD",
+					"description": "Biljard prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"table-tennis": {
+					"title": "MethStreams Namizni Tenis | Prenosi V Živo HD",
+					"description": "Glejte namizni tenis v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"padel-tennis": {
+					"title": "MethStreams Padel | Prenosi V Živo Brezplačno HD",
+					"description": "Padel prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"squash": {
+					"title": "MethStreams Squash | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte squash v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"motorsport": {
+					"title": "MethStreams Motošport | F1 Prenosi V Živo HD",
+					"description": "F1 in motošport prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"racing": {
+					"title": "MethStreams Dirke | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte dirke v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"cycling": {
+					"title": "MethStreams Kolesarstvo | Prenosi V Živo Brezplačno HD",
+					"description": "Kolesarstvo prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"equestrianism": {
+					"title": "MethStreams Konjeniški Šport | Prenosi V Živo HD",
+					"description": "Glejte konjeniški šport v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"golf": {
+					"title": "MethStreams Golf | PGA Prenosi V Živo Brezplačno HD",
+					"description": "Golf prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"field-hockey": {
+					"title": "MethStreams Hokej na Travi | Prenosi V Živo HD",
+					"description": "Glejte hokej na travi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"lacrosse": {
+					"title": "MethStreams Lacrosse | Prenosi V Živo Brezplačno HD",
+					"description": "Lacrosse prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"athletics": {
+					"title": "MethStreams Atletika | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte atletiko v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"gymnastics": {
+					"title": "MethStreams Gimnastika | Prenosi V Živo Brezplačno HD",
+					"description": "Gimnastika prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"weightlifting": {
+					"title": "MethStreams Dvigovanje Uteži | Prenosi V Živo HD",
+					"description": "Glejte dvigovanje uteži v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"climbing": {
+					"title": "MethStreams Plezanje | Prenosi V Živo Brezplačno HD",
+					"description": "Plezanje prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"winter-sport": {
+					"title": "MethStreams Zimski Športi | Prenosi V Živo HD",
+					"description": "Glejte zimske športe v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"bandy": {
+					"title": "MethStreams Bandy | Prenosi V Živo Brezplačno HD",
+					"description": "Bandy prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"curling": {
+					"title": "MethStreams Curling | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte curling v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"triathlon": {
+					"title": "MethStreams Triatlon | Prenosi V Živo Brezplačno HD",
+					"description": "Triatlon prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"water-sports": {
+					"title": "MethStreams Vodni Športi | Prenosi V Živo HD",
+					"description": "Glejte vodne športe v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"water-polo": {
+					"title": "MethStreams Vaterpolo | Prenosi V Živo HD",
+					"description": "Vaterpolo prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"sailing": {
+					"title": "MethStreams Jadranje | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte jadranje v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"bowling": {
+					"title": "MethStreams Kegljanje | Prenosi V Živo Brezplačno HD",
+					"description": "Kegljanje prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"darts": {
+					"title": "MethStreams Pikado | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte pikado v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"chess": {
+					"title": "MethStreams Šah | Prenosi V Živo Brezplačno HD",
+					"description": "Šah prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"e-sports": {
+					"title": "MethStreams E-šport | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte e-šport v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"others": {
+					"title": "MethStreams Drugo | Športni Prenosi Brezplačno HD",
+					"description": "Razni športi prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"rugby-sevens": {
+					"title": "MethStreams Rugby Sevens | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte Rugby Sevens v živo brezplačno v HD na MethStreams. Brez registracije!"
+				},
+				"extreme-sport": {
+					"title": "MethStreams Ekstremni Športi | Prenosi V Živo HD",
+					"description": "Ekstremni športi prenosi v živo brezplačno v HD na MethStreams. Brez registracije!"
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | Športni Prenosi V Živo Brezplačno HD",
+				"description": "WiziWig ponuja športne prenose v živo brezplačno v HD kakovosti. Hitro nalaganje, brez registracije!"
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig Nogomet | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte nogomet v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"basketball": {
+					"title": "WiziWig Košarka | NBA Prenosi V Živo Brezplačno",
+					"description": "Košarka in NBA prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"tennis": {
+					"title": "WiziWig Tenis | Grand Slam Prenosi V Živo HD",
+					"description": "Glejte tenis v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"ice-hockey": {
+					"title": "WiziWig Hokej | NHL Prenosi V Živo Brezplačno HD",
+					"description": "Hokej in NHL prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"baseball": {
+					"title": "WiziWig Baseball | MLB Prenosi V Živo Brezplačno HD",
+					"description": "Baseball in MLB prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"rugby-union": {
+					"title": "WiziWig Rugby Union | Prenosi V Živo Brezplačno HD",
+					"description": "Rugby Union prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"rugby-league": {
+					"title": "WiziWig Rugby League | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte Rugby League v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"cricket": {
+					"title": "WiziWig Kriket | IPL Prenosi V Živo Brezplačno HD",
+					"description": "Kriket prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"american-football": {
+					"title": "WiziWig Ameriški Nogomet | NFL Prenosi V Živo HD",
+					"description": "Glejte NFL v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"volleyball": {
+					"title": "WiziWig Odbojka | Prenosi V Živo Brezplačno HD",
+					"description": "Odbojka prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"beach-volleyball": {
+					"title": "WiziWig Odbojka na Mivki | Prenosi V Živo HD",
+					"description": "Glejte odbojko na mivki v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"handball": {
+					"title": "WiziWig Rokomet | Prenosi V Živo Brezplačno HD",
+					"description": "Rokomet prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"beach-handball": {
+					"title": "WiziWig Rokomet na Mivki | Prenosi V Živo HD",
+					"description": "Glejte rokomet na mivki v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"beach-soccer": {
+					"title": "WiziWig Nogomet na Mivki | Prenosi V Živo HD",
+					"description": "Nogomet na mivki prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"aussie-rules": {
+					"title": "WiziWig Avstralski Nogomet | AFL Prenosi V Živo",
+					"description": "Glejte AFL v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"futsal": {
+					"title": "WiziWig Futsal | Prenosi V Živo Brezplačno HD",
+					"description": "Futsal prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"badminton": {
+					"title": "WiziWig Badminton | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte badminton v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"netball": {
+					"title": "WiziWig Netball | Prenosi V Živo Brezplačno HD",
+					"description": "Netball prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"floorball": {
+					"title": "WiziWig Floorball | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte floorball v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"combat-sport": {
+					"title": "WiziWig Borilni Športi | Prenosi V Živo HD",
+					"description": "Borilni športi prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"boxing": {
+					"title": "WiziWig Boks | Dvoboji Prenosi V Živo Brezplačno HD",
+					"description": "Glejte boks v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"mma": {
+					"title": "WiziWig MMA | UFC Prenosi V Živo Brezplačno HD",
+					"description": "MMA in UFC prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"snooker": {
+					"title": "WiziWig Snooker | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte snooker v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"billiard": {
+					"title": "WiziWig Biljard | Prenosi V Živo Brezplačno HD",
+					"description": "Biljard prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"table-tennis": {
+					"title": "WiziWig Namizni Tenis | Prenosi V Živo HD",
+					"description": "Glejte namizni tenis v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"padel-tennis": {
+					"title": "WiziWig Padel | Prenosi V Živo Brezplačno HD",
+					"description": "Padel prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"squash": {
+					"title": "WiziWig Squash | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte squash v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"motorsport": {
+					"title": "WiziWig Motošport | F1 Prenosi V Živo HD",
+					"description": "F1 in motošport prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"racing": {
+					"title": "WiziWig Dirke | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte dirke v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"cycling": {
+					"title": "WiziWig Kolesarstvo | Prenosi V Živo Brezplačno HD",
+					"description": "Kolesarstvo prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"equestrianism": {
+					"title": "WiziWig Konjeniški Šport | Prenosi V Živo HD",
+					"description": "Glejte konjeniški šport v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"golf": {
+					"title": "WiziWig Golf | PGA Prenosi V Živo Brezplačno HD",
+					"description": "Golf prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"field-hockey": {
+					"title": "WiziWig Hokej na Travi | Prenosi V Živo HD",
+					"description": "Glejte hokej na travi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"lacrosse": {
+					"title": "WiziWig Lacrosse | Prenosi V Živo Brezplačno HD",
+					"description": "Lacrosse prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"athletics": {
+					"title": "WiziWig Atletika | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte atletiko v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"gymnastics": {
+					"title": "WiziWig Gimnastika | Prenosi V Živo Brezplačno HD",
+					"description": "Gimnastika prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"weightlifting": {
+					"title": "WiziWig Dvigovanje Uteži | Prenosi V Živo HD",
+					"description": "Glejte dvigovanje uteži v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"climbing": {
+					"title": "WiziWig Plezanje | Prenosi V Živo Brezplačno HD",
+					"description": "Plezanje prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"winter-sport": {
+					"title": "WiziWig Zimski Športi | Prenosi V Živo HD",
+					"description": "Glejte zimske športe v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"bandy": {
+					"title": "WiziWig Bandy | Prenosi V Živo Brezplačno HD",
+					"description": "Bandy prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"curling": {
+					"title": "WiziWig Curling | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte curling v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"triathlon": {
+					"title": "WiziWig Triatlon | Prenosi V Živo Brezplačno HD",
+					"description": "Triatlon prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"water-sports": {
+					"title": "WiziWig Vodni Športi | Prenosi V Živo HD",
+					"description": "Glejte vodne športe v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"water-polo": {
+					"title": "WiziWig Vaterpolo | Prenosi V Živo HD",
+					"description": "Vaterpolo prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"sailing": {
+					"title": "WiziWig Jadranje | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte jadranje v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"bowling": {
+					"title": "WiziWig Kegljanje | Prenosi V Živo Brezplačno HD",
+					"description": "Kegljanje prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"darts": {
+					"title": "WiziWig Pikado | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte pikado v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"chess": {
+					"title": "WiziWig Šah | Prenosi V Živo Brezplačno HD",
+					"description": "Šah prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"e-sports": {
+					"title": "WiziWig E-šport | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte e-šport v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"others": {
+					"title": "WiziWig Drugo | Športni Prenosi Brezplačno HD",
+					"description": "Razni športi prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"rugby-sevens": {
+					"title": "WiziWig Rugby Sevens | Prenosi V Živo Brezplačno HD",
+					"description": "Glejte Rugby Sevens v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				},
+				"extreme-sport": {
+					"title": "WiziWig Ekstremni Športi | Prenosi V Živo HD",
+					"description": "Ekstremni športi prenosi v živo brezplačno v HD na WiziWig. Hitro nalaganje!"
+				}
+			}
+		}
 	}
 }

@@ -3,6 +3,7 @@
 		"code": "ta",
 		"name": "தமிழ்",
 		"flag": "IN",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -64,8 +65,7 @@
 		"Badminton": "பேட்மிண்டன்",
 		"Netball": "நெட்பால்",
 		"Floorball": "ஃப்ளோர்பால்",
-		"Combat": "சண்டை",
-		"combat sport": "சண்டை விளையாட்டுகள்",
+		"Combat Sport": "சண்டை விளையாட்டு",
 		"Boxing": "குத்துச்சண்டை",
 		"MMA": "எம்எம்ஏ",
 		"Snooker": "ஸ்நூக்கர்",
@@ -84,7 +84,7 @@
 		"Gymnastics": "உடற்பயிற்சி",
 		"Weightlifting": "பளுதூக்குதல்",
 		"Climbing": "ஏறுதல்",
-		"winter sport": "குளிர்கால விளையாட்டுகள்",
+		"Winter Sport": "குளிர்கால விளையாட்டு",
 		"Bandy": "பாண்டி",
 		"Curling": "கர்லிங்",
 		"Triathlon": "ட்ரையத்லான்",
@@ -95,6 +95,1306 @@
 		"Darts": "டார்ட்ஸ்",
 		"Chess": "சதுரங்கம்",
 		"E-sports": "மின் விளையாட்டுகள்",
-		"Others": "மற்றவை"
+		"Others": "மற்றவை",
+		"Rugby Sevens": "ரக்பி செவன்ஸ்",
+		"Extreme Sport": "தீவிர விளையாட்டு"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemons | இலவச நேரடி விளையாட்டு ஸ்ட்ரீமிங் ஆன்லைன்",
+				"description": "SportLemons இலவச நேரடி விளையாட்டு ஸ்ட்ரீம்களை HD தரத்தில் வழங்குகிறது. பதிவு தேவையில்லை. இப்போதே பாருங்கள்!"
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemons கால்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி கால்பந்து பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"basketball": {
+					"title": "SportLemons கூடைப்பந்து | இலவச நேரடி NBA ஸ்ட்ரீமிங்",
+					"description": "SportLemons இல் இலவசமாக நேரடி கூடைப்பந்து பாருங்கள். NBA HD தரத்தில்!"
+				},
+				"tennis": {
+					"title": "SportLemons டென்னிஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி டென்னிஸ் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"ice-hockey": {
+					"title": "SportLemons ஐஸ் ஹாக்கி | இலவச நேரடி NHL ஸ்ட்ரீமிங்",
+					"description": "SportLemons இல் இலவசமாக நேரடி ஐஸ் ஹாக்கி பாருங்கள். NHL HD தரத்தில்!"
+				},
+				"baseball": {
+					"title": "SportLemons பேஸ்பால் | இலவச நேரடி MLB ஸ்ட்ரீமிங்",
+					"description": "SportLemons இல் இலவசமாக நேரடி பேஸ்பால் பாருங்கள். MLB HD தரத்தில்!"
+				},
+				"rugby-union": {
+					"title": "SportLemons ரக்பி யூனியன் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி ரக்பி யூனியன் பாருங்கள். HD தரம்!"
+				},
+				"rugby-league": {
+					"title": "SportLemons ரக்பி லீக் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி ரக்பி லீக் பாருங்கள். HD தரம்!"
+				},
+				"cricket": {
+					"title": "SportLemons கிரிக்கெட் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி கிரிக்கெட் பாருங்கள். IPL HD தரத்தில்!"
+				},
+				"american-football": {
+					"title": "SportLemons அமெரிக்க கால்பந்து | இலவச நேரடி NFL",
+					"description": "SportLemons இல் இலவசமாக நேரடி NFL பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"volleyball": {
+					"title": "SportLemons கைப்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி கைப்பந்து பாருங்கள். HD தரம்!"
+				},
+				"beach-volleyball": {
+					"title": "SportLemons கடற்கரை கைப்பந்து | இலவச நேரடி ஸ்ட்ரீமிங்",
+					"description": "SportLemons இல் இலவசமாக நேரடி கடற்கரை கைப்பந்து பாருங்கள். HD தரம்!"
+				},
+				"handball": {
+					"title": "SportLemons கைப்பந்தாட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி கைப்பந்தாட்டம் பாருங்கள். HD தரம்!"
+				},
+				"beach-handball": {
+					"title": "SportLemons கடற்கரை கைப்பந்தாட்டம் | இலவச நேரடி ஸ்ட்ரீமிங்",
+					"description": "SportLemons இல் இலவசமாக நேரடி கடற்கரை கைப்பந்தாட்டம் பாருங்கள். HD தரம்!"
+				},
+				"beach-soccer": {
+					"title": "SportLemons கடற்கரை கால்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி கடற்கரை கால்பந்து பாருங்கள். HD தரம்!"
+				},
+				"aussie-rules": {
+					"title": "SportLemons ஆஸி ரூல்ஸ் | இலவச நேரடி AFL ஸ்ட்ரீமிங்",
+					"description": "SportLemons இல் இலவசமாக நேரடி AFL பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"futsal": {
+					"title": "SportLemons புட்சால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி புட்சால் பாருங்கள். HD தரம்!"
+				},
+				"badminton": {
+					"title": "SportLemons பேட்மிண்டன் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி பேட்மிண்டன் பாருங்கள். HD தரம்!"
+				},
+				"netball": {
+					"title": "SportLemons நெட்பால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி நெட்பால் பாருங்கள். HD தரம்!"
+				},
+				"floorball": {
+					"title": "SportLemons ஃப்ளோர்பால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி ஃப்ளோர்பால் பாருங்கள். HD தரம்!"
+				},
+				"combat-sport": {
+					"title": "SportLemons சண்டை விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி சண்டை விளையாட்டு பாருங்கள். HD தரம்!"
+				},
+				"boxing": {
+					"title": "SportLemons குத்துச்சண்டை | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி குத்துச்சண்டை பாருங்கள். HD தரம்!"
+				},
+				"mma": {
+					"title": "SportLemons MMA | இலவச நேரடி UFC ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி MMA பாருங்கள். UFC HD தரத்தில்!"
+				},
+				"snooker": {
+					"title": "SportLemons ஸ்நூக்கர் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி ஸ்நூக்கர் பாருங்கள். HD தரம்!"
+				},
+				"billiard": {
+					"title": "SportLemons பில்லியர்ட் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி பில்லியர்ட் பாருங்கள். HD தரம்!"
+				},
+				"table-tennis": {
+					"title": "SportLemons மேசை டென்னிஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி மேசை டென்னிஸ் பாருங்கள். HD தரம்!"
+				},
+				"padel-tennis": {
+					"title": "SportLemons பேடல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி பேடல் பாருங்கள். HD தரம்!"
+				},
+				"squash": {
+					"title": "SportLemons ஸ்குவாஷ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி ஸ்குவாஷ் பாருங்கள். HD தரம்!"
+				},
+				"motorsport": {
+					"title": "SportLemons மோட்டார் விளையாட்டு | இலவச நேரடி F1 ஸ்ட்ரீமிங்",
+					"description": "SportLemons இல் இலவசமாக நேரடி மோட்டார் விளையாட்டு பாருங்கள். F1 HD தரத்தில்!"
+				},
+				"racing": {
+					"title": "SportLemons பந்தயம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி பந்தயம் பாருங்கள். HD தரம்!"
+				},
+				"cycling": {
+					"title": "SportLemons சைக்கிள் ஓட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி சைக்கிள் ஓட்டம் பாருங்கள். HD தரம்!"
+				},
+				"equestrianism": {
+					"title": "SportLemons குதிரையேற்றம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி குதிரையேற்றம் பாருங்கள். HD தரம்!"
+				},
+				"golf": {
+					"title": "SportLemons கோல்ஃப் | இலவச நேரடி PGA ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி கோல்ஃப் பாருங்கள். PGA HD தரத்தில்!"
+				},
+				"field-hockey": {
+					"title": "SportLemons ஃபீல்ட் ஹாக்கி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி ஃபீல்ட் ஹாக்கி பாருங்கள். HD தரம்!"
+				},
+				"lacrosse": {
+					"title": "SportLemons லக்ரோஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி லக்ரோஸ் பாருங்கள். HD தரம்!"
+				},
+				"athletics": {
+					"title": "SportLemons தடகளம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி தடகளம் பாருங்கள். HD தரம்!"
+				},
+				"gymnastics": {
+					"title": "SportLemons உடற்பயிற்சி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி உடற்பயிற்சி பாருங்கள். HD தரம்!"
+				},
+				"weightlifting": {
+					"title": "SportLemons பளுதூக்குதல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி பளுதூக்குதல் பாருங்கள். HD தரம்!"
+				},
+				"climbing": {
+					"title": "SportLemons ஏறுதல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி ஏறுதல் பாருங்கள். HD தரம்!"
+				},
+				"winter-sport": {
+					"title": "SportLemons குளிர்கால விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி குளிர்கால விளையாட்டு பாருங்கள். HD தரம்!"
+				},
+				"bandy": {
+					"title": "SportLemons பாண்டி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி பாண்டி பாருங்கள். HD தரம்!"
+				},
+				"curling": {
+					"title": "SportLemons கர்லிங் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி கர்லிங் பாருங்கள். HD தரம்!"
+				},
+				"triathlon": {
+					"title": "SportLemons ட்ரையத்லான் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி ட்ரையத்லான் பாருங்கள். HD தரம்!"
+				},
+				"water-sports": {
+					"title": "SportLemons நீர் விளையாட்டுகள் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி நீர் விளையாட்டுகள் பாருங்கள். HD தரம்!"
+				},
+				"water-polo": {
+					"title": "SportLemons வாட்டர் போலோ | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி வாட்டர் போலோ பாருங்கள். HD தரம்!"
+				},
+				"sailing": {
+					"title": "SportLemons படகோட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி படகோட்டம் பாருங்கள். HD தரம்!"
+				},
+				"bowling": {
+					"title": "SportLemons பௌலிங் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி பௌலிங் பாருங்கள். HD தரம்!"
+				},
+				"darts": {
+					"title": "SportLemons டார்ட்ஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி டார்ட்ஸ் பாருங்கள். HD தரம்!"
+				},
+				"chess": {
+					"title": "SportLemons சதுரங்கம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி சதுரங்கம் பாருங்கள். HD தரம்!"
+				},
+				"e-sports": {
+					"title": "SportLemons மின் விளையாட்டுகள் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி மின் விளையாட்டுகள் பாருங்கள். HD தரம்!"
+				},
+				"others": {
+					"title": "SportLemons மற்றவை | இலவச நேரடி விளையாட்டு ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி பிற விளையாட்டுகள் பாருங்கள். HD தரம்!"
+				},
+				"rugby-sevens": {
+					"title": "SportLemons ரக்பி செவன்ஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி ரக்பி செவன்ஸ் பாருங்கள். HD தரம்!"
+				},
+				"extreme-sport": {
+					"title": "SportLemons தீவிர விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "SportLemons இல் இலவசமாக நேரடி தீவிர விளையாட்டு பாருங்கள். HD தரம்!"
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLsite | இலவச நேரடி விளையாட்டு ஸ்ட்ரீமிங் ஆன்லைன்",
+				"description": "EPLsite இலவச நேரடி விளையாட்டு ஸ்ட்ரீம்களை HD தரத்தில் வழங்குகிறது. பதிவு தேவையில்லை. இப்போதே பாருங்கள்!"
+			},
+			"sports": {
+				"football": {
+					"title": "EPLsite கால்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி கால்பந்து பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"basketball": {
+					"title": "EPLsite கூடைப்பந்து | இலவச நேரடி NBA ஸ்ட்ரீமிங்",
+					"description": "EPLsite இல் இலவசமாக நேரடி கூடைப்பந்து பாருங்கள். NBA HD தரத்தில்!"
+				},
+				"tennis": {
+					"title": "EPLsite டென்னிஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி டென்னிஸ் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"ice-hockey": {
+					"title": "EPLsite ஐஸ் ஹாக்கி | இலவச நேரடி NHL ஸ்ட்ரீமிங்",
+					"description": "EPLsite இல் இலவசமாக நேரடி ஐஸ் ஹாக்கி பாருங்கள். NHL HD தரத்தில்!"
+				},
+				"baseball": {
+					"title": "EPLsite பேஸ்பால் | இலவச நேரடி MLB ஸ்ட்ரீமிங்",
+					"description": "EPLsite இல் இலவசமாக நேரடி பேஸ்பால் பாருங்கள். MLB HD தரத்தில்!"
+				},
+				"rugby-union": {
+					"title": "EPLsite ரக்பி யூனியன் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி ரக்பி யூனியன் பாருங்கள். HD தரம்!"
+				},
+				"rugby-league": {
+					"title": "EPLsite ரக்பி லீக் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி ரக்பி லீக் பாருங்கள். HD தரம்!"
+				},
+				"cricket": {
+					"title": "EPLsite கிரிக்கெட் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி கிரிக்கெட் பாருங்கள். IPL HD தரத்தில்!"
+				},
+				"american-football": {
+					"title": "EPLsite அமெரிக்க கால்பந்து | இலவச நேரடி NFL",
+					"description": "EPLsite இல் இலவசமாக நேரடி NFL பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"volleyball": {
+					"title": "EPLsite கைப்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி கைப்பந்து பாருங்கள். HD தரம்!"
+				},
+				"beach-volleyball": {
+					"title": "EPLsite கடற்கரை கைப்பந்து | இலவச நேரடி ஸ்ட்ரீமிங்",
+					"description": "EPLsite இல் இலவசமாக நேரடி கடற்கரை கைப்பந்து பாருங்கள். HD தரம்!"
+				},
+				"handball": {
+					"title": "EPLsite கைப்பந்தாட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி கைப்பந்தாட்டம் பாருங்கள். HD தரம்!"
+				},
+				"beach-handball": {
+					"title": "EPLsite கடற்கரை கைப்பந்தாட்டம் | இலவச நேரடி ஸ்ட்ரீமிங்",
+					"description": "EPLsite இல் இலவசமாக நேரடி கடற்கரை கைப்பந்தாட்டம் பாருங்கள். HD தரம்!"
+				},
+				"beach-soccer": {
+					"title": "EPLsite கடற்கரை கால்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி கடற்கரை கால்பந்து பாருங்கள். HD தரம்!"
+				},
+				"aussie-rules": {
+					"title": "EPLsite ஆஸி ரூல்ஸ் | இலவச நேரடி AFL ஸ்ட்ரீமிங்",
+					"description": "EPLsite இல் இலவசமாக நேரடி AFL பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"futsal": {
+					"title": "EPLsite புட்சால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி புட்சால் பாருங்கள். HD தரம்!"
+				},
+				"badminton": {
+					"title": "EPLsite பேட்மிண்டன் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி பேட்மிண்டன் பாருங்கள். HD தரம்!"
+				},
+				"netball": {
+					"title": "EPLsite நெட்பால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி நெட்பால் பாருங்கள். HD தரம்!"
+				},
+				"floorball": {
+					"title": "EPLsite ஃப்ளோர்பால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி ஃப்ளோர்பால் பாருங்கள். HD தரம்!"
+				},
+				"combat-sport": {
+					"title": "EPLsite சண்டை விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி சண்டை விளையாட்டு பாருங்கள். HD தரம்!"
+				},
+				"boxing": {
+					"title": "EPLsite குத்துச்சண்டை | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி குத்துச்சண்டை பாருங்கள். HD தரம்!"
+				},
+				"mma": {
+					"title": "EPLsite MMA | இலவச நேரடி UFC ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி MMA பாருங்கள். UFC HD தரத்தில்!"
+				},
+				"snooker": {
+					"title": "EPLsite ஸ்நூக்கர் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி ஸ்நூக்கர் பாருங்கள். HD தரம்!"
+				},
+				"billiard": {
+					"title": "EPLsite பில்லியர்ட் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி பில்லியர்ட் பாருங்கள். HD தரம்!"
+				},
+				"table-tennis": {
+					"title": "EPLsite மேசை டென்னிஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி மேசை டென்னிஸ் பாருங்கள். HD தரம்!"
+				},
+				"padel-tennis": {
+					"title": "EPLsite பேடல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி பேடல் பாருங்கள். HD தரம்!"
+				},
+				"squash": {
+					"title": "EPLsite ஸ்குவாஷ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி ஸ்குவாஷ் பாருங்கள். HD தரம்!"
+				},
+				"motorsport": {
+					"title": "EPLsite மோட்டார் விளையாட்டு | இலவச நேரடி F1 ஸ்ட்ரீமிங்",
+					"description": "EPLsite இல் இலவசமாக நேரடி மோட்டார் விளையாட்டு பாருங்கள். F1 HD தரத்தில்!"
+				},
+				"racing": {
+					"title": "EPLsite பந்தயம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி பந்தயம் பாருங்கள். HD தரம்!"
+				},
+				"cycling": {
+					"title": "EPLsite சைக்கிள் ஓட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி சைக்கிள் ஓட்டம் பாருங்கள். HD தரம்!"
+				},
+				"equestrianism": {
+					"title": "EPLsite குதிரையேற்றம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி குதிரையேற்றம் பாருங்கள். HD தரம்!"
+				},
+				"golf": {
+					"title": "EPLsite கோல்ஃப் | இலவச நேரடி PGA ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி கோல்ஃப் பாருங்கள். PGA HD தரத்தில்!"
+				},
+				"field-hockey": {
+					"title": "EPLsite ஃபீல்ட் ஹாக்கி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி ஃபீல்ட் ஹாக்கி பாருங்கள். HD தரம்!"
+				},
+				"lacrosse": {
+					"title": "EPLsite லக்ரோஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி லக்ரோஸ் பாருங்கள். HD தரம்!"
+				},
+				"athletics": {
+					"title": "EPLsite தடகளம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி தடகளம் பாருங்கள். HD தரம்!"
+				},
+				"gymnastics": {
+					"title": "EPLsite உடற்பயிற்சி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி உடற்பயிற்சி பாருங்கள். HD தரம்!"
+				},
+				"weightlifting": {
+					"title": "EPLsite பளுதூக்குதல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி பளுதூக்குதல் பாருங்கள். HD தரம்!"
+				},
+				"climbing": {
+					"title": "EPLsite ஏறுதல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி ஏறுதல் பாருங்கள். HD தரம்!"
+				},
+				"winter-sport": {
+					"title": "EPLsite குளிர்கால விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி குளிர்கால விளையாட்டு பாருங்கள். HD தரம்!"
+				},
+				"bandy": {
+					"title": "EPLsite பாண்டி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி பாண்டி பாருங்கள். HD தரம்!"
+				},
+				"curling": {
+					"title": "EPLsite கர்லிங் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி கர்லிங் பாருங்கள். HD தரம்!"
+				},
+				"triathlon": {
+					"title": "EPLsite ட்ரையத்லான் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி ட்ரையத்லான் பாருங்கள். HD தரம்!"
+				},
+				"water-sports": {
+					"title": "EPLsite நீர் விளையாட்டுகள் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி நீர் விளையாட்டுகள் பாருங்கள். HD தரம்!"
+				},
+				"water-polo": {
+					"title": "EPLsite வாட்டர் போலோ | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி வாட்டர் போலோ பாருங்கள். HD தரம்!"
+				},
+				"sailing": {
+					"title": "EPLsite படகோட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி படகோட்டம் பாருங்கள். HD தரம்!"
+				},
+				"bowling": {
+					"title": "EPLsite பௌலிங் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி பௌலிங் பாருங்கள். HD தரம்!"
+				},
+				"darts": {
+					"title": "EPLsite டார்ட்ஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி டார்ட்ஸ் பாருங்கள். HD தரம்!"
+				},
+				"chess": {
+					"title": "EPLsite சதுரங்கம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி சதுரங்கம் பாருங்கள். HD தரம்!"
+				},
+				"e-sports": {
+					"title": "EPLsite மின் விளையாட்டுகள் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி மின் விளையாட்டுகள் பாருங்கள். HD தரம்!"
+				},
+				"others": {
+					"title": "EPLsite மற்றவை | இலவச நேரடி விளையாட்டு ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி பிற விளையாட்டுகள் பாருங்கள். HD தரம்!"
+				},
+				"rugby-sevens": {
+					"title": "EPLsite ரக்பி செவன்ஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி ரக்பி செவன்ஸ் பாருங்கள். HD தரம்!"
+				},
+				"extreme-sport": {
+					"title": "EPLsite தீவிர விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "EPLsite இல் இலவசமாக நேரடி தீவிர விளையாட்டு பாருங்கள். HD தரம்!"
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | இலவச நேரடி விளையாட்டு ஸ்ட்ரீமிங் ஆன்லைன்",
+				"description": "P2P4U இலவச நேரடி விளையாட்டு ஸ்ட்ரீம்களை வழங்குகிறது. வேகமான ஏற்றம், பதிவு தேவையில்லை!"
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U கால்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி கால்பந்து பாருங்கள். வேகமான ஏற்றம், பதிவு தேவையில்லை!"
+				},
+				"basketball": {
+					"title": "P2P4U கூடைப்பந்து | இலவச நேரடி NBA ஸ்ட்ரீமிங்",
+					"description": "P2P4U இல் இலவசமாக நேரடி கூடைப்பந்து பாருங்கள். NBA வேகமான ஏற்றம்!"
+				},
+				"tennis": {
+					"title": "P2P4U டென்னிஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி டென்னிஸ் பாருங்கள். வேகமான ஏற்றம், பதிவு தேவையில்லை!"
+				},
+				"ice-hockey": {
+					"title": "P2P4U ஐஸ் ஹாக்கி | இலவச நேரடி NHL ஸ்ட்ரீமிங்",
+					"description": "P2P4U இல் இலவசமாக நேரடி ஐஸ் ஹாக்கி பாருங்கள். NHL வேகமான ஏற்றம்!"
+				},
+				"baseball": {
+					"title": "P2P4U பேஸ்பால் | இலவச நேரடி MLB ஸ்ட்ரீமிங்",
+					"description": "P2P4U இல் இலவசமாக நேரடி பேஸ்பால் பாருங்கள். MLB வேகமான ஏற்றம்!"
+				},
+				"rugby-union": {
+					"title": "P2P4U ரக்பி யூனியன் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி ரக்பி யூனியன் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"rugby-league": {
+					"title": "P2P4U ரக்பி லீக் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி ரக்பி லீக் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"cricket": {
+					"title": "P2P4U கிரிக்கெட் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி கிரிக்கெட் பாருங்கள். IPL வேகமான ஏற்றம்!"
+				},
+				"american-football": {
+					"title": "P2P4U அமெரிக்க கால்பந்து | இலவச நேரடி NFL",
+					"description": "P2P4U இல் இலவசமாக நேரடி NFL பாருங்கள். வேகமான ஏற்றம், பதிவு தேவையில்லை!"
+				},
+				"volleyball": {
+					"title": "P2P4U கைப்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி கைப்பந்து பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"beach-volleyball": {
+					"title": "P2P4U கடற்கரை கைப்பந்து | இலவச நேரடி ஸ்ட்ரீமிங்",
+					"description": "P2P4U இல் இலவசமாக நேரடி கடற்கரை கைப்பந்து பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"handball": {
+					"title": "P2P4U கைப்பந்தாட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி கைப்பந்தாட்டம் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"beach-handball": {
+					"title": "P2P4U கடற்கரை கைப்பந்தாட்டம் | இலவச நேரடி ஸ்ட்ரீமிங்",
+					"description": "P2P4U இல் இலவசமாக நேரடி கடற்கரை கைப்பந்தாட்டம் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"beach-soccer": {
+					"title": "P2P4U கடற்கரை கால்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி கடற்கரை கால்பந்து பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"aussie-rules": {
+					"title": "P2P4U ஆஸி ரூல்ஸ் | இலவச நேரடி AFL ஸ்ட்ரீமிங்",
+					"description": "P2P4U இல் இலவசமாக நேரடி AFL பாருங்கள். வேகமான ஏற்றம், பதிவு தேவையில்லை!"
+				},
+				"futsal": {
+					"title": "P2P4U புட்சால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி புட்சால் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"badminton": {
+					"title": "P2P4U பேட்மிண்டன் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி பேட்மிண்டன் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"netball": {
+					"title": "P2P4U நெட்பால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி நெட்பால் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"floorball": {
+					"title": "P2P4U ஃப்ளோர்பால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி ஃப்ளோர்பால் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"combat-sport": {
+					"title": "P2P4U சண்டை விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி சண்டை விளையாட்டு பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"boxing": {
+					"title": "P2P4U குத்துச்சண்டை | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி குத்துச்சண்டை பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"mma": {
+					"title": "P2P4U MMA | இலவச நேரடி UFC ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி MMA பாருங்கள். UFC வேகமான ஏற்றம்!"
+				},
+				"snooker": {
+					"title": "P2P4U ஸ்நூக்கர் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி ஸ்நூக்கர் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"billiard": {
+					"title": "P2P4U பில்லியர்ட் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி பில்லியர்ட் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"table-tennis": {
+					"title": "P2P4U மேசை டென்னிஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி மேசை டென்னிஸ் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"padel-tennis": {
+					"title": "P2P4U பேடல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி பேடல் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"squash": {
+					"title": "P2P4U ஸ்குவாஷ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி ஸ்குவாஷ் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"motorsport": {
+					"title": "P2P4U மோட்டார் விளையாட்டு | இலவச நேரடி F1 ஸ்ட்ரீமிங்",
+					"description": "P2P4U இல் இலவசமாக நேரடி மோட்டார் விளையாட்டு பாருங்கள். F1 வேகமான ஏற்றம்!"
+				},
+				"racing": {
+					"title": "P2P4U பந்தயம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி பந்தயம் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"cycling": {
+					"title": "P2P4U சைக்கிள் ஓட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி சைக்கிள் ஓட்டம் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"equestrianism": {
+					"title": "P2P4U குதிரையேற்றம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி குதிரையேற்றம் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"golf": {
+					"title": "P2P4U கோல்ஃப் | இலவச நேரடி PGA ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி கோல்ஃப் பாருங்கள். PGA வேகமான ஏற்றம்!"
+				},
+				"field-hockey": {
+					"title": "P2P4U ஃபீல்ட் ஹாக்கி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி ஃபீல்ட் ஹாக்கி பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"lacrosse": {
+					"title": "P2P4U லக்ரோஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி லக்ரோஸ் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"athletics": {
+					"title": "P2P4U தடகளம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி தடகளம் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"gymnastics": {
+					"title": "P2P4U உடற்பயிற்சி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி உடற்பயிற்சி பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"weightlifting": {
+					"title": "P2P4U பளுதூக்குதல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி பளுதூக்குதல் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"climbing": {
+					"title": "P2P4U ஏறுதல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி ஏறுதல் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"winter-sport": {
+					"title": "P2P4U குளிர்கால விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி குளிர்கால விளையாட்டு பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"bandy": {
+					"title": "P2P4U பாண்டி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி பாண்டி பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"curling": {
+					"title": "P2P4U கர்லிங் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி கர்லிங் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"triathlon": {
+					"title": "P2P4U ட்ரையத்லான் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி ட்ரையத்லான் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"water-sports": {
+					"title": "P2P4U நீர் விளையாட்டுகள் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி நீர் விளையாட்டுகள் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"water-polo": {
+					"title": "P2P4U வாட்டர் போலோ | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி வாட்டர் போலோ பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"sailing": {
+					"title": "P2P4U படகோட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி படகோட்டம் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"bowling": {
+					"title": "P2P4U பௌலிங் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி பௌலிங் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"darts": {
+					"title": "P2P4U டார்ட்ஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி டார்ட்ஸ் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"chess": {
+					"title": "P2P4U சதுரங்கம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி சதுரங்கம் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"e-sports": {
+					"title": "P2P4U மின் விளையாட்டுகள் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி மின் விளையாட்டுகள் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"others": {
+					"title": "P2P4U மற்றவை | இலவச நேரடி விளையாட்டு ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி பிற விளையாட்டுகள் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"rugby-sevens": {
+					"title": "P2P4U ரக்பி செவன்ஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி ரக்பி செவன்ஸ் பாருங்கள். வேகமான ஏற்றம்!"
+				},
+				"extreme-sport": {
+					"title": "P2P4U தீவிர விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "P2P4U இல் இலவசமாக நேரடி தீவிர விளையாட்டு பாருங்கள். வேகமான ஏற்றம்!"
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | இலவச நேரடி விளையாட்டு ஸ்ட்ரீமிங் ஆன்லைன்",
+				"description": "StreamHunter இலவச நேரடி விளையாட்டு ஸ்ட்ரீம்களை HD தரத்தில் வழங்குகிறது. நம்பகமான இணைப்புகள்!"
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter கால்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி கால்பந்து பாருங்கள். HD தரம், நம்பகமான இணைப்புகள்!"
+				},
+				"basketball": {
+					"title": "StreamHunter கூடைப்பந்து | இலவச நேரடி NBA ஸ்ட்ரீமிங்",
+					"description": "StreamHunter இல் இலவசமாக நேரடி கூடைப்பந்து பாருங்கள். NBA நம்பகமான இணைப்புகள்!"
+				},
+				"tennis": {
+					"title": "StreamHunter டென்னிஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி டென்னிஸ் பாருங்கள். HD தரம், நம்பகமான இணைப்புகள்!"
+				},
+				"ice-hockey": {
+					"title": "StreamHunter ஐஸ் ஹாக்கி | இலவச நேரடி NHL ஸ்ட்ரீமிங்",
+					"description": "StreamHunter இல் இலவசமாக நேரடி ஐஸ் ஹாக்கி பாருங்கள். NHL நம்பகமான இணைப்புகள்!"
+				},
+				"baseball": {
+					"title": "StreamHunter பேஸ்பால் | இலவச நேரடி MLB ஸ்ட்ரீமிங்",
+					"description": "StreamHunter இல் இலவசமாக நேரடி பேஸ்பால் பாருங்கள். MLB நம்பகமான இணைப்புகள்!"
+				},
+				"rugby-union": {
+					"title": "StreamHunter ரக்பி யூனியன் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி ரக்பி யூனியன் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"rugby-league": {
+					"title": "StreamHunter ரக்பி லீக் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி ரக்பி லீக் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"cricket": {
+					"title": "StreamHunter கிரிக்கெட் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி கிரிக்கெட் பாருங்கள். IPL நம்பகமான இணைப்புகள்!"
+				},
+				"american-football": {
+					"title": "StreamHunter அமெரிக்க கால்பந்து | இலவச நேரடி NFL",
+					"description": "StreamHunter இல் இலவசமாக நேரடி NFL பாருங்கள். HD தரம், நம்பகமான இணைப்புகள்!"
+				},
+				"volleyball": {
+					"title": "StreamHunter கைப்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி கைப்பந்து பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter கடற்கரை கைப்பந்து | இலவச நேரடி ஸ்ட்ரீமிங்",
+					"description": "StreamHunter இல் இலவசமாக நேரடி கடற்கரை கைப்பந்து பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"handball": {
+					"title": "StreamHunter கைப்பந்தாட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி கைப்பந்தாட்டம் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"beach-handball": {
+					"title": "StreamHunter கடற்கரை கைப்பந்தாட்டம் | இலவச நேரடி ஸ்ட்ரீமிங்",
+					"description": "StreamHunter இல் இலவசமாக நேரடி கடற்கரை கைப்பந்தாட்டம் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"beach-soccer": {
+					"title": "StreamHunter கடற்கரை கால்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி கடற்கரை கால்பந்து பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"aussie-rules": {
+					"title": "StreamHunter ஆஸி ரூல்ஸ் | இலவச நேரடி AFL ஸ்ட்ரீமிங்",
+					"description": "StreamHunter இல் இலவசமாக நேரடி AFL பாருங்கள். HD தரம், நம்பகமான இணைப்புகள்!"
+				},
+				"futsal": {
+					"title": "StreamHunter புட்சால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி புட்சால் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"badminton": {
+					"title": "StreamHunter பேட்மிண்டன் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி பேட்மிண்டன் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"netball": {
+					"title": "StreamHunter நெட்பால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி நெட்பால் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"floorball": {
+					"title": "StreamHunter ஃப்ளோர்பால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி ஃப்ளோர்பால் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"combat-sport": {
+					"title": "StreamHunter சண்டை விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி சண்டை விளையாட்டு பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"boxing": {
+					"title": "StreamHunter குத்துச்சண்டை | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி குத்துச்சண்டை பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"mma": {
+					"title": "StreamHunter MMA | இலவச நேரடி UFC ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி MMA பாருங்கள். UFC நம்பகமான இணைப்புகள்!"
+				},
+				"snooker": {
+					"title": "StreamHunter ஸ்நூக்கர் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி ஸ்நூக்கர் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"billiard": {
+					"title": "StreamHunter பில்லியர்ட் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி பில்லியர்ட் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"table-tennis": {
+					"title": "StreamHunter மேசை டென்னிஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி மேசை டென்னிஸ் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"padel-tennis": {
+					"title": "StreamHunter பேடல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி பேடல் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"squash": {
+					"title": "StreamHunter ஸ்குவாஷ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி ஸ்குவாஷ் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"motorsport": {
+					"title": "StreamHunter மோட்டார் விளையாட்டு | இலவச நேரடி F1 ஸ்ட்ரீமிங்",
+					"description": "StreamHunter இல் இலவசமாக நேரடி மோட்டார் விளையாட்டு பாருங்கள். F1 நம்பகமான இணைப்புகள்!"
+				},
+				"racing": {
+					"title": "StreamHunter பந்தயம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி பந்தயம் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"cycling": {
+					"title": "StreamHunter சைக்கிள் ஓட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி சைக்கிள் ஓட்டம் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"equestrianism": {
+					"title": "StreamHunter குதிரையேற்றம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி குதிரையேற்றம் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"golf": {
+					"title": "StreamHunter கோல்ஃப் | இலவச நேரடி PGA ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி கோல்ஃப் பாருங்கள். PGA நம்பகமான இணைப்புகள்!"
+				},
+				"field-hockey": {
+					"title": "StreamHunter ஃபீல்ட் ஹாக்கி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி ஃபீல்ட் ஹாக்கி பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"lacrosse": {
+					"title": "StreamHunter லக்ரோஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி லக்ரோஸ் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"athletics": {
+					"title": "StreamHunter தடகளம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி தடகளம் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"gymnastics": {
+					"title": "StreamHunter உடற்பயிற்சி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி உடற்பயிற்சி பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"weightlifting": {
+					"title": "StreamHunter பளுதூக்குதல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி பளுதூக்குதல் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"climbing": {
+					"title": "StreamHunter ஏறுதல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி ஏறுதல் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"winter-sport": {
+					"title": "StreamHunter குளிர்கால விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி குளிர்கால விளையாட்டு பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"bandy": {
+					"title": "StreamHunter பாண்டி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி பாண்டி பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"curling": {
+					"title": "StreamHunter கர்லிங் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி கர்லிங் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"triathlon": {
+					"title": "StreamHunter ட்ரையத்லான் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி ட்ரையத்லான் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"water-sports": {
+					"title": "StreamHunter நீர் விளையாட்டுகள் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி நீர் விளையாட்டுகள் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"water-polo": {
+					"title": "StreamHunter வாட்டர் போலோ | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி வாட்டர் போலோ பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"sailing": {
+					"title": "StreamHunter படகோட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி படகோட்டம் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"bowling": {
+					"title": "StreamHunter பௌலிங் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி பௌலிங் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"darts": {
+					"title": "StreamHunter டார்ட்ஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி டார்ட்ஸ் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"chess": {
+					"title": "StreamHunter சதுரங்கம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி சதுரங்கம் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"e-sports": {
+					"title": "StreamHunter மின் விளையாட்டுகள் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி மின் விளையாட்டுகள் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"others": {
+					"title": "StreamHunter மற்றவை | இலவச நேரடி விளையாட்டு ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி பிற விளையாட்டுகள் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter ரக்பி செவன்ஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி ரக்பி செவன்ஸ் பாருங்கள். நம்பகமான இணைப்புகள்!"
+				},
+				"extreme-sport": {
+					"title": "StreamHunter தீவிர விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "StreamHunter இல் இலவசமாக நேரடி தீவிர விளையாட்டு பாருங்கள். நம்பகமான இணைப்புகள்!"
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | இலவச நேரடி விளையாட்டு ஸ்ட்ரீமிங் ஆன்லைன்",
+				"description": "MethStreams இலவச நேரடி விளையாட்டு ஸ்ட்ரீம்களை வழங்குகிறது. HD தரம், வேகமான ஏற்றம்!"
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams கால்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி கால்பந்து பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"basketball": {
+					"title": "MethStreams கூடைப்பந்து | இலவச நேரடி NBA ஸ்ட்ரீமிங்",
+					"description": "MethStreams இல் இலவசமாக நேரடி கூடைப்பந்து பாருங்கள். NBA HD தரம்!"
+				},
+				"tennis": {
+					"title": "MethStreams டென்னிஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி டென்னிஸ் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"ice-hockey": {
+					"title": "MethStreams ஐஸ் ஹாக்கி | இலவச நேரடி NHL ஸ்ட்ரீமிங்",
+					"description": "MethStreams இல் இலவசமாக நேரடி ஐஸ் ஹாக்கி பாருங்கள். NHL HD தரம்!"
+				},
+				"baseball": {
+					"title": "MethStreams பேஸ்பால் | இலவச நேரடி MLB ஸ்ட்ரீமிங்",
+					"description": "MethStreams இல் இலவசமாக நேரடி பேஸ்பால் பாருங்கள். MLB HD தரம்!"
+				},
+				"rugby-union": {
+					"title": "MethStreams ரக்பி யூனியன் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி ரக்பி யூனியன் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"rugby-league": {
+					"title": "MethStreams ரக்பி லீக் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி ரக்பி லீக் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"cricket": {
+					"title": "MethStreams கிரிக்கெட் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி கிரிக்கெட் பாருங்கள். IPL HD தரம்!"
+				},
+				"american-football": {
+					"title": "MethStreams அமெரிக்க கால்பந்து | இலவச நேரடி NFL",
+					"description": "MethStreams இல் இலவசமாக நேரடி NFL பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"volleyball": {
+					"title": "MethStreams கைப்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி கைப்பந்து பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"beach-volleyball": {
+					"title": "MethStreams கடற்கரை கைப்பந்து | இலவச நேரடி ஸ்ட்ரீமிங்",
+					"description": "MethStreams இல் இலவசமாக நேரடி கடற்கரை கைப்பந்து பாருங்கள். HD தரம்!"
+				},
+				"handball": {
+					"title": "MethStreams கைப்பந்தாட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி கைப்பந்தாட்டம் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"beach-handball": {
+					"title": "MethStreams கடற்கரை கைப்பந்தாட்டம் | இலவச நேரடி ஸ்ட்ரீமிங்",
+					"description": "MethStreams இல் இலவசமாக நேரடி கடற்கரை கைப்பந்தாட்டம் பாருங்கள். HD தரம்!"
+				},
+				"beach-soccer": {
+					"title": "MethStreams கடற்கரை கால்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி கடற்கரை கால்பந்து பாருங்கள். HD தரம்!"
+				},
+				"aussie-rules": {
+					"title": "MethStreams ஆஸி ரூல்ஸ் | இலவச நேரடி AFL ஸ்ட்ரீமிங்",
+					"description": "MethStreams இல் இலவசமாக நேரடி AFL பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"futsal": {
+					"title": "MethStreams புட்சால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி புட்சால் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"badminton": {
+					"title": "MethStreams பேட்மிண்டன் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி பேட்மிண்டன் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"netball": {
+					"title": "MethStreams நெட்பால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி நெட்பால் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"floorball": {
+					"title": "MethStreams ஃப்ளோர்பால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி ஃப்ளோர்பால் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"combat-sport": {
+					"title": "MethStreams சண்டை விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி சண்டை விளையாட்டு பாருங்கள். HD தரம்!"
+				},
+				"boxing": {
+					"title": "MethStreams குத்துச்சண்டை | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி குத்துச்சண்டை பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"mma": {
+					"title": "MethStreams MMA | இலவச நேரடி UFC ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி MMA பாருங்கள். UFC HD தரம்!"
+				},
+				"snooker": {
+					"title": "MethStreams ஸ்நூக்கர் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி ஸ்நூக்கர் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"billiard": {
+					"title": "MethStreams பில்லியர்ட் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி பில்லியர்ட் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"table-tennis": {
+					"title": "MethStreams மேசை டென்னிஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி மேசை டென்னிஸ் பாருங்கள். HD தரம்!"
+				},
+				"padel-tennis": {
+					"title": "MethStreams பேடல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி பேடல் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"squash": {
+					"title": "MethStreams ஸ்குவாஷ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி ஸ்குவாஷ் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"motorsport": {
+					"title": "MethStreams மோட்டார் விளையாட்டு | இலவச நேரடி F1 ஸ்ட்ரீமிங்",
+					"description": "MethStreams இல் இலவசமாக நேரடி மோட்டார் விளையாட்டு பாருங்கள். F1 HD தரம்!"
+				},
+				"racing": {
+					"title": "MethStreams பந்தயம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி பந்தயம் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"cycling": {
+					"title": "MethStreams சைக்கிள் ஓட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி சைக்கிள் ஓட்டம் பாருங்கள். HD தரம்!"
+				},
+				"equestrianism": {
+					"title": "MethStreams குதிரையேற்றம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி குதிரையேற்றம் பாருங்கள். HD தரம்!"
+				},
+				"golf": {
+					"title": "MethStreams கோல்ஃப் | இலவச நேரடி PGA ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி கோல்ஃப் பாருங்கள். PGA HD தரம்!"
+				},
+				"field-hockey": {
+					"title": "MethStreams ஃபீல்ட் ஹாக்கி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி ஃபீல்ட் ஹாக்கி பாருங்கள். HD தரம்!"
+				},
+				"lacrosse": {
+					"title": "MethStreams லக்ரோஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி லக்ரோஸ் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"athletics": {
+					"title": "MethStreams தடகளம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி தடகளம் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"gymnastics": {
+					"title": "MethStreams உடற்பயிற்சி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி உடற்பயிற்சி பாருங்கள். HD தரம்!"
+				},
+				"weightlifting": {
+					"title": "MethStreams பளுதூக்குதல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி பளுதூக்குதல் பாருங்கள். HD தரம்!"
+				},
+				"climbing": {
+					"title": "MethStreams ஏறுதல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி ஏறுதல் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"winter-sport": {
+					"title": "MethStreams குளிர்கால விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி குளிர்கால விளையாட்டு பாருங்கள். HD தரம்!"
+				},
+				"bandy": {
+					"title": "MethStreams பாண்டி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி பாண்டி பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"curling": {
+					"title": "MethStreams கர்லிங் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி கர்லிங் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"triathlon": {
+					"title": "MethStreams ட்ரையத்லான் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி ட்ரையத்லான் பாருங்கள். HD தரம்!"
+				},
+				"water-sports": {
+					"title": "MethStreams நீர் விளையாட்டுகள் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி நீர் விளையாட்டுகள் பாருங்கள். HD தரம்!"
+				},
+				"water-polo": {
+					"title": "MethStreams வாட்டர் போலோ | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி வாட்டர் போலோ பாருங்கள். HD தரம்!"
+				},
+				"sailing": {
+					"title": "MethStreams படகோட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி படகோட்டம் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"bowling": {
+					"title": "MethStreams பௌலிங் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி பௌலிங் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"darts": {
+					"title": "MethStreams டார்ட்ஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி டார்ட்ஸ் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"chess": {
+					"title": "MethStreams சதுரங்கம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி சதுரங்கம் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"e-sports": {
+					"title": "MethStreams மின் விளையாட்டுகள் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி மின் விளையாட்டுகள் பாருங்கள். HD தரம்!"
+				},
+				"others": {
+					"title": "MethStreams மற்றவை | இலவச நேரடி விளையாட்டு ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி பிற விளையாட்டுகள் பாருங்கள். HD தரம்!"
+				},
+				"rugby-sevens": {
+					"title": "MethStreams ரக்பி செவன்ஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி ரக்பி செவன்ஸ் பாருங்கள். HD தரம், வேகமான ஏற்றம்!"
+				},
+				"extreme-sport": {
+					"title": "MethStreams தீவிர விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "MethStreams இல் இலவசமாக நேரடி தீவிர விளையாட்டு பாருங்கள். HD தரம்!"
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | இலவச நேரடி விளையாட்டு ஸ்ட்ரீமிங் ஆன்லைன்",
+				"description": "WiziWig இலவச நேரடி விளையாட்டு ஸ்ட்ரீம்களை வழங்குகிறது. HD தரம், பதிவு தேவையில்லை!"
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig கால்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி கால்பந்து பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"basketball": {
+					"title": "WiziWig கூடைப்பந்து | இலவச நேரடி NBA ஸ்ட்ரீமிங்",
+					"description": "WiziWig இல் இலவசமாக நேரடி கூடைப்பந்து பாருங்கள். NBA HD தரம்!"
+				},
+				"tennis": {
+					"title": "WiziWig டென்னிஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி டென்னிஸ் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"ice-hockey": {
+					"title": "WiziWig ஐஸ் ஹாக்கி | இலவச நேரடி NHL ஸ்ட்ரீமிங்",
+					"description": "WiziWig இல் இலவசமாக நேரடி ஐஸ் ஹாக்கி பாருங்கள். NHL HD தரம்!"
+				},
+				"baseball": {
+					"title": "WiziWig பேஸ்பால் | இலவச நேரடி MLB ஸ்ட்ரீமிங்",
+					"description": "WiziWig இல் இலவசமாக நேரடி பேஸ்பால் பாருங்கள். MLB HD தரம்!"
+				},
+				"rugby-union": {
+					"title": "WiziWig ரக்பி யூனியன் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி ரக்பி யூனியன் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"rugby-league": {
+					"title": "WiziWig ரக்பி லீக் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி ரக்பி லீக் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"cricket": {
+					"title": "WiziWig கிரிக்கெட் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி கிரிக்கெட் பாருங்கள். IPL HD தரம்!"
+				},
+				"american-football": {
+					"title": "WiziWig அமெரிக்க கால்பந்து | இலவச நேரடி NFL",
+					"description": "WiziWig இல் இலவசமாக நேரடி NFL பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"volleyball": {
+					"title": "WiziWig கைப்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி கைப்பந்து பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"beach-volleyball": {
+					"title": "WiziWig கடற்கரை கைப்பந்து | இலவச நேரடி ஸ்ட்ரீமிங்",
+					"description": "WiziWig இல் இலவசமாக நேரடி கடற்கரை கைப்பந்து பாருங்கள். HD தரம்!"
+				},
+				"handball": {
+					"title": "WiziWig கைப்பந்தாட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி கைப்பந்தாட்டம் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"beach-handball": {
+					"title": "WiziWig கடற்கரை கைப்பந்தாட்டம் | இலவச நேரடி ஸ்ட்ரீமிங்",
+					"description": "WiziWig இல் இலவசமாக நேரடி கடற்கரை கைப்பந்தாட்டம் பாருங்கள். HD தரம்!"
+				},
+				"beach-soccer": {
+					"title": "WiziWig கடற்கரை கால்பந்து | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி கடற்கரை கால்பந்து பாருங்கள். HD தரம்!"
+				},
+				"aussie-rules": {
+					"title": "WiziWig ஆஸி ரூல்ஸ் | இலவச நேரடி AFL ஸ்ட்ரீமிங்",
+					"description": "WiziWig இல் இலவசமாக நேரடி AFL பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"futsal": {
+					"title": "WiziWig புட்சால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி புட்சால் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"badminton": {
+					"title": "WiziWig பேட்மிண்டன் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி பேட்மிண்டன் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"netball": {
+					"title": "WiziWig நெட்பால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி நெட்பால் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"floorball": {
+					"title": "WiziWig ஃப்ளோர்பால் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி ஃப்ளோர்பால் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"combat-sport": {
+					"title": "WiziWig சண்டை விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி சண்டை விளையாட்டு பாருங்கள். HD தரம்!"
+				},
+				"boxing": {
+					"title": "WiziWig குத்துச்சண்டை | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி குத்துச்சண்டை பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"mma": {
+					"title": "WiziWig MMA | இலவச நேரடி UFC ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி MMA பாருங்கள். UFC HD தரம்!"
+				},
+				"snooker": {
+					"title": "WiziWig ஸ்நூக்கர் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி ஸ்நூக்கர் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"billiard": {
+					"title": "WiziWig பில்லியர்ட் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி பில்லியர்ட் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"table-tennis": {
+					"title": "WiziWig மேசை டென்னிஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி மேசை டென்னிஸ் பாருங்கள். HD தரம்!"
+				},
+				"padel-tennis": {
+					"title": "WiziWig பேடல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி பேடல் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"squash": {
+					"title": "WiziWig ஸ்குவாஷ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி ஸ்குவாஷ் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"motorsport": {
+					"title": "WiziWig மோட்டார் விளையாட்டு | இலவச நேரடி F1 ஸ்ட்ரீமிங்",
+					"description": "WiziWig இல் இலவசமாக நேரடி மோட்டார் விளையாட்டு பாருங்கள். F1 HD தரம்!"
+				},
+				"racing": {
+					"title": "WiziWig பந்தயம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி பந்தயம் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"cycling": {
+					"title": "WiziWig சைக்கிள் ஓட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி சைக்கிள் ஓட்டம் பாருங்கள். HD தரம்!"
+				},
+				"equestrianism": {
+					"title": "WiziWig குதிரையேற்றம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி குதிரையேற்றம் பாருங்கள். HD தரம்!"
+				},
+				"golf": {
+					"title": "WiziWig கோல்ஃப் | இலவச நேரடி PGA ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி கோல்ஃப் பாருங்கள். PGA HD தரம்!"
+				},
+				"field-hockey": {
+					"title": "WiziWig ஃபீல்ட் ஹாக்கி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி ஃபீல்ட் ஹாக்கி பாருங்கள். HD தரம்!"
+				},
+				"lacrosse": {
+					"title": "WiziWig லக்ரோஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி லக்ரோஸ் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"athletics": {
+					"title": "WiziWig தடகளம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி தடகளம் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"gymnastics": {
+					"title": "WiziWig உடற்பயிற்சி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி உடற்பயிற்சி பாருங்கள். HD தரம்!"
+				},
+				"weightlifting": {
+					"title": "WiziWig பளுதூக்குதல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி பளுதூக்குதல் பாருங்கள். HD தரம்!"
+				},
+				"climbing": {
+					"title": "WiziWig ஏறுதல் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி ஏறுதல் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"winter-sport": {
+					"title": "WiziWig குளிர்கால விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி குளிர்கால விளையாட்டு பாருங்கள். HD தரம்!"
+				},
+				"bandy": {
+					"title": "WiziWig பாண்டி | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி பாண்டி பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"curling": {
+					"title": "WiziWig கர்லிங் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி கர்லிங் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"triathlon": {
+					"title": "WiziWig ட்ரையத்லான் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி ட்ரையத்லான் பாருங்கள். HD தரம்!"
+				},
+				"water-sports": {
+					"title": "WiziWig நீர் விளையாட்டுகள் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி நீர் விளையாட்டுகள் பாருங்கள். HD தரம்!"
+				},
+				"water-polo": {
+					"title": "WiziWig வாட்டர் போலோ | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி வாட்டர் போலோ பாருங்கள். HD தரம்!"
+				},
+				"sailing": {
+					"title": "WiziWig படகோட்டம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி படகோட்டம் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"bowling": {
+					"title": "WiziWig பௌலிங் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி பௌலிங் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"darts": {
+					"title": "WiziWig டார்ட்ஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி டார்ட்ஸ் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"chess": {
+					"title": "WiziWig சதுரங்கம் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி சதுரங்கம் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"e-sports": {
+					"title": "WiziWig மின் விளையாட்டுகள் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி மின் விளையாட்டுகள் பாருங்கள். HD தரம்!"
+				},
+				"others": {
+					"title": "WiziWig மற்றவை | இலவச நேரடி விளையாட்டு ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி பிற விளையாட்டுகள் பாருங்கள். HD தரம்!"
+				},
+				"rugby-sevens": {
+					"title": "WiziWig ரக்பி செவன்ஸ் | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி ரக்பி செவன்ஸ் பாருங்கள். HD தரம், பதிவு தேவையில்லை!"
+				},
+				"extreme-sport": {
+					"title": "WiziWig தீவிர விளையாட்டு | இலவச நேரடி ஸ்ட்ரீமிங் HD",
+					"description": "WiziWig இல் இலவசமாக நேரடி தீவிர விளையாட்டு பாருங்கள். HD தரம்!"
+				}
+			}
+		}
 	}
 }

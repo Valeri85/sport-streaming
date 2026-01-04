@@ -315,6 +315,1086 @@
 					"description": "Streaming de desportos extremos ao vivo grátis em HD no SportLemon. X Games e competições. Sem registo."
 				}
 			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLsite | Streaming de Desporto ao Vivo Grátis HD",
+				"description": "EPLsite oferece streaming de desporto ao vivo grátis em qualidade HD. Todos os eventos desportivos sem registo. Veja agora!"
+			},
+			"sports": {
+				"football": {
+					"title": "EPLsite Futebol | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de futebol ao vivo grátis em HD no EPLsite. Champions League, Premier League e mais. Sem registo!"
+				},
+				"basketball": {
+					"title": "EPLsite Basquetebol | Streaming NBA ao Vivo Grátis",
+					"description": "Streaming de basquetebol ao vivo grátis em HD. Veja NBA, EuroLeague e mais no EPLsite. Sem registo!"
+				},
+				"tennis": {
+					"title": "EPLsite Ténis | Streaming Grand Slam ao Vivo Grátis",
+					"description": "Veja streaming de ténis ao vivo grátis em HD. ATP, WTA e Grand Slams no EPLsite."
+				},
+				"ice-hockey": {
+					"title": "EPLsite Hóquei no Gelo | Streaming NHL ao Vivo HD",
+					"description": "Streaming de hóquei no gelo ao vivo grátis em HD no EPLsite. NHL e mais."
+				},
+				"baseball": {
+					"title": "EPLsite Basebol | Streaming MLB ao Vivo Grátis HD",
+					"description": "Streaming de basebol ao vivo grátis em HD no EPLsite. MLB e mais ligas."
+				},
+				"rugby-union": {
+					"title": "EPLsite Rugby Union | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de Rugby Union ao vivo grátis em HD no EPLsite. Six Nations e mais."
+				},
+				"rugby-league": {
+					"title": "EPLsite Rugby League | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de Rugby League ao vivo grátis em HD no EPLsite."
+				},
+				"cricket": {
+					"title": "EPLsite Críquete | Streaming IPL ao Vivo Grátis HD",
+					"description": "Streaming de críquete ao vivo grátis no EPLsite. IPL, T20 em HD."
+				},
+				"american-football": {
+					"title": "EPLsite Futebol Americano | Streaming NFL ao Vivo HD",
+					"description": "Veja streaming de NFL ao vivo grátis em HD no EPLsite."
+				},
+				"volleyball": {
+					"title": "EPLsite Voleibol | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de voleibol ao vivo grátis em HD no EPLsite."
+				},
+				"beach-volleyball": {
+					"title": "EPLsite Voleibol de Praia | Streaming ao Vivo HD",
+					"description": "Veja streaming de voleibol de praia ao vivo grátis em HD no EPLsite."
+				},
+				"handball": {
+					"title": "EPLsite Andebol | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de andebol ao vivo grátis em HD no EPLsite."
+				},
+				"beach-handball": {
+					"title": "EPLsite Andebol de Praia | Streaming ao Vivo HD",
+					"description": "Veja streaming de andebol de praia ao vivo grátis em HD no EPLsite."
+				},
+				"beach-soccer": {
+					"title": "EPLsite Futebol de Praia | Streaming ao Vivo HD",
+					"description": "Streaming de futebol de praia ao vivo grátis em HD no EPLsite."
+				},
+				"aussie-rules": {
+					"title": "EPLsite Futebol Australiano | Streaming AFL ao Vivo",
+					"description": "Veja streaming de AFL ao vivo grátis em HD no EPLsite."
+				},
+				"futsal": {
+					"title": "EPLsite Futsal | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de futsal ao vivo grátis em HD no EPLsite."
+				},
+				"badminton": {
+					"title": "EPLsite Badminton | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de badminton ao vivo grátis em HD no EPLsite."
+				},
+				"netball": {
+					"title": "EPLsite Netball | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de netball ao vivo grátis em HD no EPLsite."
+				},
+				"floorball": {
+					"title": "EPLsite Floorball | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de floorball ao vivo grátis em HD no EPLsite."
+				},
+				"combat-sport": {
+					"title": "EPLsite Desportos de Combate | Streaming ao Vivo HD",
+					"description": "Streaming de desportos de combate ao vivo grátis em HD no EPLsite."
+				},
+				"boxing": {
+					"title": "EPLsite Boxe | Streaming de Lutas ao Vivo HD",
+					"description": "Veja streaming de boxe ao vivo grátis em HD no EPLsite."
+				},
+				"mma": {
+					"title": "EPLsite MMA | Streaming UFC ao Vivo Grátis HD",
+					"description": "Streaming de MMA e UFC ao vivo grátis em HD no EPLsite."
+				},
+				"snooker": {
+					"title": "EPLsite Snooker | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de snooker ao vivo grátis em HD no EPLsite."
+				},
+				"billiard": {
+					"title": "EPLsite Bilhar | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bilhar ao vivo grátis em HD no EPLsite."
+				},
+				"table-tennis": {
+					"title": "EPLsite Ténis de Mesa | Streaming ao Vivo HD",
+					"description": "Veja streaming de ténis de mesa ao vivo grátis em HD no EPLsite."
+				},
+				"padel-tennis": {
+					"title": "EPLsite Padel | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de padel ao vivo grátis em HD no EPLsite."
+				},
+				"squash": {
+					"title": "EPLsite Squash | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de squash ao vivo grátis em HD no EPLsite."
+				},
+				"motorsport": {
+					"title": "EPLsite Desporto Motorizado | Streaming F1 ao Vivo",
+					"description": "Streaming de F1 e desporto motorizado ao vivo grátis em HD no EPLsite."
+				},
+				"racing": {
+					"title": "EPLsite Corridas | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de corridas ao vivo grátis em HD no EPLsite."
+				},
+				"cycling": {
+					"title": "EPLsite Ciclismo | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de ciclismo ao vivo grátis em HD no EPLsite."
+				},
+				"equestrianism": {
+					"title": "EPLsite Equitação | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de equitação ao vivo grátis em HD no EPLsite."
+				},
+				"golf": {
+					"title": "EPLsite Golfe | Streaming PGA ao Vivo Grátis HD",
+					"description": "Streaming de golfe ao vivo grátis em HD no EPLsite."
+				},
+				"field-hockey": {
+					"title": "EPLsite Hóquei em Campo | Streaming ao Vivo HD",
+					"description": "Veja streaming de hóquei em campo ao vivo grátis em HD no EPLsite."
+				},
+				"lacrosse": {
+					"title": "EPLsite Lacrosse | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de lacrosse ao vivo grátis em HD no EPLsite."
+				},
+				"athletics": {
+					"title": "EPLsite Atletismo | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de atletismo ao vivo grátis em HD no EPLsite."
+				},
+				"gymnastics": {
+					"title": "EPLsite Ginástica | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de ginástica ao vivo grátis em HD no EPLsite."
+				},
+				"weightlifting": {
+					"title": "EPLsite Halterofilismo | Streaming ao Vivo HD",
+					"description": "Veja streaming de halterofilismo ao vivo grátis em HD no EPLsite."
+				},
+				"climbing": {
+					"title": "EPLsite Escalada | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de escalada ao vivo grátis em HD no EPLsite."
+				},
+				"winter-sport": {
+					"title": "EPLsite Desportos de Inverno | Streaming ao Vivo HD",
+					"description": "Veja streaming de desportos de inverno ao vivo grátis em HD no EPLsite."
+				},
+				"bandy": {
+					"title": "EPLsite Bandy | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bandy ao vivo grátis em HD no EPLsite."
+				},
+				"curling": {
+					"title": "EPLsite Curling | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de curling ao vivo grátis em HD no EPLsite."
+				},
+				"triathlon": {
+					"title": "EPLsite Triatlo | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de triatlo ao vivo grátis em HD no EPLsite."
+				},
+				"water-sports": {
+					"title": "EPLsite Desportos Aquáticos | Streaming ao Vivo HD",
+					"description": "Veja streaming de desportos aquáticos ao vivo grátis em HD no EPLsite."
+				},
+				"water-polo": {
+					"title": "EPLsite Polo Aquático | Streaming ao Vivo HD",
+					"description": "Streaming de polo aquático ao vivo grátis em HD no EPLsite."
+				},
+				"sailing": {
+					"title": "EPLsite Vela | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de vela ao vivo grátis em HD no EPLsite."
+				},
+				"bowling": {
+					"title": "EPLsite Bowling | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bowling ao vivo grátis em HD no EPLsite."
+				},
+				"darts": {
+					"title": "EPLsite Dardos | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de dardos ao vivo grátis em HD no EPLsite."
+				},
+				"chess": {
+					"title": "EPLsite Xadrez | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de xadrez ao vivo grátis em HD no EPLsite."
+				},
+				"e-sports": {
+					"title": "EPLsite E-sports | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de e-sports ao vivo grátis em HD no EPLsite."
+				},
+				"others": {
+					"title": "EPLsite Outros | Streaming Desportivo ao Vivo HD",
+					"description": "Streaming de vários desportos ao vivo grátis em HD no EPLsite."
+				},
+				"rugby-sevens": {
+					"title": "EPLsite Rugby Sevens | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de Rugby Sevens ao vivo grátis em HD no EPLsite. SVNS Series e torneios. Sem registo."
+				},
+				"extreme-sport": {
+					"title": "EPLsite Desportos Extremos | Streaming ao Vivo HD",
+					"description": "Streaming de desportos extremos ao vivo grátis em HD no EPLsite. X Games e competições. Sem registo."
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | Streaming de Desporto ao Vivo Grátis HD",
+				"description": "P2P4U oferece streaming de desporto ao vivo grátis em qualidade HD. Carregamento rápido, sem registo. Veja agora!"
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U Futebol | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de futebol ao vivo grátis em HD no P2P4U. Carregamento rápido, todas as ligas."
+				},
+				"basketball": {
+					"title": "P2P4U Basquetebol | Streaming NBA ao Vivo Grátis HD",
+					"description": "Streaming de basquetebol ao vivo grátis em HD. Veja NBA no P2P4U. Carregamento rápido."
+				},
+				"tennis": {
+					"title": "P2P4U Ténis | Streaming Grand Slam ao Vivo Grátis",
+					"description": "Veja streaming de ténis ao vivo grátis em HD. ATP, WTA torneios no P2P4U."
+				},
+				"ice-hockey": {
+					"title": "P2P4U Hóquei no Gelo | Streaming NHL ao Vivo HD",
+					"description": "Streaming de hóquei no gelo ao vivo grátis em HD no P2P4U."
+				},
+				"baseball": {
+					"title": "P2P4U Basebol | Streaming MLB ao Vivo Grátis HD",
+					"description": "Streaming de basebol ao vivo grátis em HD no P2P4U."
+				},
+				"rugby-union": {
+					"title": "P2P4U Rugby Union | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de Rugby Union ao vivo grátis em HD no P2P4U."
+				},
+				"rugby-league": {
+					"title": "P2P4U Rugby League | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de Rugby League ao vivo grátis em HD no P2P4U."
+				},
+				"cricket": {
+					"title": "P2P4U Críquete | Streaming IPL ao Vivo Grátis HD",
+					"description": "Streaming de críquete ao vivo grátis no P2P4U. IPL, T20 em HD."
+				},
+				"american-football": {
+					"title": "P2P4U Futebol Americano | Streaming NFL ao Vivo HD",
+					"description": "Veja streaming de NFL ao vivo grátis em HD no P2P4U."
+				},
+				"volleyball": {
+					"title": "P2P4U Voleibol | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de voleibol ao vivo grátis em HD no P2P4U."
+				},
+				"beach-volleyball": {
+					"title": "P2P4U Voleibol de Praia | Streaming ao Vivo HD",
+					"description": "Veja streaming de voleibol de praia ao vivo grátis em HD no P2P4U."
+				},
+				"handball": {
+					"title": "P2P4U Andebol | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de andebol ao vivo grátis em HD no P2P4U."
+				},
+				"beach-handball": {
+					"title": "P2P4U Andebol de Praia | Streaming ao Vivo HD",
+					"description": "Veja streaming de andebol de praia ao vivo grátis em HD no P2P4U."
+				},
+				"beach-soccer": {
+					"title": "P2P4U Futebol de Praia | Streaming ao Vivo HD",
+					"description": "Streaming de futebol de praia ao vivo grátis em HD no P2P4U."
+				},
+				"aussie-rules": {
+					"title": "P2P4U Futebol Australiano | Streaming AFL ao Vivo HD",
+					"description": "Veja streaming de AFL ao vivo grátis em HD no P2P4U."
+				},
+				"futsal": {
+					"title": "P2P4U Futsal | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de futsal ao vivo grátis em HD no P2P4U."
+				},
+				"badminton": {
+					"title": "P2P4U Badminton | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de badminton ao vivo grátis em HD no P2P4U."
+				},
+				"netball": {
+					"title": "P2P4U Netball | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de netball ao vivo grátis em HD no P2P4U."
+				},
+				"floorball": {
+					"title": "P2P4U Floorball | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de floorball ao vivo grátis em HD no P2P4U."
+				},
+				"combat-sport": {
+					"title": "P2P4U Desportos de Combate | Streaming ao Vivo HD",
+					"description": "Streaming de desportos de combate ao vivo grátis em HD no P2P4U."
+				},
+				"boxing": {
+					"title": "P2P4U Boxe | Streaming de Lutas ao Vivo HD",
+					"description": "Veja streaming de boxe ao vivo grátis em HD no P2P4U."
+				},
+				"mma": {
+					"title": "P2P4U MMA | Streaming UFC ao Vivo Grátis HD",
+					"description": "Streaming de MMA e UFC ao vivo grátis em HD no P2P4U."
+				},
+				"snooker": {
+					"title": "P2P4U Snooker | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de snooker ao vivo grátis em HD no P2P4U."
+				},
+				"billiard": {
+					"title": "P2P4U Bilhar | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bilhar ao vivo grátis em HD no P2P4U."
+				},
+				"table-tennis": {
+					"title": "P2P4U Ténis de Mesa | Streaming ao Vivo HD",
+					"description": "Veja streaming de ténis de mesa ao vivo grátis em HD no P2P4U."
+				},
+				"padel-tennis": {
+					"title": "P2P4U Padel | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de padel ao vivo grátis em HD no P2P4U."
+				},
+				"squash": {
+					"title": "P2P4U Squash | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de squash ao vivo grátis em HD no P2P4U."
+				},
+				"motorsport": {
+					"title": "P2P4U Desporto Motorizado | Streaming F1 ao Vivo",
+					"description": "Streaming de F1 e desporto motorizado ao vivo grátis em HD no P2P4U."
+				},
+				"racing": {
+					"title": "P2P4U Corridas | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de corridas ao vivo grátis em HD no P2P4U."
+				},
+				"cycling": {
+					"title": "P2P4U Ciclismo | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de ciclismo ao vivo grátis em HD no P2P4U."
+				},
+				"equestrianism": {
+					"title": "P2P4U Equitação | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de equitação ao vivo grátis em HD no P2P4U."
+				},
+				"golf": {
+					"title": "P2P4U Golfe | Streaming PGA ao Vivo Grátis HD",
+					"description": "Streaming de golfe ao vivo grátis em HD no P2P4U."
+				},
+				"field-hockey": {
+					"title": "P2P4U Hóquei em Campo | Streaming ao Vivo HD",
+					"description": "Veja streaming de hóquei em campo ao vivo grátis em HD no P2P4U."
+				},
+				"lacrosse": {
+					"title": "P2P4U Lacrosse | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de lacrosse ao vivo grátis em HD no P2P4U."
+				},
+				"athletics": {
+					"title": "P2P4U Atletismo | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de atletismo ao vivo grátis em HD no P2P4U."
+				},
+				"gymnastics": {
+					"title": "P2P4U Ginástica | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de ginástica ao vivo grátis em HD no P2P4U."
+				},
+				"weightlifting": {
+					"title": "P2P4U Halterofilismo | Streaming ao Vivo HD",
+					"description": "Veja streaming de halterofilismo ao vivo grátis em HD no P2P4U."
+				},
+				"climbing": {
+					"title": "P2P4U Escalada | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de escalada ao vivo grátis em HD no P2P4U."
+				},
+				"winter-sport": {
+					"title": "P2P4U Desportos de Inverno | Streaming ao Vivo HD",
+					"description": "Veja streaming de desportos de inverno ao vivo grátis em HD no P2P4U."
+				},
+				"bandy": {
+					"title": "P2P4U Bandy | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bandy ao vivo grátis em HD no P2P4U."
+				},
+				"curling": {
+					"title": "P2P4U Curling | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de curling ao vivo grátis em HD no P2P4U."
+				},
+				"triathlon": {
+					"title": "P2P4U Triatlo | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de triatlo ao vivo grátis em HD no P2P4U."
+				},
+				"water-sports": {
+					"title": "P2P4U Desportos Aquáticos | Streaming ao Vivo HD",
+					"description": "Veja streaming de desportos aquáticos ao vivo grátis em HD no P2P4U."
+				},
+				"water-polo": {
+					"title": "P2P4U Polo Aquático | Streaming ao Vivo HD",
+					"description": "Streaming de polo aquático ao vivo grátis em HD no P2P4U."
+				},
+				"sailing": {
+					"title": "P2P4U Vela | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de vela ao vivo grátis em HD no P2P4U."
+				},
+				"bowling": {
+					"title": "P2P4U Bowling | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bowling ao vivo grátis em HD no P2P4U."
+				},
+				"darts": {
+					"title": "P2P4U Dardos | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de dardos ao vivo grátis em HD no P2P4U."
+				},
+				"chess": {
+					"title": "P2P4U Xadrez | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de xadrez ao vivo grátis em HD no P2P4U."
+				},
+				"e-sports": {
+					"title": "P2P4U E-sports | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de e-sports ao vivo grátis em HD no P2P4U."
+				},
+				"others": {
+					"title": "P2P4U Outros | Streaming Desportivo ao Vivo HD",
+					"description": "Streaming de vários desportos ao vivo grátis em HD no P2P4U."
+				},
+				"rugby-sevens": {
+					"title": "P2P4U Rugby Sevens | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de Rugby Sevens ao vivo grátis em HD no P2P4U. SVNS Series e torneios. Sem registo."
+				},
+				"extreme-sport": {
+					"title": "P2P4U Desportos Extremos | Streaming ao Vivo HD",
+					"description": "Streaming de desportos extremos ao vivo grátis em HD no P2P4U. X Games e competições. Sem registo."
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | Streaming de Desporto ao Vivo Grátis HD",
+				"description": "StreamHunter oferece streaming de desporto ao vivo grátis em qualidade HD. Carregamento rápido, sem registo. Veja agora!"
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter Futebol | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de futebol ao vivo grátis em HD no StreamHunter. Carregamento rápido, todas as ligas."
+				},
+				"basketball": {
+					"title": "StreamHunter Basquetebol | Streaming NBA ao Vivo HD",
+					"description": "Streaming de basquetebol ao vivo grátis em HD. Veja NBA no StreamHunter. Carregamento rápido."
+				},
+				"tennis": {
+					"title": "StreamHunter Ténis | Streaming Grand Slam ao Vivo",
+					"description": "Veja streaming de ténis ao vivo grátis em HD. ATP, WTA torneios no StreamHunter."
+				},
+				"ice-hockey": {
+					"title": "StreamHunter Hóquei no Gelo | Streaming NHL ao Vivo HD",
+					"description": "Streaming de hóquei no gelo ao vivo grátis em HD no StreamHunter."
+				},
+				"baseball": {
+					"title": "StreamHunter Basebol | Streaming MLB ao Vivo Grátis HD",
+					"description": "Streaming de basebol ao vivo grátis em HD no StreamHunter."
+				},
+				"rugby-union": {
+					"title": "StreamHunter Rugby Union | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de Rugby Union ao vivo grátis em HD no StreamHunter."
+				},
+				"rugby-league": {
+					"title": "StreamHunter Rugby League | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de Rugby League ao vivo grátis em HD no StreamHunter."
+				},
+				"cricket": {
+					"title": "StreamHunter Críquete | Streaming IPL ao Vivo Grátis HD",
+					"description": "Streaming de críquete ao vivo grátis no StreamHunter. IPL, T20 em HD."
+				},
+				"american-football": {
+					"title": "StreamHunter Futebol Americano | Streaming NFL ao Vivo",
+					"description": "Veja streaming de NFL ao vivo grátis em HD no StreamHunter."
+				},
+				"volleyball": {
+					"title": "StreamHunter Voleibol | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de voleibol ao vivo grátis em HD no StreamHunter."
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter Voleibol de Praia | Streaming ao Vivo HD",
+					"description": "Veja streaming de voleibol de praia ao vivo grátis em HD no StreamHunter."
+				},
+				"handball": {
+					"title": "StreamHunter Andebol | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de andebol ao vivo grátis em HD no StreamHunter."
+				},
+				"beach-handball": {
+					"title": "StreamHunter Andebol de Praia | Streaming ao Vivo HD",
+					"description": "Veja streaming de andebol de praia ao vivo grátis em HD no StreamHunter."
+				},
+				"beach-soccer": {
+					"title": "StreamHunter Futebol de Praia | Streaming ao Vivo HD",
+					"description": "Streaming de futebol de praia ao vivo grátis em HD no StreamHunter."
+				},
+				"aussie-rules": {
+					"title": "StreamHunter Futebol Australiano | Streaming AFL ao Vivo",
+					"description": "Veja streaming de AFL ao vivo grátis em HD no StreamHunter."
+				},
+				"futsal": {
+					"title": "StreamHunter Futsal | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de futsal ao vivo grátis em HD no StreamHunter."
+				},
+				"badminton": {
+					"title": "StreamHunter Badminton | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de badminton ao vivo grátis em HD no StreamHunter."
+				},
+				"netball": {
+					"title": "StreamHunter Netball | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de netball ao vivo grátis em HD no StreamHunter."
+				},
+				"floorball": {
+					"title": "StreamHunter Floorball | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de floorball ao vivo grátis em HD no StreamHunter."
+				},
+				"combat-sport": {
+					"title": "StreamHunter Desportos de Combate | Streaming ao Vivo HD",
+					"description": "Streaming de desportos de combate ao vivo grátis em HD no StreamHunter."
+				},
+				"boxing": {
+					"title": "StreamHunter Boxe | Streaming de Lutas ao Vivo HD",
+					"description": "Veja streaming de boxe ao vivo grátis em HD no StreamHunter."
+				},
+				"mma": {
+					"title": "StreamHunter MMA | Streaming UFC ao Vivo Grátis HD",
+					"description": "Streaming de MMA e UFC ao vivo grátis em HD no StreamHunter."
+				},
+				"snooker": {
+					"title": "StreamHunter Snooker | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de snooker ao vivo grátis em HD no StreamHunter."
+				},
+				"billiard": {
+					"title": "StreamHunter Bilhar | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bilhar ao vivo grátis em HD no StreamHunter."
+				},
+				"table-tennis": {
+					"title": "StreamHunter Ténis de Mesa | Streaming ao Vivo HD",
+					"description": "Veja streaming de ténis de mesa ao vivo grátis em HD no StreamHunter."
+				},
+				"padel-tennis": {
+					"title": "StreamHunter Padel | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de padel ao vivo grátis em HD no StreamHunter."
+				},
+				"squash": {
+					"title": "StreamHunter Squash | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de squash ao vivo grátis em HD no StreamHunter."
+				},
+				"motorsport": {
+					"title": "StreamHunter Desporto Motorizado | Streaming F1 ao Vivo",
+					"description": "Streaming de F1 e desporto motorizado ao vivo grátis em HD no StreamHunter."
+				},
+				"racing": {
+					"title": "StreamHunter Corridas | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de corridas ao vivo grátis em HD no StreamHunter."
+				},
+				"cycling": {
+					"title": "StreamHunter Ciclismo | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de ciclismo ao vivo grátis em HD no StreamHunter."
+				},
+				"equestrianism": {
+					"title": "StreamHunter Equitação | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de equitação ao vivo grátis em HD no StreamHunter."
+				},
+				"golf": {
+					"title": "StreamHunter Golfe | Streaming PGA ao Vivo Grátis HD",
+					"description": "Streaming de golfe ao vivo grátis em HD no StreamHunter."
+				},
+				"field-hockey": {
+					"title": "StreamHunter Hóquei em Campo | Streaming ao Vivo HD",
+					"description": "Veja streaming de hóquei em campo ao vivo grátis em HD no StreamHunter."
+				},
+				"lacrosse": {
+					"title": "StreamHunter Lacrosse | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de lacrosse ao vivo grátis em HD no StreamHunter."
+				},
+				"athletics": {
+					"title": "StreamHunter Atletismo | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de atletismo ao vivo grátis em HD no StreamHunter."
+				},
+				"gymnastics": {
+					"title": "StreamHunter Ginástica | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de ginástica ao vivo grátis em HD no StreamHunter."
+				},
+				"weightlifting": {
+					"title": "StreamHunter Halterofilismo | Streaming ao Vivo HD",
+					"description": "Veja streaming de halterofilismo ao vivo grátis em HD no StreamHunter."
+				},
+				"climbing": {
+					"title": "StreamHunter Escalada | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de escalada ao vivo grátis em HD no StreamHunter."
+				},
+				"winter-sport": {
+					"title": "StreamHunter Desportos de Inverno | Streaming ao Vivo HD",
+					"description": "Veja streaming de desportos de inverno ao vivo grátis em HD no StreamHunter."
+				},
+				"bandy": {
+					"title": "StreamHunter Bandy | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bandy ao vivo grátis em HD no StreamHunter."
+				},
+				"curling": {
+					"title": "StreamHunter Curling | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de curling ao vivo grátis em HD no StreamHunter."
+				},
+				"triathlon": {
+					"title": "StreamHunter Triatlo | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de triatlo ao vivo grátis em HD no StreamHunter."
+				},
+				"water-sports": {
+					"title": "StreamHunter Desportos Aquáticos | Streaming ao Vivo HD",
+					"description": "Veja streaming de desportos aquáticos ao vivo grátis em HD no StreamHunter."
+				},
+				"water-polo": {
+					"title": "StreamHunter Polo Aquático | Streaming ao Vivo HD",
+					"description": "Streaming de polo aquático ao vivo grátis em HD no StreamHunter."
+				},
+				"sailing": {
+					"title": "StreamHunter Vela | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de vela ao vivo grátis em HD no StreamHunter."
+				},
+				"bowling": {
+					"title": "StreamHunter Bowling | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bowling ao vivo grátis em HD no StreamHunter."
+				},
+				"darts": {
+					"title": "StreamHunter Dardos | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de dardos ao vivo grátis em HD no StreamHunter."
+				},
+				"chess": {
+					"title": "StreamHunter Xadrez | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de xadrez ao vivo grátis em HD no StreamHunter."
+				},
+				"e-sports": {
+					"title": "StreamHunter E-sports | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de e-sports ao vivo grátis em HD no StreamHunter."
+				},
+				"others": {
+					"title": "StreamHunter Outros | Streaming Desportivo ao Vivo HD",
+					"description": "Streaming de vários desportos ao vivo grátis em HD no StreamHunter."
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter Rugby Sevens | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de Rugby Sevens ao vivo grátis em HD no StreamHunter. SVNS Series e torneios. Sem registo."
+				},
+				"extreme-sport": {
+					"title": "StreamHunter Desportos Extremos | Streaming ao Vivo HD",
+					"description": "Streaming de desportos extremos ao vivo grátis em HD no StreamHunter. X Games e competições. Sem registo."
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | Streaming de Desporto ao Vivo Grátis HD",
+				"description": "MethStreams oferece streaming de desporto ao vivo grátis em qualidade HD. Carregamento rápido, sem registo. Veja agora!"
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams Futebol | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de futebol ao vivo grátis em HD no MethStreams. Carregamento rápido, todas as ligas."
+				},
+				"basketball": {
+					"title": "MethStreams Basquetebol | Streaming NBA ao Vivo HD",
+					"description": "Streaming de basquetebol ao vivo grátis em HD. Veja NBA no MethStreams. Carregamento rápido."
+				},
+				"tennis": {
+					"title": "MethStreams Ténis | Streaming Grand Slam ao Vivo",
+					"description": "Veja streaming de ténis ao vivo grátis em HD. ATP, WTA torneios no MethStreams."
+				},
+				"ice-hockey": {
+					"title": "MethStreams Hóquei no Gelo | Streaming NHL ao Vivo HD",
+					"description": "Streaming de hóquei no gelo ao vivo grátis em HD no MethStreams."
+				},
+				"baseball": {
+					"title": "MethStreams Basebol | Streaming MLB ao Vivo Grátis HD",
+					"description": "Streaming de basebol ao vivo grátis em HD no MethStreams."
+				},
+				"rugby-union": {
+					"title": "MethStreams Rugby Union | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de Rugby Union ao vivo grátis em HD no MethStreams."
+				},
+				"rugby-league": {
+					"title": "MethStreams Rugby League | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de Rugby League ao vivo grátis em HD no MethStreams."
+				},
+				"cricket": {
+					"title": "MethStreams Críquete | Streaming IPL ao Vivo Grátis HD",
+					"description": "Streaming de críquete ao vivo grátis no MethStreams. IPL, T20 em HD."
+				},
+				"american-football": {
+					"title": "MethStreams Futebol Americano | Streaming NFL ao Vivo",
+					"description": "Veja streaming de NFL ao vivo grátis em HD no MethStreams."
+				},
+				"volleyball": {
+					"title": "MethStreams Voleibol | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de voleibol ao vivo grátis em HD no MethStreams."
+				},
+				"beach-volleyball": {
+					"title": "MethStreams Voleibol de Praia | Streaming ao Vivo HD",
+					"description": "Veja streaming de voleibol de praia ao vivo grátis em HD no MethStreams."
+				},
+				"handball": {
+					"title": "MethStreams Andebol | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de andebol ao vivo grátis em HD no MethStreams."
+				},
+				"beach-handball": {
+					"title": "MethStreams Andebol de Praia | Streaming ao Vivo HD",
+					"description": "Veja streaming de andebol de praia ao vivo grátis em HD no MethStreams."
+				},
+				"beach-soccer": {
+					"title": "MethStreams Futebol de Praia | Streaming ao Vivo HD",
+					"description": "Streaming de futebol de praia ao vivo grátis em HD no MethStreams."
+				},
+				"aussie-rules": {
+					"title": "MethStreams Futebol Australiano | Streaming AFL ao Vivo",
+					"description": "Veja streaming de AFL ao vivo grátis em HD no MethStreams."
+				},
+				"futsal": {
+					"title": "MethStreams Futsal | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de futsal ao vivo grátis em HD no MethStreams."
+				},
+				"badminton": {
+					"title": "MethStreams Badminton | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de badminton ao vivo grátis em HD no MethStreams."
+				},
+				"netball": {
+					"title": "MethStreams Netball | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de netball ao vivo grátis em HD no MethStreams."
+				},
+				"floorball": {
+					"title": "MethStreams Floorball | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de floorball ao vivo grátis em HD no MethStreams."
+				},
+				"combat-sport": {
+					"title": "MethStreams Desportos de Combate | Streaming ao Vivo HD",
+					"description": "Streaming de desportos de combate ao vivo grátis em HD no MethStreams."
+				},
+				"boxing": {
+					"title": "MethStreams Boxe | Streaming de Lutas ao Vivo HD",
+					"description": "Veja streaming de boxe ao vivo grátis em HD no MethStreams."
+				},
+				"mma": {
+					"title": "MethStreams MMA | Streaming UFC ao Vivo Grátis HD",
+					"description": "Streaming de MMA e UFC ao vivo grátis em HD no MethStreams."
+				},
+				"snooker": {
+					"title": "MethStreams Snooker | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de snooker ao vivo grátis em HD no MethStreams."
+				},
+				"billiard": {
+					"title": "MethStreams Bilhar | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bilhar ao vivo grátis em HD no MethStreams."
+				},
+				"table-tennis": {
+					"title": "MethStreams Ténis de Mesa | Streaming ao Vivo HD",
+					"description": "Veja streaming de ténis de mesa ao vivo grátis em HD no MethStreams."
+				},
+				"padel-tennis": {
+					"title": "MethStreams Padel | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de padel ao vivo grátis em HD no MethStreams."
+				},
+				"squash": {
+					"title": "MethStreams Squash | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de squash ao vivo grátis em HD no MethStreams."
+				},
+				"motorsport": {
+					"title": "MethStreams Desporto Motorizado | Streaming F1 ao Vivo",
+					"description": "Streaming de F1 e desporto motorizado ao vivo grátis em HD no MethStreams."
+				},
+				"racing": {
+					"title": "MethStreams Corridas | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de corridas ao vivo grátis em HD no MethStreams."
+				},
+				"cycling": {
+					"title": "MethStreams Ciclismo | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de ciclismo ao vivo grátis em HD no MethStreams."
+				},
+				"equestrianism": {
+					"title": "MethStreams Equitação | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de equitação ao vivo grátis em HD no MethStreams."
+				},
+				"golf": {
+					"title": "MethStreams Golfe | Streaming PGA ao Vivo Grátis HD",
+					"description": "Streaming de golfe ao vivo grátis em HD no MethStreams."
+				},
+				"field-hockey": {
+					"title": "MethStreams Hóquei em Campo | Streaming ao Vivo HD",
+					"description": "Veja streaming de hóquei em campo ao vivo grátis em HD no MethStreams."
+				},
+				"lacrosse": {
+					"title": "MethStreams Lacrosse | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de lacrosse ao vivo grátis em HD no MethStreams."
+				},
+				"athletics": {
+					"title": "MethStreams Atletismo | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de atletismo ao vivo grátis em HD no MethStreams."
+				},
+				"gymnastics": {
+					"title": "MethStreams Ginástica | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de ginástica ao vivo grátis em HD no MethStreams."
+				},
+				"weightlifting": {
+					"title": "MethStreams Halterofilismo | Streaming ao Vivo HD",
+					"description": "Veja streaming de halterofilismo ao vivo grátis em HD no MethStreams."
+				},
+				"climbing": {
+					"title": "MethStreams Escalada | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de escalada ao vivo grátis em HD no MethStreams."
+				},
+				"winter-sport": {
+					"title": "MethStreams Desportos de Inverno | Streaming ao Vivo HD",
+					"description": "Veja streaming de desportos de inverno ao vivo grátis em HD no MethStreams."
+				},
+				"bandy": {
+					"title": "MethStreams Bandy | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bandy ao vivo grátis em HD no MethStreams."
+				},
+				"curling": {
+					"title": "MethStreams Curling | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de curling ao vivo grátis em HD no MethStreams."
+				},
+				"triathlon": {
+					"title": "MethStreams Triatlo | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de triatlo ao vivo grátis em HD no MethStreams."
+				},
+				"water-sports": {
+					"title": "MethStreams Desportos Aquáticos | Streaming ao Vivo HD",
+					"description": "Veja streaming de desportos aquáticos ao vivo grátis em HD no MethStreams."
+				},
+				"water-polo": {
+					"title": "MethStreams Polo Aquático | Streaming ao Vivo HD",
+					"description": "Streaming de polo aquático ao vivo grátis em HD no MethStreams."
+				},
+				"sailing": {
+					"title": "MethStreams Vela | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de vela ao vivo grátis em HD no MethStreams."
+				},
+				"bowling": {
+					"title": "MethStreams Bowling | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bowling ao vivo grátis em HD no MethStreams."
+				},
+				"darts": {
+					"title": "MethStreams Dardos | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de dardos ao vivo grátis em HD no MethStreams."
+				},
+				"chess": {
+					"title": "MethStreams Xadrez | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de xadrez ao vivo grátis em HD no MethStreams."
+				},
+				"e-sports": {
+					"title": "MethStreams E-sports | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de e-sports ao vivo grátis em HD no MethStreams."
+				},
+				"others": {
+					"title": "MethStreams Outros | Streaming Desportivo ao Vivo HD",
+					"description": "Streaming de vários desportos ao vivo grátis em HD no MethStreams."
+				},
+				"rugby-sevens": {
+					"title": "MethStreams Rugby Sevens | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de Rugby Sevens ao vivo grátis em HD no MethStreams. SVNS Series e torneios. Sem registo."
+				},
+				"extreme-sport": {
+					"title": "MethStreams Desportos Extremos | Streaming ao Vivo HD",
+					"description": "Streaming de desportos extremos ao vivo grátis em HD no MethStreams. X Games e competições. Sem registo."
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | Streaming de Desporto ao Vivo Grátis HD",
+				"description": "WiziWig oferece streaming de desporto ao vivo grátis em qualidade HD. Links fiáveis, sem registo. Veja agora!"
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig Futebol | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de futebol ao vivo grátis em HD no WiziWig. Links fiáveis, todas as ligas."
+				},
+				"basketball": {
+					"title": "WiziWig Basquetebol | Streaming NBA ao Vivo HD",
+					"description": "Streaming de basquetebol ao vivo grátis em HD. Veja NBA no WiziWig. Links fiáveis."
+				},
+				"tennis": {
+					"title": "WiziWig Ténis | Streaming Grand Slam ao Vivo",
+					"description": "Veja streaming de ténis ao vivo grátis em HD. ATP, WTA torneios no WiziWig."
+				},
+				"ice-hockey": {
+					"title": "WiziWig Hóquei no Gelo | Streaming NHL ao Vivo HD",
+					"description": "Streaming de hóquei no gelo ao vivo grátis em HD no WiziWig."
+				},
+				"baseball": {
+					"title": "WiziWig Basebol | Streaming MLB ao Vivo Grátis HD",
+					"description": "Streaming de basebol ao vivo grátis em HD no WiziWig."
+				},
+				"rugby-union": {
+					"title": "WiziWig Rugby Union | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de Rugby Union ao vivo grátis em HD no WiziWig."
+				},
+				"rugby-league": {
+					"title": "WiziWig Rugby League | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de Rugby League ao vivo grátis em HD no WiziWig."
+				},
+				"cricket": {
+					"title": "WiziWig Críquete | Streaming IPL ao Vivo Grátis HD",
+					"description": "Streaming de críquete ao vivo grátis no WiziWig. IPL, T20 em HD."
+				},
+				"american-football": {
+					"title": "WiziWig Futebol Americano | Streaming NFL ao Vivo",
+					"description": "Veja streaming de NFL ao vivo grátis em HD no WiziWig."
+				},
+				"volleyball": {
+					"title": "WiziWig Voleibol | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de voleibol ao vivo grátis em HD no WiziWig."
+				},
+				"beach-volleyball": {
+					"title": "WiziWig Voleibol de Praia | Streaming ao Vivo HD",
+					"description": "Veja streaming de voleibol de praia ao vivo grátis em HD no WiziWig."
+				},
+				"handball": {
+					"title": "WiziWig Andebol | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de andebol ao vivo grátis em HD no WiziWig."
+				},
+				"beach-handball": {
+					"title": "WiziWig Andebol de Praia | Streaming ao Vivo HD",
+					"description": "Veja streaming de andebol de praia ao vivo grátis em HD no WiziWig."
+				},
+				"beach-soccer": {
+					"title": "WiziWig Futebol de Praia | Streaming ao Vivo HD",
+					"description": "Streaming de futebol de praia ao vivo grátis em HD no WiziWig."
+				},
+				"aussie-rules": {
+					"title": "WiziWig Futebol Australiano | Streaming AFL ao Vivo",
+					"description": "Veja streaming de AFL ao vivo grátis em HD no WiziWig."
+				},
+				"futsal": {
+					"title": "WiziWig Futsal | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de futsal ao vivo grátis em HD no WiziWig."
+				},
+				"badminton": {
+					"title": "WiziWig Badminton | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de badminton ao vivo grátis em HD no WiziWig."
+				},
+				"netball": {
+					"title": "WiziWig Netball | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de netball ao vivo grátis em HD no WiziWig."
+				},
+				"floorball": {
+					"title": "WiziWig Floorball | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de floorball ao vivo grátis em HD no WiziWig."
+				},
+				"combat-sport": {
+					"title": "WiziWig Desportos de Combate | Streaming ao Vivo HD",
+					"description": "Streaming de desportos de combate ao vivo grátis em HD no WiziWig."
+				},
+				"boxing": {
+					"title": "WiziWig Boxe | Streaming de Lutas ao Vivo HD",
+					"description": "Veja streaming de boxe ao vivo grátis em HD no WiziWig."
+				},
+				"mma": {
+					"title": "WiziWig MMA | Streaming UFC ao Vivo Grátis HD",
+					"description": "Streaming de MMA e UFC ao vivo grátis em HD no WiziWig."
+				},
+				"snooker": {
+					"title": "WiziWig Snooker | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de snooker ao vivo grátis em HD no WiziWig."
+				},
+				"billiard": {
+					"title": "WiziWig Bilhar | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bilhar ao vivo grátis em HD no WiziWig."
+				},
+				"table-tennis": {
+					"title": "WiziWig Ténis de Mesa | Streaming ao Vivo HD",
+					"description": "Veja streaming de ténis de mesa ao vivo grátis em HD no WiziWig."
+				},
+				"padel-tennis": {
+					"title": "WiziWig Padel | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de padel ao vivo grátis em HD no WiziWig."
+				},
+				"squash": {
+					"title": "WiziWig Squash | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de squash ao vivo grátis em HD no WiziWig."
+				},
+				"motorsport": {
+					"title": "WiziWig Desporto Motorizado | Streaming F1 ao Vivo",
+					"description": "Streaming de F1 e desporto motorizado ao vivo grátis em HD no WiziWig."
+				},
+				"racing": {
+					"title": "WiziWig Corridas | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de corridas ao vivo grátis em HD no WiziWig."
+				},
+				"cycling": {
+					"title": "WiziWig Ciclismo | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de ciclismo ao vivo grátis em HD no WiziWig."
+				},
+				"equestrianism": {
+					"title": "WiziWig Equitação | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de equitação ao vivo grátis em HD no WiziWig."
+				},
+				"golf": {
+					"title": "WiziWig Golfe | Streaming PGA ao Vivo Grátis HD",
+					"description": "Streaming de golfe ao vivo grátis em HD no WiziWig."
+				},
+				"field-hockey": {
+					"title": "WiziWig Hóquei em Campo | Streaming ao Vivo HD",
+					"description": "Veja streaming de hóquei em campo ao vivo grátis em HD no WiziWig."
+				},
+				"lacrosse": {
+					"title": "WiziWig Lacrosse | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de lacrosse ao vivo grátis em HD no WiziWig."
+				},
+				"athletics": {
+					"title": "WiziWig Atletismo | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de atletismo ao vivo grátis em HD no WiziWig."
+				},
+				"gymnastics": {
+					"title": "WiziWig Ginástica | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de ginástica ao vivo grátis em HD no WiziWig."
+				},
+				"weightlifting": {
+					"title": "WiziWig Halterofilismo | Streaming ao Vivo HD",
+					"description": "Veja streaming de halterofilismo ao vivo grátis em HD no WiziWig."
+				},
+				"climbing": {
+					"title": "WiziWig Escalada | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de escalada ao vivo grátis em HD no WiziWig."
+				},
+				"winter-sport": {
+					"title": "WiziWig Desportos de Inverno | Streaming ao Vivo HD",
+					"description": "Veja streaming de desportos de inverno ao vivo grátis em HD no WiziWig."
+				},
+				"bandy": {
+					"title": "WiziWig Bandy | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bandy ao vivo grátis em HD no WiziWig."
+				},
+				"curling": {
+					"title": "WiziWig Curling | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de curling ao vivo grátis em HD no WiziWig."
+				},
+				"triathlon": {
+					"title": "WiziWig Triatlo | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de triatlo ao vivo grátis em HD no WiziWig."
+				},
+				"water-sports": {
+					"title": "WiziWig Desportos Aquáticos | Streaming ao Vivo HD",
+					"description": "Veja streaming de desportos aquáticos ao vivo grátis em HD no WiziWig."
+				},
+				"water-polo": {
+					"title": "WiziWig Polo Aquático | Streaming ao Vivo HD",
+					"description": "Streaming de polo aquático ao vivo grátis em HD no WiziWig."
+				},
+				"sailing": {
+					"title": "WiziWig Vela | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de vela ao vivo grátis em HD no WiziWig."
+				},
+				"bowling": {
+					"title": "WiziWig Bowling | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de bowling ao vivo grátis em HD no WiziWig."
+				},
+				"darts": {
+					"title": "WiziWig Dardos | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de dardos ao vivo grátis em HD no WiziWig."
+				},
+				"chess": {
+					"title": "WiziWig Xadrez | Streaming ao Vivo Grátis HD",
+					"description": "Streaming de xadrez ao vivo grátis em HD no WiziWig."
+				},
+				"e-sports": {
+					"title": "WiziWig E-sports | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de e-sports ao vivo grátis em HD no WiziWig."
+				},
+				"others": {
+					"title": "WiziWig Outros | Streaming Desportivo ao Vivo HD",
+					"description": "Streaming de vários desportos ao vivo grátis em HD no WiziWig."
+				},
+				"rugby-sevens": {
+					"title": "WiziWig Rugby Sevens | Streaming ao Vivo Grátis HD",
+					"description": "Veja streaming de Rugby Sevens ao vivo grátis em HD no WiziWig. SVNS Series e torneios. Sem registo."
+				},
+				"extreme-sport": {
+					"title": "WiziWig Desportos Extremos | Streaming ao Vivo HD",
+					"description": "Streaming de desportos extremos ao vivo grátis em HD no WiziWig. X Games e competições. Sem registo."
+				}
+			}
 		}
 	}
 }

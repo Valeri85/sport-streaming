@@ -3,7 +3,8 @@
 		"code": "sk",
 		"name": "Slovenčina",
 		"flag": "SK",
-		"active": true
+		"active": true,
+		"direction": "ltr"
 	},
 	"ui": {
 		"home": "Domov",
@@ -64,8 +65,7 @@
 		"Badminton": "Bedminton",
 		"Netball": "Netball",
 		"Floorball": "Florbal",
-		"Combat": "Bojové Športy",
-		"combat sport": "Bojové Športy",
+		"Combat Sport": "Bojové Športy",
 		"Boxing": "Box",
 		"MMA": "MMA",
 		"Snooker": "Snooker",
@@ -84,7 +84,7 @@
 		"Gymnastics": "Gymnastika",
 		"Weightlifting": "Vzpieranie",
 		"Climbing": "Lezenie",
-		"winter sport": "Zimné Športy",
+		"Winter Sport": "Zimné Športy",
 		"Bandy": "Bandy",
 		"Curling": "Curling",
 		"Triathlon": "Triatlon",
@@ -95,6 +95,1090 @@
 		"Darts": "Šípky",
 		"Chess": "Šach",
 		"E-sports": "E-športy",
-		"Others": "Ostatné"
+		"Others": "Ostatné",
+		"Rugby Sevens": "Rugby Sevens",
+		"Extreme Sport": "Extrémne Športy"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | Živé Športové Vysielanie Zadarmo HD",
+				"description": "SportLemon ponúka živé športové vysielanie zadarmo v HD kvalite. Bez registrácie. Sledujte teraz!"
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon Futbal | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte futbal živé vysielanie zadarmo v HD na SportLemon. Bez registrácie, rýchle načítanie!"
+				},
+				"basketball": {
+					"title": "SportLemon Basketbal | NBA Živé Vysielanie Zadarmo",
+					"description": "Basketbal a NBA živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"tennis": {
+					"title": "SportLemon Tenis | Grand Slam Živé Vysielanie Zadarmo",
+					"description": "Sledujte tenis živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"ice-hockey": {
+					"title": "SportLemon Hokej | NHL Živé Vysielanie Zadarmo HD",
+					"description": "Hokej a NHL živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"baseball": {
+					"title": "SportLemon Baseball | MLB Živé Vysielanie Zadarmo HD",
+					"description": "Baseball a MLB živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"rugby-union": {
+					"title": "SportLemon Rugby Union | Živé Vysielanie Zadarmo HD",
+					"description": "Rugby Union živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"rugby-league": {
+					"title": "SportLemon Rugby League | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte Rugby League živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"cricket": {
+					"title": "SportLemon Kriket | IPL Živé Vysielanie Zadarmo HD",
+					"description": "Kriket živé vysielanie zadarmo na SportLemon. Rýchle načítanie!"
+				},
+				"american-football": {
+					"title": "SportLemon Americký Futbal | NFL Živé Vysielanie HD",
+					"description": "Sledujte NFL živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"volleyball": {
+					"title": "SportLemon Volejbal | Živé Vysielanie Zadarmo HD",
+					"description": "Volejbal živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"beach-volleyball": {
+					"title": "SportLemon Plážový Volejbal | Živé Vysielanie HD",
+					"description": "Sledujte plážový volejbal živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"handball": {
+					"title": "SportLemon Hádzaná | Živé Vysielanie Zadarmo HD",
+					"description": "Hádzaná živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"beach-handball": {
+					"title": "SportLemon Plážová Hádzaná | Živé Vysielanie HD",
+					"description": "Sledujte plážovú hádzanú živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"beach-soccer": {
+					"title": "SportLemon Plážový Futbal | Živé Vysielanie HD",
+					"description": "Plážový futbal živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"aussie-rules": {
+					"title": "SportLemon Austrálsky Futbal | AFL Živé Vysielanie",
+					"description": "Sledujte AFL živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"futsal": {
+					"title": "SportLemon Futsal | Živé Vysielanie Zadarmo HD",
+					"description": "Futsal živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"badminton": {
+					"title": "SportLemon Bedminton | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte bedminton živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"netball": {
+					"title": "SportLemon Netball | Živé Vysielanie Zadarmo HD",
+					"description": "Netball živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"floorball": {
+					"title": "SportLemon Florbal | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte florbal živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"combat-sport": {
+					"title": "SportLemon Bojové Športy | Živé Vysielanie HD",
+					"description": "Bojové športy živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"boxing": {
+					"title": "SportLemon Box | Zápasy Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte box živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"mma": {
+					"title": "SportLemon MMA | UFC Živé Vysielanie Zadarmo HD",
+					"description": "MMA a UFC živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"snooker": {
+					"title": "SportLemon Snooker | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte snooker živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"billiard": {
+					"title": "SportLemon Biliard | Živé Vysielanie Zadarmo HD",
+					"description": "Biliard živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"table-tennis": {
+					"title": "SportLemon Stolný Tenis | Živé Vysielanie HD",
+					"description": "Sledujte stolný tenis živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"padel-tennis": {
+					"title": "SportLemon Padel | Živé Vysielanie Zadarmo HD",
+					"description": "Padel živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"squash": {
+					"title": "SportLemon Squash | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte squash živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"motorsport": {
+					"title": "SportLemon Motošport | F1 Živé Vysielanie",
+					"description": "F1 a motošport živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"racing": {
+					"title": "SportLemon Preteky | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte preteky živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"cycling": {
+					"title": "SportLemon Cyklistika | Živé Vysielanie Zadarmo HD",
+					"description": "Cyklistika živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"equestrianism": {
+					"title": "SportLemon Jazdecký Šport | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte jazdecký šport živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"golf": {
+					"title": "SportLemon Golf | PGA Živé Vysielanie Zadarmo HD",
+					"description": "Golf živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"field-hockey": {
+					"title": "SportLemon Pozemný Hokej | Živé Vysielanie HD",
+					"description": "Sledujte pozemný hokej živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"lacrosse": {
+					"title": "SportLemon Lacrosse | Živé Vysielanie Zadarmo HD",
+					"description": "Lacrosse živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"athletics": {
+					"title": "SportLemon Atletika | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte atletiku živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"gymnastics": {
+					"title": "SportLemon Gymnastika | Živé Vysielanie Zadarmo HD",
+					"description": "Gymnastika živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"weightlifting": {
+					"title": "SportLemon Vzpieranie | Živé Vysielanie HD",
+					"description": "Sledujte vzpieranie živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"climbing": {
+					"title": "SportLemon Lezenie | Živé Vysielanie Zadarmo HD",
+					"description": "Lezenie živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"winter-sport": {
+					"title": "SportLemon Zimné Športy | Živé Vysielanie HD",
+					"description": "Sledujte zimné športy živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"bandy": {
+					"title": "SportLemon Bandy | Živé Vysielanie Zadarmo HD",
+					"description": "Bandy živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"curling": {
+					"title": "SportLemon Curling | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte curling živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"triathlon": {
+					"title": "SportLemon Triatlon | Živé Vysielanie Zadarmo HD",
+					"description": "Triatlon živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"water-sports": {
+					"title": "SportLemon Vodné Športy | Živé Vysielanie HD",
+					"description": "Sledujte vodné športy živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"water-polo": {
+					"title": "SportLemon Vodné Pólo | Živé Vysielanie HD",
+					"description": "Vodné pólo živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"sailing": {
+					"title": "SportLemon Jachting | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte jachting živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"bowling": {
+					"title": "SportLemon Bowling | Živé Vysielanie Zadarmo HD",
+					"description": "Bowling živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"darts": {
+					"title": "SportLemon Šípky | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte šípky živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"chess": {
+					"title": "SportLemon Šach | Živé Vysielanie Zadarmo HD",
+					"description": "Šach živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"e-sports": {
+					"title": "SportLemon E-športy | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte e-športy živé vysielanie zadarmo v HD na SportLemon. Bez registrácie!"
+				},
+				"others": {
+					"title": "SportLemon Ostatné | Športové Vysielanie Zadarmo HD",
+					"description": "Rôzne športy živé vysielanie zadarmo v HD na SportLemon. Rýchle načítanie!"
+				},
+				"rugby-sevens": {
+					"title": "SportLemon Rugby Sevens | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte Rugby Sevens živé vysielanie zadarmo v HD na SportLemon. Bez registrácie, rýchle načítanie!"
+				},
+				"extreme-sport": {
+					"title": "SportLemon Extrémne Športy | Živé Vysielanie HD",
+					"description": "Extrémne športy živé vysielanie zadarmo v HD na SportLemon. Bez registrácie, rýchle načítanie!"
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLSite | Živé Športové Vysielanie Zadarmo HD",
+				"description": "EPLSite ponúka živé športové vysielanie zadarmo v HD kvalite. Bez registrácie. Sledujte teraz!"
+			},
+			"sports": {
+				"football": {
+					"title": "EPLSite Futbal | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte futbal živé vysielanie zadarmo v HD na EPLSite. Bez registrácie, rýchle načítanie!"
+				},
+				"basketball": {
+					"title": "EPLSite Basketbal | NBA Živé Vysielanie Zadarmo",
+					"description": "Basketbal a NBA živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"tennis": {
+					"title": "EPLSite Tenis | Grand Slam Živé Vysielanie Zadarmo",
+					"description": "Sledujte tenis živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"ice-hockey": {
+					"title": "EPLSite Hokej | NHL Živé Vysielanie Zadarmo HD",
+					"description": "Hokej a NHL živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"baseball": {
+					"title": "EPLSite Baseball | MLB Živé Vysielanie Zadarmo HD",
+					"description": "Baseball a MLB živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"rugby-union": {
+					"title": "EPLSite Rugby Union | Živé Vysielanie Zadarmo HD",
+					"description": "Rugby Union živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"rugby-league": {
+					"title": "EPLSite Rugby League | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte Rugby League živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"cricket": {
+					"title": "EPLSite Kriket | IPL Živé Vysielanie Zadarmo HD",
+					"description": "Kriket živé vysielanie zadarmo na EPLSite. Rýchle načítanie!"
+				},
+				"american-football": {
+					"title": "EPLSite Americký Futbal | NFL Živé Vysielanie HD",
+					"description": "Sledujte NFL živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"volleyball": {
+					"title": "EPLSite Volejbal | Živé Vysielanie Zadarmo HD",
+					"description": "Volejbal živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"beach-volleyball": {
+					"title": "EPLSite Plážový Volejbal | Živé Vysielanie HD",
+					"description": "Sledujte plážový volejbal živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"handball": {
+					"title": "EPLSite Hádzaná | Živé Vysielanie Zadarmo HD",
+					"description": "Hádzaná živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"beach-handball": {
+					"title": "EPLSite Plážová Hádzaná | Živé Vysielanie HD",
+					"description": "Sledujte plážovú hádzanú živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"beach-soccer": {
+					"title": "EPLSite Plážový Futbal | Živé Vysielanie HD",
+					"description": "Plážový futbal živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"aussie-rules": {
+					"title": "EPLSite Austrálsky Futbal | AFL Živé Vysielanie",
+					"description": "Sledujte AFL živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"futsal": {
+					"title": "EPLSite Futsal | Živé Vysielanie Zadarmo HD",
+					"description": "Futsal živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"badminton": {
+					"title": "EPLSite Bedminton | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte bedminton živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"netball": {
+					"title": "EPLSite Netball | Živé Vysielanie Zadarmo HD",
+					"description": "Netball živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"floorball": {
+					"title": "EPLSite Florbal | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte florbal živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"combat-sport": {
+					"title": "EPLSite Bojové Športy | Živé Vysielanie HD",
+					"description": "Bojové športy živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"boxing": {
+					"title": "EPLSite Box | Zápasy Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte box živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"mma": {
+					"title": "EPLSite MMA | UFC Živé Vysielanie Zadarmo HD",
+					"description": "MMA a UFC živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"snooker": {
+					"title": "EPLSite Snooker | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte snooker živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"billiard": {
+					"title": "EPLSite Biliard | Živé Vysielanie Zadarmo HD",
+					"description": "Biliard živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"table-tennis": {
+					"title": "EPLSite Stolný Tenis | Živé Vysielanie HD",
+					"description": "Sledujte stolný tenis živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"padel-tennis": {
+					"title": "EPLSite Padel | Živé Vysielanie Zadarmo HD",
+					"description": "Padel živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"squash": {
+					"title": "EPLSite Squash | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte squash živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"motorsport": {
+					"title": "EPLSite Motošport | F1 Živé Vysielanie",
+					"description": "F1 a motošport živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"racing": {
+					"title": "EPLSite Preteky | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte preteky živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"cycling": {
+					"title": "EPLSite Cyklistika | Živé Vysielanie Zadarmo HD",
+					"description": "Cyklistika živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"equestrianism": {
+					"title": "EPLSite Jazdecký Šport | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte jazdecký šport živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"golf": {
+					"title": "EPLSite Golf | PGA Živé Vysielanie Zadarmo HD",
+					"description": "Golf živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"field-hockey": {
+					"title": "EPLSite Pozemný Hokej | Živé Vysielanie HD",
+					"description": "Sledujte pozemný hokej živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"lacrosse": {
+					"title": "EPLSite Lacrosse | Živé Vysielanie Zadarmo HD",
+					"description": "Lacrosse živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"athletics": {
+					"title": "EPLSite Atletika | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte atletiku živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"gymnastics": {
+					"title": "EPLSite Gymnastika | Živé Vysielanie Zadarmo HD",
+					"description": "Gymnastika živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"weightlifting": {
+					"title": "EPLSite Vzpieranie | Živé Vysielanie HD",
+					"description": "Sledujte vzpieranie živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"climbing": {
+					"title": "EPLSite Lezenie | Živé Vysielanie Zadarmo HD",
+					"description": "Lezenie živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"winter-sport": {
+					"title": "EPLSite Zimné Športy | Živé Vysielanie HD",
+					"description": "Sledujte zimné športy živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"bandy": {
+					"title": "EPLSite Bandy | Živé Vysielanie Zadarmo HD",
+					"description": "Bandy živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"curling": {
+					"title": "EPLSite Curling | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte curling živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"triathlon": {
+					"title": "EPLSite Triatlon | Živé Vysielanie Zadarmo HD",
+					"description": "Triatlon živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"water-sports": {
+					"title": "EPLSite Vodné Športy | Živé Vysielanie HD",
+					"description": "Sledujte vodné športy živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"water-polo": {
+					"title": "EPLSite Vodné Pólo | Živé Vysielanie HD",
+					"description": "Vodné pólo živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"sailing": {
+					"title": "EPLSite Jachting | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte jachting živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"bowling": {
+					"title": "EPLSite Bowling | Živé Vysielanie Zadarmo HD",
+					"description": "Bowling živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"darts": {
+					"title": "EPLSite Šípky | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte šípky živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"chess": {
+					"title": "EPLSite Šach | Živé Vysielanie Zadarmo HD",
+					"description": "Šach živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"e-sports": {
+					"title": "EPLSite E-športy | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte e-športy živé vysielanie zadarmo v HD na EPLSite. Bez registrácie!"
+				},
+				"others": {
+					"title": "EPLSite Ostatné | Športové Vysielanie Zadarmo HD",
+					"description": "Rôzne športy živé vysielanie zadarmo v HD na EPLSite. Rýchle načítanie!"
+				},
+				"rugby-sevens": {
+					"title": "EPLSite Rugby Sevens | Živé Vysielanie Zadarmo HD",
+					"description": "Sledujte Rugby Sevens živé vysielanie zadarmo v HD na EPLSite. Bez registrácie, rýchle načítanie!"
+				},
+				"extreme-sport": {
+					"title": "EPLSite Extrémne Športy | Živé Vysielanie HD",
+					"description": "Extrémne športy živé vysielanie zadarmo v HD na EPLSite. Bez registrácie, rýchle načítanie!"
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | Živé Športové Vysielanie Zadarmo Online",
+				"description": "P2P4U ponúka živé športové vysielanie zadarmo. Rýchle načítanie, bez registrácie. Sledujte teraz!"
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U Futbal | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte futbal živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"basketball": {
+					"title": "P2P4U Basketbal | NBA Živé Vysielanie Zadarmo",
+					"description": "Basketbal a NBA živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"tennis": {
+					"title": "P2P4U Tenis | Grand Slam Živé Vysielanie Zadarmo",
+					"description": "Sledujte tenis živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"ice-hockey": {
+					"title": "P2P4U Hokej | NHL Živé Vysielanie Zadarmo",
+					"description": "Hokej a NHL živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"baseball": {
+					"title": "P2P4U Baseball | MLB Živé Vysielanie Zadarmo",
+					"description": "Baseball a MLB živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"rugby-union": {
+					"title": "P2P4U Rugby Union | Živé Vysielanie Zadarmo",
+					"description": "Rugby Union živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"rugby-league": {
+					"title": "P2P4U Rugby League | Živé Vysielanie Zadarmo",
+					"description": "Sledujte Rugby League živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"cricket": {
+					"title": "P2P4U Kriket | IPL Živé Vysielanie Zadarmo",
+					"description": "Kriket živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"american-football": {
+					"title": "P2P4U Americký Futbal | NFL Živé Vysielanie",
+					"description": "Sledujte NFL živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"volleyball": {
+					"title": "P2P4U Volejbal | Živé Vysielanie Zadarmo Online",
+					"description": "Volejbal živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"beach-volleyball": {
+					"title": "P2P4U Plážový Volejbal | Živé Vysielanie Zadarmo",
+					"description": "Sledujte plážový volejbal živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"handball": {
+					"title": "P2P4U Hádzaná | Živé Vysielanie Zadarmo Online",
+					"description": "Hádzaná živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"beach-handball": {
+					"title": "P2P4U Plážová Hádzaná | Živé Vysielanie Zadarmo",
+					"description": "Sledujte plážovú hádzanú živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"beach-soccer": {
+					"title": "P2P4U Plážový Futbal | Živé Vysielanie Zadarmo",
+					"description": "Plážový futbal živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"aussie-rules": {
+					"title": "P2P4U Austrálsky Futbal | AFL Živé Vysielanie",
+					"description": "Sledujte AFL živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"futsal": {
+					"title": "P2P4U Futsal | Živé Vysielanie Zadarmo Online",
+					"description": "Futsal živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"badminton": {
+					"title": "P2P4U Bedminton | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte bedminton živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"netball": {
+					"title": "P2P4U Netball | Živé Vysielanie Zadarmo Online",
+					"description": "Netball živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"floorball": {
+					"title": "P2P4U Florbal | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte florbal živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"combat-sport": {
+					"title": "P2P4U Bojové Športy | Živé Vysielanie Zadarmo",
+					"description": "Bojové športy živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"boxing": {
+					"title": "P2P4U Box | Zápasy Živé Vysielanie Zadarmo",
+					"description": "Sledujte box živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"mma": {
+					"title": "P2P4U MMA | UFC Živé Vysielanie Zadarmo Online",
+					"description": "MMA a UFC živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"snooker": {
+					"title": "P2P4U Snooker | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte snooker živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"billiard": {
+					"title": "P2P4U Biliard | Živé Vysielanie Zadarmo Online",
+					"description": "Biliard živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"table-tennis": {
+					"title": "P2P4U Stolný Tenis | Živé Vysielanie Zadarmo",
+					"description": "Sledujte stolný tenis živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"padel-tennis": {
+					"title": "P2P4U Padel | Živé Vysielanie Zadarmo Online",
+					"description": "Padel živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"squash": {
+					"title": "P2P4U Squash | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte squash živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"motorsport": {
+					"title": "P2P4U Motošport | F1 Živé Vysielanie Zadarmo",
+					"description": "F1 a motošport živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"racing": {
+					"title": "P2P4U Preteky | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte preteky živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"cycling": {
+					"title": "P2P4U Cyklistika | Živé Vysielanie Zadarmo Online",
+					"description": "Cyklistika živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"equestrianism": {
+					"title": "P2P4U Jazdecký Šport | Živé Vysielanie Zadarmo",
+					"description": "Sledujte jazdecký šport živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"golf": {
+					"title": "P2P4U Golf | PGA Živé Vysielanie Zadarmo Online",
+					"description": "Golf živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"field-hockey": {
+					"title": "P2P4U Pozemný Hokej | Živé Vysielanie Zadarmo",
+					"description": "Sledujte pozemný hokej živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"lacrosse": {
+					"title": "P2P4U Lacrosse | Živé Vysielanie Zadarmo Online",
+					"description": "Lacrosse živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"athletics": {
+					"title": "P2P4U Atletika | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte atletiku živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"gymnastics": {
+					"title": "P2P4U Gymnastika | Živé Vysielanie Zadarmo Online",
+					"description": "Gymnastika živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"weightlifting": {
+					"title": "P2P4U Vzpieranie | Živé Vysielanie Zadarmo",
+					"description": "Sledujte vzpieranie živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"climbing": {
+					"title": "P2P4U Lezenie | Živé Vysielanie Zadarmo Online",
+					"description": "Lezenie živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"winter-sport": {
+					"title": "P2P4U Zimné Športy | Živé Vysielanie Zadarmo",
+					"description": "Sledujte zimné športy živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"bandy": {
+					"title": "P2P4U Bandy | Živé Vysielanie Zadarmo Online",
+					"description": "Bandy živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"curling": {
+					"title": "P2P4U Curling | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte curling živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"triathlon": {
+					"title": "P2P4U Triatlon | Živé Vysielanie Zadarmo Online",
+					"description": "Triatlon živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"water-sports": {
+					"title": "P2P4U Vodné Športy | Živé Vysielanie Zadarmo",
+					"description": "Sledujte vodné športy živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"water-polo": {
+					"title": "P2P4U Vodné Pólo | Živé Vysielanie Zadarmo",
+					"description": "Vodné pólo živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"sailing": {
+					"title": "P2P4U Jachting | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte jachting živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"bowling": {
+					"title": "P2P4U Bowling | Živé Vysielanie Zadarmo Online",
+					"description": "Bowling živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"darts": {
+					"title": "P2P4U Šípky | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte šípky živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"chess": {
+					"title": "P2P4U Šach | Živé Vysielanie Zadarmo Online",
+					"description": "Šach živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"e-sports": {
+					"title": "P2P4U E-športy | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte e-športy živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"others": {
+					"title": "P2P4U Ostatné | Športové Vysielanie Zadarmo",
+					"description": "Rôzne športy živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"rugby-sevens": {
+					"title": "P2P4U Rugby Sevens | Živé Vysielanie Zadarmo",
+					"description": "Sledujte Rugby Sevens živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				},
+				"extreme-sport": {
+					"title": "P2P4U Extrémne Športy | Živé Vysielanie Zadarmo",
+					"description": "Extrémne športy živé vysielanie zadarmo na P2P4U. Rýchle načítanie, bez registrácie!"
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | Živé Športové Vysielanie Zadarmo Online",
+				"description": "StreamHunter ponúka živé športové vysielanie zadarmo. Rýchle načítanie, bez registrácie. Sledujte teraz!"
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter Futbal | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte futbal živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"basketball": {
+					"title": "StreamHunter Basketbal | NBA Živé Vysielanie Zadarmo",
+					"description": "Basketbal a NBA živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"tennis": {
+					"title": "StreamHunter Tenis | Grand Slam Živé Vysielanie Zadarmo",
+					"description": "Sledujte tenis živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"ice-hockey": {
+					"title": "StreamHunter Hokej | NHL Živé Vysielanie Zadarmo",
+					"description": "Hokej a NHL živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"baseball": {
+					"title": "StreamHunter Baseball | MLB Živé Vysielanie Zadarmo",
+					"description": "Baseball a MLB živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"rugby-union": {
+					"title": "StreamHunter Rugby Union | Živé Vysielanie Zadarmo",
+					"description": "Rugby Union živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"rugby-league": {
+					"title": "StreamHunter Rugby League | Živé Vysielanie Zadarmo",
+					"description": "Sledujte Rugby League živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"cricket": {
+					"title": "StreamHunter Kriket | IPL Živé Vysielanie Zadarmo",
+					"description": "Kriket živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"american-football": {
+					"title": "StreamHunter Americký Futbal | NFL Živé Vysielanie",
+					"description": "Sledujte NFL živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"volleyball": {
+					"title": "StreamHunter Volejbal | Živé Vysielanie Zadarmo Online",
+					"description": "Volejbal živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter Plážový Volejbal | Živé Vysielanie Zadarmo",
+					"description": "Sledujte plážový volejbal živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"handball": {
+					"title": "StreamHunter Hádzaná | Živé Vysielanie Zadarmo Online",
+					"description": "Hádzaná živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"beach-handball": {
+					"title": "StreamHunter Plážová Hádzaná | Živé Vysielanie Zadarmo",
+					"description": "Sledujte plážovú hádzanú živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"beach-soccer": {
+					"title": "StreamHunter Plážový Futbal | Živé Vysielanie Zadarmo",
+					"description": "Plážový futbal živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"aussie-rules": {
+					"title": "StreamHunter Austrálsky Futbal | AFL Živé Vysielanie",
+					"description": "Sledujte AFL živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"futsal": {
+					"title": "StreamHunter Futsal | Živé Vysielanie Zadarmo Online",
+					"description": "Futsal živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"badminton": {
+					"title": "StreamHunter Bedminton | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte bedminton živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"netball": {
+					"title": "StreamHunter Netball | Živé Vysielanie Zadarmo Online",
+					"description": "Netball živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"floorball": {
+					"title": "StreamHunter Florbal | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte florbal živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"combat-sport": {
+					"title": "StreamHunter Bojové Športy | Živé Vysielanie Zadarmo",
+					"description": "Bojové športy živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"boxing": {
+					"title": "StreamHunter Box | Zápasy Živé Vysielanie Zadarmo",
+					"description": "Sledujte box živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"mma": {
+					"title": "StreamHunter MMA | UFC Živé Vysielanie Zadarmo Online",
+					"description": "MMA a UFC živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"snooker": {
+					"title": "StreamHunter Snooker | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte snooker živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"billiard": {
+					"title": "StreamHunter Biliard | Živé Vysielanie Zadarmo Online",
+					"description": "Biliard živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"table-tennis": {
+					"title": "StreamHunter Stolný Tenis | Živé Vysielanie Zadarmo",
+					"description": "Sledujte stolný tenis živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"padel-tennis": {
+					"title": "StreamHunter Padel | Živé Vysielanie Zadarmo Online",
+					"description": "Padel živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"squash": {
+					"title": "StreamHunter Squash | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte squash živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"motorsport": {
+					"title": "StreamHunter Motošport | F1 Živé Vysielanie Zadarmo",
+					"description": "F1 a motošport živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"racing": {
+					"title": "StreamHunter Preteky | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte preteky živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"cycling": {
+					"title": "StreamHunter Cyklistika | Živé Vysielanie Zadarmo Online",
+					"description": "Cyklistika živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"equestrianism": {
+					"title": "StreamHunter Jazdecký Šport | Živé Vysielanie Zadarmo",
+					"description": "Sledujte jazdecký šport živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"golf": {
+					"title": "StreamHunter Golf | PGA Živé Vysielanie Zadarmo Online",
+					"description": "Golf živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"field-hockey": {
+					"title": "StreamHunter Pozemný Hokej | Živé Vysielanie Zadarmo",
+					"description": "Sledujte pozemný hokej živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"lacrosse": {
+					"title": "StreamHunter Lacrosse | Živé Vysielanie Zadarmo Online",
+					"description": "Lacrosse živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"athletics": {
+					"title": "StreamHunter Atletika | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte atletiku živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"gymnastics": {
+					"title": "StreamHunter Gymnastika | Živé Vysielanie Zadarmo Online",
+					"description": "Gymnastika živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"weightlifting": {
+					"title": "StreamHunter Vzpieranie | Živé Vysielanie Zadarmo",
+					"description": "Sledujte vzpieranie živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"climbing": {
+					"title": "StreamHunter Lezenie | Živé Vysielanie Zadarmo Online",
+					"description": "Lezenie živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"winter-sport": {
+					"title": "StreamHunter Zimné Športy | Živé Vysielanie Zadarmo",
+					"description": "Sledujte zimné športy živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"bandy": {
+					"title": "StreamHunter Bandy | Živé Vysielanie Zadarmo Online",
+					"description": "Bandy živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"curling": {
+					"title": "StreamHunter Curling | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte curling živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"triathlon": {
+					"title": "StreamHunter Triatlon | Živé Vysielanie Zadarmo Online",
+					"description": "Triatlon živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"water-sports": {
+					"title": "StreamHunter Vodné Športy | Živé Vysielanie Zadarmo",
+					"description": "Sledujte vodné športy živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"water-polo": {
+					"title": "StreamHunter Vodné Pólo | Živé Vysielanie Zadarmo",
+					"description": "Vodné pólo živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"sailing": {
+					"title": "StreamHunter Jachting | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte jachting živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"bowling": {
+					"title": "StreamHunter Bowling | Živé Vysielanie Zadarmo Online",
+					"description": "Bowling živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"darts": {
+					"title": "StreamHunter Šípky | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte šípky živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"chess": {
+					"title": "StreamHunter Šach | Živé Vysielanie Zadarmo Online",
+					"description": "Šach živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"e-sports": {
+					"title": "StreamHunter E-športy | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte e-športy živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"others": {
+					"title": "StreamHunter Ostatné | Športové Vysielanie Zadarmo",
+					"description": "Rôzne športy živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter Rugby Sevens | Živé Vysielanie Zadarmo",
+					"description": "Sledujte Rugby Sevens živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				},
+				"extreme-sport": {
+					"title": "StreamHunter Extrémne Športy | Živé Vysielanie Zadarmo",
+					"description": "Extrémne športy živé vysielanie zadarmo na StreamHunter. Rýchle načítanie, bez registrácie!"
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | Živé Športové Vysielanie Zadarmo Online",
+				"description": "MethStreams ponúka živé športové vysielanie zadarmo. Rýchle načítanie, bez registrácie. Sledujte teraz!"
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams Futbal | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte futbal živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"basketball": {
+					"title": "MethStreams Basketbal | NBA Živé Vysielanie Zadarmo",
+					"description": "Basketbal a NBA živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"tennis": {
+					"title": "MethStreams Tenis | Grand Slam Živé Vysielanie Zadarmo",
+					"description": "Sledujte tenis živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"ice-hockey": {
+					"title": "MethStreams Hokej | NHL Živé Vysielanie Zadarmo",
+					"description": "Hokej a NHL živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"baseball": {
+					"title": "MethStreams Baseball | MLB Živé Vysielanie Zadarmo",
+					"description": "Baseball a MLB živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"rugby-union": {
+					"title": "MethStreams Rugby Union | Živé Vysielanie Zadarmo",
+					"description": "Rugby Union živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"rugby-league": {
+					"title": "MethStreams Rugby League | Živé Vysielanie Zadarmo",
+					"description": "Sledujte Rugby League živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"cricket": {
+					"title": "MethStreams Kriket | IPL Živé Vysielanie Zadarmo",
+					"description": "Kriket živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"american-football": {
+					"title": "MethStreams Americký Futbal | NFL Živé Vysielanie",
+					"description": "Sledujte NFL živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"volleyball": {
+					"title": "MethStreams Volejbal | Živé Vysielanie Zadarmo Online",
+					"description": "Volejbal živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"beach-volleyball": {
+					"title": "MethStreams Plážový Volejbal | Živé Vysielanie Zadarmo",
+					"description": "Sledujte plážový volejbal živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"handball": {
+					"title": "MethStreams Hádzaná | Živé Vysielanie Zadarmo Online",
+					"description": "Hádzaná živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"beach-handball": {
+					"title": "MethStreams Plážová Hádzaná | Živé Vysielanie Zadarmo",
+					"description": "Sledujte plážovú hádzanú živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"beach-soccer": {
+					"title": "MethStreams Plážový Futbal | Živé Vysielanie Zadarmo",
+					"description": "Plážový futbal živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"aussie-rules": {
+					"title": "MethStreams Austrálsky Futbal | AFL Živé Vysielanie",
+					"description": "Sledujte AFL živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"futsal": {
+					"title": "MethStreams Futsal | Živé Vysielanie Zadarmo Online",
+					"description": "Futsal živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"badminton": {
+					"title": "MethStreams Bedminton | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte bedminton živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"netball": {
+					"title": "MethStreams Netball | Živé Vysielanie Zadarmo Online",
+					"description": "Netball živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"floorball": {
+					"title": "MethStreams Florbal | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte florbal živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"combat-sport": {
+					"title": "MethStreams Bojové Športy | Živé Vysielanie Zadarmo",
+					"description": "Bojové športy živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"boxing": {
+					"title": "MethStreams Box | Zápasy Živé Vysielanie Zadarmo",
+					"description": "Sledujte box živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"mma": {
+					"title": "MethStreams MMA | UFC Živé Vysielanie Zadarmo Online",
+					"description": "MMA a UFC živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"snooker": {
+					"title": "MethStreams Snooker | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte snooker živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"billiard": {
+					"title": "MethStreams Biliard | Živé Vysielanie Zadarmo Online",
+					"description": "Biliard živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"table-tennis": {
+					"title": "MethStreams Stolný Tenis | Živé Vysielanie Zadarmo",
+					"description": "Sledujte stolný tenis živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"padel-tennis": {
+					"title": "MethStreams Padel | Živé Vysielanie Zadarmo Online",
+					"description": "Padel živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"squash": {
+					"title": "MethStreams Squash | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte squash živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"motorsport": {
+					"title": "MethStreams Motošport | F1 Živé Vysielanie Zadarmo",
+					"description": "F1 a motošport živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"racing": {
+					"title": "MethStreams Preteky | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte preteky živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"cycling": {
+					"title": "MethStreams Cyklistika | Živé Vysielanie Zadarmo Online",
+					"description": "Cyklistika živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"equestrianism": {
+					"title": "MethStreams Jazdecký Šport | Živé Vysielanie Zadarmo",
+					"description": "Sledujte jazdecký šport živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"golf": {
+					"title": "MethStreams Golf | PGA Živé Vysielanie Zadarmo Online",
+					"description": "Golf živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"field-hockey": {
+					"title": "MethStreams Pozemný Hokej | Živé Vysielanie Zadarmo",
+					"description": "Sledujte pozemný hokej živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"lacrosse": {
+					"title": "MethStreams Lacrosse | Živé Vysielanie Zadarmo Online",
+					"description": "Lacrosse živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"athletics": {
+					"title": "MethStreams Atletika | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte atletiku živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"gymnastics": {
+					"title": "MethStreams Gymnastika | Živé Vysielanie Zadarmo Online",
+					"description": "Gymnastika živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"weightlifting": {
+					"title": "MethStreams Vzpieranie | Živé Vysielanie Zadarmo",
+					"description": "Sledujte vzpieranie živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"climbing": {
+					"title": "MethStreams Lezenie | Živé Vysielanie Zadarmo Online",
+					"description": "Lezenie živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"winter-sport": {
+					"title": "MethStreams Zimné Športy | Živé Vysielanie Zadarmo",
+					"description": "Sledujte zimné športy živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"bandy": {
+					"title": "MethStreams Bandy | Živé Vysielanie Zadarmo Online",
+					"description": "Bandy živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"curling": {
+					"title": "MethStreams Curling | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte curling živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"triathlon": {
+					"title": "MethStreams Triatlon | Živé Vysielanie Zadarmo Online",
+					"description": "Triatlon živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"water-sports": {
+					"title": "MethStreams Vodné Športy | Živé Vysielanie Zadarmo",
+					"description": "Sledujte vodné športy živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"water-polo": {
+					"title": "MethStreams Vodné Pólo | Živé Vysielanie Zadarmo",
+					"description": "Vodné pólo živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"sailing": {
+					"title": "MethStreams Jachting | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte jachting živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"bowling": {
+					"title": "MethStreams Bowling | Živé Vysielanie Zadarmo Online",
+					"description": "Bowling živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"darts": {
+					"title": "MethStreams Šípky | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte šípky živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"chess": {
+					"title": "MethStreams Šach | Živé Vysielanie Zadarmo Online",
+					"description": "Šach živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"e-sports": {
+					"title": "MethStreams E-športy | Živé Vysielanie Zadarmo Online",
+					"description": "Sledujte e-športy živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"others": {
+					"title": "MethStreams Ostatné | Športové Vysielanie Zadarmo",
+					"description": "Rôzne športy živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"rugby-sevens": {
+					"title": "MethStreams Rugby Sevens | Živé Vysielanie Zadarmo",
+					"description": "Sledujte Rugby Sevens živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				},
+				"extreme-sport": {
+					"title": "MethStreams Extrémne Športy | Živé Vysielanie Zadarmo",
+					"description": "Extrémne športy živé vysielanie zadarmo na MethStreams. Rýchle načítanie, bez registrácie!"
+				}
+			}
+		}
 	}
 }

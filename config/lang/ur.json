@@ -3,8 +3,8 @@
 		"code": "ur",
 		"name": "اردو",
 		"flag": "PK",
-		"active": true,
-		"direction": "rtl"
+		"direction": "rtl",
+		"active": true
 	},
 	"ui": {
 		"home": "ہوم",
@@ -53,6 +53,7 @@
 		"Baseball": "بیس بال",
 		"Rugby Union": "رگبی یونین",
 		"Rugby League": "رگبی لیگ",
+		"Rugby Sevens": "رگبی سیونز",
 		"Cricket": "کرکٹ",
 		"American Football": "امریکی فٹ بال",
 		"Volleyball": "والی بال",
@@ -65,14 +66,13 @@
 		"Badminton": "بیڈمنٹن",
 		"Netball": "نیٹ بال",
 		"Floorball": "فلور بال",
-		"Combat": "لڑائی",
-		"combat sport": "لڑائی کے کھیل",
+		"Combat Sport": "مارشل آرٹس",
 		"Boxing": "باکسنگ",
 		"MMA": "ایم ایم اے",
 		"Snooker": "سنوکر",
 		"Billiard": "بلیئرڈ",
 		"Table Tennis": "ٹیبل ٹینس",
-		"Padel Tennis": "پیڈل",
+		"Padel Tennis": "پیڈل ٹینس",
 		"Squash": "سکواش",
 		"Motorsport": "موٹر سپورٹ",
 		"Racing": "ریسنگ",
@@ -85,7 +85,7 @@
 		"Gymnastics": "جمناسٹکس",
 		"Weightlifting": "ویٹ لفٹنگ",
 		"Climbing": "چڑھائی",
-		"winter sport": "سردیوں کے کھیل",
+		"Winter Sport": "سردیوں کے کھیل",
 		"Bandy": "بینڈی",
 		"Curling": "کرلنگ",
 		"Triathlon": "ٹرائیتھلون",
@@ -96,6 +96,1305 @@
 		"Darts": "ڈارٹس",
 		"Chess": "شطرنج",
 		"E-sports": "ای سپورٹس",
+		"Extreme Sport": "ایکسٹریم سپورٹ",
 		"Others": "دیگر"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | لائیو سپورٹس سٹریمنگ مفت آن لائن",
+				"description": "SportLemon پر لائیو کھیل مفت دیکھیں۔ HD کوالٹی، تیز سٹریمنگ۔ رجسٹریشن کی ضرورت نہیں۔ ابھی دیکھیں!"
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon فٹ بال | لائیو فٹ بال میچز مفت HD",
+					"description": "SportLemon پر لائیو فٹ بال میچز مفت دیکھیں۔ پریمیئر لیگ، لا لیگا HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"basketball": {
+					"title": "SportLemon باسکٹ بال | لائیو NBA میچز مفت HD",
+					"description": "SportLemon پر لائیو باسکٹ بال میچز مفت دیکھیں۔ NBA، یورولیگ HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"tennis": {
+					"title": "SportLemon ٹینس | لائیو ٹینس میچز مفت HD",
+					"description": "SportLemon پر لائیو ٹینس میچز مفت دیکھیں۔ Wimbledon، US Open HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"ice-hockey": {
+					"title": "SportLemon آئس ہاکی | لائیو NHL میچز مفت HD",
+					"description": "SportLemon پر لائیو آئس ہاکی میچز مفت دیکھیں۔ NHL HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"baseball": {
+					"title": "SportLemon بیس بال | لائیو MLB میچز مفت HD",
+					"description": "SportLemon پر لائیو بیس بال میچز مفت دیکھیں۔ MLB HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"rugby-union": {
+					"title": "SportLemon رگبی یونین | لائیو رگبی میچز مفت HD",
+					"description": "SportLemon پر لائیو رگبی یونین میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"rugby-league": {
+					"title": "SportLemon رگبی لیگ | لائیو رگبی میچز مفت HD",
+					"description": "SportLemon پر لائیو رگبی لیگ میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"cricket": {
+					"title": "SportLemon کرکٹ | لائیو کرکٹ میچز مفت HD",
+					"description": "SportLemon پر لائیو کرکٹ میچز مفت دیکھیں۔ IPL، PSL، T20 HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"american-football": {
+					"title": "SportLemon امریکی فٹ بال | لائیو NFL میچز مفت HD",
+					"description": "SportLemon پر لائیو NFL میچز مفت دیکھیں۔ Super Bowl HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"volleyball": {
+					"title": "SportLemon والی بال | لائیو والی بال میچز مفت HD",
+					"description": "SportLemon پر لائیو والی بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"beach-volleyball": {
+					"title": "SportLemon بیچ والی بال | لائیو میچز مفت HD",
+					"description": "SportLemon پر لائیو بیچ والی بال میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"handball": {
+					"title": "SportLemon ہینڈ بال | لائیو ہینڈ بال میچز مفت HD",
+					"description": "SportLemon پر لائیو ہینڈ بال میچز مفت دیکھیں۔ EHF HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"beach-handball": {
+					"title": "SportLemon بیچ ہینڈ بال | لائیو میچز مفت HD",
+					"description": "SportLemon پر لائیو بیچ ہینڈ بال میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"beach-soccer": {
+					"title": "SportLemon بیچ ساکر | لائیو میچز مفت HD",
+					"description": "SportLemon پر لائیو بیچ ساکر میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"aussie-rules": {
+					"title": "SportLemon آسی رولز | لائیو AFL میچز مفت HD",
+					"description": "SportLemon پر لائیو AFL میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"futsal": {
+					"title": "SportLemon فٹسل | لائیو فٹسل میچز مفت HD",
+					"description": "SportLemon پر لائیو فٹسل میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"badminton": {
+					"title": "SportLemon بیڈمنٹن | لائیو بیڈمنٹن میچز مفت HD",
+					"description": "SportLemon پر لائیو بیڈمنٹن میچز مفت دیکھیں۔ BWF HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"netball": {
+					"title": "SportLemon نیٹ بال | لائیو نیٹ بال میچز مفت HD",
+					"description": "SportLemon پر لائیو نیٹ بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"floorball": {
+					"title": "SportLemon فلور بال | لائیو فلور بال میچز مفت HD",
+					"description": "SportLemon پر لائیو فلور بال میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"combat-sport": {
+					"title": "SportLemon مارشل آرٹس | لائیو فائٹس مفت HD",
+					"description": "SportLemon پر لائیو مارشل آرٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"boxing": {
+					"title": "SportLemon باکسنگ | لائیو باکسنگ فائٹس مفت HD",
+					"description": "SportLemon پر لائیو باکسنگ فائٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"mma": {
+					"title": "SportLemon MMA | لائیو UFC فائٹس مفت HD",
+					"description": "SportLemon پر لائیو MMA اور UFC فائٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"snooker": {
+					"title": "SportLemon سنوکر | لائیو سنوکر میچز مفت HD",
+					"description": "SportLemon پر لائیو سنوکر میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"billiard": {
+					"title": "SportLemon بلیئرڈ | لائیو بلیئرڈ میچز مفت HD",
+					"description": "SportLemon پر لائیو بلیئرڈ میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"table-tennis": {
+					"title": "SportLemon ٹیبل ٹینس | لائیو میچز مفت HD",
+					"description": "SportLemon پر لائیو ٹیبل ٹینس میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"padel-tennis": {
+					"title": "SportLemon پیڈل ٹینس | لائیو میچز مفت HD",
+					"description": "SportLemon پر لائیو پیڈل ٹینس میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"squash": {
+					"title": "SportLemon سکواش | لائیو سکواش میچز مفت HD",
+					"description": "SportLemon پر لائیو سکواش میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"motorsport": {
+					"title": "SportLemon موٹر سپورٹ | لائیو F1 ریسز مفت HD",
+					"description": "SportLemon پر لائیو موٹر سپورٹ اور F1 ریسز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"racing": {
+					"title": "SportLemon ریسنگ | لائیو ریسز مفت HD",
+					"description": "SportLemon پر لائیو ریسنگ مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"cycling": {
+					"title": "SportLemon سائیکلنگ | لائیو Tour de France مفت HD",
+					"description": "SportLemon پر لائیو سائیکلنگ ریسز مفت دیکھیں۔ Tour de France HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"equestrianism": {
+					"title": "SportLemon گھڑ سواری | لائیو ایونٹس مفت HD",
+					"description": "SportLemon پر لائیو گھڑ سواری ایونٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"golf": {
+					"title": "SportLemon گالف | لائیو PGA ٹورنامنٹس مفت HD",
+					"description": "SportLemon پر لائیو گالف مفت دیکھیں۔ PGA، Masters HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"field-hockey": {
+					"title": "SportLemon فیلڈ ہاکی | لائیو ہاکی میچز مفت HD",
+					"description": "SportLemon پر لائیو فیلڈ ہاکی میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"lacrosse": {
+					"title": "SportLemon لیکروس | لائیو لیکروس میچز مفت HD",
+					"description": "SportLemon پر لائیو لیکروس میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"athletics": {
+					"title": "SportLemon ایتھلیٹکس | لائیو ایتھلیٹکس مفت HD",
+					"description": "SportLemon پر لائیو ایتھلیٹکس ایونٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"gymnastics": {
+					"title": "SportLemon جمناسٹکس | لائیو جمناسٹکس مفت HD",
+					"description": "SportLemon پر لائیو جمناسٹکس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"weightlifting": {
+					"title": "SportLemon ویٹ لفٹنگ | لائیو ویٹ لفٹنگ مفت HD",
+					"description": "SportLemon پر لائیو ویٹ لفٹنگ مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"climbing": {
+					"title": "SportLemon چڑھائی | لائیو کلائمبنگ ایونٹس مفت HD",
+					"description": "SportLemon پر لائیو چڑھائی ایونٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"winter-sport": {
+					"title": "SportLemon سردیوں کے کھیل | لائیو ونٹر سپورٹس مفت HD",
+					"description": "SportLemon پر لائیو سردیوں کے کھیل مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"bandy": {
+					"title": "SportLemon بینڈی | لائیو بینڈی میچز مفت HD",
+					"description": "SportLemon پر لائیو بینڈی میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"curling": {
+					"title": "SportLemon کرلنگ | لائیو کرلنگ میچز مفت HD",
+					"description": "SportLemon پر لائیو کرلنگ میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"triathlon": {
+					"title": "SportLemon ٹرائیتھلون | لائیو ٹرائیتھلون مفت HD",
+					"description": "SportLemon پر لائیو ٹرائیتھلون مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"water-sports": {
+					"title": "SportLemon پانی کے کھیل | لائیو واٹر سپورٹس مفت HD",
+					"description": "SportLemon پر لائیو پانی کے کھیل مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"water-polo": {
+					"title": "SportLemon واٹر پولو | لائیو واٹر پولو میچز مفت HD",
+					"description": "SportLemon پر لائیو واٹر پولو میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"sailing": {
+					"title": "SportLemon سیلنگ | لائیو سیلنگ ایونٹس مفت HD",
+					"description": "SportLemon پر لائیو سیلنگ ایونٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"bowling": {
+					"title": "SportLemon بولنگ | لائیو بولنگ میچز مفت HD",
+					"description": "SportLemon پر لائیو بولنگ میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"darts": {
+					"title": "SportLemon ڈارٹس | لائیو PDC ڈارٹس مفت HD",
+					"description": "SportLemon پر لائیو ڈارٹس مفت دیکھیں۔ PDC HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"chess": {
+					"title": "SportLemon شطرنج | لائیو شطرنج ٹورنامنٹس مفت HD",
+					"description": "SportLemon پر لائیو شطرنج ٹورنامنٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"e-sports": {
+					"title": "SportLemon ای سپورٹس | لائیو گیمنگ ٹورنامنٹس مفت HD",
+					"description": "SportLemon پر لائیو ای سپورٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"others": {
+					"title": "SportLemon دیگر کھیل | لائیو سٹریمنگ مفت HD",
+					"description": "SportLemon پر لائیو کھیل مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"rugby-sevens": {
+					"title": "SportLemon رگبی سیونز | لائیو رگبی 7s مفت HD",
+					"description": "SportLemon پر لائیو رگبی سیونز میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"extreme-sport": {
+					"title": "SportLemon ایکسٹریم سپورٹ | لائیو ایکسٹریم سپورٹس مفت HD",
+					"description": "SportLemon پر لائیو ایکسٹریم سپورٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLsite | لائیو سپورٹس سٹریمنگ مفت آن لائن",
+				"description": "EPLsite پر لائیو کھیل مفت دیکھیں۔ HD کوالٹی، تیز سٹریمنگ۔ رجسٹریشن کی ضرورت نہیں۔ ابھی دیکھیں!"
+			},
+			"sports": {
+				"football": {
+					"title": "EPLsite فٹ بال | لائیو پریمیئر لیگ میچز مفت HD",
+					"description": "EPLsite پر لائیو فٹ بال میچز مفت دیکھیں۔ پریمیئر لیگ، چیمپیئنز لیگ HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"basketball": {
+					"title": "EPLsite باسکٹ بال | لائیو NBA میچز مفت HD",
+					"description": "EPLsite پر لائیو باسکٹ بال میچز مفت دیکھیں۔ NBA، یورولیگ HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"tennis": {
+					"title": "EPLsite ٹینس | لائیو ٹینس میچز مفت HD",
+					"description": "EPLsite پر لائیو ٹینس میچز مفت دیکھیں۔ Wimbledon، US Open HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"ice-hockey": {
+					"title": "EPLsite آئس ہاکی | لائیو NHL میچز مفت HD",
+					"description": "EPLsite پر لائیو آئس ہاکی میچز مفت دیکھیں۔ NHL HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"baseball": {
+					"title": "EPLsite بیس بال | لائیو MLB میچز مفت HD",
+					"description": "EPLsite پر لائیو بیس بال میچز مفت دیکھیں۔ MLB HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"rugby-union": {
+					"title": "EPLsite رگبی یونین | لائیو رگبی میچز مفت HD",
+					"description": "EPLsite پر لائیو رگبی یونین میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"rugby-league": {
+					"title": "EPLsite رگبی لیگ | لائیو رگبی میچز مفت HD",
+					"description": "EPLsite پر لائیو رگبی لیگ میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"cricket": {
+					"title": "EPLsite کرکٹ | لائیو کرکٹ میچز مفت HD",
+					"description": "EPLsite پر لائیو کرکٹ میچز مفت دیکھیں۔ IPL، PSL، T20 HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"american-football": {
+					"title": "EPLsite امریکی فٹ بال | لائیو NFL میچز مفت HD",
+					"description": "EPLsite پر لائیو NFL میچز مفت دیکھیں۔ Super Bowl HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"volleyball": {
+					"title": "EPLsite والی بال | لائیو والی بال میچز مفت HD",
+					"description": "EPLsite پر لائیو والی بال میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"beach-volleyball": {
+					"title": "EPLsite بیچ والی بال | لائیو میچز مفت HD",
+					"description": "EPLsite پر لائیو بیچ والی بال میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"handball": {
+					"title": "EPLsite ہینڈ بال | لائیو ہینڈ بال میچز مفت HD",
+					"description": "EPLsite پر لائیو ہینڈ بال میچز مفت دیکھیں۔ EHF HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"beach-handball": {
+					"title": "EPLsite بیچ ہینڈ بال | لائیو میچز مفت HD",
+					"description": "EPLsite پر لائیو بیچ ہینڈ بال میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"beach-soccer": {
+					"title": "EPLsite بیچ ساکر | لائیو میچز مفت HD",
+					"description": "EPLsite پر لائیو بیچ ساکر میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"aussie-rules": {
+					"title": "EPLsite آسی رولز | لائیو AFL میچز مفت HD",
+					"description": "EPLsite پر لائیو AFL میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"futsal": {
+					"title": "EPLsite فٹسل | لائیو فٹسل میچز مفت HD",
+					"description": "EPLsite پر لائیو فٹسل میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"badminton": {
+					"title": "EPLsite بیڈمنٹن | لائیو بیڈمنٹن میچز مفت HD",
+					"description": "EPLsite پر لائیو بیڈمنٹن میچز مفت دیکھیں۔ BWF HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"netball": {
+					"title": "EPLsite نیٹ بال | لائیو نیٹ بال میچز مفت HD",
+					"description": "EPLsite پر لائیو نیٹ بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"floorball": {
+					"title": "EPLsite فلور بال | لائیو فلور بال میچز مفت HD",
+					"description": "EPLsite پر لائیو فلور بال میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"combat-sport": {
+					"title": "EPLsite مارشل آرٹس | لائیو فائٹس مفت HD",
+					"description": "EPLsite پر لائیو مارشل آرٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"boxing": {
+					"title": "EPLsite باکسنگ | لائیو باکسنگ فائٹس مفت HD",
+					"description": "EPLsite پر لائیو باکسنگ فائٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"mma": {
+					"title": "EPLsite MMA | لائیو UFC فائٹس مفت HD",
+					"description": "EPLsite پر لائیو MMA اور UFC فائٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"snooker": {
+					"title": "EPLsite سنوکر | لائیو سنوکر میچز مفت HD",
+					"description": "EPLsite پر لائیو سنوکر میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"billiard": {
+					"title": "EPLsite بلیئرڈ | لائیو بلیئرڈ میچز مفت HD",
+					"description": "EPLsite پر لائیو بلیئرڈ میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"table-tennis": {
+					"title": "EPLsite ٹیبل ٹینس | لائیو میچز مفت HD",
+					"description": "EPLsite پر لائیو ٹیبل ٹینس میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"padel-tennis": {
+					"title": "EPLsite پیڈل ٹینس | لائیو میچز مفت HD",
+					"description": "EPLsite پر لائیو پیڈل ٹینس میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"squash": {
+					"title": "EPLsite سکواش | لائیو سکواش میچز مفت HD",
+					"description": "EPLsite پر لائیو سکواش میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"motorsport": {
+					"title": "EPLsite موٹر سپورٹ | لائیو F1 ریسز مفت HD",
+					"description": "EPLsite پر لائیو موٹر سپورٹ اور F1 ریسز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"racing": {
+					"title": "EPLsite ریسنگ | لائیو ریسز مفت HD",
+					"description": "EPLsite پر لائیو ریسنگ مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"cycling": {
+					"title": "EPLsite سائیکلنگ | لائیو Tour de France مفت HD",
+					"description": "EPLsite پر لائیو سائیکلنگ ریسز مفت دیکھیں۔ Tour de France HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"equestrianism": {
+					"title": "EPLsite گھڑ سواری | لائیو ایونٹس مفت HD",
+					"description": "EPLsite پر لائیو گھڑ سواری ایونٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"golf": {
+					"title": "EPLsite گالف | لائیو PGA ٹورنامنٹس مفت HD",
+					"description": "EPLsite پر لائیو گالف مفت دیکھیں۔ PGA، Masters HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"field-hockey": {
+					"title": "EPLsite فیلڈ ہاکی | لائیو ہاکی میچز مفت HD",
+					"description": "EPLsite پر لائیو فیلڈ ہاکی میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"lacrosse": {
+					"title": "EPLsite لیکروس | لائیو لیکروس میچز مفت HD",
+					"description": "EPLsite پر لائیو لیکروس میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"athletics": {
+					"title": "EPLsite ایتھلیٹکس | لائیو ایتھلیٹکس مفت HD",
+					"description": "EPLsite پر لائیو ایتھلیٹکس ایونٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"gymnastics": {
+					"title": "EPLsite جمناسٹکس | لائیو جمناسٹکس مفت HD",
+					"description": "EPLsite پر لائیو جمناسٹکس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"weightlifting": {
+					"title": "EPLsite ویٹ لفٹنگ | لائیو ویٹ لفٹنگ مفت HD",
+					"description": "EPLsite پر لائیو ویٹ لفٹنگ مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"climbing": {
+					"title": "EPLsite چڑھائی | لائیو کلائمبنگ ایونٹس مفت HD",
+					"description": "EPLsite پر لائیو چڑھائی ایونٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"winter-sport": {
+					"title": "EPLsite سردیوں کے کھیل | لائیو ونٹر سپورٹس مفت HD",
+					"description": "EPLsite پر لائیو سردیوں کے کھیل مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"bandy": {
+					"title": "EPLsite بینڈی | لائیو بینڈی میچز مفت HD",
+					"description": "EPLsite پر لائیو بینڈی میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"curling": {
+					"title": "EPLsite کرلنگ | لائیو کرلنگ میچز مفت HD",
+					"description": "EPLsite پر لائیو کرلنگ میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"triathlon": {
+					"title": "EPLsite ٹرائیتھلون | لائیو ٹرائیتھلون مفت HD",
+					"description": "EPLsite پر لائیو ٹرائیتھلون مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"water-sports": {
+					"title": "EPLsite پانی کے کھیل | لائیو واٹر سپورٹس مفت HD",
+					"description": "EPLsite پر لائیو پانی کے کھیل مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"water-polo": {
+					"title": "EPLsite واٹر پولو | لائیو واٹر پولو میچز مفت HD",
+					"description": "EPLsite پر لائیو واٹر پولو میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"sailing": {
+					"title": "EPLsite سیلنگ | لائیو سیلنگ ایونٹس مفت HD",
+					"description": "EPLsite پر لائیو سیلنگ ایونٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"bowling": {
+					"title": "EPLsite بولنگ | لائیو بولنگ میچز مفت HD",
+					"description": "EPLsite پر لائیو بولنگ میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"darts": {
+					"title": "EPLsite ڈارٹس | لائیو PDC ڈارٹس مفت HD",
+					"description": "EPLsite پر لائیو ڈارٹس مفت دیکھیں۔ PDC HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"chess": {
+					"title": "EPLsite شطرنج | لائیو شطرنج ٹورنامنٹس مفت HD",
+					"description": "EPLsite پر لائیو شطرنج ٹورنامنٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"e-sports": {
+					"title": "EPLsite ای سپورٹس | لائیو گیمنگ ٹورنامنٹس مفت HD",
+					"description": "EPLsite پر لائیو ای سپورٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"others": {
+					"title": "EPLsite دیگر کھیل | لائیو سٹریمنگ مفت HD",
+					"description": "EPLsite پر لائیو کھیل مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"rugby-sevens": {
+					"title": "EPLsite رگبی سیونز | لائیو رگبی 7s مفت HD",
+					"description": "EPLsite پر لائیو رگبی سیونز میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"extreme-sport": {
+					"title": "EPLsite ایکسٹریم سپورٹ | لائیو ایکسٹریم سپورٹس مفت HD",
+					"description": "EPLsite پر لائیو ایکسٹریم سپورٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | لائیو سپورٹس سٹریمنگ مفت آن لائن",
+				"description": "P2P4U پر لائیو کھیل مفت دیکھیں۔ HD کوالٹی، تیز سٹریمنگ۔ رجسٹریشن کی ضرورت نہیں۔ ابھی دیکھیں!"
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U فٹ بال | لائیو فٹ بال میچز مفت HD",
+					"description": "P2P4U پر لائیو فٹ بال میچز مفت دیکھیں۔ پریمیئر لیگ، لا لیگا HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"basketball": {
+					"title": "P2P4U باسکٹ بال | لائیو NBA میچز مفت HD",
+					"description": "P2P4U پر لائیو باسکٹ بال میچز مفت دیکھیں۔ NBA، یورولیگ HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"tennis": {
+					"title": "P2P4U ٹینس | لائیو ٹینس میچز مفت HD",
+					"description": "P2P4U پر لائیو ٹینس میچز مفت دیکھیں۔ Wimbledon، US Open HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"ice-hockey": {
+					"title": "P2P4U آئس ہاکی | لائیو NHL میچز مفت HD",
+					"description": "P2P4U پر لائیو آئس ہاکی میچز مفت دیکھیں۔ NHL HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"baseball": {
+					"title": "P2P4U بیس بال | لائیو MLB میچز مفت HD",
+					"description": "P2P4U پر لائیو بیس بال میچز مفت دیکھیں۔ MLB HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"rugby-union": {
+					"title": "P2P4U رگبی یونین | لائیو رگبی میچز مفت HD",
+					"description": "P2P4U پر لائیو رگبی یونین میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"rugby-league": {
+					"title": "P2P4U رگبی لیگ | لائیو رگبی میچز مفت HD",
+					"description": "P2P4U پر لائیو رگبی لیگ میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"cricket": {
+					"title": "P2P4U کرکٹ | لائیو کرکٹ میچز مفت HD",
+					"description": "P2P4U پر لائیو کرکٹ میچز مفت دیکھیں۔ IPL، PSL، T20 HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"american-football": {
+					"title": "P2P4U امریکی فٹ بال | لائیو NFL میچز مفت HD",
+					"description": "P2P4U پر لائیو NFL میچز مفت دیکھیں۔ Super Bowl HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"volleyball": {
+					"title": "P2P4U والی بال | لائیو والی بال میچز مفت HD",
+					"description": "P2P4U پر لائیو والی بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"beach-volleyball": {
+					"title": "P2P4U بیچ والی بال | لائیو میچز مفت HD",
+					"description": "P2P4U پر لائیو بیچ والی بال میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"handball": {
+					"title": "P2P4U ہینڈ بال | لائیو ہینڈ بال میچز مفت HD",
+					"description": "P2P4U پر لائیو ہینڈ بال میچز مفت دیکھیں۔ EHF HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"beach-handball": {
+					"title": "P2P4U بیچ ہینڈ بال | لائیو میچز مفت HD",
+					"description": "P2P4U پر لائیو بیچ ہینڈ بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"beach-soccer": {
+					"title": "P2P4U بیچ ساکر | لائیو میچز مفت HD",
+					"description": "P2P4U پر لائیو بیچ ساکر میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"aussie-rules": {
+					"title": "P2P4U آسی رولز | لائیو AFL میچز مفت HD",
+					"description": "P2P4U پر لائیو AFL میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"futsal": {
+					"title": "P2P4U فٹسل | لائیو فٹسل میچز مفت HD",
+					"description": "P2P4U پر لائیو فٹسل میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"badminton": {
+					"title": "P2P4U بیڈمنٹن | لائیو بیڈمنٹن میچز مفت HD",
+					"description": "P2P4U پر لائیو بیڈمنٹن میچز مفت دیکھیں۔ BWF HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"netball": {
+					"title": "P2P4U نیٹ بال | لائیو نیٹ بال میچز مفت HD",
+					"description": "P2P4U پر لائیو نیٹ بال میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"floorball": {
+					"title": "P2P4U فلور بال | لائیو فلور بال میچز مفت HD",
+					"description": "P2P4U پر لائیو فلور بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"combat-sport": {
+					"title": "P2P4U مارشل آرٹس | لائیو فائٹس مفت HD",
+					"description": "P2P4U پر لائیو مارشل آرٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"boxing": {
+					"title": "P2P4U باکسنگ | لائیو باکسنگ فائٹس مفت HD",
+					"description": "P2P4U پر لائیو باکسنگ فائٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"mma": {
+					"title": "P2P4U MMA | لائیو UFC فائٹس مفت HD",
+					"description": "P2P4U پر لائیو MMA اور UFC فائٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"snooker": {
+					"title": "P2P4U سنوکر | لائیو سنوکر میچز مفت HD",
+					"description": "P2P4U پر لائیو سنوکر میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"billiard": {
+					"title": "P2P4U بلیئرڈ | لائیو بلیئرڈ میچز مفت HD",
+					"description": "P2P4U پر لائیو بلیئرڈ میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"table-tennis": {
+					"title": "P2P4U ٹیبل ٹینس | لائیو میچز مفت HD",
+					"description": "P2P4U پر لائیو ٹیبل ٹینس میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"padel-tennis": {
+					"title": "P2P4U پیڈل ٹینس | لائیو میچز مفت HD",
+					"description": "P2P4U پر لائیو پیڈل ٹینس میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"squash": {
+					"title": "P2P4U سکواش | لائیو سکواش میچز مفت HD",
+					"description": "P2P4U پر لائیو سکواش میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"motorsport": {
+					"title": "P2P4U موٹر سپورٹ | لائیو F1 ریسز مفت HD",
+					"description": "P2P4U پر لائیو موٹر سپورٹ اور F1 ریسز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"racing": {
+					"title": "P2P4U ریسنگ | لائیو ریسز مفت HD",
+					"description": "P2P4U پر لائیو ریسنگ مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"cycling": {
+					"title": "P2P4U سائیکلنگ | لائیو Tour de France مفت HD",
+					"description": "P2P4U پر لائیو سائیکلنگ ریسز مفت دیکھیں۔ Tour de France HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"equestrianism": {
+					"title": "P2P4U گھڑ سواری | لائیو ایونٹس مفت HD",
+					"description": "P2P4U پر لائیو گھڑ سواری ایونٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"golf": {
+					"title": "P2P4U گالف | لائیو PGA ٹورنامنٹس مفت HD",
+					"description": "P2P4U پر لائیو گالف مفت دیکھیں۔ PGA، Masters HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"field-hockey": {
+					"title": "P2P4U فیلڈ ہاکی | لائیو ہاکی میچز مفت HD",
+					"description": "P2P4U پر لائیو فیلڈ ہاکی میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"lacrosse": {
+					"title": "P2P4U لیکروس | لائیو لیکروس میچز مفت HD",
+					"description": "P2P4U پر لائیو لیکروس میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"athletics": {
+					"title": "P2P4U ایتھلیٹکس | لائیو ایتھلیٹکس مفت HD",
+					"description": "P2P4U پر لائیو ایتھلیٹکس ایونٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"gymnastics": {
+					"title": "P2P4U جمناسٹکس | لائیو جمناسٹکس مفت HD",
+					"description": "P2P4U پر لائیو جمناسٹکس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"weightlifting": {
+					"title": "P2P4U ویٹ لفٹنگ | لائیو ویٹ لفٹنگ مفت HD",
+					"description": "P2P4U پر لائیو ویٹ لفٹنگ مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"climbing": {
+					"title": "P2P4U چڑھائی | لائیو کلائمبنگ ایونٹس مفت HD",
+					"description": "P2P4U پر لائیو چڑھائی ایونٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"winter-sport": {
+					"title": "P2P4U سردیوں کے کھیل | لائیو ونٹر سپورٹس مفت HD",
+					"description": "P2P4U پر لائیو سردیوں کے کھیل مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"bandy": {
+					"title": "P2P4U بینڈی | لائیو بینڈی میچز مفت HD",
+					"description": "P2P4U پر لائیو بینڈی میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"curling": {
+					"title": "P2P4U کرلنگ | لائیو کرلنگ میچز مفت HD",
+					"description": "P2P4U پر لائیو کرلنگ میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"triathlon": {
+					"title": "P2P4U ٹرائیتھلون | لائیو ٹرائیتھلون مفت HD",
+					"description": "P2P4U پر لائیو ٹرائیتھلون مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"water-sports": {
+					"title": "P2P4U پانی کے کھیل | لائیو واٹر سپورٹس مفت HD",
+					"description": "P2P4U پر لائیو پانی کے کھیل مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"water-polo": {
+					"title": "P2P4U واٹر پولو | لائیو واٹر پولو میچز مفت HD",
+					"description": "P2P4U پر لائیو واٹر پولو میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"sailing": {
+					"title": "P2P4U سیلنگ | لائیو سیلنگ ایونٹس مفت HD",
+					"description": "P2P4U پر لائیو سیلنگ ایونٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"bowling": {
+					"title": "P2P4U بولنگ | لائیو بولنگ میچز مفت HD",
+					"description": "P2P4U پر لائیو بولنگ میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"darts": {
+					"title": "P2P4U ڈارٹس | لائیو PDC ڈارٹس مفت HD",
+					"description": "P2P4U پر لائیو ڈارٹس مفت دیکھیں۔ PDC HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"chess": {
+					"title": "P2P4U شطرنج | لائیو شطرنج ٹورنامنٹس مفت HD",
+					"description": "P2P4U پر لائیو شطرنج ٹورنامنٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"e-sports": {
+					"title": "P2P4U ای سپورٹس | لائیو گیمنگ ٹورنامنٹس مفت HD",
+					"description": "P2P4U پر لائیو ای سپورٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"others": {
+					"title": "P2P4U دیگر کھیل | لائیو سٹریمنگ مفت HD",
+					"description": "P2P4U پر لائیو کھیل مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"rugby-sevens": {
+					"title": "P2P4U رگبی سیونز | لائیو رگبی 7s مفت HD",
+					"description": "P2P4U پر لائیو رگبی سیونز میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"extreme-sport": {
+					"title": "P2P4U ایکسٹریم سپورٹ | لائیو ایکسٹریم سپورٹس مفت HD",
+					"description": "P2P4U پر لائیو ایکسٹریم سپورٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | لائیو سپورٹس سٹریمنگ مفت آن لائن",
+				"description": "StreamHunter پر لائیو کھیل مفت دیکھیں۔ HD کوالٹی، تیز سٹریمنگ۔ رجسٹریشن کی ضرورت نہیں۔ ابھی دیکھیں!"
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter فٹ بال | لائیو فٹ بال میچز مفت HD",
+					"description": "StreamHunter پر لائیو فٹ بال میچز مفت دیکھیں۔ پریمیئر لیگ، لا لیگا HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"basketball": {
+					"title": "StreamHunter باسکٹ بال | لائیو NBA میچز مفت HD",
+					"description": "StreamHunter پر لائیو باسکٹ بال میچز مفت دیکھیں۔ NBA، یورولیگ HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"tennis": {
+					"title": "StreamHunter ٹینس | لائیو ٹینس میچز مفت HD",
+					"description": "StreamHunter پر لائیو ٹینس میچز مفت دیکھیں۔ Wimbledon، US Open HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"ice-hockey": {
+					"title": "StreamHunter آئس ہاکی | لائیو NHL میچز مفت HD",
+					"description": "StreamHunter پر لائیو آئس ہاکی میچز مفت دیکھیں۔ NHL HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"baseball": {
+					"title": "StreamHunter بیس بال | لائیو MLB میچز مفت HD",
+					"description": "StreamHunter پر لائیو بیس بال میچز مفت دیکھیں۔ MLB HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"rugby-union": {
+					"title": "StreamHunter رگبی یونین | لائیو رگبی میچز مفت HD",
+					"description": "StreamHunter پر لائیو رگبی یونین میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"rugby-league": {
+					"title": "StreamHunter رگبی لیگ | لائیو رگبی میچز مفت HD",
+					"description": "StreamHunter پر لائیو رگبی لیگ میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"cricket": {
+					"title": "StreamHunter کرکٹ | لائیو کرکٹ میچز مفت HD",
+					"description": "StreamHunter پر لائیو کرکٹ میچز مفت دیکھیں۔ IPL، PSL، T20 HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"american-football": {
+					"title": "StreamHunter امریکی فٹ بال | لائیو NFL میچز مفت HD",
+					"description": "StreamHunter پر لائیو NFL میچز مفت دیکھیں۔ Super Bowl HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"volleyball": {
+					"title": "StreamHunter والی بال | لائیو والی بال میچز مفت HD",
+					"description": "StreamHunter پر لائیو والی بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter بیچ والی بال | لائیو میچز مفت HD",
+					"description": "StreamHunter پر لائیو بیچ والی بال میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"handball": {
+					"title": "StreamHunter ہینڈ بال | لائیو ہینڈ بال میچز مفت HD",
+					"description": "StreamHunter پر لائیو ہینڈ بال میچز مفت دیکھیں۔ EHF HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"beach-handball": {
+					"title": "StreamHunter بیچ ہینڈ بال | لائیو میچز مفت HD",
+					"description": "StreamHunter پر لائیو بیچ ہینڈ بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"beach-soccer": {
+					"title": "StreamHunter بیچ ساکر | لائیو میچز مفت HD",
+					"description": "StreamHunter پر لائیو بیچ ساکر میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"aussie-rules": {
+					"title": "StreamHunter آسی رولز | لائیو AFL میچز مفت HD",
+					"description": "StreamHunter پر لائیو AFL میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"futsal": {
+					"title": "StreamHunter فٹسل | لائیو فٹسل میچز مفت HD",
+					"description": "StreamHunter پر لائیو فٹسل میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"badminton": {
+					"title": "StreamHunter بیڈمنٹن | لائیو بیڈمنٹن میچز مفت HD",
+					"description": "StreamHunter پر لائیو بیڈمنٹن میچز مفت دیکھیں۔ BWF HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"netball": {
+					"title": "StreamHunter نیٹ بال | لائیو نیٹ بال میچز مفت HD",
+					"description": "StreamHunter پر لائیو نیٹ بال میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"floorball": {
+					"title": "StreamHunter فلور بال | لائیو فلور بال میچز مفت HD",
+					"description": "StreamHunter پر لائیو فلور بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"combat-sport": {
+					"title": "StreamHunter مارشل آرٹس | لائیو فائٹس مفت HD",
+					"description": "StreamHunter پر لائیو مارشل آرٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"boxing": {
+					"title": "StreamHunter باکسنگ | لائیو باکسنگ فائٹس مفت HD",
+					"description": "StreamHunter پر لائیو باکسنگ فائٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"mma": {
+					"title": "StreamHunter MMA | لائیو UFC فائٹس مفت HD",
+					"description": "StreamHunter پر لائیو MMA اور UFC فائٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"snooker": {
+					"title": "StreamHunter سنوکر | لائیو سنوکر میچز مفت HD",
+					"description": "StreamHunter پر لائیو سنوکر میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"billiard": {
+					"title": "StreamHunter بلیئرڈ | لائیو بلیئرڈ میچز مفت HD",
+					"description": "StreamHunter پر لائیو بلیئرڈ میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"table-tennis": {
+					"title": "StreamHunter ٹیبل ٹینس | لائیو میچز مفت HD",
+					"description": "StreamHunter پر لائیو ٹیبل ٹینس میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"padel-tennis": {
+					"title": "StreamHunter پیڈل ٹینس | لائیو میچز مفت HD",
+					"description": "StreamHunter پر لائیو پیڈل ٹینس میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"squash": {
+					"title": "StreamHunter سکواش | لائیو سکواش میچز مفت HD",
+					"description": "StreamHunter پر لائیو سکواش میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"motorsport": {
+					"title": "StreamHunter موٹر سپورٹ | لائیو F1 ریسز مفت HD",
+					"description": "StreamHunter پر لائیو موٹر سپورٹ اور F1 ریسز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"racing": {
+					"title": "StreamHunter ریسنگ | لائیو ریسز مفت HD",
+					"description": "StreamHunter پر لائیو ریسنگ مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"cycling": {
+					"title": "StreamHunter سائیکلنگ | لائیو Tour de France مفت HD",
+					"description": "StreamHunter پر لائیو سائیکلنگ ریسز مفت دیکھیں۔ Tour de France HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"equestrianism": {
+					"title": "StreamHunter گھڑ سواری | لائیو ایونٹس مفت HD",
+					"description": "StreamHunter پر لائیو گھڑ سواری ایونٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"golf": {
+					"title": "StreamHunter گالف | لائیو PGA ٹورنامنٹس مفت HD",
+					"description": "StreamHunter پر لائیو گالف مفت دیکھیں۔ PGA، Masters HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"field-hockey": {
+					"title": "StreamHunter فیلڈ ہاکی | لائیو ہاکی میچز مفت HD",
+					"description": "StreamHunter پر لائیو فیلڈ ہاکی میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"lacrosse": {
+					"title": "StreamHunter لیکروس | لائیو لیکروس میچز مفت HD",
+					"description": "StreamHunter پر لائیو لیکروس میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"athletics": {
+					"title": "StreamHunter ایتھلیٹکس | لائیو ایتھلیٹکس مفت HD",
+					"description": "StreamHunter پر لائیو ایتھلیٹکس ایونٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"gymnastics": {
+					"title": "StreamHunter جمناسٹکس | لائیو جمناسٹکس مفت HD",
+					"description": "StreamHunter پر لائیو جمناسٹکس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"weightlifting": {
+					"title": "StreamHunter ویٹ لفٹنگ | لائیو ویٹ لفٹنگ مفت HD",
+					"description": "StreamHunter پر لائیو ویٹ لفٹنگ مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"climbing": {
+					"title": "StreamHunter چڑھائی | لائیو کلائمبنگ ایونٹس مفت HD",
+					"description": "StreamHunter پر لائیو چڑھائی ایونٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"winter-sport": {
+					"title": "StreamHunter سردیوں کے کھیل | لائیو ونٹر سپورٹس مفت HD",
+					"description": "StreamHunter پر لائیو سردیوں کے کھیل مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"bandy": {
+					"title": "StreamHunter بینڈی | لائیو بینڈی میچز مفت HD",
+					"description": "StreamHunter پر لائیو بینڈی میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"curling": {
+					"title": "StreamHunter کرلنگ | لائیو کرلنگ میچز مفت HD",
+					"description": "StreamHunter پر لائیو کرلنگ میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"triathlon": {
+					"title": "StreamHunter ٹرائیتھلون | لائیو ٹرائیتھلون مفت HD",
+					"description": "StreamHunter پر لائیو ٹرائیتھلون مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"water-sports": {
+					"title": "StreamHunter پانی کے کھیل | لائیو واٹر سپورٹس مفت HD",
+					"description": "StreamHunter پر لائیو پانی کے کھیل مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"water-polo": {
+					"title": "StreamHunter واٹر پولو | لائیو واٹر پولو میچز مفت HD",
+					"description": "StreamHunter پر لائیو واٹر پولو میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"sailing": {
+					"title": "StreamHunter سیلنگ | لائیو سیلنگ ایونٹس مفت HD",
+					"description": "StreamHunter پر لائیو سیلنگ ایونٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"bowling": {
+					"title": "StreamHunter بولنگ | لائیو بولنگ میچز مفت HD",
+					"description": "StreamHunter پر لائیو بولنگ میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"darts": {
+					"title": "StreamHunter ڈارٹس | لائیو PDC ڈارٹس مفت HD",
+					"description": "StreamHunter پر لائیو ڈارٹس مفت دیکھیں۔ PDC HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"chess": {
+					"title": "StreamHunter شطرنج | لائیو شطرنج ٹورنامنٹس مفت HD",
+					"description": "StreamHunter پر لائیو شطرنج ٹورنامنٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"e-sports": {
+					"title": "StreamHunter ای سپورٹس | لائیو گیمنگ ٹورنامنٹس مفت HD",
+					"description": "StreamHunter پر لائیو ای سپورٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"others": {
+					"title": "StreamHunter دیگر کھیل | لائیو سٹریمنگ مفت HD",
+					"description": "StreamHunter پر لائیو کھیل مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter رگبی سیونز | لائیو رگبی 7s مفت HD",
+					"description": "StreamHunter پر لائیو رگبی سیونز میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"extreme-sport": {
+					"title": "StreamHunter ایکسٹریم سپورٹ | لائیو ایکسٹریم سپورٹس مفت HD",
+					"description": "StreamHunter پر لائیو ایکسٹریم سپورٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | لائیو سپورٹس سٹریمنگ مفت آن لائن",
+				"description": "MethStreams پر لائیو کھیل مفت دیکھیں۔ HD کوالٹی، تیز سٹریمنگ۔ رجسٹریشن کی ضرورت نہیں۔ ابھی دیکھیں!"
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams فٹ بال | لائیو فٹ بال میچز مفت HD",
+					"description": "MethStreams پر لائیو فٹ بال میچز مفت دیکھیں۔ پریمیئر لیگ، لا لیگا HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"basketball": {
+					"title": "MethStreams باسکٹ بال | لائیو NBA میچز مفت HD",
+					"description": "MethStreams پر لائیو باسکٹ بال میچز مفت دیکھیں۔ NBA، یورولیگ HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"tennis": {
+					"title": "MethStreams ٹینس | لائیو ٹینس میچز مفت HD",
+					"description": "MethStreams پر لائیو ٹینس میچز مفت دیکھیں۔ Wimbledon، US Open HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"ice-hockey": {
+					"title": "MethStreams آئس ہاکی | لائیو NHL میچز مفت HD",
+					"description": "MethStreams پر لائیو آئس ہاکی میچز مفت دیکھیں۔ NHL HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"baseball": {
+					"title": "MethStreams بیس بال | لائیو MLB میچز مفت HD",
+					"description": "MethStreams پر لائیو بیس بال میچز مفت دیکھیں۔ MLB HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"rugby-union": {
+					"title": "MethStreams رگبی یونین | لائیو رگبی میچز مفت HD",
+					"description": "MethStreams پر لائیو رگبی یونین میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"rugby-league": {
+					"title": "MethStreams رگبی لیگ | لائیو رگبی میچز مفت HD",
+					"description": "MethStreams پر لائیو رگبی لیگ میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"cricket": {
+					"title": "MethStreams کرکٹ | لائیو کرکٹ میچز مفت HD",
+					"description": "MethStreams پر لائیو کرکٹ میچز مفت دیکھیں۔ IPL، PSL، T20 HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"american-football": {
+					"title": "MethStreams امریکی فٹ بال | لائیو NFL میچز مفت HD",
+					"description": "MethStreams پر لائیو NFL میچز مفت دیکھیں۔ Super Bowl HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"volleyball": {
+					"title": "MethStreams والی بال | لائیو والی بال میچز مفت HD",
+					"description": "MethStreams پر لائیو والی بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"beach-volleyball": {
+					"title": "MethStreams بیچ والی بال | لائیو میچز مفت HD",
+					"description": "MethStreams پر لائیو بیچ والی بال میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"handball": {
+					"title": "MethStreams ہینڈ بال | لائیو ہینڈ بال میچز مفت HD",
+					"description": "MethStreams پر لائیو ہینڈ بال میچز مفت دیکھیں۔ EHF HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"beach-handball": {
+					"title": "MethStreams بیچ ہینڈ بال | لائیو میچز مفت HD",
+					"description": "MethStreams پر لائیو بیچ ہینڈ بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"beach-soccer": {
+					"title": "MethStreams بیچ ساکر | لائیو میچز مفت HD",
+					"description": "MethStreams پر لائیو بیچ ساکر میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"aussie-rules": {
+					"title": "MethStreams آسی رولز | لائیو AFL میچز مفت HD",
+					"description": "MethStreams پر لائیو AFL میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"futsal": {
+					"title": "MethStreams فٹسل | لائیو فٹسل میچز مفت HD",
+					"description": "MethStreams پر لائیو فٹسل میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"badminton": {
+					"title": "MethStreams بیڈمنٹن | لائیو بیڈمنٹن میچز مفت HD",
+					"description": "MethStreams پر لائیو بیڈمنٹن میچز مفت دیکھیں۔ BWF HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"netball": {
+					"title": "MethStreams نیٹ بال | لائیو نیٹ بال میچز مفت HD",
+					"description": "MethStreams پر لائیو نیٹ بال میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"floorball": {
+					"title": "MethStreams فلور بال | لائیو فلور بال میچز مفت HD",
+					"description": "MethStreams پر لائیو فلور بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"combat-sport": {
+					"title": "MethStreams مارشل آرٹس | لائیو فائٹس مفت HD",
+					"description": "MethStreams پر لائیو مارشل آرٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"boxing": {
+					"title": "MethStreams باکسنگ | لائیو باکسنگ فائٹس مفت HD",
+					"description": "MethStreams پر لائیو باکسنگ فائٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"mma": {
+					"title": "MethStreams MMA | لائیو UFC فائٹس مفت HD",
+					"description": "MethStreams پر لائیو MMA اور UFC فائٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"snooker": {
+					"title": "MethStreams سنوکر | لائیو سنوکر میچز مفت HD",
+					"description": "MethStreams پر لائیو سنوکر میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"billiard": {
+					"title": "MethStreams بلیئرڈ | لائیو بلیئرڈ میچز مفت HD",
+					"description": "MethStreams پر لائیو بلیئرڈ میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"table-tennis": {
+					"title": "MethStreams ٹیبل ٹینس | لائیو میچز مفت HD",
+					"description": "MethStreams پر لائیو ٹیبل ٹینس میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"padel-tennis": {
+					"title": "MethStreams پیڈل ٹینس | لائیو میچز مفت HD",
+					"description": "MethStreams پر لائیو پیڈل ٹینس میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"squash": {
+					"title": "MethStreams سکواش | لائیو سکواش میچز مفت HD",
+					"description": "MethStreams پر لائیو سکواش میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"motorsport": {
+					"title": "MethStreams موٹر سپورٹ | لائیو F1 ریسز مفت HD",
+					"description": "MethStreams پر لائیو موٹر سپورٹ اور F1 ریسز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"racing": {
+					"title": "MethStreams ریسنگ | لائیو ریسز مفت HD",
+					"description": "MethStreams پر لائیو ریسنگ مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"cycling": {
+					"title": "MethStreams سائیکلنگ | لائیو Tour de France مفت HD",
+					"description": "MethStreams پر لائیو سائیکلنگ ریسز مفت دیکھیں۔ Tour de France HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"equestrianism": {
+					"title": "MethStreams گھڑ سواری | لائیو ایونٹس مفت HD",
+					"description": "MethStreams پر لائیو گھڑ سواری ایونٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"golf": {
+					"title": "MethStreams گالف | لائیو PGA ٹورنامنٹس مفت HD",
+					"description": "MethStreams پر لائیو گالف مفت دیکھیں۔ PGA، Masters HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"field-hockey": {
+					"title": "MethStreams فیلڈ ہاکی | لائیو ہاکی میچز مفت HD",
+					"description": "MethStreams پر لائیو فیلڈ ہاکی میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"lacrosse": {
+					"title": "MethStreams لیکروس | لائیو لیکروس میچز مفت HD",
+					"description": "MethStreams پر لائیو لیکروس میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"athletics": {
+					"title": "MethStreams ایتھلیٹکس | لائیو ایتھلیٹکس مفت HD",
+					"description": "MethStreams پر لائیو ایتھلیٹکس ایونٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"gymnastics": {
+					"title": "MethStreams جمناسٹکس | لائیو جمناسٹکس مفت HD",
+					"description": "MethStreams پر لائیو جمناسٹکس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"weightlifting": {
+					"title": "MethStreams ویٹ لفٹنگ | لائیو ویٹ لفٹنگ مفت HD",
+					"description": "MethStreams پر لائیو ویٹ لفٹنگ مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"climbing": {
+					"title": "MethStreams چڑھائی | لائیو کلائمبنگ ایونٹس مفت HD",
+					"description": "MethStreams پر لائیو چڑھائی ایونٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"winter-sport": {
+					"title": "MethStreams سردیوں کے کھیل | لائیو ونٹر سپورٹس مفت HD",
+					"description": "MethStreams پر لائیو سردیوں کے کھیل مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"bandy": {
+					"title": "MethStreams بینڈی | لائیو بینڈی میچز مفت HD",
+					"description": "MethStreams پر لائیو بینڈی میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"curling": {
+					"title": "MethStreams کرلنگ | لائیو کرلنگ میچز مفت HD",
+					"description": "MethStreams پر لائیو کرلنگ میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"triathlon": {
+					"title": "MethStreams ٹرائیتھلون | لائیو ٹرائیتھلون مفت HD",
+					"description": "MethStreams پر لائیو ٹرائیتھلون مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"water-sports": {
+					"title": "MethStreams پانی کے کھیل | لائیو واٹر سپورٹس مفت HD",
+					"description": "MethStreams پر لائیو پانی کے کھیل مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"water-polo": {
+					"title": "MethStreams واٹر پولو | لائیو واٹر پولو میچز مفت HD",
+					"description": "MethStreams پر لائیو واٹر پولو میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"sailing": {
+					"title": "MethStreams سیلنگ | لائیو سیلنگ ایونٹس مفت HD",
+					"description": "MethStreams پر لائیو سیلنگ ایونٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"bowling": {
+					"title": "MethStreams بولنگ | لائیو بولنگ میچز مفت HD",
+					"description": "MethStreams پر لائیو بولنگ میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"darts": {
+					"title": "MethStreams ڈارٹس | لائیو PDC ڈارٹس مفت HD",
+					"description": "MethStreams پر لائیو ڈارٹس مفت دیکھیں۔ PDC HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"chess": {
+					"title": "MethStreams شطرنج | لائیو شطرنج ٹورنامنٹس مفت HD",
+					"description": "MethStreams پر لائیو شطرنج ٹورنامنٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"e-sports": {
+					"title": "MethStreams ای سپورٹس | لائیو گیمنگ ٹورنامنٹس مفت HD",
+					"description": "MethStreams پر لائیو ای سپورٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"others": {
+					"title": "MethStreams دیگر کھیل | لائیو سٹریمنگ مفت HD",
+					"description": "MethStreams پر لائیو کھیل مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"rugby-sevens": {
+					"title": "MethStreams رگبی سیونز | لائیو رگبی 7s مفت HD",
+					"description": "MethStreams پر لائیو رگبی سیونز میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"extreme-sport": {
+					"title": "MethStreams ایکسٹریم سپورٹ | لائیو ایکسٹریم سپورٹس مفت HD",
+					"description": "MethStreams پر لائیو ایکسٹریم سپورٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | لائیو سپورٹس سٹریمنگ مفت آن لائن",
+				"description": "WiziWig پر لائیو کھیل مفت دیکھیں۔ HD کوالٹی، تیز سٹریمنگ۔ رجسٹریشن کی ضرورت نہیں۔ ابھی دیکھیں!"
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig فٹ بال | لائیو فٹ بال میچز مفت HD",
+					"description": "WiziWig پر لائیو فٹ بال میچز مفت دیکھیں۔ پریمیئر لیگ، لا لیگا HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"basketball": {
+					"title": "WiziWig باسکٹ بال | لائیو NBA میچز مفت HD",
+					"description": "WiziWig پر لائیو باسکٹ بال میچز مفت دیکھیں۔ NBA، یورولیگ HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"tennis": {
+					"title": "WiziWig ٹینس | لائیو ٹینس میچز مفت HD",
+					"description": "WiziWig پر لائیو ٹینس میچز مفت دیکھیں۔ Wimbledon، US Open HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"ice-hockey": {
+					"title": "WiziWig آئس ہاکی | لائیو NHL میچز مفت HD",
+					"description": "WiziWig پر لائیو آئس ہاکی میچز مفت دیکھیں۔ NHL HD کوالٹی میں۔ ابھی دیکھیں!"
+				},
+				"baseball": {
+					"title": "WiziWig بیس بال | لائیو MLB میچز مفت HD",
+					"description": "WiziWig پر لائیو بیس بال میچز مفت دیکھیں۔ MLB HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"rugby-union": {
+					"title": "WiziWig رگبی یونین | لائیو رگبی میچز مفت HD",
+					"description": "WiziWig پر لائیو رگبی یونین میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"rugby-league": {
+					"title": "WiziWig رگبی لیگ | لائیو رگبی میچز مفت HD",
+					"description": "WiziWig پر لائیو رگبی لیگ میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"cricket": {
+					"title": "WiziWig کرکٹ | لائیو کرکٹ میچز مفت HD",
+					"description": "WiziWig پر لائیو کرکٹ میچز مفت دیکھیں۔ IPL، PSL، T20 HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"american-football": {
+					"title": "WiziWig امریکی فٹ بال | لائیو NFL میچز مفت HD",
+					"description": "WiziWig پر لائیو NFL میچز مفت دیکھیں۔ Super Bowl HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"volleyball": {
+					"title": "WiziWig والی بال | لائیو والی بال میچز مفت HD",
+					"description": "WiziWig پر لائیو والی بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"beach-volleyball": {
+					"title": "WiziWig بیچ والی بال | لائیو میچز مفت HD",
+					"description": "WiziWig پر لائیو بیچ والی بال میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"handball": {
+					"title": "WiziWig ہینڈ بال | لائیو ہینڈ بال میچز مفت HD",
+					"description": "WiziWig پر لائیو ہینڈ بال میچز مفت دیکھیں۔ EHF HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"beach-handball": {
+					"title": "WiziWig بیچ ہینڈ بال | لائیو میچز مفت HD",
+					"description": "WiziWig پر لائیو بیچ ہینڈ بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"beach-soccer": {
+					"title": "WiziWig بیچ ساکر | لائیو میچز مفت HD",
+					"description": "WiziWig پر لائیو بیچ ساکر میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"aussie-rules": {
+					"title": "WiziWig آسی رولز | لائیو AFL میچز مفت HD",
+					"description": "WiziWig پر لائیو AFL میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"futsal": {
+					"title": "WiziWig فٹسل | لائیو فٹسل میچز مفت HD",
+					"description": "WiziWig پر لائیو فٹسل میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"badminton": {
+					"title": "WiziWig بیڈمنٹن | لائیو بیڈمنٹن میچز مفت HD",
+					"description": "WiziWig پر لائیو بیڈمنٹن میچز مفت دیکھیں۔ BWF HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"netball": {
+					"title": "WiziWig نیٹ بال | لائیو نیٹ بال میچز مفت HD",
+					"description": "WiziWig پر لائیو نیٹ بال میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"floorball": {
+					"title": "WiziWig فلور بال | لائیو فلور بال میچز مفت HD",
+					"description": "WiziWig پر لائیو فلور بال میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"combat-sport": {
+					"title": "WiziWig مارشل آرٹس | لائیو فائٹس مفت HD",
+					"description": "WiziWig پر لائیو مارشل آرٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"boxing": {
+					"title": "WiziWig باکسنگ | لائیو باکسنگ فائٹس مفت HD",
+					"description": "WiziWig پر لائیو باکسنگ فائٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"mma": {
+					"title": "WiziWig MMA | لائیو UFC فائٹس مفت HD",
+					"description": "WiziWig پر لائیو MMA اور UFC فائٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"snooker": {
+					"title": "WiziWig سنوکر | لائیو سنوکر میچز مفت HD",
+					"description": "WiziWig پر لائیو سنوکر میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"billiard": {
+					"title": "WiziWig بلیئرڈ | لائیو بلیئرڈ میچز مفت HD",
+					"description": "WiziWig پر لائیو بلیئرڈ میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"table-tennis": {
+					"title": "WiziWig ٹیبل ٹینس | لائیو میچز مفت HD",
+					"description": "WiziWig پر لائیو ٹیبل ٹینس میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"padel-tennis": {
+					"title": "WiziWig پیڈل ٹینس | لائیو میچز مفت HD",
+					"description": "WiziWig پر لائیو پیڈل ٹینس میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"squash": {
+					"title": "WiziWig سکواش | لائیو سکواش میچز مفت HD",
+					"description": "WiziWig پر لائیو سکواش میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"motorsport": {
+					"title": "WiziWig موٹر سپورٹ | لائیو F1 ریسز مفت HD",
+					"description": "WiziWig پر لائیو موٹر سپورٹ اور F1 ریسز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"racing": {
+					"title": "WiziWig ریسنگ | لائیو ریسز مفت HD",
+					"description": "WiziWig پر لائیو ریسنگ مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"cycling": {
+					"title": "WiziWig سائیکلنگ | لائیو Tour de France مفت HD",
+					"description": "WiziWig پر لائیو سائیکلنگ ریسز مفت دیکھیں۔ Tour de France HD کوالٹی میں۔ رجسٹریشن نہیں!"
+				},
+				"equestrianism": {
+					"title": "WiziWig گھڑ سواری | لائیو ایونٹس مفت HD",
+					"description": "WiziWig پر لائیو گھڑ سواری ایونٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"golf": {
+					"title": "WiziWig گالف | لائیو PGA ٹورنامنٹس مفت HD",
+					"description": "WiziWig پر لائیو گالف مفت دیکھیں۔ PGA، Masters HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"field-hockey": {
+					"title": "WiziWig فیلڈ ہاکی | لائیو ہاکی میچز مفت HD",
+					"description": "WiziWig پر لائیو فیلڈ ہاکی میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"lacrosse": {
+					"title": "WiziWig لیکروس | لائیو لیکروس میچز مفت HD",
+					"description": "WiziWig پر لائیو لیکروس میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"athletics": {
+					"title": "WiziWig ایتھلیٹکس | لائیو ایتھلیٹکس مفت HD",
+					"description": "WiziWig پر لائیو ایتھلیٹکس ایونٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"gymnastics": {
+					"title": "WiziWig جمناسٹکس | لائیو جمناسٹکس مفت HD",
+					"description": "WiziWig پر لائیو جمناسٹکس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"weightlifting": {
+					"title": "WiziWig ویٹ لفٹنگ | لائیو ویٹ لفٹنگ مفت HD",
+					"description": "WiziWig پر لائیو ویٹ لفٹنگ مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"climbing": {
+					"title": "WiziWig چڑھائی | لائیو کلائمبنگ ایونٹس مفت HD",
+					"description": "WiziWig پر لائیو چڑھائی ایونٹس مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"winter-sport": {
+					"title": "WiziWig سردیوں کے کھیل | لائیو ونٹر سپورٹس مفت HD",
+					"description": "WiziWig پر لائیو سردیوں کے کھیل مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"bandy": {
+					"title": "WiziWig بینڈی | لائیو بینڈی میچز مفت HD",
+					"description": "WiziWig پر لائیو بینڈی میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"curling": {
+					"title": "WiziWig کرلنگ | لائیو کرلنگ میچز مفت HD",
+					"description": "WiziWig پر لائیو کرلنگ میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"triathlon": {
+					"title": "WiziWig ٹرائیتھلون | لائیو ٹرائیتھلون مفت HD",
+					"description": "WiziWig پر لائیو ٹرائیتھلون مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"water-sports": {
+					"title": "WiziWig پانی کے کھیل | لائیو واٹر سپورٹس مفت HD",
+					"description": "WiziWig پر لائیو پانی کے کھیل مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"water-polo": {
+					"title": "WiziWig واٹر پولو | لائیو واٹر پولو میچز مفت HD",
+					"description": "WiziWig پر لائیو واٹر پولو میچز مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"sailing": {
+					"title": "WiziWig سیلنگ | لائیو سیلنگ ایونٹس مفت HD",
+					"description": "WiziWig پر لائیو سیلنگ ایونٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"bowling": {
+					"title": "WiziWig بولنگ | لائیو بولنگ میچز مفت HD",
+					"description": "WiziWig پر لائیو بولنگ میچز مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"darts": {
+					"title": "WiziWig ڈارٹس | لائیو PDC ڈارٹس مفت HD",
+					"description": "WiziWig پر لائیو ڈارٹس مفت دیکھیں۔ PDC HD کوالٹی میں۔ تیز سٹریمنگ!"
+				},
+				"chess": {
+					"title": "WiziWig شطرنج | لائیو شطرنج ٹورنامنٹس مفت HD",
+					"description": "WiziWig پر لائیو شطرنج ٹورنامنٹس مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"e-sports": {
+					"title": "WiziWig ای سپورٹس | لائیو گیمنگ ٹورنامنٹس مفت HD",
+					"description": "WiziWig پر لائیو ای سپورٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				},
+				"others": {
+					"title": "WiziWig دیگر کھیل | لائیو سٹریمنگ مفت HD",
+					"description": "WiziWig پر لائیو کھیل مفت دیکھیں۔ HD کوالٹی۔ تیز سٹریمنگ!"
+				},
+				"rugby-sevens": {
+					"title": "WiziWig رگبی سیونز | لائیو رگبی 7s مفت HD",
+					"description": "WiziWig پر لائیو رگبی سیونز میچز مفت دیکھیں۔ HD کوالٹی۔ رجسٹریشن نہیں!"
+				},
+				"extreme-sport": {
+					"title": "WiziWig ایکسٹریم سپورٹ | لائیو ایکسٹریم سپورٹس مفت HD",
+					"description": "WiziWig پر لائیو ایکسٹریم سپورٹس مفت دیکھیں۔ HD کوالٹی۔ ابھی دیکھیں!"
+				}
+			}
+		}
 	}
 }

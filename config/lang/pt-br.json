@@ -3,6 +3,7 @@
 		"code": "pt-br",
 		"name": "Português (Brasil)",
 		"flag": "BR",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -52,6 +53,7 @@
 		"Baseball": "Beisebol",
 		"Rugby Union": "Rugby Union",
 		"Rugby League": "Rugby League",
+		"Rugby Sevens": "Rugby Sevens",
 		"Cricket": "Críquete",
 		"American Football": "Futebol Americano",
 		"Volleyball": "Vôlei",
@@ -64,8 +66,7 @@
 		"Badminton": "Badminton",
 		"Netball": "Netball",
 		"Floorball": "Floorball",
-		"Combat": "Combate",
-		"combat sport": "Esportes de Combate",
+		"Combat Sport": "Esportes de Combate",
 		"Boxing": "Boxe",
 		"MMA": "MMA",
 		"Snooker": "Sinuca",
@@ -84,7 +85,7 @@
 		"Gymnastics": "Ginástica",
 		"Weightlifting": "Levantamento de Peso",
 		"Climbing": "Escalada",
-		"winter sport": "Esportes de Inverno",
+		"Winter Sport": "Esportes de Inverno",
 		"Bandy": "Bandy",
 		"Curling": "Curling",
 		"Triathlon": "Triatlo",
@@ -95,6 +96,1305 @@
 		"Darts": "Dardos",
 		"Chess": "Xadrez",
 		"E-sports": "E-sports",
+		"Extreme Sport": "Esportes Radicais",
 		"Others": "Outros"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | Transmissão de Esportes ao Vivo Grátis HD",
+				"description": "SportLemon oferece transmissão de esportes ao vivo grátis em qualidade HD. Todos os eventos esportivos sem cadastro. Assista agora!"
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon Futebol | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de futebol ao vivo grátis em HD no SportLemon. Champions League, Brasileirão e mais. Sem cadastro!"
+				},
+				"basketball": {
+					"title": "SportLemon Basquete | Transmissão NBA ao Vivo Grátis",
+					"description": "Transmissão de basquete ao vivo grátis em HD. Assista NBA, NBB e mais no SportLemon. Sem cadastro!"
+				},
+				"tennis": {
+					"title": "SportLemon Tênis | Transmissão Grand Slam ao Vivo Grátis",
+					"description": "Assista transmissão de tênis ao vivo grátis em HD. ATP, WTA e Grand Slams no SportLemon."
+				},
+				"ice-hockey": {
+					"title": "SportLemon Hóquei no Gelo | Transmissão NHL ao Vivo HD",
+					"description": "Transmissão de hóquei no gelo ao vivo grátis em HD no SportLemon. NHL e mais."
+				},
+				"baseball": {
+					"title": "SportLemon Beisebol | Transmissão MLB ao Vivo Grátis HD",
+					"description": "Transmissão de beisebol ao vivo grátis em HD no SportLemon. MLB e mais ligas."
+				},
+				"rugby-union": {
+					"title": "SportLemon Rugby Union | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de Rugby Union ao vivo grátis em HD no SportLemon. Six Nations e mais."
+				},
+				"rugby-league": {
+					"title": "SportLemon Rugby League | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de Rugby League ao vivo grátis em HD no SportLemon."
+				},
+				"cricket": {
+					"title": "SportLemon Críquete | Transmissão IPL ao Vivo Grátis HD",
+					"description": "Transmissão de críquete ao vivo grátis no SportLemon. IPL, T20 em HD."
+				},
+				"american-football": {
+					"title": "SportLemon Futebol Americano | Transmissão NFL ao Vivo HD",
+					"description": "Assista transmissão de NFL ao vivo grátis em HD no SportLemon."
+				},
+				"volleyball": {
+					"title": "SportLemon Vôlei | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de vôlei ao vivo grátis em HD no SportLemon."
+				},
+				"beach-volleyball": {
+					"title": "SportLemon Vôlei de Praia | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de vôlei de praia ao vivo grátis em HD no SportLemon."
+				},
+				"handball": {
+					"title": "SportLemon Handebol | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de handebol ao vivo grátis em HD no SportLemon."
+				},
+				"beach-handball": {
+					"title": "SportLemon Handebol de Praia | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de handebol de praia ao vivo grátis em HD no SportLemon."
+				},
+				"beach-soccer": {
+					"title": "SportLemon Futebol de Areia | Transmissão ao Vivo HD",
+					"description": "Transmissão de futebol de areia ao vivo grátis em HD no SportLemon."
+				},
+				"aussie-rules": {
+					"title": "SportLemon Futebol Australiano | Transmissão AFL ao Vivo",
+					"description": "Assista transmissão de AFL ao vivo grátis em HD no SportLemon."
+				},
+				"futsal": {
+					"title": "SportLemon Futsal | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de futsal ao vivo grátis em HD no SportLemon."
+				},
+				"badminton": {
+					"title": "SportLemon Badminton | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de badminton ao vivo grátis em HD no SportLemon."
+				},
+				"netball": {
+					"title": "SportLemon Netball | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de netball ao vivo grátis em HD no SportLemon."
+				},
+				"floorball": {
+					"title": "SportLemon Floorball | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de floorball ao vivo grátis em HD no SportLemon."
+				},
+				"combat-sport": {
+					"title": "SportLemon Esportes de Combate | Transmissão ao Vivo HD",
+					"description": "Transmissão de esportes de combate ao vivo grátis em HD no SportLemon."
+				},
+				"boxing": {
+					"title": "SportLemon Boxe | Transmissão de Lutas ao Vivo HD",
+					"description": "Assista transmissão de boxe ao vivo grátis em HD no SportLemon."
+				},
+				"mma": {
+					"title": "SportLemon MMA | Transmissão UFC ao Vivo Grátis HD",
+					"description": "Transmissão de MMA e UFC ao vivo grátis em HD no SportLemon."
+				},
+				"snooker": {
+					"title": "SportLemon Sinuca | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de sinuca ao vivo grátis em HD no SportLemon."
+				},
+				"billiard": {
+					"title": "SportLemon Bilhar | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de bilhar ao vivo grátis em HD no SportLemon."
+				},
+				"table-tennis": {
+					"title": "SportLemon Tênis de Mesa | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de tênis de mesa ao vivo grátis em HD no SportLemon."
+				},
+				"padel-tennis": {
+					"title": "SportLemon Padel | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de padel ao vivo grátis em HD no SportLemon."
+				},
+				"squash": {
+					"title": "SportLemon Squash | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de squash ao vivo grátis em HD no SportLemon."
+				},
+				"motorsport": {
+					"title": "SportLemon Automobilismo | Transmissão F1 ao Vivo",
+					"description": "Transmissão de F1 e automobilismo ao vivo grátis em HD no SportLemon."
+				},
+				"racing": {
+					"title": "SportLemon Corridas | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de corridas ao vivo grátis em HD no SportLemon."
+				},
+				"cycling": {
+					"title": "SportLemon Ciclismo | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de ciclismo ao vivo grátis em HD no SportLemon."
+				},
+				"equestrianism": {
+					"title": "SportLemon Hipismo | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de hipismo ao vivo grátis em HD no SportLemon."
+				},
+				"golf": {
+					"title": "SportLemon Golfe | Transmissão PGA ao Vivo Grátis HD",
+					"description": "Transmissão de golfe ao vivo grátis em HD no SportLemon."
+				},
+				"field-hockey": {
+					"title": "SportLemon Hóquei de Campo | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de hóquei de campo ao vivo grátis em HD no SportLemon."
+				},
+				"lacrosse": {
+					"title": "SportLemon Lacrosse | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de lacrosse ao vivo grátis em HD no SportLemon."
+				},
+				"athletics": {
+					"title": "SportLemon Atletismo | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de atletismo ao vivo grátis em HD no SportLemon."
+				},
+				"gymnastics": {
+					"title": "SportLemon Ginástica | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de ginástica ao vivo grátis em HD no SportLemon."
+				},
+				"weightlifting": {
+					"title": "SportLemon Levantamento de Peso | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de levantamento de peso ao vivo grátis em HD no SportLemon."
+				},
+				"climbing": {
+					"title": "SportLemon Escalada | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de escalada ao vivo grátis em HD no SportLemon."
+				},
+				"winter-sport": {
+					"title": "SportLemon Esportes de Inverno | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de esportes de inverno ao vivo grátis em HD no SportLemon."
+				},
+				"bandy": {
+					"title": "SportLemon Bandy | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de bandy ao vivo grátis em HD no SportLemon."
+				},
+				"curling": {
+					"title": "SportLemon Curling | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de curling ao vivo grátis em HD no SportLemon."
+				},
+				"triathlon": {
+					"title": "SportLemon Triatlo | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de triatlo ao vivo grátis em HD no SportLemon."
+				},
+				"water-sports": {
+					"title": "SportLemon Esportes Aquáticos | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de esportes aquáticos ao vivo grátis em HD no SportLemon."
+				},
+				"water-polo": {
+					"title": "SportLemon Polo Aquático | Transmissão ao Vivo HD",
+					"description": "Transmissão de polo aquático ao vivo grátis em HD no SportLemon."
+				},
+				"sailing": {
+					"title": "SportLemon Vela | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de vela ao vivo grátis em HD no SportLemon."
+				},
+				"bowling": {
+					"title": "SportLemon Boliche | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de boliche ao vivo grátis em HD no SportLemon."
+				},
+				"darts": {
+					"title": "SportLemon Dardos | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de dardos ao vivo grátis em HD no SportLemon."
+				},
+				"chess": {
+					"title": "SportLemon Xadrez | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de xadrez ao vivo grátis em HD no SportLemon."
+				},
+				"e-sports": {
+					"title": "SportLemon E-sports | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de e-sports ao vivo grátis em HD no SportLemon."
+				},
+				"others": {
+					"title": "SportLemon Outros | Transmissão Esportiva ao Vivo HD",
+					"description": "Transmissão de vários esportes ao vivo grátis em HD no SportLemon."
+				},
+				"rugby-sevens": {
+					"title": "SportLemon Rugby Sevens | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de Rugby Sevens ao vivo grátis em HD no SportLemon. SVNS Series e torneios. Sem cadastro."
+				},
+				"extreme-sport": {
+					"title": "SportLemon Esportes Radicais | Transmissão ao Vivo HD",
+					"description": "Transmissão de esportes radicais ao vivo grátis em HD no SportLemon. X Games e competições. Sem cadastro."
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLsite | Transmissão de Esportes ao Vivo Grátis HD",
+				"description": "EPLsite oferece transmissão de esportes ao vivo grátis em qualidade HD. Todos os eventos esportivos sem cadastro. Assista agora!"
+			},
+			"sports": {
+				"football": {
+					"title": "EPLsite Futebol | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de futebol ao vivo grátis em HD no EPLsite. Champions League, Brasileirão e mais. Sem cadastro!"
+				},
+				"basketball": {
+					"title": "EPLsite Basquete | Transmissão NBA ao Vivo Grátis",
+					"description": "Transmissão de basquete ao vivo grátis em HD. Assista NBA, NBB e mais no EPLsite. Sem cadastro!"
+				},
+				"tennis": {
+					"title": "EPLsite Tênis | Transmissão Grand Slam ao Vivo Grátis",
+					"description": "Assista transmissão de tênis ao vivo grátis em HD. ATP, WTA e Grand Slams no EPLsite."
+				},
+				"ice-hockey": {
+					"title": "EPLsite Hóquei no Gelo | Transmissão NHL ao Vivo HD",
+					"description": "Transmissão de hóquei no gelo ao vivo grátis em HD no EPLsite. NHL e mais."
+				},
+				"baseball": {
+					"title": "EPLsite Beisebol | Transmissão MLB ao Vivo Grátis HD",
+					"description": "Transmissão de beisebol ao vivo grátis em HD no EPLsite. MLB e mais ligas."
+				},
+				"rugby-union": {
+					"title": "EPLsite Rugby Union | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de Rugby Union ao vivo grátis em HD no EPLsite. Six Nations e mais."
+				},
+				"rugby-league": {
+					"title": "EPLsite Rugby League | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de Rugby League ao vivo grátis em HD no EPLsite."
+				},
+				"cricket": {
+					"title": "EPLsite Críquete | Transmissão IPL ao Vivo Grátis HD",
+					"description": "Transmissão de críquete ao vivo grátis no EPLsite. IPL, T20 em HD."
+				},
+				"american-football": {
+					"title": "EPLsite Futebol Americano | Transmissão NFL ao Vivo HD",
+					"description": "Assista transmissão de NFL ao vivo grátis em HD no EPLsite."
+				},
+				"volleyball": {
+					"title": "EPLsite Vôlei | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de vôlei ao vivo grátis em HD no EPLsite."
+				},
+				"beach-volleyball": {
+					"title": "EPLsite Vôlei de Praia | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de vôlei de praia ao vivo grátis em HD no EPLsite."
+				},
+				"handball": {
+					"title": "EPLsite Handebol | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de handebol ao vivo grátis em HD no EPLsite."
+				},
+				"beach-handball": {
+					"title": "EPLsite Handebol de Praia | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de handebol de praia ao vivo grátis em HD no EPLsite."
+				},
+				"beach-soccer": {
+					"title": "EPLsite Futebol de Areia | Transmissão ao Vivo HD",
+					"description": "Transmissão de futebol de areia ao vivo grátis em HD no EPLsite."
+				},
+				"aussie-rules": {
+					"title": "EPLsite Futebol Australiano | Transmissão AFL ao Vivo",
+					"description": "Assista transmissão de AFL ao vivo grátis em HD no EPLsite."
+				},
+				"futsal": {
+					"title": "EPLsite Futsal | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de futsal ao vivo grátis em HD no EPLsite."
+				},
+				"badminton": {
+					"title": "EPLsite Badminton | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de badminton ao vivo grátis em HD no EPLsite."
+				},
+				"netball": {
+					"title": "EPLsite Netball | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de netball ao vivo grátis em HD no EPLsite."
+				},
+				"floorball": {
+					"title": "EPLsite Floorball | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de floorball ao vivo grátis em HD no EPLsite."
+				},
+				"combat-sport": {
+					"title": "EPLsite Esportes de Combate | Transmissão ao Vivo HD",
+					"description": "Transmissão de esportes de combate ao vivo grátis em HD no EPLsite."
+				},
+				"boxing": {
+					"title": "EPLsite Boxe | Transmissão de Lutas ao Vivo HD",
+					"description": "Assista transmissão de boxe ao vivo grátis em HD no EPLsite."
+				},
+				"mma": {
+					"title": "EPLsite MMA | Transmissão UFC ao Vivo Grátis HD",
+					"description": "Transmissão de MMA e UFC ao vivo grátis em HD no EPLsite."
+				},
+				"snooker": {
+					"title": "EPLsite Sinuca | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de sinuca ao vivo grátis em HD no EPLsite."
+				},
+				"billiard": {
+					"title": "EPLsite Bilhar | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de bilhar ao vivo grátis em HD no EPLsite."
+				},
+				"table-tennis": {
+					"title": "EPLsite Tênis de Mesa | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de tênis de mesa ao vivo grátis em HD no EPLsite."
+				},
+				"padel-tennis": {
+					"title": "EPLsite Padel | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de padel ao vivo grátis em HD no EPLsite."
+				},
+				"squash": {
+					"title": "EPLsite Squash | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de squash ao vivo grátis em HD no EPLsite."
+				},
+				"motorsport": {
+					"title": "EPLsite Automobilismo | Transmissão F1 ao Vivo",
+					"description": "Transmissão de F1 e automobilismo ao vivo grátis em HD no EPLsite."
+				},
+				"racing": {
+					"title": "EPLsite Corridas | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de corridas ao vivo grátis em HD no EPLsite."
+				},
+				"cycling": {
+					"title": "EPLsite Ciclismo | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de ciclismo ao vivo grátis em HD no EPLsite."
+				},
+				"equestrianism": {
+					"title": "EPLsite Hipismo | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de hipismo ao vivo grátis em HD no EPLsite."
+				},
+				"golf": {
+					"title": "EPLsite Golfe | Transmissão PGA ao Vivo Grátis HD",
+					"description": "Transmissão de golfe ao vivo grátis em HD no EPLsite."
+				},
+				"field-hockey": {
+					"title": "EPLsite Hóquei de Campo | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de hóquei de campo ao vivo grátis em HD no EPLsite."
+				},
+				"lacrosse": {
+					"title": "EPLsite Lacrosse | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de lacrosse ao vivo grátis em HD no EPLsite."
+				},
+				"athletics": {
+					"title": "EPLsite Atletismo | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de atletismo ao vivo grátis em HD no EPLsite."
+				},
+				"gymnastics": {
+					"title": "EPLsite Ginástica | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de ginástica ao vivo grátis em HD no EPLsite."
+				},
+				"weightlifting": {
+					"title": "EPLsite Levantamento de Peso | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de levantamento de peso ao vivo grátis em HD no EPLsite."
+				},
+				"climbing": {
+					"title": "EPLsite Escalada | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de escalada ao vivo grátis em HD no EPLsite."
+				},
+				"winter-sport": {
+					"title": "EPLsite Esportes de Inverno | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de esportes de inverno ao vivo grátis em HD no EPLsite."
+				},
+				"bandy": {
+					"title": "EPLsite Bandy | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de bandy ao vivo grátis em HD no EPLsite."
+				},
+				"curling": {
+					"title": "EPLsite Curling | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de curling ao vivo grátis em HD no EPLsite."
+				},
+				"triathlon": {
+					"title": "EPLsite Triatlo | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de triatlo ao vivo grátis em HD no EPLsite."
+				},
+				"water-sports": {
+					"title": "EPLsite Esportes Aquáticos | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de esportes aquáticos ao vivo grátis em HD no EPLsite."
+				},
+				"water-polo": {
+					"title": "EPLsite Polo Aquático | Transmissão ao Vivo HD",
+					"description": "Transmissão de polo aquático ao vivo grátis em HD no EPLsite."
+				},
+				"sailing": {
+					"title": "EPLsite Vela | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de vela ao vivo grátis em HD no EPLsite."
+				},
+				"bowling": {
+					"title": "EPLsite Boliche | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de boliche ao vivo grátis em HD no EPLsite."
+				},
+				"darts": {
+					"title": "EPLsite Dardos | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de dardos ao vivo grátis em HD no EPLsite."
+				},
+				"chess": {
+					"title": "EPLsite Xadrez | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de xadrez ao vivo grátis em HD no EPLsite."
+				},
+				"e-sports": {
+					"title": "EPLsite E-sports | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de e-sports ao vivo grátis em HD no EPLsite."
+				},
+				"others": {
+					"title": "EPLsite Outros | Transmissão Esportiva ao Vivo HD",
+					"description": "Transmissão de vários esportes ao vivo grátis em HD no EPLsite."
+				},
+				"rugby-sevens": {
+					"title": "EPLsite Rugby Sevens | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de Rugby Sevens ao vivo grátis em HD no EPLsite. SVNS Series e torneios. Sem cadastro."
+				},
+				"extreme-sport": {
+					"title": "EPLsite Esportes Radicais | Transmissão ao Vivo HD",
+					"description": "Transmissão de esportes radicais ao vivo grátis em HD no EPLsite. X Games e competições. Sem cadastro."
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | Transmissão de Esportes ao Vivo Grátis HD",
+				"description": "P2P4U oferece transmissão de esportes ao vivo grátis em HD. Carregamento rápido, sem cadastro. Assista agora!"
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U Futebol | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de futebol ao vivo grátis em HD no P2P4U. Carregamento rápido, sem cadastro!"
+				},
+				"basketball": {
+					"title": "P2P4U Basquete | Transmissão NBA ao Vivo Grátis",
+					"description": "Transmissão de basquete ao vivo grátis em HD no P2P4U. Carregamento rápido, sem cadastro!"
+				},
+				"tennis": {
+					"title": "P2P4U Tênis | Transmissão Grand Slam ao Vivo Grátis",
+					"description": "Assista transmissão de tênis ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"ice-hockey": {
+					"title": "P2P4U Hóquei no Gelo | Transmissão NHL ao Vivo HD",
+					"description": "Transmissão de hóquei no gelo ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"baseball": {
+					"title": "P2P4U Beisebol | Transmissão MLB ao Vivo Grátis HD",
+					"description": "Transmissão de beisebol ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"rugby-union": {
+					"title": "P2P4U Rugby Union | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de Rugby Union ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"rugby-league": {
+					"title": "P2P4U Rugby League | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de Rugby League ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"cricket": {
+					"title": "P2P4U Críquete | Transmissão IPL ao Vivo Grátis HD",
+					"description": "Transmissão de críquete ao vivo grátis no P2P4U. Carregamento rápido!"
+				},
+				"american-football": {
+					"title": "P2P4U Futebol Americano | Transmissão NFL ao Vivo HD",
+					"description": "Assista transmissão de NFL ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"volleyball": {
+					"title": "P2P4U Vôlei | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de vôlei ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"beach-volleyball": {
+					"title": "P2P4U Vôlei de Praia | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de vôlei de praia ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"handball": {
+					"title": "P2P4U Handebol | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de handebol ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"beach-handball": {
+					"title": "P2P4U Handebol de Praia | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de handebol de praia ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"beach-soccer": {
+					"title": "P2P4U Futebol de Areia | Transmissão ao Vivo HD",
+					"description": "Transmissão de futebol de areia ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"aussie-rules": {
+					"title": "P2P4U Futebol Australiano | Transmissão AFL ao Vivo",
+					"description": "Assista transmissão de AFL ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"futsal": {
+					"title": "P2P4U Futsal | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de futsal ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"badminton": {
+					"title": "P2P4U Badminton | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de badminton ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"netball": {
+					"title": "P2P4U Netball | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de netball ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"floorball": {
+					"title": "P2P4U Floorball | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de floorball ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"combat-sport": {
+					"title": "P2P4U Esportes de Combate | Transmissão ao Vivo HD",
+					"description": "Transmissão de esportes de combate ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"boxing": {
+					"title": "P2P4U Boxe | Transmissão de Lutas ao Vivo HD",
+					"description": "Assista transmissão de boxe ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"mma": {
+					"title": "P2P4U MMA | Transmissão UFC ao Vivo Grátis HD",
+					"description": "Transmissão de MMA e UFC ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"snooker": {
+					"title": "P2P4U Sinuca | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de sinuca ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"billiard": {
+					"title": "P2P4U Bilhar | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de bilhar ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"table-tennis": {
+					"title": "P2P4U Tênis de Mesa | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de tênis de mesa ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"padel-tennis": {
+					"title": "P2P4U Padel | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de padel ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"squash": {
+					"title": "P2P4U Squash | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de squash ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"motorsport": {
+					"title": "P2P4U Automobilismo | Transmissão F1 ao Vivo",
+					"description": "Transmissão de F1 e automobilismo ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"racing": {
+					"title": "P2P4U Corridas | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de corridas ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"cycling": {
+					"title": "P2P4U Ciclismo | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de ciclismo ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"equestrianism": {
+					"title": "P2P4U Hipismo | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de hipismo ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"golf": {
+					"title": "P2P4U Golfe | Transmissão PGA ao Vivo Grátis HD",
+					"description": "Transmissão de golfe ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"field-hockey": {
+					"title": "P2P4U Hóquei de Campo | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de hóquei de campo ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"lacrosse": {
+					"title": "P2P4U Lacrosse | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de lacrosse ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"athletics": {
+					"title": "P2P4U Atletismo | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de atletismo ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"gymnastics": {
+					"title": "P2P4U Ginástica | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de ginástica ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"weightlifting": {
+					"title": "P2P4U Levantamento de Peso | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de levantamento de peso ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"climbing": {
+					"title": "P2P4U Escalada | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de escalada ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"winter-sport": {
+					"title": "P2P4U Esportes de Inverno | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de esportes de inverno ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"bandy": {
+					"title": "P2P4U Bandy | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de bandy ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"curling": {
+					"title": "P2P4U Curling | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de curling ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"triathlon": {
+					"title": "P2P4U Triatlo | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de triatlo ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"water-sports": {
+					"title": "P2P4U Esportes Aquáticos | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de esportes aquáticos ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"water-polo": {
+					"title": "P2P4U Polo Aquático | Transmissão ao Vivo HD",
+					"description": "Transmissão de polo aquático ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"sailing": {
+					"title": "P2P4U Vela | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de vela ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"bowling": {
+					"title": "P2P4U Boliche | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de boliche ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"darts": {
+					"title": "P2P4U Dardos | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de dardos ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"chess": {
+					"title": "P2P4U Xadrez | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de xadrez ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"e-sports": {
+					"title": "P2P4U E-sports | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de e-sports ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"others": {
+					"title": "P2P4U Outros | Transmissão Esportiva ao Vivo HD",
+					"description": "Transmissão de vários esportes ao vivo grátis em HD no P2P4U. Carregamento rápido!"
+				},
+				"rugby-sevens": {
+					"title": "P2P4U Rugby Sevens | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de Rugby Sevens ao vivo grátis em HD no P2P4U. Carregamento rápido, sem cadastro!"
+				},
+				"extreme-sport": {
+					"title": "P2P4U Esportes Radicais | Transmissão ao Vivo HD",
+					"description": "Transmissão de esportes radicais ao vivo grátis em HD no P2P4U. Carregamento rápido, sem cadastro!"
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | Transmissão de Esportes ao Vivo Grátis HD",
+				"description": "StreamHunter oferece transmissão de esportes ao vivo grátis em HD. Carregamento rápido, sem cadastro. Assista agora!"
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter Futebol | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de futebol ao vivo grátis em HD no StreamHunter. Carregamento rápido, sem cadastro!"
+				},
+				"basketball": {
+					"title": "StreamHunter Basquete | Transmissão NBA ao Vivo Grátis",
+					"description": "Transmissão de basquete ao vivo grátis em HD no StreamHunter. Carregamento rápido, sem cadastro!"
+				},
+				"tennis": {
+					"title": "StreamHunter Tênis | Transmissão Grand Slam ao Vivo Grátis",
+					"description": "Assista transmissão de tênis ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"ice-hockey": {
+					"title": "StreamHunter Hóquei no Gelo | Transmissão NHL ao Vivo HD",
+					"description": "Transmissão de hóquei no gelo ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"baseball": {
+					"title": "StreamHunter Beisebol | Transmissão MLB ao Vivo Grátis HD",
+					"description": "Transmissão de beisebol ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"rugby-union": {
+					"title": "StreamHunter Rugby Union | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de Rugby Union ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"rugby-league": {
+					"title": "StreamHunter Rugby League | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de Rugby League ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"cricket": {
+					"title": "StreamHunter Críquete | Transmissão IPL ao Vivo Grátis HD",
+					"description": "Transmissão de críquete ao vivo grátis no StreamHunter. Carregamento rápido!"
+				},
+				"american-football": {
+					"title": "StreamHunter Futebol Americano | Transmissão NFL ao Vivo HD",
+					"description": "Assista transmissão de NFL ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"volleyball": {
+					"title": "StreamHunter Vôlei | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de vôlei ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter Vôlei de Praia | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de vôlei de praia ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"handball": {
+					"title": "StreamHunter Handebol | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de handebol ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"beach-handball": {
+					"title": "StreamHunter Handebol de Praia | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de handebol de praia ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"beach-soccer": {
+					"title": "StreamHunter Futebol de Areia | Transmissão ao Vivo HD",
+					"description": "Transmissão de futebol de areia ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"aussie-rules": {
+					"title": "StreamHunter Futebol Australiano | Transmissão AFL ao Vivo",
+					"description": "Assista transmissão de AFL ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"futsal": {
+					"title": "StreamHunter Futsal | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de futsal ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"badminton": {
+					"title": "StreamHunter Badminton | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de badminton ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"netball": {
+					"title": "StreamHunter Netball | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de netball ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"floorball": {
+					"title": "StreamHunter Floorball | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de floorball ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"combat-sport": {
+					"title": "StreamHunter Esportes de Combate | Transmissão ao Vivo HD",
+					"description": "Transmissão de esportes de combate ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"boxing": {
+					"title": "StreamHunter Boxe | Transmissão de Lutas ao Vivo HD",
+					"description": "Assista transmissão de boxe ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"mma": {
+					"title": "StreamHunter MMA | Transmissão UFC ao Vivo Grátis HD",
+					"description": "Transmissão de MMA e UFC ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"snooker": {
+					"title": "StreamHunter Sinuca | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de sinuca ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"billiard": {
+					"title": "StreamHunter Bilhar | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de bilhar ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"table-tennis": {
+					"title": "StreamHunter Tênis de Mesa | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de tênis de mesa ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"padel-tennis": {
+					"title": "StreamHunter Padel | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de padel ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"squash": {
+					"title": "StreamHunter Squash | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de squash ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"motorsport": {
+					"title": "StreamHunter Automobilismo | Transmissão F1 ao Vivo",
+					"description": "Transmissão de F1 e automobilismo ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"racing": {
+					"title": "StreamHunter Corridas | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de corridas ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"cycling": {
+					"title": "StreamHunter Ciclismo | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de ciclismo ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"equestrianism": {
+					"title": "StreamHunter Hipismo | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de hipismo ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"golf": {
+					"title": "StreamHunter Golfe | Transmissão PGA ao Vivo Grátis HD",
+					"description": "Transmissão de golfe ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"field-hockey": {
+					"title": "StreamHunter Hóquei de Campo | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de hóquei de campo ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"lacrosse": {
+					"title": "StreamHunter Lacrosse | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de lacrosse ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"athletics": {
+					"title": "StreamHunter Atletismo | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de atletismo ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"gymnastics": {
+					"title": "StreamHunter Ginástica | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de ginástica ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"weightlifting": {
+					"title": "StreamHunter Levantamento de Peso | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de levantamento de peso ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"climbing": {
+					"title": "StreamHunter Escalada | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de escalada ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"winter-sport": {
+					"title": "StreamHunter Esportes de Inverno | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de esportes de inverno ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"bandy": {
+					"title": "StreamHunter Bandy | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de bandy ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"curling": {
+					"title": "StreamHunter Curling | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de curling ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"triathlon": {
+					"title": "StreamHunter Triatlo | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de triatlo ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"water-sports": {
+					"title": "StreamHunter Esportes Aquáticos | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de esportes aquáticos ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"water-polo": {
+					"title": "StreamHunter Polo Aquático | Transmissão ao Vivo HD",
+					"description": "Transmissão de polo aquático ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"sailing": {
+					"title": "StreamHunter Vela | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de vela ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"bowling": {
+					"title": "StreamHunter Boliche | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de boliche ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"darts": {
+					"title": "StreamHunter Dardos | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de dardos ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"chess": {
+					"title": "StreamHunter Xadrez | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de xadrez ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"e-sports": {
+					"title": "StreamHunter E-sports | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de e-sports ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"others": {
+					"title": "StreamHunter Outros | Transmissão Esportiva ao Vivo HD",
+					"description": "Transmissão de vários esportes ao vivo grátis em HD no StreamHunter. Carregamento rápido!"
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter Rugby Sevens | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de Rugby Sevens ao vivo grátis em HD no StreamHunter. Carregamento rápido, sem cadastro!"
+				},
+				"extreme-sport": {
+					"title": "StreamHunter Esportes Radicais | Transmissão ao Vivo HD",
+					"description": "Transmissão de esportes radicais ao vivo grátis em HD no StreamHunter. Carregamento rápido, sem cadastro!"
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | Transmissão de Esportes ao Vivo Grátis HD",
+				"description": "MethStreams oferece transmissão de esportes ao vivo grátis em HD. Carregamento rápido, sem cadastro. Assista agora!"
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams Futebol | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de futebol ao vivo grátis em HD no MethStreams. Carregamento rápido, sem cadastro!"
+				},
+				"basketball": {
+					"title": "MethStreams Basquete | Transmissão NBA ao Vivo Grátis",
+					"description": "Transmissão de basquete ao vivo grátis em HD no MethStreams. Carregamento rápido, sem cadastro!"
+				},
+				"tennis": {
+					"title": "MethStreams Tênis | Transmissão Grand Slam ao Vivo Grátis",
+					"description": "Assista transmissão de tênis ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"ice-hockey": {
+					"title": "MethStreams Hóquei no Gelo | Transmissão NHL ao Vivo HD",
+					"description": "Transmissão de hóquei no gelo ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"baseball": {
+					"title": "MethStreams Beisebol | Transmissão MLB ao Vivo Grátis HD",
+					"description": "Transmissão de beisebol ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"rugby-union": {
+					"title": "MethStreams Rugby Union | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de Rugby Union ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"rugby-league": {
+					"title": "MethStreams Rugby League | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de Rugby League ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"cricket": {
+					"title": "MethStreams Críquete | Transmissão IPL ao Vivo Grátis HD",
+					"description": "Transmissão de críquete ao vivo grátis no MethStreams. Carregamento rápido!"
+				},
+				"american-football": {
+					"title": "MethStreams Futebol Americano | Transmissão NFL ao Vivo HD",
+					"description": "Assista transmissão de NFL ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"volleyball": {
+					"title": "MethStreams Vôlei | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de vôlei ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"beach-volleyball": {
+					"title": "MethStreams Vôlei de Praia | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de vôlei de praia ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"handball": {
+					"title": "MethStreams Handebol | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de handebol ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"beach-handball": {
+					"title": "MethStreams Handebol de Praia | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de handebol de praia ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"beach-soccer": {
+					"title": "MethStreams Futebol de Areia | Transmissão ao Vivo HD",
+					"description": "Transmissão de futebol de areia ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"aussie-rules": {
+					"title": "MethStreams Futebol Australiano | Transmissão AFL ao Vivo",
+					"description": "Assista transmissão de AFL ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"futsal": {
+					"title": "MethStreams Futsal | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de futsal ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"badminton": {
+					"title": "MethStreams Badminton | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de badminton ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"netball": {
+					"title": "MethStreams Netball | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de netball ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"floorball": {
+					"title": "MethStreams Floorball | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de floorball ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"combat-sport": {
+					"title": "MethStreams Esportes de Combate | Transmissão ao Vivo HD",
+					"description": "Transmissão de esportes de combate ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"boxing": {
+					"title": "MethStreams Boxe | Transmissão de Lutas ao Vivo HD",
+					"description": "Assista transmissão de boxe ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"mma": {
+					"title": "MethStreams MMA | Transmissão UFC ao Vivo Grátis HD",
+					"description": "Transmissão de MMA e UFC ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"snooker": {
+					"title": "MethStreams Sinuca | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de sinuca ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"billiard": {
+					"title": "MethStreams Bilhar | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de bilhar ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"table-tennis": {
+					"title": "MethStreams Tênis de Mesa | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de tênis de mesa ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"padel-tennis": {
+					"title": "MethStreams Padel | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de padel ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"squash": {
+					"title": "MethStreams Squash | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de squash ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"motorsport": {
+					"title": "MethStreams Automobilismo | Transmissão F1 ao Vivo",
+					"description": "Transmissão de F1 e automobilismo ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"racing": {
+					"title": "MethStreams Corridas | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de corridas ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"cycling": {
+					"title": "MethStreams Ciclismo | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de ciclismo ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"equestrianism": {
+					"title": "MethStreams Hipismo | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de hipismo ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"golf": {
+					"title": "MethStreams Golfe | Transmissão PGA ao Vivo Grátis HD",
+					"description": "Transmissão de golfe ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"field-hockey": {
+					"title": "MethStreams Hóquei de Campo | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de hóquei de campo ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"lacrosse": {
+					"title": "MethStreams Lacrosse | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de lacrosse ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"athletics": {
+					"title": "MethStreams Atletismo | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de atletismo ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"gymnastics": {
+					"title": "MethStreams Ginástica | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de ginástica ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"weightlifting": {
+					"title": "MethStreams Levantamento de Peso | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de levantamento de peso ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"climbing": {
+					"title": "MethStreams Escalada | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de escalada ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"winter-sport": {
+					"title": "MethStreams Esportes de Inverno | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de esportes de inverno ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"bandy": {
+					"title": "MethStreams Bandy | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de bandy ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"curling": {
+					"title": "MethStreams Curling | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de curling ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"triathlon": {
+					"title": "MethStreams Triatlo | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de triatlo ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"water-sports": {
+					"title": "MethStreams Esportes Aquáticos | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de esportes aquáticos ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"water-polo": {
+					"title": "MethStreams Polo Aquático | Transmissão ao Vivo HD",
+					"description": "Transmissão de polo aquático ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"sailing": {
+					"title": "MethStreams Vela | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de vela ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"bowling": {
+					"title": "MethStreams Boliche | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de boliche ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"darts": {
+					"title": "MethStreams Dardos | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de dardos ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"chess": {
+					"title": "MethStreams Xadrez | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de xadrez ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"e-sports": {
+					"title": "MethStreams E-sports | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de e-sports ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"others": {
+					"title": "MethStreams Outros | Transmissão Esportiva ao Vivo HD",
+					"description": "Transmissão de vários esportes ao vivo grátis em HD no MethStreams. Carregamento rápido!"
+				},
+				"rugby-sevens": {
+					"title": "MethStreams Rugby Sevens | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de Rugby Sevens ao vivo grátis em HD no MethStreams. Carregamento rápido, sem cadastro!"
+				},
+				"extreme-sport": {
+					"title": "MethStreams Esportes Radicais | Transmissão ao Vivo HD",
+					"description": "Transmissão de esportes radicais ao vivo grátis em HD no MethStreams. Carregamento rápido, sem cadastro!"
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | Transmissão de Esportes ao Vivo Grátis HD",
+				"description": "WiziWig oferece transmissão de esportes ao vivo grátis em HD. Links confiáveis, sem cadastro. Assista agora!"
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig Futebol | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de futebol ao vivo grátis em HD no WiziWig. Links confiáveis, sem cadastro!"
+				},
+				"basketball": {
+					"title": "WiziWig Basquete | Transmissão NBA ao Vivo Grátis",
+					"description": "Transmissão de basquete ao vivo grátis em HD no WiziWig. Links confiáveis, sem cadastro!"
+				},
+				"tennis": {
+					"title": "WiziWig Tênis | Transmissão Grand Slam ao Vivo Grátis",
+					"description": "Assista transmissão de tênis ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"ice-hockey": {
+					"title": "WiziWig Hóquei no Gelo | Transmissão NHL ao Vivo HD",
+					"description": "Transmissão de hóquei no gelo ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"baseball": {
+					"title": "WiziWig Beisebol | Transmissão MLB ao Vivo Grátis HD",
+					"description": "Transmissão de beisebol ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"rugby-union": {
+					"title": "WiziWig Rugby Union | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de Rugby Union ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"rugby-league": {
+					"title": "WiziWig Rugby League | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de Rugby League ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"cricket": {
+					"title": "WiziWig Críquete | Transmissão IPL ao Vivo Grátis HD",
+					"description": "Transmissão de críquete ao vivo grátis no WiziWig. Links confiáveis!"
+				},
+				"american-football": {
+					"title": "WiziWig Futebol Americano | Transmissão NFL ao Vivo HD",
+					"description": "Assista transmissão de NFL ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"volleyball": {
+					"title": "WiziWig Vôlei | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de vôlei ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"beach-volleyball": {
+					"title": "WiziWig Vôlei de Praia | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de vôlei de praia ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"handball": {
+					"title": "WiziWig Handebol | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de handebol ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"beach-handball": {
+					"title": "WiziWig Handebol de Praia | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de handebol de praia ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"beach-soccer": {
+					"title": "WiziWig Futebol de Areia | Transmissão ao Vivo HD",
+					"description": "Transmissão de futebol de areia ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"aussie-rules": {
+					"title": "WiziWig Futebol Australiano | Transmissão AFL ao Vivo",
+					"description": "Assista transmissão de AFL ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"futsal": {
+					"title": "WiziWig Futsal | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de futsal ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"badminton": {
+					"title": "WiziWig Badminton | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de badminton ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"netball": {
+					"title": "WiziWig Netball | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de netball ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"floorball": {
+					"title": "WiziWig Floorball | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de floorball ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"combat-sport": {
+					"title": "WiziWig Esportes de Combate | Transmissão ao Vivo HD",
+					"description": "Transmissão de esportes de combate ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"boxing": {
+					"title": "WiziWig Boxe | Transmissão de Lutas ao Vivo HD",
+					"description": "Assista transmissão de boxe ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"mma": {
+					"title": "WiziWig MMA | Transmissão UFC ao Vivo Grátis HD",
+					"description": "Transmissão de MMA e UFC ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"snooker": {
+					"title": "WiziWig Sinuca | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de sinuca ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"billiard": {
+					"title": "WiziWig Bilhar | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de bilhar ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"table-tennis": {
+					"title": "WiziWig Tênis de Mesa | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de tênis de mesa ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"padel-tennis": {
+					"title": "WiziWig Padel | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de padel ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"squash": {
+					"title": "WiziWig Squash | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de squash ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"motorsport": {
+					"title": "WiziWig Automobilismo | Transmissão F1 ao Vivo",
+					"description": "Transmissão de F1 e automobilismo ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"racing": {
+					"title": "WiziWig Corridas | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de corridas ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"cycling": {
+					"title": "WiziWig Ciclismo | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de ciclismo ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"equestrianism": {
+					"title": "WiziWig Hipismo | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de hipismo ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"golf": {
+					"title": "WiziWig Golfe | Transmissão PGA ao Vivo Grátis HD",
+					"description": "Transmissão de golfe ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"field-hockey": {
+					"title": "WiziWig Hóquei de Campo | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de hóquei de campo ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"lacrosse": {
+					"title": "WiziWig Lacrosse | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de lacrosse ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"athletics": {
+					"title": "WiziWig Atletismo | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de atletismo ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"gymnastics": {
+					"title": "WiziWig Ginástica | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de ginástica ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"weightlifting": {
+					"title": "WiziWig Levantamento de Peso | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de levantamento de peso ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"climbing": {
+					"title": "WiziWig Escalada | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de escalada ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"winter-sport": {
+					"title": "WiziWig Esportes de Inverno | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de esportes de inverno ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"bandy": {
+					"title": "WiziWig Bandy | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de bandy ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"curling": {
+					"title": "WiziWig Curling | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de curling ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"triathlon": {
+					"title": "WiziWig Triatlo | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de triatlo ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"water-sports": {
+					"title": "WiziWig Esportes Aquáticos | Transmissão ao Vivo HD",
+					"description": "Assista transmissão de esportes aquáticos ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"water-polo": {
+					"title": "WiziWig Polo Aquático | Transmissão ao Vivo HD",
+					"description": "Transmissão de polo aquático ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"sailing": {
+					"title": "WiziWig Vela | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de vela ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"bowling": {
+					"title": "WiziWig Boliche | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de boliche ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"darts": {
+					"title": "WiziWig Dardos | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de dardos ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"chess": {
+					"title": "WiziWig Xadrez | Transmissão ao Vivo Grátis HD",
+					"description": "Transmissão de xadrez ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"e-sports": {
+					"title": "WiziWig E-sports | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de e-sports ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"others": {
+					"title": "WiziWig Outros | Transmissão Esportiva ao Vivo HD",
+					"description": "Transmissão de vários esportes ao vivo grátis em HD no WiziWig. Links confiáveis!"
+				},
+				"rugby-sevens": {
+					"title": "WiziWig Rugby Sevens | Transmissão ao Vivo Grátis HD",
+					"description": "Assista transmissão de Rugby Sevens ao vivo grátis em HD no WiziWig. Links confiáveis, sem cadastro!"
+				},
+				"extreme-sport": {
+					"title": "WiziWig Esportes Radicais | Transmissão ao Vivo HD",
+					"description": "Transmissão de esportes radicais ao vivo grátis em HD no WiziWig. Links confiáveis, sem cadastro!"
+				}
+			}
+		}
 	}
 }

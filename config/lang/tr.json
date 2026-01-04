@@ -3,6 +3,7 @@
 		"code": "tr",
 		"name": "Türkçe",
 		"flag": "TR",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -52,6 +53,7 @@
 		"Baseball": "Beyzbol",
 		"Rugby Union": "Ragbi Union",
 		"Rugby League": "Ragbi Lig",
+		"Rugby Sevens": "Ragbi Yedili",
 		"Cricket": "Kriket",
 		"American Football": "Amerikan Futbolu",
 		"Volleyball": "Voleybol",
@@ -64,8 +66,7 @@
 		"Badminton": "Badminton",
 		"Netball": "Netbol",
 		"Floorball": "Florbol",
-		"Combat": "Dövüş",
-		"combat sport": "Dövüş Sporları",
+		"Combat Sport": "Dövüş Sporları",
 		"Boxing": "Boks",
 		"MMA": "MMA",
 		"Snooker": "Snooker",
@@ -84,7 +85,7 @@
 		"Gymnastics": "Jimnastik",
 		"Weightlifting": "Halter",
 		"Climbing": "Tırmanma",
-		"winter sport": "Kış Sporları",
+		"Winter Sport": "Kış Sporları",
 		"Bandy": "Bendi",
 		"Curling": "Curling",
 		"Triathlon": "Triatlon",
@@ -95,6 +96,1305 @@
 		"Darts": "Dart",
 		"Chess": "Satranç",
 		"E-sports": "E-spor",
+		"Extreme Sport": "Ekstrem Spor",
 		"Others": "Diğer"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | Canlı Spor Yayını Ücretsiz İzle",
+				"description": "SportLemon ile tüm spor karşılaşmalarını canlı ve ücretsiz izleyin. HD kalite, kayıt gerektirmez. Hemen izle!"
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon Futbol | Canlı Futbol Maçları HD Ücretsiz",
+					"description": "Canlı futbol maçlarını SportLemon'da ücretsiz izleyin. Şampiyonlar Ligi, Premier Lig ve daha fazlası HD kalitede!"
+				},
+				"basketball": {
+					"title": "SportLemon Basketbol | Canlı NBA Maçları HD Ücretsiz",
+					"description": "Canlı basketbol maçlarını SportLemon'da ücretsiz izleyin. NBA, EuroLeague HD kalitede. Kayıt gerektirmez!"
+				},
+				"tennis": {
+					"title": "SportLemon Tenis | Canlı Tenis Maçları HD Ücretsiz",
+					"description": "Canlı tenis maçlarını SportLemon'da ücretsiz izleyin. Grand Slam, ATP, WTA HD kalitede. Hemen izle!"
+				},
+				"ice-hockey": {
+					"title": "SportLemon Buz Hokeyi | Canlı NHL Maçları HD Ücretsiz",
+					"description": "Canlı buz hokeyi maçlarını SportLemon'da ücretsiz izleyin. NHL, KHL HD kalitede. Kayıt gerektirmez!"
+				},
+				"baseball": {
+					"title": "SportLemon Beyzbol | Canlı MLB Maçları HD Ücretsiz",
+					"description": "Canlı beyzbol maçlarını SportLemon'da ücretsiz izleyin. MLB HD kalitede. Hemen izle!"
+				},
+				"rugby-union": {
+					"title": "SportLemon Ragbi Union | Canlı Ragbi Maçları HD Ücretsiz",
+					"description": "Canlı ragbi union maçlarını SportLemon'da ücretsiz izleyin. HD kalite, kayıt gerektirmez!"
+				},
+				"rugby-league": {
+					"title": "SportLemon Ragbi Lig | Canlı Ragbi Maçları HD Ücretsiz",
+					"description": "Canlı ragbi lig maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"cricket": {
+					"title": "SportLemon Kriket | Canlı IPL Maçları HD Ücretsiz",
+					"description": "Canlı kriket maçlarını SportLemon'da ücretsiz izleyin. IPL, T20 HD kalitede. Kayıt gerektirmez!"
+				},
+				"american-football": {
+					"title": "SportLemon Amerikan Futbolu | Canlı NFL Maçları HD Ücretsiz",
+					"description": "Canlı NFL maçlarını SportLemon'da ücretsiz izleyin. HD kalite, kayıt gerektirmez. Hemen izle!"
+				},
+				"volleyball": {
+					"title": "SportLemon Voleybol | Canlı Voleybol Maçları HD Ücretsiz",
+					"description": "Canlı voleybol maçlarını SportLemon'da ücretsiz izleyin. FIVB HD kalitede. Kayıt gerektirmez!"
+				},
+				"beach-volleyball": {
+					"title": "SportLemon Plaj Voleybolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj voleybolu maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"handball": {
+					"title": "SportLemon Hentbol | Canlı Hentbol Maçları HD Ücretsiz",
+					"description": "Canlı hentbol maçlarını SportLemon'da ücretsiz izleyin. EHF, IHF HD kalitede. Kayıt gerektirmez!"
+				},
+				"beach-handball": {
+					"title": "SportLemon Plaj Hentbolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj hentbolu maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"beach-soccer": {
+					"title": "SportLemon Plaj Futbolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj futbolu maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"aussie-rules": {
+					"title": "SportLemon Avustralya Futbolu | Canlı AFL Maçları HD",
+					"description": "Canlı AFL maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"futsal": {
+					"title": "SportLemon Futsal | Canlı Futsal Maçları HD Ücretsiz",
+					"description": "Canlı futsal maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"badminton": {
+					"title": "SportLemon Badminton | Canlı Badminton Maçları HD Ücretsiz",
+					"description": "Canlı badminton maçlarını SportLemon'da ücretsiz izleyin. BWF HD kalitede. Hemen izle!"
+				},
+				"netball": {
+					"title": "SportLemon Netbol | Canlı Netbol Maçları HD Ücretsiz",
+					"description": "Canlı netbol maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"floorball": {
+					"title": "SportLemon Florbol | Canlı Florbol Maçları HD Ücretsiz",
+					"description": "Canlı florbol maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"combat-sport": {
+					"title": "SportLemon Dövüş Sporları | Canlı Dövüş HD Ücretsiz",
+					"description": "Canlı dövüş sporlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"boxing": {
+					"title": "SportLemon Boks | Canlı Boks Maçları HD Ücretsiz",
+					"description": "Canlı boks maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"mma": {
+					"title": "SportLemon MMA | Canlı UFC Maçları HD Ücretsiz",
+					"description": "Canlı MMA ve UFC maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"snooker": {
+					"title": "SportLemon Snooker | Canlı Snooker Maçları HD Ücretsiz",
+					"description": "Canlı snooker maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"billiard": {
+					"title": "SportLemon Bilardo | Canlı Bilardo Maçları HD Ücretsiz",
+					"description": "Canlı bilardo maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"table-tennis": {
+					"title": "SportLemon Masa Tenisi | Canlı Masa Tenisi HD Ücretsiz",
+					"description": "Canlı masa tenisi maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"padel-tennis": {
+					"title": "SportLemon Padel | Canlı Padel Maçları HD Ücretsiz",
+					"description": "Canlı padel maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"squash": {
+					"title": "SportLemon Squash | Canlı Squash Maçları HD Ücretsiz",
+					"description": "Canlı squash maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"motorsport": {
+					"title": "SportLemon Motor Sporları | Canlı F1 Yarışları HD Ücretsiz",
+					"description": "Canlı motor sporları ve F1 yarışlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"racing": {
+					"title": "SportLemon Yarış | Canlı Yarış HD Ücretsiz",
+					"description": "Canlı yarışları SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"cycling": {
+					"title": "SportLemon Bisiklet | Canlı Bisiklet Yarışları HD Ücretsiz",
+					"description": "Canlı bisiklet yarışlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"equestrianism": {
+					"title": "SportLemon Binicilik | Canlı Binicilik HD Ücretsiz",
+					"description": "Canlı binicilik etkinliklerini SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"golf": {
+					"title": "SportLemon Golf | Canlı PGA Turnuvaları HD Ücretsiz",
+					"description": "Canlı golf turnuvalarını SportLemon'da ücretsiz izleyin. PGA Tour HD kalitede. Kayıt gerektirmez!"
+				},
+				"field-hockey": {
+					"title": "SportLemon Çim Hokeyi | Canlı Hokey Maçları HD Ücretsiz",
+					"description": "Canlı çim hokeyi maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"lacrosse": {
+					"title": "SportLemon Lakros | Canlı Lakros Maçları HD Ücretsiz",
+					"description": "Canlı lakros maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"athletics": {
+					"title": "SportLemon Atletizm | Canlı Atletizm HD Ücretsiz",
+					"description": "Canlı atletizm etkinliklerini SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"gymnastics": {
+					"title": "SportLemon Jimnastik | Canlı Jimnastik HD Ücretsiz",
+					"description": "Canlı jimnastik etkinliklerini SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"weightlifting": {
+					"title": "SportLemon Halter | Canlı Halter HD Ücretsiz",
+					"description": "Canlı halter yarışmalarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"climbing": {
+					"title": "SportLemon Tırmanma | Canlı Tırmanma HD Ücretsiz",
+					"description": "Canlı tırmanma etkinliklerini SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"winter-sport": {
+					"title": "SportLemon Kış Sporları | Canlı Kış Sporları HD Ücretsiz",
+					"description": "Canlı kış sporlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"bandy": {
+					"title": "SportLemon Bendi | Canlı Bendi Maçları HD Ücretsiz",
+					"description": "Canlı bendi maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"curling": {
+					"title": "SportLemon Curling | Canlı Curling Maçları HD Ücretsiz",
+					"description": "Canlı curling maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"triathlon": {
+					"title": "SportLemon Triatlon | Canlı Triatlon HD Ücretsiz",
+					"description": "Canlı triatlon yarışlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"water-sports": {
+					"title": "SportLemon Su Sporları | Canlı Su Sporları HD Ücretsiz",
+					"description": "Canlı su sporlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"water-polo": {
+					"title": "SportLemon Sutopu | Canlı Sutopu Maçları HD Ücretsiz",
+					"description": "Canlı sutopu maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"sailing": {
+					"title": "SportLemon Yelken | Canlı Yelken Yarışları HD Ücretsiz",
+					"description": "Canlı yelken yarışlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"bowling": {
+					"title": "SportLemon Bowling | Canlı Bowling HD Ücretsiz",
+					"description": "Canlı bowling etkinliklerini SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"darts": {
+					"title": "SportLemon Dart | Canlı Dart Turnuvaları HD Ücretsiz",
+					"description": "Canlı dart turnuvalarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"chess": {
+					"title": "SportLemon Satranç | Canlı Satranç Turnuvaları HD Ücretsiz",
+					"description": "Canlı satranç turnuvalarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"e-sports": {
+					"title": "SportLemon E-spor | Canlı E-spor Turnuvaları HD Ücretsiz",
+					"description": "Canlı e-spor turnuvalarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"others": {
+					"title": "SportLemon Diğer Sporlar | Canlı Spor Yayınları HD Ücretsiz",
+					"description": "Canlı spor yayınlarını SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"rugby-sevens": {
+					"title": "SportLemon Ragbi Yedili | Canlı Ragbi 7s Maçları HD Ücretsiz",
+					"description": "Canlı ragbi yedili maçlarını SportLemon'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"extreme-sport": {
+					"title": "SportLemon Ekstrem Spor | Canlı Ekstrem Spor HD Ücretsiz",
+					"description": "Canlı ekstrem spor etkinliklerini SportLemon'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLsite | Canlı Spor Yayını Ücretsiz İzle",
+				"description": "EPLsite ile tüm spor karşılaşmalarını canlı ve ücretsiz izleyin. HD kalite, hızlı yükleme. Şimdi izle!"
+			},
+			"sports": {
+				"football": {
+					"title": "EPLsite Futbol | Canlı Premier Lig Maçları HD Ücretsiz",
+					"description": "Canlı futbol maçlarını EPLsite'da ücretsiz izleyin. Premier Lig, La Liga HD kalitede. Hızlı yükleme!"
+				},
+				"basketball": {
+					"title": "EPLsite Basketbol | Canlı NBA Maçları HD Ücretsiz",
+					"description": "Canlı basketbol maçlarını EPLsite'da ücretsiz izleyin. NBA, EuroLeague HD kalitede. Şimdi izle!"
+				},
+				"tennis": {
+					"title": "EPLsite Tenis | Canlı Tenis Maçları HD Ücretsiz",
+					"description": "Canlı tenis maçlarını EPLsite'da ücretsiz izleyin. Wimbledon, US Open HD kalitede. Hızlı yükleme!"
+				},
+				"ice-hockey": {
+					"title": "EPLsite Buz Hokeyi | Canlı NHL Maçları HD Ücretsiz",
+					"description": "Canlı buz hokeyi maçlarını EPLsite'da ücretsiz izleyin. NHL HD kalitede. Şimdi izle!"
+				},
+				"baseball": {
+					"title": "EPLsite Beyzbol | Canlı MLB Maçları HD Ücretsiz",
+					"description": "Canlı beyzbol maçlarını EPLsite'da ücretsiz izleyin. MLB HD kalitede. Hızlı yükleme!"
+				},
+				"rugby-union": {
+					"title": "EPLsite Ragbi Union | Canlı Ragbi Maçları HD Ücretsiz",
+					"description": "Canlı ragbi union maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"rugby-league": {
+					"title": "EPLsite Ragbi Lig | Canlı Ragbi Maçları HD Ücretsiz",
+					"description": "Canlı ragbi lig maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"cricket": {
+					"title": "EPLsite Kriket | Canlı IPL Maçları HD Ücretsiz",
+					"description": "Canlı kriket maçlarını EPLsite'da ücretsiz izleyin. IPL, T20 HD kalitede. Şimdi izle!"
+				},
+				"american-football": {
+					"title": "EPLsite Amerikan Futbolu | Canlı NFL Maçları HD Ücretsiz",
+					"description": "Canlı NFL maçlarını EPLsite'da ücretsiz izleyin. Super Bowl HD kalitede. Hızlı yükleme!"
+				},
+				"volleyball": {
+					"title": "EPLsite Voleybol | Canlı Voleybol Maçları HD Ücretsiz",
+					"description": "Canlı voleybol maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"beach-volleyball": {
+					"title": "EPLsite Plaj Voleybolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj voleybolu maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"handball": {
+					"title": "EPLsite Hentbol | Canlı Hentbol Maçları HD Ücretsiz",
+					"description": "Canlı hentbol maçlarını EPLsite'da ücretsiz izleyin. EHF HD kalitede. Şimdi izle!"
+				},
+				"beach-handball": {
+					"title": "EPLsite Plaj Hentbolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj hentbolu maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"beach-soccer": {
+					"title": "EPLsite Plaj Futbolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj futbolu maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"aussie-rules": {
+					"title": "EPLsite Avustralya Futbolu | Canlı AFL Maçları HD",
+					"description": "Canlı AFL maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"futsal": {
+					"title": "EPLsite Futsal | Canlı Futsal Maçları HD Ücretsiz",
+					"description": "Canlı futsal maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"badminton": {
+					"title": "EPLsite Badminton | Canlı Badminton Maçları HD Ücretsiz",
+					"description": "Canlı badminton maçlarını EPLsite'da ücretsiz izleyin. BWF HD kalitede. Hızlı yükleme!"
+				},
+				"netball": {
+					"title": "EPLsite Netbol | Canlı Netbol Maçları HD Ücretsiz",
+					"description": "Canlı netbol maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"floorball": {
+					"title": "EPLsite Florbol | Canlı Florbol Maçları HD Ücretsiz",
+					"description": "Canlı florbol maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"combat-sport": {
+					"title": "EPLsite Dövüş Sporları | Canlı Dövüş HD Ücretsiz",
+					"description": "Canlı dövüş sporlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"boxing": {
+					"title": "EPLsite Boks | Canlı Boks Maçları HD Ücretsiz",
+					"description": "Canlı boks maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"mma": {
+					"title": "EPLsite MMA | Canlı UFC Maçları HD Ücretsiz",
+					"description": "Canlı MMA ve UFC maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"snooker": {
+					"title": "EPLsite Snooker | Canlı Snooker Maçları HD Ücretsiz",
+					"description": "Canlı snooker maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"billiard": {
+					"title": "EPLsite Bilardo | Canlı Bilardo Maçları HD Ücretsiz",
+					"description": "Canlı bilardo maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"table-tennis": {
+					"title": "EPLsite Masa Tenisi | Canlı Masa Tenisi HD Ücretsiz",
+					"description": "Canlı masa tenisi maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"padel-tennis": {
+					"title": "EPLsite Padel | Canlı Padel Maçları HD Ücretsiz",
+					"description": "Canlı padel maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"squash": {
+					"title": "EPLsite Squash | Canlı Squash Maçları HD Ücretsiz",
+					"description": "Canlı squash maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"motorsport": {
+					"title": "EPLsite Motor Sporları | Canlı F1 Yarışları HD Ücretsiz",
+					"description": "Canlı motor sporları ve F1 yarışlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"racing": {
+					"title": "EPLsite Yarış | Canlı Yarış HD Ücretsiz",
+					"description": "Canlı yarışları EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"cycling": {
+					"title": "EPLsite Bisiklet | Canlı Tour de France HD Ücretsiz",
+					"description": "Canlı bisiklet yarışlarını EPLsite'da ücretsiz izleyin. Tour de France HD kalitede. Şimdi izle!"
+				},
+				"equestrianism": {
+					"title": "EPLsite Binicilik | Canlı Binicilik HD Ücretsiz",
+					"description": "Canlı binicilik etkinliklerini EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"golf": {
+					"title": "EPLsite Golf | Canlı PGA Turnuvaları HD Ücretsiz",
+					"description": "Canlı golf turnuvalarını EPLsite'da ücretsiz izleyin. PGA, Masters HD kalitede. Şimdi izle!"
+				},
+				"field-hockey": {
+					"title": "EPLsite Çim Hokeyi | Canlı Hokey Maçları HD Ücretsiz",
+					"description": "Canlı çim hokeyi maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"lacrosse": {
+					"title": "EPLsite Lakros | Canlı Lakros Maçları HD Ücretsiz",
+					"description": "Canlı lakros maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"athletics": {
+					"title": "EPLsite Atletizm | Canlı Atletizm HD Ücretsiz",
+					"description": "Canlı atletizm etkinliklerini EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"gymnastics": {
+					"title": "EPLsite Jimnastik | Canlı Jimnastik HD Ücretsiz",
+					"description": "Canlı jimnastik etkinliklerini EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"weightlifting": {
+					"title": "EPLsite Halter | Canlı Halter HD Ücretsiz",
+					"description": "Canlı halter yarışmalarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"climbing": {
+					"title": "EPLsite Tırmanma | Canlı Tırmanma HD Ücretsiz",
+					"description": "Canlı tırmanma etkinliklerini EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"winter-sport": {
+					"title": "EPLsite Kış Sporları | Canlı Kış Sporları HD Ücretsiz",
+					"description": "Canlı kış sporlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"bandy": {
+					"title": "EPLsite Bendi | Canlı Bendi Maçları HD Ücretsiz",
+					"description": "Canlı bendi maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"curling": {
+					"title": "EPLsite Curling | Canlı Curling Maçları HD Ücretsiz",
+					"description": "Canlı curling maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"triathlon": {
+					"title": "EPLsite Triatlon | Canlı Triatlon HD Ücretsiz",
+					"description": "Canlı triatlon yarışlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"water-sports": {
+					"title": "EPLsite Su Sporları | Canlı Su Sporları HD Ücretsiz",
+					"description": "Canlı su sporlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"water-polo": {
+					"title": "EPLsite Sutopu | Canlı Sutopu Maçları HD Ücretsiz",
+					"description": "Canlı sutopu maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"sailing": {
+					"title": "EPLsite Yelken | Canlı Yelken Yarışları HD Ücretsiz",
+					"description": "Canlı yelken yarışlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"bowling": {
+					"title": "EPLsite Bowling | Canlı Bowling HD Ücretsiz",
+					"description": "Canlı bowling etkinliklerini EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"darts": {
+					"title": "EPLsite Dart | Canlı PDC Turnuvaları HD Ücretsiz",
+					"description": "Canlı dart turnuvalarını EPLsite'da ücretsiz izleyin. PDC HD kalitede. Hızlı yükleme!"
+				},
+				"chess": {
+					"title": "EPLsite Satranç | Canlı Satranç Turnuvaları HD Ücretsiz",
+					"description": "Canlı satranç turnuvalarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"e-sports": {
+					"title": "EPLsite E-spor | Canlı E-spor Turnuvaları HD Ücretsiz",
+					"description": "Canlı e-spor turnuvalarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"others": {
+					"title": "EPLsite Diğer Sporlar | Canlı Spor Yayınları HD Ücretsiz",
+					"description": "Canlı spor yayınlarını EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"rugby-sevens": {
+					"title": "EPLsite Ragbi Yedili | Canlı Ragbi 7s Maçları HD Ücretsiz",
+					"description": "Canlı ragbi yedili maçlarını EPLsite'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"extreme-sport": {
+					"title": "EPLsite Ekstrem Spor | Canlı Ekstrem Spor HD Ücretsiz",
+					"description": "Canlı ekstrem spor etkinliklerini EPLsite'da ücretsiz izleyin. HD kalite. Şimdi izle!"
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | Canlı Spor Yayını Ücretsiz İzle",
+				"description": "P2P4U ile tüm spor karşılaşmalarını canlı ve ücretsiz izleyin. HD kalite, kayıt gerektirmez. Hızlı ve güvenilir!"
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U Futbol | Canlı Futbol Maçları HD Ücretsiz",
+					"description": "Canlı futbol maçlarını P2P4U'da ücretsiz izleyin. Tüm ligler HD kalitede. Hızlı, kayıt gerektirmez!"
+				},
+				"basketball": {
+					"title": "P2P4U Basketbol | Canlı NBA Maçları HD Ücretsiz",
+					"description": "Canlı basketbol maçlarını P2P4U'da ücretsiz izleyin. NBA, EuroLeague HD kalitede. Hızlı yükleme!"
+				},
+				"tennis": {
+					"title": "P2P4U Tenis | Canlı Tenis Maçları HD Ücretsiz",
+					"description": "Canlı tenis maçlarını P2P4U'da ücretsiz izleyin. Grand Slam HD kalitede. Kayıt gerektirmez!"
+				},
+				"ice-hockey": {
+					"title": "P2P4U Buz Hokeyi | Canlı NHL Maçları HD Ücretsiz",
+					"description": "Canlı buz hokeyi maçlarını P2P4U'da ücretsiz izleyin. NHL HD kalitede. Hızlı yükleme!"
+				},
+				"baseball": {
+					"title": "P2P4U Beyzbol | Canlı MLB Maçları HD Ücretsiz",
+					"description": "Canlı beyzbol maçlarını P2P4U'da ücretsiz izleyin. MLB HD kalitede. Kayıt gerektirmez!"
+				},
+				"rugby-union": {
+					"title": "P2P4U Ragbi Union | Canlı Ragbi Maçları HD Ücretsiz",
+					"description": "Canlı ragbi union maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"rugby-league": {
+					"title": "P2P4U Ragbi Lig | Canlı Ragbi Maçları HD Ücretsiz",
+					"description": "Canlı ragbi lig maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"cricket": {
+					"title": "P2P4U Kriket | Canlı IPL Maçları HD Ücretsiz",
+					"description": "Canlı kriket maçlarını P2P4U'da ücretsiz izleyin. IPL, T20 HD kalitede. Hızlı yükleme!"
+				},
+				"american-football": {
+					"title": "P2P4U Amerikan Futbolu | Canlı NFL Maçları HD Ücretsiz",
+					"description": "Canlı NFL maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"volleyball": {
+					"title": "P2P4U Voleybol | Canlı Voleybol Maçları HD Ücretsiz",
+					"description": "Canlı voleybol maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"beach-volleyball": {
+					"title": "P2P4U Plaj Voleybolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj voleybolu maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"handball": {
+					"title": "P2P4U Hentbol | Canlı Hentbol Maçları HD Ücretsiz",
+					"description": "Canlı hentbol maçlarını P2P4U'da ücretsiz izleyin. EHF HD kalitede. Hızlı yükleme!"
+				},
+				"beach-handball": {
+					"title": "P2P4U Plaj Hentbolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj hentbolu maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"beach-soccer": {
+					"title": "P2P4U Plaj Futbolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj futbolu maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"aussie-rules": {
+					"title": "P2P4U Avustralya Futbolu | Canlı AFL Maçları HD",
+					"description": "Canlı AFL maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"futsal": {
+					"title": "P2P4U Futsal | Canlı Futsal Maçları HD Ücretsiz",
+					"description": "Canlı futsal maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"badminton": {
+					"title": "P2P4U Badminton | Canlı Badminton Maçları HD Ücretsiz",
+					"description": "Canlı badminton maçlarını P2P4U'da ücretsiz izleyin. BWF HD kalitede. Kayıt gerektirmez!"
+				},
+				"netball": {
+					"title": "P2P4U Netbol | Canlı Netbol Maçları HD Ücretsiz",
+					"description": "Canlı netbol maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"floorball": {
+					"title": "P2P4U Florbol | Canlı Florbol Maçları HD Ücretsiz",
+					"description": "Canlı florbol maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"combat-sport": {
+					"title": "P2P4U Dövüş Sporları | Canlı Dövüş HD Ücretsiz",
+					"description": "Canlı dövüş sporlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"boxing": {
+					"title": "P2P4U Boks | Canlı Boks Maçları HD Ücretsiz",
+					"description": "Canlı boks maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"mma": {
+					"title": "P2P4U MMA | Canlı UFC Maçları HD Ücretsiz",
+					"description": "Canlı MMA ve UFC maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"snooker": {
+					"title": "P2P4U Snooker | Canlı Snooker Maçları HD Ücretsiz",
+					"description": "Canlı snooker maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"billiard": {
+					"title": "P2P4U Bilardo | Canlı Bilardo Maçları HD Ücretsiz",
+					"description": "Canlı bilardo maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"table-tennis": {
+					"title": "P2P4U Masa Tenisi | Canlı Masa Tenisi HD Ücretsiz",
+					"description": "Canlı masa tenisi maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"padel-tennis": {
+					"title": "P2P4U Padel | Canlı Padel Maçları HD Ücretsiz",
+					"description": "Canlı padel maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"squash": {
+					"title": "P2P4U Squash | Canlı Squash Maçları HD Ücretsiz",
+					"description": "Canlı squash maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"motorsport": {
+					"title": "P2P4U Motor Sporları | Canlı F1 Yarışları HD Ücretsiz",
+					"description": "Canlı motor sporları ve F1 yarışlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"racing": {
+					"title": "P2P4U Yarış | Canlı Yarış HD Ücretsiz",
+					"description": "Canlı yarışları P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"cycling": {
+					"title": "P2P4U Bisiklet | Canlı Bisiklet Yarışları HD Ücretsiz",
+					"description": "Canlı bisiklet yarışlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"equestrianism": {
+					"title": "P2P4U Binicilik | Canlı Binicilik HD Ücretsiz",
+					"description": "Canlı binicilik etkinliklerini P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"golf": {
+					"title": "P2P4U Golf | Canlı PGA Turnuvaları HD Ücretsiz",
+					"description": "Canlı golf turnuvalarını P2P4U'da ücretsiz izleyin. PGA HD kalitede. Hızlı yükleme!"
+				},
+				"field-hockey": {
+					"title": "P2P4U Çim Hokeyi | Canlı Hokey Maçları HD Ücretsiz",
+					"description": "Canlı çim hokeyi maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"lacrosse": {
+					"title": "P2P4U Lakros | Canlı Lakros Maçları HD Ücretsiz",
+					"description": "Canlı lakros maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"athletics": {
+					"title": "P2P4U Atletizm | Canlı Atletizm HD Ücretsiz",
+					"description": "Canlı atletizm etkinliklerini P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"gymnastics": {
+					"title": "P2P4U Jimnastik | Canlı Jimnastik HD Ücretsiz",
+					"description": "Canlı jimnastik etkinliklerini P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"weightlifting": {
+					"title": "P2P4U Halter | Canlı Halter HD Ücretsiz",
+					"description": "Canlı halter yarışmalarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"climbing": {
+					"title": "P2P4U Tırmanma | Canlı Tırmanma HD Ücretsiz",
+					"description": "Canlı tırmanma etkinliklerini P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"winter-sport": {
+					"title": "P2P4U Kış Sporları | Canlı Kış Sporları HD Ücretsiz",
+					"description": "Canlı kış sporlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"bandy": {
+					"title": "P2P4U Bendi | Canlı Bendi Maçları HD Ücretsiz",
+					"description": "Canlı bendi maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"curling": {
+					"title": "P2P4U Curling | Canlı Curling Maçları HD Ücretsiz",
+					"description": "Canlı curling maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"triathlon": {
+					"title": "P2P4U Triatlon | Canlı Triatlon HD Ücretsiz",
+					"description": "Canlı triatlon yarışlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"water-sports": {
+					"title": "P2P4U Su Sporları | Canlı Su Sporları HD Ücretsiz",
+					"description": "Canlı su sporlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"water-polo": {
+					"title": "P2P4U Sutopu | Canlı Sutopu Maçları HD Ücretsiz",
+					"description": "Canlı sutopu maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"sailing": {
+					"title": "P2P4U Yelken | Canlı Yelken Yarışları HD Ücretsiz",
+					"description": "Canlı yelken yarışlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"bowling": {
+					"title": "P2P4U Bowling | Canlı Bowling HD Ücretsiz",
+					"description": "Canlı bowling etkinliklerini P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"darts": {
+					"title": "P2P4U Dart | Canlı Dart Turnuvaları HD Ücretsiz",
+					"description": "Canlı dart turnuvalarını P2P4U'da ücretsiz izleyin. PDC HD kalitede. Kayıt gerektirmez!"
+				},
+				"chess": {
+					"title": "P2P4U Satranç | Canlı Satranç Turnuvaları HD Ücretsiz",
+					"description": "Canlı satranç turnuvalarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"e-sports": {
+					"title": "P2P4U E-spor | Canlı E-spor Turnuvaları HD Ücretsiz",
+					"description": "Canlı e-spor turnuvalarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"others": {
+					"title": "P2P4U Diğer Sporlar | Canlı Spor Yayınları HD Ücretsiz",
+					"description": "Canlı spor yayınlarını P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"rugby-sevens": {
+					"title": "P2P4U Ragbi Yedili | Canlı Ragbi 7s Maçları HD Ücretsiz",
+					"description": "Canlı ragbi yedili maçlarını P2P4U'da ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"extreme-sport": {
+					"title": "P2P4U Ekstrem Spor | Canlı Ekstrem Spor HD Ücretsiz",
+					"description": "Canlı ekstrem spor etkinliklerini P2P4U'da ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | Canlı Spor Yayını Ücretsiz İzle",
+				"description": "StreamHunter ile tüm spor karşılaşmalarını canlı ve ücretsiz izleyin. HD kalite, güvenilir linkler. Hemen izle!"
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter Futbol | Canlı Futbol Maçları HD Ücretsiz",
+					"description": "Canlı futbol maçlarını StreamHunter'da ücretsiz izleyin. Tüm ligler HD kalitede. Güvenilir linkler!"
+				},
+				"basketball": {
+					"title": "StreamHunter Basketbol | Canlı NBA Maçları HD Ücretsiz",
+					"description": "Canlı basketbol maçlarını StreamHunter'da ücretsiz izleyin. NBA, EuroLeague HD kalitede. Hemen izle!"
+				},
+				"tennis": {
+					"title": "StreamHunter Tenis | Canlı Tenis Maçları HD Ücretsiz",
+					"description": "Canlı tenis maçlarını StreamHunter'da ücretsiz izleyin. Grand Slam HD kalitede. Güvenilir linkler!"
+				},
+				"ice-hockey": {
+					"title": "StreamHunter Buz Hokeyi | Canlı NHL Maçları HD Ücretsiz",
+					"description": "Canlı buz hokeyi maçlarını StreamHunter'da ücretsiz izleyin. NHL HD kalitede. Hemen izle!"
+				},
+				"baseball": {
+					"title": "StreamHunter Beyzbol | Canlı MLB Maçları HD Ücretsiz",
+					"description": "Canlı beyzbol maçlarını StreamHunter'da ücretsiz izleyin. MLB HD kalitede. Güvenilir linkler!"
+				},
+				"rugby-union": {
+					"title": "StreamHunter Ragbi Union | Canlı Ragbi Maçları HD Ücretsiz",
+					"description": "Canlı ragbi union maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"rugby-league": {
+					"title": "StreamHunter Ragbi Lig | Canlı Ragbi Maçları HD Ücretsiz",
+					"description": "Canlı ragbi lig maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"cricket": {
+					"title": "StreamHunter Kriket | Canlı IPL Maçları HD Ücretsiz",
+					"description": "Canlı kriket maçlarını StreamHunter'da ücretsiz izleyin. IPL, T20 HD kalitede. Hemen izle!"
+				},
+				"american-football": {
+					"title": "StreamHunter Amerikan Futbolu | Canlı NFL Maçları HD Ücretsiz",
+					"description": "Canlı NFL maçlarını StreamHunter'da ücretsiz izleyin. Super Bowl HD kalitede. Güvenilir linkler!"
+				},
+				"volleyball": {
+					"title": "StreamHunter Voleybol | Canlı Voleybol Maçları HD Ücretsiz",
+					"description": "Canlı voleybol maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter Plaj Voleybolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj voleybolu maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"handball": {
+					"title": "StreamHunter Hentbol | Canlı Hentbol Maçları HD Ücretsiz",
+					"description": "Canlı hentbol maçlarını StreamHunter'da ücretsiz izleyin. EHF HD kalitede. Hemen izle!"
+				},
+				"beach-handball": {
+					"title": "StreamHunter Plaj Hentbolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj hentbolu maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"beach-soccer": {
+					"title": "StreamHunter Plaj Futbolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj futbolu maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"aussie-rules": {
+					"title": "StreamHunter Avustralya Futbolu | Canlı AFL Maçları HD",
+					"description": "Canlı AFL maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"futsal": {
+					"title": "StreamHunter Futsal | Canlı Futsal Maçları HD Ücretsiz",
+					"description": "Canlı futsal maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"badminton": {
+					"title": "StreamHunter Badminton | Canlı Badminton Maçları HD Ücretsiz",
+					"description": "Canlı badminton maçlarını StreamHunter'da ücretsiz izleyin. BWF HD kalitede. Güvenilir linkler!"
+				},
+				"netball": {
+					"title": "StreamHunter Netbol | Canlı Netbol Maçları HD Ücretsiz",
+					"description": "Canlı netbol maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"floorball": {
+					"title": "StreamHunter Florbol | Canlı Florbol Maçları HD Ücretsiz",
+					"description": "Canlı florbol maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"combat-sport": {
+					"title": "StreamHunter Dövüş Sporları | Canlı Dövüş HD Ücretsiz",
+					"description": "Canlı dövüş sporlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"boxing": {
+					"title": "StreamHunter Boks | Canlı Boks Maçları HD Ücretsiz",
+					"description": "Canlı boks maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"mma": {
+					"title": "StreamHunter MMA | Canlı UFC Maçları HD Ücretsiz",
+					"description": "Canlı MMA ve UFC maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"snooker": {
+					"title": "StreamHunter Snooker | Canlı Snooker Maçları HD Ücretsiz",
+					"description": "Canlı snooker maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"billiard": {
+					"title": "StreamHunter Bilardo | Canlı Bilardo Maçları HD Ücretsiz",
+					"description": "Canlı bilardo maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"table-tennis": {
+					"title": "StreamHunter Masa Tenisi | Canlı Masa Tenisi HD Ücretsiz",
+					"description": "Canlı masa tenisi maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"padel-tennis": {
+					"title": "StreamHunter Padel | Canlı Padel Maçları HD Ücretsiz",
+					"description": "Canlı padel maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"squash": {
+					"title": "StreamHunter Squash | Canlı Squash Maçları HD Ücretsiz",
+					"description": "Canlı squash maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"motorsport": {
+					"title": "StreamHunter Motor Sporları | Canlı F1 Yarışları HD Ücretsiz",
+					"description": "Canlı motor sporları ve F1 yarışlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"racing": {
+					"title": "StreamHunter Yarış | Canlı Yarış HD Ücretsiz",
+					"description": "Canlı yarışları StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"cycling": {
+					"title": "StreamHunter Bisiklet | Canlı Bisiklet Yarışları HD Ücretsiz",
+					"description": "Canlı bisiklet yarışlarını StreamHunter'da ücretsiz izleyin. Tour de France HD kalitede. Hemen izle!"
+				},
+				"equestrianism": {
+					"title": "StreamHunter Binicilik | Canlı Binicilik HD Ücretsiz",
+					"description": "Canlı binicilik etkinliklerini StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"golf": {
+					"title": "StreamHunter Golf | Canlı PGA Turnuvaları HD Ücretsiz",
+					"description": "Canlı golf turnuvalarını StreamHunter'da ücretsiz izleyin. PGA HD kalitede. Hemen izle!"
+				},
+				"field-hockey": {
+					"title": "StreamHunter Çim Hokeyi | Canlı Hokey Maçları HD Ücretsiz",
+					"description": "Canlı çim hokeyi maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"lacrosse": {
+					"title": "StreamHunter Lakros | Canlı Lakros Maçları HD Ücretsiz",
+					"description": "Canlı lakros maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"athletics": {
+					"title": "StreamHunter Atletizm | Canlı Atletizm HD Ücretsiz",
+					"description": "Canlı atletizm etkinliklerini StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"gymnastics": {
+					"title": "StreamHunter Jimnastik | Canlı Jimnastik HD Ücretsiz",
+					"description": "Canlı jimnastik etkinliklerini StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"weightlifting": {
+					"title": "StreamHunter Halter | Canlı Halter HD Ücretsiz",
+					"description": "Canlı halter yarışmalarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"climbing": {
+					"title": "StreamHunter Tırmanma | Canlı Tırmanma HD Ücretsiz",
+					"description": "Canlı tırmanma etkinliklerini StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"winter-sport": {
+					"title": "StreamHunter Kış Sporları | Canlı Kış Sporları HD Ücretsiz",
+					"description": "Canlı kış sporlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"bandy": {
+					"title": "StreamHunter Bendi | Canlı Bendi Maçları HD Ücretsiz",
+					"description": "Canlı bendi maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"curling": {
+					"title": "StreamHunter Curling | Canlı Curling Maçları HD Ücretsiz",
+					"description": "Canlı curling maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"triathlon": {
+					"title": "StreamHunter Triatlon | Canlı Triatlon HD Ücretsiz",
+					"description": "Canlı triatlon yarışlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"water-sports": {
+					"title": "StreamHunter Su Sporları | Canlı Su Sporları HD Ücretsiz",
+					"description": "Canlı su sporlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"water-polo": {
+					"title": "StreamHunter Sutopu | Canlı Sutopu Maçları HD Ücretsiz",
+					"description": "Canlı sutopu maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"sailing": {
+					"title": "StreamHunter Yelken | Canlı Yelken Yarışları HD Ücretsiz",
+					"description": "Canlı yelken yarışlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"bowling": {
+					"title": "StreamHunter Bowling | Canlı Bowling HD Ücretsiz",
+					"description": "Canlı bowling etkinliklerini StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"darts": {
+					"title": "StreamHunter Dart | Canlı Dart Turnuvaları HD Ücretsiz",
+					"description": "Canlı dart turnuvalarını StreamHunter'da ücretsiz izleyin. PDC HD kalitede. Güvenilir linkler!"
+				},
+				"chess": {
+					"title": "StreamHunter Satranç | Canlı Satranç Turnuvaları HD Ücretsiz",
+					"description": "Canlı satranç turnuvalarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"e-sports": {
+					"title": "StreamHunter E-spor | Canlı E-spor Turnuvaları HD Ücretsiz",
+					"description": "Canlı e-spor turnuvalarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"others": {
+					"title": "StreamHunter Diğer Sporlar | Canlı Spor Yayınları HD Ücretsiz",
+					"description": "Canlı spor yayınlarını StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter Ragbi Yedili | Canlı Ragbi 7s Maçları HD Ücretsiz",
+					"description": "Canlı ragbi yedili maçlarını StreamHunter'da ücretsiz izleyin. HD kalite. Güvenilir linkler!"
+				},
+				"extreme-sport": {
+					"title": "StreamHunter Ekstrem Spor | Canlı Ekstrem Spor HD Ücretsiz",
+					"description": "Canlı ekstrem spor etkinliklerini StreamHunter'da ücretsiz izleyin. HD kalite. Hemen izle!"
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | Canlı Spor Yayını Ücretsiz İzle",
+				"description": "MethStreams ile tüm spor karşılaşmalarını canlı ve ücretsiz izleyin. HD kalite, hızlı yükleme. Şimdi izle!"
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams Futbol | Canlı Futbol Maçları HD Ücretsiz",
+					"description": "Canlı futbol maçlarını MethStreams'de ücretsiz izleyin. Tüm ligler HD kalitede. Hızlı yükleme!"
+				},
+				"basketball": {
+					"title": "MethStreams Basketbol | Canlı NBA Maçları HD Ücretsiz",
+					"description": "Canlı basketbol maçlarını MethStreams'de ücretsiz izleyin. NBA, EuroLeague HD kalitede. Şimdi izle!"
+				},
+				"tennis": {
+					"title": "MethStreams Tenis | Canlı Tenis Maçları HD Ücretsiz",
+					"description": "Canlı tenis maçlarını MethStreams'de ücretsiz izleyin. Grand Slam HD kalitede. Hızlı yükleme!"
+				},
+				"ice-hockey": {
+					"title": "MethStreams Buz Hokeyi | Canlı NHL Maçları HD Ücretsiz",
+					"description": "Canlı buz hokeyi maçlarını MethStreams'de ücretsiz izleyin. NHL HD kalitede. Şimdi izle!"
+				},
+				"baseball": {
+					"title": "MethStreams Beyzbol | Canlı MLB Maçları HD Ücretsiz",
+					"description": "Canlı beyzbol maçlarını MethStreams'de ücretsiz izleyin. MLB HD kalitede. Hızlı yükleme!"
+				},
+				"rugby-union": {
+					"title": "MethStreams Ragbi Union | Canlı Ragbi Maçları HD Ücretsiz",
+					"description": "Canlı ragbi union maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"rugby-league": {
+					"title": "MethStreams Ragbi Lig | Canlı Ragbi Maçları HD Ücretsiz",
+					"description": "Canlı ragbi lig maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"cricket": {
+					"title": "MethStreams Kriket | Canlı IPL Maçları HD Ücretsiz",
+					"description": "Canlı kriket maçlarını MethStreams'de ücretsiz izleyin. IPL, T20 HD kalitede. Şimdi izle!"
+				},
+				"american-football": {
+					"title": "MethStreams Amerikan Futbolu | Canlı NFL Maçları HD Ücretsiz",
+					"description": "Canlı NFL maçlarını MethStreams'de ücretsiz izleyin. Super Bowl HD kalitede. Hızlı yükleme!"
+				},
+				"volleyball": {
+					"title": "MethStreams Voleybol | Canlı Voleybol Maçları HD Ücretsiz",
+					"description": "Canlı voleybol maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"beach-volleyball": {
+					"title": "MethStreams Plaj Voleybolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj voleybolu maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"handball": {
+					"title": "MethStreams Hentbol | Canlı Hentbol Maçları HD Ücretsiz",
+					"description": "Canlı hentbol maçlarını MethStreams'de ücretsiz izleyin. EHF HD kalitede. Şimdi izle!"
+				},
+				"beach-handball": {
+					"title": "MethStreams Plaj Hentbolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj hentbolu maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"beach-soccer": {
+					"title": "MethStreams Plaj Futbolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj futbolu maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"aussie-rules": {
+					"title": "MethStreams Avustralya Futbolu | Canlı AFL Maçları HD",
+					"description": "Canlı AFL maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"futsal": {
+					"title": "MethStreams Futsal | Canlı Futsal Maçları HD Ücretsiz",
+					"description": "Canlı futsal maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"badminton": {
+					"title": "MethStreams Badminton | Canlı Badminton Maçları HD Ücretsiz",
+					"description": "Canlı badminton maçlarını MethStreams'de ücretsiz izleyin. BWF HD kalitede. Hızlı yükleme!"
+				},
+				"netball": {
+					"title": "MethStreams Netbol | Canlı Netbol Maçları HD Ücretsiz",
+					"description": "Canlı netbol maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"floorball": {
+					"title": "MethStreams Florbol | Canlı Florbol Maçları HD Ücretsiz",
+					"description": "Canlı florbol maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"combat-sport": {
+					"title": "MethStreams Dövüş Sporları | Canlı Dövüş HD Ücretsiz",
+					"description": "Canlı dövüş sporlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"boxing": {
+					"title": "MethStreams Boks | Canlı Boks Maçları HD Ücretsiz",
+					"description": "Canlı boks maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"mma": {
+					"title": "MethStreams MMA | Canlı UFC Maçları HD Ücretsiz",
+					"description": "Canlı MMA ve UFC maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"snooker": {
+					"title": "MethStreams Snooker | Canlı Snooker Maçları HD Ücretsiz",
+					"description": "Canlı snooker maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"billiard": {
+					"title": "MethStreams Bilardo | Canlı Bilardo Maçları HD Ücretsiz",
+					"description": "Canlı bilardo maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"table-tennis": {
+					"title": "MethStreams Masa Tenisi | Canlı Masa Tenisi HD Ücretsiz",
+					"description": "Canlı masa tenisi maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"padel-tennis": {
+					"title": "MethStreams Padel | Canlı Padel Maçları HD Ücretsiz",
+					"description": "Canlı padel maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"squash": {
+					"title": "MethStreams Squash | Canlı Squash Maçları HD Ücretsiz",
+					"description": "Canlı squash maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"motorsport": {
+					"title": "MethStreams Motor Sporları | Canlı F1 Yarışları HD Ücretsiz",
+					"description": "Canlı motor sporları ve F1 yarışlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"racing": {
+					"title": "MethStreams Yarış | Canlı Yarış HD Ücretsiz",
+					"description": "Canlı yarışları MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"cycling": {
+					"title": "MethStreams Bisiklet | Canlı Bisiklet Yarışları HD Ücretsiz",
+					"description": "Canlı bisiklet yarışlarını MethStreams'de ücretsiz izleyin. Tour de France HD kalitede. Şimdi izle!"
+				},
+				"equestrianism": {
+					"title": "MethStreams Binicilik | Canlı Binicilik HD Ücretsiz",
+					"description": "Canlı binicilik etkinliklerini MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"golf": {
+					"title": "MethStreams Golf | Canlı PGA Turnuvaları HD Ücretsiz",
+					"description": "Canlı golf turnuvalarını MethStreams'de ücretsiz izleyin. PGA, Masters HD kalitede. Şimdi izle!"
+				},
+				"field-hockey": {
+					"title": "MethStreams Çim Hokeyi | Canlı Hokey Maçları HD Ücretsiz",
+					"description": "Canlı çim hokeyi maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"lacrosse": {
+					"title": "MethStreams Lakros | Canlı Lakros Maçları HD Ücretsiz",
+					"description": "Canlı lakros maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"athletics": {
+					"title": "MethStreams Atletizm | Canlı Atletizm HD Ücretsiz",
+					"description": "Canlı atletizm etkinliklerini MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"gymnastics": {
+					"title": "MethStreams Jimnastik | Canlı Jimnastik HD Ücretsiz",
+					"description": "Canlı jimnastik etkinliklerini MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"weightlifting": {
+					"title": "MethStreams Halter | Canlı Halter HD Ücretsiz",
+					"description": "Canlı halter yarışmalarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"climbing": {
+					"title": "MethStreams Tırmanma | Canlı Tırmanma HD Ücretsiz",
+					"description": "Canlı tırmanma etkinliklerini MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"winter-sport": {
+					"title": "MethStreams Kış Sporları | Canlı Kış Sporları HD Ücretsiz",
+					"description": "Canlı kış sporlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"bandy": {
+					"title": "MethStreams Bendi | Canlı Bendi Maçları HD Ücretsiz",
+					"description": "Canlı bendi maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"curling": {
+					"title": "MethStreams Curling | Canlı Curling Maçları HD Ücretsiz",
+					"description": "Canlı curling maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"triathlon": {
+					"title": "MethStreams Triatlon | Canlı Triatlon HD Ücretsiz",
+					"description": "Canlı triatlon yarışlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"water-sports": {
+					"title": "MethStreams Su Sporları | Canlı Su Sporları HD Ücretsiz",
+					"description": "Canlı su sporlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"water-polo": {
+					"title": "MethStreams Sutopu | Canlı Sutopu Maçları HD Ücretsiz",
+					"description": "Canlı sutopu maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"sailing": {
+					"title": "MethStreams Yelken | Canlı Yelken Yarışları HD Ücretsiz",
+					"description": "Canlı yelken yarışlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"bowling": {
+					"title": "MethStreams Bowling | Canlı Bowling HD Ücretsiz",
+					"description": "Canlı bowling etkinliklerini MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"darts": {
+					"title": "MethStreams Dart | Canlı Dart Turnuvaları HD Ücretsiz",
+					"description": "Canlı dart turnuvalarını MethStreams'de ücretsiz izleyin. PDC HD kalitede. Hızlı yükleme!"
+				},
+				"chess": {
+					"title": "MethStreams Satranç | Canlı Satranç Turnuvaları HD Ücretsiz",
+					"description": "Canlı satranç turnuvalarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"e-sports": {
+					"title": "MethStreams E-spor | Canlı E-spor Turnuvaları HD Ücretsiz",
+					"description": "Canlı e-spor turnuvalarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"others": {
+					"title": "MethStreams Diğer Sporlar | Canlı Spor Yayınları HD Ücretsiz",
+					"description": "Canlı spor yayınlarını MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				},
+				"rugby-sevens": {
+					"title": "MethStreams Ragbi Yedili | Canlı Ragbi 7s Maçları HD Ücretsiz",
+					"description": "Canlı ragbi yedili maçlarını MethStreams'de ücretsiz izleyin. HD kalite. Hızlı yükleme!"
+				},
+				"extreme-sport": {
+					"title": "MethStreams Ekstrem Spor | Canlı Ekstrem Spor HD Ücretsiz",
+					"description": "Canlı ekstrem spor etkinliklerini MethStreams'de ücretsiz izleyin. HD kalite. Şimdi izle!"
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | Canlı Spor Yayını Ücretsiz İzle",
+				"description": "WiziWig ile tüm spor karşılaşmalarını canlı ve ücretsiz izleyin. HD kalite, kayıt gerektirmez. Hemen izle!"
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig Futbol | Canlı Futbol Maçları HD Ücretsiz",
+					"description": "Canlı futbol maçlarını WiziWig'de ücretsiz izleyin. Tüm ligler HD kalitede. Kayıt gerektirmez!"
+				},
+				"basketball": {
+					"title": "WiziWig Basketbol | Canlı NBA Maçları HD Ücretsiz",
+					"description": "Canlı basketbol maçlarını WiziWig'de ücretsiz izleyin. NBA, EuroLeague HD kalitede. Hemen izle!"
+				},
+				"tennis": {
+					"title": "WiziWig Tenis | Canlı Tenis Maçları HD Ücretsiz",
+					"description": "Canlı tenis maçlarını WiziWig'de ücretsiz izleyin. Grand Slam HD kalitede. Kayıt gerektirmez!"
+				},
+				"ice-hockey": {
+					"title": "WiziWig Buz Hokeyi | Canlı NHL Maçları HD Ücretsiz",
+					"description": "Canlı buz hokeyi maçlarını WiziWig'de ücretsiz izleyin. NHL HD kalitede. Hemen izle!"
+				},
+				"baseball": {
+					"title": "WiziWig Beyzbol | Canlı MLB Maçları HD Ücretsiz",
+					"description": "Canlı beyzbol maçlarını WiziWig'de ücretsiz izleyin. MLB HD kalitede. Kayıt gerektirmez!"
+				},
+				"rugby-union": {
+					"title": "WiziWig Ragbi Union | Canlı Ragbi Maçları HD Ücretsiz",
+					"description": "Canlı ragbi union maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"rugby-league": {
+					"title": "WiziWig Ragbi Lig | Canlı Ragbi Maçları HD Ücretsiz",
+					"description": "Canlı ragbi lig maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"cricket": {
+					"title": "WiziWig Kriket | Canlı IPL Maçları HD Ücretsiz",
+					"description": "Canlı kriket maçlarını WiziWig'de ücretsiz izleyin. IPL, T20 HD kalitede. Hemen izle!"
+				},
+				"american-football": {
+					"title": "WiziWig Amerikan Futbolu | Canlı NFL Maçları HD Ücretsiz",
+					"description": "Canlı NFL maçlarını WiziWig'de ücretsiz izleyin. Super Bowl HD kalitede. Kayıt gerektirmez!"
+				},
+				"volleyball": {
+					"title": "WiziWig Voleybol | Canlı Voleybol Maçları HD Ücretsiz",
+					"description": "Canlı voleybol maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"beach-volleyball": {
+					"title": "WiziWig Plaj Voleybolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj voleybolu maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"handball": {
+					"title": "WiziWig Hentbol | Canlı Hentbol Maçları HD Ücretsiz",
+					"description": "Canlı hentbol maçlarını WiziWig'de ücretsiz izleyin. EHF HD kalitede. Hemen izle!"
+				},
+				"beach-handball": {
+					"title": "WiziWig Plaj Hentbolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj hentbolu maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"beach-soccer": {
+					"title": "WiziWig Plaj Futbolu | Canlı Maçlar HD Ücretsiz",
+					"description": "Canlı plaj futbolu maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"aussie-rules": {
+					"title": "WiziWig Avustralya Futbolu | Canlı AFL Maçları HD",
+					"description": "Canlı AFL maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"futsal": {
+					"title": "WiziWig Futsal | Canlı Futsal Maçları HD Ücretsiz",
+					"description": "Canlı futsal maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"badminton": {
+					"title": "WiziWig Badminton | Canlı Badminton Maçları HD Ücretsiz",
+					"description": "Canlı badminton maçlarını WiziWig'de ücretsiz izleyin. BWF HD kalitede. Kayıt gerektirmez!"
+				},
+				"netball": {
+					"title": "WiziWig Netbol | Canlı Netbol Maçları HD Ücretsiz",
+					"description": "Canlı netbol maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"floorball": {
+					"title": "WiziWig Florbol | Canlı Florbol Maçları HD Ücretsiz",
+					"description": "Canlı florbol maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"combat-sport": {
+					"title": "WiziWig Dövüş Sporları | Canlı Dövüş HD Ücretsiz",
+					"description": "Canlı dövüş sporlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"boxing": {
+					"title": "WiziWig Boks | Canlı Boks Maçları HD Ücretsiz",
+					"description": "Canlı boks maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"mma": {
+					"title": "WiziWig MMA | Canlı UFC Maçları HD Ücretsiz",
+					"description": "Canlı MMA ve UFC maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"snooker": {
+					"title": "WiziWig Snooker | Canlı Snooker Maçları HD Ücretsiz",
+					"description": "Canlı snooker maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"billiard": {
+					"title": "WiziWig Bilardo | Canlı Bilardo Maçları HD Ücretsiz",
+					"description": "Canlı bilardo maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"table-tennis": {
+					"title": "WiziWig Masa Tenisi | Canlı Masa Tenisi HD Ücretsiz",
+					"description": "Canlı masa tenisi maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"padel-tennis": {
+					"title": "WiziWig Padel | Canlı Padel Maçları HD Ücretsiz",
+					"description": "Canlı padel maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"squash": {
+					"title": "WiziWig Squash | Canlı Squash Maçları HD Ücretsiz",
+					"description": "Canlı squash maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"motorsport": {
+					"title": "WiziWig Motor Sporları | Canlı F1 Yarışları HD Ücretsiz",
+					"description": "Canlı motor sporları ve F1 yarışlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"racing": {
+					"title": "WiziWig Yarış | Canlı Yarış HD Ücretsiz",
+					"description": "Canlı yarışları WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"cycling": {
+					"title": "WiziWig Bisiklet | Canlı Bisiklet Yarışları HD Ücretsiz",
+					"description": "Canlı bisiklet yarışlarını WiziWig'de ücretsiz izleyin. Tour de France HD kalitede. Hemen izle!"
+				},
+				"equestrianism": {
+					"title": "WiziWig Binicilik | Canlı Binicilik HD Ücretsiz",
+					"description": "Canlı binicilik etkinliklerini WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"golf": {
+					"title": "WiziWig Golf | Canlı PGA Turnuvaları HD Ücretsiz",
+					"description": "Canlı golf turnuvalarını WiziWig'de ücretsiz izleyin. PGA, Masters HD kalitede. Hemen izle!"
+				},
+				"field-hockey": {
+					"title": "WiziWig Çim Hokeyi | Canlı Hokey Maçları HD Ücretsiz",
+					"description": "Canlı çim hokeyi maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"lacrosse": {
+					"title": "WiziWig Lakros | Canlı Lakros Maçları HD Ücretsiz",
+					"description": "Canlı lakros maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"athletics": {
+					"title": "WiziWig Atletizm | Canlı Atletizm HD Ücretsiz",
+					"description": "Canlı atletizm etkinliklerini WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"gymnastics": {
+					"title": "WiziWig Jimnastik | Canlı Jimnastik HD Ücretsiz",
+					"description": "Canlı jimnastik etkinliklerini WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"weightlifting": {
+					"title": "WiziWig Halter | Canlı Halter HD Ücretsiz",
+					"description": "Canlı halter yarışmalarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"climbing": {
+					"title": "WiziWig Tırmanma | Canlı Tırmanma HD Ücretsiz",
+					"description": "Canlı tırmanma etkinliklerini WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"winter-sport": {
+					"title": "WiziWig Kış Sporları | Canlı Kış Sporları HD Ücretsiz",
+					"description": "Canlı kış sporlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"bandy": {
+					"title": "WiziWig Bendi | Canlı Bendi Maçları HD Ücretsiz",
+					"description": "Canlı bendi maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"curling": {
+					"title": "WiziWig Curling | Canlı Curling Maçları HD Ücretsiz",
+					"description": "Canlı curling maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"triathlon": {
+					"title": "WiziWig Triatlon | Canlı Triatlon HD Ücretsiz",
+					"description": "Canlı triatlon yarışlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"water-sports": {
+					"title": "WiziWig Su Sporları | Canlı Su Sporları HD Ücretsiz",
+					"description": "Canlı su sporlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"water-polo": {
+					"title": "WiziWig Sutopu | Canlı Sutopu Maçları HD Ücretsiz",
+					"description": "Canlı sutopu maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"sailing": {
+					"title": "WiziWig Yelken | Canlı Yelken Yarışları HD Ücretsiz",
+					"description": "Canlı yelken yarışlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"bowling": {
+					"title": "WiziWig Bowling | Canlı Bowling HD Ücretsiz",
+					"description": "Canlı bowling etkinliklerini WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"darts": {
+					"title": "WiziWig Dart | Canlı Dart Turnuvaları HD Ücretsiz",
+					"description": "Canlı dart turnuvalarını WiziWig'de ücretsiz izleyin. PDC HD kalitede. Kayıt gerektirmez!"
+				},
+				"chess": {
+					"title": "WiziWig Satranç | Canlı Satranç Turnuvaları HD Ücretsiz",
+					"description": "Canlı satranç turnuvalarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"e-sports": {
+					"title": "WiziWig E-spor | Canlı E-spor Turnuvaları HD Ücretsiz",
+					"description": "Canlı e-spor turnuvalarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"others": {
+					"title": "WiziWig Diğer Sporlar | Canlı Spor Yayınları HD Ücretsiz",
+					"description": "Canlı spor yayınlarını WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				},
+				"rugby-sevens": {
+					"title": "WiziWig Ragbi Yedili | Canlı Ragbi 7s Maçları HD Ücretsiz",
+					"description": "Canlı ragbi yedili maçlarını WiziWig'de ücretsiz izleyin. HD kalite. Kayıt gerektirmez!"
+				},
+				"extreme-sport": {
+					"title": "WiziWig Ekstrem Spor | Canlı Ekstrem Spor HD Ücretsiz",
+					"description": "Canlı ekstrem spor etkinliklerini WiziWig'de ücretsiz izleyin. HD kalite. Hemen izle!"
+				}
+			}
+		}
 	}
 }

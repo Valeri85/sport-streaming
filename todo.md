@@ -17,12 +17,7 @@ AI instructions:
 
 prompt:
 
-ADD NEW WEBSITE:
-
-1. reg.ru-ზე უნდა შეიქმნას ახალი საიტი, წაიშლოს ძველი. რადგან უკვე არსებულს რუთს ვერ უცვლი, ახალ საიტში რუთად უნდა გაეწეროს streaming
-
-1. I want you to translate, for all websites from page_seo: seo title and description.
-1. Act as a professional SEO specialist, translation should be:
+I want you to translate, for all websites from page_seo: seo title and description. Act as a professional SEO specialist, translation should be:
 
 - Google-optimized,
 - Natural,
@@ -32,12 +27,4 @@ ADD NEW WEBSITE:
 - Action-Oriented,
 - Grammar Checked: All translations reviewed for proper grammar and spelling.
 
-3. start translating from p2p4u.us website and than so on. structure should be as in af.json attached file. and in general json file you are working on should have all fields as af.json.
-4. we need to add translated versions of "Rugby Sevens" and "Extreme Sport" to the "sports" field if they missed.
-5. work on da.json. if site you are working is first, give me full json file with editions like in af.json, but if not first site, give me code only inside "seo" json field. for example: "seo": {"domain.com": {...}}.
-6. give me code one by one (one site per prompt), work on one website and that after my confirmation continue to another.
-
-give me from "domain.com": {...} field.
-
-First - Fix the missing fields in the base file (direction, missing sports)
-Then - Add SEO translations for all 6 websites one by one
+fix sv.json, example is af.json, do not change flag to emoji and give base json file first without seo than seo filed with website one by one

@@ -3,6 +3,7 @@
 		"code": "th",
 		"name": "ไทย",
 		"flag": "TH",
+		"direction": "ltr",
 		"active": true
 	},
 	"ui": {
@@ -52,6 +53,7 @@
 		"Baseball": "เบสบอล",
 		"Rugby Union": "รักบี้ยูเนี่ยน",
 		"Rugby League": "รักบี้ลีก",
+		"Rugby Sevens": "รักบี้เซเว่นส์",
 		"Cricket": "คริกเก็ต",
 		"American Football": "อเมริกันฟุตบอล",
 		"Volleyball": "วอลเลย์บอล",
@@ -64,10 +66,9 @@
 		"Badminton": "แบดมินตัน",
 		"Netball": "เน็ตบอล",
 		"Floorball": "ฟลอร์บอล",
-		"Combat": "ต่อสู้",
-		"combat sport": "กีฬาต่อสู้",
+		"Combat Sport": "กีฬาต่อสู้",
 		"Boxing": "มวย",
-		"MMA": "ศิลปะการต่อสู้แบบผสม",
+		"MMA": "MMA",
 		"Snooker": "สนุกเกอร์",
 		"Billiard": "บิลเลียด",
 		"Table Tennis": "ปิงปอง",
@@ -84,7 +85,7 @@
 		"Gymnastics": "ยิมนาสติก",
 		"Weightlifting": "ยกน้ำหนัก",
 		"Climbing": "ปีนเขา",
-		"winter sport": "กีฬาฤดูหนาว",
+		"Winter Sport": "กีฬาฤดูหนาว",
 		"Bandy": "แบนดี้",
 		"Curling": "เคิร์ลลิ่ง",
 		"Triathlon": "ไตรกีฬา",
@@ -95,6 +96,1305 @@
 		"Darts": "ปาเป้า",
 		"Chess": "หมากรุก",
 		"E-sports": "อีสปอร์ต",
+		"Extreme Sport": "เอ็กซ์ตรีมสปอร์ต",
 		"Others": "อื่นๆ"
+	},
+	"seo": {
+		"sportlemons.info": {
+			"home": {
+				"title": "SportLemon | ดูกีฬาสดและแมตช์วันนี้ฟรี",
+				"description": "SportLemon ถ่ายทอดสดกีฬาและแมตช์วันนี้ทุกประเภท ดูฟรี ไม่ต้องสมัคร เริ่มดูเลย!"
+			},
+			"sports": {
+				"football": {
+					"title": "SportLemon ฟุตบอล | ดูถ่ายทอดสดฟุตบอล HD ฟรี",
+					"description": "ดูถ่ายทอดสดฟุตบอล HD ฟรีที่ SportLemon Champions League, Premier League และอื่นๆ ห้ามพลาด!"
+				},
+				"basketball": {
+					"title": "SportLemon บาสเกตบอล | ดูถ่ายทอดสด NBA ฟรี",
+					"description": "ดูถ่ายทอดสดบาสเกตบอลฟรี NBA, EuroLeague และอื่นๆ ใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"tennis": {
+					"title": "SportLemon เทนนิส | ดูถ่ายทอดสดเทนนิส HD ฟรี",
+					"description": "ดูถ่ายทอดสดเทนนิสฟรี Grand Slam, ATP, WTA ใน HD ที่ SportLemon ดูเลย!"
+				},
+				"ice-hockey": {
+					"title": "SportLemon ฮอกกี้น้ำแข็ง | ดูถ่ายทอดสด NHL ฟรี",
+					"description": "ดูถ่ายทอดสดฮอกกี้น้ำแข็งฟรี NHL และลีกอื่นๆ ใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"baseball": {
+					"title": "SportLemon เบสบอล | ดูถ่ายทอดสด MLB ฟรี",
+					"description": "ดูถ่ายทอดสดเบสบอลฟรี MLB และอื่นๆ ใน HD ที่ SportLemon ดูเลย!"
+				},
+				"rugby-union": {
+					"title": "SportLemon รักบี้ยูเนี่ยน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้ยูเนี่ยนฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"rugby-league": {
+					"title": "SportLemon รักบี้ลีก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้ลีกฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"cricket": {
+					"title": "SportLemon คริกเก็ต | ดูถ่ายทอดสด IPL ฟรี HD",
+					"description": "ดูถ่ายทอดสดคริกเก็ตฟรี IPL, T20 และอื่นๆ ใน HD ที่ SportLemon ดูเลย!"
+				},
+				"american-football": {
+					"title": "SportLemon อเมริกันฟุตบอล | ดูถ่ายทอดสด NFL ฟรี",
+					"description": "ดูถ่ายทอดสด NFL ฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร ดูเลย!"
+				},
+				"volleyball": {
+					"title": "SportLemon วอลเลย์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดวอลเลย์บอลฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"beach-volleyball": {
+					"title": "SportLemon วอลเลย์บอลชายหาด | ดูถ่ายทอดสดฟรี",
+					"description": "ดูถ่ายทอดสดวอลเลย์บอลชายหาดฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"handball": {
+					"title": "SportLemon แฮนด์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแฮนด์บอลฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"beach-handball": {
+					"title": "SportLemon แฮนด์บอลชายหาด | ดูถ่ายทอดสดฟรี",
+					"description": "ดูถ่ายทอดสดแฮนด์บอลชายหาดฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"beach-soccer": {
+					"title": "SportLemon ฟุตบอลชายหาด | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟุตบอลชายหาดฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"aussie-rules": {
+					"title": "SportLemon ออสซี่รูลส์ | ดูถ่ายทอดสด AFL ฟรี",
+					"description": "ดูถ่ายทอดสด AFL ฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร ดูเลย!"
+				},
+				"futsal": {
+					"title": "SportLemon ฟุตซอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟุตซอลฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"badminton": {
+					"title": "SportLemon แบดมินตัน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแบดมินตันฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"netball": {
+					"title": "SportLemon เน็ตบอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเน็ตบอลฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"floorball": {
+					"title": "SportLemon ฟลอร์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟลอร์บอลฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"combat-sport": {
+					"title": "SportLemon กีฬาต่อสู้ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาต่อสู้ฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"boxing": {
+					"title": "SportLemon มวย | ดูถ่ายทอดสดมวยฟรี HD",
+					"description": "ดูถ่ายทอดสดมวยฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร ดูเลย!"
+				},
+				"mma": {
+					"title": "SportLemon MMA | ดูถ่ายทอดสด UFC ฟรี HD",
+					"description": "ดูถ่ายทอดสด MMA และ UFC ฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"snooker": {
+					"title": "SportLemon สนุกเกอร์ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดสนุกเกอร์ฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"billiard": {
+					"title": "SportLemon บิลเลียด | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดบิลเลียดฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"table-tennis": {
+					"title": "SportLemon ปิงปอง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปิงปองฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"padel-tennis": {
+					"title": "SportLemon เทนนิสพาเดล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเทนนิสพาเดลฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"squash": {
+					"title": "SportLemon สควอช | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดสควอชฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"motorsport": {
+					"title": "SportLemon มอเตอร์สปอร์ต | ดูถ่ายทอดสด F1 ฟรี",
+					"description": "ดูถ่ายทอดสดมอเตอร์สปอร์ตและ F1 ฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"racing": {
+					"title": "SportLemon แข่งรถ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแข่งรถฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"cycling": {
+					"title": "SportLemon จักรยาน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดจักรยานฟรีใน HD ที่ SportLemon Tour de France และอื่นๆ!"
+				},
+				"equestrianism": {
+					"title": "SportLemon ขี่ม้า | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดขี่ม้าฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"golf": {
+					"title": "SportLemon กอล์ฟ | ดูถ่ายทอดสด PGA ฟรี HD",
+					"description": "ดูถ่ายทอดสดกอล์ฟฟรี PGA Tour และ Masters ใน HD ที่ SportLemon!"
+				},
+				"field-hockey": {
+					"title": "SportLemon ฮอกกี้สนาม | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฮอกกี้สนามฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"lacrosse": {
+					"title": "SportLemon ลาครอส | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดลาครอสฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"athletics": {
+					"title": "SportLemon กรีฑา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกรีฑาฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"gymnastics": {
+					"title": "SportLemon ยิมนาสติก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดยิมนาสติกฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"weightlifting": {
+					"title": "SportLemon ยกน้ำหนัก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดยกน้ำหนักฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"climbing": {
+					"title": "SportLemon ปีนเขา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปีนเขาฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"winter-sport": {
+					"title": "SportLemon กีฬาฤดูหนาว | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาฤดูหนาวฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"bandy": {
+					"title": "SportLemon แบนดี้ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแบนดี้ฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"curling": {
+					"title": "SportLemon เคิร์ลลิ่ง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเคิร์ลลิ่งฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"triathlon": {
+					"title": "SportLemon ไตรกีฬา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดไตรกีฬาฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"water-sports": {
+					"title": "SportLemon กีฬาทางน้ำ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาทางน้ำฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"water-polo": {
+					"title": "SportLemon โปโลน้ำ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดโปโลน้ำฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"sailing": {
+					"title": "SportLemon แล่นเรือ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแล่นเรือฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"bowling": {
+					"title": "SportLemon โบว์ลิ่ง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดโบว์ลิ่งฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"darts": {
+					"title": "SportLemon ปาเป้า | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปาเป้าฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"chess": {
+					"title": "SportLemon หมากรุก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดหมากรุกฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"e-sports": {
+					"title": "SportLemon อีสปอร์ต | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดอีสปอร์ตฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"others": {
+					"title": "SportLemon กีฬาอื่นๆ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาอื่นๆ ฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"rugby-sevens": {
+					"title": "SportLemon รักบี้เซเว่นส์ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้เซเว่นส์ฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				},
+				"extreme-sport": {
+					"title": "SportLemon เอ็กซ์ตรีมสปอร์ต | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเอ็กซ์ตรีมสปอร์ตฟรีใน HD ที่ SportLemon ไม่ต้องสมัคร!"
+				}
+			}
+		},
+		"eplsite.us": {
+			"home": {
+				"title": "EPLsite | ดูถ่ายทอดสดกีฬาออนไลน์ฟรี",
+				"description": "EPLsite ถ่ายทอดสดกีฬาทุกประเภทใน HD ดูฟรี โหลดเร็ว ไม่ต้องสมัคร ดูเลย!"
+			},
+			"sports": {
+				"football": {
+					"title": "EPLsite ฟุตบอล | ดูถ่ายทอดสดฟุตบอล HD ฟรี",
+					"description": "ดูถ่ายทอดสดฟุตบอลฟรีที่ EPLsite Premier League, Champions League ใน HD โหลดเร็ว!"
+				},
+				"basketball": {
+					"title": "EPLsite บาสเกตบอล | ดูถ่ายทอดสด NBA ฟรี",
+					"description": "ดูถ่ายทอดสดบาสเกตบอลฟรีที่ EPLsite NBA ใน HD โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"tennis": {
+					"title": "EPLsite เทนนิส | ดูถ่ายทอดสดเทนนิส HD ฟรี",
+					"description": "ดูถ่ายทอดสดเทนนิสฟรีที่ EPLsite Grand Slam ใน HD โหลดเร็ว!"
+				},
+				"ice-hockey": {
+					"title": "EPLsite ฮอกกี้น้ำแข็ง | ดูถ่ายทอดสด NHL ฟรี",
+					"description": "ดูถ่ายทอดสดฮอกกี้น้ำแข็งฟรีที่ EPLsite NHL ใน HD โหลดเร็ว!"
+				},
+				"baseball": {
+					"title": "EPLsite เบสบอล | ดูถ่ายทอดสด MLB ฟรี",
+					"description": "ดูถ่ายทอดสดเบสบอลฟรีที่ EPLsite MLB ใน HD โหลดเร็ว!"
+				},
+				"rugby-union": {
+					"title": "EPLsite รักบี้ยูเนี่ยน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้ยูเนี่ยนฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"rugby-league": {
+					"title": "EPLsite รักบี้ลีก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้ลีกฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"cricket": {
+					"title": "EPLsite คริกเก็ต | ดูถ่ายทอดสด IPL ฟรี HD",
+					"description": "ดูถ่ายทอดสดคริกเก็ตฟรีที่ EPLsite IPL ใน HD โหลดเร็ว!"
+				},
+				"american-football": {
+					"title": "EPLsite อเมริกันฟุตบอล | ดูถ่ายทอดสด NFL ฟรี",
+					"description": "ดูถ่ายทอดสด NFL ฟรีที่ EPLsite ใน HD โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"volleyball": {
+					"title": "EPLsite วอลเลย์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดวอลเลย์บอลฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"beach-volleyball": {
+					"title": "EPLsite วอลเลย์บอลชายหาด | ดูถ่ายทอดสดฟรี",
+					"description": "ดูถ่ายทอดสดวอลเลย์บอลชายหาดฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"handball": {
+					"title": "EPLsite แฮนด์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแฮนด์บอลฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"beach-handball": {
+					"title": "EPLsite แฮนด์บอลชายหาด | ดูถ่ายทอดสดฟรี",
+					"description": "ดูถ่ายทอดสดแฮนด์บอลชายหาดฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"beach-soccer": {
+					"title": "EPLsite ฟุตบอลชายหาด | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟุตบอลชายหาดฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"aussie-rules": {
+					"title": "EPLsite ออสซี่รูลส์ | ดูถ่ายทอดสด AFL ฟรี",
+					"description": "ดูถ่ายทอดสด AFL ฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"futsal": {
+					"title": "EPLsite ฟุตซอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟุตซอลฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"badminton": {
+					"title": "EPLsite แบดมินตัน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแบดมินตันฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"netball": {
+					"title": "EPLsite เน็ตบอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเน็ตบอลฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"floorball": {
+					"title": "EPLsite ฟลอร์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟลอร์บอลฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"combat-sport": {
+					"title": "EPLsite กีฬาต่อสู้ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาต่อสู้ฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"boxing": {
+					"title": "EPLsite มวย | ดูถ่ายทอดสดมวยฟรี HD",
+					"description": "ดูถ่ายทอดสดมวยฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"mma": {
+					"title": "EPLsite MMA | ดูถ่ายทอดสด UFC ฟรี HD",
+					"description": "ดูถ่ายทอดสด MMA และ UFC ฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"snooker": {
+					"title": "EPLsite สนุกเกอร์ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดสนุกเกอร์ฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"billiard": {
+					"title": "EPLsite บิลเลียด | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดบิลเลียดฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"table-tennis": {
+					"title": "EPLsite ปิงปอง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปิงปองฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"padel-tennis": {
+					"title": "EPLsite เทนนิสพาเดล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเทนนิสพาเดลฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"squash": {
+					"title": "EPLsite สควอช | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดสควอชฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"motorsport": {
+					"title": "EPLsite มอเตอร์สปอร์ต | ดูถ่ายทอดสด F1 ฟรี",
+					"description": "ดูถ่ายทอดสดมอเตอร์สปอร์ตและ F1 ฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"racing": {
+					"title": "EPLsite แข่งรถ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแข่งรถฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"cycling": {
+					"title": "EPLsite จักรยาน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดจักรยานฟรีที่ EPLsite Tour de France ใน HD โหลดเร็ว!"
+				},
+				"equestrianism": {
+					"title": "EPLsite ขี่ม้า | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดขี่ม้าฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"golf": {
+					"title": "EPLsite กอล์ฟ | ดูถ่ายทอดสด PGA ฟรี HD",
+					"description": "ดูถ่ายทอดสดกอล์ฟฟรีที่ EPLsite PGA Tour ใน HD โหลดเร็ว!"
+				},
+				"field-hockey": {
+					"title": "EPLsite ฮอกกี้สนาม | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฮอกกี้สนามฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"lacrosse": {
+					"title": "EPLsite ลาครอส | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดลาครอสฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"athletics": {
+					"title": "EPLsite กรีฑา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกรีฑาฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"gymnastics": {
+					"title": "EPLsite ยิมนาสติก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดยิมนาสติกฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"weightlifting": {
+					"title": "EPLsite ยกน้ำหนัก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดยกน้ำหนักฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"climbing": {
+					"title": "EPLsite ปีนเขา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปีนเขาฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"winter-sport": {
+					"title": "EPLsite กีฬาฤดูหนาว | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาฤดูหนาวฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"bandy": {
+					"title": "EPLsite แบนดี้ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแบนดี้ฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"curling": {
+					"title": "EPLsite เคิร์ลลิ่ง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเคิร์ลลิ่งฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"triathlon": {
+					"title": "EPLsite ไตรกีฬา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดไตรกีฬาฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"water-sports": {
+					"title": "EPLsite กีฬาทางน้ำ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาทางน้ำฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"water-polo": {
+					"title": "EPLsite โปโลน้ำ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดโปโลน้ำฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"sailing": {
+					"title": "EPLsite แล่นเรือ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแล่นเรือฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"bowling": {
+					"title": "EPLsite โบว์ลิ่ง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดโบว์ลิ่งฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"darts": {
+					"title": "EPLsite ปาเป้า | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปาเป้าฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"chess": {
+					"title": "EPLsite หมากรุก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดหมากรุกฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"e-sports": {
+					"title": "EPLsite อีสปอร์ต | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดอีสปอร์ตฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"others": {
+					"title": "EPLsite กีฬาอื่นๆ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาอื่นๆ ฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"rugby-sevens": {
+					"title": "EPLsite รักบี้เซเว่นส์ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้เซเว่นส์ฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				},
+				"extreme-sport": {
+					"title": "EPLsite เอ็กซ์ตรีมสปอร์ต | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเอ็กซ์ตรีมสปอร์ตฟรีที่ EPLsite ใน HD โหลดเร็ว!"
+				}
+			}
+		},
+		"p2p4u.us": {
+			"home": {
+				"title": "P2P4U | ดูถ่ายทอดสดกีฬาออนไลน์ฟรี",
+				"description": "P2P4U ถ่ายทอดสดกีฬาทุกประเภทฟรี โหลดเร็ว ไม่ต้องสมัคร ดูเลย!"
+			},
+			"sports": {
+				"football": {
+					"title": "P2P4U ฟุตบอล | ดูถ่ายทอดสดฟุตบอล HD ฟรี",
+					"description": "ดูถ่ายทอดสดฟุตบอลฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร ดูเลย!"
+				},
+				"basketball": {
+					"title": "P2P4U บาสเกตบอล | ดูถ่ายทอดสด NBA ฟรี",
+					"description": "ดูถ่ายทอดสดบาสเกตบอลฟรีที่ P2P4U NBA โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"tennis": {
+					"title": "P2P4U เทนนิส | ดูถ่ายทอดสดเทนนิส HD ฟรี",
+					"description": "ดูถ่ายทอดสดเทนนิสฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"ice-hockey": {
+					"title": "P2P4U ฮอกกี้น้ำแข็ง | ดูถ่ายทอดสด NHL ฟรี",
+					"description": "ดูถ่ายทอดสดฮอกกี้น้ำแข็งฟรีที่ P2P4U NHL โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"baseball": {
+					"title": "P2P4U เบสบอล | ดูถ่ายทอดสด MLB ฟรี",
+					"description": "ดูถ่ายทอดสดเบสบอลฟรีที่ P2P4U MLB โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"rugby-union": {
+					"title": "P2P4U รักบี้ยูเนี่ยน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้ยูเนี่ยนฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"rugby-league": {
+					"title": "P2P4U รักบี้ลีก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้ลีกฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"cricket": {
+					"title": "P2P4U คริกเก็ต | ดูถ่ายทอดสด IPL ฟรี HD",
+					"description": "ดูถ่ายทอดสดคริกเก็ตฟรีที่ P2P4U IPL โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"american-football": {
+					"title": "P2P4U อเมริกันฟุตบอล | ดูถ่ายทอดสด NFL ฟรี",
+					"description": "ดูถ่ายทอดสด NFL ฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"volleyball": {
+					"title": "P2P4U วอลเลย์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดวอลเลย์บอลฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"beach-volleyball": {
+					"title": "P2P4U วอลเลย์บอลชายหาด | ดูถ่ายทอดสดฟรี",
+					"description": "ดูถ่ายทอดสดวอลเลย์บอลชายหาดฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"handball": {
+					"title": "P2P4U แฮนด์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแฮนด์บอลฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"beach-handball": {
+					"title": "P2P4U แฮนด์บอลชายหาด | ดูถ่ายทอดสดฟรี",
+					"description": "ดูถ่ายทอดสดแฮนด์บอลชายหาดฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"beach-soccer": {
+					"title": "P2P4U ฟุตบอลชายหาด | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟุตบอลชายหาดฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"aussie-rules": {
+					"title": "P2P4U ออสซี่รูลส์ | ดูถ่ายทอดสด AFL ฟรี",
+					"description": "ดูถ่ายทอดสด AFL ฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"futsal": {
+					"title": "P2P4U ฟุตซอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟุตซอลฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"badminton": {
+					"title": "P2P4U แบดมินตัน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแบดมินตันฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"netball": {
+					"title": "P2P4U เน็ตบอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเน็ตบอลฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"floorball": {
+					"title": "P2P4U ฟลอร์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟลอร์บอลฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"combat-sport": {
+					"title": "P2P4U กีฬาต่อสู้ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาต่อสู้ฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"boxing": {
+					"title": "P2P4U มวย | ดูถ่ายทอดสดมวยฟรี HD",
+					"description": "ดูถ่ายทอดสดมวยฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"mma": {
+					"title": "P2P4U MMA | ดูถ่ายทอดสด UFC ฟรี HD",
+					"description": "ดูถ่ายทอดสด MMA และ UFC ฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"snooker": {
+					"title": "P2P4U สนุกเกอร์ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดสนุกเกอร์ฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"billiard": {
+					"title": "P2P4U บิลเลียด | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดบิลเลียดฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"table-tennis": {
+					"title": "P2P4U ปิงปอง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปิงปองฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"padel-tennis": {
+					"title": "P2P4U เทนนิสพาเดล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเทนนิสพาเดลฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"squash": {
+					"title": "P2P4U สควอช | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดสควอชฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"motorsport": {
+					"title": "P2P4U มอเตอร์สปอร์ต | ดูถ่ายทอดสด F1 ฟรี",
+					"description": "ดูถ่ายทอดสดมอเตอร์สปอร์ตและ F1 ฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"racing": {
+					"title": "P2P4U แข่งรถ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแข่งรถฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"cycling": {
+					"title": "P2P4U จักรยาน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดจักรยานฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"equestrianism": {
+					"title": "P2P4U ขี่ม้า | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดขี่ม้าฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"golf": {
+					"title": "P2P4U กอล์ฟ | ดูถ่ายทอดสด PGA ฟรี HD",
+					"description": "ดูถ่ายทอดสดกอล์ฟฟรีที่ P2P4U PGA Tour โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"field-hockey": {
+					"title": "P2P4U ฮอกกี้สนาม | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฮอกกี้สนามฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"lacrosse": {
+					"title": "P2P4U ลาครอส | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดลาครอสฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"athletics": {
+					"title": "P2P4U กรีฑา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกรีฑาฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"gymnastics": {
+					"title": "P2P4U ยิมนาสติก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดยิมนาสติกฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"weightlifting": {
+					"title": "P2P4U ยกน้ำหนัก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดยกน้ำหนักฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"climbing": {
+					"title": "P2P4U ปีนเขา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปีนเขาฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"winter-sport": {
+					"title": "P2P4U กีฬาฤดูหนาว | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาฤดูหนาวฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"bandy": {
+					"title": "P2P4U แบนดี้ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแบนดี้ฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"curling": {
+					"title": "P2P4U เคิร์ลลิ่ง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเคิร์ลลิ่งฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"triathlon": {
+					"title": "P2P4U ไตรกีฬา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดไตรกีฬาฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"water-sports": {
+					"title": "P2P4U กีฬาทางน้ำ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาทางน้ำฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"water-polo": {
+					"title": "P2P4U โปโลน้ำ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดโปโลน้ำฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"sailing": {
+					"title": "P2P4U แล่นเรือ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแล่นเรือฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"bowling": {
+					"title": "P2P4U โบว์ลิ่ง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดโบว์ลิ่งฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"darts": {
+					"title": "P2P4U ปาเป้า | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปาเป้าฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"chess": {
+					"title": "P2P4U หมากรุก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดหมากรุกฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"e-sports": {
+					"title": "P2P4U อีสปอร์ต | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดอีสปอร์ตฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"others": {
+					"title": "P2P4U กีฬาอื่นๆ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาอื่นๆ ฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"rugby-sevens": {
+					"title": "P2P4U รักบี้เซเว่นส์ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้เซเว่นส์ฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				},
+				"extreme-sport": {
+					"title": "P2P4U เอ็กซ์ตรีมสปอร์ต | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเอ็กซ์ตรีมสปอร์ตฟรีที่ P2P4U โหลดเร็ว ไม่ต้องสมัคร!"
+				}
+			}
+		},
+		"streamhunter.info": {
+			"home": {
+				"title": "StreamHunter | ดูถ่ายทอดสดกีฬาออนไลน์ฟรี",
+				"description": "StreamHunter ถ่ายทอดสดกีฬาทุกประเภทใน HD ลิงก์เชื่อถือได้ ดูฟรี ดูเลย!"
+			},
+			"sports": {
+				"football": {
+					"title": "StreamHunter ฟุตบอล | ดูถ่ายทอดสดฟุตบอล HD ฟรี",
+					"description": "ดูถ่ายทอดสดฟุตบอลฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"basketball": {
+					"title": "StreamHunter บาสเกตบอล | ดูถ่ายทอดสด NBA ฟรี",
+					"description": "ดูถ่ายทอดสดบาสเกตบอลฟรีที่ StreamHunter NBA HD ลิงก์เชื่อถือได้!"
+				},
+				"tennis": {
+					"title": "StreamHunter เทนนิส | ดูถ่ายทอดสดเทนนิส HD ฟรี",
+					"description": "ดูถ่ายทอดสดเทนนิสฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"ice-hockey": {
+					"title": "StreamHunter ฮอกกี้น้ำแข็ง | ดูถ่ายทอดสด NHL ฟรี",
+					"description": "ดูถ่ายทอดสดฮอกกี้น้ำแข็งฟรีที่ StreamHunter NHL HD ลิงก์เชื่อถือได้!"
+				},
+				"baseball": {
+					"title": "StreamHunter เบสบอล | ดูถ่ายทอดสด MLB ฟรี",
+					"description": "ดูถ่ายทอดสดเบสบอลฟรีที่ StreamHunter MLB HD ลิงก์เชื่อถือได้!"
+				},
+				"rugby-union": {
+					"title": "StreamHunter รักบี้ยูเนี่ยน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้ยูเนี่ยนฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"rugby-league": {
+					"title": "StreamHunter รักบี้ลีก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้ลีกฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"cricket": {
+					"title": "StreamHunter คริกเก็ต | ดูถ่ายทอดสด IPL ฟรี HD",
+					"description": "ดูถ่ายทอดสดคริกเก็ตฟรีที่ StreamHunter IPL HD ลิงก์เชื่อถือได้!"
+				},
+				"american-football": {
+					"title": "StreamHunter อเมริกันฟุตบอล | ดูถ่ายทอดสด NFL ฟรี",
+					"description": "ดูถ่ายทอดสด NFL ฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"volleyball": {
+					"title": "StreamHunter วอลเลย์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดวอลเลย์บอลฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"beach-volleyball": {
+					"title": "StreamHunter วอลเลย์บอลชายหาด | ดูถ่ายทอดสดฟรี",
+					"description": "ดูถ่ายทอดสดวอลเลย์บอลชายหาดฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"handball": {
+					"title": "StreamHunter แฮนด์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแฮนด์บอลฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"beach-handball": {
+					"title": "StreamHunter แฮนด์บอลชายหาด | ดูถ่ายทอดสดฟรี",
+					"description": "ดูถ่ายทอดสดแฮนด์บอลชายหาดฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"beach-soccer": {
+					"title": "StreamHunter ฟุตบอลชายหาด | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟุตบอลชายหาดฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"aussie-rules": {
+					"title": "StreamHunter ออสซี่รูลส์ | ดูถ่ายทอดสด AFL ฟรี",
+					"description": "ดูถ่ายทอดสด AFL ฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"futsal": {
+					"title": "StreamHunter ฟุตซอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟุตซอลฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"badminton": {
+					"title": "StreamHunter แบดมินตัน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแบดมินตันฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"netball": {
+					"title": "StreamHunter เน็ตบอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเน็ตบอลฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"floorball": {
+					"title": "StreamHunter ฟลอร์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟลอร์บอลฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"combat-sport": {
+					"title": "StreamHunter กีฬาต่อสู้ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาต่อสู้ฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"boxing": {
+					"title": "StreamHunter มวย | ดูถ่ายทอดสดมวยฟรี HD",
+					"description": "ดูถ่ายทอดสดมวยฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"mma": {
+					"title": "StreamHunter MMA | ดูถ่ายทอดสด UFC ฟรี HD",
+					"description": "ดูถ่ายทอดสด MMA และ UFC ฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"snooker": {
+					"title": "StreamHunter สนุกเกอร์ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดสนุกเกอร์ฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"billiard": {
+					"title": "StreamHunter บิลเลียด | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดบิลเลียดฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"table-tennis": {
+					"title": "StreamHunter ปิงปอง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปิงปองฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"padel-tennis": {
+					"title": "StreamHunter เทนนิสพาเดล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเทนนิสพาเดลฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"squash": {
+					"title": "StreamHunter สควอช | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดสควอชฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"motorsport": {
+					"title": "StreamHunter มอเตอร์สปอร์ต | ดูถ่ายทอดสด F1 ฟรี",
+					"description": "ดูถ่ายทอดสดมอเตอร์สปอร์ตและ F1 ฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"racing": {
+					"title": "StreamHunter แข่งรถ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแข่งรถฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"cycling": {
+					"title": "StreamHunter จักรยาน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดจักรยานฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"equestrianism": {
+					"title": "StreamHunter ขี่ม้า | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดขี่ม้าฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"golf": {
+					"title": "StreamHunter กอล์ฟ | ดูถ่ายทอดสด PGA ฟรี HD",
+					"description": "ดูถ่ายทอดสดกอล์ฟฟรีที่ StreamHunter PGA Tour HD ลิงก์เชื่อถือได้!"
+				},
+				"field-hockey": {
+					"title": "StreamHunter ฮอกกี้สนาม | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฮอกกี้สนามฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"lacrosse": {
+					"title": "StreamHunter ลาครอส | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดลาครอสฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"athletics": {
+					"title": "StreamHunter กรีฑา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกรีฑาฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"gymnastics": {
+					"title": "StreamHunter ยิมนาสติก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดยิมนาสติกฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"weightlifting": {
+					"title": "StreamHunter ยกน้ำหนัก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดยกน้ำหนักฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"climbing": {
+					"title": "StreamHunter ปีนเขา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปีนเขาฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"winter-sport": {
+					"title": "StreamHunter กีฬาฤดูหนาว | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาฤดูหนาวฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"bandy": {
+					"title": "StreamHunter แบนดี้ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแบนดี้ฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"curling": {
+					"title": "StreamHunter เคิร์ลลิ่ง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเคิร์ลลิ่งฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"triathlon": {
+					"title": "StreamHunter ไตรกีฬา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดไตรกีฬาฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"water-sports": {
+					"title": "StreamHunter กีฬาทางน้ำ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาทางน้ำฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"water-polo": {
+					"title": "StreamHunter โปโลน้ำ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดโปโลน้ำฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"sailing": {
+					"title": "StreamHunter แล่นเรือ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแล่นเรือฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"bowling": {
+					"title": "StreamHunter โบว์ลิ่ง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดโบว์ลิ่งฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"darts": {
+					"title": "StreamHunter ปาเป้า | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปาเป้าฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"chess": {
+					"title": "StreamHunter หมากรุก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดหมากรุกฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"e-sports": {
+					"title": "StreamHunter อีสปอร์ต | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดอีสปอร์ตฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"others": {
+					"title": "StreamHunter กีฬาอื่นๆ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาอื่นๆ ฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"rugby-sevens": {
+					"title": "StreamHunter รักบี้เซเว่นส์ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้เซเว่นส์ฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				},
+				"extreme-sport": {
+					"title": "StreamHunter เอ็กซ์ตรีมสปอร์ต | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเอ็กซ์ตรีมสปอร์ตฟรีที่ StreamHunter HD ลิงก์เชื่อถือได้!"
+				}
+			}
+		},
+		"methstreams.org.uk": {
+			"home": {
+				"title": "MethStreams | ดูถ่ายทอดสดกีฬาออนไลน์ฟรี",
+				"description": "MethStreams ถ่ายทอดสดกีฬาทุกประเภทใน HD โหลดเร็ว ดูฟรี ดูเลย!"
+			},
+			"sports": {
+				"football": {
+					"title": "MethStreams ฟุตบอล | ดูถ่ายทอดสดฟุตบอล HD ฟรี",
+					"description": "ดูถ่ายทอดสดฟุตบอลฟรีที่ MethStreams HD โหลดเร็ว ดูเลย!"
+				},
+				"basketball": {
+					"title": "MethStreams บาสเกตบอล | ดูถ่ายทอดสด NBA ฟรี",
+					"description": "ดูถ่ายทอดสดบาสเกตบอลฟรีที่ MethStreams NBA HD โหลดเร็ว!"
+				},
+				"tennis": {
+					"title": "MethStreams เทนนิส | ดูถ่ายทอดสดเทนนิส HD ฟรี",
+					"description": "ดูถ่ายทอดสดเทนนิสฟรีที่ MethStreams HD โหลดเร็ว ดูเลย!"
+				},
+				"ice-hockey": {
+					"title": "MethStreams ฮอกกี้น้ำแข็ง | ดูถ่ายทอดสด NHL ฟรี",
+					"description": "ดูถ่ายทอดสดฮอกกี้น้ำแข็งฟรีที่ MethStreams NHL HD โหลดเร็ว!"
+				},
+				"baseball": {
+					"title": "MethStreams เบสบอล | ดูถ่ายทอดสด MLB ฟรี",
+					"description": "ดูถ่ายทอดสดเบสบอลฟรีที่ MethStreams MLB HD โหลดเร็ว!"
+				},
+				"rugby-union": {
+					"title": "MethStreams รักบี้ยูเนี่ยน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้ยูเนี่ยนฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"rugby-league": {
+					"title": "MethStreams รักบี้ลีก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้ลีกฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"cricket": {
+					"title": "MethStreams คริกเก็ต | ดูถ่ายทอดสด IPL ฟรี HD",
+					"description": "ดูถ่ายทอดสดคริกเก็ตฟรีที่ MethStreams IPL HD โหลดเร็ว!"
+				},
+				"american-football": {
+					"title": "MethStreams อเมริกันฟุตบอล | ดูถ่ายทอดสด NFL ฟรี",
+					"description": "ดูถ่ายทอดสด NFL ฟรีที่ MethStreams HD โหลดเร็ว ดูเลย!"
+				},
+				"volleyball": {
+					"title": "MethStreams วอลเลย์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดวอลเลย์บอลฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"beach-volleyball": {
+					"title": "MethStreams วอลเลย์บอลชายหาด | ดูถ่ายทอดสดฟรี",
+					"description": "ดูถ่ายทอดสดวอลเลย์บอลชายหาดฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"handball": {
+					"title": "MethStreams แฮนด์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแฮนด์บอลฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"beach-handball": {
+					"title": "MethStreams แฮนด์บอลชายหาด | ดูถ่ายทอดสดฟรี",
+					"description": "ดูถ่ายทอดสดแฮนด์บอลชายหาดฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"beach-soccer": {
+					"title": "MethStreams ฟุตบอลชายหาด | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟุตบอลชายหาดฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"aussie-rules": {
+					"title": "MethStreams ออสซี่รูลส์ | ดูถ่ายทอดสด AFL ฟรี",
+					"description": "ดูถ่ายทอดสด AFL ฟรีที่ MethStreams HD โหลดเร็ว ดูเลย!"
+				},
+				"futsal": {
+					"title": "MethStreams ฟุตซอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟุตซอลฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"badminton": {
+					"title": "MethStreams แบดมินตัน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแบดมินตันฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"netball": {
+					"title": "MethStreams เน็ตบอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเน็ตบอลฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"floorball": {
+					"title": "MethStreams ฟลอร์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟลอร์บอลฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"combat-sport": {
+					"title": "MethStreams กีฬาต่อสู้ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาต่อสู้ฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"boxing": {
+					"title": "MethStreams มวย | ดูถ่ายทอดสดมวยฟรี HD",
+					"description": "ดูถ่ายทอดสดมวยฟรีที่ MethStreams HD โหลดเร็ว ดูเลย!"
+				},
+				"mma": {
+					"title": "MethStreams MMA | ดูถ่ายทอดสด UFC ฟรี HD",
+					"description": "ดูถ่ายทอดสด MMA และ UFC ฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"snooker": {
+					"title": "MethStreams สนุกเกอร์ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดสนุกเกอร์ฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"billiard": {
+					"title": "MethStreams บิลเลียด | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดบิลเลียดฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"table-tennis": {
+					"title": "MethStreams ปิงปอง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปิงปองฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"padel-tennis": {
+					"title": "MethStreams เทนนิสพาเดล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเทนนิสพาเดลฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"squash": {
+					"title": "MethStreams สควอช | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดสควอชฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"motorsport": {
+					"title": "MethStreams มอเตอร์สปอร์ต | ดูถ่ายทอดสด F1 ฟรี",
+					"description": "ดูถ่ายทอดสดมอเตอร์สปอร์ตและ F1 ฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"racing": {
+					"title": "MethStreams แข่งรถ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแข่งรถฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"cycling": {
+					"title": "MethStreams จักรยาน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดจักรยานฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"equestrianism": {
+					"title": "MethStreams ขี่ม้า | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดขี่ม้าฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"golf": {
+					"title": "MethStreams กอล์ฟ | ดูถ่ายทอดสด PGA ฟรี HD",
+					"description": "ดูถ่ายทอดสดกอล์ฟฟรีที่ MethStreams PGA Tour HD โหลดเร็ว!"
+				},
+				"field-hockey": {
+					"title": "MethStreams ฮอกกี้สนาม | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฮอกกี้สนามฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"lacrosse": {
+					"title": "MethStreams ลาครอส | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดลาครอสฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"athletics": {
+					"title": "MethStreams กรีฑา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกรีฑาฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"gymnastics": {
+					"title": "MethStreams ยิมนาสติก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดยิมนาสติกฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"weightlifting": {
+					"title": "MethStreams ยกน้ำหนัก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดยกน้ำหนักฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"climbing": {
+					"title": "MethStreams ปีนเขา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปีนเขาฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"winter-sport": {
+					"title": "MethStreams กีฬาฤดูหนาว | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาฤดูหนาวฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"bandy": {
+					"title": "MethStreams แบนดี้ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแบนดี้ฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"curling": {
+					"title": "MethStreams เคิร์ลลิ่ง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเคิร์ลลิ่งฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"triathlon": {
+					"title": "MethStreams ไตรกีฬา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดไตรกีฬาฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"water-sports": {
+					"title": "MethStreams กีฬาทางน้ำ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาทางน้ำฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"water-polo": {
+					"title": "MethStreams โปโลน้ำ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดโปโลน้ำฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"sailing": {
+					"title": "MethStreams แล่นเรือ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแล่นเรือฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"bowling": {
+					"title": "MethStreams โบว์ลิ่ง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดโบว์ลิ่งฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"darts": {
+					"title": "MethStreams ปาเป้า | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปาเป้าฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"chess": {
+					"title": "MethStreams หมากรุก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดหมากรุกฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"e-sports": {
+					"title": "MethStreams อีสปอร์ต | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดอีสปอร์ตฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"others": {
+					"title": "MethStreams กีฬาอื่นๆ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาอื่นๆ ฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"rugby-sevens": {
+					"title": "MethStreams รักบี้เซเว่นส์ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้เซเว่นส์ฟรีที่ MethStreams HD โหลดเร็ว!"
+				},
+				"extreme-sport": {
+					"title": "MethStreams เอ็กซ์ตรีมสปอร์ต | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเอ็กซ์ตรีมสปอร์ตฟรีที่ MethStreams HD โหลดเร็ว!"
+				}
+			}
+		},
+		"wiziwig.online": {
+			"home": {
+				"title": "WiziWig | ดูถ่ายทอดสดกีฬาออนไลน์ฟรี",
+				"description": "WiziWig ถ่ายทอดสดกีฬาทุกประเภทใน HD ไม่ต้องสมัคร ดูฟรี ดูเลย!"
+			},
+			"sports": {
+				"football": {
+					"title": "WiziWig ฟุตบอล | ดูถ่ายทอดสดฟุตบอล HD ฟรี",
+					"description": "ดูถ่ายทอดสดฟุตบอลฟรีที่ WiziWig HD ไม่ต้องสมัคร ดูเลย!"
+				},
+				"basketball": {
+					"title": "WiziWig บาสเกตบอล | ดูถ่ายทอดสด NBA ฟรี",
+					"description": "ดูถ่ายทอดสดบาสเกตบอลฟรีที่ WiziWig NBA HD ไม่ต้องสมัคร!"
+				},
+				"tennis": {
+					"title": "WiziWig เทนนิส | ดูถ่ายทอดสดเทนนิส HD ฟรี",
+					"description": "ดูถ่ายทอดสดเทนนิสฟรีที่ WiziWig HD ไม่ต้องสมัคร ดูเลย!"
+				},
+				"ice-hockey": {
+					"title": "WiziWig ฮอกกี้น้ำแข็ง | ดูถ่ายทอดสด NHL ฟรี",
+					"description": "ดูถ่ายทอดสดฮอกกี้น้ำแข็งฟรีที่ WiziWig NHL HD ไม่ต้องสมัคร!"
+				},
+				"baseball": {
+					"title": "WiziWig เบสบอล | ดูถ่ายทอดสด MLB ฟรี",
+					"description": "ดูถ่ายทอดสดเบสบอลฟรีที่ WiziWig MLB HD ไม่ต้องสมัคร!"
+				},
+				"rugby-union": {
+					"title": "WiziWig รักบี้ยูเนี่ยน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้ยูเนี่ยนฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"rugby-league": {
+					"title": "WiziWig รักบี้ลีก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้ลีกฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"cricket": {
+					"title": "WiziWig คริกเก็ต | ดูถ่ายทอดสด IPL ฟรี HD",
+					"description": "ดูถ่ายทอดสดคริกเก็ตฟรีที่ WiziWig IPL HD ไม่ต้องสมัคร!"
+				},
+				"american-football": {
+					"title": "WiziWig อเมริกันฟุตบอล | ดูถ่ายทอดสด NFL ฟรี",
+					"description": "ดูถ่ายทอดสด NFL ฟรีที่ WiziWig HD ไม่ต้องสมัคร ดูเลย!"
+				},
+				"volleyball": {
+					"title": "WiziWig วอลเลย์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดวอลเลย์บอลฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"beach-volleyball": {
+					"title": "WiziWig วอลเลย์บอลชายหาด | ดูถ่ายทอดสดฟรี",
+					"description": "ดูถ่ายทอดสดวอลเลย์บอลชายหาดฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"handball": {
+					"title": "WiziWig แฮนด์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแฮนด์บอลฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"beach-handball": {
+					"title": "WiziWig แฮนด์บอลชายหาด | ดูถ่ายทอดสดฟรี",
+					"description": "ดูถ่ายทอดสดแฮนด์บอลชายหาดฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"beach-soccer": {
+					"title": "WiziWig ฟุตบอลชายหาด | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟุตบอลชายหาดฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"aussie-rules": {
+					"title": "WiziWig ออสซี่รูลส์ | ดูถ่ายทอดสด AFL ฟรี",
+					"description": "ดูถ่ายทอดสด AFL ฟรีที่ WiziWig HD ไม่ต้องสมัคร ดูเลย!"
+				},
+				"futsal": {
+					"title": "WiziWig ฟุตซอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟุตซอลฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"badminton": {
+					"title": "WiziWig แบดมินตัน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแบดมินตันฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"netball": {
+					"title": "WiziWig เน็ตบอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเน็ตบอลฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"floorball": {
+					"title": "WiziWig ฟลอร์บอล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฟลอร์บอลฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"combat-sport": {
+					"title": "WiziWig กีฬาต่อสู้ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาต่อสู้ฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"boxing": {
+					"title": "WiziWig มวย | ดูถ่ายทอดสดมวยฟรี HD",
+					"description": "ดูถ่ายทอดสดมวยฟรีที่ WiziWig HD ไม่ต้องสมัคร ดูเลย!"
+				},
+				"mma": {
+					"title": "WiziWig MMA | ดูถ่ายทอดสด UFC ฟรี HD",
+					"description": "ดูถ่ายทอดสด MMA และ UFC ฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"snooker": {
+					"title": "WiziWig สนุกเกอร์ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดสนุกเกอร์ฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"billiard": {
+					"title": "WiziWig บิลเลียด | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดบิลเลียดฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"table-tennis": {
+					"title": "WiziWig ปิงปอง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปิงปองฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"padel-tennis": {
+					"title": "WiziWig เทนนิสพาเดล | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเทนนิสพาเดลฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"squash": {
+					"title": "WiziWig สควอช | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดสควอชฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"motorsport": {
+					"title": "WiziWig มอเตอร์สปอร์ต | ดูถ่ายทอดสด F1 ฟรี",
+					"description": "ดูถ่ายทอดสดมอเตอร์สปอร์ตและ F1 ฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"racing": {
+					"title": "WiziWig แข่งรถ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแข่งรถฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"cycling": {
+					"title": "WiziWig จักรยาน | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดจักรยานฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"equestrianism": {
+					"title": "WiziWig ขี่ม้า | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดขี่ม้าฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"golf": {
+					"title": "WiziWig กอล์ฟ | ดูถ่ายทอดสด PGA ฟรี HD",
+					"description": "ดูถ่ายทอดสดกอล์ฟฟรีที่ WiziWig PGA Tour HD ไม่ต้องสมัคร!"
+				},
+				"field-hockey": {
+					"title": "WiziWig ฮอกกี้สนาม | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดฮอกกี้สนามฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"lacrosse": {
+					"title": "WiziWig ลาครอส | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดลาครอสฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"athletics": {
+					"title": "WiziWig กรีฑา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกรีฑาฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"gymnastics": {
+					"title": "WiziWig ยิมนาสติก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดยิมนาสติกฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"weightlifting": {
+					"title": "WiziWig ยกน้ำหนัก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดยกน้ำหนักฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"climbing": {
+					"title": "WiziWig ปีนเขา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปีนเขาฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"winter-sport": {
+					"title": "WiziWig กีฬาฤดูหนาว | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาฤดูหนาวฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"bandy": {
+					"title": "WiziWig แบนดี้ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแบนดี้ฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"curling": {
+					"title": "WiziWig เคิร์ลลิ่ง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเคิร์ลลิ่งฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"triathlon": {
+					"title": "WiziWig ไตรกีฬา | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดไตรกีฬาฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"water-sports": {
+					"title": "WiziWig กีฬาทางน้ำ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาทางน้ำฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"water-polo": {
+					"title": "WiziWig โปโลน้ำ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดโปโลน้ำฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"sailing": {
+					"title": "WiziWig แล่นเรือ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดแล่นเรือฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"bowling": {
+					"title": "WiziWig โบว์ลิ่ง | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดโบว์ลิ่งฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"darts": {
+					"title": "WiziWig ปาเป้า | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดปาเป้าฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"chess": {
+					"title": "WiziWig หมากรุก | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดหมากรุกฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"e-sports": {
+					"title": "WiziWig อีสปอร์ต | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดอีสปอร์ตฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"others": {
+					"title": "WiziWig กีฬาอื่นๆ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดกีฬาอื่นๆ ฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"rugby-sevens": {
+					"title": "WiziWig รักบี้เซเว่นส์ | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดรักบี้เซเว่นส์ฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				},
+				"extreme-sport": {
+					"title": "WiziWig เอ็กซ์ตรีมสปอร์ต | ดูถ่ายทอดสดฟรี HD",
+					"description": "ดูถ่ายทอดสดเอ็กซ์ตรีมสปอร์ตฟรีที่ WiziWig HD ไม่ต้องสมัคร!"
+				}
+			}
+		}
 	}
 }
